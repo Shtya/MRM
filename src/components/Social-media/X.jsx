@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
-import CoverImg from "../../assets/nEW/COVER1.jpg"
+import CoverImg from "../../assets/bg/COVER1.jpg"
 
 import  ImgSection from "../../assets/Socialmedia/bg-1.webp"
 import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
