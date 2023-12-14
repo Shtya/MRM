@@ -9,7 +9,7 @@ const Who = () => {
   return(
     <section className="Who " id='who' >
       <Animation />
-      <Pattern1 />
+      {/* <Pattern1 /> */}
       <div className="container">
 
       <div className="Img hidden-img " >

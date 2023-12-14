@@ -68,10 +68,9 @@ const Clients = () => {
 
     return (
     <section className='Clients' id='Clients'>
-      <Pattern2 />
-      {/* <Pattern5 /> */}
+      {/* <Pattern2 /> */}
       <div className="container">
-      <div className="h1 clip hidden-text">OUR CLIENTS</div>
+      <div className="h1 ">OUR CLIENTS</div>
       </div>
       <Slider_3_Img data={data} settings={settings} />
 

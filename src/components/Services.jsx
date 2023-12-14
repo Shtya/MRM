@@ -19,7 +19,7 @@ export function Services() {
   return (
     <>
     <section className='services' id='Services'>
-       <Pattern2 />
+       {/* <Pattern2 /> */}
        
        <h2 className='h1 clip hidden-text' >OUR SERVICES</h2> 
       
