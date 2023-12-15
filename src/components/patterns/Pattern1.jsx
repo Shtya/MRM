@@ -73,27 +73,7 @@ export const Pattern5 = ()=>{
   )
 }
 
-export const Pattern8 = ()=>{
-return (
-  <div className="Pattern8">
-  <div class="area" >
-            <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
-              
-            </div >
-            </div>
-)
-}
+
 export const Pattern6 = ()=>{
 return (
   <div className="Pattern6">
@@ -130,4 +110,35 @@ export const Pattern7 = ()=>{
 </div>
   )
 }
+
+export const Pattern8 = ()=>{
+  return (
+    <div className="Pattern8">
+    <div class="area" >
+              <ul class="circles">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+              </ul>
+                
+              </div >
+              </div>
+  )
+  }
+export const Pattern9 = ()=>{
+  return (
+    <div className="Pattern9">
+      <span></span>
+      <span> <li className='one'/>   <li className='two'/>   <li className='three'/>  </span>
+      <span></span>
+    </div>
+  )
+  }
 export default Pattern1

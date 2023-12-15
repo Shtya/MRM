@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar'
 import OneWhy from '../components/OneWhy'
 import Footer from '../components/Footer'
 import Animation from '../components/helpers/Animation'
-import Pattern1, { Divider, Pattern3 } from '../components/patterns/Pattern1'
+import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
 
 
 const AboutUs = () => {
@@ -27,8 +27,8 @@ const AboutUs = () => {
       <div className="coverIntro hidden-img"> <img src={ImgIntro}  /></div>
 
 
-      <Divider classn="divider divider-top" />
-      <div className="quotation ">
+      {/* <Divider classn="divider divider-top" /> */}
+      <div className="quotation divider-top ">
         <Pattern1 />
             <div className="container" data-aos="fade-rigth">
             <p className='h2 hidden-text'>We are a global creative agency based in the UAE and a leading agency in advertising, marketing, and digital solutions. </p>
@@ -51,7 +51,7 @@ const AboutUs = () => {
 
         <Divider classn="divider-left" />
         <div className="WHY">
-          <Pattern3 />
+          <Pattern2 />
             <div className="coverImg2 .container4 " data-aos="fade-right"> <img src={ImgContact} alt="" /> </div>
           <div className="container">
             {vission_mission.map((e,index)=> (

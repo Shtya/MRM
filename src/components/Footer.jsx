@@ -1,18 +1,18 @@
 import React from 'react'
 import Logo from "../assets/Logo1.png"
 import { Link } from 'react-router-dom'
-import { Divider, Pattern2, Pattern3, Pattern5, Pattern6, Pattern7, Pattern8 } from './patterns/Pattern1'
+import { Divider, Pattern2, Pattern3, Pattern5, Pattern6, Pattern7, Pattern8, Pattern9 } from './patterns/Pattern1'
 import QuickContact from './QuickContact'
 
 const Footer = ({appear}) => {
   return (
     <>
    
-    {appear != false && <Divider classn="divider" />}
+    {appear != false && <Pattern9 />}
     {appear != false &&<QuickContact  />}
-    <Divider classn='divider-left' />
+    {/* <Divider classn='divider-left' /> */}
+    <Pattern9 />
     <footer>
-    
       <div className="container">
       <div className="top">
         <img src={Logo} alt="" />

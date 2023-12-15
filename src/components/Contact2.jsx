@@ -19,8 +19,8 @@ const Contact2 = () => {
                     <li className="list-item"> <a> <i className="fa-solid fa-phone"></i>         </a>    <span className='contact-text place'>+971561384496</span></li>
                     <li className="list-item"> <a>  <i className="fa-solid fa-envelope"></i>     </a>    <span className='contact-text phone'>info@mrmadvertisingdubai.com</span> </li>
                     <li className="list-item"> <a>  <i className="fa-solid fa-location-dot"></i> </a>    <span className='contact-text gmail'>Business Bay - Dubai</span></li>
-                  </ul>
-
+                    </ul>
+                        <hr />
                     <ul className='social-media-list'>
                       <li> <a className="Iicon">  <i className="fa-brands fa-facebook-f"></i>     </a></li>
                       <li> <a className="Iicon">  <i className="fa-brands fa-instagram"></i> </a></li>

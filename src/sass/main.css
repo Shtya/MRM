@@ -1852,21 +1852,24 @@ header section .video video {
 footer {
   position: relative;
   color: white;
-  background: url("../assets/bg/bg2.jpg");
+  background: url("../assets/bg/bg4.jpg");
   z-index: 1000;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   padding-top: 30px;
+  width: 100%;
 }
 footer::before {
   content: "";
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.48);
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
+  z-index: -1;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
 }
@@ -1902,6 +1905,7 @@ footer .container {
 }
 footer .container .h2.clip {
   text-align: left;
+  text-wrap: nowrap;
 }
 footer .container .p {
   text-align: center;
@@ -2032,6 +2036,7 @@ footer .container .center ul li {
   display: flex;
   align-items: center;
   gap: 15px;
+  text-align: justify;
 }
 footer .container .center ul li i {
   font-size: 18px;
@@ -3152,8 +3157,30 @@ footer .container .bottom .last a {
 /*================================ CONTACT_PAGE ================================*/
 .contact-us {
   position: relative;
-  background-color: var(--third-bg);
   color: white;
+  position: relative;
+  background: url("../assets/bg/bg4.jpg");
+  z-index: 1000;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-us::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.48);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 .contact-us .Contact2 {
   position: relative;
@@ -3170,13 +3197,15 @@ footer .container .bottom .last a {
   position: relative;
   justify-content: space-between;
   display: grid;
+  gap: 20px;
   grid-template-columns: 1fr 400px;
+  align-items: center;
 }
 .contact-us .Contact2 .container .box {
   position: relative;
   background: url("../assets/contact-us/map.jpg");
   z-index: 1000;
-  height: 100%;
+  height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -3214,12 +3243,15 @@ footer .container .bottom .last a {
   color: var(--text-color);
   font-family: "Montserrat";
 }
+.contact-us .Contact2 .container .box hr {
+  width: 300px;
+  margin: 30px 10px;
+}
 .contact-us .Contact2 .container .box .contact-list {
   list-style-type: none;
   position: relative;
   display: flex;
   justify-content: center;
-  gap: 20px;
   flex-direction: column;
 }
 .contact-us .Contact2 .container .box .list-item {
@@ -3282,15 +3314,13 @@ footer .container .bottom .last a {
   display: inline-block;
   height: 60px;
   width: 60px;
-  margin: 10px 3px;
   line-height: 60px;
-  border-radius: 50%;
   color: #fff;
   background-color: rgb(27, 27, 27);
   cursor: pointer;
+  border-radius: 50%;
   transition: all 0.2s ease-in-out;
   margin-right: 15px;
-  border: 2px solid #aaa;
   box-shadow: 0 0 2px #aaa inset;
 }
 .contact-us .Contact2 .container .box .social-media-list a {
@@ -3300,6 +3330,7 @@ footer .container .bottom .last a {
   justify-content: center;
   height: 100%;
   width: 100%;
+  font-size: 25px;
 }
 .contact-us .Contact2 .container .box .social-media-list li:after {
   content: "";
@@ -3381,14 +3412,15 @@ footer .container .bottom .last a {
   }
 }
 .contact-us .Contact2 .container .box1 {
-  width: 100%;
-  height: 100%;
   padding: 20px;
   border-radius: 2px;
   transition: 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 80vh;
+  border: 2px solid var(--text-color);
+  background: var(--overlay);
 }
 @media (max-width: 990px) {
   .contact-us .Contact2 .container .box1 {
