@@ -45,19 +45,19 @@ const data = [
 const settings = {
   dots: true,
   infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 2,
+  slidesToScroll: 2,
   autoplay:true  ,
-  speed: 2000,
-  // autoplaySpeed: 2000 ,
+  speed: 3000,
+  autoplaySpeed: 3000 ,
   cssEase: "linear" ,
   responsive: [
-    {breakpoint: 1000,
+    {breakpoint: 1100,
     settings: {
       slidesToShow: 2,
       slidesToScroll: 1,}
   },
-    {breakpoint: 600,
+    {breakpoint: 900,
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1,}
@@ -104,8 +104,8 @@ const M_Signages = () => {
       <div className="signages">
         <Pattern3 />
           <div className="container">
-              <div className="h1 clip hidden-text" data-aos="fade-left">Outdoor Signages</div>
-              <div className="phead hidden-text" data-aos="fade-left">Our Signages gives an elegant and professional finish to every project.</div>
+              <div className="h1 clip hidden-text" style={{marginBottom:"10px"}} data-aos="fade-left">Outdoor Signages gallery</div>
+              {/* <div className="phead hidden-text" data-aos="fade-left">Our Signages gives an elegant and professional finish to every project.</div> */}
           </div>
           <div className="outdoor">
               <div className="header1 header2">
@@ -119,7 +119,7 @@ const M_Signages = () => {
 
           <Divider classn="divider" />
           <div className="indoor">
-          <div className="h1 clip hidden-text" style={{marginBottom:"20px"}} data-aos="fade-left">Indoor Signages</div>
+          <div className="h1 clip hidden-text" style={{marginBottom:"20px"}} data-aos="fade-left">Indoor Signages gallery</div>
             <Pattern2 />
               <div className="header1 header2">
                   <li className='p active'>	Health-Safety </li>
@@ -133,9 +133,9 @@ const M_Signages = () => {
 
       </div>
 
-      <Divider classn="divider-left" />
+      {/* <Divider classn="divider-left" /> */}
       <div className="process2">
-        <Pattern3 />
+        {/* <Pattern3 /> */}
             <div className="container">
                 <div className="h1 hidden-text clip" data-aos="fade-left">Signage creation process</div>
                 <div className="phead hidden-text" data-aos="fade-left"> Our custom signages captures attention and gives every project  an elegant and professional finish</div>

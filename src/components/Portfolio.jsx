@@ -8,38 +8,23 @@ var settings = {
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1 , 
   autoplay:true ,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1050,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
       }
     },
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 1 ,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1 ,
-      }
-    }
   ]
 };
 
 
 
-const Portfolio = ({header  , typeGallery  }) => {
+const Portfolio = ({header  , typeGallery , nameofgallery  }) => {
   const headers = [ "all" , "Signages", "Stands", "Exhibition", "branding", "photography", "Web design",]
 
   const Imgs = ImgsPortfolio(headers)
@@ -58,7 +43,7 @@ const Portfolio = ({header  , typeGallery  }) => {
   return (
     <section className='portfolio' id="Portfolio">
       <Pattern3 />
-      <h2 className='h1 clip' > OUR WORKS</h2>
+      <h2 className='h1 clip' >{ nameofgallery || "OUR WORKS"}</h2>
       {!header == false && <div className="header1">{
           headers.map((e,index)=> (
           <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>

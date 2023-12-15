@@ -44,14 +44,14 @@ const images = [
 ]
 const SERVICES = [
   { animate:"fade-up", img:Photography_2 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
-  { animate:"fade-up", img:Photography_4 , title:"Exhibitions and Trade Shows" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
-  { animate:"fade-up", img:Photography_5 , title:"Fashion" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
   { animate:"fade-up", img:Photography_6 , title:"Business Portraits & Headshots" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
+  { animate:"fade-up", img:Photography_3 , title:"Real Estate" , desc:"Document the progress of construction projects, showcase real estate listings, and capture the essence of the lifestyle your brand represents."},
+  { animate:"fade-up", img:Photography_4 , title:"Exhibitions and Trade Shows" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
   { animate:"fade-up", img:Photography_7 , title:"Food" , desc:"Showcase your culinary creations with mouthwatering food photography that entices your audience."},
   { animate:"fade-up", img:Photography_8 , title:"Product" , desc:"Highlight the details and features of your products with our product photography services."},
   { animate:"fade-up", img:Photography_9 , title:"Automotive" , desc:"From sleek cars to rugged vehicles, our automotive photography captures the beauty and power of automobiles."},
   { animate:"fade-up", img:Photography_1 , title:"Hospitality" , desc:"Create an inviting atmosphere with hospitality photography that showcases your venue's charm."},
-  { animate:"fade-up", img:Photography_3 , title:"Real Estate" , desc:"Document the progress of construction projects, showcase real estate listings, and capture the essence of the lifestyle your brand represents."},
+  { animate:"fade-up", img:Photography_5 , title:"Fashion" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
 ]
 const SERVICES2 = [
   { animate:"fade-up", img:Videography5 , title:"Exhibitions, Conference & Trade Show Filming" , desc:"Showcase your participation in industry events with professionally filmed videos."},
@@ -104,15 +104,17 @@ const S_photography = () => {
       <Divider classn="divider-left" />
       <div className="photography-services">
       <Pattern3 />
-        <div className="h1 clip hidden-text">Our Photography Services</div> 
+        <div className="h1 clip hidden-text">Our Photography gallery</div> 
         <div className="container">
           {
             SERVICES.map((e,index)=> (
               <div className="box" key={index} data-aos={e.animate}>
                 <div className="innerbox">
                 <div className="coverImg hidden-img"> <img src={e.img} alt="" />  </div>
-                <div className="h2 clip hidden-text"> {e.title} </div>
-                <div className="p hidden-text">{e.desc} </div>
+                <div className="text">
+                  <div className="h2 hidden-text"> {e.title} </div>
+                  <div className="p hidden-text">{e.desc} </div>
+                </div>
                 </div>
               </div>
             ))
@@ -123,15 +125,17 @@ const S_photography = () => {
       <Divider classn="divider" />
       <div className="Videography-services">
         <Pattern2 />
-        <div className="h1 clip hidden-text">Types of Videography Services</div> 
+        <div className="h1 clip hidden-text">Types of Videography gallery</div> 
         <div className="container">
           {
             SERVICES2.map((e,index)=> (
               <div className="box" key={index} data-aos={e.animate} data-aos-delay={`${100 * (index + 1) }`} >
                 <div className="innerbox">
                 <div className="coverImg hidden-img"> <img src={e.img} alt="" />  </div>
-                <div className="h2 hidden-text"> {e.title} </div>
-                <div className="p hidden-text">{e.desc} </div>
+                <div className="text">
+                  <div className="h2 clip hidden-text"> {e.title} </div>
+                  <div className="p hidden-text">{e.desc} </div>
+                </div>
                 </div>
               </div>
             ))

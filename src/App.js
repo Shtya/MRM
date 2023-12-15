@@ -79,7 +79,6 @@ const App = () => {
 
         <Route index element={<Home />} />
         <Route path='/contact-us' element={<ContactUs />} /> 
-        <Route path='/sitemap' element={Sitemap} /> 
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='*' element={<Error />} />
         <Route path='/privacy' element={<Privacy />} />

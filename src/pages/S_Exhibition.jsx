@@ -112,7 +112,7 @@ const S_Exhibition = () => {
         <Divider classn="divider-left" />
       <div className="exhibition-stands">
         <Pattern3 />
-        <div className="container"> <div className="h1 clip">Take a look at our designs for exhibition stands</div></div>
+        <div className="container"> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for exhibition stands gallery</div></div>
         <div className="container">
           <div className="boxs">
             {Exhibition.map((e,index)=> ( <div key={index} data-aos={e.animate}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
@@ -124,10 +124,25 @@ const S_Exhibition = () => {
         </div>
       </div>
       
-      <Divider classn="divider" />
+        <Divider classn="divider-left" />
+      <div className="exhibition-stands , Display">
+        <Pattern3 />
+        <div className="container"> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for Display stands gallery</div></div>
+        <div className="container">
+          <div className="boxs">
+            {DisplayStands.map((e,index)=> ( <div key={index} data-aos={e.animate}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
+            {Img && <div className="show-img"> 
+              <img src={Img} alt="" /> 
+              <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
+            </div>}
+          </div>
+        </div>
+      </div>
+      
+      {/* <Divider classn="divider" />
       <div className="Display-stands">
         <Pattern2 />
-      <div className="container"><div className="h1 clip">Take a look at our designs for Display stands</div></div>
+      <div className="container"><div className="h1 clip">Take a look at our designs for Display stands gallery</div></div>
         <div className="container">
             <div className="boxs">
                 {DisplayStands.map((e,index)=> ( <div key={index} data-aos={e.animate} className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
@@ -137,7 +152,7 @@ const S_Exhibition = () => {
                 </div>}
             </div>
         </div>
-      </div>
+      </div> */}
 
       
       <Divider classn="divider-left" />

@@ -134,7 +134,7 @@ const S_SEO = () => {
     <Divider classn="divider-left" />
     <div className="WHY">
         <Pattern3 />
-      <div className="h1 clip hidden-text"> Why MRM Team excels in SEO? </div>
+      <div className="h1 clip hidden-text"> Why We Excels? </div>
       <div className="container">
         {
           WHY_MRM.map((e,index)=> (

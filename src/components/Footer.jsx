@@ -7,20 +7,27 @@ import QuickContact from './QuickContact'
 const Footer = ({appear}) => {
   return (
     <>
-    <Divider classn="divider-left" />
-    {/* <Divider classn='divider-left' /> */}
-    <footer>
-    <Pattern8 />
+   
+    {appear != false && <Divider classn="divider" />}
     {appear != false &&<QuickContact  />}
+    <Divider classn='divider-left' />
+    <footer>
+    
       <div className="container">
       <div className="top">
         <img src={Logo} alt="" />
         <div className="phead">We Don't Create Ads ,We Build Successful Campaigns</div>
-        <ul className="social">
+        {/* <ul className="social">
           <li><i className="fa-brands fa-facebook-f"></i></li>
           <li><i className="fa-brands fa-instagram"></i></li>
           <li><i className="fa-brands fa-whatsapp"></i></li>
           <li><i className="fa-brands fa-linkedin-in"></i></li>
+        </ul> */}
+        <ul className='social last-social'>
+          <li> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-facebook-f"></i>    </div> </a></li>
+          <li> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-instagram"></i></div> </a></li>
+          <li> <a className="Iicon"> <div className="style"><i className="fa-brands fa-whatsapp"></i>        </div> </a></li>
+          <li> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-linkedin-in"></i></div> </a></li>
         </ul>
       </div>
 

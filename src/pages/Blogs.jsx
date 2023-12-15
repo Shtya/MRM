@@ -8,13 +8,13 @@ import Pattern1, { Divider } from '../components/patterns/Pattern1';
 // import { blogs } from '../components/docs_blogs';
 
 import Animation from '../components/helpers/Animation';
-import baseURL from '../API/API';
+import baseURL, { baseImg } from '../API/API';
 
 const Blogs = () => {
   const [blogs , setblogs] = useState([])
   const [customTitle , setcustomTitle] = useState([])
   useEffect(_=>{ baseURL.get("").then(res => { setblogs(res.data.data) } )} ,[])
-  
+  console.log(blogs)
   var settings = {
     dots: true,
     infinite: true,
@@ -54,7 +54,6 @@ const Blogs = () => {
                 <p className="h3 " data-aos="fade-up">Stay updated with our latest news, strategies, and tactics to succeed in your business.</p>
           </div>
           </div>
-
         <Divider classn="divider " />
         <OneBlog onHere={true} classn="blog-1" name="Digital Marketing News" settings={settings}  blogs={blogs} />
         <Divider classn="divider-left" />

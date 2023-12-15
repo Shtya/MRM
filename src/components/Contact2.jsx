@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react'
 import MapImg from "../assets/contact-us/map.jpg"
+import { Link } from 'react-router-dom';
 
 
 const Contact2 = () => {
@@ -9,28 +10,26 @@ const Contact2 = () => {
   return (
     <section className='Contact2' id='Contact2'>
       <div className="container">
-          <div className="coverImg"> <img src={MapImg} alt="" /> </div>
-          <div className="home">
-              <div className="box2">
-                  <div className="text">
-                      <h2 className='h1 clip blur'>Turn your dreams into digital realities. </h2>
-                      {/* <p className='h2'> Get in touch with us to start your digital journey.</p> */}
-                  </div>
-                  <ul className='social'>
-                    <li> <a className="Iicon"> <div className="style"><i className="fa-solid fa-phone"></i></div>         </a>    <span className='p'>+971561384496</span></li>
-                    <li> <a className="Iicon"> <div className="style"> <i className="fa-solid fa-envelope"></i>    </div> </a>    <span className='p'>info@mrmadvertisingdubai.com</span> </li>
-                    <li> <a className="Iicon"> <div className="style"> <i className="fa-solid fa-location-dot"></i></div> </a>    <span className='p'>Business Bay - Dubai</span></li>
-                    <hr />
-                    <ul className='social last-social'>
-                      <li> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-facebook-f"></i>    </div> </a></li>
-                      <li> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-instagram"></i></div> </a></li>
-                      <li> <a className="Iicon"> <div className="style"><i className="fa-brands fa-whatsapp"></i>        </div> </a></li>
-                      <li> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-linkedin-in"></i></div> </a></li>
-                    </ul>
+          {/* <div className="coverImg"> <img src={MapImg} alt="" /> </div> */}
+          
+              <div className="box" >
+                  <div className="text"> <h2 className='h1 clip blur'>Turn your dreams into digital realities. </h2> </div>
+
+                  <ul className='contact-list'>
+                    <li className="list-item"> <a> <i className="fa-solid fa-phone"></i>         </a>    <span className='contact-text place'>+971561384496</span></li>
+                    <li className="list-item"> <a>  <i className="fa-solid fa-envelope"></i>     </a>    <span className='contact-text phone'>info@mrmadvertisingdubai.com</span> </li>
+                    <li className="list-item"> <a>  <i className="fa-solid fa-location-dot"></i> </a>    <span className='contact-text gmail'>Business Bay - Dubai</span></li>
                   </ul>
+
+                    <ul className='social-media-list'>
+                      <li> <a className="Iicon">  <i className="fa-brands fa-facebook-f"></i>     </a></li>
+                      <li> <a className="Iicon">  <i className="fa-brands fa-instagram"></i> </a></li>
+                      <li> <a className="Iicon"> <i className= "fa-brands fa-whatsapp"></i>         </a></li>
+                      <li> <a className="Iicon">  <i className="fa-brands fa-linkedin-in"></i> </a></li>
+                    </ul>
               </div>
 
-              <div className="box">
+              <div className="box1">
               <p className='h1 clip'>Reach Out And Let's Talk</p>
               <form action="">
                   <input type="text" name="" placeholder='Your Name' id="" />
@@ -45,8 +44,10 @@ const Contact2 = () => {
               </form>
               </div>
           </div>
-          </div>
     </section>
+
+
+  
   )
 }
 

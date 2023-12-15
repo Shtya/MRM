@@ -11,7 +11,7 @@ var settings = {
   autoplaySpeed: 2000 ,
   slidesToShow: 6,
   slidesToScroll: 2 , 
-  autoplay:true ,
+  // autoplay:true ,
   responsive: [
     {
       breakpoint: 1300,

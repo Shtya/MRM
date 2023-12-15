@@ -103,7 +103,7 @@ const S_WebDesign = () => {
 
         <Divider classn="divider divider-rsize" />
         <div className="our_Approach">
-          <Pattern2 />
+          {/* <Pattern2 /> */}
             <div className="container">
                 <div className="circle">
                     <div className='text'>
@@ -128,7 +128,7 @@ const S_WebDesign = () => {
         </div>
       
         <Divider classn="divider-left" />
-      <Portfolio header={false} typeGallery="Web design" />
+      <Portfolio header={false} typeGallery="Web design" nameofgallery="THE GALLERY" />
 
       <Footer />
       </div>

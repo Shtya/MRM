@@ -20,14 +20,24 @@ const AboutUs = () => {
     {title:"Our Vision" , img:ImgBox2 , desc :"Our goal is to become one of the leading figures in the industry, known for our excellence. We are dedicated to being the preferred choice for individuals and businesses aiming to elevate their work to the highest standards. Ultimately, we aim to be a primary source of original and creative ideas, providing a pathway to unlock creativity and achieve remarkable results."} ,
     {title:"Our Mission" , img:ImgBox1 , desc :"Our mission is to empower businesses and brands to succeed in the constantly evolving realms of marketing and digital solutions. We are committed to delivering outstanding outcomes by leveraging our knowledge in advertising, branding, and innovative strategies."} ,
   ]
-
   return (
     <div className='about-us'>
       <Animation />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro hidden-img"> <img src={ImgIntro}  /></div>
 
-        <Divider classn="divider divider-top" />
+
+      <Divider classn="divider divider-top" />
+      <div className="quotation ">
+        <Pattern1 />
+            <div className="container" data-aos="fade-rigth">
+            <p className='h2 hidden-text'>We are a global creative agency based in the UAE and a leading agency in advertising, marketing, and digital solutions. </p>
+            <p className='h3 '>Our expertise is helping companies establish a strong and professional presence in physical and digital spaces using innovative and effective strategies.We create exceptional visual identities and build robust online presences for brands. Our team is dedicated to delivering top-notch services, utilizing the latest technologies and top-notch solutions to achieve tangible results. We offer professional marketing services to help your brand shine, from visual identities to online experiences. </p>
+            </div>
+        </div>
+
+
+        {/* <Divider classn="divider " />
         <div className="searching">
           <Pattern1 />
           <div className="container">
@@ -37,17 +47,16 @@ const AboutUs = () => {
                 <h2 className='box  hidden-text'>We create exceptional visual identities and build robust online presences for brands. Our team is dedicated to delivering top-notch services, utilizing the latest technologies and top-notch solutions to achieve tangible results. We offer professional marketing services to help your brand shine, from visual identities to online experiences. </h2>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <Divider classn="divider-left" />
         <div className="WHY">
           <Pattern3 />
+            <div className="coverImg2 .container4 " data-aos="fade-right"> <img src={ImgContact} alt="" /> </div>
           <div className="container">
-        {
-          vission_mission.map((e,index)=> (
-            <OneWhy key={index} img={e.img} title={e.title} desc={e.desc} />
-          ))
-        }
+            {vission_mission.map((e,index)=> (
+                <OneWhy key={index} img={e.img} title={e.title} desc={e.desc} />
+              ))}
         </div>
         </div>
 

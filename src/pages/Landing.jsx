@@ -91,7 +91,7 @@ const Landing = () => {
               </div>
 
               <div className="boxs ">
-                  <h3 className='h2 hidden-text' data-aos="fade-left">Are you searching for top-notch <br/> social media management services in Dubai?</h3>
+                  <h3 className='h2 hidden-text' data-aos="fade-left">Are you searching for top-notch social media management services in Dubai?</h3>
                   
                   <div className="box">
                       <h2 className='h3 hidden-text' data-aos="fade-left"> We've got you covered</h2>
@@ -154,8 +154,8 @@ const Landing = () => {
         </div>
     </div>
 
-    <Divider classn="divider" />
-      <Clients />
+    {/* <Divider classn="divider" />
+      <Clients /> */}
 
       <Footer />
     </div>

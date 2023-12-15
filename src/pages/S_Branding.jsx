@@ -55,14 +55,14 @@ const S_Branding = ({header =true}) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1 , 
     autoplay:true ,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -71,7 +71,7 @@ const S_Branding = ({header =true}) => {
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2,
           initialSlide: 1 ,
           dots: false,
@@ -146,7 +146,7 @@ const S_Branding = ({header =true}) => {
       <div className="signages">
         <Pattern2 />
           <div className="container">
-            <div className="h1 hidden-text">OUR WORKS</div>
+            <div className="h1 hidden-text">OUR GALLERY</div>
           </div>
 
           <div className="outdoor">
