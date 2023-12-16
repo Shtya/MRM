@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useState } from 'react'
 import Slider_1_Img from './Slide/Slider_1_Img';
 import { Pattern2, Pattern3 } from './patterns/Pattern1';
 
-import { blogs } from './docs_blogs';
+// import { blogs } from './docs_blogs';
+import baseURL from '../API/API';
 
 var settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 1000,
   slidesToShow: 3,
   slidesToScroll: 1 , 
   autoplay:true ,
@@ -22,7 +23,7 @@ var settings = {
       }
     },
     {
-      breakpoint: 1000,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -43,7 +44,8 @@ var settings = {
 
 
 const Blog = () => {
-
+  const [blogs , setdata] = useState()
+  useEffect(_=> { baseURL.get("" ).then(e => setdata(e.data.data)) } ,[])
   return (
     <section className='blog' id='Blog'>
       <Pattern2 />

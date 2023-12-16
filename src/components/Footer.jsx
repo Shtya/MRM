@@ -8,21 +8,17 @@ const Footer = ({appear}) => {
   return (
     <>
    
-    {appear != false && <Pattern9 />}
+    {/* {appear != false && <Pattern9 />} */}
+    <Divider classn="divider" />
     {appear != false &&<QuickContact  />}
-    {/* <Divider classn='divider-left' /> */}
-    <Pattern9 />
+    {appear == false ? <Divider classn='divider2' /> : <Pattern9  />}
+    {/* <Pattern9 /> */}
+    {/* <Divider classn="divider" /> */}
     <footer>
       <div className="container">
       <div className="top">
         <img src={Logo} alt="" />
         <div className="phead">We Don't Create Ads ,We Build Successful Campaigns</div>
-        {/* <ul className="social">
-          <li><i className="fa-brands fa-facebook-f"></i></li>
-          <li><i className="fa-brands fa-instagram"></i></li>
-          <li><i className="fa-brands fa-whatsapp"></i></li>
-          <li><i className="fa-brands fa-linkedin-in"></i></li>
-        </ul> */}
         <ul className='social last-social'>
           <li> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-facebook-f"></i>    </div> </a></li>
           <li> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-instagram"></i></div> </a></li>

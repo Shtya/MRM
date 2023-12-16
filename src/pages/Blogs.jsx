@@ -9,11 +9,14 @@ import Pattern1, { Divider } from '../components/patterns/Pattern1';
 
 import Animation from '../components/helpers/Animation';
 import baseURL, { baseImg } from '../API/API';
+import { useLocation } from 'react-router-dom';
 
 const Blogs = () => {
+  const {pathname} = useLocation()
+
   const [blogs , setblogs] = useState([])
-  const [customTitle , setcustomTitle] = useState([])
-  useEffect(_=>{ baseURL.get("").then(res => { setblogs(res.data.data) } )} ,[])
+  useEffect(_=>{ baseURL.get("").then(res => { setblogs(res.data.data) } )} ,[pathname])
+
   console.log(blogs)
   var settings = {
     dots: true,

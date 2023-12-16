@@ -166,7 +166,7 @@ header {
 header::before {
   content: "";
   position: absolute;
-  background: var(--overlay1);
+  background: rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 100%;
   top: 0;
@@ -1347,6 +1347,9 @@ header section .video video {
 .portfolio .h1 {
   margin-bottom: 10px;
 }
+.portfolio .bgCover {
+  z-index: 0;
+}
 .portfolio::after {
   content: "";
   position: absolute;
@@ -1865,7 +1868,7 @@ footer::before {
   content: "";
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.48);
+  background: rgba(0, 0, 0, 0.32);
   position: absolute;
   left: 0;
   top: 0;
@@ -2204,12 +2207,24 @@ footer .container .bottom .last a {
   padding: 40px 0;
   position: relative;
   color: white;
-  background: url("../assets/bg2.png");
+  background: url("../assets/bg/bg4.jpg");
   z-index: 1000;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+}
+.QuickContact::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.32);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 .QuickContact .container {
   z-index: 1000000000000;
@@ -2381,99 +2396,19 @@ footer .container .bottom .last a {
   -o-object-fit: fill;
      object-fit: fill;
 }
-.about-us .quotation {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  min-height: 30vh;
-  padding: 80px 0;
-  background-color: var(--second-bg);
-  z-index: 105;
-  position: relative;
-}
-.about-us .quotation::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
-}
-.about-us .quotation .h3 {
-  text-align: center;
-  width: calc(100% - 70px);
-  margin: 0 35px;
-  color: #eee;
-}
-@media (max-width: 850px) {
-  .about-us .quotation .h3 {
-    width: calc(100% - 50px);
-    margin: 0 auto !important;
-  }
-  .about-us .quotation .h3::before, .about-us .quotation .h3::after {
-    width: 25px !important;
-    height: 25px !important;
-  }
-  .about-us .quotation .h3::before {
-    left: -25px !important;
-  }
-  .about-us .quotation .h3::after {
-    right: -25px !important;
-  }
-}
-@media (max-width: 550px) {
-  .about-us .quotation .h3 {
-    text-align: left;
-    margin: 0;
-    width: 100%;
-  }
-  .about-us .quotation .h3::after, .about-us .quotation .h3::before {
-    display: none;
-  }
-}
-.about-us .quotation .h3::before {
-  content: "";
-  width: 40px;
-  height: 40px;
-  background: url("../assets/quote-top.png");
-  background-size: contain;
-  position: absolute;
-  top: -12px;
-  left: -40px;
-}
-.about-us .quotation .h3::after {
-  content: "";
-  width: 40px;
-  height: 40px;
-  background: url("../assets/quote-bottom.png");
-  background-size: contain;
-  position: absolute;
-  bottom: -12px;
-  right: -40px;
-}
-.about-us .quotation .h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-@media (max-width: 550px) {
-  .about-us .quotation .h2 {
-    text-align: left;
-    margin-bottom: 10px;
-  }
-}
 .about-us .divider-top {
   margin-top: -83px;
 }
 .about-us .searching {
-  padding: 50px 0;
+  padding: 100px 0;
   min-height: 50vh;
   position: relative;
+}
+.about-us .searching .bgCover {
+  z-index: 0;
+}
+.about-us .searching .bgCover::after {
+  z-index: 0;
 }
 .about-us .searching .container {
   gap: 20px;
@@ -2482,17 +2417,18 @@ footer .container .bottom .last a {
   align-items: stretch;
 }
 .about-us .searching .coverImg {
-  height: 500px;
+  height: 400px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   transition: 0.4s;
+  position: relative;
 }
 .about-us .searching .coverImg img {
   transition: 0.4s;
   width: 100%;
-  height: 140%;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   cursor: pointer;
@@ -2557,8 +2493,29 @@ footer .container .bottom .last a {
   min-height: 50vh;
   position: relative;
   padding: 50px 0;
-  background-color: var(--second-bg);
   z-index: 105;
+  background: url("../assets/bg/bg10.jpg");
+  z-index: 1000;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-us .WHY::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.48);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 .about-us .WHY .coverImg2 {
   height: 700px;
@@ -2613,15 +2570,15 @@ footer .container .bottom .last a {
   z-index: 10;
   padding-top: 40px;
 }
-@media (min-width: 1200px) {
-  .about-us .WHY .container {
-    width: 80%;
-  }
-}
 @media (min-width: 1300px) {
   .about-us .WHY .container {
     width: 1200px;
     margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .about-us .WHY .container {
+    width: 90%;
   }
 }
 @media (max-width: 1200px) {
@@ -2662,7 +2619,7 @@ footer .container .bottom .last a {
 }
 .about-us .WHY .container .one-why .coverImg {
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 .about-us .WHY .container .one-why .coverImg img {
   width: 100%;
@@ -4123,6 +4080,33 @@ footer .container .bottom .last a {
 }
 
 /*================================= LANDING_PAGE ================================*/
+.bgCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bgCover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bgCover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+
 .landing {
   color: white;
   background-color: var(--third-bg);
@@ -4160,7 +4144,7 @@ footer .container .bottom .last a {
 }
 .landing .home .container {
   display: grid;
-  grid-template-columns: 600px 1fr;
+  grid-template-columns: 1fr 700px;
   gap: 20px;
   align-items: center;
 }
@@ -4170,24 +4154,15 @@ footer .container .bottom .last a {
   }
   .landing .home .container .boxImg {
     height: 600px !important;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translate(-50%);
     width: 700px !important;
-    border: 3px solid #aaa;
-    outline: 2px solid #eee;
-  }
-  .landing .home .container .boxImg img {
-    width: 100% !important;
-    height: 100% !important;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    top: 5% !important;
   }
   .landing .home .container .boxs {
-    background: linear-gradient(to top, rgba(11, 10, 10, 0.3098039216), rgba(0, 0, 0, 0.2901960784), rgba(143, 143, 143, 0.1803921569));
+    background: linear-gradient(to top, rgba(11, 10, 10, 0.3098039216), rgba(0, 0, 0, 0.2901960784), rgba(0, 0, 0, 0.4666666667));
     position: absolute;
-    width: 800px;
+    width: 95% !important;
     left: 50%;
     transform: translateX(-50%);
     bottom: 30px;
@@ -4197,13 +4172,19 @@ footer .container .bottom .last a {
     box-shadow: 0 0 100px rgba(34, 34, 34, 0.2117647059) inset;
     border-radius: 4px;
   }
+  .landing .home .container .boxs .h1 {
+    font-size: 26px !important;
+  }
+  .landing .home .container .boxs .h3 {
+    font-size: 23px !important;
+  }
 }
 @media (max-width: 850px) {
   .landing .home .container .boxImg {
-    height: 400px !important;
+    height: 500px !important;
     top: -10px;
     left: 50%;
-    width: 500px !important;
+    width: 550px !important;
   }
   .landing .home .container .boxs {
     width: 600px;
@@ -4212,10 +4193,13 @@ footer .container .bottom .last a {
     bottom: 30px;
     text-align: center;
     background: transparent !important;
+    background: linear-gradient(to top, rgba(11, 10, 10, 0.3098039216), rgba(0, 0, 0, 0.2901960784), rgba(0, 0, 0, 0.4666666667)) !important;
   }
-  .landing .home .container .boxs .h1, .landing .home .container .boxs .h3, .landing .home .container .boxs .h2 {
-    text-align: center !important;
-    font-size: 1.2rem !important;
+  .landing .home .container .boxs .h1 {
+    font-size: 24px !important;
+  }
+  .landing .home .container .boxs .h3 {
+    font-size: 22px !important;
   }
   .landing .home .container .boxs .inner-boxs {
     width: 60%;
@@ -4266,15 +4250,28 @@ footer .container .bottom .last a {
   }
 }
 .landing .home .container .boxImg {
+  width: 700px;
+  height: 650px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.landing .home .container .boxImg::after {
+  content: "";
   width: 100%;
-  height: 80vh;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1490196078);
 }
 .landing .home .container .boxImg img {
   width: 100%;
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
-  border: 3px solid rgba(35, 35, 35, 0.7294117647);
+  border: 3px solid #9f8746;
 }
 .landing .home .container .boxs {
   flex: 1;
@@ -4282,6 +4279,12 @@ footer .container .bottom .last a {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
+  position: absolute;
+  width: 70%;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 .landing .home .container .boxs .h1 {
   text-align: left;
@@ -4364,23 +4367,8 @@ footer .container .bottom .last a {
   flex-direction: column;
   min-height: 30vh;
   padding: 80px 0;
-  background-color: var(--second-bg);
   z-index: 105;
   position: relative;
-}
-.landing .quotation::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .landing .quotation .h3 {
   text-align: center;
@@ -4427,6 +4415,7 @@ footer .container .bottom .last a {
 .landing .quotation .h2 {
   text-align: center;
   margin-bottom: 10px;
+  text-wrap: unset !important;
 }
 .landing .searching {
   padding: 70px 0 50px;
@@ -4582,20 +4571,6 @@ footer .container .bottom .last a {
   z-index: 105;
   position: relative;
 }
-.landing .social-media::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
-}
 .landing .social-media .container {
   display: flex;
   flex-direction: column;
@@ -4709,19 +4684,8 @@ footer .container .bottom .last a {
   z-index: 105;
   position: relative;
 }
-.landing .platforms::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
+.landing .platforms .bgCover::after {
+  background: rgba(0, 0, 0, 0.1);
 }
 .landing .platforms .container .boxs {
   margin-top: 20px;
@@ -4854,20 +4818,6 @@ footer .container .bottom .last a {
 }
 .landing .process .h1 {
   margin-bottom: 30px;
-}
-.landing .process::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .landing .process .container {
   display: flex;
@@ -5512,20 +5462,6 @@ footer .container .bottom .last a {
 .WEB_DESIGN .social-media .h1 {
   margin-bottom: -10px !important;
 }
-.WEB_DESIGN .social-media::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
-}
 .WEB_DESIGN .social-media .container {
   display: flex;
   flex-direction: column;
@@ -5647,27 +5583,13 @@ footer .container .bottom .last a {
 .WEB_DESIGN .our_Approach {
   display: flex;
   align-items: center;
-  background-color: var(--second-bg);
   position: relative;
   color: white;
-  background: url("../assets/bg/(6).jpg");
-  z-index: 1000;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  padding-top: 30px;
   min-height: 120vh;
   position: relative;
 }
-.WEB_DESIGN .our_Approach::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+.WEB_DESIGN .our_Approach .bgCover {
+  z-index: 0;
 }
 @media (max-width: 1160px) {
   .WEB_DESIGN .our_Approach {
@@ -9460,7 +9382,7 @@ footer .container .bottom .last a {
 }
 .Slider_2_Imgs .container .slick-dots {
   position: absolute;
-  bottom: 18px;
+  bottom: -31px;
   left: 0;
 }
 @media (max-width: 600px) {

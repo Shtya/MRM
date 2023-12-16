@@ -46,10 +46,10 @@ const settings = {
   dots: true,
   infinite: true,
   slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   autoplay:true  ,
-  speed: 3000,
-  autoplaySpeed: 3000 ,
+  speed: 2000,
+  autoplaySpeed: 5000 ,
   cssEase: "linear" ,
   responsive: [
     {breakpoint: 1100,

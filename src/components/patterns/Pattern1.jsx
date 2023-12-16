@@ -132,9 +132,9 @@ export const Pattern8 = ()=>{
               </div>
   )
   }
-export const Pattern9 = ()=>{
+export const Pattern9 = ({classn})=>{
   return (
-    <div className="Pattern9">
+    <div className={`Pattern9 ${classn}`}>
       <span></span>
       <span> <li className='one'/>   <li className='two'/>   <li className='three'/>  </span>
       <span></span>

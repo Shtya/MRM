@@ -12,7 +12,6 @@ const Section = ["Digital Marketing News" ,"Latest Updates & Insights" , "Tips &
 
 const E_post = () => {
   const editor = useRef(null);
-  const [OnePost , setOnePost] = useState()
   const navigate = useNavigate();
   const [isload , setisload] = useState(false)
   const [Img, setImg] = useState("");
@@ -25,15 +24,10 @@ const E_post = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log( Des )
-      if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the field!")
-    var form = new FormData();
-    form.append( 'title', title );
-    form.append( 'description', Des);
-    form.append( 'category', category );
-    form.append( 'thumbnail', Img );
+    if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the field!")
+
     setisload(true)
-    await baseURL.post("" , form , config)
+    await baseURL.post("" , {title ,description:Des , category , thumbnail:Img } , config)
     setisload(false)
     navigate("/MRM")
   }

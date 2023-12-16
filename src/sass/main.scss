@@ -150,7 +150,7 @@ header{
   &::before{
     content: "";
     position: absolute;
-    background: var(--overlay1);
+    background: rgb(0 0 0 / 10%);
     width: 100%;
     height: 100%;
     top: 0;
@@ -1255,6 +1255,9 @@ nav .navbar .links li .sub-menu li{
   min-height: 60vh;
   padding: 50px 0;
   .h1{ margin-bottom: 10px;}
+  .bgCover{
+    z-index:0 ;
+  }
   &::after {
     content: '';
     position: absolute;
@@ -1745,7 +1748,7 @@ footer{
       content: "";
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.48);
+      background: rgb(0 0 0 / 32%);
       position: absolute;
       left: 0;
       top: 0;
@@ -2072,12 +2075,23 @@ footer{
   padding: 40px 0 ;
   position: relative;
   color: white;
-  background: url("../assets/bg2.png");
+  background: url("../assets/bg/bg4.jpg");
   z-index: 1000;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  &::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:rgb(0 0 0 / 32%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    backdrop-filter: blur(2px);
+  }
   .container{
     z-index: 1000000000000;
     position: relative;
@@ -2204,84 +2218,19 @@ footer{
       object-fit: fill;
     }
   }
-  .quotation{
-    display: flex; align-items: center; flex-direction: column;
-    min-height: 30vh;
-    padding: 80px 0;
-    background-color: var(--second-bg);
-    z-index: 105; 
-    position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
-    .h3{
-      text-align: center;
-      width: calc(100% - 70px);
-      margin: 0 35px;
-      color: #eee;
-      @media (max-width:850px){
-        width: calc(100% - 50px );
-        margin: 0 auto !important;
-        &::before , &::after{
-          width:25px !important ;
-          height:25px !important;
-        }
-        &::before{left: -25px !important;}
-        &::after{right: -25px !important;}
-      }
-      @media (max-width:550px) {
-        &::after ,&::before{display: none;}
-        text-align: left;
-        margin: 0;
-        width:100% ;
-      }
-      &::before{
-        content:"" ;
-        width: 40px;
-        height: 40px;
-        background: url("../assets/quote-top.png");
-        background-size: contain;
-        position: absolute;
-        top: -12px;
-        left: -40px;
-      }
-      &::after{
-        content:"" ;
-        width: 40px;
-        height: 40px;
-        background: url("../assets/quote-bottom.png");
-        background-size: contain;
-        position: absolute;
-        bottom: -12px;
-        right: -40px;
-      }
-    }
-    .h2{
-      text-align: center;
-      margin-bottom: 10px;
-      @media (max-width:550px) {
-        text-align: left;
-        margin-bottom: 10px;
-      }
-    }
-  }
+
   .divider-top{margin-top: -83px;}
+
   .searching{
-    padding: 50px  0;
+    padding: 100px  0 ;
     min-height: 50vh;
     position: relative;
-    // margin-top: -70px;
+    .bgCover{
+      z-index: 0;
+      &::after{
+        z-index: 0;
+      }
+    }
     .container{
       gap: 20px;
       display: grid;
@@ -2289,13 +2238,14 @@ footer{
       align-items: stretch;
     }
     .coverImg{
-      height: 500px;
+      height: 400px;
       display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between;
       transition: .4s;
+      position: relative;
       img{
         transition: 0.4s;
         width: 100%;
-        height: 140%;
+        height: 100%;
         object-fit: contain;
         cursor: pointer;
         background-position-y: 31%;
@@ -2355,8 +2305,25 @@ footer{
     min-height: 50vh;
     position: relative;
     padding: 50px 0 ; 
-    background-color: var(--second-bg);
-    z-index: 105; 
+    z-index: 105;
+    background: url("../assets/bg/bg10.jpg");
+    z-index: 1000;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex; align-items: flex-start; flex-direction: column; justify-content: center;
+    &::after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgb(0 0 0 / 48%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      backdrop-filter: blur(2px);
+    } 
     .coverImg2{
       height: 700px ;
       outline: 2px solid #181818;
@@ -2382,8 +2349,8 @@ footer{
       z-index: 10;
       
       padding-top: 40px;
-      @media (min-width: 1200px) { width:80% ;}
       @media (min-width: 1300px) { width:1200px ; margin: auto;}
+      @media (min-width: 1200px) { width:90% ;}
       @media (max-width:1200px) { width:90% ; margin: auto;}
       @media (max-width:1100px) {.coverImg{height: 400px !important;}}
       @media (max-width:900px) {.coverImg{height: 300px !important;}}
@@ -2398,7 +2365,7 @@ footer{
         box-shadow: 0 0 10px #000 inset;
         .coverImg{
           width: 100%;
-          height: 500px;
+          height: 600px;
           img{
             width: 100%;
             height: 100%;
@@ -4001,6 +3968,30 @@ footer{
 //===========================================================================================//
 
 /*================================= LANDING_PAGE ================================*/
+.bgCover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 10%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    backdrop-filter: blur(1px);
+  }
+}
 .landing{ 
   color: white;
   background-color: var(--third-bg);
@@ -4032,29 +4023,21 @@ footer{
     display: flex;
     z-index: 10000;
     .container{
-      display: grid; grid-template-columns: 600px 1fr; gap: 20px; align-items: center;
+      display: grid; 
+      grid-template-columns:1fr 700px ; gap: 20px; align-items: center;
         @media (max-width:1100px) {
           grid-template-columns: 1fr;
           .boxImg{
-            height: 600px!important;
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            transform: translate(-50%);
+            height: 600px !important;
             width: 700px !important;
-            border: 3px solid #aaa;
-            outline: 2px solid #eee;
-            img{
-              width:100% !important;
-              height:100% !important;
-            }
+            left: 50%;
+            transform: translateX(-50%) !important;
+            top: 5% !important;
           }
           .boxs{
-            background: linear-gradient(to top , #0b0a0a4f , #0000004a , #8f8f8f2e);
+            background: linear-gradient(to top , #0b0a0a4f , #0000004a , #00000077);
             position: absolute;
-            width: 800px;
+            width: 95% !important;
             left:50%;
             transform: translateX(-50%);
             bottom: 30px;
@@ -4062,14 +4045,16 @@ footer{
             padding: 10px;
             box-shadow: 0 0 100px #22222236 inset;
             border-radius: 4px;
+            .h1{    font-size: 26px !important; }
+            .h3{    font-size: 23px !important; }
           }
         }
         @media (max-width:850px) {
           .boxImg{
-            height: 400px !important;
+            height: 500px !important;
             top: -10px;
             left: 50%;
-            width: 500px !important;
+            width: 550px !important;
           }
           .boxs{
             width: 600px;
@@ -4078,7 +4063,10 @@ footer{
             bottom: 30px;
             text-align: center;
             background:transparent !important ;
-            .h1 , .h3 , .h2{text-align: center !important; font-size: 1.2rem !important;}
+            .h1{    font-size: 24px !important; }
+            .h3{    font-size: 22px !important; }
+            background: linear-gradient(to top , #0b0a0a4f , #0000004a , #00000077) !important;
+
             .inner-boxs{
               width: 60%;
               justify-content: center;
@@ -4123,17 +4111,36 @@ footer{
           }
         }
       .boxImg{
-        width: 100%;
-        height: 80vh;
+        width: 700px;
+        height: 650px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        &::after{
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #00000026;
+        }
         img{
           width: 100%;
           height: 100%;
           object-fit: fill;
-          border: 3px solid #232323ba;
+          border: 3px solid #9f8746;
         }
       }
       .boxs{
         flex: 1; display: flex; justify-content: center; flex-direction: column; gap: 10px;
+        position: absolute;
+        width: 70%;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
         .h1{
           text-align: left; margin-bottom: 0;
           // text-wrap: balance;
@@ -4194,23 +4201,8 @@ footer{
     display: flex; align-items: center; flex-direction: column;
     min-height: 30vh;
     padding: 80px 0;
-    background-color: var(--second-bg);
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
     .h3{
       text-align: center;
       width: calc(100% - 70px);
@@ -4250,6 +4242,7 @@ footer{
     .h2{
       text-align: center;
       margin-bottom: 10px;
+      text-wrap: unset !important;
     }
   }
 
@@ -4389,20 +4382,6 @@ footer{
     background-color: var(--second-bg);
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
     .container{
       display: flex;flex-direction: column; align-items: center; justify-content: center; gap: 20px;
       .h1{margin-bottom: 0px;}
@@ -4497,20 +4476,9 @@ footer{
     background-color: var(--third-bg);
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
+    .bgCover{&::after{
+        background: rgb(0 0 0 / 10%);
+      } }
     .container{
       // @media (max-width:790px) { .h1{width: 100%; text-align: left;} }
       .boxs{
@@ -4645,20 +4613,6 @@ footer{
     z-index: 105; 
     position: relative;
     .h1{margin-bottom: 30px;}
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
     .container{
       display: flex; align-items: center; justify-content: space-between;
       position: relative;
@@ -5210,20 +5164,6 @@ footer{
     z-index: 105; 
     position: relative;
     .h1{margin-bottom: -10px !important;}
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
     .container{
       display: flex;flex-direction: column; align-items: center; justify-content: center; gap: 20px;
       .h1{margin-bottom: 0px;}
@@ -5316,28 +5256,11 @@ footer{
   }}
   .our_Approach{
     display: flex; align-items: center;
-    background-color: var(--second-bg);
     position: relative;
     color: white;
-    background: url("../assets/bg/\(6\).jpg");
-    z-index: 1000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    padding-top: 30px;
-      &::before{
-        content: "";
-        width: 100%;
-        height: 100%;
-        // background: #00000054;
-        position: absolute;
-        top: 0;
-        left: 0;
-        backdrop-filter: blur(2px);
-      }
-    
     min-height: 120vh;
     position: relative;
+    .bgCover{z-index: 0;}
     @media (max-width:1160px){ display: none;}
     .container{
       padding: 100px 0;
@@ -9271,7 +9194,7 @@ footer{
     height: 100%;
     .slick-dots{
       position: absolute;
-      bottom: 18px;
+      bottom: -31px;
       @media (max-width:600px) {
         bottom: -20px !important ; 
       }

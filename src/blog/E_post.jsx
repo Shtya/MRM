@@ -33,19 +33,10 @@ const E_post = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the fields!")
-    var form = new FormData();
-    form.append( 'title', title );
-    form.append( 'description', Des);
-    form.append( 'category', category );
-    form.append( 'thumbnail', Img );
-    // {title , category , description:Des , thumbnail:Img}
+
     setisload(true)
-    await baseURL.put(id , form , config).then(res => console.log(res))
+    await baseURL.put(id , {title ,description:Des , category , thumbnail:Img } , config )
     setisload(false)
-    settitle("")
-    setDes("")
-    setCategory("")
-    setImg("")
     navigate("/MRM")
   }
 
@@ -62,11 +53,11 @@ const E_post = () => {
               <input type="file"                  value={Img[0]}    onChange={handleImg} autoFocus />
 
               <JoditEditor
-                  ref={editor}
-                  value={Des}
-                  config={config}
-                  tabIndex={1} // tabIndex of textarea
-                  onChange={setDes}
+                ref={editor}
+                value={Des}
+                config={config}
+                tabIndex={1} // tabIndex of textarea
+                onChange={setDes}
                 />
 
               <button className='bt' style={{opacity: !isload ? "1":".7" }}  onClick={handleSubmit} > 

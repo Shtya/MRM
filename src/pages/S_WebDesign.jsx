@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
-import Intro from '../components/Intro'
+import IMG1 from "../assets/bg/bg3.jpg"
+import IMG2 from "../assets/bg/b4.jpg"
+import IMG3 from "../assets/bg/b1.jpg"
 import ImgIntro from "../assets/web-design/intro.jpg"
 import ImgSection from "../assets/web-design/section.jpg"
 import OneSocial from '../components/OneSocial'
@@ -57,7 +59,6 @@ const S_WebDesign = () => {
       <div className="coverIntro"> <img src={ImgIntro} alt="" /></div>
       <div className="home">
         <div className="container">
-          <div className="boxImg hidden-img" >  <img src={ImgSection} alt="" /> </div>
           <div className="boxs" >
             <h2 className='h1 hidden-text' data-aos="fade-left">Boost the Effectiveness of Your Website's Online Presence. </h2>
             <p className='h3 hidden-text' data-aos="fade-left"> Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development. </p>
@@ -75,21 +76,24 @@ const S_WebDesign = () => {
 
             </div>
           </div>
+          <div className="boxImg hidden-img" >  <img src={ImgSection} alt="" /> </div>
         </div>
       </div>
 
       <Divider classn="divider" />
       <div className="quotation">
-        <Pattern1 />
+      <div className="bgCover"> <img  src={IMG1} alt="" /> </div>
+        {/* <Pattern1 /> */}
             <div className="container" data-aos="fade-rigth">
-            <p className='h2 hidden-text'>MRM is Your Partner in Web Development <br/> and Design in Dubai, UAE</p>
+            <p className='h2 hidden-text'>MRM is Your Partner in Web Development and Design in Dubai, UAE</p>
             <p className='h3 '>MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality.</p>
             </div>
         </div>
 
         <Divider classn="divider-left" />
         <div className="social-media">
-          <Pattern3 />
+          {/* <Pattern3 /> */}
+          <div className="bgCover"> <img  src={IMG1} alt="" /> </div>
         <div className="container">
             <h3 className='h1 hidden-text clip'>Our Specializations</h3>
             <div className="phead hidden-text">We specialize in the following web design and development services</div> 
@@ -103,6 +107,7 @@ const S_WebDesign = () => {
 
         <Divider classn="divider divider-rsize" />
         <div className="our_Approach">
+        <div className="bgCover"> <img  src={IMG1} alt="" /> </div>
           {/* <Pattern2 /> */}
             <div className="container">
                 <div className="circle">
@@ -128,7 +133,7 @@ const S_WebDesign = () => {
         </div>
       
         <Divider classn="divider-left" />
-      <Portfolio header={false} typeGallery="Web design" nameofgallery="THE GALLERY" />
+      <Portfolio bg={<div className="bgCover"> <img  src={IMG1} alt="" /> </div>} header={false} typeGallery="Web design" nameofgallery="THE GALLERY" />
 
       <Footer />
       </div>

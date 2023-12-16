@@ -8,8 +8,9 @@ import Navbar from '../components/Navbar'
 import OneWhy from '../components/OneWhy'
 import Footer from '../components/Footer'
 import Animation from '../components/helpers/Animation'
-import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
-
+import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/patterns/Pattern1'
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG1 from "../assets/bg/bg3.jpg"
 
 const AboutUs = () => {
   const [width , setwidth] = useState(0)
@@ -26,33 +27,23 @@ const AboutUs = () => {
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro hidden-img"> <img src={ImgIntro}  /></div>
 
-
-      {/* <Divider classn="divider divider-top" /> */}
-      <div className="quotation divider-top ">
-        <Pattern1 />
-            <div className="container" data-aos="fade-rigth">
-            <p className='h2 hidden-text'>We are a global creative agency based in the UAE and a leading agency in advertising, marketing, and digital solutions. </p>
-            <p className='h3 '>Our expertise is helping companies establish a strong and professional presence in physical and digital spaces using innovative and effective strategies.We create exceptional visual identities and build robust online presences for brands. Our team is dedicated to delivering top-notch services, utilizing the latest technologies and top-notch solutions to achieve tangible results. We offer professional marketing services to help your brand shine, from visual identities to online experiences. </p>
-            </div>
-        </div>
-
-
-        {/* <Divider classn="divider " />
-        <div className="searching">
-          <Pattern1 />
+        <Divider classn=" divider-top " />
+        {/* <Pattern9 classn="divider-top" /> */}
+        <div className="searching ">
+        <div className="bgCover"> <img  src={IMG1} alt="" /> </div>
           <div className="container">
-            <div className="coverImg hidden-img " data-aos="fade-right"> <img src={ImgContact} alt="" /> </div>
-            <div className="boxs " data-aos="fade-left">
-                <h3 className='box  hidden-text'>We are a global creative agency based in the UAE and a leading agency in advertising, marketing, and digital solutions. Our expertise is helping companies establish a strong and professional presence in physical and digital spaces using innovative and effective strategies.</h3>
-                <h2 className='box  hidden-text'>We create exceptional visual identities and build robust online presences for brands. Our team is dedicated to delivering top-notch services, utilizing the latest technologies and top-notch solutions to achieve tangible results. We offer professional marketing services to help your brand shine, from visual identities to online experiences. </h2>
+            <div className="coverImg "> <img src={ImgContact} alt="" /> </div>
+            <div className="boxs ">
+                <h3 className='box '>We are a global creative agency based in the UAE and a leading agency in advertising, marketing, and digital solutions. Our expertise is helping companies establish a strong and professional presence in physical and digital spaces using innovative and effective strategies.</h3>
+                <h2 className='box '>We create exceptional visual identities and build robust online presences for brands. Our team is dedicated to delivering top-notch services, utilizing the latest technologies and top-notch solutions to achieve tangible results. We offer professional marketing services to help your brand shine, from visual identities to online experiences. </h2>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        <Divider classn="divider-left" />
+        <Divider classn="divider" />
+        {/* <Pattern9 /> */}
         <div className="WHY">
-          <Pattern2 />
-            <div className="coverImg2 .container4 " data-aos="fade-right"> <img src={ImgContact} alt="" /> </div>
+          <div className="bgCover"> <img  src={IMG2} alt="" /> </div>
           <div className="container">
             {vission_mission.map((e,index)=> (
                 <OneWhy key={index} img={e.img} title={e.title} desc={e.desc} />
@@ -60,9 +51,6 @@ const AboutUs = () => {
         </div>
         </div>
 
-
-        {/* <Divider classn="divider" /> */}
-      {/* <Contact onHere={true} /> */}
       <Footer />
     </div>
   )

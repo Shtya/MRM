@@ -24,7 +24,7 @@ var settings = {
 
 
 
-const Portfolio = ({header  , typeGallery , nameofgallery  }) => {
+const Portfolio = ({header  , typeGallery , nameofgallery , bg  }) => {
   const headers = [ "all" , "Signages", "Stands", "Exhibition", "branding", "photography", "Web design",]
 
   const Imgs = ImgsPortfolio(headers)
@@ -42,7 +42,7 @@ const Portfolio = ({header  , typeGallery , nameofgallery  }) => {
 
   return (
     <section className='portfolio' id="Portfolio">
-      <Pattern3 />
+      {bg ? bg : <Pattern3 />}
       <h2 className='h1 clip' >{ nameofgallery || "OUR WORKS"}</h2>
       {!header == false && <div className="header1">{
           headers.map((e,index)=> (
