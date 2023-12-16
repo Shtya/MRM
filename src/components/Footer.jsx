@@ -8,8 +8,8 @@ const Footer = ({appear}) => {
   return (
     <>
    
-    {/* {appear != false && <Pattern9 />} */}
-    <Divider classn="divider" />
+    {appear != false && <Pattern9 />}
+    {/* <Divider classn="divider" /> */}
     {appear != false &&<QuickContact  />}
     {appear == false ? <Divider classn='divider2' /> : <Pattern9  />}
     {/* <Pattern9 /> */}

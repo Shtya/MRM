@@ -34,9 +34,7 @@ import DisplayStand4  from "../assets/gallery/display stand/display-stands (4).j
 import DisplayStand5  from "../assets/gallery/display stand/display-stands (5).jpg" ;
 import DisplayStand6  from "../assets/gallery/display stand/display-stands (6).jpg" ;
 import DisplayStand7  from "../assets/gallery/display stand/display-stands (7).jpg" ;
-import DisplayStand8  from "../assets/gallery/display stand/display-stands (8).jpg" ;
-import DisplayStand9  from "../assets/gallery/display stand/display-stands (9).jpg" ;
-import  DisplayStand10 from "../assets/gallery/display stand/display-stands (10).jpg" ;
+
 import Animation from "../components/helpers/Animation";
 import Pattern1, { Divider, Pattern2, Pattern3 } from "../components/patterns/Pattern1";
 
@@ -61,9 +59,6 @@ const S_Exhibition = () => {
     {img:DisplayStand5, animate:"fade-up" } ,
     {img:DisplayStand6, animate:"fade-up" } ,
     {img:DisplayStand7, animate:"fade-up" } ,
-    {img:DisplayStand8, animate:"fade-up" } ,
-    {img:DisplayStand9 , animate:"fade-up" } ,
-    {img:DisplayStand10 , animate:"fade-up" } ,
   ]
   const Exhibition = [
     {img:Exhibition1, animate:"fade-up" } ,

@@ -2908,6 +2908,16 @@ footer{
       gap: 20px;
       grid-template-columns: 1fr 400px;
       align-items: center;
+      @media (max-width:950px){
+        grid-template-columns: 400px;
+        .box , .box1{width: 95vw !important;.contact-text { font-family: 'Noto Sans' , Arial ; letter-spacing: 0 !important;}}
+        .box1{
+          width: 90vw !important;
+          margin: 0 2vw ;
+          height:fit-content !important ;
+          
+        }
+      }
       .box{
         position: relative;
         background: url("../assets/contact-us/map.jpg");
@@ -2930,7 +2940,9 @@ footer{
           z-index: -1;
         }
         .text{
-          @media (max-width:880px) {display: none;}
+          @media (max-width:1100px) {
+            .h1{font-size: 20px !important ; }
+          }
           .h1{
             text-shadow: 0 0 transparent;
             color: white;
@@ -4009,7 +4021,7 @@ footer{
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: var(--overlay);
+      background-color: #4746461f;
     }
     img{
       width: 100%;
@@ -4095,18 +4107,17 @@ footer{
               width: 100% !important;}
           }
         }
-        @media (max-width:450px) {
+        @media (max-width:550px) {
           .boxImg{
-            display: none;
+            // display: none;
           }
           .boxs{
-            width: 300px;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            left: 0 !important;
+            width: 100% !important;
+            height: -moz-fit-content;
             height: fit-content;
-            top: 50%;
+            top: 72% !important;
             text-align: center;
-            padding: 20px 10px;
             .h2{text-align: left !important;}
           }
         }
@@ -4144,9 +4155,9 @@ footer{
         .h1{
           text-align: left; margin-bottom: 0;
           // text-wrap: balance;
-          font-size: 30px;
+          font-size: 24px;
           text-transform: uppercase;
-          @media (max-width:1000px) { font-size: 25px !important; }
+          @media (max-width:1000px) { font-size: 22px !important; }
           @media (max-width:700px) { font-size: 20px !important; }
         }
         .h2 , .h3{
@@ -4157,7 +4168,7 @@ footer{
           font-family: 'Montserrat' , Arial;
           font-weight: 500;
           letter-spacing: 0;
-          font-size: 25px;
+          font-size: 22px;
           text-transform: capitalize;
           @media (max-width:1000px) { font-size: 20px !important; }
           @media (max-width:700px) { font-size: 18px !important; }
@@ -5249,7 +5260,7 @@ footer{
       }
   }
   }
-
+  @media (max-width:1160px){ .Abrotch{display: none;}}
   @media (max-width:1160px){
     .divider-rsize{
     display: none;
@@ -5292,6 +5303,7 @@ footer{
           top: 0;
           left:50%;
           display: flex; align-items: center;
+          z-index: 1;
           .container1{
             width: 90%;
             padding-left: 30px;
@@ -9809,32 +9821,33 @@ h4{
   transform: translateX(0) !important;
 }
 
-.hidden-text{
-  transition: .5s;
-  z-index: 3;
-  --transition:.6s ;
-  transition: var(--transition);
-  &::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #171717, #1c1c1c);
-    opacity: 1;
-    top: 0;
-    left: 0;
-    transition: var(--transition);
-    transition-delay: .5s ;
-  // z-index: -1 ;
-}}
-.hidden-acitve{
-  &::after{
-  width: 0 !important;
-}}
+// .hidden-text{
+//   transition: .5s;
+//   z-index: 3;
+//   --transition:.6s ;
+//   transition: var(--transition);
+//   &::after{
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     background: linear-gradient(to right, #171717, #1c1c1c);
+//     opacity: 1;
+//     top: 0;
+//     left: 0;
+//     transition: var(--transition);
+//     transition-delay: .5s ;
+//   // z-index: -1 ;
+// }}
+// .hidden-acitve{
+//   &::after{
+//   width: 0 !important;
+// }}
 
-.hidden-img{
-  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-}
+// .hidden-img{
+//   clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+// }
+
 .show-img{
   transition: .6s;
   transition-delay: 1s;

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { ImgsPortfolio } from './Images';
 import Slider_2_Imgs from './Slide/Slider_2_Imgs';
 import { Pattern2, Pattern3, Pattern4 } from './patterns/Pattern1';
+import { useLocation } from 'react-router-dom';
 
 var settings = {
   dots: true,
@@ -26,11 +27,12 @@ var settings = {
 
 const Portfolio = ({header  , typeGallery , nameofgallery , bg  }) => {
   const headers = [ "all" , "Signages", "Stands", "Exhibition", "branding", "photography", "Web design",]
+  const {pathname} = useLocation()
 
   const Imgs = ImgsPortfolio(headers)
   const [data , setdata ] = useState(Imgs)
-  const [type , settype ] =useState( "all") ;
-  useEffect(_=>{ setdata(Imgs.filter(e => e.type.includes("all"))) } ,[])
+  const [type , settype ] =useState("all") ;
+  useEffect(_=>{ setdata(Imgs.filter(e => e.type.includes(typeGallery))) } ,[pathname])
 
   const handleHeaders = (ele)=>{
     setdata( Imgs.filter(e =>{

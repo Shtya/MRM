@@ -23,7 +23,7 @@ import Icon_8 from "../assets/web-design/icon-8.png" ;
 
 import Portfolio from '../components/Portfolio'
 import Animation from '../components/helpers/Animation'
-import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
+import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/patterns/Pattern1'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -80,7 +80,8 @@ const S_WebDesign = () => {
         </div>
       </div>
 
-      <Divider classn="divider" />
+      {/* <Divider classn="divider" /> */}
+      <Pattern9 />
       <div className="quotation">
       <div className="bgCover"> <img  src={IMG1} alt="" /> </div>
         {/* <Pattern1 /> */}
@@ -90,7 +91,8 @@ const S_WebDesign = () => {
             </div>
         </div>
 
-        <Divider classn="divider-left" />
+        {/* <Divider classn="divider-left" /> */}
+        <Pattern9 />
         <div className="social-media">
           {/* <Pattern3 /> */}
           <div className="bgCover"> <img  src={IMG1} alt="" /> </div>
@@ -105,7 +107,8 @@ const S_WebDesign = () => {
         {/* <RoadMap /> */}
 
 
-        <Divider classn="divider divider-rsize" />
+        {/* <Divider classn="divider divider-rsize" /> */}
+        <Pattern9 classn="Abrotch" />
         <div className="our_Approach">
         <div className="bgCover"> <img  src={IMG1} alt="" /> </div>
           {/* <Pattern2 /> */}
@@ -132,7 +135,8 @@ const S_WebDesign = () => {
             </div>
         </div>
       
-        <Divider classn="divider-left" />
+        {/* <Divider classn="divider-left" /> */}
+        <Pattern9 />
       <Portfolio bg={<div className="bgCover"> <img  src={IMG1} alt="" /> </div>} header={false} typeGallery="Web design" nameofgallery="THE GALLERY" />
 
       <Footer />

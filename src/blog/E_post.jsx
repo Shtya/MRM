@@ -9,7 +9,6 @@ const config = {headers : { "Content-Type":"multipart/form-data" , "Cache-Contro
 const Section = ["Digital Marketing News" ,"Latest Updates & Insights" , "Tips & Strategies" ]
 
 
-
 const E_post = () => {
   const editor = useRef(null);
   const {id} = useParams()

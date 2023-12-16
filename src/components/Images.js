@@ -15,9 +15,7 @@ import DisplayStand4  from "../assets/gallery/display stand/display-stands (4).j
 import DisplayStand5  from "../assets/gallery/display stand/display-stands (5).jpg"
 import DisplayStand6  from "../assets/gallery/display stand/display-stands (6).jpg"
 import DisplayStand7  from "../assets/gallery/display stand/display-stands (7).jpg"
-import DisplayStand8  from "../assets/gallery/display stand/display-stands (8).jpg"
-import DisplayStand9  from "../assets/gallery/display stand/display-stands (9).jpg"
-import DisplayStand10 from "../assets/gallery/display stand/display-stands (10).jpg"
+
 
 import Exhibition1 from "../assets/gallery/exhibition stand/(1).jpg"
 import Exhibition2 from "../assets/gallery/exhibition stand/(2).jpg"
@@ -54,7 +52,6 @@ import webDesign3 from "../assets/gallery/web design/web (3).jpg"
 import webDesign4 from "../assets/gallery/web design/web (4).jpg"
 import webDesign5 from "../assets/gallery/web design/web (5).jpg"
 import webDesign6 from "../assets/gallery/web design/web (6).jpg"
-import webDesign7 from "../assets/gallery/web design/web (7).jpg"
 
 
 
@@ -122,9 +119,7 @@ export function ImgsPortfolio (headers) {
   {img: DisplayStand5   , type:`${headers[2]} ` }  ,
   {img: DisplayStand6   , type:`${headers[2]} ` }  ,
   {img: DisplayStand7   , type:`${headers[2]} ` }  ,
-  {img: DisplayStand8   , type:`${headers[2]} ` }  ,
-  {img: DisplayStand9   , type:`${headers[2]} all` }  ,
-  {img: DisplayStand10  , type:`${headers[2]} all` }  ,
+
 
   {img:  Exhibition1   , type:`${headers[3]} all` }  ,
   {img:  Exhibition2   , type:`${headers[3]} all` }  ,
@@ -161,7 +156,6 @@ export function ImgsPortfolio (headers) {
   {img: webDesign4  , type:`${headers[6]} ` }  ,
   {img: webDesign5  , type:`${headers[6]} ` }  ,
   {img: webDesign6  , type:`${headers[6]} ` }  ,
-  {img: webDesign7  , type:`${headers[6]} all` }  ,
   
 ]
 
@@ -187,9 +181,6 @@ export function Imgsignages () {
   {img: DisplayStand5   , class:"req" , type:` all` }  ,
   {img: DisplayStand6   , class:"req" , type:` all` }  ,
   {img: DisplayStand7   , class:"req" , type:` all` }  ,
-  {img: DisplayStand8   , class:"squ" , type:` all` }  ,
-  {img: DisplayStand9   , class:"squ" , type:` all` }  ,
-  {img: DisplayStand10  , class:"squ" , type:` all` }  ,
 
 ]
 
