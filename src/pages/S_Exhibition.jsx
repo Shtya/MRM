@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 
 import Footer from '../components/Footer'
@@ -36,8 +34,11 @@ import DisplayStand6  from "../assets/gallery/display stand/display-stands (6).j
 import DisplayStand7  from "../assets/gallery/display stand/display-stands (7).jpg" ;
 
 import Animation from "../components/helpers/Animation";
-import Pattern1, { Divider, Pattern2, Pattern3 } from "../components/patterns/Pattern1";
+import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from "../components/patterns/Pattern1";
 
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg5.jpg"
+import IMG3 from "../assets/bg/bg3.jpg"
 
 
 const BRANDING_SERVICES = [
@@ -75,7 +76,6 @@ const S_Exhibition = () => {
 
   const [Img , setImg] = useState()
 
-
   return (
     <div className="S_Exhibition landing">
       <div className="container"> <Navbar /> </div>
@@ -94,9 +94,9 @@ const S_Exhibition = () => {
         </div>
       </div>
 
-      <Divider classn="divider" />
+      <Pattern9 />
       <div className="quotation">
-        <Pattern1 />
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container">
                 <div className="h3" data-aos="fade-up">We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.
                 </div>
@@ -104,9 +104,9 @@ const S_Exhibition = () => {
         </div>
         
 
-        <Divider classn="divider-left" />
+        <Pattern9 />
       <div className="exhibition-stands">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
         <div className="container"> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for exhibition stands gallery</div></div>
         <div className="container">
           <div className="boxs">
@@ -119,9 +119,9 @@ const S_Exhibition = () => {
         </div>
       </div>
       
-        <Divider classn="divider-left" />
-      <div className="exhibition-stands , Display">
-        <Pattern3 />
+        <Pattern9 />
+      <div className="exhibition-stands ">
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
         <div className="container"> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for Display stands gallery</div></div>
         <div className="container">
           <div className="boxs">
@@ -134,9 +134,9 @@ const S_Exhibition = () => {
         </div>
       </div>
       
-      {/* <Divider classn="divider" />
+      {/* <Pattern9 />
       <div className="Display-stands">
-        <Pattern2 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
       <div className="container"><div className="h1 clip">Take a look at our designs for Display stands gallery</div></div>
         <div className="container">
             <div className="boxs">
@@ -147,12 +147,12 @@ const S_Exhibition = () => {
                 </div>}
             </div>
         </div>
-      </div> */}
+      </div>  */}
 
       
-      <Divider classn="divider-left" />
+      <Pattern9 />
       <div className="impact">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
             <div className="container"><div className="h1 clip">Why Choose Us for Your Exhibition & Display Stands Needs?</div></div>
                 <div className="boxs">

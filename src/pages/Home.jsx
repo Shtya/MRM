@@ -30,7 +30,7 @@ function Home() {
         <Services />
 
         <Divider classn="divider-left" />
-        <Portfolio header={true} />
+        <Portfolio typeGallery="all" header={true} />
 
         {/* <Gallery_merge />  */}
         

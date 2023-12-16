@@ -15,10 +15,12 @@ import gifts_2 from "../assets/S_gifts/gifts2.png" ;
 import gifts_3 from "../assets/S_gifts/gifts3.png" ;
 import Animation from '../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
-import Portfolio from '../components/Portfolio'
 import { ImgsPortfolio } from '../components/Images'
 import Slider_2_Imgs from '../components/Slide/Slider_2_Imgs'
 
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
 
 const Approach = [
   { img:gifts_1 , title:"Corporate Gifts" , desc:"Where Thoughtful Gestures Meet Elegance The right gift can make a big impact in corporate relationships. Our Corporate Gifts collection offers timeless and sophisticated items that show genuine appreciation. "},
@@ -105,7 +107,7 @@ const S_Gifts = () => {
 
       <Divider classn="divider-left" />
       <div className="quotation">
-        <Pattern1 />
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container" >
                 <div className="h2" data-aos="fade-up">Strengthen Your Professional Ties  with Our Meticulously<br/> Curated Collection of Corporate Gifts</div>
                 <div className="h3" data-aos="fade-up">Explore our meticulously curated collection of corporate gifts, tailor-made for every occasion, and elevate your business relationships to new heights. Our handpicked selection of gifts is designed to leave a lasting impression on your clients, employees, and partners, and convey your appreciation for their business.  With a focus on quality, elegance, and functionality, our gifts are sure to impress and strengthen your professional ties</div>
@@ -114,7 +116,7 @@ const S_Gifts = () => {
         
         <Divider classn="divider-left" />
         <div className="boxs-tails">
-          <Pattern3 />
+          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="h1 clip">We Offer</div> 
             <div className="container">
                   {Approach.map((e,index)=>(
@@ -129,8 +131,8 @@ const S_Gifts = () => {
       </div>
 
       <Divider classn="divider" />
-      <div className="signages">
-        <Pattern2 />
+      <div className="signages search-edite">
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="outdoor">
             <div className="header1 header2">{
           headers.map((e,index)=> (
@@ -144,7 +146,7 @@ const S_Gifts = () => {
 
       <Divider classn="divider-left" />
       <div className="impact">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
                 <div className="h1 clip hidden-text" data-aos="fade-up">Why Choose Us for Your Corporate Gifting Needs?</div>
                 <div className="boxs">

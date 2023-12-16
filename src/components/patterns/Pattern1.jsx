@@ -15,8 +15,13 @@ export const Pattern1 = () => {
 }
 export const Divider = ({classn}) => {
   return(
-    <div className={`${classn}`}> <span className='separator'> <h4/>  <h4/>  <h4/>  </span> <div className="other"><h4/>  <h4/>  <h4/> </div></div>
-  )
+    // <div className={`${classn}`}> <span className='separator'> <h4/>  <h4/>  <h4/>  </span> <div className="other"><h4/>  <h4/>  <h4/> </div></div>
+    <div className={`Pattern9 ${classn}`}>
+    <span></span>
+    <span> <li className='one'/>   <li className='two'/>   <li className='three'/>  </span>
+    <span></span>
+  </div>
+    )
 }
 
 export const Pattern2 = () => {

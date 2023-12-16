@@ -2,14 +2,16 @@ import React , {useEffect} from 'react'
 import About_us from "../assets/about-us/aboutus.png"
 import Animation  from './helpers/Animation'
 import Pattern1, { Pattern2 } from './patterns/Pattern1'
-
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
 const Who = () => {
   
   
   return(
-    <section className="Who " id='who' >
+    <section className="Who search-edite " id='who' >
       <Animation />
-      {/* <Pattern1 /> */}
+      <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
       <div className="container">
 
       <div className="Img hidden-img " >

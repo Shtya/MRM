@@ -7,6 +7,10 @@ import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/S_photography/intro.jpg"
 import ImgSection from "../assets/S_photography/cover.jpg"
 
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg5.jpg"
+import IMG3 from "../assets/bg/bg3.jpg"
+
 
 import Photography_1 from "../assets/gallery/photography/(1).jpg" ;
 import Photography_2 from "../assets/gallery/photography/(2).jpg" ;
@@ -30,7 +34,7 @@ import Videography9 from "../assets/gallery/videography/(9).jpg" ;
 
 
 import Animation from "../components/helpers/Animation";
-import Pattern1, { Divider, Pattern2, Pattern3 } from "../components/patterns/Pattern1";
+import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from "../components/patterns/Pattern1";
 const images = [
 {img : Videography1},
 {img : Videography2},
@@ -93,17 +97,19 @@ const S_photography = () => {
         </div>
       </div>
 
-      <Divider classn="divider" />
+      {/* <Divider classn="divider" /> */}
+      <Pattern9 />
       <div className="quotation">
-        <Pattern1 />
+        {/* <Pattern1 /> */}
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container">
             <p className='h3'> We specialize in capturing moments that tell a compelling story and creating visually engaging content. At MRM, we offer a wide range of high-quality photography and videography services to enhance your brand and narrative. Whether you need product photography, event coverage, or promotional videos, we have the expertise to deliver content that captivates and communicates. Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p>
             </div>
         </div>
 
-      <Divider classn="divider-left" />
+      <Pattern9 />
       <div className="photography-services">
-      <Pattern3 />
+      <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
         <div className="h1 clip hidden-text">Our Photography gallery</div> 
         <div className="container">
           {
@@ -122,9 +128,10 @@ const S_photography = () => {
         </div>
       </div>
       
-      <Divider classn="divider" />
+      {/* <Divider classn="divider" /> */}
+      <Pattern9 />
       <div className="Videography-services">
-        <Pattern2 />
+      <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
         <div className="h1 clip hidden-text">Types of Videography gallery</div> 
         <div className="container">
           {
@@ -144,9 +151,10 @@ const S_photography = () => {
       </div>
 
 
-      <Divider classn="divider-left" />
+      {/* <Divider classn="divider-left" /> */}
+      <Pattern9 />
       <div className="exhibition-stands">
-      <Pattern3 />
+      <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
         <div className="header1">
             <li className="active">Videography</li>
             <li> Events </li>
@@ -169,9 +177,10 @@ const S_photography = () => {
       </div>
 
 
-<Divider classn="divider-left" />
+{/* <Divider classn="divider-left" /> */}
+<Pattern9 />
         <div className="searching2">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
               <div className="coverImg "> <img src={Grid1} alt="" /> </div>
 

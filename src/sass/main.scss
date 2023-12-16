@@ -881,22 +881,6 @@ nav .navbar .links li .sub-menu li{
   position: relative;
   min-height: 60vh;
   padding: 50px 0;
-  background-image: url("../assets/bg/\(6\).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  &::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #2c2c2c52;
-    z-index: 0;
-    backdrop-filter: blur(1px);
-    
-  }
   .container{
     display: grid;
     grid-template-columns: 1fr 700px;
@@ -974,23 +958,9 @@ nav .navbar .links li .sub-menu li{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color:var(--second-bg);
   position: relative;
   z-index: 100;
-  &::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    left: -25%;
-    top: 0;
-    z-index: -1;
-    display: block;
-    height: 45px;
-    background-size: 40px 100%;
-    background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-    background-position: 0 0;
-    background-color: var(--second-bg);
-  }
+
 
   .h1{
     text-align: center;
@@ -1109,22 +1079,6 @@ nav .navbar .links li .sub-menu li{
   flex-direction: column;
   position: relative;
   padding: 50px 0;
-  background-image: url("../assets/bg/\(9\).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  &::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #2c2c2c52;
-    z-index: 0;
-    backdrop-filter: blur(1px);
-    
-  }
   .h1{ margin-bottom: 30px;}
 
   .ul{
@@ -1386,29 +1340,13 @@ nav .navbar .links li .sub-menu li{
 /*================================== CONTACT ================================*/
 .Contact{
   background: var(--third-bg);
-  padding: 3px 3px;
+  padding: 40px 3px;
   position: relative;
   min-height: 60vh;
   @include center() ;
   flex-direction: column;
-  background-color: var(--second-bg);
   z-index: 101; 
-  .h1{ margin-bottom: 5px;}
-  &::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    left: -25%;
-    top: 0;
-    z-index: -1;
-    display: block;
-    height: 45px;
-    background-size: 40px 100%;
-    background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-    background-position: 0 0;
-    background-color: var(--second-bg);
-  }
-  .h1{ text-align: center !important}
+  .h1{ text-align: center !important ;margin-bottom: 5px;}
   .container {
     display: grid; 
     grid-template-columns: 800px 1fr;
@@ -1575,20 +1513,7 @@ nav .navbar .links li .sub-menu li{
       background-color: var(--third-bg);
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
+    
     }
     &.blog-2{
       padding:  50px 0 20px ;
@@ -2406,20 +2331,7 @@ footer{
   .Contact{
     background-color: var(--third-bg);
     z-index: 105; 
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
+    
   }
 
 }
@@ -2521,25 +2433,10 @@ footer{
 
   .quotation{
     display: flex; align-items: center; flex-direction: column;
-    min-height: 30vh;
-    padding: 80px 0;
-    background-color: var(--second-bg);
+    min-height: 20vh;
+    padding: 50px 0;
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
     .h3{
       text-align: center;
       width: calc(100% - 70px);
@@ -2591,46 +2488,17 @@ footer{
     padding: 50px 0;
     &.blog-1{
       margin-top: 0;
+      z-index: 12;
     }
     &.blog-3{
-      padding:  50px 0 100px ;
-      background-color: var(--third-bg);
+      padding:  50px 0 50px ;
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
     }
     &.blog-2{
-      padding:  50px 0 20px ;
-      background-color: var(--second-bg);
+      padding:  50px 0 ;
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
     }
     .container{
       .coverImg{
@@ -4004,6 +3872,7 @@ footer{
     backdrop-filter: blur(1px);
   }
 }
+.search-edite{ .bgCover { z-index: 0 !important; } }
 .landing{ 
   color: white;
   background-color: var(--third-bg);
@@ -4042,7 +3911,7 @@ footer{
           .boxImg{
             height: 600px !important;
             width: 700px !important;
-            left: 50%;
+            left: 50% !important;
             transform: translateX(-50%) !important;
             top: 5% !important;
           }
@@ -4050,7 +3919,7 @@ footer{
             background: linear-gradient(to top , #0b0a0a4f , #0000004a , #00000077);
             position: absolute;
             width: 95% !important;
-            left:50%;
+            left:20px;
             transform: translateX(-50%);
             bottom: 30px;
             backdrop-filter: blur(2px);
@@ -4070,7 +3939,7 @@ footer{
           }
           .boxs{
             width: 600px;
-            left: 50%;
+            left: 20px !important;
             transform: translateX(-50%);
             bottom: 30px;
             text-align: center;
@@ -4120,14 +3989,18 @@ footer{
             text-align: center;
             .h2{text-align: left !important;}
           }
+          .boxs .p {
+            text-align: left;
+        }
         }
       .boxImg{
         width: 700px;
         height: 650px;
         position: absolute;
-        right: 20px;
+        left: 20px;
         top: 50%;
         transform: translateY(-50%);
+        
         &::after{
           content: "";
           width: 100%;
@@ -4145,13 +4018,18 @@ footer{
         }
       }
       .boxs{
-        flex: 1; display: flex; justify-content: center; flex-direction: column; gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        right: 20px;
         position: absolute;
-        width: 70%;
-        left: 20px;
         top: 50%;
         transform: translateY(-50%);
+        width: 60%;
         z-index: 10;
+        background: #00000070;
+        padding: 10px;
         .h1{
           text-align: left; margin-bottom: 0;
           // text-wrap: balance;
@@ -4180,7 +4058,8 @@ footer{
         }
         .inner-boxs{
           display: flex; align-items: flex-start; justify-content: space-between; gap: 30px;
-          @media (max-width: 1380px) {
+          width:100% ;
+          @media (max-width: 100px) {
             flex-direction: column;
             gap: 0;
           }
@@ -4489,6 +4368,7 @@ footer{
     position: relative;
     .bgCover{&::after{
         background: rgb(0 0 0 / 10%);
+        
       } }
     .container{
       // @media (max-width:790px) { .h1{width: 100%; text-align: left;} }
@@ -4856,25 +4736,10 @@ footer{
   .impact{
     min-height: 50vh;
     display: flex; align-items: center;
-    padding: 50px 0 100px;
-    background-color: var(--third-bg);
+    padding: 50px 0 ;
     z-index: 105; 
     position: relative;
     .h1{margin-bottom:30px ; }
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
     .container{
       .p{
         text-align: center;
@@ -4954,25 +4819,10 @@ footer{
   .process3{
     min-height: 50vh;
     display: flex; align-items: center;
-    padding: 50px 0 100px;
-    background-color: var(--second-bg);
+    padding: 50px 0;
     z-index: 105; 
     position: relative;
     .h1{margin-bottom: 30px;}
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
     .container{
       &>.h3{
         text-align: center;
@@ -5504,16 +5354,6 @@ footer{
     }
   }
 
-  // .portfolio{
-  //   @media (min-width:1161px){
-  //   background-color: var(--third-bg);
-  //   &::after {
-  //     background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  //     background-color: var(--third-bg);
-  //   }
-  //   }
-  // }
-
 }
 
 .S_photography , .S_Exhibition{/*===================================== S_photography =================0000000000===============*/
@@ -5642,7 +5482,7 @@ footer{
     z-index: 105; 
     position: relative;
     @media (min-width: 1100px){
-    .boxs .coverImg:last-child{position : relative ; left :50%}
+    .boxs .coverImg:last-child{position : relative ; left :50% !important}
     }
     @media (max-width:800px) {
       grid-template-columns:  1fr;
@@ -5764,23 +5604,8 @@ footer{
     align-items: center;  
     flex-direction: column;   
     justify-content: center;
-    background-color: var(--second-bg);
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
     .container{
       display: flex; align-items: flex-start; justify-content: center; gap: 40px;
       .coverImg{
@@ -5858,23 +5683,8 @@ footer{
     min-height: 90vh;
     display: flex; align-items: center;
     padding: 50px 0;
-    background-color: var(--second-bg);
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
     .container{
       .h1{
         margin-bottom: 30px;
@@ -6004,24 +5814,10 @@ footer{
     padding: 50px 0;
     min-height: 100vh;
     display: flex; align-items: center; flex-direction: column;
-    background-color: var(--third-bg);
     z-index: 105; 
     position: relative;
     .h1{margin-bottom: 30px;}
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
+
     .container{
       display: flex; align-items: center; justify-content: space-between;
       position: relative;
@@ -6183,7 +5979,6 @@ footer{
     min-height: 100vh;
     position: relative;
     padding: 50px 0 50px;
-    background-color: var(--second-bg);
     z-index: 105; 
     position: relative;
     @media (max-width: 1250px) {
@@ -6231,20 +6026,7 @@ footer{
     }
 
     .h1{margin-bottom: 30px;}
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
+
     .container{
       display: flex; flex-direction: column; gap: 20px;
       display: grid; grid-template-columns: 1fr 1fr;
@@ -6325,23 +6107,8 @@ footer{
   .signages{
     min-height: 100vh;
     padding: 50px 0 0;
-    background-color: var(--third-bg);
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
     .container{
       .h1{
         margin-bottom: 0;
@@ -6632,23 +6399,8 @@ footer{
   .boxs-tails{
     padding: 50px 0 100px;
     min-height: 50vh;   
-    background-color: var(--third-bg);
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
     .h1{ margin-bottom: 30px ; }
     .container{
       display: grid;
@@ -6963,23 +6715,8 @@ footer{
   .signages{
     min-height: 100vh;
     padding: 50px 0;
-    background-color: var(--second-bg);
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
-    }
     .container{
       .h2{
         margin-bottom: 0;
@@ -7055,23 +6792,8 @@ footer{
   .platforms{
     min-height: 100vh;
     padding: 50px 0;
-    background-color: var(--third-bg);
     z-index: 105; 
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
     .container{
       .h1{
         margin-bottom: 30px;
@@ -7544,8 +7266,7 @@ footer{
   .quotation{
     display: flex; align-items: center; flex-direction: column;
     min-height: 30vh;
-    padding: 80px 0;
-    background-color: var(--second-bg);
+    padding: 50px 0;
     z-index: 105; 
     position: relative;
     .div{margin-bottom: 20px;}
@@ -7579,20 +7300,6 @@ footer{
         clip-path:none;
         
       }
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--second-bg);
     }
     .h3{
     color: #eee;
@@ -7922,20 +7629,7 @@ footer{
       }
       margin: 0 auto 30px;
     }
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
+    
     .container{
       .p{
         text-align: center;
@@ -8129,20 +7823,7 @@ footer{
       }
       margin: 0 auto 30px;
     }
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: -25%;
-      top: 0;
-      z-index: -1;
-      display: block;
-      height: 45px;
-      background-size: 40px 100%;
-      background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-      background-position: 0 0;
-      background-color: var(--third-bg);
-    }
+    
     .container{
       .p{
         text-align: center;
@@ -8355,6 +8036,9 @@ footer{
         top: 0;
         left: 0;
       }
+    }
+    .bgCover{
+      z-index: 0 !important;
     }
     min-height: 100vh;
     padding: 30px;
@@ -8977,12 +8661,21 @@ footer{
 }
 
 .Loading{
-    background: url("../assets/bg2.png");
+    background: url("../assets/bg/b7.jpg");
     background-color: #181818;
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    &::after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #16161640;
+      position: absolute;
+      backdrop-filter: blur(1px);
+    }
   @mixin transform($transform) {
     -webkit-transform: $transform;
     -moz-transform: $transform;
@@ -9106,7 +8799,7 @@ footer{
     width: $size * 2;
     height: $size * 2;
     text-align: center;
-    //shadow
+    z-index: 1000;
     &:after {
       content: "";
       position: absolute;

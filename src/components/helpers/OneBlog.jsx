@@ -7,12 +7,16 @@ import { Link , useNavigate, useParams } from 'react-router-dom';
 import { baseImg } from '../../API/API';
 import Moment from 'react-moment';
 
+import IMG1 from "../../assets/bg/b1.jpg"
+import IMG2 from "../../assets/bg/bg3.jpg"
+import IMG3 from "../../assets/bg/bg5.jpg"
+
 const OneBlog = ({classn ,blogs , settings , name , onHere }) => {
   const navigate = useNavigate() 
 
   return (
     <div className={`Slider_1_Img ${classn}`}>
-      {onHere ? <Pattern2 /> : <Pattern3 />}
+      {onHere ? <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div> : <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>}
       
         
       <div className="h1 clip"> {name} </div>

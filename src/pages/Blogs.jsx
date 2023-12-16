@@ -5,7 +5,10 @@ import OneBlog from '../components/helpers/OneBlog';
 import Footer from '../components/Footer';
 import Pattern1, { Divider } from '../components/patterns/Pattern1';
 
-// import { blogs } from '../components/docs_blogs';
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
+
 
 import Animation from '../components/helpers/Animation';
 import baseURL, { baseImg } from '../API/API';
@@ -16,8 +19,6 @@ const Blogs = () => {
 
   const [blogs , setblogs] = useState([])
   useEffect(_=>{ baseURL.get("").then(res => { setblogs(res.data.data) } )} ,[pathname])
-
-  console.log(blogs)
   var settings = {
     dots: true,
     infinite: true,
@@ -52,7 +53,8 @@ const Blogs = () => {
         <div className="coverImg"> <img src={IntroImg} alt="" /></div>
         <Divider classn="divider divider-top" />
         <div className="quotation">
-          <Pattern1 />
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        
           <div className="container">
                 <p className="h3 " data-aos="fade-up">Stay updated with our latest news, strategies, and tactics to succeed in your business.</p>
           </div>

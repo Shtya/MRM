@@ -31,7 +31,9 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Animation from '../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
-
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
 
 const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising", "Tiktok Advertising"]
 const Paid = [ 
@@ -95,7 +97,7 @@ const S_Media = () => {
 
       <Divider classn="divider" />
       <div className="quotation">
-        <Pattern1 />
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
         <div className="container">
               <div className="h2 hidden-text" data-aos="fade-up"> Experience the Power of Paid Amplification</div>
               <p className="h3 "> We create paid campaigns with specific goals, such as boosting brand awareness, engaging with audiences, generating leads, and driving sales. We understand that success varies for each business, so we tailor our campaigns to align with your unique Key Performance Indicators. Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers.</p>
@@ -104,7 +106,7 @@ const S_Media = () => {
 
         <Divider classn="divider-left" />
         <div className="social-media">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
         <div className="container">
             <h3 className='h1'>We offer standout paid campaigns for your business</h3>
             <div className="boxs">
@@ -117,7 +119,7 @@ const S_Media = () => {
 
         <Divider classn="divider" />
         <div className="impact">
-        <Pattern2 />
+        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
                 <div className="h1 clip hidden-text" data-aos="fade-left"  >Impact of what you'll get</div>
                 <div className="phead hidden-text" data-aos="fade-left"  >MRM is the preferred choice for social media marketing services in Dubai.  We specialize in tailoring effective strategies that fit your brand and objectives. Here's how we can help</div>
@@ -140,7 +142,7 @@ const S_Media = () => {
 
         <Divider classn="divider-left" />
         <div className="process3">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
                 <div className="h1 clip hidden-text" data-aos="fade-left">Our Process</div>
 

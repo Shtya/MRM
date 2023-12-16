@@ -13,7 +13,9 @@ import { motion } from 'framer-motion'
 import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
 import SocialLanding from '../SocialLanding'
-
+import IMG1 from "../../assets/bg/b1.jpg"
+import IMG2 from "../../assets/bg/bg3.jpg"
+import IMG3 from "../../assets/bg/bg5.jpg"
 
 
 const TYPES = [
@@ -81,9 +83,9 @@ const X = () => {
       </div>
       
       
-      <Divider classn="divider" />
+      {/* <Divider classn="divider" /> */}
       <div className="quotation">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
         <div className="container" >
         <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unlocking X Marketing Success With MRM ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -98,7 +100,7 @@ const X = () => {
 
         <Divider classn="divider" />
         <div className="box-style-5">
-          <Pattern3/>
+          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
             <ul class="cards">
             {SERVICES.map((e,index)=> (
@@ -122,7 +124,7 @@ const X = () => {
 
         <Divider classn="divider-left" />
       <div className="impact">
-        <Pattern2 />
+        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
                 <div className="h2 clip"> Types of Twitter Ads MRM Offers </div>
                 <div className="boxs" >
@@ -142,7 +144,7 @@ const X = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4">
-          <Pattern3 />
+          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
             <div className="h1" style={{marginBottom:""}}> Our Twitter Marketing Businesses</div>
             <div className="phead" style={{marginBottom:"40px"}}> At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
@@ -170,7 +172,7 @@ const X = () => {
         <div className="process2">
         <div className="h2 clip"> Our Twitter Marketing Businesses</div>
         <div className="phead"> At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
-          <Pattern1 />
+          <div className="bgCover"  >  <img  src={IMG5} alt="" /> </div>
           <ul class="timeline">
             {
               SERVICES.map((e,index)=> (
@@ -188,7 +190,7 @@ const X = () => {
 
         <Divider classn="divider-left" />
       <div className="box-style-1">
-        <Pattern2 />
+        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
                 <div className="h2 clip">How Twitter Marketing Helps Businesses</div>
                 <div className="phead">Twitter marketing plays a pivotal role in driving business success. Here's how it can benefit your brand</div>

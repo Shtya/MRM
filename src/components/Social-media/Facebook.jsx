@@ -11,6 +11,9 @@ import { motion } from 'framer-motion'
 import Animation from '../../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../../components/patterns/Pattern1'
 import SocialLanding from '../SocialLanding'
+import IMG1 from "../../assets/bg/b1.jpg"
+import IMG2 from "../../assets/bg/bg3.jpg"
+import IMG3 from "../../assets/bg/bg5.jpg"
 
 
 
@@ -81,9 +84,9 @@ const Facebook = () => {
         </div>
       </div>
 
-      <Divider classn="divider" />
+      {/* <Divider classn="divider" /> */}
       <div className="quotation">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container" >
             <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Harnessing the Power of Facebook Marketing  ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -96,7 +99,7 @@ const Facebook = () => {
 
         <Divider classn="divider" />
         <div className="box-style-6">
-          <Pattern2 />
+          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="h1 clip"> A Comprehensive Range of Facebook Ad Types </div>
           <div className="phead"> MRM Agency offers a comprehensive array of Facebook ad types to suit your unique marketing objectives </div>
           <div className="container">
@@ -115,7 +118,7 @@ const Facebook = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4">
-          {/* <Pattern3 /> */}
+          <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
           <div className="container">
             <div className="h1" style={{marginBottom:"40px"}}>Our Facebook advertising services include</div>
             <div className="bg"> <img src={ImgSection} alt="" /> </div>
@@ -140,7 +143,7 @@ const Facebook = () => {
         {/* <Divider classn="divider" />
         <div className="process2">
         <div className="h2 clip"> Our Facebook advertising services include</div>
-          <Pattern1 />
+          <div className="bgCover"  >  <img  src={IMG4} alt="" /> </div>
           <ul class="timeline">
             {
               SERVICES.map((e,index)=> (

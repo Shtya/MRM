@@ -3,13 +3,13 @@ import Animation from './helpers/Animation'
 import Pattern1, {Pattern2, Pattern3, Pattern4, Pattern5} from './patterns/Pattern1'
 
 import WhyImg from "../assets/Why.jpg"
-
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
 
 const Why = () => {
 
 
-  const [index , setindex] = useState(0)
-  const [Class , setClass] = useState("null")
 
   const choose = [
     {idx:"0", animate:"fade-up" , icon : 'fas fa-pencil-ruler font-icon' , title : "We're problem solvers"  , desc:"We conquer all challenges with creativity, determination, and a 'can-do' attitude. We have solutions to your problems. "} ,
@@ -23,7 +23,7 @@ const Why = () => {
 
     <section id='Why' className='Why'>
       <Animation />
-      <Pattern3 />
+      <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
       <div className="container1">
         <div className="h1 clip hidden-text" >WHY CHOOSE US</div>
       </div>

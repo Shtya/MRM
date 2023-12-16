@@ -36,6 +36,9 @@ import seo_process_5 from "../assets/SEO/seo-process-5.jpg"
 import Animation from '../components/helpers/Animation';
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1';
 
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
 
 const OUR_SEO = [
   {classn :" "            , img:Icon_1 , title:"Keyword Research"   , desc:" Our team conducts in-depth research to determine the most effective and high-traffic keywords to target for your website. By strategically selecting these keywords, we can boost your website's visibility and attract more visitors."},
@@ -86,7 +89,7 @@ const S_SEO = () => {
 
       <Divider classn="divider" />
       <div className="quotation">
-        <Pattern1 />
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
         <div className="container">
               <div className="h2 hidden-text" data-aos="fade-up"> Maximizing SEO Impact with MRM at Your Website </div>
               <p className="h3 " data-aos="fade-up"> We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it. Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs. Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search.</p>
@@ -95,7 +98,7 @@ const S_SEO = () => {
 
         <Divider classn="divider-left" />
       <div className="platforms">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
               <h3 className="h1 hidden-text clip" data-aos="fade-left">Our SEO Services </h3>
               <div className="boxs">
@@ -111,7 +114,7 @@ const S_SEO = () => {
       <Divider classn="divider" />
 
       <div className="process3">
-        <Pattern2 />
+        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
         <div className="h1 hidden-text clip" data-aos="fade-left">Our proccess</div>
           <div className="container">
               <div className="box box1">
@@ -133,7 +136,7 @@ const S_SEO = () => {
 
     <Divider classn="divider-left" />
     <div className="WHY">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
       <div className="h1 clip hidden-text"> Why We Excels? </div>
       <div className="container">
         {

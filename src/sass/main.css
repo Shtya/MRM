@@ -919,22 +919,6 @@ header section .video video {
   position: relative;
   min-height: 60vh;
   padding: 50px 0;
-  background-image: url("../assets/bg/(6).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-.Who::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(44, 44, 44, 0.3215686275);
-  z-index: 0;
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
 }
 .Who .container {
   display: grid;
@@ -1023,23 +1007,8 @@ header section .video video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--second-bg);
   position: relative;
   z-index: 100;
-}
-.Why::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .Why .h1 {
   text-align: center;
@@ -1181,22 +1150,6 @@ header section .video video {
   flex-direction: column;
   position: relative;
   padding: 50px 0;
-  background-image: url("../assets/bg/(9).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-.services::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(44, 44, 44, 0.3215686275);
-  z-index: 0;
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
 }
 .services .h1 {
   margin-bottom: 30px;
@@ -1478,34 +1431,17 @@ header section .video video {
 /*================================== CONTACT ================================*/
 .Contact {
   background: var(--third-bg);
-  padding: 3px 3px;
+  padding: 40px 3px;
   position: relative;
   min-height: 60vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: var(--second-bg);
   z-index: 101;
 }
 .Contact .h1 {
-  margin-bottom: 5px;
-}
-.Contact::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
-}
-.Contact .h1 {
   text-align: center !important;
+  margin-bottom: 5px;
 }
 .Contact .container {
   display: grid;
@@ -1691,20 +1627,6 @@ header section .video video {
   background-color: var(--third-bg);
   z-index: 105;
   position: relative;
-}
-.blog .Slider_1_Img.blog-3::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
 }
 .blog .Slider_1_Img.blog-2 {
   padding: 50px 0 20px;
@@ -2638,20 +2560,6 @@ footer .container .bottom .last a {
   background-color: var(--third-bg);
   z-index: 105;
 }
-.about-us .Contact::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
-}
 
 @media (max-width: 1150px) {
   .about-us .group .title, .about-us .group .paragraph {
@@ -2751,25 +2659,10 @@ footer .container .bottom .last a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: 30vh;
-  padding: 80px 0;
-  background-color: var(--second-bg);
+  min-height: 20vh;
+  padding: 50px 0;
   z-index: 105;
   position: relative;
-}
-.blog-page .quotation::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .blog-page .quotation .h3 {
   text-align: center;
@@ -2837,46 +2730,17 @@ footer .container .bottom .last a {
 }
 .blog-page .Slider_1_Img.blog-1 {
   margin-top: 0;
+  z-index: 12;
 }
 .blog-page .Slider_1_Img.blog-3 {
-  padding: 50px 0 100px;
-  background-color: var(--third-bg);
+  padding: 50px 0 50px;
   z-index: 105;
   position: relative;
-}
-.blog-page .Slider_1_Img.blog-3::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
 }
 .blog-page .Slider_1_Img.blog-2 {
-  padding: 50px 0 20px;
-  background-color: var(--second-bg);
+  padding: 50px 0;
   z-index: 105;
   position: relative;
-}
-.blog-page .Slider_1_Img.blog-2::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .blog-page .Slider_1_Img .container {
   position: relative;
@@ -4125,6 +3989,10 @@ footer .container .bottom .last a {
           backdrop-filter: blur(1px);
 }
 
+.search-edite .bgCover {
+  z-index: 0 !important;
+}
+
 .landing {
   color: white;
   background-color: var(--third-bg);
@@ -4173,7 +4041,7 @@ footer .container .bottom .last a {
   .landing .home .container .boxImg {
     height: 600px !important;
     width: 700px !important;
-    left: 50%;
+    left: 50% !important;
     transform: translateX(-50%) !important;
     top: 5% !important;
   }
@@ -4181,7 +4049,7 @@ footer .container .bottom .last a {
     background: linear-gradient(to top, rgba(11, 10, 10, 0.3098039216), rgba(0, 0, 0, 0.2901960784), rgba(0, 0, 0, 0.4666666667));
     position: absolute;
     width: 95% !important;
-    left: 50%;
+    left: 20px;
     transform: translateX(-50%);
     bottom: 30px;
     -webkit-backdrop-filter: blur(2px);
@@ -4206,7 +4074,7 @@ footer .container .bottom .last a {
   }
   .landing .home .container .boxs {
     width: 600px;
-    left: 50%;
+    left: 20px !important;
     transform: translateX(-50%);
     bottom: 30px;
     text-align: center;
@@ -4261,12 +4129,15 @@ footer .container .bottom .last a {
   .landing .home .container .boxs .h2 {
     text-align: left !important;
   }
+  .landing .home .container .boxs .p {
+    text-align: left;
+  }
 }
 .landing .home .container .boxImg {
   width: 700px;
   height: 650px;
   position: absolute;
-  right: 20px;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -4287,17 +4158,18 @@ footer .container .bottom .last a {
   border: 3px solid #9f8746;
 }
 .landing .home .container .boxs {
-  flex: 1;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
+  right: 20px;
   position: absolute;
-  width: 70%;
-  left: 20px;
   top: 50%;
   transform: translateY(-50%);
+  width: 60%;
   z-index: 10;
+  background: rgba(0, 0, 0, 0.4392156863);
+  padding: 10px;
 }
 .landing .home .container .boxs .h1 {
   text-align: left;
@@ -4346,8 +4218,9 @@ footer .container .bottom .last a {
   align-items: flex-start;
   justify-content: space-between;
   gap: 30px;
+  width: 100%;
 }
-@media (max-width: 1380px) {
+@media (max-width: 100px) {
   .landing .home .container .boxs .inner-boxs {
     flex-direction: column;
     gap: 0;
@@ -5114,27 +4987,12 @@ footer .container .bottom .last a {
   min-height: 50vh;
   display: flex;
   align-items: center;
-  padding: 50px 0 100px;
-  background-color: var(--third-bg);
+  padding: 50px 0;
   z-index: 105;
   position: relative;
 }
 .landing .impact .h1 {
   margin-bottom: 30px;
-}
-.landing .impact::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
 }
 .landing .impact .container .p {
   text-align: center;
@@ -5219,27 +5077,12 @@ footer .container .bottom .last a {
   min-height: 50vh;
   display: flex;
   align-items: center;
-  padding: 50px 0 100px;
-  background-color: var(--second-bg);
+  padding: 50px 0;
   z-index: 105;
   position: relative;
 }
 .S_media .process3 .h1 {
   margin-bottom: 30px;
-}
-.S_media .process3::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .S_media .process3 .container > .h3 {
   text-align: center;
@@ -5983,7 +5826,7 @@ footer .container .bottom .last a {
 @media (min-width: 1100px) {
   .S_photography .exhibition-stands .boxs .coverImg:last-child, .S_Exhibition .exhibition-stands .boxs .coverImg:last-child {
     position: relative;
-    left: 50%;
+    left: 50% !important;
   }
 }
 @media (max-width: 800px) {
@@ -6125,23 +5968,8 @@ footer .container .bottom .last a {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--second-bg);
   z-index: 105;
   position: relative;
-}
-.S_photography .searching::after, .S_Exhibition .searching::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .S_photography .searching .container, .S_Exhibition .searching .container {
   display: flex;
@@ -6224,23 +6052,8 @@ footer .container .bottom .last a {
   display: flex;
   align-items: center;
   padding: 50px 0;
-  background-color: var(--second-bg);
   z-index: 105;
   position: relative;
-}
-.M_SEO .platforms::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .M_SEO .platforms .container .h1 {
   margin-bottom: 30px;
@@ -6379,26 +6192,11 @@ footer .container .bottom .last a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: var(--third-bg);
   z-index: 105;
   position: relative;
 }
 .M_SEO .process3 .h1 {
   margin-bottom: 30px;
-}
-.M_SEO .process3::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
 }
 .M_SEO .process3 .container {
   display: flex;
@@ -6564,7 +6362,6 @@ footer .container .bottom .last a {
   min-height: 100vh;
   position: relative;
   padding: 50px 0 50px;
-  background-color: var(--second-bg);
   z-index: 105;
   position: relative;
 }
@@ -6615,20 +6412,6 @@ footer .container .bottom .last a {
 }
 .M_SEO .WHY .h1 {
   margin-bottom: 30px;
-}
-.M_SEO .WHY::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .M_SEO .WHY .container {
   display: flex;
@@ -6707,23 +6490,8 @@ footer .container .bottom .last a {
 .M_Signages .signages {
   min-height: 100vh;
   padding: 50px 0 0;
-  background-color: var(--third-bg);
   z-index: 105;
   position: relative;
-}
-.M_Signages .signages::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
 }
 .M_Signages .signages .container .h1 {
   margin-bottom: 0;
@@ -7036,23 +6804,8 @@ footer .container .bottom .last a {
 .S_Gifts .boxs-tails {
   padding: 50px 0 100px;
   min-height: 50vh;
-  background-color: var(--third-bg);
   z-index: 105;
   position: relative;
-}
-.S_Gifts .boxs-tails::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
 }
 .S_Gifts .boxs-tails .h1 {
   margin-bottom: 30px;
@@ -7232,23 +6985,8 @@ footer .container .bottom .last a {
 .S_Branding .signages {
   min-height: 100vh;
   padding: 50px 0;
-  background-color: var(--second-bg);
   z-index: 105;
   position: relative;
-}
-.S_Branding .signages::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .S_Branding .signages .container .h2 {
   margin-bottom: 0;
@@ -7324,23 +7062,8 @@ footer .container .bottom .last a {
 .S_Branding .platforms {
   min-height: 100vh;
   padding: 50px 0;
-  background-color: var(--third-bg);
   z-index: 105;
   position: relative;
-}
-.S_Branding .platforms::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
 }
 .S_Branding .platforms .container .h1 {
   margin-bottom: 30px;
@@ -7836,8 +7559,7 @@ footer .container .bottom .last a {
   align-items: center;
   flex-direction: column;
   min-height: 30vh;
-  padding: 80px 0;
-  background-color: var(--second-bg);
+  padding: 50px 0;
   z-index: 105;
   position: relative;
 }
@@ -7875,20 +7597,6 @@ footer .container .bottom .last a {
     -webkit-clip-path: none;
             clip-path: none;
   }
-}
-.shared .quotation::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--second-bg);
 }
 .shared .quotation .h3 {
   color: #eee;
@@ -8163,20 +7871,6 @@ footer .container .bottom .last a {
     width: 70%;
   }
 }
-.shared .impact::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
-}
 .shared .impact .container .p {
   text-align: center;
   letter-spacing: 0;
@@ -8383,20 +8077,6 @@ footer .container .bottom .last a {
   .shared .box-style-1 .phead {
     width: 70%;
   }
-}
-.shared .box-style-1::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
 }
 .shared .box-style-1 .container .p {
   text-align: center;
@@ -8621,6 +8301,9 @@ footer .container .bottom .last a {
   position: absolute;
   top: 0;
   left: 0;
+}
+.shared .box-style-4 .bgCover {
+  z-index: 0 !important;
 }
 .shared .box-style-4 .boxs {
   display: grid;
@@ -9223,13 +8906,23 @@ footer .container .bottom .last a {
 }
 
 .Loading {
-  background: url("../assets/bg2.png");
+  background: url("../assets/bg/b7.jpg");
   background-color: #181818;
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
   @import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);
+}
+.Loading::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 22, 22, 0.2509803922);
+  position: absolute;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }
 .Loading .cube-folding {
   width: 80px;
@@ -9307,6 +9000,7 @@ footer .container .bottom .last a {
   width: 160px;
   height: 160px;
   text-align: center;
+  z-index: 1000;
 }
 .Loading .cube-wrapper:after {
   content: "";

@@ -87,13 +87,12 @@ const App = () => {
         {/* Services Pages */}
         <Route path='/web-design' element={<S_WebDesign/>} />
         <Route path='/photography' element={<S_photography />} />
-        {/* <Route path='/social' element={<S_SocialMediaMarketing />} /> */}
         <Route path='/exhibition' element={<S_Exhibition  />} />
         <Route path='/signages' element={<M_Signages />} />
         <Route path='/portfolio' element={<Landing />} />
+        <Route path='/gifts' element={<S_Gifts  />} />
         <Route path='/media' element={<S_Media />} />
         <Route path='/branding' element={<S_Branding  />} />
-        <Route path='/gifts' element={<S_Gifts  />} />
         <Route path='/seo' element={<S_SEO />} />
 
       {/* Social media Pages */}
@@ -113,23 +112,6 @@ const App = () => {
 }
 
 export default App
-
-
-
-    //   <AnimatePresence mode="wait">
-    //     <Routes location={location} key={location.pathname} >
-    //       <Route path="/motion"  element={<Motion />} />
-    //       <Route path="/sec2"  element={<Sec2 />} />
-    //       <Route path="/sec3"  element={<Sec3 />} />
-    //       <Route path="/sec4"  element={<Sec4 />} />
-    //     </Routes>
-    //   </AnimatePresence> 
-
-
-    //   {/*  1. Scroll  */}
-    //   <motion.div className="progress-bar" style={{ scaleX: scrollYProgress}} />
-    //   <Lesson1 />
-    //   {/* <Lesson2 /> */}
 
 
 

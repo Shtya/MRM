@@ -30,11 +30,14 @@ import Process1 from "../assets/landing/process1.png" ;
   import Process5 from "../assets/landing/process5.png" ;
 
 import OneProcess from '../components/OneProcess';
-import Clients from '../components/Clients';
 import Footer from '../components/Footer';
 import OneSocial from '../components/OneSocial';
 import Animation from '../components/helpers/Animation';
-import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1';
+import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/patterns/Pattern1';
+
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_1 , title:"Social Media Strategy"    , desc:"Our social media experts will create a custom strategy that aligns with your brand's objectives and target audience."},
@@ -80,8 +83,8 @@ const Landing = () => {
       </div>
 
       <Divider classn="divider" />
-      <div className="searching">
-        <Pattern1 />
+      <div className="searching search-edite">
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
           <div className="container">
               <div className="coverImg  "> 
                   <img className='hidden-img' src={Grid1} alt="" /> 
@@ -110,7 +113,7 @@ const Landing = () => {
 
       <Divider classn="divider-left" />
       <div className="social-media  ">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
         <div className="container">
           <h3 className='h1 hidden-text clip'>Our Social Media Marketing Services</h3>
           <div className="boxs">
@@ -123,7 +126,7 @@ const Landing = () => {
 
       <Divider classn="divider" />
       <div className="platforms">
-        <Pattern2 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
               <h3 className='h1 hidden-text clip'>Platforms we've managed on social media</h3>
               <div className="boxs">
@@ -139,8 +142,8 @@ const Landing = () => {
 
       <Divider classn="divider-left" />
     <div className="process">
-        <Pattern3 />
-    <div className="container1"> <div className="h1 hidden-text clip">our proccess</div></div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+        <div className="container1"> <div className="h1 hidden-text clip">our proccess</div></div>
         <div className="container">
             <div className="box box1">
                 <OneProcess num="1" classn="hidden" img={Process1} title="Optimized For Results" paragraph="We work closely with our clients to understand their business goals, target audience, industry, and competitors. With this knowledge, we create a tailored social media plan that meets their unique needs. We aim to deliver a strategy customized to each client's specific requirements." />

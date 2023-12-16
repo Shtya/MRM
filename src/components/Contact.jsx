@@ -2,6 +2,10 @@ import {useEffect, useState} from 'react'
 import Animation from './helpers/Animation';
 import { Pattern2, Pattern3, Pattern6 } from './patterns/Pattern1';
 import FormImg from "../assets/Form.jpg"
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
+
 
 const Contact = ({title , desc , onHere}) => {
   const [value , setvalue] = useState() ;
@@ -10,8 +14,8 @@ const Contact = ({title , desc , onHere}) => {
   return (
     <section className='Contact' id='Contact'>
       <Animation />
-      {onHere ? <Pattern2 /> : <Pattern3 /> }
-     
+      <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+
      <div className="container1">  <h2 className='h2'>{desc }</h2> </div>
       <div className="container">
 

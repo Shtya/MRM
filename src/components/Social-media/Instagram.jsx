@@ -11,6 +11,10 @@ import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
 import SocialLanding from '../SocialLanding'
 
+import IMG1 from "../../assets/bg/b1.jpg"
+import IMG2 from "../../assets/bg/bg3.jpg"
+import IMG3 from "../../assets/bg/bg5.jpg"
+
 
 
 const TYPES = [
@@ -67,9 +71,9 @@ const Instagram = () => {
         </div>
       </div>
 
-      <Divider classn="divider-left" />
+      {/* <Divider classn="divider-left" /> */}
       <div className="quotation">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
         <div className="container" >
         <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("MRM Your Premier Choice for Instagram Marketing Services In Dubai").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -85,7 +89,7 @@ const Instagram = () => {
 
       <Divider classn="divider" />
       <div className="impact">
-        <Pattern2 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
                 <div className="h2 clip">Types of Ads You Can Run on Instagram</div>
                 <div className="phead">Let's dive into the various types of Instagram ads that our expert team at MRM can strategically execute for your brand</div>
@@ -109,7 +113,7 @@ const Instagram = () => {
 
         <Divider classn="divider-left" />
       <div className="box-style-1">
-        <Pattern2 />
+        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
             Why Working With MRM Has More Advantages:
 When it comes to Instagram marketing, partnering with MRM provides a host of unique advantages that can significantly benefit your business:

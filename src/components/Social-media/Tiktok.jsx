@@ -12,7 +12,9 @@ import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
 import SocialLanding from '../SocialLanding'
 
 
-
+import IMG1 from "../../assets/bg/b1.jpg"
+import IMG2 from "../../assets/bg/bg3.jpg"
+import IMG3 from "../../assets/bg/bg5.jpg"
 const TYPES = [
   {icon :"" ,title:"In-Feed Ads" , desc:"Seamlessly integrated into users' For You Page (FYP), In-Feed Ads capture high in-app engagement. With durations spanning from 5 to 60 seconds, these ads feature compelling call-to-action buttons that lead users to external landing pages. It's the perfect way to blend into users' content feeds while driving them toward your brand's offerings."},
   {icon :"" ,title:"Top View Ads" , desc:"TopView Ads are the first in-feed videos users encounter upon opening the app, guaranteeing a precious three seconds of undivided attention. Crafting impactful content is paramount here, as these initial moments can make or break the user's interest. Our creative team excels at creating content that grabs attention from the get-go."},
@@ -73,9 +75,9 @@ const Tiktok = () => {
       
       
 
-      <Divider classn="divider" />
+      {/* <Divider classn="divider" /> */}
       <div className="quotation">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
         <div className="container" >
           <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Get Ahead of the Competition with MRM's Effective TikTok Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -91,7 +93,8 @@ const Tiktok = () => {
 
         <Divider classn="divider-left" />
       <div className="impact">
-        <Pattern2 />
+        {/* <Pattern2 /> */}
+        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
                 <div className="h2 clip"> Types of TikTok Ads we offer</div>
                 <div className="phead">TikTok's advertising landscape offers diverse options tailored to your unique marketing objectives. MRM agency specializes in executing these TikTok ad types to elevate your brand's visibility and engagement. </div>
@@ -114,7 +117,7 @@ const Tiktok = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4">
-          <Pattern3 />
+          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
             <div className="h1" style={{marginBottom:""}}>Why Choose TikTok Marketing?</div>
             <div className="phead" style={{marginBottom:"40px"}}>Still trying to convince you about the power of TikTok for your marketing strategy? Let's explore eight key benefits</div>

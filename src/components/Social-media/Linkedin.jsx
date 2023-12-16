@@ -12,7 +12,9 @@ import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
 import SocialLanding from '../SocialLanding'
 
-
+import IMG1 from "../../assets/bg/b1.jpg"
+import IMG2 from "../../assets/bg/bg3.jpg"
+import IMG3 from "../../assets/bg/bg5.jpg"
 
 const TYPES = [
   {icon :"" ,title:" Sponsored Content" , desc:" Promote existing content from your business page to a tailored target demographic. Utilize LinkedIn's robust profile data to create an ideal audience and engage with those genuinely interested in your brand."},
@@ -76,9 +78,9 @@ const Linkedin = () => {
       </div>
       
 
-      <Divider classn="divider" />
+      {/* <Divider classn="divider" /> */}
       <div className="quotation">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
         <div className="container" >
         <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Partner with MRM for Results-Driven LinkedIn Marketing in Dubai ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -94,7 +96,7 @@ const Linkedin = () => {
 
         <Divider classn="divider-left" />
       <div className="impact">
-        <Pattern2 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
                 <div className="h2 clip"> Types of Linkedin Ads </div>
                 <div className="boxs" >
@@ -114,7 +116,7 @@ const Linkedin = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4">
-          <Pattern3 />
+          <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
           <div className="container">
             <div className="h1" style={{marginBottom:""}}>How MRM Utilizes LinkedIn's Advantages for Your Business Success</div>
             <div className="phead" style={{marginBottom:"40px"}}>At MRM, we understand that LinkedIn is a dynamic platform with unique features </div>
@@ -142,7 +144,7 @@ const Linkedin = () => {
         <div className="process2">
         <div className="h2 clip">How MRM Utilizes LinkedIn's Advantages for Your Business Success</div>
         <div className="phead">At MRM, we understand that LinkedIn is a dynamic platform with unique features </div>
-          <Pattern1 />
+          <div className="bgCover"  >  <img  src={IMG4} alt="" /> </div>
           <ul class="timeline">
             {
               SERVICES.map((e,index)=> (
@@ -160,7 +162,7 @@ const Linkedin = () => {
 
         <Divider classn="divider-left" />
       <div className="box-style-1">
-        <Pattern2 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
                 <div className="h2 hidden-text">MRM's LinkedIn Advertising Process</div>
                 <div className="boxs" >

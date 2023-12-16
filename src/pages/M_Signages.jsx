@@ -22,8 +22,10 @@ import Outdoor_7 from "../assets/gallery/outdoor/7.jpg" ;
 import Outdoor_8 from "../assets/gallery/outdoor/8.jpg" ;
 import Slider_2_Imgs from '../components/Slide/Slider_2_Imgs'
 import Animation from '../components/helpers/Animation'
-import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
-
+import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/patterns/Pattern1'
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg5.jpg"
+import IMG3 from "../assets/bg/bg3.jpg"
 
 const process = [
   {img: Icon_1, title:" Planning" ,desc:"During planning, we consider every detail to create signage that resonates with your brand and clients.Effective planning saves time and resources."},
@@ -91,18 +93,18 @@ const M_Signages = () => {
         </div>
       </div>
       
-      <Divider classn="divider" />
+      <Pattern9 />
       <div className="quotation">
-        <Pattern1 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
                 <div className="h2 hidden-text" data-aos="fade-left">MRM promises excellence in signage installation, blending your vision with our expertise</div>
                 <div className="h3" data-aos="fade-left">MRM's team of experts specializes in developing custom sign designs based on clients' requirements. we take care of every project aspect, from the concept and design phase to production and installation. MRM is committed to delivering quality service and ensuring customer satisfaction. Clients can trust MRM to handle everything related to their custom signage installation.</div>
             </div>
         </div>
 
-        <Divider classn="divider-left" />
+        <Pattern9 />
       <div className="signages">
-        <Pattern3 />
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
               <div className="h1 clip hidden-text" style={{marginBottom:"10px"}} data-aos="fade-left">Outdoor Signages gallery</div>
               {/* <div className="phead hidden-text" data-aos="fade-left">Our Signages gives an elegant and professional finish to every project.</div> */}
@@ -117,10 +119,10 @@ const M_Signages = () => {
               <Slider_2_Imgs data={data} settings={settings} />
           </div>
 
-          <Divider classn="divider" />
+          <Pattern9 />
           <div className="indoor">
           <div className="h1 clip hidden-text" style={{marginBottom:"20px"}} data-aos="fade-left">Indoor Signages gallery</div>
-            <Pattern2 />
+            <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
               <div className="header1 header2">
                   <li className='p active'>	Health-Safety </li>
                   <li className='p'>	Menu Boards </li>
@@ -133,9 +135,9 @@ const M_Signages = () => {
 
       </div>
 
-      {/* <Divider classn="divider-left" /> */}
+      <Pattern9 />
       <div className="process2">
-        {/* <Pattern3 /> */}
+        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
                 <div className="h1 hidden-text clip" data-aos="fade-left">Signage creation process</div>
                 <div className="phead hidden-text" data-aos="fade-left"> Our custom signages captures attention and gives every project  an elegant and professional finish</div>

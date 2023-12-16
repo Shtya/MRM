@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/S_branding/intro.jpg"
@@ -28,6 +28,10 @@ import Slider_1_Img from '../components/Slide/Slider_1_Img'
 import Slider_2_Imgs from '../components/Slide/Slider_2_Imgs'
 import Animation from '../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
+import { useLocation } from 'react-router-dom'
 
 const Approach = [
   { img:approach_1 , title:"Comprehensive Solutions" , desc:"We offer a complete branding solution to ensure consistent messaging across all touchpoints. Trust us to elevate your brand and achieve your business goals."},
@@ -87,12 +91,12 @@ const S_Branding = ({header =true}) => {
       }
     ]
   };
-
+  const {pathname} = useLocation()
   const headers = [ "all" ,  "Logo Design","Web Design","Social Media Design","Packaging","Graphic Design","Vehicle Branding","Staff Uniform","Stationery" ]
 
   const Imgs = ImgsPortfolio(headers)
   const [data , setdata ] = useState(Imgs)
-  const [type , settype ] =useState( "all") ;
+  const [type , settype ] =useState( "branding") ;
 
   const handleHeaders = (ele)=>{
     setdata( Imgs.filter(e =>{
@@ -100,7 +104,7 @@ const S_Branding = ({header =true}) => {
       return e.type.includes(ele)
     }) ) 
   }
-
+  useEffect(_=> {setdata( Imgs.filter(e => e.type.includes("branding")  )) } ,[pathname])
 
   return (
     <div className="S_Branding landing">
@@ -120,7 +124,7 @@ const S_Branding = ({header =true}) => {
       </div>
       <Divider classn="divider" />
       <div className="quotation">
-        <Pattern1 />
+         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
           <div className="container">
               <div className="h2 hidden-text" data-aos="fade-up"> Elevate Your Brand with Our Comprehensive Branding Services  </div>
               <div className="h3 " data-aos="fade-up">  MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
@@ -129,7 +133,7 @@ const S_Branding = ({header =true}) => {
 
         <Divider classn="divider-left" />
         <div className="platforms">
-        <Pattern3 />
+         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
               <h3 className='h1 clip'>Our Branding Services</h3>
               <div className="boxs">
@@ -144,7 +148,7 @@ const S_Branding = ({header =true}) => {
 
       <Divider classn="divider" />
       <div className="signages">
-        <Pattern2 />
+         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
           <div className="container">
             <div className="h1 hidden-text">OUR GALLERY</div>
           </div>
@@ -162,7 +166,7 @@ const S_Branding = ({header =true}) => {
 
       <Divider classn="divider-left" />
         <div className="searching2">
-        <Pattern3 />
+         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
               <div className="coverImg "> <img src={Grid1} alt="" /> </div>
 

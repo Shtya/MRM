@@ -4,6 +4,9 @@ import { ImgsPortfolio } from './Images';
 import Slider_2_Imgs from './Slide/Slider_2_Imgs';
 import { Pattern2, Pattern3, Pattern4 } from './patterns/Pattern1';
 import { useLocation } from 'react-router-dom';
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
 
 var settings = {
   dots: true,
@@ -44,7 +47,8 @@ const Portfolio = ({header  , typeGallery , nameofgallery , bg  }) => {
 
   return (
     <section className='portfolio' id="Portfolio">
-      {bg ? bg : <Pattern3 />}
+      <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+
       <h2 className='h1 clip' >{ nameofgallery || "OUR WORKS"}</h2>
       {!header == false && <div className="header1">{
           headers.map((e,index)=> (
