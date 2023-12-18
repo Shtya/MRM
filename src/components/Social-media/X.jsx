@@ -3,7 +3,6 @@ import Footer from '../Footer'
 import Navbar from '../Navbar'
 import CoverImg from "../../assets/bg/COVER1.jpg"
 
-import  ImgSection from "../../assets/Socialmedia/bg-1.webp"
 import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/x.png"
 
@@ -17,6 +16,13 @@ import IMG1 from "../../assets/bg/b1.jpg"
 import IMG2 from "../../assets/bg/bg3.jpg"
 import IMG3 from "../../assets/bg/bg5.jpg"
 
+import X1 from "../../assets/Socialmedia/X (1).png"
+import X2 from "../../assets/Socialmedia/X (2).png"
+import X3 from "../../assets/Socialmedia/X (3).png"
+import X4 from "../../assets/Socialmedia/X (4).png"
+import X5 from "../../assets/Socialmedia/X (5).png"
+import X6 from "../../assets/Socialmedia/X (6).png"
+import X7 from "../../assets/Socialmedia/X (7).png"
 
 const TYPES = [
   {icon :"" ,title:"Promoted Tweets:" , desc:"Promoted Tweets are designed to reach users who do not follow your account. As your social media management agency, we pay to deliver these tweets to diverse audiences. These Twitter marketing initiatives can expand your business's reach and engage new potential customers. Similar to boosting posts on Facebook, promoted tweets increase visibility and engagement."},
@@ -25,13 +31,13 @@ const TYPES = [
  ]
 
 const SERVICES = [
-  {icon:"" , title:"Strategic Planning" , desc:"We begin by understanding your business, goals, and target audience. Based on this information, we formulate a comprehensive Twitter marketing strategy tailored to your unique objectives."} ,
-  {icon:"" , title:"Audience Targeting" , desc:"Precise audience targeting is crucial for Twitter's marketing success. We use Twitter's advanced targeting options to reach the right demographics, interests, and behaviours, ensuring your message reaches those most likely to engage with your brand."} ,
-  {icon:"" , title:"Content Creation" , desc:"Our creative team develops engaging content that resonates with your audience. From compelling tweets to eye-catching visuals, we craft content that drives engagement and boosts brand visibility."} ,
-  {icon:"" , title:"Ad Campaign Execution" , desc:"We carefully launch and manage your Twitter ad campaigns, whether they involve Promoted Tweets, Promoted Accounts, or Promoted Trends. Our experts monitor campaign performance in real time to optimize budget allocation and maximize results."} ,
-  {icon:"" , title:"Analytics and Reporting" , desc:"We provide regular reports and insights into your campaign's performance. Our analytics help you track key metrics, such as engagement rates, click-through rates, and lead conversions, ensuring transparency and accountability."} ,
-  {icon:"" , title:"Continuous Optimization" , desc:"Twitter marketing is dynamic, and we stay agile. We continuously optimize your campaigns based on data-driven insights to ensure the best possible results and return on investment."} ,
-  {icon:"" , title:"Strategic Guidance" , desc:"Beyond campaigns, we offer strategic guidance on Twitter content, trends, and industry best practices. We aim to empower your brand to thrive on Twitter independently."} ,
+  {icon:X1 , title:"Strategic Planning" , desc:"We begin by understanding your business, goals, and target audience. Based on this information, we formulate a comprehensive Twitter marketing strategy tailored to your unique objectives."} ,
+  {icon:X2 , title:"Audience Targeting" , desc:"Precise audience targeting is crucial for Twitter's marketing success. We use Twitter's advanced targeting options to reach the right demographics, interests, and behaviours, ensuring your message reaches those most likely to engage with your brand."} ,
+  {icon:X3 , title:"Content Creation" , desc:"Our creative team develops engaging content that resonates with your audience. From compelling tweets to eye-catching visuals, we craft content that drives engagement and boosts brand visibility."} ,
+  {icon:X4 , title:"Ad Campaign Execution" , desc:"We carefully launch and manage your Twitter ad campaigns, whether they involve Promoted Tweets, Promoted Accounts, or Promoted Trends. Our experts monitor campaign performance in real time to optimize budget allocation and maximize results."} ,
+  {icon:X5 , title:"Analytics and Reporting" , desc:"We provide regular reports and insights into your campaign's performance. Our analytics help you track key metrics, such as engagement rates, click-through rates, and lead conversions, ensuring transparency and accountability."} ,
+  {icon:X6 , title:"Continuous Optimization" , desc:"Twitter marketing is dynamic, and we stay agile. We continuously optimize your campaigns based on data-driven insights to ensure the best possible results and return on investment."} ,
+  {icon:X7 , title:"Strategic Guidance" , desc:"Beyond campaigns, we offer strategic guidance on Twitter content, trends, and industry best practices. We aim to empower your brand to thrive on Twitter independently."} ,
 ]
 
 
@@ -104,12 +110,11 @@ const X = () => {
           <div className="container">
             <ul class="cards">
             {SERVICES.map((e,index)=> (
-            <li className='box'>
+            <li className='box' key={index}>
               <a  class="card">
-                <div className="cover"> <img src={CoverImg} class="card__image" alt="" /> </div>
+                <div className="cover"> <img src={e.icon} class="card__image" alt="" /> </div>
                 <div class="card__overlay">
-                  <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                  <div class="card_h2">
                     <div class="card__header-text"> <h3 class="card__title h2" style={{color:"var(--text-color)"}}>{e.title}</h3>  </div>
                   </div>
                   <p class="card__description p" >{e.desc}</p>

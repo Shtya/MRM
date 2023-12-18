@@ -5,7 +5,6 @@ import Sign4  from "../assets/gallery/sinages/Signages (4).jpg"
 import Sign5  from "../assets/gallery/sinages/Signages (5).jpg"
 import Sign6  from "../assets/gallery/sinages/Signages (6).jpg"
 import Sign7  from "../assets/gallery/sinages/Signages (7).jpg"
-import Sign8  from "../assets/gallery/sinages/Signages (8).jpg"
 
 
 import DisplayStand1  from "../assets/gallery/display stand/display-stands (1).jpg"
@@ -109,7 +108,6 @@ export function ImgsPortfolio (headers) {
   {img:  Sign5 , type:`${headers[1]} all ` }  ,
   {img:  Sign6 , type:`${headers[1]} ` }  ,
   {img:  Sign7 , type:`${headers[1]} ` }  ,
-  {img:  Sign8 , type:`${headers[1]} ` }  ,
 
 
   {img: DisplayStand1   , type:`${headers[2]} all` }  ,
@@ -171,7 +169,6 @@ export function Imgsignages () {
   {img:  Sign5 , class:"squ" , type:` all` }  ,
   {img:  Sign6 , class:"squ" , type:` all` }  ,
   {img:  Sign7 , class:"req" , type:` all` }  ,
-  {img:  Sign8 , class:"req" , type:` all` }  ,
 
 
   {img: DisplayStand1   , class:"lar" , type:` all` }  ,

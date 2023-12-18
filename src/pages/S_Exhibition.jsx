@@ -98,8 +98,7 @@ const S_Exhibition = () => {
       <div className="quotation">
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container">
-                <div className="h3" data-aos="fade-up">We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.
-                </div>
+                <div className="h3" data-aos="fade-up">We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.</div>
             </div>
         </div>
         

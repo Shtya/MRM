@@ -115,9 +115,6 @@ const Instagram = () => {
       <div className="box-style-1">
         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
-            Why Working With MRM Has More Advantages:
-When it comes to Instagram marketing, partnering with MRM provides a host of unique advantages that can significantly benefit your business:
-
                 <div className="h2 clip"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You</div>
                 <div className="boxs" >
                   {

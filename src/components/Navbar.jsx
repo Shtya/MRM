@@ -6,7 +6,7 @@ const Navbar1 = () => {
   const Navigate = useNavigate()
   const [top , settop] = useState(false)
   useEffect(_=>{
-    const handelScroll =  _=> window.scrollY > 50 ? settop("black") : settop("")
+    const handelScroll =  _=> window.scrollY > 50 ? settop("up-anything") : settop("")
     window.addEventListener("scroll" , handelScroll)
     return _=> window.removeEventListener("scroll" , handelScroll)} ,[ window])
   useEffect(_=>{
@@ -43,7 +43,7 @@ htmlcssArrow.onclick = function() {
   return (
   <div className="Navbar1" >
     <nav>
-      <div class="navbar" style={{background:top}}>
+      <div class={`navbar ${top}`} >
         <i class='bx bx-menu'></i>
         <div class="logo"><Link to="/"> <img src={Logo} alt="" /></Link></div>
         <div class="nav-links">

@@ -11,7 +11,7 @@ var settings = {
   autoplaySpeed: 2000 ,
   slidesToShow: 6,
   slidesToScroll: 2 , 
-  // autoplay:true ,
+  autoplay:true ,
   responsive: [
     {
       breakpoint: 1300,
@@ -41,7 +41,7 @@ var settings = {
       }
     },
     {
-      breakpoint: 500,
+      breakpoint: 600,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1 ,
@@ -49,7 +49,7 @@ var settings = {
       }
     },
     {
-      breakpoint: 300,
+      breakpoint: 450,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1 ,

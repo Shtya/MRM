@@ -59,9 +59,10 @@ const S_WebDesign = () => {
       <div className="coverIntro"> <img src={ImgIntro} alt="" /></div>
       <div className="home">
         <div className="container">
+          <div className="boxImg hidden-img" >  <img src={ImgSection} alt="" /> </div>
           <div className="boxs" >
             <h2 className='h1 hidden-text' data-aos="fade-left">Boost the Effectiveness of Your Website's Online Presence. </h2>
-            <p className='h3 hidden-text' data-aos="fade-left"> Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development. </p>
+            <p className='h2 hidden-text' data-aos="fade-left"> Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development. </p>
             <div className="inner-boxs" >
 
               <ul className="box">
@@ -76,7 +77,6 @@ const S_WebDesign = () => {
 
             </div>
           </div>
-          <div className="boxImg hidden-img" >  <img src={ImgSection} alt="" /> </div>
         </div>
       </div>
 

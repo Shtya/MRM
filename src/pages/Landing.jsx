@@ -64,16 +64,16 @@ const Landing = () => {
             <div className="inner-boxs" >
 
               <ul className="box">
-                <li className='li hidden-text'>Social media strategy development</li>
-                <li className='li hidden-text'>Content creation</li>
+                <li className='li hidden-text'>Social media development</li>
                 <li className='li hidden-text'>Social media advertising</li>
                 <li className='li hidden-text'>Social media Marketing</li>
+                <li className='li hidden-text'>Content creation</li>
               </ul>
 
               <ul className="box box-2">
-                <li className='li hidden-text'>Influencer marketing</li>
                 <li className='li hidden-text'>Community management </li>
                 <li className='li hidden-text'>Reputation management</li>
+                <li className='li hidden-text'>Influencer marketing</li>
                 <li className='li hidden-text'>Crisis management</li>
               </ul>
 

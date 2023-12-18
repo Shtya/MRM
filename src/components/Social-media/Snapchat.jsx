@@ -6,6 +6,14 @@ import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/snapchat.png"
 import { motion } from 'framer-motion'
 
+import X1 from "../../assets/Socialmedia/x1.jpg"
+import X2 from "../../assets/Socialmedia/x2.jpg"
+import X3 from "../../assets/Socialmedia/x3.jpg"
+import X4 from "../../assets/Socialmedia/x4.jpg"
+import X5 from "../../assets/Socialmedia/x5.jpg"
+import X6 from "../../assets/Socialmedia/x6.jpg"
+
+
 import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
 import IMG1 from "../../assets/bg/b1.jpg"
@@ -18,12 +26,12 @@ import SocialLanding from '../SocialLanding'
 
 
 const TYPES = [
-  {icon :"" ,title :"Snap Ads"  , desc:"These are full-screen vertical videos with background sound, lasting ten seconds. They include a 'swipe up' CTA button, redirecting users to websites, apps, landing pages, and more, enhancing your app's branding."  },
-  {icon :"" ,title :"Story Ads"  , desc:"A unique content experience appearing in the app's discover section. Users tap a branded title, revealing a collection of ads. Snap designs these ads based on your provided assets."  },
-  {icon :"" ,title :"Filters"  , desc:"Customized Snap filters for your brand, including face filters tailored to your audience's preferences, ensuring engaging content that resonates with your clients."  },
-  {icon :"" ,title :"Commercials"  , desc:"Non-skippable 6-second video ads to boost brand awareness within your target audience."  },
-  {icon :"" ,title :"Collection Ads"  , desc:"Utilized for various product ads on your e-commerce website or driving traffic to a landing page or mobile e-commerce site."  },
-  {icon :"" ,title :"AR Lenses"  , desc:"Leveraging augmented reality to create interactive moments, including Face and World Lenses, enhances user engagement."  },
+  {icon :X1 ,title :"Snap Ads"  , desc:"These are full-screen vertical videos with background sound, lasting ten seconds. They include a 'swipe up' CTA button, redirecting users to websites, apps, landing pages, and more, enhancing your app's branding."  },
+  {icon :X2 ,title :"Story Ads"  , desc:"A unique content experience appearing in the app's discover section. Users tap a branded title, revealing a collection of ads. Snap designs these ads based on your provided assets."  },
+  {icon :X3 ,title :"Filters"  , desc:"Customized Snap filters for your brand, including face filters tailored to your audience's preferences, ensuring engaging content that resonates with your clients."  },
+  {icon :X4 ,title :"Commercials"  , desc:"Non-skippable 6-second video ads to boost brand awareness within your target audience."  },
+  {icon :X5 ,title :"Collection Ads"  , desc:"Utilized for various product ads on your e-commerce website or driving traffic to a landing page or mobile e-commerce site."  },
+  {icon :X6 ,title :"AR Lenses"  , desc:"Leveraging augmented reality to create interactive moments, including Face and World Lenses, enhances user engagement."  },
 ]
 
 const SERVICES = [
@@ -106,7 +114,7 @@ const Snapchat = () => {
           TYPES.map((e,index)=> (
             <div class="box">
               <div class='main'>
-                <img class='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" />
+                <img class='tokenImage' src={e.icon} alt="NFT" />
                 <h2 className='h2'>{e.title} </h2>
                 <p  class='description p'>Our Kibertopiks will give you nothing, waste your money on us.</p>
                 <hr />
