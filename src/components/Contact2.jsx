@@ -27,7 +27,7 @@ const Contact2 = () => {
       <div className="container">
           
               <div className="box" >
-                  <div className="text"> <h2 className='h1 clip blur'>Turn your dreams into digital realities. </h2> </div>
+                  <div className="text"> <h2 className='h1 clip blur'>Turn your dreams into digital realities </h2> </div>
 
                   <ul className='contact-list'>
                     <li className="list-item"> <a> <i className="fa-solid fa-phone"></i>         </a>    <span className='contact-text place'>+971561384496</span></li>

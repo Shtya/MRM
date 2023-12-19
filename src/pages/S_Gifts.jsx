@@ -74,7 +74,7 @@ const S_Gifts = () => {
     ]
   };
 
-  const headers = [ "all" , "Corporate Gifts", "Customized Gift Items", "Trophies"]
+  const headers = [ "all", "Trophies", "Customized Gift Items" , "Corporate Gifts"]
 
   const Imgs = ImgsPortfolio(headers)
   const [data , setdata ] = useState(Imgs)
@@ -109,7 +109,7 @@ const S_Gifts = () => {
       <div className="quotation">
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container" >
-                <div className="h2" data-aos="fade-up">Strengthen Your Professional Ties  with Our Meticulously<br/> Curated Collection of Corporate Gifts</div>
+                <div className="h2" data-aos="fade-up">Strengthen Your Professional Ties  with Our Meticulously Curated Collection of Corporate Gifts</div>
                 <div className="h3" data-aos="fade-up">Explore our meticulously curated collection of corporate gifts, tailor-made for every occasion, and elevate your business relationships to new heights. Our handpicked selection of gifts is designed to leave a lasting impression on your clients, employees, and partners, and convey your appreciation for their business.  With a focus on quality, elegance, and functionality, our gifts are sure to impress and strengthen your professional ties</div>
             </div>
         </div>

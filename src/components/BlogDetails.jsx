@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import {DocsBlogs, blogs} from "./docs_blogs"
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import Animation from './helpers/Animation';
 import Footer from './Footer';
@@ -11,11 +10,15 @@ import baseURL, { baseImg } from '../API/API';
 
 const BlogDetails = () => {
   const [data , setdata] = useState([])
+  const [blogs , setblogs] = useState([])
   const [titleCustom , settitleCustom] = useState()
   
   const {pathname} = useLocation()
   let {id} = useParams() ;
-  useEffect(_=>{baseURL.get(id).then(e=>{
+
+  useEffect(_=>{
+    baseURL.get("").then(e=> setblogs(e.data.data))
+    baseURL.get(id).then(e=>{
     setdata(e.data.data)
         e.data?.data?.title?.length >= 110 ? settitleCustom(e.data?.data?.title.slice(0,110) + "..."): settitleCustom(e.data?.data?.title)
         })} ,[] )
@@ -46,7 +49,6 @@ const BlogDetails = () => {
       }
     ]
   };
-
 
   return (
     <div className='blog-details'>

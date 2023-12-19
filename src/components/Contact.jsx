@@ -14,7 +14,6 @@ const Contact = ({title , desc , onHere}) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs.sendForm('service_kji00bn', 'template_faumv3m', form.current, 'NuQnsm_o-JAeio3Uv')
     emailjs.sendForm('service_pl60iqr', 'template_03nn5rk', form.current, '3BxbLM5srobXbwT-i')
       .then((result) => {
           console.log(result);
@@ -38,7 +37,7 @@ const Contact = ({title , desc , onHere}) => {
       <div className="container">
 
       <div className="box box-img hidden-img">
-          <img src={FormImg} alt="" />
+          <img data-aos="fade-right" src={FormImg} alt="" />
         </div>
 
         <div   className="box" data-aos="fade-left" >

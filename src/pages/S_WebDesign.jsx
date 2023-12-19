@@ -66,13 +66,13 @@ const S_WebDesign = () => {
             <div className="inner-boxs" >
 
               <ul className="box">
-                <li className='li hidden-text' data-aos="fade-left">UI & UX Design </li>
-                <li className='li hidden-text' data-aos="fade-left">PHP Development </li>
+                <li className='li hidden-text' >UI & UX Design </li>
+                <li className='li hidden-text' >PHP Development </li>
               </ul>
 
               <ul className="box box-2">
-                <li className='li hidden-text' data-aos="fade-left">WordPress Development </li>
-                <li className='li hidden-text' data-aos="fade-left">E-commerce Development </li>
+                <li className='li hidden-text' >WordPress Development </li>
+                <li className='li hidden-text' >E-commerce Development </li>
               </ul>
 
             </div>

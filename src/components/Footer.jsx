@@ -3,18 +3,22 @@ import Logo from "../assets/Logo1.png"
 import { Link } from 'react-router-dom'
 import { Divider, Pattern2, Pattern3, Pattern5, Pattern6, Pattern7, Pattern8, Pattern9 } from './patterns/Pattern1'
 import QuickContact from './QuickContact'
+import IMG1 from "../assets/bg/b1.jpg"
+import IMG2 from "../assets/bg/bg3.jpg"
+import IMG3 from "../assets/bg/bg5.jpg"
 
 const Footer = ({appear}) => {
   return (
     <>
    
     {appear != false && <Pattern9 />}
-    {/* <Divider classn="divider" /> */}
+
     {appear != false &&<QuickContact  />}
     {appear == false ? <Divider classn='divider2' /> : <Pattern9  />}
-    {/* <Pattern9 /> */}
-    {/* <Divider classn="divider" /> */}
+
     <footer>
+    <div className="bgCover" style={{zIndex:"1"}}  >  <img  src={IMG3} alt="" /> </div>
+
       <div className="container">
       <div className="top">
         <img src={Logo} alt="" />

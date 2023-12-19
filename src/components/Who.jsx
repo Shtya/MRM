@@ -14,11 +14,11 @@ const Who = () => {
       <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
       <div className="container">
 
-      <div className="Img hidden-img " >
-        <img src={About_us} alt="" />
+      <div className="Img hidden-img "  >
+        <img data-aos="fade-right" src={About_us} alt="" />
       </div>
 
-      <div className="box"  >
+      <div className="box" data-aos="fade-left"  >
         <h2 className='h2 hidden-text  '>Your Partner for Advertising & Digital Marketing Success in Dubai</h2>
         <span className='p hidden-text' >We are a Dubai-based agency specialized in advertising, and digital marketing with years of experience. Our team delivers the highest level of service, combining creativity and strategic thinking for effective campaigns. Our values are dedication, excellence, and transparency. </span>
         <div className="info">

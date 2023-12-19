@@ -16,7 +16,6 @@ const Why = () => {
     {idx:"1", animate:"fade-up" , icon : 'fas fa-drafting-compass font-icon' , title : "We deliver results, not just talk"  , desc:"Our commitment is to implement effective strategies, never overpromise, work hard, and measure success by our achievements. "} ,
     {idx:"2", animate:"fade-up" , icon : 'fas fa-layer-group font-icon' , title : "We prioritize you"  , desc:"Your success drives us. We're always available to meet your needs, offer guidance, and listen closely to your input.  "} ,
     {idx:"3", animate:"fade-up" , icon : 'fas fa-rocket font-icon' , title : "We focus on your growth"  , desc:" Our solutions are always advanced, results-driven, and up-to-date with the latest technologies and trends. "} ,
-    // {idx:"4", icon : 'fas fa-gavel font-icon' , title : "We Are Professionals Who Get Results."  , desc:" We strive for excellence through professionalism. Innovation, technology, content, and creative problem-solving help us maintain the highest standards."} ,
   ]
   
   return (
@@ -25,7 +24,7 @@ const Why = () => {
       <Animation />
       <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
       <div className="container1">
-        <div className="h1 clip hidden-text" >WHY CHOOSE US</div>
+        <div className="h1 clip hidden-text" data-aos="fade-up" >WHY CHOOSE US</div>
       </div>
       <div className="container">
               <div className="boxs"  >
@@ -41,7 +40,7 @@ const Why = () => {
               </div>
 
             <div className="Img hidden-img"  >
-              <img src={WhyImg} alt="" />
+              <img data-aos="fade-left" src={WhyImg} alt="" />
             </div>
       </div>
     </section>

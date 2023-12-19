@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar1 = () => {
   const Navigate = useNavigate()
+
   const [top , settop] = useState(false)
   useEffect(_=>{
     const handelScroll =  _=> window.scrollY > 50 ? settop("up-anything") : settop("")
@@ -50,26 +51,26 @@ htmlcssArrow.onclick = function() {
           <div class="sidebar-logo">   <span class="logo-name"><img src={Logo} alt="" /></span>   <i class='bx bx-x' ></i> </div>
           
           <ul class="links">
-            <li><Link to="/">Home</Link></li>
-            <li><Link  >Services</Link>
+            <li onClick={_=> Navigate("/")}><Link to="/">Home</Link></li>
+            <li ><Link  >Services</Link>
               <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
               <ul class="htmlCss-sub-menu sub-menu">
-                <li onclick={_=> Navigate("/web-design")}><Link to="/web-design"> web design & Development </Link></li>
-                <li onclick={_=> Navigate("/photography")}><Link to="/photography"> photography & videography </Link></li>
-                <li onclick={_=> Navigate("/exhibition")}><Link to="/exhibition"> exhibition & display stands</Link></li>
-                <li onclick={_=> Navigate("/signages")}><Link to="/signages"> indoor & outdoor signages </Link></li>
-                <li onclick={_=> Navigate("/portfolio")}><Link to="/portfolio"> social media marketing</Link></li>
-                <li onclick={_=> Navigate("/gifts")}><Link to="/gifts">cooperated gifts </Link></li>
-                <li onclick={_=> Navigate("/media")}><Link to="/media">media buying </Link></li>
-                <li onclick={_=> Navigate("/branding")}><Link to="/branding">Branding </Link></li>
-                <li onclick={_=> Navigate("/seo")}><Link to="/seo">SEO </Link></li>
+                <li onClick={_=> Navigate("/web-design")}><Link to="/web-design"> web design & Development </Link></li>
+                <li onClick={_=> Navigate("/photography")}><Link to="/photography"> photography & videography </Link></li>
+                <li onClick={_=> Navigate("/exhibition")}><Link to="/exhibition"> exhibition & display stands</Link></li>
+                <li onClick={_=> Navigate("/signages")}><Link to="/signages"> indoor & outdoor signages </Link></li>
+                <li onClick={_=> Navigate("/portfolio")}><Link to="/portfolio"> social media marketing</Link></li>
+                <li onClick={_=> Navigate("/gifts")}><Link to="/gifts">cooperated gifts </Link></li>
+                <li onClick={_=> Navigate("/media")}><Link to="/media">media buying </Link></li>
+                <li onClick={_=> Navigate("/branding")}><Link to="/branding">Branding </Link></li>
+                <li onClick={_=> Navigate("/seo")}><Link to="/seo">SEO </Link></li>
               </ul>
             </li>
 
             <li><Link  > Portfolio</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
-            <li><Link to="/about-us">About Us</Link></li>
-            <li><Link to="/contact-us"> Contact Us</Link></li>
+            <li onClick={_=> Navigate("/blog")}><Link to="/blog">Blog</Link></li>
+            <li onClick={_=> Navigate("/about-us")}><Link to="/about-us">About Us</Link></li>
+            <li onClick={_=> Navigate("/contact-us")}><Link to="/contact-us"> Contact Us</Link></li>
           </ul>
         </div>
         <div class="search-box">

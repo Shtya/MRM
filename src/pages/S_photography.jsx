@@ -110,7 +110,7 @@ const S_photography = () => {
       <Pattern9 />
       <div className="photography-services">
       <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-        <div className="h1 clip hidden-text">Our Photography gallery</div> 
+        <div className="h1 clip hidden-text">Our Photo gallery</div> 
         <div className="container">
           {
             SERVICES.map((e,index)=> (

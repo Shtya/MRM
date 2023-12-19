@@ -79,16 +79,16 @@ const S_Media = () => {
                 <h2 className='h2 hidden-text' data-aos="fade-left">Transform your social platforms into full revenue drivers and maximize your return on investment </h2>
                 <div className="inner-boxs" >
               <ul className="box">
-                <li className='li hidden-text' data-aos="fade-left"> {li[0]} </li>
-                <li className='li hidden-text' data-aos="fade-left"> {li[1]} </li>
-                <li className='li hidden-text' data-aos="fade-left"> {li[2]} </li>
-                <li className='li hidden-text' data-aos="fade-left"> {li[3]} </li>
+                <li className='li hidden-text' > {li[0]} </li>
+                <li className='li hidden-text' > {li[1]} </li>
+                <li className='li hidden-text' > {li[2]} </li>
+                <li className='li hidden-text' > {li[3]} </li>
               </ul>
 
               <ul className="box box-2">
-                <li className='li hidden-text' data-aos="fade-left"> {li[4]} </li>
-                <li className='li hidden-text' data-aos="fade-left"> {li[5]} </li>
-                <li className='li hidden-text' data-aos="fade-left"> {li[6]} </li>
+                <li className='li hidden-text' > {li[4]} </li>
+                <li className='li hidden-text' > {li[5]} </li>
+                <li className='li hidden-text' > {li[6]} </li>
               </ul>
             </div>
           </div>
@@ -153,7 +153,7 @@ const S_Media = () => {
                         <div className="number hidden-text" data-aos="fade-left"> 0{index +1} </div>
                         <div className='inner-box'>
                           <span className='hidden-img' ><img src={e.img} alt="" /></span>
-                          <h2 className="h3 clip hidden-text" data-aos="fade-left">{e.title}</h2>
+                          <h2 className="h2 clip hidden-text" data-aos="fade-left">{e.title}</h2>
                           <p className="p hidden-text" data-aos="fade-left"> {e.desc}</p>
                       </div>
                       </div>

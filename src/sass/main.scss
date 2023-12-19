@@ -106,6 +106,7 @@ svg{
   --gradient : linear-gradient(to bottom , #fedf4e , #65421b) ;
   --gradient-top : linear-gradient(to top , #fedf4e , #65421b) ;
   --gradient-left : linear-gradient(to right , #fedf4e , #65421b) ;
+  // --gradient-left : linear-gradient(to right , #fedf4e , #65421b) ;
 }
 
 *{
@@ -147,49 +148,31 @@ header{
   background-color: var(--third-bg);
   color: white;
   overflow-y:visible !important ;
-
-
-    section{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      min-height: 100%;
-      padding: 0 0 50px 0;
-      background-color: var(--third-bg);
-      .video{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        &::before{
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background: var(--overlay);
-          top: 0;
-          left: 0;
-        }
-        video{
-          width: 100% !important;
-          height: 100%  !important;
-          object-fit: cover;
-        }
-      }
+  section{
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-@media (max-width:1200px) {
-min-height: 80vh;
-}
-@media (max-width:860px) {
-min-height: 70vh;
-}
-@media (max-width:700px) {
-min-height: 45vh;
-}
-@media (max-width:550px) {
-  video{object-fit: contain !important;     top: 20px !important ; position: relative;}
-}
+  }
+  @media (max-width:1300px) { min-height: 80vh ; }
+  @media (max-width:1100px) { 
+    min-height: fit-content !important;
+    section {
+      height: fit-content;
+      width: 100%;
+      position: relative;
+  }
+    video{
+      object-fit: contain !important;
+    }
+   }
+
 }
 .navbar{
   z-index: 20000;
@@ -1096,11 +1079,12 @@ nav .navbar .links li .sub-menu li{
     position: relative;
     z-index: 10;
     .box{
-      min-height: 250px;
+      height: 250px;
       position: relative;
       border-radius: 3px;
       box-shadow: var(--box-shadow);
       overflow: hidden;
+      @media (max-width:550px){height: 200px !important;}
       .animate{
         background: conic-gradient(var(--alt-alt-main) 1deg, transparent 60deg);
         position: absolute;
@@ -1123,7 +1107,7 @@ nav .navbar .links li .sub-menu li{
         padding: 20px 10px 10px;
         color: white;
         cursor: pointer;
-        
+        @media (max-width:550px){padding: 10px !important;}
         outline: 1px solid #181818;
         box-shadow: 0 0 5px #000 inset;
         border: 2px dotted transparent;
@@ -1210,6 +1194,7 @@ nav .navbar .links li .sub-menu li{
     .box:last-child{
     grid-column: 1 span;
   } }}
+  
 }
 .portfolio {
     position: relative;
@@ -1700,12 +1685,6 @@ nav .navbar .links li .sub-menu li{
 footer{ 
   position: relative;
   color: white;
-  background: url("../assets/bg/bg4.jpg");
-  z-index: 1000;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
   padding-top: 30px;
   width:100% ;
     &::before{
@@ -1747,7 +1726,7 @@ footer{
     flex-direction: column;
     position: relative;
     z-index: 1000000;
-    .h2.clip{text-align: left; text-wrap: nowrap; }
+    .h2.clip{text-align: left; text-wrap: nowrap; width:100%}
     .p{text-align: center; color :#eee !important ;}
     .top{
       display: flex;
@@ -1756,6 +1735,10 @@ footer{
       justify-content: center;
       margin-bottom: 40px;
       z-index: 10;
+      @media (max-width:600px){
+        img{height: 80px;}
+        .phead{width:80%}
+      }
       .p{padding: 10px 0}
       .social{
         display: flex; flex-direction: column; gap: 10px;
@@ -1888,6 +1871,7 @@ footer{
       gap: 20px;
       z-index: 10;
       position: relative;
+
       ul{
 
         h2{
@@ -1920,7 +1904,7 @@ footer{
           margin-top: 20px;
           input{
             width: 100% ;
-            padding: 10px;
+            padding: 5px;
             border: none;
             outline: none;
             color: white;
@@ -1941,9 +1925,9 @@ footer{
           i{
             position: absolute;
             right: 0;
-            width: 80px;
+            width: 60px;
             height: 100%;
-            background: var(--gradient);
+            background: var(--text-color);
             display: flex;align-items: center; justify-content: center;
             font-size: 18px;
             cursor: pointer;
@@ -1966,13 +1950,14 @@ footer{
       width: 100%;
       z-index: 10;
       display: flex; align-items: center; justify-content: space-between;
+      p{font-family:  Arial; margin-right: 5px; }
+      @media (max-width:500px){a , p{font-size: 12px;} .last{gap:3px !important}}
       .last{
         display: flex; align-items: center; gap: 10px;
         a{
           text-transform: capitalize;
-          margin-left: 10px;
           text-decoration: underline !important;
-          font-family: "Overlock" , Arial;
+          font-family: Arial;
         }
       }
     }
@@ -2038,20 +2023,14 @@ footer{
   background-size: cover;
   padding: 50px 0 ;
   @media (max-width:550px) { padding: 20px 0 !important ;  }
-  @media(max-width:550px){padding:20px 0 !important ;}
   position: relative;
   color: white;
-  background: url("../assets/bg/bg4.jpg");
-  z-index: 1000;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+  z-index : 1 ;
   &::before{
     content: "";
     width: 100%;
     height: 100%;
-    background:rgb(0 0 0 / 32%);
+    background:rgba(0, 0, 0, 0.117);
     position: absolute;
     left: 0;
     top: 0;
@@ -2063,12 +2042,11 @@ footer{
     position: relative;
     .h1{
       font-weight: 600;
-      font-family: "Overlock", Arial;
+      font-family: 'Montserrat';
       text-transform: uppercase;
-      letter-spacing: 2px;
-      -webkit-text-stroke: 1px var(--text-color);
-
+      letter-spacing: 1px;
     }
+    @media (max-width: 550px){ input , button{border-radius: 0 !important} ; .h1 {     font-size: 1rem ;     letter-spacing: 0 !important;}}
     form{
       display: flex; align-items: center; gap: 20px; justify-content: center;
       margin-top: 20px;
@@ -3385,7 +3363,7 @@ footer{
       width:100% ;
     }
     margin: auto;
-    h2{
+    h1 ,h2{
       text-align: left;
       line-height: 1.2;
       font-family: Lato,sans-serif;
@@ -3396,6 +3374,9 @@ footer{
       margin: 50px 0;
       padding: 0;
       box-sizing: border-box;
+      @media (max-width:700px){
+        font-size: 24px !important;
+      }
     }
     img{
       width: 100%;
@@ -3424,6 +3405,9 @@ footer{
       margin: 0 0 10px;
       padding: 0;
       box-sizing: border-box;
+      @media (max-width:700px){
+        font-size: 20px !important;
+      }
     }
     p , h5{
       color: #d8d8d8;
@@ -3437,12 +3421,19 @@ footer{
       line-height: 1.5;
       margin-bottom: 48px;
       letter-spacing: 1px;
+      text-wrap: pretty;
+      @media (max-width:700px){
+        font-size: 14px;
+      }
     }
 
     h5{
       font-size: 22px;
       line-height: 1.5;
       font-weight: normal ;
+      @media (max-width:700px){
+        font-size: 18px !important;
+      }
     }
   }
   
@@ -3994,8 +3985,8 @@ footer{
           bottom: 80px !important;
           .h1{font-size: 20px !important;}
           .h2 , .h3{font-size: 18px !important;}
-          .p{font-size: 16px !important;}
-          .li{font-size: 18px !important;}
+          .p{font-size: 14px !important;}
+          .li{font-size: 15px !important;}
         }
         .boxImg{
           position: absolute;
@@ -4021,11 +4012,19 @@ footer{
         .boxs{border-left:3px solid var(--text-color) !important ;bottom: 60px !important;}
         .inner-boxs{flex-direction: column !important; gap:0 !important}
       }
-      @media (max-width:450px){.boxImg{ height: 300px !important;  } ; .boxs{bottom: 20px !important;}}
-
+      @media (max-width:550px){
+        .boxImg{    height: 300px !important; width: 100% !important; border:2px solid #9c9a94 !important;  } ; 
+        .boxs{bottom: 20px !important;
+          border-left :3px solid #9c9a94 !important ;
+          .h1{font-size: 18px !important;}
+          .h2 , .h3{font-size: 16px !important;}
+          .p{font-size: 14px !important;}
+          .li{font-size: 14px !important;}}
+        
+      }
       .boxImg{
         border: 2px solid #af9548;
-        height:700px ;
+        height:650px ;
         width:100% ;
         img{
           width:100% ;
@@ -4078,10 +4077,7 @@ footer{
   .quotation{
     display: flex; align-items: center; flex-direction: column;
     min-height: 30vh;
-    @media (max-width:550px) { 
-    padding: 20px 0 !important ;  
-    .h3{font-size: 16px;}
-    }   
+      
     z-index: 105; 
     position: relative;
     .h3{
@@ -4123,8 +4119,13 @@ footer{
     .h2{
       text-align: center;
       margin-bottom: 10px;
-      text-wrap: unset !important;
+      text-wrap: unset ;
     }
+    @media (max-width:550px) { 
+      padding: 20px 0 !important ;  
+      .h2 , .h1{font-size: 15px; text-wrap: balance !important;}
+      .h3{font-size: 14px; font-family: 'Noto Sans' , Arial; text-transform: lowercase; }
+      } 
   }
 
   .searching{
@@ -4227,6 +4228,8 @@ footer{
           margin-top: 20px;
           h2{
             position: relative;
+            font-family:'Montserrat' , Arial ;
+            
             &::before{
               content:"" ; 
               position: absolute;
@@ -4244,6 +4247,7 @@ footer{
           p{
             line-height: 1.3;
             text-align: justify;
+            font-family:Arial !important ;
           }
         }
       }
@@ -4258,7 +4262,7 @@ footer{
 
   .social-media{
     padding: 50px 0;
-    @media(max-width:550px){padding:20px 0 !important ;}
+    @media(max-width:550px){padding:20px 0 !important ;.phead{margin-bottom: -10px !important;}}
     min-height: 100vh;
     overflow: hidden;
     display: flex;
@@ -4334,8 +4338,10 @@ footer{
             h2{
               text-align: center;
               color: var(--alt-alt-main);
-              margin-bottom: 10px;
-              font-size: 1.2rem;
+              margin-bottom: 5px;
+              @media (max-width:550px) {
+                font-size: 14px !important;
+              }
             }
             p{
               line-height: 1.1 !important;
@@ -4359,7 +4365,7 @@ footer{
           border: none !important;
           box-shadow: unset !important;
           outline: none !important;
-          width:100%
+          width:100% !important ;
         } 
         .box{
         width:100% !important;
@@ -4656,7 +4662,7 @@ footer{
     @media(max-width:550px){
       .coverImg {
         margin-top: 0 !important;
-        height: 80px !important;
+        min-height: 80px !important;
         img{
           width:80px !important ;
         }
@@ -4695,6 +4701,7 @@ footer{
       }
       @media (max-width:450px) {
         grid-template-columns: 1fr  !important;
+        .h1{text-align: center !important; margin-bottom: -10px !important;}
         .coverImg{height: 300px !important; width:100% !important}
         .boxs{h3 , h2{text-align: center !important;}}
       }
@@ -4764,10 +4771,10 @@ footer{
     min-height: 50vh;
     display: flex; align-items: center;
     padding: 50px 0 ;
-    @media (max-width:550px) { padding: 20px 0 !important ;  }
+    .h1{margin-bottom:30px ;}
+    @media (max-width:550px) { padding: 20px 0 !important ; .h1{margin-bottom:0 !important}  }
     z-index: 105; 
     position: relative;
-    .h1{margin-bottom:30px ; @media (max-width:550px) { margin-bottom: 10px !important ;  } }
     .container{
       .p{
         text-align: center;
@@ -4783,11 +4790,13 @@ footer{
         }
         @media (max-width: 550px) {
           grid-template-columns: 1fr ;
+          .h3{font-size:18px !important}
+          .p{font-size:14px !important}
         }
         .box{
           width: 100%;
-          height:100%;
-          background: var(--bg-card) ;
+          height: 100%;
+          background: #34333363;
           border-radius: 3px;
           position: relative;
           padding: 10px;
@@ -4799,6 +4808,7 @@ footer{
           align-items: center;
           justify-content: flex-start;
           flex-direction: column;
+          backdrop-filter: blur(2px);
           .coverImg{
             width: 100%;
             height: 100px;
@@ -4816,13 +4826,19 @@ footer{
           .text{
             .h3{
               text-align: center;
-              margin-bottom: 10px;
+              margin-bottom: 5px;
+              font-size: 20px;
+              font-family: 'Montserrat' , Arial;
+              font-weight: 600;
             }
             .p{
               letter-spacing: 1px;
               line-height: 1.3;
               text-wrap: balance;
               color : #eee ;
+              font-size: 16px;
+              font-family: 'Montserrat' , Arial;
+              font-weight: 400;
             }
           }
         }
@@ -4897,7 +4913,8 @@ footer{
               height: 170px;
             }
             @media (max-width:500px) {
-              height: 250px;
+              height: fit-content !important;
+              .h2{font-size:14px !important}
             }
             cursor: pointer;
             &:hover{
@@ -5140,9 +5157,11 @@ footer{
         border: none !important;
         box-shadow: unset !important;
         outline: none !important;
+        width:100% !important ;
       } 
       .box{
-      width:350px !important;
+      width:100% !important;
+      .h2{font-size: 16px !important;}
       .p{
         font-size: 14px !important;
         text-wrap: pretty !important;
@@ -5520,6 +5539,7 @@ footer{
   .exhibition-stands{
     min-height:80vh ;
     padding:50px 0 ;
+    @media (max-width:550px){padding:20px 0 !important ; .h1{margin-bottom:10px !important}}
     position: relative;
     background-color: var(--third-bg);
     z-index: 105; 
@@ -6305,7 +6325,7 @@ footer{
               height: 170px;
             }
             @media (max-width:500px) {
-              height: 250px;
+              height: fit-content !important;
             }
             cursor: pointer;
             &:hover{
@@ -6543,7 +6563,7 @@ footer{
   }
 
   .header1 li {
-    width:fit-content ;
+    width:170px ;
   }
 
 
@@ -6568,6 +6588,7 @@ footer{
   //   }
   //   min-height:80vh ;
   //   padding:50px 0 ;
+  @media (max-width:550px){padding:20px 0 !important ; .h1{margin-bottom:10px !important}}
   //   position: relative;
   //   background-color: var(--third-bg);
   //   z-index: 105; 
@@ -6784,7 +6805,7 @@ footer{
       }
     }
     .header2{
-      li{width: fit-content;}
+      li{width: 160px;}
     }
 
     .slider-1{
@@ -7184,6 +7205,11 @@ footer{
   background-color: var(--third-bg);
   width: 100%;
   .h2.clip{text-align: center;}
+  @media (max-width:550px) {
+    .h1{    
+      text-wrap: balance !important;
+    }
+  }
   .coverIntro{
     position: absolute;
     top: 0;
@@ -7369,12 +7395,11 @@ footer{
     line-height: 1.3;
     text-wrap: pretty;
     span{
-      font-family: 'Overlock', Arial ;
+      font-family: 'Poppins' , Arial; 
       font-size: 1.3rem;
       text-transform: lowercase;
       font-weight: normal;
-      @media (max-width:900px) {font-size: 1rem;}
-      // @media (max-width:550px) {font-size: 18px;}
+      @media (max-width:900px) {font-size: .9rem;}
     }
     }
     .h2{
@@ -7386,7 +7411,7 @@ footer{
       padding: 10px;
       width: -moz-fit-content;
       width: fit-content;
-      font-family: "Overlock" , Arial;
+      text-wrap: pretty;
       span{
         font-family: "Overlock" , Arial; font-size: 1.8rem;
         @media (max-width:900px){font-size:1.2rem !important}
@@ -9370,7 +9395,6 @@ footer{
     position: relative;
     z-index: 3;
     text-align: center;
-    // margin-bottom: 20px;
     font-family: 'Noto Sans' , Arial;
     color: var(--text-color);
     font-weight: 700;
@@ -9381,6 +9405,9 @@ footer{
   }
   @media (max-width:700px) {
     font-size: 1.2rem;
+  }
+  @media (max-width:550px) {
+    font-size: 1.1rem;
   }
 }
 
@@ -9396,6 +9423,9 @@ footer{
   text-shadow: 0 0 2px var(--text-color);
   @media (max-width:1100px) {
     font-size: 1.2rem ;
+  }
+  @media (max-width:550px) {
+    font-size: 1rem;
   }
 }
 
@@ -9413,6 +9443,9 @@ footer{
   @media (max-width:1170px) {
     font-size: 1.2rem;
   }
+  @media (max-width:550px) {
+    font-size: 1rem;
+  }
 }
 
 .p{
@@ -9428,6 +9461,9 @@ footer{
     // text-wrap: balance;
     @media (max-width:1000px) {
       font-size: 1rem;
+    }
+    @media (max-width:550px) {
+      font-size: .9rem;
     }
 }
 .phead{
