@@ -1472,32 +1472,25 @@ header section video {
   background: var(--third-bg);
   padding: 40px 3px;
   position: relative;
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   z-index: 101;
 }
-.Contact .h1 {
+.Contact .h1, .Contact .h2 {
   text-align: center !important;
   margin-bottom: 5px;
-}
-.Contact input:-internal-autofill-selected {
-  -webkit-appearance: menulist-button;
-     -moz-appearance: menulist-button;
-          appearance: menulist-button;
-  background-image: none !important;
-  background-color: transparent !important;
-  color: white !important;
+  width: 100%;
 }
 .Contact .container {
   display: grid;
-  grid-template-columns: 800px 1fr;
+  grid-template-columns: 900px 1fr;
   align-items: center;
-  gap: 20px;
   position: relative;
+  gap: 20px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .Contact .container {
     grid-template-columns: 700px 1fr;
   }
@@ -1507,20 +1500,10 @@ header section video {
     grid-template-columns: 500px 1fr;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 900px) {
   .Contact .container {
     grid-template-columns: 1fr;
   }
-  .Contact .container.container {
-    padding: 50px 0;
-  }
-}
-@media (max-width: 950px) and (max-width: 550px) {
-  .Contact .container {
-    padding: 20px 0 !important;
-  }
-}
-@media (max-width: 950px) {
   .Contact .container .box:nth-child(1) {
     height: 650px !important;
     display: flex;
@@ -1541,12 +1524,22 @@ header section video {
     grid-template-columns: 1fr;
   }
   .Contact .container .box:nth-child(1) {
+    height: 450px !important;
+  }
+}
+@media (max-width: 500px) {
+  .Contact .container {
+    width: 95%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+  .Contact .container .box:nth-child(1) {
     height: 400px !important;
   }
 }
 .Contact .container .box:nth-child(1) {
   padding: 0;
-  height: 90vh;
+  height: 720px;
 }
 .Contact .container .box:nth-child(1) img {
   width: 100% !important;
@@ -1557,11 +1550,10 @@ header section video {
   box-shadow: 0 0 10px #000;
 }
 .Contact .container .box:nth-child(2) {
-  border-radius: 4px;
-  align-items: fles;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 .Contact .container .box:nth-child(2) p {
   margin-bottom: 30px;
@@ -1577,6 +1569,7 @@ header section video {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 .Contact .container .box:nth-child(2) form select option {
   background: #181818 !important;
@@ -2399,7 +2392,7 @@ footer .container .bottom .last a {
 }
 @media (max-width: 550px) {
   .about-us .coverIntro {
-    height: 50vh;
+    height: 40vh;
   }
 }
 .about-us .coverIntro img {
@@ -2703,32 +2696,53 @@ footer .container .bottom .last a {
 .blog-page .h1 {
   margin-bottom: 30px;
 }
-.blog-page > .coverImg {
+.blog-page .coverIntro {
   position: relative;
-  top: -80px;
   left: 0;
+  top: -84px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
-.blog-page > .coverImg::after {
+.blog-page .coverIntro::before {
+  -webkit-backdrop-filter: brightness(0.9);
+          backdrop-filter: brightness(0.9);
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   background-color: var(--overlay);
 }
-.blog-page > .coverImg img {
+@media (max-width: 1200px) {
+  .blog-page .coverIntro {
+    height: 80vh;
+  }
+}
+@media (max-width: 950px) {
+  .blog-page .coverIntro {
+    height: 60vh;
+  }
+}
+@media (max-width: 950px) {
+  .blog-page .coverIntro {
+    height: 60vh;
+  }
+}
+@media (max-width: 700px) {
+  .blog-page .coverIntro {
+    height: 40vh;
+  }
+}
+@media (max-width: 550px) {
+  .blog-page .coverIntro {
+    height: 40vh;
+  }
+}
+.blog-page .coverIntro img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover !important;
-     object-fit: cover !important;
-}
-@media (min-width: 900px) {
-  .blog-page > .coverImg {
-    height: 100vh !important;
-  }
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .blog-page .text {
   text-align: center;
@@ -9855,7 +9869,6 @@ footer .container .bottom .last a {
   text-shadow: 0 0 2px var(--text-color);
   color: var(--text-color);
   text-align: left;
-  font-style: italic;
   font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 1170px) {

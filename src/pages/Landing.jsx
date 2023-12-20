@@ -61,7 +61,7 @@ const Landing = () => {
           <div className="boxImg n-border" data-aos="zoom-in-left" data-aos-delay="400"  >  <img className='' src={Community} alt="" /> </div>
           <div className="boxs " data-aos="zoom-in-right" data-aos-delay="600"  >
             <h2 className='h1 hidden-text'> Enhance the Effectiveness of Your Social Media Presence</h2>
-            <p className='h3 hidden-text'>Boost your brand online with our social media management services </p>
+            <p className='h2 hidden-text'>Boost your brand online with our social media management services </p>
             <div className="inner-boxs"data-aos="zoom-in-right" data-aos-delay="500"  >
 
               <ul className="box">

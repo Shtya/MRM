@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
-import IntroImg from "../assets/blog/intro.jpg"
+import IntroImg from "../assets/blog/Ourblog.jpg"
 import OneBlog from '../components/helpers/OneBlog';
 import Footer from '../components/Footer';
 import Pattern1, { Divider } from '../components/patterns/Pattern1';
 
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
+
 
 
 import Animation from '../components/helpers/Animation';
@@ -50,7 +49,7 @@ const Blogs = () => {
     <div className='blog-page'>
       <Animation />
       <div className="container"> <Navbar /></div>
-        <div className="coverImg"> <img src={IntroImg} alt="" /></div>
+        <div className="coverIntro"> <img src={IntroImg} alt="" /></div>
         <Divider classn="divider divider-top" />
         <div className="quotation">
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>

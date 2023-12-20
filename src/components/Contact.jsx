@@ -40,7 +40,7 @@ const Contact = ({title , desc , onHere}) => {
         </div>
 
         <div   className="box" data-aos="fade-left" data-aos-delay="200"  >
-          <h2 data-aos="fade-left" data-aos-delay="300"  className='h1 clip hidden-text'>{title || "We're here to help you"}</h2> 
+          <h2 data-aos="fade-left" data-aos-delay="300"  className='h1 '>{title || "We're here to help you"}</h2> 
           <p data-aos="fade-left" data-aos-delay="350"  className='h2'>{desc ? "" : "Reach Out and Let's Talk"} </p>
 
           <form ref={form} onSubmit={sendEmail}>
