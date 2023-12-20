@@ -61,11 +61,11 @@ const PROCESS = [
   {img:Analysis_9 , classn:"" , title:"Results and Growth"       , desc:"With our data-driven approach, you'll see your website's organic traffic and rankings improve over time. Your online presence will continue to grow, driving more leads and conversions for your business " },
 ]
 const WHY_MRM = [
-  {img:seo_process_1 , classn:"hidden-img", title:"Profound Expertise "        , desc:"Our SEO team has extensive experience and knowledge in the field, allowing them to navigate SEO intricacies and deliver outstanding results."},
-  {img:seo_process_2 , classn:"hidden-img", title:"Transparent Communication " , desc:"We maintain clear and transparent communication throughout our partnership. You will be kept updated on our strategies, progress, and their impact on your business, ensuring you are with us every step of the way.."},
-  {img:seo_process_3 , classn:"hidden-img", title:"Creative Problem Solvers"   , desc:"SEO is not just a technical endeavor; it requires creative problem-solving. Our team approaches each project with innovation and a determination to overcome challenges, ensuring your SEO strategy is effective and adaptable."},
-  {img:seo_process_4 , classn:"hidden-img", title:"Data-Driven Strategies "    , desc:"We rely on data-driven insights to formulate SEO strategies, allowing us to pinpoint opportunities, measure performance, and continuously refine our approach for optimal outcomes."},
-  {img:seo_process_5 , classn:"hidden-img", title:"Customized Solutions "      , desc:"We understand that each business is unique, and our SEO strategies are tailored to your specific needs, business goals, target audience, and industry. This customized approach ensures that we deliver results that align with your unique requirements."},
+  {img:seo_process_1 , classn:"", title:"Profound Expertise "        , desc:"Our SEO team has extensive experience and knowledge in the field, allowing them to navigate SEO intricacies and deliver outstanding results."},
+  {img:seo_process_2 , classn:"", title:"Transparent Communication " , desc:"We maintain clear and transparent communication throughout our partnership. You will be kept updated on our strategies, progress, and their impact on your business, ensuring you are with us every step of the way.."},
+  {img:seo_process_3 , classn:"", title:"Creative Problem Solvers"   , desc:"SEO is not just a technical endeavor; it requires creative problem-solving. Our team approaches each project with innovation and a determination to overcome challenges, ensuring your SEO strategy is effective and adaptable."},
+  {img:seo_process_4 , classn:"", title:"Data-Driven Strategies "    , desc:"We rely on data-driven insights to formulate SEO strategies, allowing us to pinpoint opportunities, measure performance, and continuously refine our approach for optimal outcomes."},
+  {img:seo_process_5 , classn:"", title:"Customized Solutions "      , desc:"We understand that each business is unique, and our SEO strategies are tailored to your specific needs, business goals, target audience, and industry. This customized approach ensures that we deliver results that align with your unique requirements."},
 ]
 const S_SEO = () => {
 
@@ -74,15 +74,15 @@ const S_SEO = () => {
     <div className='M_SEO landing'>
       <div className="container"> <Navbar /> </div>
       <Animation />
-      <div className="coverIntro"> <img src={Intro1} alt="" /></div>
+      <div className="coverIntro"  data-aos="zoom-in-right" > <img src={Intro1} alt="" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img" >  <img src={Community} alt="" /> </div>
-              <div className="boxs " >
-                  <h2 className="h1 hidden-text" data-aos="fade-left">Unlock the full potential of your website with SEO services</h2>
-                  <p className="h2 hidden-text" data-aos="fade-left">Improve your website's visibility and ranking on search engines with our professional SEO solutions </p>
-                  <p className="p hidden-text" data-aos="fade-left"> Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward.</p>
+              <div className="boxImg "  data-aos="zoom-in-right" data-aos-delay="400"  >  <img src={Community} alt="" /> </div>
+              <div className="boxs "  data-aos="zoom-in-left" data-aos-delay="600"  >
+                  <h2 className="h1 hidden-text" >Unlock the full potential of your website with SEO services</h2>
+                  <p className="h2 hidden-text" >Improve your website's visibility and ranking on search engines with our professional SEO solutions </p>
+                  <p className="p hidden-text" > Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward.</p>
             </div>
         </div>
       </div>
@@ -91,8 +91,8 @@ const S_SEO = () => {
       <div className="quotation">
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
         <div className="container">
-              <div className="h2 hidden-text" data-aos="fade-up"> Maximizing SEO Impact with MRM at Your Website </div>
-              <p className="h3 " data-aos="fade-up"> We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it. Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs. Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search.</p>
+              <div className="h2 hidden-text" data-aos="fade-up" > Maximizing SEO Impact with MRM at Your Website </div>
+              <p className="h3 " data-aos="fade-up"   data-aos-delay="200" > We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it. Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs. Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search.</p>
         </div>
         </div>
 
@@ -100,7 +100,7 @@ const S_SEO = () => {
       <div className="platforms">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
-              <h3 className="h1 hidden-text clip" data-aos="fade-left">Our SEO Services </h3>
+              <h3 className="h1 hidden-text clip" >Our SEO Services </h3>
               <div className="boxs">
                   {
                     OUR_SEO.map((e,index)=> (
@@ -115,7 +115,7 @@ const S_SEO = () => {
 
       <div className="process3">
         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
-        <div className="h1 hidden-text clip" data-aos="fade-left">Our proccess</div>
+        <div className="h1 hidden-text clip" data-aos="fade-up">Our proccess</div>
           <div className="container">
               <div className="box box1">
                   <OneProcess num="1" classn={PROCESS[0].classn} img={PROCESS[0].img} title={PROCESS[0].title} paragraph={PROCESS[0].desc} />
@@ -137,8 +137,8 @@ const S_SEO = () => {
     <Divider classn="divider-left" />
     <div className="WHY">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-      <div className="h1 clip hidden-text"> Why We Excels? </div>
-      <div className="container">
+      <div className="h1" data-aos="fade-up"> Why We Excels? </div>
+      <div className="container" data-aos="fade-up">
         {
           WHY_MRM.map((e,index)=> (
             <OneWhy key={index} img={e.img} title={e.title} desc={e.desc} classn={`${e.classn} one-why-${index+1}`} />

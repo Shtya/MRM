@@ -110,15 +110,15 @@ const S_Branding = ({header =true}) => {
     <div className="S_Branding landing">
       <div className="container"> <Navbar /> </div>
       <Animation />
-      <div className="coverIntro"> <img src={ImgIntro} alt="" /></div>
+      <div className="coverIntro" data-aos="zoom-in-right" > <img src={ImgIntro} alt="" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  >  <img src={ImgSection} alt="" /> </div>
-              <div className="boxs" data-aos="fade-left" >
-                  <h2 className='h1 hidden-text'> Unleash the Full Power and Potential of Your Brand! </h2>
-                  <h2 className='h2 hidden-text'> Partner with us to bring your brand identity to life, both online and offline </h2>
-                  <p className='p hidden-text'> Your brand goes way beyond a simple logo, or your visual identity. Your brand is your voice, your story – and it's how every aspect of your business makes your customers feel. We don't just create your brand identity; we work with you to implement and grow it digitally and in real life. </p>
+              <div className="boxImg n-border" data-aos="zoom-in-right" data-aos-delay="400"  >  <img src={ImgSection} alt="" /> </div>
+              <div className="boxs"  data-aos="zoom-in-left" data-aos-delay="600"  >
+                  <h2 className='h1 '> Unleash the Full Power and Potential of Your Brand! </h2>
+                  <h2 className='h2 '> Partner with us to bring your brand identity to life, both online and offline </h2>
+                  <p className='p '> Your brand goes way beyond a simple logo, or your visual identity. Your brand is your voice, your story – and it's how every aspect of your business makes your customers feel. We don't just create your brand identity; we work with you to implement and grow it digitally and in real life. </p>
             </div>
         </div>
       </div>
@@ -126,8 +126,8 @@ const S_Branding = ({header =true}) => {
       <div className="quotation">
          <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
           <div className="container">
-              <div className="h2 hidden-text" data-aos="fade-up"> Elevate Your Brand with Our Comprehensive Branding Services  </div>
-              <div className="h3 " data-aos="fade-up">  MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
+              <div className="h2 "  data-aos="fade-up"  > Elevate Your Brand with Our Comprehensive Branding Services  </div>
+              <div className="h3 " data-aos="fade-up"  data-aos-delay="200" >  MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
           </div>
         </div>
 
@@ -135,8 +135,8 @@ const S_Branding = ({header =true}) => {
         <div className="platforms">
          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
-              <h3 className='h1 clip'>Our Branding Services</h3>
-              <div className="boxs">
+              <h3 className='h1'data-aos="fade-up">Our Branding Services</h3>
+              <div className="boxs" data-aos="fade-up">
                   {
                     BRANDING_SERVICES.map((e,index)=> (
                       <OnePlatform key={index} classn={`box-${index+1}`} img={e.img} title={e.title}   paragraph={e.desc} />
@@ -150,11 +150,11 @@ const S_Branding = ({header =true}) => {
       <div className="signages">
          <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
           <div className="container">
-            <div className="h1 hidden-text">OUR GALLERY</div>
+            <div className="h1 " data-aos="fade-up">OUR GALLERY</div>
           </div>
 
           <div className="outdoor">
-          {!header == false && <div className="header1 header2">{
+          {!header == false && <div className="header1 header2" data-aos="flip-up">{
           headers.map((e,index)=> (
           <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
         ))}</div>}
@@ -168,14 +168,14 @@ const S_Branding = ({header =true}) => {
         <div className="searching2">
          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
-              <div className="coverImg "> <img src={Grid1} alt="" /> </div>
+              <div className="coverImg " data-aos="fade-right"> <img src={Grid1} alt="" /> </div>
 
-              <div className="boxs">
-                <h1 className='h1 hidden-text'>Why Choose Us</h1>
+              <div className="boxs" data-aos="fade-up">
+                <h1 className='h1' data-aos="fade-left">Why Choose Us</h1>
               {Approach.map((e,index)=>(
                 <div key={index}>
-                  <h3 className='h2 hidden-text'>{e.title}</h3>
-                  <h2 className='p hidden-text'>{e.desc}</h2>
+                  <h3 className='h2 ' data-aos="fade-left">{e.title}</h3>
+                  <h2 className='p ' data-aos="fade-left">{e.desc}</h2>
                 </div>
                   ))}
               </div>

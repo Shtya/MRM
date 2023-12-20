@@ -52,10 +52,9 @@ const Blog = () => {
   return (
     <section className='blog' id='Blog'>
       <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
-      <div className="container"> <div className="h1 clip hidden-text">BLOG</div> </div>
-      <p className="phead hidden-text" >Latest Insights and News to Keep Your Strategies Alive </p>
+      <div className="container"> <div className="h1 clip" data-aos="fade-up" >BLOG</div> </div>
+      <p className="phead" data-aos="fade-up"  >Latest Insights and News to Keep Your Strategies Alive </p>
 
-      {/* <BLOG_SLIDER data={blogs} /> */}
       <Slider_1_Img  data={blogs} settings={settings} />
 
     </section>

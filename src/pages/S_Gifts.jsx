@@ -91,12 +91,12 @@ const S_Gifts = () => {
     <div className="S_Gifts landing">
       <div className="container"> <Navbar /> </div>
       <Animation />
-      <div className="coverIntro "> <img src={ImgIntro} alt="" /></div>
+      <div className="coverIntro " data-aos="zoom-in-left"  > <img src={ImgIntro} alt="" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  >  <img src={ImgSection} alt="" /> </div>
-              <div className="boxs" data-aos="fade-left" >
+              <div className="boxImg hidden-img" data-aos="zoom-in-left" data-aos-delay="400"   >  <img src={ImgSection} alt="" /> </div>
+              <div className="boxs"data-aos="zoom-in-left" data-aos-delay="600"  >
                   <h2 className='h1 hidden-text'> Transform Professional Relationships with Timeless Elegance</h2>
                   <h2 className='h2 hidden-text'> Unleash the potential of your business connections with our expertly curated collection of corporate gifts</h2>
                   <p className='p hidden-text'> At MRM, we understand the impact of meaningful gestures in the corporate world. Our passion lies in transforming ordinary moments into extraordinary memories through our premium services: Corporate Gifts, Customized Items, and Trophies. </p>
@@ -109,22 +109,21 @@ const S_Gifts = () => {
       <div className="quotation">
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container" >
-                <div className="h2" data-aos="fade-up">Strengthen Your Professional Ties  with Our Meticulously Curated Collection of Corporate Gifts</div>
-                <div className="h3" data-aos="fade-up">Explore our meticulously curated collection of corporate gifts, tailor-made for every occasion, and elevate your business relationships to new heights. Our handpicked selection of gifts is designed to leave a lasting impression on your clients, employees, and partners, and convey your appreciation for their business.  With a focus on quality, elegance, and functionality, our gifts are sure to impress and strengthen your professional ties</div>
+                <div className="h2" data-aos="zoom-in-up" data-aos-delay="100" >Strengthen Your Professional Ties  with Our Meticulously Curated Collection of Corporate Gifts</div>
+                <div className="h3" data-aos="zoom-in-up" data-aos-delay="400" >Explore our meticulously curated collection of corporate gifts, tailor-made for every occasion, and elevate your business relationships to new heights. Our handpicked selection of gifts is designed to leave a lasting impression on your clients, employees, and partners, and convey your appreciation for their business.  With a focus on quality, elegance, and functionality, our gifts are sure to impress and strengthen your professional ties</div>
             </div>
         </div>
         
         <Divider classn="divider-left" />
         <div className="boxs-tails">
           <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-          <div className="h1 clip">We Offer</div> 
-            <div className="container">
+          <div className="h1" data-aos="fade-up" >We Offer</div> 
+            <div className="container" data-aos="fade-up">
                   {Approach.map((e,index)=>(
                     <div className='box' key={index} data-aos="fade-up" >
-                      {/* {index <2 && <i className="fa-solid fa-arrow-right"></i> } */}
-                      <div className="coverImg hidden-img"data-aos="fade-up" > <img src={e.img} alt="" /> </div>
-                      <h3 className="h2 clip hidden-text" data-aos="fade-up">{e.title}</h3>
-                      <h2 className=" p hidden-text" data-aos="fade-up">{e.desc}</h2>
+                      <div className="coverImg hidden-img" > <img src={e.img} alt="" /> </div>
+                      <h3 className="h2 clip hidden-text" >{e.title}</h3>
+                      <h2 className=" p hidden-text" >{e.desc}</h2>
                     </div>
                   ))}
             </div>
@@ -134,7 +133,7 @@ const S_Gifts = () => {
       <div className="signages search-edite">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="outdoor">
-            <div className="header1 header2">{
+            <div className="header1 header2" data-aos="flip-up" >{
           headers.map((e,index)=> (
           <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
         ))}</div>

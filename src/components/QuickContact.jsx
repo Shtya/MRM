@@ -27,14 +27,14 @@ const QuickContact = () => {
 
       <Pattern8 />
       <div className="container">
-      <div className="h1">contact for your consultation </div>
+      <div className="h1" data-aos="fade-up" >contact for your consultation </div>
       <form ref={form} onSubmit={sendEmail}>
-        <input type="text"  name="name" placeholder='Name' />
-        <input type="text"  name="phone" placeholder='Phone' />
-        <input type="email" name="email"  placeholder='Email' />
-        <input className='bt' type="submit" value="Submit" />
+        <input data-aos="zoom-in" type="text"  name="name" placeholder='Name' />
+        <input data-aos="zoom-in" type="text"  name="phone" placeholder='Phone' />
+        <input data-aos="zoom-in" type="email" name="email"  placeholder='Email' />
+        <input data-aos="zoom-in" className='bt' type="submit" value="Submit" />
         
-        <button className='btn3' type='submit'> <i class="bt2 fa-solid fa-paper-plane"></i> </button>
+        <button className='btn3' data-aos="zoom-in"  type='submit'> <i class="bt2 fa-solid fa-paper-plane"></i> </button>
       </form>
       </div>
     </div>

@@ -8,12 +8,12 @@ const OnePlatform = ({title , paragraph , img , classn , path , trueBtn}) => {
 
   return (
     <Link to={path}  className={`box ${classn}`}>
-        <div className="coverImg hidden-img"> <img src={img} alt="" /></div>
+        <div className="coverImg"> <img src={img} alt="" /></div>
         <div className="inner-box">
             <span className="one"/>
             <span className="two"/>
-            <h2 className='h2 hidden-text clip'> {title} </h2>
-            <p className='p hidden-text'>{paragraph}</p>
+            <h2 className='h2 '> {title} </h2>
+            <p className='p '>{paragraph}</p>
             {trueBtn &&<button className='bt' onClick={_=> navigate(path)}> see more</button>}
         </div>
       </Link>

@@ -975,7 +975,7 @@ header section video {
 }
 
 .Why {
-  min-height: 80vh;
+  min-height: 50vh;
   padding: 50px 0;
   display: flex;
   flex-direction: column;
@@ -1119,7 +1119,7 @@ header section video {
 
 .services {
   color: white;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1666,7 +1666,7 @@ header section video {
 
 /*================================== BLOG ================================*/
 .blog {
-  min-height: 70vh;
+  min-height: 50vh;
   color: white;
   padding: 50px 0;
   z-index: 100;
@@ -4044,6 +4044,9 @@ footer .container .bottom .last a {
 .landing .n-border {
   border: none !important;
 }
+.landing .n-border::after, .landing .n-border::before {
+  display: none !important;
+}
 .landing .coverIntro {
   width: 100%;
   height: 100vh;
@@ -4230,8 +4233,8 @@ footer .container .bottom .last a {
   width: 100%;
   height: 100%;
   position: relative;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: fill !important;
+     object-fit: fill !important;
   transition: 0.3s;
 }
 .landing .home .container .boxs .h1 {
@@ -4487,7 +4490,7 @@ footer .container .bottom .last a {
 }
 .landing .social-media {
   padding: 50px 0;
-  min-height: 100vh;
+  min-height: 50vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -4627,7 +4630,7 @@ footer .container .bottom .last a {
   }
 }
 .landing .platforms {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 50px 0;
   background-color: var(--third-bg);
   z-index: 105;
@@ -4761,7 +4764,7 @@ footer .container .bottom .last a {
 }
 .landing .process {
   padding: 50px 0;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -5410,7 +5413,7 @@ footer .container .bottom .last a {
 
 .WEB_DESIGN .social-media {
   padding: 50px 0;
-  min-height: 100vh;
+  min-height: 50vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -5809,7 +5812,7 @@ footer .container .bottom .last a {
 .S_Exhibition .photography-services,
 .S_Exhibition .Videography-services,
 .S_Exhibition .Display-stands {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 50px 0;
   z-index: 105;
   position: relative;
@@ -6023,7 +6026,7 @@ footer .container .bottom .last a {
 }
 .S_photography .exhibition-stands,
 .S_Exhibition .exhibition-stands {
-  min-height: 80vh;
+  min-height: 50vh;
   padding: 50px 0;
   position: relative;
   background-color: var(--third-bg);
@@ -6298,7 +6301,7 @@ footer .container .bottom .last a {
   /*===================================== M_SEO_PAGE =================0000000000===============*/
 }
 .M_SEO .platforms {
-  min-height: 90vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   padding: 50px 0;
@@ -6448,7 +6451,7 @@ footer .container .bottom .last a {
 }
 .M_SEO .process3 {
   padding: 50px 0;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -6625,7 +6628,7 @@ footer .container .bottom .last a {
   }
 }
 .M_SEO .WHY {
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
   padding: 50px 0 50px;
   z-index: 105;
@@ -6761,7 +6764,7 @@ footer .container .bottom .last a {
   /*===================================== M_Signages =================0000000000===============*/
 }
 .M_Signages .signages {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 50px 0 0;
   z-index: 105;
   position: relative;
@@ -7208,7 +7211,7 @@ footer .container .bottom .last a {
 .S_Gifts .signages {
   padding: 50px 0;
   position: relative;
-  min-height: 80vh;
+  min-height: 50vh;
 }
 @media (max-width: 550px) {
   .S_Gifts .signages {
@@ -7292,7 +7295,7 @@ footer .container .bottom .last a {
   margin-bottom: 30px;
 }
 .S_Branding .signages {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 50px 0;
   z-index: 105;
   position: relative;
@@ -7371,7 +7374,7 @@ footer .container .bottom .last a {
   color: var(--alt-alt-main);
 }
 .S_Branding .platforms {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 50px 0;
   z-index: 105;
   position: relative;

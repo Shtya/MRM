@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Logo from "../assets/Logo1.png"
 import { Link, useNavigate } from 'react-router-dom';
+import Animation from './helpers/Animation';
 
 const Navbar1 = () => {
   const Navigate = useNavigate()
@@ -43,16 +44,17 @@ htmlcssArrow.onclick = function() {
 
   return (
   <div className="Navbar1" >
+    <Animation />
     <nav>
       <div class={`navbar ${top}`} >
         <i class='bx bx-menu'></i>
-        <div class="logo"><Link to="/"> <img src={Logo} alt="" /></Link></div>
+        <div data-aos="fade-down" data-aos-delay="100" class="logo"><Link to="/"> <img src={Logo} alt="" /></Link></div>
         <div class="nav-links">
           <div class="sidebar-logo">   <span class="logo-name"><img src={Logo} alt="" /></span>   <i class='bx bx-x' ></i> </div>
           
           <ul class="links">
-            <li onClick={_=> Navigate("/")}><Link to="/">Home</Link></li>
-            <li ><Link  >Services</Link>
+            <li data-aos="fade-down" data-aos-delay="200" onClick={_=> Navigate("/")}><Link to="/">Home</Link></li>
+            <li data-aos="fade-down" data-aos-delay="300" ><Link  >Services</Link>
               <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
               <ul class="htmlCss-sub-menu sub-menu">
                 <li onClick={_=> Navigate("/web-design")}><Link to="/web-design"> web design & Development </Link></li>
@@ -67,13 +69,13 @@ htmlcssArrow.onclick = function() {
               </ul>
             </li>
 
-            <li><Link  > Portfolio</Link></li>
-            <li onClick={_=> Navigate("/blog")}><Link to="/blog">Blog</Link></li>
-            <li onClick={_=> Navigate("/about-us")}><Link to="/about-us">About Us</Link></li>
-            <li onClick={_=> Navigate("/contact-us")}><Link to="/contact-us"> Contact Us</Link></li>
+            <li data-aos="fade-down" data-aos-delay="400"><Link  > Portfolio</Link></li>
+            <li data-aos="fade-down" data-aos-delay="500" onClick={_=> Navigate("/blog")}><Link to="/blog">Blog</Link></li>
+            <li data-aos="fade-down" data-aos-delay="600" onClick={_=> Navigate("/about-us")}><Link to="/about-us">About Us</Link></li>
+            <li data-aos="fade-down" data-aos-delay="700" onClick={_=> Navigate("/contact-us")}><Link to="/contact-us"> Contact Us</Link></li>
           </ul>
         </div>
-        <div class="search-box">
+        <div class="search-box" data-aos="fade-down" data-aos-delay="800">
           <i class='bx bx-search'></i>
           <div class="input-box"> <input type="text" placeholder="Search..."/>  </div>
         </div>

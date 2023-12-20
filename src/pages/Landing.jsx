@@ -53,15 +53,15 @@ const Landing = () => {
     <div className='landing'>
       <Animation />
       <div className="container"> <Navbar /> </div>
-      <div className="coverIntro"> <img  src={Intro1} alt="" /></div>
+      <div className="coverIntro" data-aos="zoom-in-left"> <img  src={Intro1} alt="" /></div>
       
       <div className="home">
         <div className="container">
-          <div className="boxImg hidden-img" >  <img className='n-border' src={Community} alt="" /> </div>
-          <div className="boxs" >
-            <h2 className='h1 hidden-text' data-aos="fade-left"> Enhance the Effectiveness of Your Social Media Presence</h2>
-            <p className='h3 hidden-text' data-aos="fade-left">Boost your brand online with our social media management services </p>
-            <div className="inner-boxs" >
+          <div className="boxImg n-border" data-aos="zoom-in-left" data-aos-delay="400"  >  <img className='' src={Community} alt="" /> </div>
+          <div className="boxs " data-aos="zoom-in-right" data-aos-delay="600"  >
+            <h2 className='h1 hidden-text'> Enhance the Effectiveness of Your Social Media Presence</h2>
+            <p className='h3 hidden-text'>Boost your brand online with our social media management services </p>
+            <div className="inner-boxs"data-aos="zoom-in-right" data-aos-delay="500"  >
 
               <ul className="box">
                 <li className='li hidden-text'>Social media development</li>
@@ -87,15 +87,14 @@ const Landing = () => {
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
           <div className="container">
               <div className="coverImg  "> 
-                  <img className='hidden-img' src={Grid1} alt="" /> 
-                  <img className='hidden-img' src={Grid2} alt="" /> 
-                  <img className='hidden-img' src={Grid3} alt="" /> 
-                  <img className='hidden-img' src={Grid4} alt="" /> 
+                  <img data-aos="zoom-in-right" data-aos-delay="100"  src={Grid1} alt="" /> 
+                  <img data-aos="zoom-in-top" data-aos-delay="200"    src={Grid2} alt="" /> 
+                  <img data-aos="zoom-in-right" data-aos-delay="300"  src={Grid3} alt="" /> 
+                  <img data-aos="zoom-in-top" data-aos-delay="400"    src={Grid4} alt="" /> 
               </div>
 
               <div className="boxs ">
                   <h3 className='h2 hidden-text' data-aos="fade-left">Are you searching for top-notch social media management services in Dubai?</h3>
-                  
                   <div className="box">
                       <h2 className='h3 hidden-text' data-aos="fade-left"> We've got you covered</h2>
                       <p className='p hidden-text' data-aos="fade-left"> We take pride in delivering exceptional results that help increase sales while minimizing costs. We collaborate with you to develop a tailored strategy that aligns with your business goals. Our team can help you achieve your digital marketing goals, whether you need to drive traffic, increase brand awareness, or boost sales. </p>
@@ -115,8 +114,8 @@ const Landing = () => {
       <div className="social-media  ">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
         <div className="container">
-          <h3 className='h1 hidden-text clip'>Our Social Media Marketing Services</h3>
-          <div className="boxs">
+          <h3 className='h1' data-aos="fade-up">Our Social Media Marketing Services</h3>
+          <div className="boxs" data-aos="fade-up" >
             {
               SocialMedia.map((e,index)=> ( <OneSocial  key={index} Img={e.img} title={e.title} desc={e.desc} classn={e.classn} />))
             }
@@ -128,8 +127,8 @@ const Landing = () => {
       <div className="platforms">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
-              <h3 className='h1 hidden-text clip'>Platforms we've managed on social media</h3>
-              <div className="boxs">
+              <h3 className='h1 'data-aos="fade-up">Platforms we've managed on social media</h3>
+              <div className="boxs" data-aos="fade-up">
                   <OnePlatform trueBtn={true} path="/facebook" num="hidden hidden-left" img={Icon_1} title="Facbook Marketing "   paragraph="we can increase your brand interaction on Facebook and Instagram with deep engagement methods and rich content, including video marketing. Our specialists help you achieve your marketing goals by leveraging your Facebook presence to raise brand awareness, reach new customers, generate leads, boost website traffic, or gather market and competitor information." />
                   <OnePlatform trueBtn={true} path="/snapchat" num="hidden" img={Icon_4} title="Snapchat Marketing "  paragraph="We specialize in creating effective Snapchat Ads to boost your brand's visibility, drive traffic, and increase sales. Our region-specific marketing tactics leverage features like Snap Ads, Geofilters, and Sponsored Lens to optimize your presence on this fast-growing platform. We can help you incorporate Snapchat into your marketing strategy for short-term, impactful campaigns." />
                   <OnePlatform trueBtn={true} path="/instagram" classn="different" num="hidden hidden-left" img={Icon_2} title="Instagram Marketing " paragraph="We bring your brand to life on Instagram through innovative visual marketing. Our marketing services are customized to help businesses reach their goals and generate leads, increase engagement, and drive sales. Our specialists conduct research before creating regular content to ensure effective campaigns." />
@@ -143,7 +142,7 @@ const Landing = () => {
       <Divider classn="divider-left" />
     <div className="process">
         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
-        <div className="container1"> <div className="h1 hidden-text clip">our proccess</div></div>
+        <div className="container1"> <div className="h1" data-aos="fade-up">our proccess</div></div>
         <div className="container">
             <div className="box box1">
                 <OneProcess num="1" classn="hidden" img={Process1} title="Optimized For Results" paragraph="We work closely with our clients to understand their business goals, target audience, industry, and competitors. With this knowledge, we create a tailored social media plan that meets their unique needs. We aim to deliver a strategy customized to each client's specific requirements." />

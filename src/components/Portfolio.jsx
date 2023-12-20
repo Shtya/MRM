@@ -57,10 +57,10 @@ const Portfolio = ({header  , typeGallery , nameofgallery , bg  }) => {
     <section className='portfolio' id="Portfolio">
       <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
 
-      <h2 className='h1 clip' >{ nameofgallery || "OUR WORKS"}</h2>
-      {!header == false && <div className="header1">{
+      <h2 className='h1' data-aos="fade-up" >{ nameofgallery || "OUR WORKS"}</h2>
+      {!header == false && <div className="header1" >{
           headers.map((e,index)=> (
-          <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
+          <li data-aos="fade-up" data-aos-delay={`${index+1}00`} className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
         ))}</div>}
 
 
