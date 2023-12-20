@@ -31,17 +31,17 @@ const Footer = ({appear}) => {
       <div className="center">
         <ul className='ul-1' data-aos="fade-up" data-aos-delay="600">
           <h2 className='h2 clip'>Contact INFO</h2>
-          <li><i className="fa-solid fa-phone"></i>  +971561384496 </li>
-          <li><i className="fa-solid fa-envelope"></i>  info@mrmadvertisingdubai.com </li>
-          <li><i className="fa-solid fa-map-location-dot"></i>  Business Bay - Dubai </li>
+          <li ><i className="fa-solid fa-envelope"></i>  info@mrmadvertisingdubai.com </li>
+          <li ><i className="fa-solid fa-map-location-dot"></i>  Business Bay - Dubai </li>
+          <li ><i className="fa-solid fa-phone"></i>  +971561384496 </li>
         </ul>
 
         <ul className='ul-2' data-aos="fade-up" data-aos-delay="600">
           <h2 className='h2 clip'>Quick Links</h2>
-          <li > <Link className='p' to="/about-us"> about us </Link></li>
-          <li > <Link className='p' to="/landing"> services </Link></li>
-          <li > <Link className='p' to="/contact-us"> contact us </Link></li>
-          <li > <Link className='p' to="/blog"> blog </Link></li>
+          <li > <Link to="/contact-us"> contact us </Link></li>
+          <li > <Link to="/about-us"> about us </Link></li>
+          <li > <Link to="/landing"> services </Link></li>
+          <li > <Link to="/blog"> blog </Link></li>
         </ul>
 
         <ul className='ul-3' data-aos="fade-up" data-aos-delay="600" >

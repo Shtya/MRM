@@ -30,9 +30,9 @@ const Contact2 = () => {
                   <div className="text"> <h2 className='h1 blur' data-aos="fade-right" data-aos-delay="300">Turn your dreams into digital realities </h2> </div>
 
                   <ul className='contact-list'>
-                    <li className="list-item" data-aos="fade-right" data-aos-delay="300"> <a> <i className="fa-solid fa-phone"></i>         </a>    <span className='contact-text place'>+971561384496</span></li>
-                    <li className="list-item" data-aos="fade-right" data-aos-delay="400"> <a>  <i className="fa-solid fa-envelope"></i>     </a>    <span className='contact-text phone'>info@mrmadvertisingdubai.com</span> </li>
-                    <li className="list-item" data-aos="fade-right" data-aos-delay="500"> <a>  <i className="fa-solid fa-location-dot"></i> </a>    <span className='contact-text gmail'>Business Bay - Dubai</span></li>
+                    <li className="list-item" data-aos="fade-right" data-aos-delay="300"> <a> <i className="fa-solid fa-phone"></i>         </a>    <span className='contact-text place p'>+971561384496</span></li>
+                    <li className="list-item" data-aos="fade-right" data-aos-delay="400"> <a>  <i className="fa-solid fa-envelope"></i>     </a>    <span className='contact-text phone p'>info@mrmadvertisingdubai.com</span> </li>
+                    <li className="list-item" data-aos="fade-right" data-aos-delay="500"> <a>  <i className="fa-solid fa-location-dot"></i> </a>    <span className='contact-text gmail p'>Business Bay - Dubai</span></li>
                     </ul>
                         <hr />
                     <ul className='social-media-list'>
