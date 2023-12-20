@@ -6,6 +6,19 @@ import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/facebook.png"
 import ImgSection from "../../assets/bg/bg1.jpg"
 
+import f1 from "../../assets/Socialmedia/facebook/f1.png"
+import f2 from "../../assets/Socialmedia/facebook/f2.png"
+import f3 from "../../assets/Socialmedia/facebook/f3.png"
+import f4 from "../../assets/Socialmedia/facebook/f4.png"
+import f5 from "../../assets/Socialmedia/facebook/f5.png"
+import f6 from "../../assets/Socialmedia/facebook/f6.png"
+import f7 from "../../assets/Socialmedia/facebook/f7.png"
+import f8 from "../../assets/Socialmedia/facebook/f8.png"
+import f9 from "../../assets/Socialmedia/facebook/f9.png"
+import f10 from "../../assets/Socialmedia/facebook/f10.png"
+import f11 from "../../assets/Socialmedia/facebook/f11.png"
+import f12 from "../../assets/Socialmedia/facebook/f12.png"
+import f13 from "../../assets/Socialmedia/facebook/f13.png"
 import { motion } from 'framer-motion'
 
 import Animation from '../../components/helpers/Animation'
@@ -30,22 +43,19 @@ const TYPES = [
 ]
 
 const SERVICES = [
-  {icon:"" , title:"Campaign Planning and Setup"     , desc:"We meticulously plan and set up campaigns aligned with your goals."},
-  {icon:"" , title:"Multilingual Content Creation"     , desc:"Crafting content that resonates with diverse audiences through multilingual expertise."},
-  {icon:"" , title:"Eye-catching Graphics and Video Creation"     , desc:"Designing visually appealing and compelling graphics and videos that capture attention."},
-  {icon:"" , title:"Complete Ad Setup"     , desc:"Ensuring your ads are optimized for maximum impact and reach."},
-  {icon:"" , title:"Building a Relevant Audience Base"     , desc:"Identifying and targeting the right audience for your brand."},
-  {icon:"" , title:"Messenger Bots Installation"     , desc:"Implementing messenger bots for enhanced customer engagement."},
-  {icon:"" , title:"Advanced Ad Technology Implementation"     , desc:"Leveraging advanced advertising technology for superior results."},
-  {icon:"" , title:"Pixel Tracking Code Installation"     , desc:"Setting up pixel tracking to measure and optimize ad performance."},
-  {icon:"" , title:"A/B Testing"     , desc:"Conducting tests to determine the most effective strategies for your business."},
-  {icon:"" , title:"Continuous Audience Engagement"     , desc:"Keeping your audience engaged through responses, tags, likes, and comments."},
-  {icon:"" , title:"Keyword Implementation"     , desc:"Incorporating keywords to enhance your brand's visibility."},
-  {icon:"" , title:"Monitoring, Analysis, and Reporting"     , desc:"Ongoing monitoring, in-depth analysis, and monthly reports to track and improve campaign performance."},
-  {icon:"" , title:"Dynamic Product Ads"     , desc:"Tailoring ads to showcase your products dynamically."},
-  {icon:"" , title:"Messenger Bots Installation"     , desc:"Enhancing customer interactions through messenger bots."},
-  {icon:"" , title:"Implementing Advanced Ad Technology"     , desc:"Leveraging cutting-edge ad technology to maximize results."},
-  {icon:"" , title:"Installation of Pixel Tracking Code"     , desc:"Precise tracking of ad performance through pixel code."},
+  {icon:f1 , title:"Campaign Planning and Setup"     , desc:"We meticulously plan and set up campaigns aligned with your goals."},
+  {icon:f2 , title:"Multilingual Content Creation"     , desc:"Crafting content that resonates with diverse audiences through multilingual expertise."},
+  {icon:f3 , title:"Eye-catching Graphics and Video Creation"     , desc:"Designing visually appealing and compelling graphics and videos that capture attention."},
+  {icon:f4 , title:"Complete Ad Setup"     , desc:"Ensuring your ads are optimized for maximum impact and reach."},
+  {icon:f5 , title:"Building a Relevant Audience Base"     , desc:"Identifying and targeting the right audience for your brand."},
+  {icon:f6 , title:"Messenger Bots Installation"     , desc:"Implementing messenger bots for enhanced customer engagement."},
+  {icon:f7 , title:"Advanced Ad Technology Implementation"     , desc:"Leveraging advanced advertising technology for superior results."},
+  {icon:f8 , title:"Pixel Tracking Code Installation"     , desc:"Setting up pixel tracking to measure and optimize ad performance."},
+  {icon:f9 , title:"A/B Testing"     , desc:"Conducting tests to determine the most effective strategies for your business."},
+  {icon:f10 , title:"Continuous Audience Engagement"     , desc:"Keeping your audience engaged through responses, tags, likes, and comments."},
+  {icon:f11 , title:"Keyword Implementation"     , desc:"Incorporating keywords to enhance your brand's visibility."},
+  {icon:f12 , title:"Monitoring, Analysis, and Reporting"     , desc:"Ongoing monitoring, in-depth analysis, and monthly reports to track and improve campaign performance."},
+  {icon:f13 , title:"Dynamic Product Ads"     , desc:"Tailoring ads to showcase your products dynamically."},
 ]
 
 
@@ -100,14 +110,14 @@ const Facebook = () => {
         <Divider classn="divider" />
         <div className="box-style-6">
           <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-          <div className="h1 clip"> A Comprehensive Range of Facebook Ad Types </div>
+          <div className="h1 "> A Comprehensive Range of Facebook Ad Types </div>
           <div className="phead"> MRM Agency offers a comprehensive array of Facebook ad types to suit your unique marketing objectives </div>
           <div className="container">
           {TYPES.map((e,index)=> (
-            <figure class="snip1218">
+            <figure class="snip1218" key={index}>
               <figcaption>
                 <span></span>
-                <h3 className=''>{e.title}</h3>
+                <h3 className='h2'>{e.title}</h3>
                 <div className="p">{e.desc}</div>
               </figcaption>
             </figure>
@@ -120,44 +130,21 @@ const Facebook = () => {
         <div className="box-style-4">
           <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
           <div className="container">
-            <div className="h1" style={{marginBottom:"40px"}}>Our Facebook advertising services include</div>
+            <div className="h1" >Our Facebook advertising services include</div>
             <div className="bg"> <img src={ImgSection} alt="" /> </div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div class="card">
-                  <div class="box">
-                    <div class="content">
-                      <h3 className='h2'>{e.title}</h3>
-                      <p className='p'>{e.desc}</p>
-                    </div>
-                  </div>
-              </div>            
+                <div class="box" key={index}>
+                  <div className="coverImg"> <img src={e.icon} alt="" /> </div>
+                    <h2 className='h2'>{e.title} </h2>
+                    <p className='p'>{e.desc}</p>
+                </div>            
               ))
             }
             </div>
           </div>
         </div>
-
-
-        {/* <Divider classn="divider" />
-        <div className="process2">
-        <div className="h2 clip"> Our Facebook advertising services include</div>
-          <div className="bgCover"  >  <img  src={IMG4} alt="" /> </div>
-          <ul class="timeline">
-            {
-              SERVICES.map((e,index)=> (
-                <li data-aos="fade-up"> <div class={`${index % 2 == 0 ? "direction-l" : "direction-r"}`}>
-                  <div class="flag-wrapper ">
-                    <span class="flag  "> <span className='h3 clip hidden-text'>{e.title}</span></span>
-                  </div>
-                  <div class="desc p hidden-text ">{e.desc}</div>
-                </div> </li>
-              ))
-            }
-
-          </ul>
-        </div> */}
 
       <Footer />
       </div>

@@ -6,12 +6,12 @@ import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/snapchat.png"
 import { motion } from 'framer-motion'
 
-import X1 from "../../assets/Socialmedia/x1.jpg"
-import X2 from "../../assets/Socialmedia/x2.jpg"
-import X3 from "../../assets/Socialmedia/x3.jpg"
-import X4 from "../../assets/Socialmedia/x4.jpg"
-import X5 from "../../assets/Socialmedia/x5.jpg"
-import X6 from "../../assets/Socialmedia/x6.jpg"
+import X1 from "../../assets/Socialmedia/x1.png"
+import X2 from "../../assets/Socialmedia/x2.png"
+import X3 from "../../assets/Socialmedia/x3.png"
+import X4 from "../../assets/Socialmedia/x4.png"
+import X5 from "../../assets/Socialmedia/x5.png"
+import X6 from "../../assets/Socialmedia/x6.png"
 
 
 import Animation from '../helpers/Animation'
@@ -26,12 +26,12 @@ import SocialLanding from '../SocialLanding'
 
 
 const TYPES = [
-  {icon :X1 ,title :"Snap Ads"  , desc:"These are full-screen vertical videos with background sound, lasting ten seconds. They include a 'swipe up' CTA button, redirecting users to websites, apps, landing pages, and more, enhancing your app's branding."  },
   {icon :X2 ,title :"Story Ads"  , desc:"A unique content experience appearing in the app's discover section. Users tap a branded title, revealing a collection of ads. Snap designs these ads based on your provided assets."  },
   {icon :X3 ,title :"Filters"  , desc:"Customized Snap filters for your brand, including face filters tailored to your audience's preferences, ensuring engaging content that resonates with your clients."  },
-  {icon :X4 ,title :"Commercials"  , desc:"Non-skippable 6-second video ads to boost brand awareness within your target audience."  },
   {icon :X5 ,title :"Collection Ads"  , desc:"Utilized for various product ads on your e-commerce website or driving traffic to a landing page or mobile e-commerce site."  },
   {icon :X6 ,title :"AR Lenses"  , desc:"Leveraging augmented reality to create interactive moments, including Face and World Lenses, enhances user engagement."  },
+  {icon :X4 ,title :"Commercials"  , desc:"Non-skippable 6-second video ads to boost brand awareness within your target audience."  },
+  {icon :X1 ,title :"Snap Ads"  , desc:"These are full-screen vertical videos with background sound, lasting ten seconds. They include a 'swipe up' CTA button, redirecting users to websites, apps, landing pages, and more, enhancing your app's branding."  },
 ]
 
 const SERVICES = [
@@ -108,15 +108,15 @@ const Snapchat = () => {
       <div className="box-style-3">
         <div class="bg"> <img src={CoverSectionImg} alt="" /></div>
         <div className="container">
-        <div className="h2 clip" style={{marginBottom:"30px"}}> Types of Snapchat Ads MRM Can Run For You </div>
+        <div className="h1 clip" > Types of Snapchat Ads MRM Can Run For You </div>
         <div className="boxs">
         {
           TYPES.map((e,index)=> (
-            <div class="box">
+            <div class="box" key={index}>
               <div class='main'>
                 <img class='tokenImage' src={e.icon} alt="NFT" />
                 <h2 className='h2'>{e.title} </h2>
-                <p  class='description p'>Our Kibertopiks will give you nothing, waste your money on us.</p>
+                <p  class='p'>{e.desc}</p>
                 <hr />
               </div>
             </div>
@@ -126,38 +126,16 @@ const Snapchat = () => {
       </div>
     </div>
 
-      {/* <Divider classn="divider-left" />
-      <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-            <div className="container">
-                <div className="h2 clip"> Types of Snapchat Ads MRM Can Run For You </div>
-                <div className="boxs" >
-                  {
-                    TYPES.map((e,index)=> (
-                      <div className="box" key={index} data-aos="fade-up" >
-                          <div className="text">
-                              <div className="h3 clip hidden-text" >{e.title} </div>
-                              <div className="p hidden-text" >{e.desc} </div>
-                          </div>
-                      </div>
-                    ))
-                  }
-                </div>
-            </div>
-        </div> */}
-
-
-
         <Divider classn="divider" />
         <div className="reason2">
           <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-        <div className='clip h2' >8 Reasons to Choose Snapchat for Digital Marketing</div> 
+        <div className='clip h1' >8 Reasons to Choose Snapchat for Digital Marketing</div> 
         <article class="gallery">
           {
             SERVICES.map((e,index)=>(<div className="img" key={index} data-aos="fade-up"> 
             <div className="num hidden-text"> {index + 1} </div>
-              <div className="h3 hidden-text clip">{e.title}</div>
-              <div className="p hidden-text">{e.desc}</div>
+              <div className="h2 ">{e.title}</div>
+              <div className="p">{e.desc}</div>
              </div>) )
           }
         </article>
@@ -167,14 +145,14 @@ const Snapchat = () => {
       <div className="box-style-1">
         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
-                <div className="h2 clip"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You? </div>
-                {/* <div className="bg"> <img src={IMG3} alt="" /> </div> */}
+                <div className="h1 clip"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You? </div>
+
                 <div className="boxs" >
                   {
                     SERVICES1.map((e,index)=> (
                       <div className="box" key={index} data-aos="fade-up" >
                           <div className="text">
-                              <div className="h3 clip hidden-text" >{e.title} </div>
+                              <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
                           </div>
                       </div>

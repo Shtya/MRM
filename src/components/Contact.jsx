@@ -1,12 +1,9 @@
 import {useEffect, useState  ,useRef} from 'react'
 import Animation from './helpers/Animation';
-import { Pattern2, Pattern3, Pattern6 } from './patterns/Pattern1';
 import FormImg from "../assets/Form.jpg"
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
-
 import emailjs from '@emailjs/browser';
+import Fade from 'react-reveal/Fade';
 
 const Contact = ({title , desc , onHere}) => {
   const form = useRef();
@@ -32,15 +29,15 @@ const Contact = ({title , desc , onHere}) => {
     <section className='Contact' id='Contact'>
       <Animation />
       <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
-
+      <Fade bottom distance="20%" duration={1000} >
      <div className="container1">  <h2 className='h2'>{desc }</h2> </div>
       <div className="container">
 
       <div className="box box-img hidden-img">
-          <img data-aos="fade-right" src={FormImg} alt="" />
+          <img  src={FormImg} alt="" />
         </div>
 
-        <div   className="box" data-aos="fade-left" >
+        <div   className="box" >
           <h2 className='h1 clip hidden-text'>{title || "We're here to help you"}</h2> 
           <p className='h2'>{desc ? "" : "Reach Out and Let's Talk"} </p>
 
@@ -59,6 +56,7 @@ const Contact = ({title , desc , onHere}) => {
         </div>
 
       </div>
+      </Fade>
     </section>
   )
 }

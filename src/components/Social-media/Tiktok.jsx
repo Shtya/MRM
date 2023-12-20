@@ -96,14 +96,14 @@ const Tiktok = () => {
         {/* <Pattern2 /> */}
         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
-                <div className="h2 clip"> Types of TikTok Ads we offer</div>
+                <div className="h1"> Types of TikTok Ads we offer</div>
                 <div className="phead">TikTok's advertising landscape offers diverse options tailored to your unique marketing objectives. MRM agency specializes in executing these TikTok ad types to elevate your brand's visibility and engagement. </div>
                 <div className="boxs" >
                   {
                     TYPES.map((e,index)=> (
                       <div className="box" key={index} data-aos="fade-up" >
                           <div className="text">
-                              <div className="h3 clip hidden-text" >{e.title} </div>
+                              <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
                           </div>
                       </div>
@@ -120,45 +120,20 @@ const Tiktok = () => {
           <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
             <div className="h1" style={{marginBottom:""}}>Why Choose TikTok Marketing?</div>
-            <div className="phead" style={{marginBottom:"40px"}}>Still trying to convince you about the power of TikTok for your marketing strategy? Let's explore eight key benefits</div>
+            <div className="phead">Still trying to convince you about the power of TikTok for your marketing strategy? Let's explore eight key benefits</div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div class="card">
                 <div class="box">
-                  <div class="content">
-                    <h2>{index+1 >= 10 ?"":"0"}{index+1}</h2>
+                    <h2 className='number'>{index+1 >= 10 ?"":"0"}{index+1}</h2>
                     <h3 className='h2'>{e.title}</h3>
                     <p className='p'>{e.desc}</p>
-                  </div>
-                </div>
-              </div>            
+                  </div>          
               ))
             }
             </div>
           </div>
         </div>
-
-        {/* <Divider classn="divider" />
-        <div className="process2">
-        <div className="h2 clip">Why Choose TikTok Marketing?</div>
-        <div className="phead">Still trying to convince you about the power of TikTok for your marketing strategy? Let's explore eight key benefits</div>
-          <Pattern1 />
-          <ul class="timeline">
-            {
-              SERVICES.map((e,index)=> (
-                <li data-aos="fade-up"> <div class={`${index % 2 == 0 ? "direction-l" : "direction-r"}`}>
-                  <div class="flag-wrapper ">
-                    <span class="flag  "> <span className='h2 clip hidden-text'>{e.title}</span></span>
-                  </div>
-                  <div class="desc p hidden-text ">{e.desc}</div>
-                </div> </li>
-              ))
-            }
-
-          </ul>
-        </div> */}
-
 
       <Footer />
       </div>

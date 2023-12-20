@@ -34,7 +34,8 @@ import DisplayStand6  from "../assets/gallery/display stand/display-stands (6).j
 import DisplayStand7  from "../assets/gallery/display stand/display-stands (7).jpg" ;
 
 import Animation from "../components/helpers/Animation";
-import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from "../components/patterns/Pattern1";
+import { Pattern9 } from "../components/patterns/Pattern1";
+import {Fade , Zoom , Rotate , Bounce} from 'react-reveal';
 
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg5.jpg"
@@ -80,15 +81,17 @@ const S_Exhibition = () => {
     <div className="S_Exhibition landing">
       <div className="container"> <Navbar /> </div>
       <Animation />
-      <div className="coverIntro"> <img src={ImgIntro} alt="" /></div>
+      <div className="coverIntro"> <Zoom> <img src={ImgIntro} alt="" /> </Zoom> </div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img" data-aos="fade-right">  <img src={ImgSection} alt="" /> </div>
-              <div className="boxs" data-aos="fade-left" >
+              <div className="boxImg hidden-img" > <Bounce> <img src={ImgSection} alt="" /> </Bounce> </div>
+              <div className="boxs"  >
+                <Fade right >
                   <h2 className='h1 hidden-text'> The Best Exhibition stands & display stand designing services in Dubai</h2>
                   <h2 className='h2 hidden-text'> Our exhibition and display stands are masterpieces that create lasting impressions</h2>
                   <p className='p hidden-text'> With our exclusive exhibition stands in Dubai, we can help you stand out from the crowd at trade shows and events. We customize our exhibition stands according to our customers' specifications to ensure they excel at their intended purpose. Our team can design your order from scratch, maximizing the available space in any given environment.</p>
+                  </Fade>
             </div>
 
         </div>
@@ -96,22 +99,22 @@ const S_Exhibition = () => {
 
       <Pattern9 />
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        <div className="bgCover"  >    <img  src={IMG1} alt="" />  </div>
             <div className="container">
-                <div className="h3" data-aos="fade-up">We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.</div>
+                <Zoom> <div className="h3" >We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.</div></Zoom>
             </div>
         </div>
         
 
         <Pattern9 />
       <div className="exhibition-stands">
-        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
-        <div className="container"> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for exhibition stands gallery</div></div>
+        <div className="bgCover"  >    <img  src={IMG3} alt="" />  </div>
+        <div className="container">  <Fade top> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for exhibition stands gallery</div> </Fade></div>
         <div className="container">
           <div className="boxs">
-            {Exhibition.map((e,index)=> ( <div key={index} data-aos={e.animate}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
+            {Exhibition.map((e,index)=> ( <div key={index}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <Zoom> <img src={e.img} /> </Zoom> </div> ))}
             {Img && <div className="show-img"> 
-              <img src={Img} alt="" /> 
+              <Zoom> <img src={Img} alt="" />  </Zoom>
               <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
             </div>}
           </div>
@@ -120,49 +123,35 @@ const S_Exhibition = () => {
       
         <Pattern9 />
       <div className="exhibition-stands ">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-        <div className="container"> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for Display stands gallery</div></div>
+        <div className="bgCover"  >    <img  src={IMG2} alt="" />  </div>
+        <div className="container">  <Fade top> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for Display stands gallery</div> </Fade></div>
         <div className="container">
           <div className="boxs">
-            {DisplayStands.map((e,index)=> ( <div key={index} data-aos={e.animate}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
+            {DisplayStands.map((e,index)=> ( <div key={index}   className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <Zoom> <img src={e.img} /> </Zoom> </div> ))}
             {Img && <div className="show-img"> 
-              <img src={Img} alt="" /> 
+              <Zoom> <img src={Img} alt="" />  </Zoom>
               <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
             </div>}
           </div>
         </div>
       </div>
       
-      {/* <Pattern9 />
-      <div className="Display-stands">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-      <div className="container"><div className="h1 clip">Take a look at our designs for Display stands gallery</div></div>
-        <div className="container">
-            <div className="boxs">
-                {DisplayStands.map((e,index)=> ( <div key={index} data-aos={e.animate} className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
-                {Img && <div className="show-img"> 
-                  <img src={Img} alt="" /> 
-                  <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
-                </div>}
-            </div>
-        </div>
-      </div>  */}
-
-      
       <Pattern9 />
       <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+        <div className="bgCover"  >    <img  src={IMG2} alt="" />  </div>
             <div className="container">
-            <div className="container"><div className="h1 clip">Why Choose Us for Your Exhibition & Display Stands Needs?</div></div>
+            <div className="container"> <Fade top> <div className="h1 clip">Why Choose Us for Your Exhibition & Display Stands Needs?</div> </Fade></div>
                 <div className="boxs">
                   {
                     BRANDING_SERVICES.map((e,index)=> (
-                      <div className="box" data-aos="fade-right" key={index}>
+                      <div className="box"  key={index}>
+                        <Fade top>
                           <div className="coverImg hidden-img"> <img src={e.img} alt="" /> </div>
                           <div className="text" >
-                              <div className="h3 clip hidden-text">{e.title} </div>
+                              <div className="h2 clip hidden-text">{e.title} </div>
                               <div className="p hidden-text">{e.desc} </div>
                           </div>
+                          </Fade>
                       </div>
                     ))
                   }

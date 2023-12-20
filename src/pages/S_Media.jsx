@@ -129,7 +129,7 @@ const S_Media = () => {
                       <div className="box" key={index}>
                           <div className="coverImg hidden-img"> <img src={e.img} alt="" /> </div>
                           <div className="text">
-                              <div className="h3 clip hidden-text" data-aos="fade-up">{e.title} </div>
+                              <div className="h2 clip hidden-text" data-aos="fade-up">{e.title} </div>
                               <div className="p hidden-text" data-aos="fade-up">{e.desc} </div>
                           </div>
                       </div>

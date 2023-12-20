@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Pattern2, Pattern3, Pattern5 } from './patterns/Pattern1';
-import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
 import IMG3 from "../assets/bg/bg5.jpg"
+import Fade from 'react-reveal/Fade';
 
 const services = [
   {route:"/social",     animate:"fade-up",  title:"social media marketing"       , icon:"clip  fa-solid fa-bullhorn "        ,desc:"Enhance your online presence with our social media management." ,                                                                 },
@@ -22,20 +20,22 @@ export function Services() {
   return (
     <>
     <section className='services search-edite' id='Services'>
-    <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
-       <h2 className='h1 clip hidden-text' >OUR SERVICES</h2> 
+      <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+      <h2 className='h1 clip hidden-text' >OUR SERVICES</h2> 
       
       <div className="container">
       <ul className='ul' >
         {services.map((e , index) => (
-          <div key={index} className="box" data-aos={e.animate}>
+    <Fade top distance="20%" duration={1000} >
+          <div key={index} className="box" >
             <div className="animate" ></div>
             <Link to={e.route}   >
-              <Link to={e.route}><i className={`${e.icon} `}> <span />  <span /> </i> </Link>
+              <Link to={e.route}><i className={`${e.icon} clip `}> <span />  <span /> </i> </Link>
               <h3 className='h2 clip hidden-text'>{e.title}</h3>
               <h4 className='p hidden-text'>{e.desc}</h4>
           </Link>
           </div>
+        </Fade>
         ))}
       </ul>
       </div>

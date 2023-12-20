@@ -10,7 +10,7 @@ import ImgSection from "../assets/S_photography/cover.jpg"
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg5.jpg"
 import IMG3 from "../assets/bg/bg3.jpg"
-
+import {Fade , Zoom , Flip} from 'react-reveal';
 
 import Photography_1 from "../assets/gallery/photography/(1).jpg" ;
 import Photography_2 from "../assets/gallery/photography/(2).jpg" ;
@@ -34,7 +34,7 @@ import Videography9 from "../assets/gallery/videography/(9).jpg" ;
 
 
 import Animation from "../components/helpers/Animation";
-import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from "../components/patterns/Pattern1";
+import { Pattern9 } from "../components/patterns/Pattern1";
 const images = [
 {img : Videography1},
 {img : Videography2},
@@ -66,7 +66,6 @@ const SERVICES2 = [
   { animate:"fade-up", img:Videography8 , title:"Promotional Videos for Product & Brand" , desc:"Promote your products and brand with videos that leave a lasting impact."},
   { animate:"fade-up", img:Videography7 , title:"YouTube/Facebook/Instagram Short Ads" , desc:"Create short, impactful social media ads that engage your audience."},
   { animate:"fade-up", img:Videography4 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."} ,
-  // { animate:"fade-up", img:Videography1 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."}
 ]
 
 const WHY = [
@@ -88,11 +87,13 @@ const S_photography = () => {
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  >  <img  src={ImgSection} alt="" /> </div>
-              <div className="boxs" data-aos="fade-left" >
+              <div className="boxImg hidden-img"  > <Zoom>  <img  src={ImgSection} alt="" /> </Zoom> </div>
+              <div className="boxs" >
+                <Fade right> 
                   <h2 className='h1 hidden-text'>Capture your brand's story with our professional visual storytelling.</h2>
                   <h2 className='h2 hidden-text'>We turn moments into memories and transform your brand's essence into a compelling narrative. </h2>
                   <p className='p hidden-text'>  We specialize in capturing moments that tell a compelling story and creating visually engaging content. At MRM, we offer a wide range of high-quality photography and videography services to enhance your brand and narrative. Whether you need product photography, event coverage, or promotional videos, we have the expertise to deliver content that captivates and communicates. </p>
+                  </Fade>
             </div>
         </div>
       </div>
@@ -103,7 +104,7 @@ const S_photography = () => {
         {/* <Pattern1 /> */}
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container">
-            <p className='h3'>  Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p>
+            <Zoom> <p className='h3'>  Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p></Zoom>
             </div>
         </div>
 
@@ -114,7 +115,8 @@ const S_photography = () => {
         <div className="container">
           {
             SERVICES.map((e,index)=> (
-              <div className="box" key={index} data-aos={e.animate}>
+              <div className="box" key={index} >
+                <Zoom>
                 <div className="innerbox">
                 <div className="coverImg hidden-img"> <img src={e.img} alt="" />  </div>
                 <div className="text">
@@ -122,6 +124,7 @@ const S_photography = () => {
                   <div className="p hidden-text">{e.desc} </div>
                 </div>
                 </div>
+                </Zoom>
               </div>
             ))
           }
@@ -136,7 +139,8 @@ const S_photography = () => {
         <div className="container">
           {
             SERVICES2.map((e,index)=> (
-              <div className="box" key={index} data-aos={e.animate} data-aos-delay={`${100 * (index + 1) }`} >
+              <div className="box" key={index} >
+                <Zoom>
                 <div className="innerbox">
                 <div className="coverImg hidden-img"> <img src={e.img} alt="" />  </div>
                 <div className="text">
@@ -144,6 +148,7 @@ const S_photography = () => {
                   <div className="p hidden-text">{e.desc} </div>
                 </div>
                 </div>
+                </Zoom>
               </div>
             ))
           }
@@ -156,35 +161,34 @@ const S_photography = () => {
       <div className="exhibition-stands">
       <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
         <div className="header1">
-            <li className="active">Videography</li>
-            <li> Events </li>
-            <li> Fashion  </li>
-            <li> Food </li>
-            <li> Product </li>
-            <li> Automotive </li>
-            <li> Real Estate </li>
+            <Flip>   <li className="active">Videography</li> </Flip>
+            <Flip>   <li> Events </li> </Flip>
+            <Flip>   <li> Fashion  </li> </Flip>
+            <Flip>   <li> Food </li> </Flip>
+            <Flip>   <li> Product </li> </Flip>
+            <Flip>   <li> Automotive </li> </Flip>
+            <Flip>   <li> Real Estate </li> </Flip>
         </div>
           
         <div className="container">
           <div className="boxs">
-            {images.map((e,index)=> ( <div key={index} data-aos="fade-up"  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
+            {images.map((e,index)=> ( <div key={index}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <Zoom>  <img src={e.img} /> </Zoom> </div> ))}
             {Img && <div className="show-img"> 
-              <img src={Img} alt="" /> 
+              <Flip> <img src={Img} alt="" />  </Flip>
               <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
             </div>}
           </div>
         </div>
       </div>
 
-
-{/* <Divider classn="divider-left" /> */}
 <Pattern9 />
         <div className="searching2">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
-              <div className="coverImg "> <img src={Grid1} alt="" /> </div>
+              <div className="coverImg "> <Zoom> <img src={Grid1} alt="" /> </Zoom> </div>
 
               <div className="boxs">
+                <Fade right>
               <div className="h1 clip hidden-text">Why Choose Us?</div>
               {WHY.map((e,index)=>(
                 <div key={index}>
@@ -192,6 +196,7 @@ const S_photography = () => {
                   <h2 className='p hidden-text'>{e.desc}</h2>
                 </div>
                   ))}
+                  </Fade>
               </div>
           </div>
       </div>

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import IMG1 from "../assets/bg/bg3.jpg"
-import IMG2 from "../assets/bg/b4.jpg"
-import IMG3 from "../assets/bg/b1.jpg"
+
 import ImgIntro from "../assets/web-design/intro.jpg"
 import ImgSection from "../assets/web-design/section.jpg"
 import OneSocial from '../components/OneSocial'
@@ -23,10 +22,10 @@ import Icon_8 from "../assets/web-design/icon-8.png" ;
 
 import Portfolio from '../components/Portfolio'
 import Animation from '../components/helpers/Animation'
-import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/patterns/Pattern1'
+import {  Pattern9 } from '../components/patterns/Pattern1'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-
+import {Fade , Zoom} from 'react-reveal';
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_4 , title:"E-commerce Development Services   " , desc:"In today's fast-paced digital landscape, having a user-friendly and robust online store is an advantage and a necessity for e-commerce businesses. At MRM Agency, we offer top-notch E-commerce Development Services that can transform your online business and enhance your brand's presence. Whether you're starting a new e-commerce venture or want to improve an existing one, our team is here to turn your e-commerce aspirations into reality."},
@@ -49,7 +48,6 @@ const Approach = [
 
 const S_WebDesign = () => {
 
-
   return (
 
 <div className="WEB_DESIGN landing" >
@@ -59,10 +57,10 @@ const S_WebDesign = () => {
       <div className="coverIntro"> <img src={ImgIntro} alt="" /></div>
       <div className="home">
         <div className="container">
-          <div className="boxImg hidden-img" >  <img src={ImgSection} alt="" /> </div>
-          <div className="boxs" >
-            <h2 className='h1 hidden-text' data-aos="fade-left">Boost the Effectiveness of Your Website's Online Presence. </h2>
-            <p className='h2 hidden-text' data-aos="fade-left"> Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development. </p>
+           <div className="boxImg hidden-img" ><Zoom>   <img src={ImgSection} alt="" /> </Zoom></div> 
+           <div className="boxs" ><Fade right duration={1000} >
+            <h2 className='h1 hidden-text'>Boost the Effectiveness of Your Website's Online Presence. </h2>
+            <p className='h2 hidden-text'> Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development. </p>
             <div className="inner-boxs" >
 
               <ul className="box">
@@ -76,25 +74,24 @@ const S_WebDesign = () => {
               </ul>
 
             </div>
-          </div>
+          </Fade>
+          </div> 
         </div>
       </div>
 
-      {/* <Divider classn="divider" /> */}
       <Pattern9 />
       <div className="quotation">
       <div className="bgCover"> <img  src={IMG1} alt="" /> </div>
-        {/* <Pattern1 /> */}
-            <div className="container" data-aos="fade-rigth">
+      <Zoom>
+            <div className="container" >
             <p className='h2 hidden-text'>MRM is Your Partner in Web Development and Design in Dubai, UAE</p>
             <p className='h3 '>MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality.</p>
             </div>
+          </Zoom>
         </div>
-
-        {/* <Divider classn="divider-left" /> */}
         <Pattern9 />
         <div className="social-media">
-          {/* <Pattern3 /> */}
+
           <div className="bgCover"> <img  src={IMG1} alt="" /> </div>
         <div className="container">
             <h3 className='h1 hidden-text clip'>Our Specializations</h3>
@@ -106,8 +103,6 @@ const S_WebDesign = () => {
         </div>
         {/* <RoadMap /> */}
 
-
-        {/* <Divider classn="divider divider-rsize" /> */}
         <Pattern9 classn="Abrotch" />
         <div className="our_Approach">
         <div className="bgCover"> <img  src={IMG1} alt="" /> </div>
@@ -134,8 +129,7 @@ const S_WebDesign = () => {
                 </div>
             </div>
         </div>
-      
-        {/* <Divider classn="divider-left" /> */}
+
         <Pattern9 />
       <Portfolio bg={<div className="bgCover"> <img  src={IMG1} alt="" /> </div>} header={false} typeGallery="Web design" nameofgallery="THE GALLERY" />
 

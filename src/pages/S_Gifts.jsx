@@ -155,7 +155,7 @@ const S_Gifts = () => {
                       <div className="box" key={index} data-aos="fade-up" >
                           <div className="coverImg"> <img src={e.img} alt="" /> </div>
                           <div className="text">
-                              <div className="h3 clip hidden-text" data-aos="fade-up">{e.title} </div>
+                              <div className="h2 clip hidden-text" data-aos="fade-up">{e.title} </div>
                               <div className="p hidden-text" data-aos="fade-up">{e.desc} </div>
                           </div>
                       </div>

@@ -1,10 +1,9 @@
 import React , {useEffect} from 'react'
 import About_us from "../assets/about-us/aboutus.png"
 import Animation  from './helpers/Animation'
-import Pattern1, { Pattern2 } from './patterns/Pattern1'
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
+import Fade from 'react-reveal/Fade';
+
 const Who = () => {
   
   
@@ -13,12 +12,12 @@ const Who = () => {
       <Animation />
       <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
       <div className="container">
-
+      <Fade top distance="20%" duration={1000} >
       <div className="Img hidden-img "  >
-        <img data-aos="fade-right" src={About_us} alt="" />
+        <img  src={About_us} alt="" />
       </div>
 
-      <div className="box" data-aos="fade-left"  >
+      <div className="box" >
         <h2 className='h2 hidden-text  '>Your Partner for Advertising & Digital Marketing Success in Dubai</h2>
         <span className='p hidden-text' >We are a Dubai-based agency specialized in advertising, and digital marketing with years of experience. Our team delivers the highest level of service, combining creativity and strategic thinking for effective campaigns. Our values are dedication, excellence, and transparency. </span>
         <div className="info">
@@ -37,7 +36,7 @@ const Who = () => {
 
 
       </div>
-
+      </Fade>
       </div>
     </section>
   )

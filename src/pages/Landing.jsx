@@ -57,10 +57,10 @@ const Landing = () => {
       
       <div className="home">
         <div className="container">
-          <div className="boxImg hidden-img" >  <img className='n-border' src={Community} alt="" /> </div>
+          <div className="boxImg hidden-img" >   <img className='n-border' src={Community} alt="" /> </div>
           <div className="boxs" >
-            <h2 className='h1 hidden-text' data-aos="fade-left"> Enhance the Effectiveness of Your Social Media Presence</h2>
-            <p className='h3 hidden-text' data-aos="fade-left">Boost your brand online with our social media management services </p>
+            <h2 className='h1 hidden-text' > Enhance the Effectiveness of Your Social Media Presence</h2>
+            <p className='h3 hidden-text' >Boost your brand online with our social media management services </p>
             <div className="inner-boxs" >
 
               <ul className="box">
@@ -94,16 +94,16 @@ const Landing = () => {
               </div>
 
               <div className="boxs ">
-                  <h3 className='h2 hidden-text' data-aos="fade-left">Are you searching for top-notch social media management services in Dubai?</h3>
+                  <h3 className='h2 hidden-text' >Are you searching for top-notch social media management services in Dubai?</h3>
                   
                   <div className="box">
-                      <h2 className='h3 hidden-text' data-aos="fade-left"> We've got you covered</h2>
-                      <p className='p hidden-text' data-aos="fade-left"> We take pride in delivering exceptional results that help increase sales while minimizing costs. We collaborate with you to develop a tailored strategy that aligns with your business goals. Our team can help you achieve your digital marketing goals, whether you need to drive traffic, increase brand awareness, or boost sales. </p>
+                      <h2 className='h3 hidden-text' > We've got you covered</h2>
+                      <p className='p hidden-text' > We take pride in delivering exceptional results that help increase sales while minimizing costs. We collaborate with you to develop a tailored strategy that aligns with your business goals. Our team can help you achieve your digital marketing goals, whether you need to drive traffic, increase brand awareness, or boost sales. </p>
                   </div>
 
                   <div className="box">
-                      <h2 className='h3 hidden-text' data-aos="fade-left">We're A Full-Service Digital Agency</h2>
-                      <p className='p hidden-text' data-aos="fade-left"> MRM is an innovative social media management agency that helps brands fully leverage their online presence. We have a dynamic team of strategists, content creators, and social media experts who collaborate to develop innovative, data-driven solutions tailored to your specific goals and objectives. Partnering with MRM unlocks the power of expert social media management to elevate your brand's digital presence.</p>
+                      <h2 className='h3 hidden-text' >We're A Full-Service Digital Agency</h2>
+                      <p className='p hidden-text' > MRM is an innovative social media management agency that helps brands fully leverage their online presence. We have a dynamic team of strategists, content creators, and social media experts who collaborate to develop innovative, data-driven solutions tailored to your specific goals and objectives. Partnering with MRM unlocks the power of expert social media management to elevate your brand's digital presence.</p>
                   </div>
 
               </div>

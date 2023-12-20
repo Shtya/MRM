@@ -91,7 +91,7 @@ const Instagram = () => {
       <div className="impact">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
-                <div className="h2 clip">Types of Ads You Can Run on Instagram</div>
+                <div className="h1">Types of Ads You Can Run on Instagram</div>
                 <div className="phead">Let's dive into the various types of Instagram ads that our expert team at MRM can strategically execute for your brand</div>
                 <div className="boxs" >
               
@@ -99,7 +99,7 @@ const Instagram = () => {
                     TYPES.map((e,index)=> (
                       <div className="box" key={index} data-aos="fade-up" >
                           <div className="text">
-                              <div className="h3 clip hidden-text" >{e.title} </div>
+                              <div className="h2" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
                           </div>
                       </div>
@@ -115,13 +115,13 @@ const Instagram = () => {
       <div className="box-style-1">
         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
-                <div className="h2 clip"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You</div>
+                <div className="h1 clip"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You</div>
                 <div className="boxs" >
                   {
                     SERVICES.map((e,index)=> (
                       <div className="box" key={index} data-aos="fade-up" >
                           <div className="text">
-                              <div className="h3 clip hidden-text" >{e.title} </div>
+                              <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
                           </div>
                       </div>

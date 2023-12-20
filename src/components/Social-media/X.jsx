@@ -131,13 +131,13 @@ const X = () => {
       <div className="impact">
         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
-                <div className="h2 clip"> Types of Twitter Ads MRM Offers </div>
+                <div className="h1 clip"> Types of Twitter Ads MRM Offers </div>
                 <div className="boxs" >
                   {
                     TYPES.map((e,index)=> (
                       <div className="box" key={index} data-aos="fade-up" >
                           <div className="text">
-                              <div className="h3 clip hidden-text" >{e.title} </div>
+                              <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
                           </div>
                       </div>
@@ -148,23 +148,19 @@ const X = () => {
         </div>
 
         <Divider classn="divider" />
-        <div className="box-style-4">
+        <div className="box-style-4 ">
           <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
             <div className="h1" style={{marginBottom:""}}> Our Twitter Marketing Businesses</div>
-            <div className="phead" style={{marginBottom:"40px"}}> At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
+            <div className="phead" > At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div class="card">
                 <div class="box">
-                  <div class="content">
-                    <h2>{index+1 >= 10 ?"":"0"}{index+1}</h2>
+                     <h2 className='number'>{index+1 >= 10 ?"":"0"}{index+1}</h2>
                     <h3 className='h2'>{e.title}</h3>
                     <p className='p'>{e.desc}</p>
-                  </div>
                 </div>
-              </div>            
               ))
             }
             </div>
@@ -172,39 +168,18 @@ const X = () => {
         </div>
 
 
-
-        {/* <Divider classn="divider" />
-        <div className="process2">
-        <div className="h2 clip"> Our Twitter Marketing Businesses</div>
-        <div className="phead"> At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
-          <div className="bgCover"  >  <img  src={IMG5} alt="" /> </div>
-          <ul class="timeline">
-            {
-              SERVICES.map((e,index)=> (
-                <li data-aos="fade-up"> <div class={`${index % 2 == 0 ? "direction-l" : "direction-r"}`}>
-                  <div class="flag-wrapper ">
-                    <span class="flag  "> <span className='h3 clip hidden-text'>{e.title}</span></span>
-                  </div>
-                  <div class="desc p hidden-text ">{e.desc}</div>
-                </div> </li>
-              ))
-            }
-
-          </ul>
-        </div> */}
-
         <Divider classn="divider-left" />
       <div className="box-style-1">
         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
-                <div className="h2 clip">How Twitter Marketing Helps Businesses</div>
+                <div className="h1 ">How Twitter Marketing Helps Businesses</div>
                 <div className="phead">Twitter marketing plays a pivotal role in driving business success. Here's how it can benefit your brand</div>
                 <div className="boxs" >
                   {
                     SERVICES1.map((e,index)=> (
                       <div className="box" key={index} data-aos="fade-up" >
                           <div className="text">
-                              <div className="h3 clip hidden-text" >{e.title} </div>
+                              <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
                           </div>
                       </div>
