@@ -2,7 +2,7 @@ import React , {useEffect} from 'react'
 import About_us from "../assets/about-us/aboutus.png"
 import Animation  from './helpers/Animation'
 import IMG1 from "../assets/bg/b1.jpg"
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 const Who = () => {
   

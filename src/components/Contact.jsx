@@ -3,7 +3,7 @@ import Animation from './helpers/Animation';
 import FormImg from "../assets/Form.jpg"
 import IMG1 from "../assets/bg/b1.jpg"
 import emailjs from '@emailjs/browser';
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 const Contact = ({title , desc , onHere}) => {
   const form = useRef();
@@ -29,7 +29,6 @@ const Contact = ({title , desc , onHere}) => {
     <section className='Contact' id='Contact'>
       <Animation />
       <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
-      <Fade bottom distance="20%" duration={1000} >
      <div className="container1">  <h2 className='h2'>{desc }</h2> </div>
       <div className="container">
 
@@ -56,7 +55,6 @@ const Contact = ({title , desc , onHere}) => {
         </div>
 
       </div>
-      </Fade>
     </section>
   )
 }

@@ -10,7 +10,7 @@ import ImgSection from "../assets/S_photography/cover.jpg"
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg5.jpg"
 import IMG3 from "../assets/bg/bg3.jpg"
-import {Fade , Zoom , Flip} from 'react-reveal';
+import { Fade } from "react-awesome-reveal";
 
 import Photography_1 from "../assets/gallery/photography/(1).jpg" ;
 import Photography_2 from "../assets/gallery/photography/(2).jpg" ;
@@ -87,7 +87,7 @@ const S_photography = () => {
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  > <Zoom>  <img  src={ImgSection} alt="" /> </Zoom> </div>
+              <div className="boxImg hidden-img"  > <Fade>  <img  src={ImgSection} alt="" /> </Fade> </div>
               <div className="boxs" >
                 <Fade right> 
                   <h2 className='h1 hidden-text'>Capture your brand's story with our professional visual storytelling.</h2>
@@ -104,7 +104,7 @@ const S_photography = () => {
         {/* <Pattern1 /> */}
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container">
-            <Zoom> <p className='h3'>  Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p></Zoom>
+            <Fade> <p className='h3'>  Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p></Fade>
             </div>
         </div>
 
@@ -116,7 +116,7 @@ const S_photography = () => {
           {
             SERVICES.map((e,index)=> (
               <div className="box" key={index} >
-                <Zoom>
+                <Fade>
                 <div className="innerbox">
                 <div className="coverImg hidden-img"> <img src={e.img} alt="" />  </div>
                 <div className="text">
@@ -124,7 +124,7 @@ const S_photography = () => {
                   <div className="p hidden-text">{e.desc} </div>
                 </div>
                 </div>
-                </Zoom>
+                </Fade>
               </div>
             ))
           }
@@ -140,7 +140,7 @@ const S_photography = () => {
           {
             SERVICES2.map((e,index)=> (
               <div className="box" key={index} >
-                <Zoom>
+                <Fade>
                 <div className="innerbox">
                 <div className="coverImg hidden-img"> <img src={e.img} alt="" />  </div>
                 <div className="text">
@@ -148,7 +148,7 @@ const S_photography = () => {
                   <div className="p hidden-text">{e.desc} </div>
                 </div>
                 </div>
-                </Zoom>
+                </Fade>
               </div>
             ))
           }
@@ -161,20 +161,20 @@ const S_photography = () => {
       <div className="exhibition-stands">
       <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
         <div className="header1">
-            <Flip>   <li className="active">Videography</li> </Flip>
-            <Flip>   <li> Events </li> </Flip>
-            <Flip>   <li> Fashion  </li> </Flip>
-            <Flip>   <li> Food </li> </Flip>
-            <Flip>   <li> Product </li> </Flip>
-            <Flip>   <li> Automotive </li> </Flip>
-            <Flip>   <li> Real Estate </li> </Flip>
+            <Fade>   <li className="active">Videography</li> </Fade>
+            <Fade>   <li> Events </li> </Fade>
+            <Fade>   <li> Fashion  </li> </Fade>
+            <Fade>   <li> Food </li> </Fade>
+            <Fade>   <li> Product </li> </Fade>
+            <Fade>   <li> Automotive </li> </Fade>
+            <Fade>   <li> Real Estate </li> </Fade>
         </div>
           
         <div className="container">
           <div className="boxs">
-            {images.map((e,index)=> ( <div key={index}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <Zoom>  <img src={e.img} /> </Zoom> </div> ))}
+            {images.map((e,index)=> ( <div key={index}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <Fade>  <img src={e.img} /> </Fade> </div> ))}
             {Img && <div className="show-img"> 
-              <Flip> <img src={Img} alt="" />  </Flip>
+              <Fade> <img src={Img} alt="" />  </Fade>
               <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
             </div>}
           </div>
@@ -185,7 +185,7 @@ const S_photography = () => {
         <div className="searching2">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
-              <div className="coverImg "> <Zoom> <img src={Grid1} alt="" /> </Zoom> </div>
+              <div className="coverImg "> <Fade> <img src={Grid1} alt="" /> </Fade> </div>
 
               <div className="boxs">
                 <Fade right>

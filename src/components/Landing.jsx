@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import Dashboard from "../assets/Dashboard.mp4"
 import IMG3 from "../assets/bg/bg5.jpg"
 import { useEffect } from 'react';
-import {Fade} from 'react-reveal';
+import { Fade } from "react-awesome-reveal";
 
 const Landing = () => {
 

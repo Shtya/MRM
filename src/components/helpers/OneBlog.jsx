@@ -17,8 +17,6 @@ const OneBlog = ({classn ,blogs , settings , name , onHere }) => {
   return (
     <div className={`Slider_1_Img ${classn}`}>
       {onHere ? <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div> : <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>}
-      
-        
       <div className="h1 clip"> {name} </div>
           <Slider {...settings} className='container' >
 

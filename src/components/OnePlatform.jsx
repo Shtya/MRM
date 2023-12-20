@@ -7,7 +7,7 @@ const OnePlatform = ({title , paragraph , img , classn , path , trueBtn}) => {
   const navigate = useNavigate()
 
   return (
-    <Link to={path}  className={`box ${classn}`} data-aos="fade-up">
+    <Link to={path}  className={`box ${classn}`}>
         <div className="coverImg hidden-img"> <img src={img} alt="" /></div>
         <div className="inner-box">
             <span className="one"/>

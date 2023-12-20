@@ -35,7 +35,7 @@ import DisplayStand7  from "../assets/gallery/display stand/display-stands (7).j
 
 import Animation from "../components/helpers/Animation";
 import { Pattern9 } from "../components/patterns/Pattern1";
-import {Fade , Zoom , Rotate , Bounce} from 'react-reveal';
+import { Fade } from "react-awesome-reveal";
 
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg5.jpg"
@@ -81,11 +81,11 @@ const S_Exhibition = () => {
     <div className="S_Exhibition landing">
       <div className="container"> <Navbar /> </div>
       <Animation />
-      <div className="coverIntro"> <Zoom> <img src={ImgIntro} alt="" /> </Zoom> </div>
+      <div className="coverIntro"> <Fade> <img src={ImgIntro} alt="" /> </Fade> </div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img" > <Bounce> <img src={ImgSection} alt="" /> </Bounce> </div>
+              <div className="boxImg hidden-img" > <Fade> <img src={ImgSection} alt="" /> </Fade> </div>
               <div className="boxs"  >
                 <Fade right >
                   <h2 className='h1 hidden-text'> The Best Exhibition stands & display stand designing services in Dubai</h2>
@@ -101,7 +101,7 @@ const S_Exhibition = () => {
       <div className="quotation">
         <div className="bgCover"  >    <img  src={IMG1} alt="" />  </div>
             <div className="container">
-                <Zoom> <div className="h3" >We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.</div></Zoom>
+                <Fade> <div className="h3" >We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.</div></Fade>
             </div>
         </div>
         
@@ -112,9 +112,9 @@ const S_Exhibition = () => {
         <div className="container">  <Fade top> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for exhibition stands gallery</div> </Fade></div>
         <div className="container">
           <div className="boxs">
-            {Exhibition.map((e,index)=> ( <div key={index}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <Zoom> <img src={e.img} /> </Zoom> </div> ))}
+            {Exhibition.map((e,index)=> ( <div key={index}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <Fade> <img src={e.img} /> </Fade> </div> ))}
             {Img && <div className="show-img"> 
-              <Zoom> <img src={Img} alt="" />  </Zoom>
+              <Fade> <img src={Img} alt="" />  </Fade>
               <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
             </div>}
           </div>
@@ -127,9 +127,9 @@ const S_Exhibition = () => {
         <div className="container">  <Fade top> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for Display stands gallery</div> </Fade></div>
         <div className="container">
           <div className="boxs">
-            {DisplayStands.map((e,index)=> ( <div key={index}   className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <Zoom> <img src={e.img} /> </Zoom> </div> ))}
+            {DisplayStands.map((e,index)=> ( <div key={index}   className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <Fade> <img src={e.img} /> </Fade> </div> ))}
             {Img && <div className="show-img"> 
-              <Zoom> <img src={Img} alt="" />  </Zoom>
+              <Fade> <img src={Img} alt="" />  </Fade>
               <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
             </div>}
           </div>

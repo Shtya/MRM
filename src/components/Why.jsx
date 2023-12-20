@@ -3,7 +3,7 @@ import Animation from './helpers/Animation'
 
 import WhyImg from "../assets/Why.jpg"
 import IMG2 from "../assets/bg/bg3.jpg"
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 const Why = () => {
 

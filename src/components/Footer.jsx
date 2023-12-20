@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { Divider, Pattern9 } from './patterns/Pattern1'
 import QuickContact from './QuickContact'
 import IMG3 from "../assets/bg/bg5.jpg"
-import {Zoom , Fade} from 'react-reveal';
 
 const Footer = ({appear}) => {
   return (
@@ -12,13 +11,11 @@ const Footer = ({appear}) => {
    
     {appear != false && <Pattern9 />}
     {appear != false &&<QuickContact  />} 
-
     {appear == false ? <Divider classn='divider2' /> : <Pattern9  />}
 
     <footer>
-    <div className="bgCover" style={{zIndex:"1"}}  > <img  src={IMG3} alt="" /> </div>
+    <div className="bgCover" style={{zIndex:"1"}}  >  <img  src={IMG3} alt="" /> </div>
       <div className="container">
-        <Fade bottom distance="20%">
       <div className="top">
         <img src={Logo} alt="" />
         <div className="phead">We Don't Create Ads ,We Build Successful Campaigns</div>
@@ -65,7 +62,6 @@ const Footer = ({appear}) => {
             <Link className='p' to="/privacy">  privacy </Link>
           </div>
         </div>
-        </Fade>
       </div>
     </footer>
     </>

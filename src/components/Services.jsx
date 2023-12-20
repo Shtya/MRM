@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import IMG3 from "../assets/bg/bg5.jpg"
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 const services = [
   {route:"/social",     animate:"fade-up",  title:"social media marketing"       , icon:"clip  fa-solid fa-bullhorn "        ,desc:"Enhance your online presence with our social media management." ,                                                                 },

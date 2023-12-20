@@ -22,7 +22,7 @@ import Slider_2_Imgs from "../components/Slide/Slider_2_Imgs";
 import Animation from "../components/helpers/Animation";
 import { Pattern9 } from "../components/patterns/Pattern1";
 import IMG2 from "../assets/bg/bg5.jpg";
-import { Fade, Zoom, Rotate, Bounce } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const process = [
   {
@@ -147,7 +147,7 @@ const M_Signages = () => {
           <img src={IMG2} alt="" />{" "}
         </div>
         <div className="container">
-          <Zoom>
+          <Fade>
             <div className="h2 hidden-text">
               MRM promises excellence in signage installation, blending your
               vision with our expertise
@@ -160,7 +160,7 @@ const M_Signages = () => {
               and ensuring customer satisfaction. Clients can trust MRM to
               handle everything related to their custom signage installation.
             </div>
-          </Zoom>
+          </Fade>
         </div>
       </div>
 
@@ -236,7 +236,7 @@ const M_Signages = () => {
           <div className="timeline">
             {process.map((e, index) => (
               <div className="check-point hidden-text" key={index}>
-                <Zoom>
+                <Fade>
                 <div className="number hidden-text"> 0{index + 1} </div>
                 <div className="inner-box">
                   <span className="hidden-img">
@@ -245,7 +245,7 @@ const M_Signages = () => {
                   <h2 className="h2 clip  hidden-text">{e.title}</h2>
                   <p className="p  hidden-text"> {e.desc}</p>
                 </div>
-                </Zoom>
+                </Fade>
               </div>
             ))}
           </div>
