@@ -9,10 +9,10 @@ const Footer = ({appear}) => {
   return (
     <>
    
-    {appear != false && <Pattern9 />}
-    {appear != false &&<QuickContact  />} 
-    {appear == false ? <Divider classn='divider2' /> : <Pattern9  />}
-
+    {/* {appear != false && <Pattern9 />} */}
+    {/* {appear != false &&<QuickContact  />}  */}
+    {/* {appear == false ? <Divider classn='divider2' /> : <Pattern9  />} */}
+    <Pattern9  />
     <footer>
     <div className="bgCover" style={{zIndex:"1"}}  >  <img  src={IMG3} alt="" /> </div>
       <div className="container" >

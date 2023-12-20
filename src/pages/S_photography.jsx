@@ -35,6 +35,7 @@ import Videography9 from "../assets/gallery/videography/(9).jpg" ;
 
 import Animation from "../components/helpers/Animation";
 import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from "../components/patterns/Pattern1";
+import Contact from "../components/Contact";
 const images = [
 {img : Videography1},
 {img : Videography2},
@@ -103,7 +104,7 @@ const S_photography = () => {
         {/* <Pattern1 /> */}
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container" data-aos="zoom-in-up" >
-            <p className='h3'>  Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p>
+            <p className='h3'>  Our core belief is that every brand, product, and event has a unique story that deserves to be told.<br/> We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p>
             </div>
         </div>
 
@@ -197,7 +198,7 @@ const S_photography = () => {
       </div>
 
 
-
+    <Contact />
     <Footer />
       </div>
   )

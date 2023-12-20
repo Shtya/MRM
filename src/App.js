@@ -36,6 +36,7 @@ import Dashboard from './blog/Dashboard'
 import axios from 'axios'
 import BlogsAll from './blog/BlogsAll'
 import E_post from './blog/E_post'
+import { AnimatePresence } from 'framer-motion'
 
 
 
@@ -68,6 +69,7 @@ const App = () => {
 
         </div>
       </div> */}
+      <AnimatePresence >
       <SlideNav whats={false} />
       
       <Routes>
@@ -104,9 +106,8 @@ const App = () => {
         <Route path='/linkedin' element={<Linkedin />} />
         <Route path='/tiktok' element={<Tiktok />} />
 
-
       </Routes>
-      {/* </AnimatePresence> */}
+      </AnimatePresence>
     </div>
 
   )

@@ -38,6 +38,7 @@ import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/p
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg3.jpg"
 import IMG3 from "../assets/bg/bg5.jpg"
+import Contact from '../components/Contact';
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_1 , title:"Social Media Strategy"    , desc:"Our social media experts will create a custom strategy that aligns with your brand's objectives and target audience."},
@@ -156,9 +157,7 @@ const Landing = () => {
         </div>
     </div>
 
-    {/* <Divider classn="divider" />
-      <Clients /> */}
-
+      <Contact />
       <Footer />
     </div>
   )

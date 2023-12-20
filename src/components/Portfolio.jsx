@@ -14,7 +14,7 @@ var settings = {
   speed: 500,
   slidesToShow: 2,
   slidesToScroll: 1 , 
-  autoplay:true ,
+  // autoplay:true ,
   responsive: [
     {
       breakpoint: 1050,
@@ -36,11 +36,11 @@ var settings = {
 
 
 
-const Portfolio = ({header  , typeGallery , nameofgallery , bg  }) => {
+const Portfolio = ({header  , typeGallery , nameofgallery  }) => {
   const headers = [ "all" , "Signages", "Stands", "Exhibition", "branding", "photography", "Web design",]
   const {pathname} = useLocation()
 
-  const Imgs = ImgsPortfolio(headers)
+  const Imgs = ImgsPortfolio()
   const [data , setdata ] = useState(Imgs)
   const [type , settype ] =useState("all") ;
   useEffect(_=>{ setdata(Imgs.filter(e => e.type.includes(typeGallery))) } ,[pathname])
@@ -48,7 +48,7 @@ const Portfolio = ({header  , typeGallery , nameofgallery , bg  }) => {
   const handleHeaders = (ele)=>{
     setdata( Imgs.filter(e =>{
       settype(ele)
-      return e.type.includes(ele)
+      return e.type.includes(ele.split(" ")[0])
     }) ) 
   }
 
@@ -58,9 +58,9 @@ const Portfolio = ({header  , typeGallery , nameofgallery , bg  }) => {
       <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
 
       <h2 className='h1' data-aos="fade-up" >{ nameofgallery || "OUR WORKS"}</h2>
-      {!header == false && <div className="header1" >{
+      {!header == false && <div className="header1"data-aos="fade-up"  >{
           headers.map((e,index)=> (
-          <li data-aos="fade-up" data-aos-delay={`${index+1}00`} className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
+          <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
         ))}</div>}
 
 

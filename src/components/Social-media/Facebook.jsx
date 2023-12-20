@@ -82,14 +82,13 @@ const Facebook = () => {
     <div className="Facebook shared">
       <div className="container"> <Navbar /> </div>
       <Animation />
-      <div className="coverIntro "> <img src={FacebookIntro} alt="" /></div>
+      <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  >  <img src={FacebookCover} alt="" /> </div>
-              <div className="boxs" data-aos="fade-left" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unlock Your Business Potential with Our Expert Facebook Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
-              <SocialLanding />
+              <div className="boxImg" data-aos="fade-left" data-aos-delay="400" >  <img src={FacebookCover} alt="" /> </div>
+              <div className="boxs"  >
+              <motion.p data-aos="zoom-in-right" data-aos-delay="600"  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unlock Your Business Potential with Our Expert Facebook Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
             </div>
         </div>
       </div>
@@ -110,11 +109,11 @@ const Facebook = () => {
         <Divider classn="divider" />
         <div className="box-style-6">
           <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-          <div className="h1 "> A Comprehensive Range of Facebook Ad Types </div>
-          <div className="phead"> MRM Agency offers a comprehensive array of Facebook ad types to suit your unique marketing objectives </div>
+          <div className="h1 "data-aos="zoom-in-right" > A Comprehensive Range of Facebook Ad Types </div>
+          <div className="phead"data-aos="zoom-in-right" > MRM Agency offers a comprehensive array of Facebook ad types to suit your unique marketing objectives </div>
           <div className="container">
           {TYPES.map((e,index)=> (
-            <figure class="snip1218" key={index}>
+            <figure class="snip1218" key={index} data-aos="zoom-in" data-aos-delay={`${index + 1}00`}>
               <figcaption>
                 <span></span>
                 <h3 className='h2'>{e.title}</h3>

@@ -92,7 +92,7 @@ const S_SEO = () => {
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
         <div className="container">
               <div className="h2 hidden-text" data-aos="fade-up" > Maximizing SEO Impact with MRM at Your Website </div>
-              <p className="h3 " data-aos="fade-up"   data-aos-delay="200" > We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it. Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs. Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search.</p>
+              <p className="h3 " data-aos="fade-up"   data-aos-delay="200" > We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it.<br/> Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs.<br/> Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search.</p>
         </div>
         </div>
 
@@ -147,9 +147,8 @@ const S_SEO = () => {
       </div>
     </div>
 
+    <Contact />
     <Footer />
-
-
     </div>
   )
 }

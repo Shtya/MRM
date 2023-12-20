@@ -98,65 +98,64 @@ export function ImgsClients (){
 }
 
 
-export function ImgsPortfolio (headers) {
+export function ImgsPortfolio () {
  return [
-
-  {img:  Sign1 , type:`${headers[1]} all ` }  ,
-  {img:  Sign2 , type:`${headers[1]} all ` }  ,
-  {img:  Sign3 , type:`${headers[1]} all ` }  ,
-  {img:  Sign4 , type:`${headers[1]} all ` }  ,
-  {img:  Sign5 , type:`${headers[1]} all ` }  ,
-  {img:  Sign6 , type:`${headers[1]} ` }  ,
-  {img:  Sign7 , type:`${headers[1]} ` }  ,
-
-
-  {img: DisplayStand1   , type:`${headers[2]} all` }  ,
-  {img: DisplayStand2   , type:`${headers[2]} all` }  ,
-  {img: DisplayStand3   , type:`${headers[2]} all` }  ,
-  {img: DisplayStand4   , type:`${headers[2]} all` }  ,
-  {img: DisplayStand5   , type:`${headers[2]} ` }  ,
-  {img: DisplayStand6   , type:`${headers[2]} ` }  ,
-  {img: DisplayStand7   , type:`${headers[2]} ` }  ,
+  // [ "all" , "Signages", "Stands", "Exhibition", "branding", "photography", "Web design",]
+  {img:  Sign1 , type:`Signages all ` }  ,
+  {img:  Sign2 , type:`Signages all ` }  ,
+  {img:  Sign3 , type:`Signages all ` }  ,
+  {img:  Sign4 , type:`Signages all ` }  ,
+  {img:  Sign5 , type:`Signages all ` }  ,
+  {img:  Sign6 , type:`Signages ` }  ,
+  {img:  Sign7 , type:`Signages ` }  ,
 
 
-  {img:  Exhibition1   , type:`${headers[3]} ` }  ,
-  {img:  Exhibition2   , type:`${headers[3]} ` }  ,
-  {img:  Exhibition3   , type:`${headers[3]} ` }  ,
-  {img:  Exhibition4   , type:`${headers[3]} all` }  ,
-  {img:  Exhibition5   , type:`${headers[3]} all` }  ,
-  {img:  Exhibition6   , type:`${headers[3]} all` }  ,
-  {img:  Exhibition7   , type:`${headers[3]} all` }  ,
-  {img:  Exhibition8   , type:`${headers[3]} ` }  ,
-  {img:  Exhibition9   , type:`${headers[3]} ` }  ,
-
-  {img: Branding1  , type:`${headers[4]} branding` }  ,
-  {img: Branding2  , type:`${headers[4]} branding` }  ,
-  {img: Branding3  , type:`${headers[4]} branding` }  ,
-  {img: Branding4  , type:`${headers[4]} branding all` }  ,
-  {img: Branding5  , type:`${headers[4]} branding all` }  ,
-  {img: Branding6  , type:`${headers[4]} branding all` }  ,
-  {img: Branding7  , type:`${headers[4]} branding` }  ,
+  {img: DisplayStand1   , type:`Stands all` }  ,
+  {img: DisplayStand2   , type:`Stands all` }  ,
+  {img: DisplayStand3   , type:`Stands all` }  ,
+  {img: DisplayStand4   , type:`Stands all` }  ,
+  {img: DisplayStand5   , type:`Stands ` }  ,
+  {img: DisplayStand6   , type:`Stands ` }  ,
+  {img: DisplayStand7   , type:`Stands ` }  ,
 
 
-  {img:  Photography1   , type:`${headers[5]} ` }  ,
-  {img:  Photography2   , type:`${headers[5]} ` }  ,
-  {img:  Photography3   , type:`${headers[5]} ` }  ,
-  {img:  Photography4   , type:`${headers[5]} all` }  ,
-  {img:  Photography5   , type:`${headers[5]} all` }  ,
-  {img:  Photography6   , type:`${headers[5]} all` }  ,
-  {img:  Photography7   , type:`${headers[5]} all` }  ,
-  {img:  Photography8   , type:`${headers[5]} ` }  ,
-  {img:  Photography9   , type:`${headers[5]} ` }  ,
+  {img:  Exhibition1   , type:`Exhibition ` }  ,
+  {img:  Exhibition2   , type:`Exhibition ` }  ,
+  {img:  Exhibition3   , type:`Exhibition ` }  ,
+  {img:  Exhibition4   , type:`Exhibition all` }  ,
+  {img:  Exhibition5   , type:`Exhibition all` }  ,
+  {img:  Exhibition6   , type:`Exhibition all` }  ,
+  {img:  Exhibition7   , type:`Exhibition all` }  ,
+  {img:  Exhibition8   , type:`Exhibition ` }  ,
+  {img:  Exhibition9   , type:`Exhibition ` }  ,
 
-  {img: webDesign1  , type:`${headers[6]} ` }  ,
-  {img: webDesign2  , type:`${headers[6]} ` }  ,
-  {img: webDesign3  , type:`${headers[6]} ` }  ,
-  {img: webDesign4  , type:`${headers[6]} all` }  ,
-  {img: webDesign5  , type:`${headers[6]} all` }  ,
-  {img: webDesign6  , type:`${headers[6]} all` }  ,
+  {img: Branding1  , type:`branding` }  ,
+  {img: Branding2  , type:`branding` }  ,
+  {img: Branding3  , type:`branding` }  ,
+  {img: Branding4  , type:`branding all` }  ,
+  {img: Branding5  , type:`branding all` }  ,
+  {img: Branding6  , type:`branding all` }  ,
+  {img: Branding7  , type:`branding` }  ,
+
+
+  {img:  Photography1   , type:`photography ` }  ,
+  {img:  Photography2   , type:`photography ` }  ,
+  {img:  Photography3   , type:`photography ` }  ,
+  {img:  Photography4   , type:`photography all` }  ,
+  {img:  Photography5   , type:`photography all` }  ,
+  {img:  Photography6   , type:`photography all` }  ,
+  {img:  Photography7   , type:`photography all` }  ,
+  {img:  Photography8   , type:`photography ` }  ,
+  {img:  Photography9   , type:`photography ` }  ,
+
+  {img: webDesign1  , type:`Web ` }  ,
+  {img: webDesign2  , type:`Web ` }  ,
+  {img: webDesign3  , type:`Web ` }  ,
+  {img: webDesign4  , type:`Web all` }  ,
+  {img: webDesign5  , type:`Web all` }  ,
+  {img: webDesign6  , type:`Web all` }  ,
   
 ]
-
 }
 
 export function Imgsignages () {

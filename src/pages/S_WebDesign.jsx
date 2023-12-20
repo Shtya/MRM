@@ -26,6 +26,7 @@ import Animation from '../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/patterns/Pattern1'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Contact from '../components/Contact'
 
 
 const SocialMedia = [
@@ -130,10 +131,10 @@ const S_WebDesign = () => {
             </div>
         </div>
       
-        {/* <Divider classn="divider-left" /> */}
         <Pattern9 />
-      <Portfolio bg={<div className="bgCover"> <img  src={IMG1} alt="" /> </div>} header={false} typeGallery="Web design" nameofgallery="THE GALLERY" />
-
+      <Portfolio  header={false} typeGallery="Web" nameofgallery="THE GALLERY" />
+      
+      <Contact />
       <Footer />
       </div>
   )

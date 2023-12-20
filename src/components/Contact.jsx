@@ -4,6 +4,7 @@ import FormImg from "../assets/Form.jpg"
 import IMG1 from "../assets/bg/b1.jpg"
 import emailjs from '@emailjs/browser';
 import { Fade } from "react-awesome-reveal";
+import { Pattern9 } from './patterns/Pattern1';
 
 const Contact = ({title , desc , onHere}) => {
   const form = useRef();
@@ -26,6 +27,8 @@ const Contact = ({title , desc , onHere}) => {
   let services = [ , "Exhibition & Display Stand" , "Indoor & Outdoor Signages" , "Photography & Videography" , "Web Design & Development" ,"Social Media Marketing" , "Cooperated Gifts" , "Media Buyin" , "Branding" , "SEO" ,]
   
   return (
+    <>
+      <Pattern9 />
     <section className='Contact' id='Contact'>
       <Animation />
       <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
@@ -56,6 +59,7 @@ const Contact = ({title , desc , onHere}) => {
 
       </div>
     </section>
+    </>
   )
 }
 

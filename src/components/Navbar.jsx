@@ -69,13 +69,12 @@ htmlcssArrow.onclick = function() {
               </ul>
             </li>
 
-            <li data-aos="fade-down" data-aos-delay="400"><Link  > Portfolio</Link></li>
-            <li data-aos="fade-down" data-aos-delay="500" onClick={_=> Navigate("/blog")}><Link to="/blog">Blog</Link></li>
-            <li data-aos="fade-down" data-aos-delay="600" onClick={_=> Navigate("/about-us")}><Link to="/about-us">About Us</Link></li>
-            <li data-aos="fade-down" data-aos-delay="700" onClick={_=> Navigate("/contact-us")}><Link to="/contact-us"> Contact Us</Link></li>
+            <li data-aos="fade-down" data-aos-delay="400" onClick={_=> Navigate("/blog")}><Link to="/blog">Blog</Link></li>
+            <li data-aos="fade-down" data-aos-delay="500" onClick={_=> Navigate("/about-us")}><Link to="/about-us">About Us</Link></li>
+            <li data-aos="fade-down" data-aos-delay="600" onClick={_=> Navigate("/contact-us")}><Link to="/contact-us"> Contact Us</Link></li>
           </ul>
         </div>
-        <div class="search-box" data-aos="fade-down" data-aos-delay="800">
+        <div class="search-box" data-aos="fade-down" data-aos-delay="700">
           <i class='bx bx-search'></i>
           <div class="input-box"> <input type="text" placeholder="Search..."/>  </div>
         </div>

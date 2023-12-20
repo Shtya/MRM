@@ -32,20 +32,16 @@ function Home() {
         <Divider classn="divider-left" />
         <Portfolio typeGallery="all" header={true} />
 
-        {/* <Gallery_merge />  */}
         
         <Divider classn="divider" />
         <Clients />
 
-        <Divider classn="divider-left" />
         <Contact />
 
         <Divider classn="divider" />
         <Blog />
-
-        {/* <Divider classn="divider-left" /> */}
         
-        <Footer />
+        <Footer appear={false} />
         </div>
   );
 }

@@ -34,6 +34,7 @@ import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pa
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg3.jpg"
 import IMG3 from "../assets/bg/bg5.jpg"
+import Contact from '../components/Contact'
 
 const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising", "Tiktok Advertising"]
 const Paid = [ 
@@ -99,7 +100,7 @@ const S_Media = () => {
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
         <div className="container">
               <div className="h2 " data-aos="zoom-in-up" > Experience the Power of Paid Amplification</div>
-              <p className="h3" data-aos="zoom-in-up" data-aos-delay="300" > We create paid campaigns with specific goals, such as boosting brand awareness, engaging with audiences, generating leads, and driving sales. We understand that success varies for each business, so we tailor our campaigns to align with your unique Key Performance Indicators. Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers.</p>
+              <p className="h3" data-aos="zoom-in-up" data-aos-delay="300" > We create paid campaigns with specific goals, such as boosting brand awareness, engaging with audiences, generating leads, and driving sales. <br/>We understand that success varies for each business, so we tailor our campaigns to align with your unique Key Performance Indicators. <br/> Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers.<br/> Connect with your target audience on one of their most frequented platforms.</p>
         </div>
         </div>
 
@@ -121,7 +122,7 @@ const S_Media = () => {
         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
                 <div className="h1 clip " data-aos="fade-up"  >Impact of what you'll get</div>
-                <div className="phead " data-aos="fade-up"  >MRM is the preferred choice for social media marketing services in Dubai.  We specialize in tailoring effective strategies that fit your brand and objectives. Here's how we can help</div>
+                <div className="phead " data-aos="fade-up"  >MRM is the preferred choice for social media marketing services in Dubai. <br/> We specialize in tailoring effective strategies that fit your brand and objectives. Here's how we can help</div>
                 <div className="boxs" data-aos="fade-up">
                   {
                     Impact.map((e,index)=> (
@@ -162,7 +163,9 @@ const S_Media = () => {
             </div>
         </div>
 
- <Footer />
+        
+        <Contact />
+        <Footer />
       </div>
   )
 }

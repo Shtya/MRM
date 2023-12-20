@@ -8883,8 +8883,10 @@ footer .container .bottom .last a {
 .slidenav .whatsapp {
   margin-bottom: 5px;
   background-color: transparent;
-  color: #067b2d;
   font-size: 40px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .slidenav .fa-chevron-up {
   color: white;
@@ -9876,18 +9878,12 @@ footer .container .bottom .last a {
   text-shadow: 0 0 1px #eee;
   display: block !important;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  font-style: italic;
+  font-size: 1.1rem;
   text-wrap: pretty;
 }
 @media (max-width: 1000px) {
   .p {
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 550px) {
-  .p {
-    font-size: 0.8rem;
+    font-size: 1rem !important;
   }
 }
 

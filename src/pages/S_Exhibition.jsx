@@ -38,6 +38,7 @@ import { Pattern9 } from "../components/patterns/Pattern1";
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg5.jpg"
 import IMG3 from "../assets/bg/bg3.jpg"
+import Contact from "../components/Contact";
 
 
 const BRANDING_SERVICES = [
@@ -152,8 +153,8 @@ const S_Exhibition = () => {
                 </div>
             </div>
         </div>
-      {/* <Contact title="Ready to Boost Your Gifting Experience? " desc="Contact us to create unforgettable memories together!" /> */}
-      <Footer />
+        <Contact />
+        <Footer />
       </div>
   )
 }

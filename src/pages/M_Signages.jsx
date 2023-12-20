@@ -26,6 +26,7 @@ import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/p
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg5.jpg"
 import IMG3 from "../assets/bg/bg3.jpg"
+import Contact from '../components/Contact'
 
 const process = [
   {img: Icon_1, title:" Planning" ,desc:"During planning, we consider every detail to create signage that resonates with your brand and clients.Effective planning saves time and resources."},
@@ -98,7 +99,7 @@ const M_Signages = () => {
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
                 <div className="h2 " data-aos="fade-up">MRM promises excellence in signage installation, blending your vision with our expertise</div>
-                <div className="h3" data-aos="fade-up" data-aos-delay="200">MRM's team of experts specializes in developing custom sign designs based on clients' requirements. we take care of every project aspect, from the concept and design phase to production and installation. MRM is committed to delivering quality service and ensuring customer satisfaction. Clients can trust MRM to handle everything related to their custom signage installation.</div>
+                <div className="h3" data-aos="fade-up" data-aos-delay="200">MRM's team of experts specializes in developing custom sign designs based on clients' requirements.<br/> we take care of every project aspect, from the concept and design phase to production and installation.<br/> MRM is committed to delivering quality service and ensuring customer satisfaction.<br/> Clients can trust MRM to handle everything related to their custom signage installation.</div>
             </div>
         </div>
 
@@ -156,7 +157,7 @@ const M_Signages = () => {
                 </div>
             </div>
         </div>
-
+        <Contact />
       <Footer />
       </div>
   )

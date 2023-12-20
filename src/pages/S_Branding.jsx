@@ -32,6 +32,7 @@ import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg3.jpg"
 import IMG3 from "../assets/bg/bg5.jpg"
 import { useLocation } from 'react-router-dom'
+import Contact from '../components/Contact'
 
 const Approach = [
   { img:approach_1 , title:"Comprehensive Solutions" , desc:"We offer a complete branding solution to ensure consistent messaging across all touchpoints. Trust us to elevate your brand and achieve your business goals."},
@@ -118,7 +119,11 @@ const S_Branding = ({header =true}) => {
               <div className="boxs"  data-aos="zoom-in-left" data-aos-delay="600"  >
                   <h2 className='h1 '> Unleash the Full Power and Potential of Your Brand! </h2>
                   <h2 className='h2 '> Partner with us to bring your brand identity to life, both online and offline </h2>
-                  <p className='p '> Your brand goes way beyond a simple logo, or your visual identity. Your brand is your voice, your story – and it's how every aspect of your business makes your customers feel. We don't just create your brand identity; we work with you to implement and grow it digitally and in real life. </p>
+                  <p className='p '> 
+                   Your brand is your voice, your story – and it's how every aspect of your business makes your customers feel.<br/>
+                   we work with you to implement and grow it digitally and in real life. </p>
+                  Your brand goes way beyond a simple logo, or your visual identity.<br/>
+                   We don't just create your brand identity<br/>
             </div>
         </div>
       </div>
@@ -127,7 +132,7 @@ const S_Branding = ({header =true}) => {
          <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
           <div className="container">
               <div className="h2 "  data-aos="fade-up"  > Elevate Your Brand with Our Comprehensive Branding Services  </div>
-              <div className="h3 " data-aos="fade-up"  data-aos-delay="200" >  MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
+              <div className="h3 " data-aos="fade-up"  data-aos-delay="200" >  MRM, your partner in crafting compelling brand narratives.<br/> Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
           </div>
         </div>
 
@@ -182,7 +187,8 @@ const S_Branding = ({header =true}) => {
           </div>
       </div>
 
-    <Footer />
+      <Contact />
+      <Footer />
       </div>
   )
 }
