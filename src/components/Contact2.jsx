@@ -1,6 +1,5 @@
 import {useRef, useState} from 'react'
-import MapImg from "../assets/contact-us/map.jpg"
-import { Link } from 'react-router-dom';
+import MapImg from "../assets/contact-us/map1.jpg"
 import emailjs from '@emailjs/browser';
 
 
@@ -27,6 +26,7 @@ const Contact2 = () => {
       <div className="container">
           
               <div className="box" data-aos="fade-right" data-aos-delay="200" >
+                  <div className="coverMap"> <img className='mapImg' src={MapImg} alt="" /> </div>
                   <div className="text"> <h2 className='h1 blur' data-aos="fade-right" data-aos-delay="300">Turn your dreams into digital realities </h2> </div>
 
                   <ul className='contact-list'>
@@ -44,7 +44,8 @@ const Contact2 = () => {
               </div>
 
               <div className="box1" data-aos="fade-left" data-aos-delay="300">
-              <p className='h1 ' data-aos="fade-right" data-aos-delay="300">Reach Out And Let's Talk</p>
+              <h1 className='h1' data-aos="fade-right" data-aos-delay="300">WE'RE HERE TO HELP YOU</h1>
+              <h2 className='h2' data-aos="fade-right" data-aos-delay="300">Reach Out And Let's Talk</h2>
               <form ref={form} onSubmit={sendEmail}>
                   <input data-aos="fade-left" data-aos-delay="300" name="name" type="text"  placeholder='Your Name' id="" />
                   <input data-aos="fade-left" data-aos-delay="400" name="email" type="Email"  placeholder='Email address' id="" />

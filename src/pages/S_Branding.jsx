@@ -33,6 +33,7 @@ import IMG2 from "../assets/bg/bg3.jpg"
 import IMG3 from "../assets/bg/bg5.jpg"
 import { useLocation } from 'react-router-dom'
 import Contact from '../components/Contact'
+import MetaTag from './MetaTag'
 
 const Approach = [
   { img:approach_1 , title:"Comprehensive Solutions" , desc:"We offer a complete branding solution to ensure consistent messaging across all touchpoints. Trust us to elevate your brand and achieve your business goals."},
@@ -102,7 +103,15 @@ const S_Branding = ({header =true}) => {
   const handleHeaders = (ele)=>{
     setdata( Imgs.filter(e =>{
       settype(ele)
-      return e.type.includes(ele)
+      if(ele == headers[0] ) return e.type.includes("branding")
+      if(ele == headers[1] ) return e.type.includes("Logo")
+      if(ele == headers[2] ) return e.type.includes("Web")
+      if(ele == headers[3] ) return e.type.includes("Socialmedia")
+      if(ele == headers[4] ) return e.type.includes("packaging")
+      if(ele == headers[5] ) return e.type.includes("Graphic")
+      if(ele == headers[6] ) return e.type.includes("vehicles")
+      if(ele == headers[7] ) return e.type.includes("uniform")
+      if(ele == headers[8] ) return e.type.includes("stationery")
     }) ) 
   }
   useEffect(_=> {setdata( Imgs.filter(e => e.type.includes("branding")  )) } ,[pathname])
@@ -111,6 +120,7 @@ const S_Branding = ({header =true}) => {
     <div className="S_Branding landing">
       <div className="container"> <Navbar /> </div>
       <Animation />
+      <MetaTag title=" Unleash Your Brand's Power with the Top Branding Agency in Dubai" desc="Stand out with unique logos, captivating web experiences & impactful social media designs! Contact us for comprehensive branding solutions ." />
       <div className="coverIntro" data-aos="zoom-in-right" > <img src={ImgIntro} alt="" /></div>
 
       <div className="home">

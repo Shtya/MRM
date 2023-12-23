@@ -6,6 +6,7 @@ import Navbar1 from './Navbar';
 import SlideNav from './SlideNav';
 import Related from './Slide/Related';
 import baseURL, { baseImg } from '../API/API';
+import MetaTag from '../pages/MetaTag';
 
 
 const BlogDetails = () => {
@@ -23,35 +24,38 @@ const BlogDetails = () => {
         e.data?.data?.title?.length >= 110 ? settitleCustom(e.data?.data?.title.slice(0,110) + "..."): settitleCustom(e.data?.data?.title)
         })} ,[] )
 
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1 , 
-    autoplay:true ,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 1,
+        var settings = {
           dots: true,
-        }
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1 ,
-        }
-      }
-    ]
-  };
+          infinite: true,
+          speed: 1000,
+          slidesToShow: 3,
+          slidesToScroll: 1 , 
+          autoplay:true ,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 1 ,
+                dots: false,
+              }
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1 ,
+                dots: false,
+              }
+            }
+          ]
+        };
 
   return (
     <div className='blog-details'>
+      <MetaTag title="Blog | Digital Marketing Updates and Tips for Business Growth " desc="Stay ahead with the latest digital marketing updates, Insights and expert tips for your Digital business growth with MRM`s informative blogs " />
+
       <div className="container container3"> <Navbar1 /> </div>
       <Animation />
       <SlideNav share={true} whats={true} />
@@ -59,7 +63,7 @@ const BlogDetails = () => {
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  >  <img src={baseImg + data?.thumbnail} alt="" /> </div>
+              <div className="boxImg hidden-img"  >  <img src={data?.thumbnail} alt="" /> </div>
               <div className="boxs" data-aos="fade-left" >
               <p  className="h2 hidden-text" > <span>{titleCustom}</span> </p>
             </div>

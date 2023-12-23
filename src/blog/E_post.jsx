@@ -23,18 +23,20 @@ const E_post = () => {
   useEffect(_=>{ id&& baseURL.get(id).then(res=>{ 
     setOnePost(res.data.data) 
     settitle(res.data.data.title)  
+    setImg(res.data.data.thumbnail)  
     setDes(res.data.data.description)  
     setCategory(res.data.data.category)  
    } ) },[id])
 
-  const handleImg = (e) => { if (e.target.files && e.target.files[0]) { setImg(e.target.files[0]) } }
+  // const handleImg = (e) => { if (e.target.files && e.target.files[0]) { setImg(e.target.files[0]) } }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the fields!")
+    console.log(Img , title , Des , category)
 
-    setisload(true)
-    await baseURL.put(id , {title ,description:Des , category , thumbnail:Img } , config )
+    if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the fields!")
+      setisload(true)
+    await baseURL.put(id , {title ,description:Des , category , thumbnail:Img }  ).then(res => console.log(res.data.data))
     setisload(false)
     navigate("/MRM")
   }
@@ -49,7 +51,8 @@ const E_post = () => {
               <p className="error-message"> THis is an error message </p>
               <input type="text" placeholder='title'  value={title}    onChange={e=> settitle(e.target.value)}  />
               <select name=""                        value={category} onChange={e=> setCategory(e.target.value)}> {Section.map((e,index)=> ( <option value={e}>{e}</option> ))} </select>
-              <input type="file"                  value={Img[0]}    onChange={handleImg} autoFocus />
+              <input type="text" placeholder='Image'  value={Img}    onChange={e=> setImg(e.target.value)}  />
+              {/* <input type="file"                  value={Img[0]}    onChange={handleImg} autoFocus /> */}
 
               <JoditEditor
                 ref={editor}

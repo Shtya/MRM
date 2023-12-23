@@ -39,6 +39,7 @@ import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg3.jpg"
 import IMG3 from "../assets/bg/bg5.jpg"
 import Contact from '../components/Contact';
+import MetaTag from './MetaTag';
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_1 , title:"Social Media Strategy"    , desc:"Our social media experts will create a custom strategy that aligns with your brand's objectives and target audience."},
@@ -53,6 +54,7 @@ const Landing = () => {
   return (
     <div className='landing'>
       <Animation />
+      <MetaTag title=" Top Social Media Marketing Services in Dubai to Boost Your Brand" desc="Discover expert social media management services in Dubai. We collaborate to align strategies with your business goals, driving traffic and boosting sales." />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro" data-aos="zoom-in-left"> <img  src={Intro1} alt="" /></div>
       

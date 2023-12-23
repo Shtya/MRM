@@ -19,7 +19,7 @@ import Icon_5 from "../assets/web-design/icon-5.png" ;
 import Icon_6 from "../assets/web-design/icon-6.png" ;
 import Icon_7 from "../assets/web-design/icon-7.png" ;
 import Icon_8 from "../assets/web-design/icon-8.png" ;
-
+import MetaTage from "../pages/MetaTag"
 
 import Portfolio from '../components/Portfolio'
 import Animation from '../components/helpers/Animation'
@@ -55,6 +55,7 @@ const S_WebDesign = () => {
 
 <div className="WEB_DESIGN landing" >
       <Animation />
+      <MetaTage title="Expert Web Development and Design Services in Dubai, UAE" desc="Capture your audience with our web design and development services for exceptional results for startups and businesses." />
       <div className="container"> <Navbar /> </div>
 
       <div className="coverIntro"> <img data-aos="zoom-in"  src={ImgIntro} alt="" /></div>

@@ -113,7 +113,6 @@
       background: var(--alt-alt-main);
       padding: 5px;
       color: white !important;
-      font-family: 'Noto Sans';
       font-size: 14px;
       &.btn-edite{ background-color: #007bff; }
       &.btn-delete{ background-color: #dc3545; }
@@ -220,7 +219,6 @@
         }
       }
       input , select , .error-message {
-        font-family: "Overlock", Arial;
         width: 100%;
         padding: 10px;
         color: white;
@@ -249,7 +247,6 @@
         margin: 10px 0;
         width: 100%;
         background: #dcbc4361;
-        font-family: 'Noto Sans';
         border-radius: 0;
         backdrop-filter: blur(10px);
         height: 40px;

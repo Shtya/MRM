@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/S_gifts/intro.jpg"
@@ -22,6 +22,8 @@ import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg3.jpg"
 import IMG3 from "../assets/bg/bg5.jpg"
 import Contact from '../components/Contact'
+import MetaTag from './MetaTag'
+import { useLocation } from 'react-router-dom'
 
 const Approach = [
   { img:gifts_1 , title:"Corporate Gifts" , desc:"Where Thoughtful Gestures Meet Elegance The right gift can make a big impact in corporate relationships. Our Corporate Gifts collection offers timeless and sophisticated items that show genuine appreciation. "},
@@ -75,22 +77,28 @@ const S_Gifts = () => {
     ]
   };
 
-  const headers = [ "all", "Trophies", "Customized Gift Items" , "Corporate Gifts"]
+  const headers = [ "all", "Trophies", "Customized Gift" , "Corporate Gifts"]
+  const {pathname} = useLocation()
 
   const Imgs = ImgsPortfolio(headers)
   const [data , setdata ] = useState(Imgs)
-  const [type , settype ] =useState( "all") ;
+  const [type , settype ] =useState( "outdoor") ;
+  useEffect(_=>{ setdata(Imgs.filter(e => e.type.includes("outdoor"))) } ,[pathname])
 
   const handleHeaders = (ele)=>{
     setdata( Imgs.filter(e =>{
       settype(ele)
-      return e.type.includes(ele)
+      if(ele == headers[0] ) return e.type.includes("Led-signage")
+      if(ele == headers[1] ) return e.type.includes("outdoor")
+      if(ele == headers[2] ) return e.type.includes("Lamp")
+      if(ele == headers[3] ) return e.type.includes("unipole ")
     }) ) 
   }
 
   return (
     <div className="S_Gifts landing">
       <div className="container"> <Navbar /> </div>
+      <MetaTag title=" Best Corporate Gifts Designing Services in Dubai " desc="Looking for impressive corporate gifts, gift items, and trophies? Our curated selection is customized for any occasion and denotes exceptional quality." />
       <Animation />
       <div className="coverIntro " data-aos="zoom-in-left"  > <img src={ImgIntro} alt="" /></div>
 

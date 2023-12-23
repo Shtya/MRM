@@ -146,7 +146,6 @@
   background: var(--alt-alt-main);
   padding: 5px;
   color: white !important;
-  font-family: "Noto Sans";
   font-size: 14px;
 }
 .blogs-view .container .boxs .btn.btn-edite {
@@ -260,7 +259,6 @@
   }
 }
 .Dashboard-blog .create-post .container input, .Dashboard-blog .create-post .container select, .Dashboard-blog .create-post .container .error-message {
-  font-family: "Overlock", Arial;
   width: 100%;
   padding: 10px;
   color: white;
@@ -295,7 +293,6 @@
   margin: 10px 0;
   width: 100%;
   background: rgba(220, 188, 67, 0.3803921569);
-  font-family: "Noto Sans";
   border-radius: 0;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);

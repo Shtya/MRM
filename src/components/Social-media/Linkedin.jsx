@@ -15,6 +15,7 @@ import SocialLanding from '../SocialLanding'
 import IMG1 from "../../assets/bg/b1.jpg"
 import IMG2 from "../../assets/bg/bg3.jpg"
 import IMG3 from "../../assets/bg/bg5.jpg"
+import MetaTag from '../../pages/MetaTag'
 
 const TYPES = [
   {icon :"" ,title:" Sponsored Content" , desc:" Promote existing content from your business page to a tailored target demographic. Utilize LinkedIn's robust profile data to create an ideal audience and engage with those genuinely interested in your brand."},
@@ -63,13 +64,15 @@ const Linkedin = () => {
    return (
     <div className="Linkedin shared">
       <div className="container"> <Navbar /> </div>
+      <MetaTag title=" Best LinkedIn Advertising Services in Dubai, UAE "  desc="Looking for B2B  marketing agency in Dubai? With MRM you can Reach decision-makers, establish thought leadership, and generate high-quality B2B leads" />
+
       <Animation />
-      <div className="coverIntro "> <img src={FacebookIntro} alt="" /></div>
+      <div className="coverIntro " data-aos="fade-down"> <img src={FacebookIntro} alt="" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  >  <img src={FacebookCover} alt="" /> </div>
-              <div className="boxs" data-aos="fade-left" >
+              <div className="boxImg hidden-img"  data-aos="zoom-in-left" data-aos-delay="400" >  <img src={FacebookCover} alt="" /> </div>
+              <div className="boxs"  data-aos="zoom-in-right" data-aos-delay="600" >
               <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Grow Your Business with Our Comprehensive LinkedIn Marketing Solutions").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
               <SocialLanding />
             </div>
@@ -98,11 +101,11 @@ const Linkedin = () => {
       <div className="impact">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
-                <div className="h1 clip"> Types of Linkedin Ads </div>
+                <div className="h1 clip" data-aos="fade-up"> Types of Linkedin Ads </div>
                 <div className="boxs" >
                   {
                     TYPES.map((e,index)=> (
-                      <div className="box" key={index} data-aos="fade-up" >
+                      <div className="box" key={index} data-aos="fade-down" data-aos-delay={`${index}00`}  >
                           <div className="text">
                               <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
@@ -118,12 +121,12 @@ const Linkedin = () => {
         <div className="box-style-4">
           <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
           <div className="container">
-            <div className="h1" style={{marginBottom:""}}>How MRM Utilizes LinkedIn's Advantages for Your Business Success</div>
-            <div className="phead" >At MRM, we understand that LinkedIn is a dynamic platform with unique features </div>
+            <div className="h1" style={{marginBottom:""}} data-aos="fade-up">How MRM Utilizes LinkedIn's Advantages for Your Business Success</div>
+            <div className="phead" data-aos="fade-up" data-aos-delay="200" >At MRM, we understand that LinkedIn is a dynamic platform with unique features </div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div class="box">
+                <div class="box" data-aos="zoom-in-right" data-aos-delay={`${index}00`} >
                     <h2 className='number'>{index+1 >= 10 ?"":"0"}{index+1}</h2>
                     <h3 className='h2'>{e.title}</h3>
                     <p className='p'>{e.desc}</p>
@@ -139,11 +142,11 @@ const Linkedin = () => {
       <div className="box-style-1">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
-                <div className="h1 hidden-text">MRM's LinkedIn Advertising Process</div>
+                <div className="h1 hidden-text" data-aos="fade-up">MRM's LinkedIn Advertising Process</div>
                 <div className="boxs" >
                   {
                     SERVICES1.map((e,index)=> (
-                      <div className="box" key={index} data-aos="fade-up" >
+                      <div className="box" key={index} data-aos="fade-down" data-aos-delay={`${index}00`} >
                           <div className="text">
                               <div className="h2 hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>

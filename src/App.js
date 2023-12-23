@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import {Routes , Route, useLocation} from "react-router-dom"
+import React from 'react'
+import {Routes , Route} from "react-router-dom"
 import "./sass/main.css"
 import "./sass/sass-main/second.css" 
 import "./blog/sass/blog.css"
 
-// import Sitemap from "./sitemap.xml"
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
@@ -33,7 +32,6 @@ import SlideNav from './components/SlideNav'
 
 import BlogDetails from './components/BlogDetails'
 import Dashboard from './blog/Dashboard'
-import axios from 'axios'
 import BlogsAll from './blog/BlogsAll'
 import E_post from './blog/E_post'
 import { AnimatePresence } from 'framer-motion'
@@ -41,34 +39,10 @@ import { AnimatePresence } from 'framer-motion'
 
 
 const App = () => {
-  const [Done , setDone] = useState(true)
-  const {pathname} = useLocation() ;
-
-  useEffect(_=>{
-    if(pathname != "jj") setDone(true)
-    setTimeout(() => {
-      setDone(false)
-    }, 1600);
-    
-  },[pathname])
-  
 
   return ( 
     <div className='App'>
-      {/* <div className="animation_text" style={{display:`${Done ? "" : "none"}` }}>
-        <div className="Loading">
-        <div class="cube-wrapper">
-          <div class="cube-folding">
-            <span class="leaf1"></span>
-            <span class="leaf2"></span>
-            <span class="leaf3"></span>
-            <span class="leaf4"></span>
-          </div>
-          <span class="loading" data-name="Loading">Loading</span>
-        </div>
-
-        </div>
-      </div> */}
+      
       <AnimatePresence >
       <SlideNav whats={false} />
       
@@ -79,7 +53,6 @@ const App = () => {
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path='/blog' element={<Blogs />} /> 
 
-        {/* <Route path='/sitemap.xml' element={<Sitemap />} />  */}
         <Route index element={<Home />} />
         <Route path='/contact-us' element={<ContactUs />} /> 
         <Route path='/about-us' element={<AboutUs />} />
@@ -87,7 +60,6 @@ const App = () => {
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/terms' element={<Terms />} />
 
-        {/* Services Pages */}
         <Route path='/web-design' element={<S_WebDesign/>} />
         <Route path='/photography' element={<S_photography />} />
         <Route path='/exhibition' element={<S_Exhibition  />} />
@@ -98,7 +70,6 @@ const App = () => {
         <Route path='/branding' element={<S_Branding  />} />
         <Route path='/seo' element={<S_SEO />} />
 
-      {/* Social media Pages */}
         <Route path='/facebook' element={<Facebook />} />
         <Route path='/snapchat' element={<Snapchat />} />
         <Route path='/instagram' element={<Instagram />} />

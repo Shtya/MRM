@@ -15,19 +15,20 @@ const E_post = () => {
   const navigate = useNavigate();
   const [isload , setisload] = useState(false)
   const [Img, setImg] = useState("");
+  const [Image2, setImage2] = useState("");
   const [title, settitle] = useState("");
   const [Des, setDes] = useState("");
   const [category, setCategory] = useState();
   
 
-  const handleImg = (e) => { if (e.target.files && e.target.files[0]) { setImg(e.target.files[0]) } }
+  // const handleImg = (e) => { if (e.target.files && e.target.files[0]) { setImg(e.target.files[0]) } }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the field!")
+    if(Image2 == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the field!")
 
     setisload(true)
-    await baseURL.post("" , {title ,description:Des , category , thumbnail:Img } , config)
+    await baseURL.post("" , {title ,description:Des , category , thumbnail:Image2 })
     setisload(false)
     navigate("/MRM")
   }
@@ -42,7 +43,8 @@ const E_post = () => {
               <p className="error-message"> THis is an error message </p>
               <input type="text" placeholder='title'  value={title}    onChange={e=> settitle(e.target.value)}  />
               <select name=""                        value={category} onChange={e=> setCategory(e.target.value)}> {Section.map((e,index)=> ( <option value={e}>{e}</option> ))} </select>
-              <input type="file"                  value={Img[0]}    onChange={handleImg} autoFocus />
+              <input type="text" placeholder='Image'  value={Image2}    onChange={e=> setImage2(e.target.value)}  />
+              {/* <input type="file"                  value={Img[0]}    onChange={handleImg} autoFocus /> */}
 
               <JoditEditor
                   ref={editor}

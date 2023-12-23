@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && webpack && other-build-steps"
+    "build": "nodemon index"
   },
   "keywords": [],
   "author": "",

@@ -11,7 +11,6 @@ import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg5.jpg"
 import IMG3 from "../assets/bg/bg3.jpg"
 
-
 import Photography_1 from "../assets/gallery/photography/(1).jpg" ;
 import Photography_2 from "../assets/gallery/photography/(2).jpg" ;
 import Photography_3 from "../assets/gallery/photography/(3).jpg" ;
@@ -32,10 +31,12 @@ import Videography7 from "../assets/gallery/videography/(7).jpg" ;
 import Videography8 from "../assets/gallery/videography/(8).jpg" ;
 import Videography9 from "../assets/gallery/videography/(9).jpg" ;
 
+import { PhotographyGallery } from "../components/Images";
 
 import Animation from "../components/helpers/Animation";
-import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from "../components/patterns/Pattern1";
+import  { Pattern9 } from "../components/patterns/Pattern1";
 import Contact from "../components/Contact";
+import MetaTag from "./MetaTag";
 const images = [
 {img : Videography1},
 {img : Videography2},
@@ -83,6 +84,7 @@ const S_photography = () => {
 
   return (
     <div className="S_photography landing">
+      <MetaTag title="Top Photography & Videography services in Dubai " desc="Discover our photography and videography services in Dubai, from event photography to product videography. MRM provides optimal solutions." />
       <Animation />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro" data-aos="zoom-in"  > <img src={ImgIntro}  /></div>
@@ -168,10 +170,11 @@ const S_photography = () => {
           
         <div className="container">
           <div className="boxs">
-            {images.map((e,index)=> ( <div key={index} data-aos="fade-up"  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
+            {PhotographyGallery().map((e,index)=> ( <div key={index} data-aos="fade-up"  className="coverImg"> <i onClick={_=> setImg(e)} className="fa-solid fa-compress"></i> <img src={e} /> </div> ))}
             {Img && <div className="show-img"> 
               <img src={Img} alt="" /> 
-              <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
+              <i onClick={_=>setImg("")} className="fa-solid fa-xmark"></i>
+              
             </div>}
           </div>
         </div>

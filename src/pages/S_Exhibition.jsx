@@ -29,7 +29,7 @@ import DisplayStand1  from "../assets/gallery/display stand/display-stands (1).j
 import DisplayStand2  from "../assets/gallery/display stand/display-stands (2).jpg" ;
 import DisplayStand3  from "../assets/gallery/display stand/display-stands (3).jpg" ;
 import DisplayStand4  from "../assets/gallery/display stand/display-stands (4).jpg" ;
-import DisplayStand5  from "../assets/gallery/display stand/display-stands (5).jpg" ;
+// import DisplayStand5  from "../assets/gallery/display stand/display-stands (5).jpg" ;
 import DisplayStand6  from "../assets/gallery/display stand/display-stands (6).jpg" ;
 import DisplayStand7  from "../assets/gallery/display stand/display-stands (7).jpg" ;
 
@@ -39,6 +39,7 @@ import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg5.jpg"
 import IMG3 from "../assets/bg/bg3.jpg"
 import Contact from "../components/Contact";
+import MetaTag from "./MetaTag";
 
 
 const BRANDING_SERVICES = [
@@ -57,7 +58,6 @@ const S_Exhibition = () => {
     {img:DisplayStand2, animate:"fade-up" } ,
     {img:DisplayStand3, animate:"fade-up" } ,
     {img:DisplayStand4, animate:"fade-up" } ,
-    {img:DisplayStand5, animate:"fade-up" } ,
     {img:DisplayStand6, animate:"fade-up" } ,
     {img:DisplayStand7, animate:"fade-up" } ,
   ]
@@ -79,6 +79,7 @@ const S_Exhibition = () => {
   return (
     <div className="S_Exhibition landing">
       <div className="container"> <Navbar /> </div>
+      <MetaTag title="Best Exhibition & display stand designing services in Dubai " desc="Discover our customized exhibition stands and display stands in Dubai for a powerful and lasting impression on your audience." />
       <Animation />
       <div className="coverIntro" data-aos="zoom-in-left"><img src={ImgIntro} alt="" /> </div>
 

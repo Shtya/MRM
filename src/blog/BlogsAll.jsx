@@ -1,5 +1,4 @@
 import React , {useEffect, useState} from 'react'
-import { DUMMY  } from './Posts'
 import { Link, useNavigate } from 'react-router-dom'
 import baseURL, { baseImg } from '../API/API'
 import Loading from "./Loading"
@@ -11,7 +10,7 @@ const BlogsAll = () => {
   const [data , setdata] = useState([])
   const [idDelete , setIdDelete] = useState("")
   const [showModal ,setshowModal] = useState(false)
-  const navigate = useNavigate();
+
   const handelModal = (e)=>{
     setshowModal(!showModal)
     setIdDelete(e)
@@ -25,7 +24,6 @@ const BlogsAll = () => {
   useEffect(_=>{ baseURL.get("").then(res => setdata(res.data.data))} , [loadData])
 
 
-
   return (
     <div className={`blogs-view`}>
       <div className="container container1"> <Alt_Navbar /> </div>
@@ -33,7 +31,7 @@ const BlogsAll = () => {
       {data?.length >= 1 ? (
         data?.map((e,index)=> (
           <div className="boxs" key={index}>
-            <div className="coverImg"> <img src={`${baseImg + e.thumbnail}`} alt="" /> </div>
+            <div className="coverImg"> <img src={e.thumbnail} alt="" /> </div>
             <h2 className='h2'> {e.title} </h2>
             <ul>
               <Link className='bt btn btn-view' to={`/blog/${e._id}`}> View </Link>

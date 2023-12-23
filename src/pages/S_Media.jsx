@@ -35,6 +35,7 @@ import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg3.jpg"
 import IMG3 from "../assets/bg/bg5.jpg"
 import Contact from '../components/Contact'
+import MetaTag from './MetaTag'
 
 const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising", "Tiktok Advertising"]
 const Paid = [ 
@@ -67,6 +68,7 @@ const S_Media = () => {
 
   return (
   <div className="S_media landing">
+    <MetaTag title=" Boost Your Brand with Top Advertising Companies in Dubai" desc="Transform your social platforms, run effective Google Ads campaigns, and achieve measurable growth with MRM's advertising experts in Dubai." />
     <Animation />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro " data-aos="zoom-in-left" > <img src={ImgIntro} alt="" /></div>

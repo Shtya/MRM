@@ -12,6 +12,7 @@ import IMG1 from "../assets/bg/b1.jpg"
 import Animation from '../components/helpers/Animation';
 import baseURL, { baseImg } from '../API/API';
 import { useLocation } from 'react-router-dom';
+import MetaTag from './MetaTag';
 
 const Blogs = () => {
   const {pathname} = useLocation()
@@ -21,32 +22,34 @@ const Blogs = () => {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1 , 
     autoplay:true ,
     responsive: [
       {
-        breakpoint: 1100,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 1,
-          dots: true,
+          initialSlide: 1 ,
+          dots: false,
         }
       },
       {
-        breakpoint: 680,
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1 ,
+          dots: false,
         }
       }
     ]
   };
-
   return (
     <div className='blog-page'>
+      <MetaTag title="Digital Marketing Updates and Tips for Business Growth " desc="Stay ahead with the latest digital marketing updates, Insights and expert tips for your Digital business growth with MRM`s informative blogs " />
+
       <Animation />
       <div className="container"> <Navbar /></div>
         <div className="coverIntro"> <img src={IntroImg} alt="" /></div>

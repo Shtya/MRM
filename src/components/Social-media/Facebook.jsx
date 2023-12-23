@@ -23,10 +23,10 @@ import { motion } from 'framer-motion'
 
 import Animation from '../../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../../components/patterns/Pattern1'
-import SocialLanding from '../SocialLanding'
 import IMG1 from "../../assets/bg/b1.jpg"
 import IMG2 from "../../assets/bg/bg3.jpg"
 import IMG3 from "../../assets/bg/bg5.jpg"
+import MetaTag from '../../pages/MetaTag'
 
 
 
@@ -75,12 +75,11 @@ const Pvariant = {
 }
 
 
-
-
 const Facebook = () => {
    return (
     <div className="Facebook shared">
       <div className="container"> <Navbar /> </div>
+      <MetaTag title=" Best Facebook Marketing Agency in Dubai , UAE  "  desc="Looking for Facebook Marketing Services in Dubai? Elevate Your Brand's Visibility and Engagement MRM Delivers High ROI with Efficient Spending on Facebook " />
       <Animation />
       <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" /></div>
 
@@ -98,7 +97,7 @@ const Facebook = () => {
         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
             <div className="container" >
             <div className="box-style" data-aos="fade-up">
-            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Harnessing the Power of Facebook Marketing  ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible"  >{ Array.from("Harnessing the Power of Facebook Marketing  ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
             <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Facebook has been a leader in digital marketing for a long time. Utilizing Facebook for advertising can provide significant brand exposure, engage potential customers, increase brand recognition, and generate valuable leads. ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
             </div>
             <div className="box-style-2" data-aos="fade-up"><motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Boost Your Business Growth with MRM's Trusted Facebook Marketing Partnership in Dubai").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -129,12 +128,12 @@ const Facebook = () => {
         <div className="box-style-4">
           <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
           <div className="container">
-            <div className="h1" >Our Facebook advertising services include</div>
+            <div className="h1" data-aos="fade-up" >Our Facebook advertising services include</div>
             <div className="bg"> <img src={ImgSection} alt="" /> </div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div class="box" key={index}>
+                <div class="box" key={index} data-aos="fade-up" data-aos-delay={`${index}00`}>
                   <div className="coverImg"> <img src={e.icon} alt="" /> </div>
                     <h2 className='h2'>{e.title} </h2>
                     <p className='p'>{e.desc}</p>

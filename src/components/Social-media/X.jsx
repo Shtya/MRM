@@ -23,6 +23,7 @@ import X4 from "../../assets/Socialmedia/X (4).png"
 import X5 from "../../assets/Socialmedia/X (5).png"
 import X6 from "../../assets/Socialmedia/X (6).png"
 import X7 from "../../assets/Socialmedia/X (7).png"
+import MetaTag from '../../pages/MetaTag'
 
 const TYPES = [
   {icon :"" ,title:"Promoted Tweets:" , desc:"Promoted Tweets are designed to reach users who do not follow your account. As your social media management agency, we pay to deliver these tweets to diverse audiences. These Twitter marketing initiatives can expand your business's reach and engage new potential customers. Similar to boosting posts on Facebook, promoted tweets increase visibility and engagement."},
@@ -74,13 +75,15 @@ const X = () => {
    return (
     <div className="x shared">
       <div className="container"> <Navbar /> </div>
+      <MetaTag title=" Best Twitter Marketing Agency in Dubai "  desc="Enhance your brand's online presence,grow your followers, boost engagement,and generate potential leads via MRM's Twitter marketing services. Contact Us Now" />
+
       <Animation />
-      <div className="coverIntro "> <img src={FacebookIntro} alt="" /></div>
+      <div className="coverIntro "  data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  >  <img src={FacebookCover} alt="" /> </div>
-              <div className="boxs" data-aos="fade-left" >
+              <div className="boxImg hidden-img"  data-aos="zoom-in-left" data-aos-delay="400" >  <img src={FacebookCover} alt="" /> </div>
+              <div className="boxs"  data-aos="zoom-in-right" data-aos-delay="600" >
               <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Transform Your Business with our Expert X Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
               <SocialLanding />
             </div>
@@ -110,7 +113,7 @@ const X = () => {
           <div className="container">
             <ul class="cards">
             {SERVICES.map((e,index)=> (
-            <li className='box' key={index}>
+            <li className='box' key={index} data-aos="zoom-in" data-aos-delay={`${index}00`} >
               <a  class="card">
                 <div className="cover"> <img src={e.icon} class="card__image" alt="" /> </div>
                 <div class="card__overlay">
@@ -131,11 +134,11 @@ const X = () => {
       <div className="impact">
         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
             <div className="container">
-                <div className="h1 clip"> Types of Twitter Ads MRM Offers </div>
+                <div className="h1 clip" data-aos="fade-up"> Types of Twitter Ads MRM Offers </div>
                 <div className="boxs" >
                   {
                     TYPES.map((e,index)=> (
-                      <div className="box" key={index} data-aos="fade-up" >
+                      <div className="box" key={index} data-aos="zoom-in-left" data-aos-delay={`${index}00`}  >
                           <div className="text">
                               <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
@@ -151,12 +154,12 @@ const X = () => {
         <div className="box-style-4 ">
           <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
           <div className="container">
-            <div className="h1" style={{marginBottom:""}}> Our Twitter Marketing Businesses</div>
-            <div className="phead" > At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
+            <div className="h1" style={{marginBottom:""}}  data-aos="fade-up" > Our Twitter Marketing Businesses</div>
+            <div className="phead"  data-aos="fade-up" data-aos-delay="200" > At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div class="box">
+                <div class="box" data-aos="fade-down" data-aos-delay={`${index}00`} >
                      <h2 className='number'>{index+1 >= 10 ?"":"0"}{index+1}</h2>
                     <h3 className='h2'>{e.title}</h3>
                     <p className='p'>{e.desc}</p>

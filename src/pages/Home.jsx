@@ -4,18 +4,23 @@ import Clients from "../components/Clients";
 import Contact from "../components/Contact";
 import Landing from "../components/Landing";
 import { Services } from "../components/Services";
-
 import Why from "../components/Why";
 import Who from "../components/Who";
 import Portfolio from "../components/Portfolio";
 import SlideNav from "../components/SlideNav";
 import { Divider, Pattern2 } from "../components/patterns/Pattern1";
+import MetaTag from "./MetaTag";
+import Animation from "../components/helpers/Animation";
+import BlogSwiper from "../components/BlogSwiper";
+import Clients2 from "../components/Clients2";
 
 function Home() {
 
   return (
     <div className="Home" >
-      
+      <MetaTag title="Best Advertising & Digital Marketing Agency in Dubai "  desc="Leading Advertising and digital marketing agency in Dubai offers full advertising services and digital marketing solutions to help businesses achieve growth" />
+        <Animation />
+        
         <Landing />
 
         <SlideNav />
@@ -34,7 +39,7 @@ function Home() {
 
         
         <Divider classn="divider" />
-        <Clients />
+        <Clients2 />
 
         <Contact />
 

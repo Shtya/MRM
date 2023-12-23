@@ -39,6 +39,7 @@ import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pa
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg3.jpg"
 import IMG3 from "../assets/bg/bg5.jpg"
+import MetaTag from './MetaTag';
 
 const OUR_SEO = [
   {classn :" "            , img:Icon_1 , title:"Keyword Research"   , desc:" Our team conducts in-depth research to determine the most effective and high-traffic keywords to target for your website. By strategically selecting these keywords, we can boost your website's visibility and attract more visitors."},
@@ -73,6 +74,7 @@ const S_SEO = () => {
   return (
     <div className='M_SEO landing'>
       <div className="container"> <Navbar /> </div>
+      <MetaTag title=" Top SEO services in Dubai for higher website ranking." desc="Improve your website's ranking in Dubai with professional SEO solutions from MRM. Boost visibility and capture your audience effectively" />
       <Animation />
       <div className="coverIntro"  data-aos="zoom-in-right" > <img src={Intro1} alt="" /></div>
 

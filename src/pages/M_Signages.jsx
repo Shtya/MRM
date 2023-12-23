@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/signages/intro.jpg"
@@ -27,6 +27,9 @@ import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/bg5.jpg"
 import IMG3 from "../assets/bg/bg3.jpg"
 import Contact from '../components/Contact'
+import MetaTag from './MetaTag'
+import { ImgsPortfolio } from '../components/Images'
+import { useLocation } from 'react-router-dom'
 
 const process = [
   {img: Icon_1, title:" Planning" ,desc:"During planning, we consider every detail to create signage that resonates with your brand and clients.Effective planning saves time and resources."},
@@ -75,10 +78,46 @@ const settings = {
 
 
 const M_Signages = () => {
+  const headers = [  "LED Signages","Building Wrap","Lamp Post Signs","Unipole Signs "]
+  const headers2 = [ "Health-Safety","Menu Boards","Reception Signage","Office Signs" ]
+  
+  const {pathname} = useLocation()
 
+  const Imgs = ImgsPortfolio()
+  const Imgs2 = ImgsPortfolio()
+
+  const [data , setdata ] = useState(Imgs)
+  const [data2 , setdata2 ] = useState(Imgs2)
+
+  const [type , settype ] =useState("Led-signage") ;
+  const [type2 , settype2 ] =useState("health ") ;
+
+  useEffect(_=>{ setdata(Imgs.filter(e => e.type.includes("Led-signage"))) } ,[pathname])
+  useEffect(_=>{ setdata2(Imgs2.filter(e => e.type.includes("health"))) } ,[pathname])
+
+  const handleHeaders = (ele)=>{
+    setdata( Imgs.filter(e =>{
+      settype(ele)
+      if(ele == headers[0] ) return e.type.includes("Led-signage")
+      if(ele == headers[1] ) return e.type.includes("Building")
+      if(ele == headers[2] ) return e.type.includes("Lamp")
+      if(ele == headers[3] ) return e.type.includes("unipole ")
+    }) ) 
+  }
+
+  const handleHeaders2 = (ele)=>{
+    setdata2( Imgs2.filter(e =>{
+      settype2(ele)
+      if(ele == headers2[0] ) return e.type.includes("health ")
+      if(ele == headers2[1] ) return e.type.includes("menu")
+      if(ele == headers2[2] ) return e.type.includes("reception ")
+      if(ele == headers2[3] ) return e.type.includes("office ")
+    }) ) 
+  }
   return (
     <div className="M_Signages landing">
       <div className="container"> <Navbar /> </div>
+      <MetaTag title=" Top Signage Companies in Dubai for Custom Designs" desc="From LED to indoor and outdoor options, MRM provides professional signage solutions in Dubai. Contact us to start your journey to success." />
       <Animation />
       <div className="coverIntro" data-aos="zoom-in-left"> <img src={ImgIntro} alt="" /></div>
 
@@ -106,16 +145,15 @@ const M_Signages = () => {
         <Pattern9 />
       <div className="signages">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-          <div className="container">
-              <div className="h1" style={{marginBottom:"10px"}} data-aos="fade-up">Outdoor Signages gallery</div>
-          </div>
+          <div className="container"> <div className="h1" style={{marginBottom:"10px"}} data-aos="fade-up">Outdoor Signages gallery</div>          </div>
+
           <div className="outdoor">
-              <div className="header1 header2" data-aos="flip-up">
-                  <li  className='p active'> LED Signages </li>
-                  <li  className='p'> Building Wrap </li>
-                  <li  className='p'> Lamp Post Signs</li>
-                  <li  className='p'> Unipole Signs </li>
-              </div>
+
+          <div className="header1 header2" data-aos="flip-up"  >{
+              headers.map((e,index)=> (
+              <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
+              ))}</div>
+
               <Slider_2_Imgs data={data} settings={settings} />
           </div>
 
@@ -123,14 +161,11 @@ const M_Signages = () => {
           <div className="indoor">
           <div className="h1" style={{marginBottom:"20px"}} data-aos="fade-up">Indoor Signages gallery</div>
             <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-              <div className="header1 header2" data-aos="zoom-in-up">
-                  <li className='p active'>	Health-Safety </li>
-                  <li className='p'>	Menu Boards </li>
-                  <li className='p'>	Reception Signage </li>
-                  <li className='p'>	Office Signs </li>
-                  <li className='p'>	LED Signages </li>
-              </div>
-              <Slider_2_Imgs data={data} settings={settings} />
+              <div className="header1 header2" data-aos="flip-up"  >{
+              headers2.map((e,index)=> (
+              <li className={type2 == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders2(e)} > {e} </li>
+              ))}</div>
+              <Slider_2_Imgs data={data2} settings={settings} />
           </div>
 
       </div>

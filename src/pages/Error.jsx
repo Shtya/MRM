@@ -3,7 +3,6 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import IntroImg from "../assets/footer.jpg"
 import { Link } from 'react-router-dom'
-import Button from '../components/Button'
 
 const Error = () => {
   const [ x , setx] = useState(0)

@@ -11,6 +11,7 @@ import Animation from '../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/patterns/Pattern1'
 import IMG2 from "../assets/bg/bg3.jpg"
 import IMG1 from "../assets/bg/bg3.jpg"
+import MetaTag from './MetaTag'
 
 const AboutUs = () => {
   const [width , setwidth] = useState(0)
@@ -23,6 +24,7 @@ const AboutUs = () => {
   ]
   return (
     <div className='about-us'>
+      <MetaTag title="Best Advertising & Digital Marketing Company in Dubai " desc="Best Advertising and Digital Marketing company in Dubai, helping Businesses achieve success and growth by offering Full Marketing services" />
       <Animation />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro hidden-img"> <img src={ImgIntro}  /></div>

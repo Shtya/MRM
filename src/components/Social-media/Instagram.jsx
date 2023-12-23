@@ -14,6 +14,7 @@ import SocialLanding from '../SocialLanding'
 import IMG1 from "../../assets/bg/b1.jpg"
 import IMG2 from "../../assets/bg/bg3.jpg"
 import IMG3 from "../../assets/bg/bg5.jpg"
+import MetaTag from '../../pages/MetaTag'
 
 
 
@@ -57,13 +58,15 @@ const Instagram = () => {
    return (
     <div className="Instagram shared">
       <div className="container"> <Navbar /> </div>
+      <MetaTag title=" TOP Instagram Marketing Agency in Dubai , UAE"  desc="Boost your brand with our Instagram marketing services in Dubai. Drive targeted engagement and visibility, resulting in high ROI for your business" />
+
       <Animation />
-      <div className="coverIntro "> <img src={FacebookIntro} alt="" /></div>
+      <div className="coverIntro "  data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  >  <img src={FacebookCover} alt="" /> </div>
-              <div className="boxs" data-aos="fade-left" >
+              <div className="boxImg hidden-img"  data-aos="zoom-in-right" data-aos-delay="400" >  <img src={FacebookCover} alt="" /> </div>
+              <div className="boxs"   data-aos="zoom-in-left" data-aos-delay="600" >
               <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Maximize Your Reach and Engagement with Our Instagram Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
               <SocialLanding />
             </div>
@@ -91,13 +94,13 @@ const Instagram = () => {
       <div className="impact">
         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
             <div className="container">
-                <div className="h1">Types of Ads You Can Run on Instagram</div>
-                <div className="phead">Let's dive into the various types of Instagram ads that our expert team at MRM can strategically execute for your brand</div>
+                <div className="h1" data-aos="fade-up">Types of Ads You Can Run on Instagram</div>
+                <div className="phead"  data-aos="fade-up" data-aos-delay="200">Let's dive into the various types of Instagram ads that our expert team at MRM can strategically execute for your brand</div>
                 <div className="boxs" >
               
                   {
                     TYPES.map((e,index)=> (
-                      <div className="box" key={index} data-aos="fade-up" >
+                      <div className="box" key={index} data-aos="zoom-in-right" data-aos-delay={`${index}00`}  >
                           <div className="text">
                               <div className="h2" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
