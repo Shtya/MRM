@@ -46,17 +46,17 @@ htmlcssArrow.onclick = function() {
   <div className="Navbar1" >
     <Animation />
     <nav>
-      <div class={`navbar ${top}`} >
-        <i class='bx bx-menu'></i>
-        <div data-aos="fade-down" data-aos-delay="100" class="logo"><Link to="/"> <img src={Logo} alt="" /></Link></div>
-        <div class="nav-links">
-          <div class="sidebar-logo">   <span class="logo-name"><img src={Logo} alt="" /></span>   <i class='bx bx-x' ></i> </div>
+      <div className={`navbar ${top}`} >
+        <i className='bx bx-menu'></i>
+        <div data-aos="fade-down" data-aos-delay="100" className="logo"><Link to="/"> <img src={Logo} alt="" loading="lazy" /></Link></div>
+        <div className="nav-links">
+          <div className="sidebar-logo">   <span className="logo-name"><img src={Logo} alt="" loading="lazy" /></span>   <i className='bx bx-x' ></i> </div>
           
-          <ul class="links">
+          <ul className="links">
             <li data-aos="fade-down" data-aos-delay="200" onClick={_=> Navigate("/")}><Link to="/">Home</Link></li>
             <li data-aos="fade-down" data-aos-delay="300" ><Link  >Services</Link>
-              <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
-              <ul class="htmlCss-sub-menu sub-menu">
+              <i className='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+              <ul className="htmlCss-sub-menu sub-menu">
                 <li onClick={_=> Navigate("/web-design")}><Link to="/web-design"> web design & Development </Link></li>
                 <li onClick={_=> Navigate("/photography")}><Link to="/photography"> photography & videography </Link></li>
                 <li onClick={_=> Navigate("/exhibition")}><Link to="/exhibition"> exhibition & display stands</Link></li>
@@ -74,9 +74,9 @@ htmlcssArrow.onclick = function() {
             <li data-aos="fade-down" data-aos-delay="600" onClick={_=> Navigate("/contact-us")}><Link to="/contact-us"> Contact Us</Link></li>
           </ul>
         </div>
-        <div class="search-box" data-aos="fade-down" data-aos-delay="700">
-          <i class='bx bx-search'></i>
-          <div class="input-box"> <input type="text" placeholder="Search..."/>  </div>
+        <div className="search-box" data-aos="fade-down" data-aos-delay="700">
+          <i className='bx bx-search'></i>
+          <div className="input-box"> <input type="text" placeholder="Search..."/>  </div>
         </div>
       </div>
     </nav>

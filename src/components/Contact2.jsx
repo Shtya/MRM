@@ -26,7 +26,7 @@ const Contact2 = () => {
       <div className="container">
           
               <div className="box" data-aos="fade-right" data-aos-delay="200" >
-                  <div className="coverMap"> <img className='mapImg' src={MapImg} alt="" /> </div>
+                  <div className="coverMap"> <img className='mapImg' src={MapImg} alt="" loading="lazy" /> </div>
                   <div className="text"> <h2 className='h1 blur' data-aos="fade-right" data-aos-delay="300">Turn your dreams into digital realities </h2> </div>
 
                   <ul className='contact-list'>

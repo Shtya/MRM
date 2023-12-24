@@ -9,12 +9,11 @@ import { motion } from 'framer-motion'
 
 import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
-import SocialLanding from '../SocialLanding'
 
 
 import IMG1 from "../../assets/bg/b1.jpg"
-import IMG2 from "../../assets/bg/bg3.jpg"
-import IMG3 from "../../assets/bg/bg5.jpg"
+import IMG2 from "../../assets/bg/b2.jpg"
+import IMG3 from "../../assets/bg/b3.jpg"
 import MetaTag from '../../pages/MetaTag'
 const TYPES = [
   {icon :"" ,title:"In-Feed Ads" , desc:"Seamlessly integrated into users' For You Page (FYP), In-Feed Ads capture high in-app engagement. With durations spanning from 5 to 60 seconds, these ads feature compelling call-to-action buttons that lead users to external landing pages. It's the perfect way to blend into users' content feeds while driving them toward your brand's offerings."},
@@ -64,14 +63,13 @@ const Tiktok = () => {
       <MetaTag title=" Top TikTok Marketing Agency in Dubai   "  desc="Boost your brand's visibility and sales on TikTok with MRM's advertising services. Maximize your reach and engage your audience effectively. Contact Us Now" />
 
       <Animation />
-      <div className="coverIntro "  data-aos="fade-down"> <img src={FacebookIntro} alt="" /></div>
+      <div className="coverIntro "  data-aos="fade-down"> <img src={FacebookIntro} alt="" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"   data-aos="fade-down" data-aos-delay="400" >  <img src={FacebookCover} alt="" /> </div>
+              <div className="boxImg hidden-img"   data-aos="fade-down" data-aos-delay="400" >  <img src={FacebookCover} alt="" loading="lazy" /> </div>
               <div className="boxs"  data-aos="fade-up" data-aos-delay="400" >
               <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Maximize Engagement and Build Your Brand with Our TikTok Marketing Strategies").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
-              <SocialLanding />
             </div>
         </div>
       </div>
@@ -80,7 +78,7 @@ const Tiktok = () => {
 
       {/* <Divider classn="divider" /> */}
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
         <div className="container" >
           <div className="box-style" data-aos="fade-down">
             <motion.p  className="h2 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Get Ahead of the Competition with MRM's Effective TikTok Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -97,7 +95,7 @@ const Tiktok = () => {
         <Divider classn="divider-left" />
       <div className="impact">
         {/* <Pattern2 /> */}
-        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 "  data-aos="fade-down" > Types of TikTok Ads we offer</div>
                 <div className="phead"   data-aos="fade-down" data-aos-delay="200">TikTok's advertising landscape offers diverse options tailored to your unique marketing objectives. MRM agency specializes in executing these TikTok ad types to elevate your brand's visibility and engagement. </div>
@@ -120,14 +118,14 @@ const Tiktok = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4">
-          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
           <div className="container">
             <div className="h1"  data-aos="fade-down"  style={{marginBottom:""}}>Why Choose TikTok Marketing?</div>
             <div className="phead"  data-aos="fade-down" data-aos-delay="200">Still trying to convince you about the power of TikTok for your marketing strategy? Let's explore eight key benefits</div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div class="box"  data-aos="fade-down" data-aos-delay={`${index}00`}>
+                <div className="box"  data-aos="fade-down" data-aos-delay={`${index}00`}>
                     <h2 className='number'>{index+1 >= 10 ?"":"0"}{index+1}</h2>
                     <h3 className='h2'>{e.title}</h3>
                     <p className='p'>{e.desc}</p>

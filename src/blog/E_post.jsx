@@ -65,7 +65,7 @@ const E_post = () => {
               <button className='bt' style={{opacity: !isload ? "1":".7" }}  onClick={handleSubmit} > 
                 {
                   !isload ? "Update" 
-                  :  <div className="LoadingAnimate"> <div class="load-wrapp"> <div class="load-3"> <div class="line"></div> <div class="line"></div> <div class="line"></div> </div> </div></div>
+                  :  <div className="LoadingAnimate"> <div className="load-wrapp"> <div className="load-3"> <div className="line"></div> <div className="line"></div> <div className="line"></div> </div> </div></div>
                 }
               </button>
             </form>

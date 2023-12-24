@@ -1,11 +1,6 @@
-import React, { useState , useEffect } from 'react'
 import Animation from './helpers/Animation'
-import Pattern1, {Pattern2, Pattern3, Pattern4, Pattern5} from './patterns/Pattern1'
-
 import WhyImg from "../assets/Why.jpg"
-import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
+import IMG2 from "../assets/bg/b3.jpg"
 
 const Why = () => {
 
@@ -22,7 +17,7 @@ const Why = () => {
 
     <section id='Why' className='Why'>
       <Animation />
-      <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+      <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
       <div className="container1">
         <div className="h1" data-aos="fade-up" >WHY CHOOSE US</div>
       </div>
@@ -40,7 +35,7 @@ const Why = () => {
               </div>
 
             <div className="Img hidden-img"  >
-              <img data-aos="fade-left" data-aos-delay="200"  src={WhyImg} alt="" />
+              <img data-aos="fade-left" data-aos-delay="200"  src={WhyImg} alt="Why-chooseus" />
             </div>
       </div>
     </section>

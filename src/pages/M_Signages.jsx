@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import ImgIntro from "../assets/signages/intro.jpg"
+import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/signages/cover.jpg"
-
+import SliderOUTDOOR from "../components/SLIDER_MRM/SliderOUTDOOR"
+import SliderINDOOR from "../components/SLIDER_MRM/SliderINDOOR"
 
 import Icon_1 from "../assets/S_media/1.png" ;
 import Icon_2 from "../assets/S_media/2.png" ;
@@ -20,16 +20,13 @@ import Outdoor_5 from "../assets/gallery/outdoor/5.jpg" ;
 import Outdoor_6 from "../assets/gallery/outdoor/6.jpg" ;
 import Outdoor_7 from "../assets/gallery/outdoor/7.jpg" ;
 import Outdoor_8 from "../assets/gallery/outdoor/8.jpg" ;
-import Slider_2_Imgs from '../components/Slide/Slider_2_Imgs'
 import Animation from '../components/helpers/Animation'
-import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/patterns/Pattern1'
+import{  Pattern9 } from '../components/patterns/Pattern1'
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg5.jpg"
-import IMG3 from "../assets/bg/bg3.jpg"
+import IMG2 from "../assets/bg/b3.jpg"
+import IMG3 from "../assets/bg/b2.jpg"
 import Contact from '../components/Contact'
 import MetaTag from './MetaTag'
-import { ImgsPortfolio } from '../components/Images'
-import { useLocation } from 'react-router-dom'
 
 const process = [
   {img: Icon_1, title:" Planning" ,desc:"During planning, we consider every detail to create signage that resonates with your brand and clients.Effective planning saves time and resources."},
@@ -38,92 +35,20 @@ const process = [
   {img: Icon_4, title:"Fabrication" ,desc:"Our state-of-the-art facility uses cutting-edge technology to craft high-quality signage for your project."},
   {img: Icon_5, title:"Installation" ,desc:"Proper installation ensures your signage is set up correctly and safely, allowing your brand to shine."},
 ]
-const data = [
-  {img: Outdoor_1, class:"lar" , type:` all` }  ,
-  {img: Outdoor_2, class:"lar" , type:` all` }  ,
-  {img: Outdoor_3, class:"squ" , type:` all` }  ,
-  {img: Outdoor_4, class:"squ" , type:` all` }  ,
-  {img: Outdoor_5, class:"squ" , type:` all` }  ,
-  {img: Outdoor_6, class:"squ" , type:` all` }  ,
-  {img: Outdoor_7, class:"req" , type:` all` }  ,
-  {img: Outdoor_8, class:"req" , type:` all` }  
-]
-const settings = {
-  dots: true,
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  autoplay:true  ,
-  speed: 2000,
-  autoplaySpeed: 5000 ,
-  cssEase: "linear" ,
-  responsive: [
-    {breakpoint: 1100,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 1,}
-  },
-    {breakpoint: 900,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,}
-  },
-    {breakpoint: 300,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,}
-  }
-]
-};
 
 
 const M_Signages = () => {
-  const headers = [  "LED Signages","Building Wrap","Lamp Post Signs","Unipole Signs "]
-  const headers2 = [ "Health-Safety","Menu Boards","Reception Signage","Office Signs" ]
   
-  const {pathname} = useLocation()
-
-  const Imgs = ImgsPortfolio()
-  const Imgs2 = ImgsPortfolio()
-
-  const [data , setdata ] = useState(Imgs)
-  const [data2 , setdata2 ] = useState(Imgs2)
-
-  const [type , settype ] =useState("Led-signage") ;
-  const [type2 , settype2 ] =useState("health ") ;
-
-  useEffect(_=>{ setdata(Imgs.filter(e => e.type.includes("Led-signage"))) } ,[pathname])
-  useEffect(_=>{ setdata2(Imgs2.filter(e => e.type.includes("health"))) } ,[pathname])
-
-  const handleHeaders = (ele)=>{
-    setdata( Imgs.filter(e =>{
-      settype(ele)
-      if(ele == headers[0] ) return e.type.includes("Led-signage")
-      if(ele == headers[1] ) return e.type.includes("Building")
-      if(ele == headers[2] ) return e.type.includes("Lamp")
-      if(ele == headers[3] ) return e.type.includes("unipole ")
-    }) ) 
-  }
-
-  const handleHeaders2 = (ele)=>{
-    setdata2( Imgs2.filter(e =>{
-      settype2(ele)
-      if(ele == headers2[0] ) return e.type.includes("health ")
-      if(ele == headers2[1] ) return e.type.includes("menu")
-      if(ele == headers2[2] ) return e.type.includes("reception ")
-      if(ele == headers2[3] ) return e.type.includes("office ")
-    }) ) 
-  }
   return (
     <div className="M_Signages landing">
       <div className="container"> <Navbar /> </div>
       <MetaTag title=" Top Signage Companies in Dubai for Custom Designs" desc="From LED to indoor and outdoor options, MRM provides professional signage solutions in Dubai. Contact us to start your journey to success." />
       <Animation />
-      <div className="coverIntro" data-aos="zoom-in-left"> <img src={ImgIntro} alt="" /></div>
+      <div className="coverIntro" data-aos="zoom-in-left"> <img src={ImgIntro} alt="" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg" data-aos="zoom-in-left" data-aos-delay="400" >  <img src={ImgSection} alt="" /> </div>
+              <div className="boxImg" data-aos="zoom-in-left" data-aos-delay="400" >  <img src={ImgSection} alt="" loading="lazy" /> </div>
               <div className="boxs" data-aos="zoom-in-right" data-aos-delay="600">
                   <h2 className='h1  '> Craft Your Vision, Achieve Your Goals </h2>
                   <h2 className='h2  '>MRM's End-to-End Custom Signage Solutions, from Concept to Installation in the UAE</h2>
@@ -135,7 +60,7 @@ const M_Signages = () => {
       
       <Pattern9 />
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
             <div className="container">
                 <div className="h2 " data-aos="fade-up">MRM promises excellence in signage installation, blending your vision with our expertise</div>
                 <div className="h3" data-aos="fade-up" data-aos-delay="200">MRM's team of experts specializes in developing custom sign designs based on clients' requirements.<br/> we take care of every project aspect, from the concept and design phase to production and installation.<br/> MRM is committed to delivering quality service and ensuring customer satisfaction.<br/> Clients can trust MRM to handle everything related to their custom signage installation.</div>
@@ -143,36 +68,13 @@ const M_Signages = () => {
         </div>
 
         <Pattern9 />
-      <div className="signages">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-          <div className="container"> <div className="h1" style={{marginBottom:"10px"}} data-aos="fade-up">Outdoor Signages gallery</div>          </div>
-
-          <div className="outdoor">
-
-          <div className="header1 header2" data-aos="flip-up"  >{
-              headers.map((e,index)=> (
-              <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
-              ))}</div>
-
-              <Slider_2_Imgs data={data} settings={settings} />
-          </div>
-
-          <Pattern9 />
-          <div className="indoor">
-          <div className="h1" style={{marginBottom:"20px"}} data-aos="fade-up">Indoor Signages gallery</div>
-            <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-              <div className="header1 header2" data-aos="flip-up"  >{
-              headers2.map((e,index)=> (
-              <li className={type2 == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders2(e)} > {e} </li>
-              ))}</div>
-              <Slider_2_Imgs data={data2} settings={settings} />
-          </div>
-
-      </div>
+        <SliderOUTDOOR />
+        <Pattern9 />
+        <SliderINDOOR />
 
       <Pattern9 />
       <div className="process2">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1  clip" data-aos="fade-up">Signage creation process</div>
                 <div className="phead " data-aos="fade-up"> Our custom signages captures attention and gives every project  an elegant and professional finish</div>
@@ -182,7 +84,7 @@ const M_Signages = () => {
                       <div className="check-point " data-aos="fade-left" key={index}  >
                         <div className="number " data-aos="fade-left"> 0{index +1} </div>
                         <div className='inner-box'>
-                          <span className='hidden-img' ><img src={e.img} alt="" /></span>
+                          <span className='hidden-img' ><img src={e.img} alt="" loading="lazy" /></span>
                           <h2 className="h2 clip  " data-aos="fade-left">{e.title}</h2>
                           <p className="p  " data-aos="fade-left"> {e.desc}</p>
                       </div>

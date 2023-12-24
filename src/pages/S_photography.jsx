@@ -1,25 +1,23 @@
-import React, { useEffect, useState } from "react";
-
 import Grid1 from "../assets/S_photography/Why.jpg" ;
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import ImgIntro from "../assets/S_photography/intro.jpg"
+import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/S_photography/cover.jpg"
 
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg5.jpg"
-import IMG3 from "../assets/bg/bg3.jpg"
+import IMG2 from "../assets/bg/b2.jpg"
+import IMG3 from "../assets/bg/b1.jpg"
 
-import Photography_1 from "../assets/gallery/photography/(1).jpg" ;
-import Photography_2 from "../assets/gallery/photography/(2).jpg" ;
-import Photography_3 from "../assets/gallery/photography/(3).jpg" ;
-import Photography_4 from "../assets/gallery/photography/(4).jpg" ;
-import Photography_5 from "../assets/gallery/photography/(5).jpg" ;
-import Photography_6 from "../assets/gallery/photography/(6).jpg" ;
-import Photography_7 from "../assets/gallery/photography/(7).jpg" ;
-import Photography_8 from "../assets/gallery/photography/(8).jpg" ;
-import Photography_9 from "../assets/gallery/photography/(9).jpg" ;
+import Photography_1 from "../assets/gallery/photography/  (1).jpg" ;
+import Photography_2 from "../assets/gallery/photography/  (2).jpg" ;
+import Photography_3 from "../assets/gallery/photography/  (3).jpg" ;
+import Photography_4 from "../assets/gallery/photography/  (4).jpg" ;
+import Photography_5 from "../assets/gallery/photography/  (5).jpg" ;
+import Photography_6 from "../assets/gallery/photography/  (6).jpg" ;
+import Photography_7 from "../assets/gallery/photography/  (7).jpg" ;
+import Photography_8 from "../assets/gallery/photography/  (8).jpg" ;
+import Photography_9 from "../assets/gallery/photography/  (9).jpg" ;
 
 import Videography1 from "../assets/gallery/videography/(1).jpg" ;
 import Videography2 from "../assets/gallery/videography/(2).jpg" ;
@@ -31,23 +29,12 @@ import Videography7 from "../assets/gallery/videography/(7).jpg" ;
 import Videography8 from "../assets/gallery/videography/(8).jpg" ;
 import Videography9 from "../assets/gallery/videography/(9).jpg" ;
 
-import { PhotographyGallery } from "../components/Images";
-
 import Animation from "../components/helpers/Animation";
 import  { Pattern9 } from "../components/patterns/Pattern1";
 import Contact from "../components/Contact";
 import MetaTag from "./MetaTag";
-const images = [
-{img : Videography1},
-{img : Videography2},
-{img : Videography3},
-{img : Videography4},
-{img : Videography5},
-{img : Videography6},
-{img : Videography7},
-{img : Videography8},
-{img : Videography9},
-]
+import SliderPHOTO from "../components/SLIDER_MRM/SliderPHOTO";
+
 const SERVICES = [
   { animate:"fade-up", img:Photography_2 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
   { animate:"fade-up", img:Photography_6 , title:"Business Portraits & Headshots" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
@@ -80,7 +67,6 @@ const WHY = [
 ]
 
 const S_photography = () => {
-  const [Img , setImg] = useState()
 
   return (
     <div className="S_photography landing">
@@ -91,7 +77,7 @@ const S_photography = () => {
 
       <div className="home">
           <div className="container">
-              <div className="boxImg " data-aos="zoom-in" data-aos-delay="400"  >  <img   src={ImgSection} alt="" /> </div>
+              <div className="boxImg " data-aos="zoom-in" data-aos-delay="400"  >  <img   src={ImgSection} alt="" loading="lazy" /> </div>
               <div className="boxs" data-aos="fade-left" data-aos-delay="600" >
                   <h2 className='h1 '>Capture your brand's story with our professional visual storytelling.</h2>
                   <h2 className='h2 '>We turn moments into memories and transform your brand's essence into a compelling narrative. </h2>
@@ -104,7 +90,7 @@ const S_photography = () => {
       <Pattern9 />
       <div className="quotation">
         {/* <Pattern1 /> */}
-        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
             <div className="container" data-aos="zoom-in-up" >
             <p className='h3'>  Our core belief is that every brand, product, and event has a unique story that deserves to be told.<br/> We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p>
             </div>
@@ -112,14 +98,14 @@ const S_photography = () => {
 
       <Pattern9 />
       <div className="photography-services">
-      <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+      <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
         <div className="h1" data-aos="zoom-in-up">Our Photo gallery</div> 
         <div className="container">
           {
             SERVICES.map((e,index)=> (
               <div className="box" key={index} data-aos="zoom-in-up">
                 <div className="innerbox">
-                <div className="coverImg "> <img src={e.img} alt="" />  </div>
+                <div className="coverImg "> <img src={e.img} alt="" loading="lazy" />  </div>
                 <div className="text">
                   <div className="h2 "> {e.title} </div>
                   <div className="p ">{e.desc} </div>
@@ -134,14 +120,14 @@ const S_photography = () => {
       {/* <Divider classn="divider" /> */}
       <Pattern9 />
       <div className="Videography-services">
-      <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+      <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
         <div className="h1 clip ">Types of Videography gallery</div> 
         <div className="container">
           {
             SERVICES2.map((e,index)=> (
               <div className="box" key={index} data-aos={e.animate} data-aos-delay={`${100 * (index + 1) }`} >
                 <div className="innerbox">
-                <div className="coverImg "> <img src={e.img} alt="" />  </div>
+                <div className="coverImg "> <img src={e.img} alt="" loading="lazy" />  </div>
                 <div className="text">
                   <div className="h2 clip "> {e.title} </div>
                   <div className="p ">{e.desc} </div>
@@ -156,37 +142,15 @@ const S_photography = () => {
 
       {/* <Divider classn="divider-left" /> */}
       <Pattern9 />
-      <div className="exhibition-stands">
-      <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-        <div className="header1">
-            <li className="active">Videography</li>
-            <li> Events </li>
-            <li> Fashion  </li>
-            <li> Food </li>
-            <li> Product </li>
-            <li> Automotive </li>
-            <li> Real Estate </li>
-        </div>
-          
-        <div className="container">
-          <div className="boxs">
-            {PhotographyGallery().map((e,index)=> ( <div key={index} data-aos="fade-up"  className="coverImg"> <i onClick={_=> setImg(e)} className="fa-solid fa-compress"></i> <img src={e} /> </div> ))}
-            {Img && <div className="show-img"> 
-              <img src={Img} alt="" /> 
-              <i onClick={_=>setImg("")} className="fa-solid fa-xmark"></i>
-              
-            </div>}
-          </div>
-        </div>
-      </div>
+      <SliderPHOTO />
 
 
 {/* <Divider classn="divider-left" /> */}
 <Pattern9 />
         <div className="searching2">
-        <div className="bgCover" data-aos="zoom-in-left"  >  <img  src={IMG2} alt="" /> </div>
+        <div className="bgCover" data-aos="zoom-in-left"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
             <div className="container">
-              <div className="coverImg "> <img src={Grid1} alt="" /> </div>
+              <div className="coverImg "> <img src={Grid1} alt="" loading="lazy" /> </div>
 
               <div className="boxs">
               <div className="h1" data-aos="zoom-in-right">Why Choose Us?</div>

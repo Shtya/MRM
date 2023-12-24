@@ -47,35 +47,36 @@ const App = () => {
       <SlideNav whats={false} />
       
       <Routes>
-        <Route path="/dashboard" element={<Dashboard />} /> 
-        <Route path="/MRM" element={<BlogsAll />} /> 
+
+        <Route index               element={<Home />} />                           
+        <Route path='/contact-us'  element={<ContactUs />} />                           
+        <Route path='/about-us'    element={<AboutUs />} />                          
+        <Route path='*'            element={<Error />} />                        
+        <Route path='/privacy'     element={<Privacy />} />                          
+        <Route path='/terms'       element={<Terms />} />                          
+
+        <Route path='/web-design'  element={<S_WebDesign/>} />                        
+        <Route path='/photography' element={<S_photography />} />                        
+        <Route path='/exhibition'  element={<S_Exhibition  />} />                        
+        <Route path='/signages'    element={<M_Signages />} />                        
+        <Route path='/portfolio'   element={<Landing />} />                        
+        <Route path='/gifts'       element={<S_Gifts  />} />                        
+        <Route path='/media'       element={<S_Media />} />                        
+        <Route path='/branding'    element={<S_Branding  />} />                        
+        <Route path='/seo'         element={<S_SEO />} />                        
+
+        <Route path="/dashboard"      element={<Dashboard />} /> 
+        <Route path="/MRM"            element={<BlogsAll />} /> 
         <Route path="/edite-blog/:id" element={<E_post />} /> 
-        <Route path="/blog/:id" element={<BlogDetails />} />
-        <Route path='/blog' element={<Blogs />} /> 
+        <Route path="/blog/:id"       element={<BlogDetails />} />
+        <Route path='/blog'           element={<Blogs />} /> 
 
-        <Route index element={<Home />} />
-        <Route path='/contact-us' element={<ContactUs />} /> 
-        <Route path='/about-us' element={<AboutUs />} />
-        <Route path='*' element={<Error />} />
-        <Route path='/privacy' element={<Privacy />} />
-        <Route path='/terms' element={<Terms />} />
-
-        <Route path='/web-design' element={<S_WebDesign/>} />
-        <Route path='/photography' element={<S_photography />} />
-        <Route path='/exhibition' element={<S_Exhibition  />} />
-        <Route path='/signages' element={<M_Signages />} />
-        <Route path='/portfolio' element={<Landing />} />
-        <Route path='/gifts' element={<S_Gifts  />} />
-        <Route path='/media' element={<S_Media />} />
-        <Route path='/branding' element={<S_Branding  />} />
-        <Route path='/seo' element={<S_SEO />} />
-
-        <Route path='/facebook' element={<Facebook />} />
-        <Route path='/snapchat' element={<Snapchat />} />
-        <Route path='/instagram' element={<Instagram />} />
-        <Route path='/x' element={<X />} />
-        <Route path='/linkedin' element={<Linkedin />} />
-        <Route path='/tiktok' element={<Tiktok />} />
+        <Route path='/facebook'  element={<Facebook />} />                        
+        <Route path='/snapchat'  element={<Snapchat />} />                        
+        <Route path='/instagram' element={<Instagram />} />                        
+        <Route path='/x'         element={<X />} />                        
+        <Route path='/linkedin'  element={<Linkedin />} />                        
+        <Route path='/tiktok'    element={<Tiktok />} />                        
 
       </Routes>
       </AnimatePresence>

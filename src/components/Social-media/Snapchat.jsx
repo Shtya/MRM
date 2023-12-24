@@ -17,11 +17,9 @@ import X6 from "../../assets/Socialmedia/x6.png"
 import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
 import IMG1 from "../../assets/bg/b1.jpg"
-import IMG2 from "../../assets/bg/bg3.jpg"
-import IMG3 from "../../assets/bg/bg5.jpg"
+import IMG2 from "../../assets/bg/b2.jpg"
+import IMG3 from "../../assets/bg/b3.jpg"
 
-
-import SocialLanding from '../SocialLanding'
 import MetaTag from '../../pages/MetaTag'
 
 
@@ -81,20 +79,19 @@ const Snapchat = () => {
       <MetaTag title=" Best Snapchat Marketing Agency In Dubai  "  desc="Looking for Snapchat advertising services? Discover MRM`s Snapchat marketing services that empower your brand, boost engagement, and supercharge your sales" />
 
       <Animation />
-      <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" /></div>
+      <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  data-aos="zoom-in-right" data-aos-delay="400" >  <img src={FacebookCover} alt="" /> </div>
+              <div className="boxImg hidden-img"  data-aos="zoom-in-right" data-aos-delay="400" >  <img src={FacebookCover} alt="" loading="lazy" /> </div>
               <div className="boxs"  data-aos="zoom-in-left" data-aos-delay="600">
               <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Create Engaging Snapchat Campaigns with Our Expert Marketing Solutions").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
-              <SocialLanding />
             </div>
         </div>
       </div>
 
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
         <div className="container" >
           <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unleash the Potential of Snapchat Marketing with MRM Agency").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -109,17 +106,17 @@ const Snapchat = () => {
 
       <Divider classn="divider" />
       <div className="box-style-3">
-        <div class="bg"> <img src={CoverSectionImg} alt="" /></div>
+        <div className="bg"> <img src={CoverSectionImg} alt="" loading="lazy" /></div>
         <div className="container">
         <div className="h1 clip" data-aos="fade-up" > Types of Snapchat Ads MRM Can Run For You </div>
         <div className="boxs">
         {
           TYPES.map((e,index)=> (
-            <div class="box" key={index}  data-aos="zoom-in-right" data-aos-delay={`${index/2}00`}>
-              <div class='main'>
-                <img class='tokenImage' src={e.icon} alt="NFT" />
+            <div className="box" key={index}  data-aos="zoom-in-right" data-aos-delay={`${index/2}00`}>
+              <div className='main'>
+                <img className='tokenImage' src={e.icon} alt="NFT" />
                 <h2 className='h2'>{e.title} </h2>
-                <p  class='p'>{e.desc}</p>
+                <p  className='p'>{e.desc}</p>
                 <hr />
               </div>
             </div>
@@ -131,9 +128,9 @@ const Snapchat = () => {
 
         <Divider classn="divider" />
         <div className="reason2">
-          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
         <div className='clip h1'data-aos="fade-up" >8 Reasons to Choose Snapchat for Digital Marketing</div> 
-        <article class="gallery">
+        <article className="gallery">
           {
             SERVICES.map((e,index)=>(<div className="img" key={index} data-aos="zoom-in-right" data-aos-delay={`${index}00`}> 
             <div className="num hidden-text"> {index + 1} </div>
@@ -146,7 +143,7 @@ const Snapchat = () => {
 
         <Divider classn="divider-left" />
       <div className="box-style-1">
-        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 clip" data-aos="fade-up"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You? </div>
 

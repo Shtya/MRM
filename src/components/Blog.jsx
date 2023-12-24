@@ -1,12 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Slider_1_Img from './Slide/Slider_1_Img';
-import { Pattern2, Pattern3 } from './patterns/Pattern1';
-
-import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
-
+import IMG3 from "../assets/bg/b3.jpg"
 import baseURL from '../API/API';
+import { useLocation } from 'react-router-dom';
 
 var settings = {
   dots: true,
@@ -39,10 +35,12 @@ var settings = {
 
 const Blog = () => {
   const [blogs , setdata] = useState()
-  useEffect(_=> { baseURL.get("" ).then(e => setdata(e.data.data)) } ,[])
+  const {pathname} = useLocation() ;
+  useEffect(_=> { baseURL.get("").then(e => setdata(e.data.data)) } ,[pathname])
+
   return (
     <section className='blog' id='Blog'>
-      <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+      <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
       <div className="container"> <div className="h1 clip" data-aos="fade-up" >BLOG</div> </div>
       <p className="phead" data-aos="fade-up"  >Latest Insights and News to Keep Your Strategies Alive </p>
 

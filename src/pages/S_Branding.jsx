@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import ImgIntro from "../assets/S_branding/intro.jpg"
+import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/S_branding/cover.jpg"
-
-import { ImgsPortfolio, Imgsignages } from '../components/Images';
 import Grid1 from "../assets/S_branding/why.jpg" ;
-
+import  SliderBRAND from "../components/SLIDER_MRM/SliderBRAND"
 
 
 
@@ -24,14 +21,11 @@ import approach_2 from "../assets/S_branding/approach2.png" ;
 import approach_3 from "../assets/S_branding/approach3.png" ;
 import approach_4 from "../assets/S_branding/approach4.png" ;
 import OnePlatform from '../components/OnePlatform'
-import Slider_1_Img from '../components/Slide/Slider_1_Img'
-import Slider_2_Imgs from '../components/Slide/Slider_2_Imgs'
+
 import Animation from '../components/helpers/Animation'
-import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
+import { Divider} from '../components/patterns/Pattern1'
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
-import { useLocation } from 'react-router-dom'
+import IMG2 from "../assets/bg/b2.jpg"
 import Contact from '../components/Contact'
 import MetaTag from './MetaTag'
 
@@ -56,99 +50,40 @@ const BRANDING_SERVICES = [
 
 
 const S_Branding = ({header =true}) => {
-  // const data = Imgsignages() ;
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1 , 
-    autoplay:true ,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 2,
-          initialSlide: 1 ,
-          dots: false,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1 ,
-          dots: false,
-        }
-      }
-    ]
-  };
-  const {pathname} = useLocation()
-  const headers = [ "all" ,  "Logo Design","Web Design","Social Media Design","Packaging","Graphic Design","Vehicle Branding","Staff Uniform","Stationery" ]
-
-  const Imgs = ImgsPortfolio(headers)
-  const [data , setdata ] = useState(Imgs)
-  const [type , settype ] =useState( "branding") ;
-
-  const handleHeaders = (ele)=>{
-    setdata( Imgs.filter(e =>{
-      settype(ele)
-      if(ele == headers[0] ) return e.type.includes("branding")
-      if(ele == headers[1] ) return e.type.includes("Logo")
-      if(ele == headers[2] ) return e.type.includes("Web")
-      if(ele == headers[3] ) return e.type.includes("Socialmedia")
-      if(ele == headers[4] ) return e.type.includes("packaging")
-      if(ele == headers[5] ) return e.type.includes("Graphic")
-      if(ele == headers[6] ) return e.type.includes("vehicles")
-      if(ele == headers[7] ) return e.type.includes("uniform")
-      if(ele == headers[8] ) return e.type.includes("stationery")
-    }) ) 
-  }
-  useEffect(_=> {setdata( Imgs.filter(e => e.type.includes("branding")  )) } ,[pathname])
-
+ 
   return (
     <div className="S_Branding landing">
       <div className="container"> <Navbar /> </div>
       <Animation />
       <MetaTag title=" Unleash Your Brand's Power with the Top Branding Agency in Dubai" desc="Stand out with unique logos, captivating web experiences & impactful social media designs! Contact us for comprehensive branding solutions ." />
-      <div className="coverIntro" data-aos="zoom-in-right" > <img src={ImgIntro} alt="" /></div>
+      <div className="coverIntro" data-aos="zoom-in-right" > <img src={ImgIntro} alt="" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg n-border" data-aos="zoom-in-right" data-aos-delay="400"  >  <img src={ImgSection} alt="" /> </div>
+              <div className="boxImg n-border" data-aos="zoom-in-right" data-aos-delay="400"  >  <img src={ImgSection} alt="" loading="lazy" /> </div>
               <div className="boxs"  data-aos="zoom-in-left" data-aos-delay="600"  >
                   <h2 className='h1 '> Unleash the Full Power and Potential of Your Brand! </h2>
                   <h2 className='h2 '> Partner with us to bring your brand identity to life, both online and offline </h2>
                   <p className='p '> 
-                   Your brand is your voice, your story – and it's how every aspect of your business makes your customers feel.<br/>
+                   Your brand is your voice, your story – and it's how every aspect of your business makes your customers feel.
                    we work with you to implement and grow it digitally and in real life. </p>
-                  Your brand goes way beyond a simple logo, or your visual identity.<br/>
-                   We don't just create your brand identity<br/>
+                  Your brand goes way beyond a simple logo, or your visual identity.
+                   We don't just create your brand identity
             </div>
         </div>
       </div>
       <Divider classn="divider" />
       <div className="quotation">
-         <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+         <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
           <div className="container">
               <div className="h2 "  data-aos="fade-up"  > Elevate Your Brand with Our Comprehensive Branding Services  </div>
-              <div className="h3 " data-aos="fade-up"  data-aos-delay="200" >  MRM, your partner in crafting compelling brand narratives.<br/> Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
+              <div className="h3 " data-aos="fade-up"  data-aos-delay="200" >  MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
           </div>
         </div>
 
         <Divider classn="divider-left" />
         <div className="platforms">
-         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+         <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
           <div className="container">
               <h3 className='h1'data-aos="fade-up">Our Branding Services</h3>
               <div className="boxs" data-aos="fade-up">
@@ -162,28 +97,13 @@ const S_Branding = ({header =true}) => {
       </div>
 
       <Divider classn="divider" />
-      <div className="signages">
-         <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
-          <div className="container">
-            <div className="h1 " data-aos="fade-up">OUR GALLERY</div>
-          </div>
-
-          <div className="outdoor">
-          {!header == false && <div className="header1 header2" data-aos="flip-up">{
-          headers.map((e,index)=> (
-          <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
-        ))}</div>}
-              <Slider_2_Imgs data={data} settings={settings} />
-          </div>
-
-
-      </div>
+      <SliderBRAND />
 
       <Divider classn="divider-left" />
         <div className="searching2">
-         <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+         <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
             <div className="container">
-              <div className="coverImg " data-aos="fade-right"> <img src={Grid1} alt="" /> </div>
+              <div className="coverImg " data-aos="fade-right"> <img src={Grid1} alt="" loading="lazy" /> </div>
 
               <div className="boxs" data-aos="fade-up">
                 <h1 className='h1' data-aos="fade-left">Why Choose Us</h1>

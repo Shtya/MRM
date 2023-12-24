@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar'
 
 import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/facebook.png"
-import ImgSection from "../../assets/bg/bg1.jpg"
+import ImgSection from "../../assets/bg/b8.jpg"
 
 import f1 from "../../assets/Socialmedia/facebook/f1.png"
 import f2 from "../../assets/Socialmedia/facebook/f2.png"
@@ -24,8 +24,8 @@ import { motion } from 'framer-motion'
 import Animation from '../../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../../components/patterns/Pattern1'
 import IMG1 from "../../assets/bg/b1.jpg"
-import IMG2 from "../../assets/bg/bg3.jpg"
-import IMG3 from "../../assets/bg/bg5.jpg"
+import IMG2 from "../../assets/bg/b2.jpg"
+import IMG3 from "../../assets/bg/b3.jpg"
 import MetaTag from '../../pages/MetaTag'
 
 
@@ -81,11 +81,11 @@ const Facebook = () => {
       <div className="container"> <Navbar /> </div>
       <MetaTag title=" Best Facebook Marketing Agency in Dubai , UAE  "  desc="Looking for Facebook Marketing Services in Dubai? Elevate Your Brand's Visibility and Engagement MRM Delivers High ROI with Efficient Spending on Facebook " />
       <Animation />
-      <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" /></div>
+      <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg" data-aos="fade-left" data-aos-delay="400" >  <img src={FacebookCover} alt="" /> </div>
+              <div className="boxImg" data-aos="fade-left" data-aos-delay="400" >  <img src={FacebookCover} alt="" loading="lazy" /> </div>
               <div className="boxs"  >
               <motion.p data-aos="zoom-in-right" data-aos-delay="600"  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unlock Your Business Potential with Our Expert Facebook Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
             </div>
@@ -94,7 +94,7 @@ const Facebook = () => {
 
       {/* <Divider classn="divider" /> */}
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
             <div className="container" >
             <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible"  >{ Array.from("Harnessing the Power of Facebook Marketing  ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -107,12 +107,12 @@ const Facebook = () => {
 
         <Divider classn="divider" />
         <div className="box-style-6">
-          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
           <div className="h1 "data-aos="zoom-in-right" > A Comprehensive Range of Facebook Ad Types </div>
           <div className="phead"data-aos="zoom-in-right" > MRM Agency offers a comprehensive array of Facebook ad types to suit your unique marketing objectives </div>
           <div className="container">
           {TYPES.map((e,index)=> (
-            <figure class="snip1218" key={index} data-aos="zoom-in" data-aos-delay={`${index + 1}00`}>
+            <figure className="snip1218" key={index} data-aos="zoom-in" data-aos-delay={`${index + 1}00`}>
               <figcaption>
                 <span></span>
                 <h3 className='h2'>{e.title}</h3>
@@ -126,15 +126,15 @@ const Facebook = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4">
-          <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+          <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
           <div className="container">
             <div className="h1" data-aos="fade-up" >Our Facebook advertising services include</div>
-            <div className="bg"> <img src={ImgSection} alt="" /> </div>
+            <div className="bg"> <img src={ImgSection} alt="" loading="lazy" /> </div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div class="box" key={index} data-aos="fade-up" data-aos-delay={`${index}00`}>
-                  <div className="coverImg"> <img src={e.icon} alt="" /> </div>
+                <div className="box" key={index} data-aos="fade-up" data-aos-delay={`${index}00`}>
+                  <div className="coverImg"> <img src={e.icon} alt={e.title} /> </div>
                     <h2 className='h2'>{e.title} </h2>
                     <p className='p'>{e.desc}</p>
                 </div>            

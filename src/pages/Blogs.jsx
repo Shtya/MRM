@@ -52,10 +52,10 @@ const Blogs = () => {
 
       <Animation />
       <div className="container"> <Navbar /></div>
-        <div className="coverIntro"> <img src={IntroImg} alt="" /></div>
+        <div className="coverIntro"> <img src={IntroImg} alt="" loading="lazy" /></div>
         <Divider classn="divider divider-top" />
         <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
         
           <div className="container">
                 <p className="h3 " data-aos="fade-up">Stay updated with our latest news, strategies, and tactics to succeed in your business.</p>

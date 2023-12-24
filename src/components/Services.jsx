@@ -1,9 +1,5 @@
-import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Pattern2, Pattern3, Pattern5 } from './patterns/Pattern1';
-import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
+import IMG3 from "../assets/bg/b1.jpg"
 
 const services = [
   {route:"/social",     animate:"fade-up",  title:"social media marketing"       , icon:"clip  fa-solid fa-bullhorn "        ,desc:"Enhance your online presence with our social media management." ,                                                                 },
@@ -22,7 +18,7 @@ export function Services() {
   return (
     <>
     <section className='services search-edite' id='Services'>
-    <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+    <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
        <h2 className='h1 clip ' data-aos="fade-up"  >OUR SERVICES</h2> 
       
       <div className="container">

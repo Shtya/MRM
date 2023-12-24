@@ -63,7 +63,7 @@ const BlogDetails = () => {
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  >  <img src={data?.thumbnail} alt="" /> </div>
+              <div className="boxImg hidden-img"  >  <img src={data?.thumbnail} alt="blog" /> </div>
               <div className="boxs" data-aos="fade-left" >
               <p  className="h2 hidden-text" > <span>{titleCustom}</span> </p>
             </div>
@@ -79,14 +79,14 @@ const BlogDetails = () => {
       <div className="interactive">
         <div className="container">
         <div className="reacted">
-            <span className='icons'><i class="fa-solid fa-thumbs-up"></i></span>
+            <span className='icons'><i className="fa-solid fa-thumbs-up"></i></span>
             <span> 
               <input type="text" placeholder='Leave a reply' />  
-              <i class="bt2 fa-solid fa-paper-plane"></i>
+              <i className="bt2 fa-solid fa-paper-plane"></i>
             </span>
-            <span className='icons'><i class="fa-brands fa-linkedin"></i> </span>
-            <span className='icons'><i class="fa-brands fa-x-twitter"></i> </span>
-            <span className='icons'><i class="fa-brands fa-facebook-f"></i> </span>
+            <span className='icons'><i className="fa-brands fa-linkedin"></i> </span>
+            <span className='icons'><i className="fa-brands fa-x-twitter"></i> </span>
+            <span className='icons'><i className="fa-brands fa-facebook-f"></i> </span>
           </div>
         </div>
       </div>

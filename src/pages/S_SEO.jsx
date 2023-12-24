@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar'
-import Intro1 from "../assets/SEO/intro.jpg" ;
+import ImgIntro from "../assets/bg/b9.jpg"
+
 import Community from "../assets/SEO/icon.jpg" ;
-import { useEffect } from 'react';
 
 
 import Analysis_1 from "../assets/SEO/Analysis-1.png"
@@ -21,10 +21,9 @@ import Icon_3 from "../assets/SEO/SEO-3.png"
 import Icon_4 from "../assets/SEO/SEO-4.png"
 import Icon_5 from "../assets/SEO/SEO-5.png"
 import Icon_6 from "../assets/SEO/SEO-6.png"
-  import OnePlatform from '../components/OnePlatform';
+import OnePlatform from '../components/OnePlatform';
 import OneProcess from '../components/OneProcess';
 import OneWhy from '../components/OneWhy';
-import Clients from '../components/Clients';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 
@@ -34,11 +33,11 @@ import seo_process_3 from "../assets/SEO/seo-process-3.jpg"
 import seo_process_4 from "../assets/SEO/seo-process-4.jpg"
 import seo_process_5 from "../assets/SEO/seo-process-5.jpg"
 import Animation from '../components/helpers/Animation';
-import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1';
+import { Divider} from '../components/patterns/Pattern1';
 
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
+import IMG2 from "../assets/bg/b2.jpg"
+import IMG3 from "../assets/bg/b3.jpg"
 import MetaTag from './MetaTag';
 
 const OUR_SEO = [
@@ -76,11 +75,11 @@ const S_SEO = () => {
       <div className="container"> <Navbar /> </div>
       <MetaTag title=" Top SEO services in Dubai for higher website ranking." desc="Improve your website's ranking in Dubai with professional SEO solutions from MRM. Boost visibility and capture your audience effectively" />
       <Animation />
-      <div className="coverIntro"  data-aos="zoom-in-right" > <img src={Intro1} alt="" /></div>
+      <div className="coverIntro"  data-aos="zoom-in-right" > <img src={ImgIntro} alt="" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg "  data-aos="zoom-in-right" data-aos-delay="400"  >  <img src={Community} alt="" /> </div>
+              <div className="boxImg "  data-aos="zoom-in-right" data-aos-delay="400"  >  <img src={Community} alt="" loading="lazy" /> </div>
               <div className="boxs "  data-aos="zoom-in-left" data-aos-delay="600"  >
                   <h2 className="h1 hidden-text" >Unlock the full potential of your website with SEO services</h2>
                   <p className="h2 hidden-text" >Improve your website's visibility and ranking on search engines with our professional SEO solutions </p>
@@ -91,7 +90,7 @@ const S_SEO = () => {
 
       <Divider classn="divider" />
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
         <div className="container">
               <div className="h2 hidden-text" data-aos="fade-up" > Maximizing SEO Impact with MRM at Your Website </div>
               <p className="h3 " data-aos="fade-up"   data-aos-delay="200" > We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it.<br/> Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs.<br/> Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search.</p>
@@ -100,7 +99,7 @@ const S_SEO = () => {
 
         <Divider classn="divider-left" />
       <div className="platforms">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
           <div className="container">
               <h3 className="h1 hidden-text clip" >Our SEO Services </h3>
               <div className="boxs">
@@ -116,7 +115,7 @@ const S_SEO = () => {
       <Divider classn="divider" />
 
       <div className="process3">
-        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
         <div className="h1 hidden-text clip" data-aos="fade-up">Our proccess</div>
           <div className="container">
               <div className="box box1">
@@ -138,7 +137,7 @@ const S_SEO = () => {
 
     <Divider classn="divider-left" />
     <div className="WHY">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
       <div className="h1" data-aos="fade-up"> Why We Excels? </div>
       <div className="container" data-aos="fade-up">
         {

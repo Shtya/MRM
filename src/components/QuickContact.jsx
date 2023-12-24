@@ -1,8 +1,8 @@
 import React , {useRef} from 'react'
 import  { Pattern8 } from './patterns/Pattern1'
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
+import IMG2 from "../assets/bg/b2.jpg"
+import IMG3 from "../assets/bg/b3.jpg"
 import emailjs from '@emailjs/browser';
 
 
@@ -23,7 +23,7 @@ const QuickContact = () => {
   
   return (
     <div className='QuickContact'>
-            <div className="bgCover" style={{zIndex:"0"}}  >  <img  src={IMG1} alt="" /> </div>
+            <div className="bgCover" style={{zIndex:"0"}}  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
 
       <Pattern8 />
       <div className="container">
@@ -34,7 +34,7 @@ const QuickContact = () => {
         <input data-aos="zoom-in" type="email" name="email"  placeholder='Email' />
         <input data-aos="zoom-in" className='bt' type="submit" value="Submit" />
         
-        <button className='btn3' data-aos="zoom-in"  type='submit'> <i class="bt2 fa-solid fa-paper-plane"></i> </button>
+        <button className='btn3' data-aos="zoom-in"  type='submit'> <i className="bt2 fa-solid fa-paper-plane"></i> </button>
       </form>
       </div>
     </div>

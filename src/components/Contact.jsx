@@ -1,9 +1,8 @@
-import {useEffect, useState  ,useRef} from 'react'
+import { useState  ,useRef} from 'react'
 import Animation from './helpers/Animation';
 import FormImg from "../assets/Form.jpg"
 import IMG1 from "../assets/bg/b1.jpg"
 import emailjs from '@emailjs/browser';
-import { Fade } from "react-awesome-reveal";
 import { Pattern9 } from './patterns/Pattern1';
 
 const Contact = ({title , desc , onHere}) => {
@@ -11,7 +10,6 @@ const Contact = ({title , desc , onHere}) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_pl60iqr', 'template_03nn5rk', form.current, '3BxbLM5srobXbwT-i')
       .then((result) => {
           console.log(result);
@@ -21,8 +19,6 @@ const Contact = ({title , desc , onHere}) => {
       e.target.reset() ;
   };
 
-
-
   const [value , setvalue] = useState() ;
   let services = [ , "Exhibition & Display Stand" , "Indoor & Outdoor Signages" , "Photography & Videography" , "Web Design & Development" ,"Social Media Marketing" , "Cooperated Gifts" , "Media Buyin" , "Branding" , "SEO" ,]
   
@@ -31,12 +27,12 @@ const Contact = ({title , desc , onHere}) => {
       <Pattern9 />
     <section className='Contact' id='Contact'>
       <Animation />
-      <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+      <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
      <div className="container1">  <h2 className='h2'>{desc }</h2> </div>
       <div className="container">
 
       <div className="box box-img " data-aos="fade-right"  >
-          <img  src={FormImg} alt="" />
+          <img  src={FormImg} alt="" loading="lazy" />
         </div>
 
         <div   className="box" data-aos="fade-left" data-aos-delay="200"  >

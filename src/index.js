@@ -9,8 +9,8 @@ import { Helmet } from 'react-helmet';
 const root = document.getElementById("root");
 
 ReactDOM.render(
-    <BrowserRouter>  <Helmet>   <title>Best Advertising & Digital Marketing Agency in Dubai </title>   <meta name="description" content="Leading Advertising and digital marketing agency in Dubai offers full advertising services and digital marketing solutions to help businesses achieve growth" /> </Helmet> <App />  </BrowserRouter> ,
-  document.getElementById('root')
+    <BrowserRouter>  <Helmet> <title>MRM | Best Digital Marketing & Advertising Agency in Dubai</title>   <meta name="description" content="Boost your brand with MRM, Dubai's premier digital marketing & advertising agency with SEO, social media marketing and PPC for top visibility and impact" /> </Helmet> <App />  </BrowserRouter> ,
+    root
 );
 
 

@@ -9,11 +9,10 @@ import { motion } from 'framer-motion'
 
 import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
-import SocialLanding from '../SocialLanding'
 
 import IMG1 from "../../assets/bg/b1.jpg"
-import IMG2 from "../../assets/bg/bg3.jpg"
-import IMG3 from "../../assets/bg/bg5.jpg"
+import IMG2 from "../../assets/bg/b2.jpg"
+import IMG3 from "../../assets/bg/b3.jpg"
 import MetaTag from '../../pages/MetaTag'
 
 
@@ -61,14 +60,13 @@ const Instagram = () => {
       <MetaTag title=" TOP Instagram Marketing Agency in Dubai , UAE"  desc="Boost your brand with our Instagram marketing services in Dubai. Drive targeted engagement and visibility, resulting in high ROI for your business" />
 
       <Animation />
-      <div className="coverIntro "  data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" /></div>
+      <div className="coverIntro "  data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  data-aos="zoom-in-right" data-aos-delay="400" >  <img src={FacebookCover} alt="" /> </div>
+              <div className="boxImg hidden-img"  data-aos="zoom-in-right" data-aos-delay="400" >  <img src={FacebookCover} alt="" loading="lazy" /> </div>
               <div className="boxs"   data-aos="zoom-in-left" data-aos-delay="600" >
               <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Maximize Your Reach and Engagement with Our Instagram Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
-              <SocialLanding />
             </div>
 
         </div>
@@ -76,7 +74,7 @@ const Instagram = () => {
 
       {/* <Divider classn="divider-left" /> */}
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
         <div className="container" >
         <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("MRM Your Premier Choice for Instagram Marketing Services In Dubai").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -92,7 +90,7 @@ const Instagram = () => {
 
       <Divider classn="divider" />
       <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1" data-aos="fade-up">Types of Ads You Can Run on Instagram</div>
                 <div className="phead"  data-aos="fade-up" data-aos-delay="200">Let's dive into the various types of Instagram ads that our expert team at MRM can strategically execute for your brand</div>
@@ -116,7 +114,7 @@ const Instagram = () => {
 
         <Divider classn="divider-left" />
       <div className="box-style-1">
-        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 clip"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You</div>
                 <div className="boxs" >

@@ -3,7 +3,7 @@ import React from 'react'
 const OneProcess = ({title , paragraph , img , classn , num}) => {
   return (
     <div className={`one-process ${classn} `} data-aos="fade-up"  >
-      <div className="coverImg "> <img src={img} alt="" /> </div>
+      <div className="coverImg"> <img src={img} alt="" loading="lazy" /> </div>
       <span></span>
       <div className="num">{num}</div>
       <div className="inner-box" >

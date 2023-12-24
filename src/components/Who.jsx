@@ -1,21 +1,15 @@
-import React , {useEffect} from 'react'
 import About_us from "../assets/about-us/aboutus.png"
 import Animation  from './helpers/Animation'
-import Pattern1, { Pattern2 } from './patterns/Pattern1'
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
 const Who = () => {
-  
-  
   return(
     <section className="Who search-edite " id='who' >
       <Animation />
-      <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+      <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
       <div className="container">
 
       <div className="Img hidden-img "  >
-        <img data-aos="fade-right" src={About_us} alt="" />
+        <img data-aos="fade-right" src={About_us} alt="" loading="lazy"  />
       </div>
 
       <div className="box" data-aos="fade-left"  >
@@ -33,9 +27,6 @@ const Who = () => {
         </div>
 
         <button className='bt ' data-aos="fade-left" data-aos-delay="700">Find out more </button>
-
-
-
       </div>
 
       </div>

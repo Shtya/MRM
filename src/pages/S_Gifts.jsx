@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import ImgIntro from "../assets/S_gifts/intro.jpg"
+import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/S_gifts/cover.jpg"
+import SliderGIFTS from "../components/SLIDER_MRM/SliderGIFTS"
 
 import Icon_1 from "../assets/S_gifts/offer1.png" ;
 import Icon_2 from "../assets/S_gifts/offer2.png" ;
@@ -14,16 +14,13 @@ import gifts_1 from "../assets/S_gifts/gifts1.png" ;
 import gifts_2 from "../assets/S_gifts/gifts2.png" ;
 import gifts_3 from "../assets/S_gifts/gifts3.png" ;
 import Animation from '../components/helpers/Animation'
-import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
-import { ImgsPortfolio } from '../components/Images'
-import Slider_2_Imgs from '../components/Slide/Slider_2_Imgs'
+import { Divider} from '../components/patterns/Pattern1'
 
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
+import IMG2 from "../assets/bg/b2.jpg"
+import IMG3 from "../assets/bg/b3.jpg"
 import Contact from '../components/Contact'
 import MetaTag from './MetaTag'
-import { useLocation } from 'react-router-dom'
 
 const Approach = [
   { img:gifts_1 , title:"Corporate Gifts" , desc:"Where Thoughtful Gestures Meet Elegance The right gift can make a big impact in corporate relationships. Our Corporate Gifts collection offers timeless and sophisticated items that show genuine appreciation. "},
@@ -40,71 +37,16 @@ const BRANDING_SERVICES = [
 
 const S_Gifts = () => {
 
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1 , 
-    autoplay:true ,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 2,
-          initialSlide: 1 ,
-          dots: false,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1 ,
-          dots: false,
-        }
-      }
-    ]
-  };
-
-  const headers = [ "all", "Trophies", "Customized Gift" , "Corporate Gifts"]
-  const {pathname} = useLocation()
-
-  const Imgs = ImgsPortfolio(headers)
-  const [data , setdata ] = useState(Imgs)
-  const [type , settype ] =useState( "outdoor") ;
-  useEffect(_=>{ setdata(Imgs.filter(e => e.type.includes("outdoor"))) } ,[pathname])
-
-  const handleHeaders = (ele)=>{
-    setdata( Imgs.filter(e =>{
-      settype(ele)
-      if(ele == headers[0] ) return e.type.includes("Led-signage")
-      if(ele == headers[1] ) return e.type.includes("outdoor")
-      if(ele == headers[2] ) return e.type.includes("Lamp")
-      if(ele == headers[3] ) return e.type.includes("unipole ")
-    }) ) 
-  }
-
   return (
     <div className="S_Gifts landing">
       <div className="container"> <Navbar /> </div>
       <MetaTag title=" Best Corporate Gifts Designing Services in Dubai " desc="Looking for impressive corporate gifts, gift items, and trophies? Our curated selection is customized for any occasion and denotes exceptional quality." />
       <Animation />
-      <div className="coverIntro " data-aos="zoom-in-left"  > <img src={ImgIntro} alt="" /></div>
+      <div className="coverIntro " data-aos="zoom-in-left"  > <img src={ImgIntro} alt="" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img" data-aos="zoom-in-left" data-aos-delay="400"   >  <img src={ImgSection} alt="" /> </div>
+              <div className="boxImg hidden-img" data-aos="zoom-in-left" data-aos-delay="400"   >  <img src={ImgSection} alt="" loading="lazy" /> </div>
               <div className="boxs"data-aos="zoom-in-left" data-aos-delay="600"  >
                   <h2 className='h1 hidden-text'> Transform Professional Relationships with Timeless Elegance</h2>
                   <h2 className='h2 hidden-text'> Unleash the potential of your business connections with our expertly curated collection of corporate gifts</h2>
@@ -116,7 +58,7 @@ const S_Gifts = () => {
 
       <Divider classn="divider-left" />
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
             <div className="container" >
                 <div className="h2" data-aos="zoom-in-up" data-aos-delay="100" >Strengthen Your Professional Ties  with Our Meticulously Curated Collection of Corporate Gifts</div>
                 <div className="h3" data-aos="zoom-in-up" data-aos-delay="400" >Explore our meticulously curated collection of corporate gifts, tailor-made for every occasion, and elevate your business relationships to new heights. <br/> Our handpicked selection of gifts is designed to leave a lasting impression on your clients, employees, and partners, and convey your appreciation for their business.<br/> With a focus on quality, elegance, and functionality, our gifts are sure to impress and strengthen your professional ties</div>
@@ -125,12 +67,12 @@ const S_Gifts = () => {
         
         <Divider classn="divider-left" />
         <div className="boxs-tails">
-          <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
           <div className="h1" data-aos="fade-up" >We Offer</div> 
             <div className="container" data-aos="fade-up">
                   {Approach.map((e,index)=>(
                     <div className='box' key={index} data-aos="fade-up" >
-                      <div className="coverImg hidden-img" > <img src={e.img} alt="" /> </div>
+                      <div className="coverImg hidden-img" > <img src={e.img} alt="" loading="lazy" /> </div>
                       <h3 className="h2 clip hidden-text" >{e.title}</h3>
                       <h2 className=" p hidden-text" >{e.desc}</h2>
                     </div>
@@ -139,29 +81,18 @@ const S_Gifts = () => {
       </div>
 
       <Divider classn="divider" />
-      <div className="signages search-edite">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
-          <div className="outdoor">
-            <div className="header1 header2" data-aos="flip-up" >{
-          headers.map((e,index)=> (
-          <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
-        ))}</div>
-              <Slider_2_Imgs data={data} settings={settings} />
-          </div>
-
-
-      </div>
+      <SliderGIFTS />
 
       <Divider classn="divider-left" />
       <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 clip hidden-text" data-aos="fade-up">Why Choose Us for Your Corporate Gifting Needs?</div>
                 <div className="boxs">
                   {
                     BRANDING_SERVICES.map((e,index)=> (
                       <div className="box" key={index} data-aos="fade-up" >
-                          <div className="coverImg"> <img src={e.img} alt="" /> </div>
+                          <div className="coverImg"> <img src={e.img} alt="" loading="lazy" /> </div>
                           <div className="text">
                               <div className="h2 clip hidden-text" data-aos="fade-up">{e.title} </div>
                               <div className="p hidden-text" data-aos="fade-up">{e.desc} </div>

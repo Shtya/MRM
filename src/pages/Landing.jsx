@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Navbar from '../components/Navbar'
-import Intro1 from "../assets/social media marketing/intro.jpg" ;
+import ImgIntro from "../assets/bg/b9.jpg"
+
 import Community from "../assets/social media marketing/cover.jpg" ;
 
 import Social_1 from "../assets/landing/social-1.png"
@@ -33,11 +34,11 @@ import OneProcess from '../components/OneProcess';
 import Footer from '../components/Footer';
 import OneSocial from '../components/OneSocial';
 import Animation from '../components/helpers/Animation';
-import Pattern1, { Divider, Pattern2, Pattern3, Pattern9 } from '../components/patterns/Pattern1';
+import { Divider} from '../components/patterns/Pattern1';
 
 import IMG1 from "../assets/bg/b1.jpg"
-import IMG2 from "../assets/bg/bg3.jpg"
-import IMG3 from "../assets/bg/bg5.jpg"
+import IMG2 from "../assets/bg/b2.jpg"
+import IMG3 from "../assets/bg/b3.jpg"
 import Contact from '../components/Contact';
 import MetaTag from './MetaTag';
 
@@ -56,11 +57,11 @@ const Landing = () => {
       <Animation />
       <MetaTag title=" Top Social Media Marketing Services in Dubai to Boost Your Brand" desc="Discover expert social media management services in Dubai. We collaborate to align strategies with your business goals, driving traffic and boosting sales." />
       <div className="container"> <Navbar /> </div>
-      <div className="coverIntro" data-aos="zoom-in-left"> <img  src={Intro1} alt="" /></div>
+      <div className="coverIntro" data-aos="zoom-in-left"> <img  src={ImgIntro} alt="" loading="lazy" /></div>
       
       <div className="home">
         <div className="container">
-          <div className="boxImg n-border" data-aos="zoom-in-left" data-aos-delay="400"  >  <img className='' src={Community} alt="" /> </div>
+          <div className="boxImg n-border" data-aos="zoom-in-left" data-aos-delay="400"  >  <img className='' src={Community} alt="" loading="lazy" /> </div>
           <div className="boxs " data-aos="zoom-in-right" data-aos-delay="600"  >
             <h2 className='h1 hidden-text'> Enhance the Effectiveness of Your Social Media Presence</h2>
             <p className='h2 hidden-text'>Boost your brand online with our social media management services </p>
@@ -87,13 +88,13 @@ const Landing = () => {
 
       <Divider classn="divider" />
       <div className="searching search-edite">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
           <div className="container">
               <div className="coverImg  "> 
-                  <img data-aos="zoom-in-right" data-aos-delay="100"  src={Grid1} alt="" /> 
-                  <img data-aos="zoom-in-top" data-aos-delay="200"    src={Grid2} alt="" /> 
-                  <img data-aos="zoom-in-right" data-aos-delay="300"  src={Grid3} alt="" /> 
-                  <img data-aos="zoom-in-top" data-aos-delay="400"    src={Grid4} alt="" /> 
+                  <img data-aos="zoom-in-right" data-aos-delay="100"  src={Grid1} alt="" loading="lazy" /> 
+                  <img data-aos="zoom-in-top" data-aos-delay="200"    src={Grid2} alt="" loading="lazy" /> 
+                  <img data-aos="zoom-in-right" data-aos-delay="300"  src={Grid3} alt="" loading="lazy" /> 
+                  <img data-aos="zoom-in-top" data-aos-delay="400"    src={Grid4} alt="" loading="lazy" /> 
               </div>
 
               <div className="boxs ">
@@ -115,7 +116,7 @@ const Landing = () => {
 
       <Divider classn="divider-left" />
       <div className="social-media  ">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
         <div className="container">
           <h3 className='h1' data-aos="fade-up">Our Social Media Marketing Services</h3>
           <div className="boxs" data-aos="fade-up" >
@@ -128,7 +129,7 @@ const Landing = () => {
 
       <Divider classn="divider" />
       <div className="platforms">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
           <div className="container">
               <h3 className='h1 'data-aos="fade-up">Platforms we've managed on social media</h3>
               <div className="boxs" data-aos="fade-up">
@@ -144,7 +145,7 @@ const Landing = () => {
 
       <Divider classn="divider-left" />
     <div className="process">
-        <div className="bgCover"  >  <img  src={IMG3} alt="" /> </div>
+        {/* <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div> */}
         <div className="container1"> <div className="h1" data-aos="fade-up">our proccess</div></div>
         <div className="container">
             <div className="box box1">
