@@ -23,7 +23,7 @@ const QuickContact = () => {
   
   return (
     <div className='QuickContact'>
-            <div className="bgCover" style={{zIndex:"0"}}  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+            <div className="bgCover" style={{zIndex:"0"}}  >  <img  src={IMG1} alt="landing" loading="lazy" /> </div>
 
       <Pattern8 />
       <div className="container">

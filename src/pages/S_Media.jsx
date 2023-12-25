@@ -70,11 +70,11 @@ const S_Media = () => {
     <MetaTag title=" Boost Your Brand with Top Advertising Companies in Dubai" desc="Transform your social platforms, run effective Google Ads campaigns, and achieve measurable growth with MRM's advertising experts in Dubai." />
     <Animation />
       <div className="container"> <Navbar /> </div>
-      <div className="coverIntro " data-aos="zoom-in-left" > <img src={ImgIntro} alt="" loading="lazy" /></div>
+      <div className="coverIntro " data-aos="zoom-in-left" > <img src={ImgIntro} alt="media buying services" loading="lazy" /></div>
 
       <div className="home">
         <div className="container">
-            <div className="boxImg hidden-img " data-aos="zoom-in-left" data-aos-delay="400"  >  <img src={ImgSection} alt="" loading="lazy" /> </div>
+            <div className="boxImg hidden-img " data-aos="zoom-in-left" data-aos-delay="400"  >  <img src={ImgSection} alt="media buying services" loading="lazy" /> </div>
             <div className="boxs" >
                 <h2 className='h1 ' data-aos="zoom-in-right" data-aos-delay="600" > Boost your brand's presence and supercharge your online growth with MRM's paid advertising expertise</h2>
                 <h2 className='h2 ' data-aos="zoom-in-right" data-aos-delay="600" >Transform your social platforms into full revenue drivers and maximize your return on investment </h2>
@@ -98,7 +98,7 @@ const S_Media = () => {
 
       <Divider classn="divider" />
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="media buying services" loading="lazy" /> </div>
         <div className="container">
               <div className="h2 " data-aos="zoom-in-up" > Experience the Power of Paid Amplification</div>
               <p className="h3" data-aos="zoom-in-up" data-aos-delay="300" > We create paid campaigns with specific goals, such as boosting brand awareness, engaging with audiences, generating leads, and driving sales. We understand that success varies for each business, so we tailor our campaigns to align with your unique Key Performance Indicators.  Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers. Connect with your target audience on one of their most frequented platforms.</p>
@@ -107,7 +107,7 @@ const S_Media = () => {
 
         <Divider classn="divider-left" />
         <div className="social-media">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="media buying services" loading="lazy" /> </div>
         <div className="container">
             <h3 className='h1' data-aos="fade-up">We offer standout paid campaigns for your business</h3>
             <div className="boxs" data-aos="fade-up">
@@ -120,7 +120,7 @@ const S_Media = () => {
 
         <Divider classn="divider" />
         <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="media buying services" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 clip " data-aos="fade-up"  >Impact of what you'll get</div>
                 <div className="phead " data-aos="fade-up"  >MRM is the preferred choice for social media marketing services in Dubai.  We specialize in tailoring effective strategies that fit your brand and objectives. Here's how we can help</div>
@@ -128,7 +128,7 @@ const S_Media = () => {
                   {
                     Impact.map((e,index)=> (
                       <div className="box" key={index}>
-                          <div className="coverImg " data-aos="fade-up"> <img src={e.img} alt="" loading="lazy" /> </div>
+                          <div className="coverImg " data-aos="fade-up"> <img src={e.img} alt="media buying services" loading="lazy" /> </div>
                           <div className="text">
                               <div className="h2 " data-aos="fade-up">{e.title} </div>
                               <div className="p " data-aos="fade-up">{e.desc} </div>
@@ -143,7 +143,7 @@ const S_Media = () => {
 
         <Divider classn="divider-left" />
         <div className="process3">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="media buying services" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 clip " data-aos="fade-left">Our Process</div>
 
@@ -153,7 +153,7 @@ const S_Media = () => {
                       <div className="check-point" key={index} data-aos="fade-up" >
                         <div className="number " data-aos="fade-left"> 0{index +1} </div>
                         <div className='inner-box'>
-                          <span className='hidden-img' ><img src={e.img} alt="" loading="lazy" /></span>
+                          <span className='hidden-img' ><img src={e.img} alt="media buying services" loading="lazy" /></span>
                           <h2 className="h2 clip " data-aos="fade-left">{e.title}</h2>
                           <p className="p " data-aos="fade-left"> {e.desc}</p>
                       </div>

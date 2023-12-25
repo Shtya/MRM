@@ -53,10 +53,10 @@ const S_WebDesign = () => {
       <MetaTage title="Expert Web Development and Design Services in Dubai, UAE" desc="Capture your audience with our web design and development services for exceptional results for startups and businesses." />
       <div className="container"> <Navbar /> </div>
 
-      <div className="coverIntro"> <img data-aos="zoom-in"  src={ImgIntro} alt="" loading="lazy" /></div>
+      <div className="coverIntro"> <img data-aos="zoom-in"  src={ImgIntro} alt="web design services" loading="lazy" /></div>
       <div className="home">
         <div className="container">
-          <div  data-aos="fade-right" data-aos-delay="400" className="boxImg " >  <img  src={ImgSection} alt="" loading="lazy" /> </div>
+          <div  data-aos="fade-right" data-aos-delay="400" className="boxImg " >  <img  src={ImgSection} alt="web design services" loading="lazy" /> </div>
           <div className="boxs" data-aos="fade-left" data-aos-delay="600" >
             <h2 className='h1 ' >Boost the Effectiveness of Your Website's Online Presence. </h2>
             <p className='h2 ' > Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development. </p>
@@ -80,7 +80,7 @@ const S_WebDesign = () => {
       {/* <Divider classn="divider" /> */}
       <Pattern9 />
       <div className="quotation">
-      <div className="bgCover"> <img  src={IMG1} alt="" loading="lazy" /> </div>
+      <div className="bgCover"> <img  src={IMG1} alt="web design services" loading="lazy" /> </div>
             <div className="container" >
             <p className='h2 'data-aos="zoom-in" >MRM is Your Partner in Web Development and Design in Dubai, UAE</p>
             <p className='h3 ' data-aos="zoom-in" data-aos-delay="200">MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality.</p>
@@ -90,7 +90,7 @@ const S_WebDesign = () => {
         {/* <Divider classn="divider-left" /> */}
         <Pattern9 />
         <div className="social-media">
-          <div className="bgCover"> <img  src={IMG1} alt="" loading="lazy" /> </div>
+          <div className="bgCover"> <img  src={IMG1} alt="web design services" loading="lazy" /> </div>
         <div className="container">
             <h3 data-aos="fade-up" className='h1 '>Our Specializations</h3>
             <div data-aos="fade-up" className="phead ">We specialize in the following web design and development services</div> 
@@ -103,7 +103,7 @@ const S_WebDesign = () => {
 
         <Pattern9 classn="Abrotch" />
         <div className="our_Approach">
-        <div className="bgCover" data-aos="zoom-in"> <img  src={IMG1} alt="" loading="lazy" /> </div>
+        <div className="bgCover" data-aos="zoom-in"> <img  src={IMG1} alt="web design services" loading="lazy" /> </div>
             <div className="container">
                 <div className="circle">
                     <div className='text'>
@@ -115,7 +115,7 @@ const S_WebDesign = () => {
                     {
                     Approach.map((e,index)=>(
                         <span key={index} data-aos="fade-right"  className={`span-${index+1}`}>
-                            <div className="coverImg"> <img src={e.img} alt="" loading="lazy" /> </div>
+                            <div className="coverImg"> <img src={e.img} alt="web design services" loading="lazy" /> </div>
                             <div className={`content content-${index+1}`}>
                                 <div className="h2 clip"> {e.title} </div>
                                 <div className="p"> {e.desc} </div>

@@ -17,7 +17,7 @@ const Why = () => {
 
     <section id='Why' className='Why'>
       <Animation />
-      <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+      <div className="bgCover"  >  <img  src={IMG2} alt="why" loading="lazy" /> </div>
       <div className="container1">
         <div className="h1" data-aos="fade-up" >WHY CHOOSE US</div>
       </div>

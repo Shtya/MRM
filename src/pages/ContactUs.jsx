@@ -10,7 +10,7 @@ const ContactUs = () => {
   return (
     <div className='contact-us'>
       <MetaTag title=" Get in Touch with MRM Advertising  Your Marketing Partner in Dubai" desc="Connect with MRM Advertising Agency in Dubai for best digital marketing and advertising services. Specializing in SEO, media buying and creative solutions. " />
-      <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+      <div className="bgCover"  >  <img  src={IMG1} alt="contact-us" loading="lazy" /> </div>
       
       <Animation />
       <div className="container"> <Navbar /> </div>

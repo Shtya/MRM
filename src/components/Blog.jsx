@@ -40,7 +40,7 @@ const Blog = () => {
 
   return (
     <section className='blog' id='Blog'>
-      <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
+      <div className="bgCover"  >  <img  src={IMG3} alt="blog" loading="lazy" /> </div>
       <div className="container"> <div className="h1 clip" data-aos="fade-up" >BLOG</div> </div>
       <p className="phead" data-aos="fade-up"  >Latest Insights and News to Keep Your Strategies Alive </p>
 

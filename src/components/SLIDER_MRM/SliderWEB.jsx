@@ -36,13 +36,13 @@ export default function SliderWEB() {
 
   return (
     <div className="GALLERY">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="web-design" loading="lazy" /> </div>
         <AnimatePresence>
           <div className="container">
             <Swiper {...settings}   className="mySwiper"  >
               
               {data?.map((e,index)=>( <SwiperSlide key={index}> 
-              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.4}} className='coverImg' >  <img src={e.img} /></motion.div> </SwiperSlide> )) }
+              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.4}} className='coverImg' >  <img src={e.img} alt="slider" /></motion.div> </SwiperSlide> )) }
 
             </Swiper>
           </div>

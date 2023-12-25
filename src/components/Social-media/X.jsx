@@ -76,11 +76,11 @@ const X = () => {
       <MetaTag title=" Best Twitter Marketing Agency in Dubai "  desc="Enhance your brand's online presence,grow your followers, boost engagement,and generate potential leads via MRM's Twitter marketing services. Contact Us Now" />
 
       <Animation />
-      <div className="coverIntro "  data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" loading="lazy" /></div>
+      <div className="coverIntro "  data-aos="zoom-in-right" > <img src={FacebookIntro} alt="twitter-page" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  data-aos="zoom-in-left" data-aos-delay="400" >  <img src={FacebookCover} alt="" loading="lazy" /> </div>
+              <div className="boxImg hidden-img"  data-aos="zoom-in-left" data-aos-delay="400" >  <img src={FacebookCover} alt="twitter-page" loading="lazy" /> </div>
               <div className="boxs"  data-aos="zoom-in-right" data-aos-delay="600" >
               <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Transform Your Business with our Expert X Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
             </div>
@@ -91,7 +91,7 @@ const X = () => {
       
       {/* <Divider classn="divider" /> */}
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="twitter-page" loading="lazy" /> </div>
         <div className="container" >
         <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unlocking X Marketing Success With MRM ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -106,13 +106,13 @@ const X = () => {
 
         <Divider classn="divider" />
         <div className="box-style-5">
-          <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="twitter-page" loading="lazy" /> </div>
           <div className="container">
             <ul className="cards">
             {SERVICES.map((e,index)=> (
             <li className='box' key={index} data-aos="zoom-in" data-aos-delay={`${index}00`} >
               <a  className="card">
-                <div className="cover"> <img src={e.icon} className="card__image" alt="" loading="lazy" /> </div>
+                <div className="cover"> <img src={e.icon} className="card__image" alt="twitter-page" loading="lazy" /> </div>
                 <div className="card__overlay">
                   <div className="card_h2">
                     <div className="card__header-text"> <h3 className="card__title h2" style={{color:"var(--text-color)"}}>{e.title}</h3>  </div>
@@ -129,7 +129,7 @@ const X = () => {
 
         <Divider classn="divider-left" />
       <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="twitter-page" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 clip" data-aos="fade-up"> Types of Twitter Ads MRM Offers </div>
                 <div className="boxs" >
@@ -149,7 +149,7 @@ const X = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4 ">
-          <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="twitter-page" loading="lazy" /> </div>
           <div className="container">
             <div className="h1" style={{marginBottom:""}}  data-aos="fade-up" > Our Twitter Marketing Businesses</div>
             <div className="phead"  data-aos="fade-up" data-aos-delay="200" > At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
@@ -170,7 +170,7 @@ const X = () => {
 
         <Divider classn="divider-left" />
       <div className="box-style-1">
-        <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="twitter-page" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 ">How Twitter Marketing Helps Businesses</div>
                 <div className="phead">Twitter marketing plays a pivotal role in driving business success. Here's how it can benefit your brand</div>

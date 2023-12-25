@@ -19,7 +19,6 @@ function Home() {
     <div className="Home" >
         <MetaTag title="MRM | Best Digital Marketing & Advertising Agency in Dubai"  desc="Boost your brand with MRM, Dubai's premier digital marketing & advertising agency with SEO, social media marketing and PPC for top visibility and impact" />
         <Animation />
-        
         <Landing />
 
         <SlideNav />

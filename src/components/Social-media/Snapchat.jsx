@@ -79,11 +79,11 @@ const Snapchat = () => {
       <MetaTag title=" Best Snapchat Marketing Agency In Dubai  "  desc="Looking for Snapchat advertising services? Discover MRM`s Snapchat marketing services that empower your brand, boost engagement, and supercharge your sales" />
 
       <Animation />
-      <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" loading="lazy" /></div>
+      <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="Snapchat-page" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  data-aos="zoom-in-right" data-aos-delay="400" >  <img src={FacebookCover} alt="" loading="lazy" /> </div>
+              <div className="boxImg hidden-img"  data-aos="zoom-in-right" data-aos-delay="400" >  <img src={FacebookCover} alt="Snapchat-page" loading="lazy" /> </div>
               <div className="boxs"  data-aos="zoom-in-left" data-aos-delay="600">
               <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Create Engaging Snapchat Campaigns with Our Expert Marketing Solutions").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
             </div>
@@ -91,7 +91,7 @@ const Snapchat = () => {
       </div>
 
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="Snapchat-page" loading="lazy" /> </div>
         <div className="container" >
           <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unleash the Potential of Snapchat Marketing with MRM Agency").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -106,7 +106,7 @@ const Snapchat = () => {
 
       <Divider classn="divider" />
       <div className="box-style-3">
-        <div className="bg"> <img src={CoverSectionImg} alt="" loading="lazy" /></div>
+        <div className="bg"> <img src={CoverSectionImg} alt="Snapchat-page" loading="lazy" /></div>
         <div className="container">
         <div className="h1 clip" data-aos="fade-up" > Types of Snapchat Ads MRM Can Run For You </div>
         <div className="boxs">
@@ -128,7 +128,7 @@ const Snapchat = () => {
 
         <Divider classn="divider" />
         <div className="reason2">
-          <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="Snapchat-page" loading="lazy" /> </div>
         <div className='clip h1'data-aos="fade-up" >8 Reasons to Choose Snapchat for Digital Marketing</div> 
         <article className="gallery">
           {
@@ -143,7 +143,7 @@ const Snapchat = () => {
 
         <Divider classn="divider-left" />
       <div className="box-style-1">
-        <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="Snapchat-page" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 clip" data-aos="fade-up"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You? </div>
 

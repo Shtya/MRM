@@ -1,6 +1,7 @@
 import {useRef, useState} from 'react'
 import MapImg from "../assets/contact-us/map1.jpg"
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom';
 
 
 const Contact2 = () => {
@@ -26,7 +27,7 @@ const Contact2 = () => {
       <div className="container">
           
               <div className="box" data-aos="fade-right" data-aos-delay="200" >
-                  <div className="coverMap"> <img className='mapImg' src={MapImg} alt="" loading="lazy" /> </div>
+                  <div className="coverMap"> <img className='mapImg' src={MapImg} alt="contact-map" loading="lazy" /> </div>
                   <div className="text"> <h2 className='h1 blur' data-aos="fade-right" data-aos-delay="300">Turn your dreams into digital realities </h2> </div>
 
                   <ul className='contact-list'>
@@ -36,10 +37,10 @@ const Contact2 = () => {
                     </ul>
                         <hr />
                     <ul className='social-media-list'>
-                      <li > <a  data-aos="fade-up" data-aos-delay="300" className="Iicon">  <i className="fa-brands fa-facebook-f"></i>     </a></li>
-                      <li > <a  data-aos="fade-up" data-aos-delay="400" className="Iicon">  <i className="fa-brands fa-instagram"></i> </a></li>
-                      <li > <a  data-aos="fade-up" data-aos-delay="500" className="Iicon"> <i className= "fa-brands fa-whatsapp"></i>         </a></li>
-                      <li > <a  data-aos="fade-up" data-aos-delay="600" className="Iicon">  <i className="fa-brands fa-linkedin-in"></i> </a></li>
+                      <li > <Link to=""  data-aos="fade-up" data-aos-delay="300" className="Iicon">  <i className="fa-brands fa-facebook-f"></i>     </Link></li>
+                      <li > <Link to=""  data-aos="fade-up" data-aos-delay="400" className="Iicon">  <i className="fa-brands fa-instagram"></i> </Link></li>
+                      <li > <Link to=""  data-aos="fade-up" data-aos-delay="500" className="Iicon"> <i className= "fa-brands fa-whatsapp"></i>         </Link></li>
+                      <li > <Link to=""  data-aos="fade-up" data-aos-delay="600" className="Iicon">  <i className="fa-brands fa-linkedin-in"></i> </Link></li>
                     </ul>
               </div>
 

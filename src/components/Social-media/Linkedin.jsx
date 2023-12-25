@@ -81,7 +81,7 @@ const Linkedin = () => {
 
       {/* <Divider classn="divider" /> */}
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="Linkedin-page" loading="lazy" /> </div>
         <div className="container" >
         <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Partner with MRM for Results-Driven LinkedIn Marketing in Dubai ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -97,7 +97,7 @@ const Linkedin = () => {
 
         <Divider classn="divider-left" />
       <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="Linkedin-page" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 clip" data-aos="fade-up"> Types of Linkedin Ads </div>
                 <div className="boxs" >
@@ -117,7 +117,7 @@ const Linkedin = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4">
-          <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
+          <div className="bgCover"  >  <img  src={IMG3} alt="Linkedin-page" loading="lazy" /> </div>
           <div className="container">
             <div className="h1" style={{marginBottom:""}} data-aos="fade-up">How MRM Utilizes LinkedIn's Advantages for Your Business Success</div>
             <div className="phead" data-aos="fade-up" data-aos-delay="200" >At MRM, we understand that LinkedIn is a dynamic platform with unique features </div>
@@ -138,7 +138,7 @@ const Linkedin = () => {
 
         <Divider classn="divider-left" />
       <div className="box-style-1">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="Linkedin-page" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 hidden-text" data-aos="fade-up">MRM's LinkedIn Advertising Process</div>
                 <div className="boxs" >

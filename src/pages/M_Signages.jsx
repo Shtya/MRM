@@ -44,11 +44,11 @@ const M_Signages = () => {
       <div className="container"> <Navbar /> </div>
       <MetaTag title=" Top Signage Companies in Dubai for Custom Designs" desc="From LED to indoor and outdoor options, MRM provides professional signage solutions in Dubai. Contact us to start your journey to success." />
       <Animation />
-      <div className="coverIntro" data-aos="zoom-in-left"> <img src={ImgIntro} alt="" loading="lazy" /></div>
+      <div className="coverIntro" data-aos="zoom-in-left"> <img src={ImgIntro} alt="signages services" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg" data-aos="zoom-in-left" data-aos-delay="400" >  <img src={ImgSection} alt="" loading="lazy" /> </div>
+              <div className="boxImg" data-aos="zoom-in-left" data-aos-delay="400" >  <img src={ImgSection} alt="signages services" loading="lazy" /> </div>
               <div className="boxs" data-aos="zoom-in-right" data-aos-delay="600">
                   <h2 className='h1  '> Craft Your Vision, Achieve Your Goals </h2>
                   <h2 className='h2  '>MRM's End-to-End Custom Signage Solutions, from Concept to Installation in the UAE</h2>
@@ -60,7 +60,7 @@ const M_Signages = () => {
       
       <Pattern9 />
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="signages services" loading="lazy" /> </div>
             <div className="container">
                 <div className="h2 " data-aos="fade-up">MRM promises excellence in signage installation, blending your vision with our expertise</div>
                 <div className="h3" data-aos="fade-up" data-aos-delay="200">MRM's team of experts specializes in developing custom sign designs based on clients' requirements.<br/> we take care of every project aspect, from the concept and design phase to production and installation.<br/> MRM is committed to delivering quality service and ensuring customer satisfaction.<br/> Clients can trust MRM to handle everything related to their custom signage installation.</div>
@@ -74,7 +74,7 @@ const M_Signages = () => {
 
       <Pattern9 />
       <div className="process2">
-        <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG2} alt="signages services" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1  clip" data-aos="fade-up">Signage creation process</div>
                 <div className="phead " data-aos="fade-up"> Our custom signages captures attention and gives every project  an elegant and professional finish</div>
@@ -84,7 +84,7 @@ const M_Signages = () => {
                       <div className="check-point " data-aos="fade-left" key={index}  >
                         <div className="number " data-aos="fade-left"> 0{index +1} </div>
                         <div className='inner-box'>
-                          <span className='hidden-img' ><img src={e.img} alt="" loading="lazy" /></span>
+                          <span className='hidden-img' ><img src={e.img} alt="signages services" loading="lazy" /></span>
                           <h2 className="h2 clip  " data-aos="fade-left">{e.title}</h2>
                           <p className="p  " data-aos="fade-left"> {e.desc}</p>
                       </div>

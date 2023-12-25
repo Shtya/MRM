@@ -33,7 +33,7 @@ const BlogsAll = () => {
       {data?.length >= 1 ? (
         data?.map((e,index)=> (
           <div className="boxs" key={index}>
-            <div className="coverImg"> <img src={e.thumbnail} alt="" loading="lazy" /> </div>
+            <div className="coverImg"> <img src={e.thumbnail} alt="blog" loading="lazy" /> </div>
             <h2 className='h2'> {e.title} </h2>
             <ul>
               <Link className='bt btn btn-view' to={`/blog/${e._id}`}> View </Link>

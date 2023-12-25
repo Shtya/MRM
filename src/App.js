@@ -54,14 +54,14 @@ const App = () => {
         <Route path='*'            element={<Error />} />                        
         <Route path='/privacy'     element={<Privacy />} />                          
         <Route path='/terms'       element={<Terms />} />                          
-
+        
         <Route path='/web-design'  element={<S_WebDesign/>} />                        
-        <Route path='/photography' element={<S_photography />} />                        
-        <Route path='/exhibition'  element={<S_Exhibition  />} />                        
-        <Route path='/signages'    element={<M_Signages />} />                        
-        <Route path='/portfolio'   element={<Landing />} />                        
-        <Route path='/gifts'       element={<S_Gifts  />} />                        
-        <Route path='/media'       element={<S_Media />} />                        
+        <Route path='/photography-and-videography' element={<S_photography />} />                        
+        <Route path='/Exhibition-and-display-stand'  element={<S_Exhibition  />} />                        
+        <Route path='/indoor-and-outdoor-signages'    element={<M_Signages />} />                        
+        <Route path='/social-media-marketing'   element={<Landing />} />                        
+        <Route path='/gifts'      element={<S_Gifts  />} />                        
+        <Route path='/media-buying'       element={<S_Media />} />                        
         <Route path='/branding'    element={<S_Branding  />} />                        
         <Route path='/seo'         element={<S_SEO />} />                        
 

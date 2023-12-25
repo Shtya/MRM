@@ -6,11 +6,11 @@ const Landing = () => {
 
   return (
     <header  >
-      <div className="bgCover" style={{zIndex:"0"}}  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
+      <div className="bgCover" style={{zIndex:"0"}}  >  <img   src={IMG3} alt="Landing" loading="lazy" /> </div>
       <div className="container"> <Navbar /> </div>
       <section id='video' >
-          <video controls={false} id='myVideo'  autoPlay={true} loop muted>
-            <source src={Dashboard} type="video/mp4" />
+          <video controls={false} id='myVideo'   autoPlay={true} loop muted>
+            <source src={Dashboard}  type="video/mp4" />
           </video>
         </section>
     </header>

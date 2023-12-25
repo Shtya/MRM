@@ -8,7 +8,7 @@ const OnePlatform = ({title , paragraph , img , classn , path , trueBtn}) => {
 
   return (
     <Link to={path}  className={`box ${classn}`}>
-        <div className="coverImg"> <img src={img} alt="" loading="lazy" /></div>
+        <div className="coverImg"> <img src={img} alt="platform" loading="lazy" /></div>
         <div className="inner-box">
             <span className="one"/>
             <span className="two"/>

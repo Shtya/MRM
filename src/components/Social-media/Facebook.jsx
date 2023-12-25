@@ -81,11 +81,11 @@ const Facebook = () => {
       <div className="container"> <Navbar /> </div>
       <MetaTag title=" Best Facebook Marketing Agency in Dubai , UAE  "  desc="Looking for Facebook Marketing Services in Dubai? Elevate Your Brand's Visibility and Engagement MRM Delivers High ROI with Efficient Spending on Facebook " />
       <Animation />
-      <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="" loading="lazy" /></div>
+      <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="Facebook-page" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg" data-aos="fade-left" data-aos-delay="400" >  <img src={FacebookCover} alt="" loading="lazy" /> </div>
+              <div className="boxImg" data-aos="fade-left" data-aos-delay="400" >  <img src={FacebookCover} alt="Facebook-page" loading="lazy" /> </div>
               <div className="boxs"  >
               <motion.p data-aos="zoom-in-right" data-aos-delay="600"  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unlock Your Business Potential with Our Expert Facebook Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
             </div>
@@ -94,7 +94,7 @@ const Facebook = () => {
 
       {/* <Divider classn="divider" /> */}
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="Facebook-page" loading="lazy" /> </div>
             <div className="container" >
             <div className="box-style" data-aos="fade-up">
             <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible"  >{ Array.from("Harnessing the Power of Facebook Marketing  ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
@@ -107,7 +107,7 @@ const Facebook = () => {
 
         <Divider classn="divider" />
         <div className="box-style-6">
-          <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="Facebook-page" loading="lazy" /> </div>
           <div className="h1 "data-aos="zoom-in-right" > A Comprehensive Range of Facebook Ad Types </div>
           <div className="phead"data-aos="zoom-in-right" > MRM Agency offers a comprehensive array of Facebook ad types to suit your unique marketing objectives </div>
           <div className="container">
@@ -126,10 +126,10 @@ const Facebook = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4">
-          <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
+          <div className="bgCover"  >  <img  src={IMG3} alt="Facebook-page" loading="lazy" /> </div>
           <div className="container">
             <div className="h1" data-aos="fade-up" >Our Facebook advertising services include</div>
-            <div className="bg"> <img src={ImgSection} alt="" loading="lazy" /> </div>
+            <div className="bg"> <img src={ImgSection} alt="Facebook-page" loading="lazy" /> </div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (

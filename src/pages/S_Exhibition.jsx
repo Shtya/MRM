@@ -78,11 +78,11 @@ const S_Exhibition = () => {
       <div className="container"> <Navbar /> </div>
       <MetaTag title="Best Exhibition & display stand designing services in Dubai " desc="Discover our customized exhibition stands and display stands in Dubai for a powerful and lasting impression on your audience." />
       <Animation />
-      <div className="coverIntro" data-aos="zoom-in-left"><img src={ImgIntro} alt="" loading="lazy" /> </div>
+      <div className="coverIntro" data-aos="zoom-in-left"><img src={ImgIntro} alt="exhibition & display stands services" loading="lazy" /> </div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg" data-aos="zoom-in-left" data-aos-delay="400"> <img src={ImgSection} alt="" loading="lazy" />  </div>
+              <div className="boxImg" data-aos="zoom-in-left" data-aos-delay="400"> <img src={ImgSection} alt="exhibition & display stands services" loading="lazy" />  </div>
               <div className="boxs" data-aos="zoom-in-right" data-aos-delay="600" >
                   <h2 className='h1 '> The Best Exhibition stands & display stand designing services in Dubai</h2>
                   <h2 className='h2 '> Our exhibition and display stands are masterpieces that create lasting impressions</h2>
@@ -94,7 +94,7 @@ const S_Exhibition = () => {
 
       <Pattern9 />
       <div className="quotation">
-        <div className="bgCover" data-aos="zoom-in"  >   <img  src={IMG1} alt="" loading="lazy" />  </div>
+        <div className="bgCover" data-aos="zoom-in"  >   <img  src={IMG1} alt="exhibition & display stands services" loading="lazy" />  </div>
             <div className="container">
                  <div className="h3" data-aos="zoom-in-up" >We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.</div>
             </div>
@@ -103,13 +103,13 @@ const S_Exhibition = () => {
 
         <Pattern9 />
       <div className="exhibition-stands sec-1">
-        <div className="bgCover"  >   <img  src={IMG3} alt="" loading="lazy" />  </div>
+        <div className="bgCover"  >   <img  src={IMG3} alt="exhibition & display stands services" loading="lazy" />  </div>
         <div className="container" data-aos="zoom-in-up"> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for exhibition stands gallery</div></div>
         <div className="container">
           <div className="boxs">
-            {Exhibition.map((e,index)=> ( <div key={index}  className="coverImg" data-aos="fade-up"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
+            {Exhibition.map((e,index)=> ( <div key={index}  className="coverImg" data-aos="fade-up"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} alt="slider" /> </div> ))}
             {Img && <div className="show-img"> 
-              <img src={Img} alt="" loading="lazy" data-aos="zoom-in" /> 
+              <img src={Img} alt="exhibition & display stands services" loading="lazy" data-aos="zoom-in" /> 
               <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
             </div>}
           </div>
@@ -118,13 +118,13 @@ const S_Exhibition = () => {
       
         <Pattern9 />
       <div className="exhibition-stands ">
-        <div className="bgCover"  >   <img  src={IMG2} alt="" loading="lazy" />  </div>
+        <div className="bgCover"  >   <img  src={IMG2} alt="exhibition & display stands services" loading="lazy" />  </div>
         <div className="container"> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for Display stands gallery</div></div>
         <div className="container">
           <div className="boxs">
-            {DisplayStands.map((e,index)=> ( <div key={index} data-aos="zoom-in-up"  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
+            {DisplayStands.map((e,index)=> ( <div key={index} data-aos="zoom-in-up"  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} alt="slider" /> </div> ))}
             {Img && <div className="show-img"> 
-              <img src={Img} alt="" loading="lazy" data-aos="zoom-in-up" /> 
+              <img src={Img} alt="exhibition & display stands services" loading="lazy" data-aos="zoom-in-up" /> 
               <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
             </div>}
           </div>
@@ -133,14 +133,14 @@ const S_Exhibition = () => {
       
       <Pattern9 />
       <div className="impact">
-        <div className="bgCover"  >   <img  src={IMG2} alt="" loading="lazy" />  </div>
+        <div className="bgCover"  >   <img  src={IMG2} alt="exhibition & display stands services" loading="lazy" />  </div>
             <div className="container">
             <div className="container"><div className="h1" data-aos="fade-up">Why Choose Us for Your Exhibition & Display Stands Needs?</div></div>
                 <div className="boxs">
                   {
                     BRANDING_SERVICES.map((e,index)=> (
                       <div className="box"  key={index} data-aos="zoom-in-up">
-                          <div className="coverImg hidden-img"> <img src={e.img} alt="" loading="lazy" /> </div>
+                          <div className="coverImg hidden-img"> <img src={e.img} alt="exhibition & display stands services" loading="lazy" /> </div>
                           <div className="text" >
                               <div className="h2 clip ">{e.title} </div>
                               <div className="p ">{e.desc} </div>

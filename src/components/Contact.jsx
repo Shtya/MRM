@@ -27,12 +27,12 @@ const Contact = ({title , desc , onHere}) => {
       <Pattern9 />
     <section className='Contact' id='Contact'>
       <Animation />
-      <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+      <div className="bgCover"  >  <img  src={IMG1} alt="contact" loading="lazy" /> </div>
      <div className="container1">  <h2 className='h2'>{desc }</h2> </div>
       <div className="container">
 
       <div className="box box-img " data-aos="fade-right"  >
-          <img  src={FormImg} alt="" loading="lazy" />
+          <img  src={FormImg} alt="contact" loading="lazy" />
         </div>
 
         <div   className="box" data-aos="fade-left" data-aos-delay="200"  >

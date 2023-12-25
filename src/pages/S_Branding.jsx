@@ -56,11 +56,11 @@ const S_Branding = ({header =true}) => {
       <div className="container"> <Navbar /> </div>
       <Animation />
       <MetaTag title=" Unleash Your Brand's Power with the Top Branding Agency in Dubai" desc="Stand out with unique logos, captivating web experiences & impactful social media designs! Contact us for comprehensive branding solutions ." />
-      <div className="coverIntro" data-aos="zoom-in-right" > <img src={ImgIntro} alt="" loading="lazy" /></div>
+      <div className="coverIntro" data-aos="zoom-in-right" > <img src={ImgIntro} alt="branding services" loading="lazy" /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg n-border" data-aos="zoom-in-right" data-aos-delay="400"  >  <img src={ImgSection} alt="" loading="lazy" /> </div>
+              <div className="boxImg n-border" data-aos="zoom-in-right" data-aos-delay="400"  >  <img src={ImgSection} alt="branding services" loading="lazy" /> </div>
               <div className="boxs"  data-aos="zoom-in-left" data-aos-delay="600"  >
                   <h2 className='h1 '> Unleash the Full Power and Potential of Your Brand! </h2>
                   <h2 className='h2 '> Partner with us to bring your brand identity to life, both online and offline </h2>
@@ -74,7 +74,7 @@ const S_Branding = ({header =true}) => {
       </div>
       <Divider classn="divider" />
       <div className="quotation">
-         <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+         <div className="bgCover"  >  <img  src={IMG1} alt="branding services" loading="lazy" /> </div>
           <div className="container">
               <div className="h2 "  data-aos="fade-up"  > Elevate Your Brand with Our Comprehensive Branding Services  </div>
               <div className="h3 " data-aos="fade-up"  data-aos-delay="200" >  MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
@@ -83,7 +83,7 @@ const S_Branding = ({header =true}) => {
 
         <Divider classn="divider-left" />
         <div className="platforms">
-         <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+         <div className="bgCover"  >  <img  src={IMG2} alt="branding services" loading="lazy" /> </div>
           <div className="container">
               <h3 className='h1'data-aos="fade-up">Our Branding Services</h3>
               <div className="boxs" data-aos="fade-up">
@@ -101,9 +101,9 @@ const S_Branding = ({header =true}) => {
 
       <Divider classn="divider-left" />
         <div className="searching2">
-         <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+         <div className="bgCover"  >  <img  src={IMG2} alt="branding services" loading="lazy" /> </div>
             <div className="container">
-              <div className="coverImg " data-aos="fade-right"> <img src={Grid1} alt="" loading="lazy" /> </div>
+              <div className="coverImg " data-aos="fade-right"> <img src={Grid1} alt="branding services" loading="lazy" /> </div>
 
               <div className="boxs" data-aos="fade-up">
                 <h1 className='h1' data-aos="fade-left">Why Choose Us</h1>

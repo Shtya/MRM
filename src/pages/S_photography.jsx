@@ -77,7 +77,7 @@ const S_photography = () => {
 
       <div className="home">
           <div className="container">
-              <div className="boxImg " data-aos="zoom-in" data-aos-delay="400"  >  <img   src={ImgSection} alt="" loading="lazy" /> </div>
+              <div className="boxImg " data-aos="zoom-in" data-aos-delay="400"  >  <img   src={ImgSection} alt="photography services" loading="lazy" /> </div>
               <div className="boxs" data-aos="fade-left" data-aos-delay="600" >
                   <h2 className='h1 '>Capture your brand's story with our professional visual storytelling.</h2>
                   <h2 className='h2 '>We turn moments into memories and transform your brand's essence into a compelling narrative. </h2>
@@ -90,7 +90,7 @@ const S_photography = () => {
       <Pattern9 />
       <div className="quotation">
         {/* <Pattern1 /> */}
-        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="photography services" loading="lazy" /> </div>
             <div className="container" data-aos="zoom-in-up" >
             <p className='h3'>  Our core belief is that every brand, product, and event has a unique story that deserves to be told.<br/> We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p>
             </div>
@@ -98,14 +98,14 @@ const S_photography = () => {
 
       <Pattern9 />
       <div className="photography-services">
-      <div className="bgCover"  >  <img  src={IMG2} alt="" loading="lazy" /> </div>
+      <div className="bgCover"  >  <img  src={IMG2} alt="photography services" loading="lazy" /> </div>
         <div className="h1" data-aos="zoom-in-up">Our Photo gallery</div> 
         <div className="container">
           {
             SERVICES.map((e,index)=> (
               <div className="box" key={index} data-aos="zoom-in-up">
                 <div className="innerbox">
-                <div className="coverImg "> <img src={e.img} alt="" loading="lazy" />  </div>
+                <div className="coverImg "> <img src={e.img} alt="photography services" loading="lazy" />  </div>
                 <div className="text">
                   <div className="h2 "> {e.title} </div>
                   <div className="p ">{e.desc} </div>
@@ -120,14 +120,14 @@ const S_photography = () => {
       {/* <Divider classn="divider" /> */}
       <Pattern9 />
       <div className="Videography-services">
-      <div className="bgCover"  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
+      <div className="bgCover"  >  <img  src={IMG3} alt="photography services" loading="lazy" /> </div>
         <div className="h1 clip ">Types of Videography gallery</div> 
         <div className="container">
           {
             SERVICES2.map((e,index)=> (
               <div className="box" key={index} data-aos={e.animate} data-aos-delay={`${100 * (index + 1) }`} >
                 <div className="innerbox">
-                <div className="coverImg "> <img src={e.img} alt="" loading="lazy" />  </div>
+                <div className="coverImg "> <img src={e.img} alt="photography services" loading="lazy" />  </div>
                 <div className="text">
                   <div className="h2 clip "> {e.title} </div>
                   <div className="p ">{e.desc} </div>
@@ -148,9 +148,9 @@ const S_photography = () => {
 {/* <Divider classn="divider-left" /> */}
 <Pattern9 />
         <div className="searching2">
-        <div className="bgCover" data-aos="zoom-in-left"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+        <div className="bgCover" data-aos="zoom-in-left"  >  <img  src={IMG1} alt="photography services" loading="lazy" /> </div>
             <div className="container">
-              <div className="coverImg "> <img src={Grid1} alt="" loading="lazy" /> </div>
+              <div className="coverImg "> <img src={Grid1} alt="photography services" loading="lazy" /> </div>
 
               <div className="boxs">
               <div className="h1" data-aos="zoom-in-right">Why Choose Us?</div>

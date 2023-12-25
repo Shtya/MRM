@@ -5,11 +5,11 @@ const Who = () => {
   return(
     <section className="Who search-edite " id='who' >
       <Animation />
-      <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+      <div className="bgCover"  >  <img  src={IMG1} alt="who" loading="lazy" /> </div>
       <div className="container">
 
       <div className="Img hidden-img "  >
-        <img data-aos="fade-right" src={About_us} alt="" loading="lazy"  />
+        <img data-aos="fade-right" src={About_us} alt="who" loading="lazy"  />
       </div>
 
       <div className="box" data-aos="fade-left"  >

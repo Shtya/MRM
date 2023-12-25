@@ -48,7 +48,7 @@ export default function SliderGIFTS() {
 
   return (
     <div className="GALLERY">
-        <div className="bgCover"  >  <img  src={IMG1} alt="" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG1} alt="Gifts" loading="lazy" /> </div>
         <div className="h1">OUR WORKS</div>
         <ul className='header1' > {taps.map((e,index)=> (<li className={type == e.type ? "active p" : "p"} onClick={_=>handleFilter(e.type)} key={index}>{e.name}</li>))} </ul>
 
@@ -57,7 +57,7 @@ export default function SliderGIFTS() {
             <Swiper {...settings}   className="mySwiper"  >
               
               {data?.map((e,index)=>( <SwiperSlide key={index}> 
-              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.4}} className='coverImg' >  <img src={e.img} /></motion.div> </SwiperSlide> )) }
+              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.4}} className='coverImg' >  <img src={e.img} alt="slider" /></motion.div> </SwiperSlide> )) }
 
             </Swiper>
           </div>

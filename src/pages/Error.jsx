@@ -9,7 +9,7 @@ const Error = () => {
     <div className="error">
         <div className="container"> <Navbar /> </div>
         <div className="intro">
-          <div className="CoverImg"> <img src={IntroImg} alt="" loading="lazy" /> </div>
+          <div className="CoverImg"> <img src={IntroImg} alt="error" loading="lazy" /> </div>
           <h1>404</h1>
           <h2 className='clip'> Oops! </h2>
           <h3 className='phead'> Looks like you've taken a wrong turn. Don't worry, even the best of us get lost sometimes.</h3>

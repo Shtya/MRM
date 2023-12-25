@@ -8,11 +8,11 @@ const Footer = ({appear}) => {
     <>
     <Pattern9  />
     <footer>
-    <div className="bgCover" style={{zIndex:"1"}}  >  <img  src={IMG3} alt="" loading="lazy" /> </div>
+    <div className="bgCover" style={{zIndex:"1"}}  >  <img  src={IMG3} alt="footer" loading="lazy" /> </div>
       <div className="container" >
 
       <div className="top">
-        <img src={Logo} alt="" loading="lazy" data-aos="fade-up" data-aos-delay="50" />
+        <img src={Logo} alt="footer" loading="lazy" data-aos="fade-up" data-aos-delay="50" />
         <div className="phead" data-aos="fade-up" data-aos-delay="100">We Don't Create Ads ,We Build Successful Campaigns</div>
         <ul className='social last-social'>
           <li data-aos="fade-up" data-aos-delay="50"> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-facebook-f"></i>    </div> </a></li>

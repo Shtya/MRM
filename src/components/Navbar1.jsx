@@ -42,9 +42,9 @@ navLinks.style.left = "-100%";
     <nav>
       <div className="navbar" style={{background:top}}>
         <i className='bx bx-menu'></i>
-        <div className="logo"><Link to="/"> <img src={Logo} alt="" loading="lazy" /></Link></div>
+        <div className="logo"><Link to="/"> <img src={Logo} alt="Navbar" loading="lazy" /></Link></div>
         <div className="nav-links">
-          <div className="sidebar-logo">   <span className="logo-name"><img src={Logo} alt="" loading="lazy" /></span>   <i className='bx bx-x' ></i> </div>
+          <div className="sidebar-logo">   <span className="logo-name"><img src={Logo} alt="Navbar" loading="lazy" /></span>   <i className='bx bx-x' ></i> </div>
           
           <ul className="links">
             <li><Link to="/">Home</Link></li>
