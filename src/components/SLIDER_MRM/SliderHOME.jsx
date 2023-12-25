@@ -52,7 +52,7 @@ export default function SliderHOME({title , taps , Images , typeOftaps}) {
             <Swiper {...settings}   className="mySwiper"  >
               
               {data?.map((e,index)=>( <SwiperSlide key={index}> 
-              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.4}} className='coverImg' >  <img src={e.img} alt="slider" /></motion.div> </SwiperSlide> )) }
+              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.2}} className='coverImg' >  <img src={e.img} loading='lazy'  alt="slider" /></motion.div> </SwiperSlide> )) }
 
             </Swiper>
           </div>

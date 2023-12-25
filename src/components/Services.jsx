@@ -13,7 +13,7 @@ const services = [
   {route:"/seo",        animate:"fade-up",  title:"SEO "                         , icon:"clip  fa-solid fa-magnifying-glass" ,desc:"Drive organic traffic and secure top search engine rankings with our expert SEO services.  " ,                                     },
 ];
 
-export function Services() {
+function Services() {
 
   return (
     <>
@@ -39,3 +39,6 @@ export function Services() {
     </>
   );
 }
+
+
+export default Services
