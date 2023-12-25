@@ -1,7 +1,7 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
-import ImgSection from "../assets/S_branding/cover.jpg"
+import ImgSection from "../assets/Intro&Cover/cover-branding.jpg"
 import Grid1 from "../assets/S_branding/why.jpg" ;
 import  SliderBRAND from "../components/SLIDER_MRM/SliderBRAND"
 

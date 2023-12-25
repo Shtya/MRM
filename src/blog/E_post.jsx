@@ -28,7 +28,6 @@ const E_post = () => {
     setCategory(res.data.data.category)  
    } ) },[id])
 
-  // const handleImg = (e) => { if (e.target.files && e.target.files[0]) { setImg(e.target.files[0]) } }
 
   const handleSubmit = async (e) => {
     e.preventDefault()

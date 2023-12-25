@@ -2,21 +2,21 @@ import React, { useEffect, useRef } from 'react'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
 
-import Community from "../assets/social media marketing/cover.jpg" ;
+import Community from "../assets/Intro&Cover/cover-socialMedia.jpg" ;
 
-import Social_1 from "../assets/landing/social-1.png"
-  import Social_2 from "../assets/landing/social-2.png"
-  import Social_3 from "../assets/landing/social-3.png"
-  import Social_4 from "../assets/landing/social-4.png"
-  import Social_5 from "../assets/landing/social-5.png"
-  import Social_6 from "../assets/landing/social-6.png"
+import Social_1   from "../assets/Icon/Impact_ (8).png"
+  import Social_2 from "../assets/Icon/Impact (2).png"
+  import Social_3 from "../assets/Icon/Impact_ (9).png"
+  import Social_4 from "../assets/Icon/Impact_ (10).png"
+  import Social_5 from "../assets/Icon/Impact_ (1).png"
+  import Social_6 from "../assets/Icon/Impact_ (2).png"
 
-import Icon_1 from   "../assets/landing/icon (1).png"
-  import Icon_2 from "../assets/landing/icon (2).png"
-  import Icon_3 from "../assets/landing/icon (3).png"
-  import Icon_4 from "../assets/landing/icon (4).png"
-  import Icon_5 from "../assets/landing/icon (5).png"
-  import Icon_6 from "../assets/landing/icon (6).png"
+import Icon_1 from   "../assets/Icons/icon (1).png"
+  import Icon_2 from "../assets/Icons/icon (2).png"
+  import Icon_3 from "../assets/Icons/icon (3).png"
+  import Icon_4 from "../assets/Icons/icon (4).png"
+  import Icon_5 from "../assets/Icons/icon (5).png"
+  import Icon_6 from "../assets/Icons/icon (6).png"
   import OnePlatform from '../components/OnePlatform';
 
 import Grid1 from "../assets/landing/Grid1.jpg" ;

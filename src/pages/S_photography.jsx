@@ -1,23 +1,23 @@
-import Grid1 from "../assets/S_photography/Why.jpg" ;
+import Grid1 from "../assets/Intro&Cover/Why-photo.jpg" ;
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
-import ImgSection from "../assets/S_photography/cover.jpg"
+import ImgSection from "../assets/Intro&Cover/cover-photo.jpg"
 
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/b2.jpg"
 import IMG3 from "../assets/bg/b1.jpg"
 
-import Photography_1 from "../assets/gallery/photography/  (1).jpg" ;
-import Photography_2 from "../assets/gallery/photography/  (2).jpg" ;
-import Photography_3 from "../assets/gallery/photography/  (3).jpg" ;
-import Photography_4 from "../assets/gallery/photography/  (4).jpg" ;
-import Photography_5 from "../assets/gallery/photography/  (5).jpg" ;
-import Photography_6 from "../assets/gallery/photography/  (6).jpg" ;
-import Photography_7 from "../assets/gallery/photography/  (7).jpg" ;
-import Photography_8 from "../assets/gallery/photography/  (8).jpg" ;
-import Photography_9 from "../assets/gallery/photography/  (9).jpg" ;
+import Photography_1 from "../assets/gallery/photography/photo1.jpg" ;
+import Photography_2 from "../assets/gallery/photography/photo2.jpg" ;
+import Photography_3 from "../assets/gallery/photography/photo3.jpg" ;
+import Photography_4 from "../assets/gallery/photography/photo4.jpg" ;
+import Photography_5 from "../assets/gallery/photography/photo5.jpg" ;
+import Photography_6 from "../assets/gallery/photography/photo6.jpg" ;
+import Photography_7 from "../assets/gallery/photography/photo7.jpg" ;
+import Photography_8 from "../assets/gallery/photography/photo8.jpg" ;
+import Photography_9 from "../assets/gallery/photography/photo9.jpg" ;
 
 import Videography1 from "../assets/gallery/videography/(1).jpg" ;
 import Videography2 from "../assets/gallery/videography/(2).jpg" ;

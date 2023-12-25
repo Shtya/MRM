@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
-import IntroImg from "../assets/blog/Ourblog.jpg"
+import IntroImg from "../assets/about-us/introBlog.jpg"
 import OneBlog from '../components/helpers/OneBlog';
 import Footer from '../components/Footer';
 import Pattern1, { Divider } from '../components/patterns/Pattern1';

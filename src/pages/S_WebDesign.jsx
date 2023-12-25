@@ -1,21 +1,21 @@
 import IMG1 from "../assets/bg/b1.jpg"
 import ImgIntro from "../assets/bg/b9.jpg"
-import ImgSection from "../assets/web-design/section.jpg"
+import ImgSection from "../assets/Intro&Cover/cover-webdesign.jpg"
 import OneSocial from '../components/OneSocial'
 
-import Social_1 from   "../assets/web-design/I1.png"
-import Social_2 from "../assets/web-design/I2.png"
-import Social_3 from "../assets/web-design/I3.png"
-import Social_4 from "../assets/web-design/I4.png"
+import Social_1 from "../assets/Icon/_1.png"
+import Social_2 from "../assets/Icon/_2.png"
+import Social_3 from "../assets/Icon/_3.png"
+import Social_4 from "../assets/Icon/_4.png"
 
-import Icon_1 from "../assets/web-design/icon-1.png" ;
-import Icon_2 from "../assets/web-design/icon-2.png" ;
-import Icon_3 from "../assets/web-design/icon-3.png" ;
-import Icon_4 from "../assets/web-design/icon-4.png" ;
-import Icon_5 from "../assets/web-design/icon-5.png" ;
-import Icon_6 from "../assets/web-design/icon-6.png" ;
-import Icon_7 from "../assets/web-design/icon-7.png" ;
-import Icon_8 from "../assets/web-design/icon-8.png" ;
+import Icon_1 from "../assets/Icon/icon-1.png" ;
+import Icon_2 from "../assets/Icon/icon-2.png" ;
+import Icon_3 from "../assets/Icon/icon-3.png" ;
+import Icon_4 from "../assets/Icon/icon-4.png" ;
+import Icon_5 from "../assets/Icon/icon-5.png" ;
+import Icon_6 from "../assets/Icon/icon-6.png" ;
+import Icon_7 from "../assets/Icon/icon-7.png" ;
+import Icon_8 from "../assets/Icon/icon-8.png" ;
 import MetaTage from "../pages/MetaTag"
 
 import Animation from '../components/helpers/Animation'

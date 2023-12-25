@@ -22,7 +22,7 @@ import f13 from "../../assets/Socialmedia/facebook/f13.png"
 import { motion } from 'framer-motion'
 
 import Animation from '../../components/helpers/Animation'
-import Pattern1, { Divider, Pattern2, Pattern3 } from '../../components/patterns/Pattern1'
+import  { Divider} from '../../components/patterns/Pattern1'
 import IMG1 from "../../assets/bg/b1.jpg"
 import IMG2 from "../../assets/bg/b2.jpg"
 import IMG3 from "../../assets/bg/b3.jpg"

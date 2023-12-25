@@ -1,5 +1,5 @@
 import {useRef, useState} from 'react'
-import MapImg from "../assets/contact-us/map1.jpg"
+import MapImg from "../assets/about-us/introContact.jpg"
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
 

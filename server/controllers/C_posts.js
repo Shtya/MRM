@@ -3,54 +3,6 @@ const path = require("path")
 const fs = require("fs")
 const AsyncHandler = require("express-async-handler")
 
-
-
-const sharp            = require("sharp")
-const multer           = require("multer")
-const { v4: uuidv4 } = require("uuid")
-
-
-
-// const multerStorage = multer.memoryStorage();
-// const multerFilter = (req, file, cb) => {
-//   if (file.mimetype.startsWith('image')) {
-//     cb(null, true);
-//   } else {
-//     cb(new Error('only images allowed'), false);
-//   }
-// };
-
-// const upload = multer({ storage: multerStorage, fileFilter: multerFilter });
-
-// const IMG = upload.fields([{ name: 'thumbnail', maxCount: 1 },]);
-
-// const Resize = AsyncHandler(async (req, res, next) => {
-
-//   if (req.files.thumbnail) {
-//     const ext = req.files.thumbnail[0].mimetype.split('/')[1];
-//     const thumbnailFilename = `blog-${Date.now()}-cover.${ext}`;
-//     await sharp(req.files.thumbnail[0].buffer).jpeg({quality:60})
-//       .toFile(`uploads/${thumbnailFilename}`); 
-//     req.body.thumbnail = thumbnailFilename;
-//   }
-
-//   req.body.images = [];
-//   if (req.files.images) {
-//     await Promise.all(
-//       req.files.images.map(async (img, index) => {
-//         const ext = img.mimetype.split('/')[1];
-//         const filename = `blog-inner-${Date.now()}-${index + 1}.${ext}`;
-//         await sharp(img.buffer).jpeg({quality:60})
-//           .toFile(`uploads/${filename}`);
-//         req.body.images.push(filename);
-//       })
-//     );
-//   }
-//   next();
-// });
-
-
-
 const createPost = AsyncHandler(async(req , res , next)=>{
     const data = await Post.create(req.body)
     if(!data) return next(new Error("Post couldn't be created."))

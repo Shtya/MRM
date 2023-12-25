@@ -1,15 +1,15 @@
 
 import ImgIntro from "../assets/bg/b9.jpg"
-import ImgSection from "../assets/S_media/cover.jpg"
+import ImgSection from "../assets/Intro&Cover/cover-social.jpg"
 import OneSocial from '../components/OneSocial'
 
-import   F from "../assets/S_media/facebook.png"
-  import X from "../assets/S_media/x.png"
-  import I from "../assets/S_media/instagram.png"
-  import L from "../assets/S_media/linkedin.png"
-  import S from "../assets/S_media/snapchat.png"
-  import T from "../assets/S_media/tiktok.png"
-  import G from "../assets/S_media/google.png"
+import   F from "../assets/Icons/facebook.png"
+  import X from "../assets/Icons/x.png"
+  import I from "../assets/Icons/instagram.png"
+  import L from "../assets/Icons/linkedin.png"
+  import S from "../assets/Icons/snapchat.png"
+  import T from "../assets/Icons/tiktok.png"
+  import G from "../assets/Icons/google.png"
 
 
 import Icon_1 from "../assets/S_media/1.png" ;

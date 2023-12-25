@@ -1,7 +1,7 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
-import ImgSection from "../assets/S_gifts/cover.jpg"
+import ImgSection from "../assets/Intro&Cover/cover-gifts.jpg"
 import SliderGIFTS from "../components/SLIDER_MRM/SliderGIFTS"
 
 import Icon_1 from "../assets/S_gifts/offer1.png" ;

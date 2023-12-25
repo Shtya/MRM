@@ -1,30 +1,20 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
-import ImgSection from "../assets/signages/cover.jpg"
+import ImgSection from "../assets/Intro&Cover/cover-signages.jpg"
 import SliderOUTDOOR from "../components/SLIDER_MRM/SliderOUTDOOR"
 import SliderINDOOR from "../components/SLIDER_MRM/SliderINDOOR"
 
-import Icon_1 from "../assets/S_media/1.png" ;
-import Icon_2 from "../assets/S_media/2.png" ;
-import Icon_3 from "../assets/S_media/3.png" ;
-import Icon_4 from "../assets/S_media/4.png" ;
-import Icon_5 from "../assets/S_media/5.png" ;
+import Icon_1 from "../assets/Icon/process (2).png" ;
+import Icon_2 from "../assets/Icon/process (3).png" ;
+import Icon_3 from "../assets/Icon/process (4).png" ;
+import Icon_4 from "../assets/Icon/process (5).png" ;
+import Icon_5 from "../assets/Icon/process (6).png" ;
 
 
-import Outdoor_1 from "../assets/gallery/outdoor/1.jpg" ;
-import Outdoor_2 from "../assets/gallery/outdoor/2.jpg" ;
-import Outdoor_3 from "../assets/gallery/outdoor/3.jpg" ;
-import Outdoor_4 from "../assets/gallery/outdoor/4.jpg" ;
-import Outdoor_5 from "../assets/gallery/outdoor/5.jpg" ;
-import Outdoor_6 from "../assets/gallery/outdoor/6.jpg" ;
-import Outdoor_7 from "../assets/gallery/outdoor/7.jpg" ;
-import Outdoor_8 from "../assets/gallery/outdoor/8.jpg" ;
 import Animation from '../components/helpers/Animation'
 import{  Pattern9 } from '../components/patterns/Pattern1'
-import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/b3.jpg"
-import IMG3 from "../assets/bg/b2.jpg"
 import Contact from '../components/Contact'
 import MetaTag from './MetaTag'
 

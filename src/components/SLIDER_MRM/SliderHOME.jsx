@@ -7,10 +7,10 @@ import 'swiper/css/grid';
 import 'swiper/css/pagination';
 import {AnimatePresence, motion} from "framer-motion"
 import IMG3 from "../../assets/bg/b3.jpg"
+import { ImageGalleryHome } from '../Images2';
 
 
-
-export default function SliderHOME({title , taps , Images , typeOftaps}) {
+export default function SliderHOME() {
   const [media , setmedia ] = useState(2)
   const settings = {
     autoplay:{ delay: 2500 , disableOnInteraction:false  } ,
@@ -29,13 +29,14 @@ export default function SliderHOME({title , taps , Images , typeOftaps}) {
   }, [window]);
 
 
-  const header = taps
+  const header =[ {name :"all"  , type:"all"}, {name :"Signages" , type:"Signages"}, {name :"Stands" , type:"Displaystands"}, {name :"Exhibition" , type:"Exhibition"}, {name :"branding" , type:"branding"}, {name :"photography" , type:"photography"}, {name :"Web design" , type:"Web"},]
+
   const [data , setdata] = useState([])
-  const [type , settype] = useState(typeOftaps)
-  useEffect(_=>{setdata(Images)},[])
+  const [type , settype] = useState("all")
+  useEffect(_=>{setdata(ImageGalleryHome)},[])
   
   const handleFilter = (ele) => {
-    const filter  = Images.filter((e)=> e.type.includes(ele))
+    const filter  = ImageGalleryHome.filter((e)=> e.type.includes(ele))
     setdata(filter)
     settype(ele)
   }
@@ -44,7 +45,7 @@ export default function SliderHOME({title , taps , Images , typeOftaps}) {
   return (
     <div className="GALLERY">
         <div className="bgCover"  >  <img  src={IMG3} alt="home" loading="lazy" /> </div>
-        <div className="h1">{title}</div>
+        <div className="h1">OUR WORKS</div>
         <ul className='header1 header2' > {header?.map((e,index)=> (<li className={type == e.type ? "active p" : "p"} onClick={_=>handleFilter(e.type)} key={index}>{e.name}</li>))} </ul>
 
         <AnimatePresence>

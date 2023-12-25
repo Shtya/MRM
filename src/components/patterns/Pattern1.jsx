@@ -15,7 +15,6 @@ export const Pattern1 = () => {
 }
 export const Divider = ({classn}) => {
   return(
-    // <div className={`${classn}`}> <span className='separator'> <h4/>  <h4/>  <h4/>  </span> <div className="other"><h4/>  <h4/>  <h4/> </div></div>
     <div className={`Pattern9 ${classn}`}>
     <span></span>
     <span> <li className='one'/>   <li className='two'/>   <li className='three'/>  </span>
@@ -43,7 +42,6 @@ export const Pattern3 = () => {
     <div className='pattern1'>
 <ul className="screens">
   <li className="screen screen3" id="[&quot;screen3&quot;]">
-      {/* <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M25,28.207l-5.354-5.354c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0L25,26.793l4.646-4.646 		c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L25,28.207z"/></svg></a><a className="next-arrow" href="#screen4"> */}
       
   </li>
 

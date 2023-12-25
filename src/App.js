@@ -1,8 +1,6 @@
 import React from 'react'
 import {Routes , Route} from "react-router-dom"
 import "./sass/main.css"
-import "./sass/sass-main/second.css" 
-import "./blog/sass/blog.css"
 
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'

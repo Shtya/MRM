@@ -2,33 +2,34 @@ import React, {  useState } from "react";
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
-import ImgSection from "../assets/Exhibition/cover.jpg"
+import ImgSection from "../assets/Intro&Cover/cover-exhibition.jpg"
 
 
 
-import Icon_1 from "../assets/S_gifts/offer1.png" ;
-import Icon_2 from "../assets/S_gifts/offer4.png" ;
-import Icon_3 from "../assets/S_gifts/(4).png" ;
-import Icon_4 from "../assets/S_gifts/(6).png" ;
-import Icon_5 from "../assets/S_gifts/(7).png" ;
-import Icon_6 from "../assets/S_gifts/offer3.png" ;
+import Icon_1 from "../assets/Icon/Impact (3).png" ;
+import Icon_2 from "../assets/Icon/Impact (4).png" ;
+import Icon_3 from "../assets/Icon/Impact (2).png" ;
+import Icon_4 from "../assets/Icon/Impact (6).png" ;
+import Icon_5 from "../assets/Icon/Impact (1).png" ;
+import Icon_6 from "../assets/Icon/Impact (5).png" ;
 
-import Exhibition1 from "../assets/gallery/exhibition stand/  (1).jpg" ;
-import Exhibition2 from "../assets/gallery/exhibition stand/  (2).jpg" ;
-import Exhibition3 from "../assets/gallery/exhibition stand/  (3).jpg" ;
-import Exhibition4 from "../assets/gallery/exhibition stand/  (4).jpg" ;
-import Exhibition5 from "../assets/gallery/exhibition stand/  (5).jpg" ;
-import Exhibition6 from "../assets/gallery/exhibition stand/  (6).jpg" ;
-import Exhibition7 from "../assets/gallery/exhibition stand/  (7).jpg" ;
-import Exhibition8 from "../assets/gallery/exhibition stand/  (8).jpg" ;
-import Exhibition9 from "../assets/gallery/exhibition stand/  (9).jpg" ;
+import DisplayStand1  from "../assets/gallery/displayStand/display-stands1.jpg" ;
+import DisplayStand2  from "../assets/gallery/displayStand/display-stands2.jpg" ;
+import DisplayStand3  from "../assets/gallery/displayStand/display-stands3.jpg" ;
+import DisplayStand4  from "../assets/gallery/displayStand/display-stands4.jpg" ;
+import DisplayStand6  from "../assets/gallery/displayStand/display-stands6.jpg" ;
+import DisplayStand7  from "../assets/gallery/displayStand/display-stands7.jpg" ;
 
-import DisplayStand1  from "../assets/gallery/display stand/display-stands (1).jpg" ;
-import DisplayStand2  from "../assets/gallery/display stand/display-stands (2).jpg" ;
-import DisplayStand3  from "../assets/gallery/display stand/display-stands (3).jpg" ;
-import DisplayStand4  from "../assets/gallery/display stand/display-stands (4).jpg" ;
-import DisplayStand6  from "../assets/gallery/display stand/display-stands (6).jpg" ;
-import DisplayStand7  from "../assets/gallery/display stand/display-stands (7).jpg" ;
+import Exhibition1 from "../assets/gallery/exhibitionStand/Exhibition1.jpg" ;
+import Exhibition2 from "../assets/gallery/exhibitionStand/Exhibition2.jpg" ;
+import Exhibition3 from "../assets/gallery/exhibitionStand/Exhibition3.jpg" ;
+import Exhibition4 from "../assets/gallery/exhibitionStand/Exhibition4.jpg" ;
+import Exhibition5 from "../assets/gallery/exhibitionStand/Exhibition5.jpg" ;
+import Exhibition6 from "../assets/gallery/exhibitionStand/Exhibition6.jpg" ;
+import Exhibition7 from "../assets/gallery/exhibitionStand/Exhibition7.jpg" ;
+import Exhibition8 from "../assets/gallery/exhibitionStand/Exhibition8.jpg" ;
+import Exhibition9 from "../assets/gallery/exhibitionStand/Exhibition9.jpg" ;
+
 
 import Animation from "../components/helpers/Animation";
 import { Pattern9 } from "../components/patterns/Pattern1";

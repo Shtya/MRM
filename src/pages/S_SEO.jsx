@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
 
-import Community from "../assets/SEO/icon.jpg" ;
+import Community from "../assets/Intro&Cover/cover-seo.jpg" ;
 
 
 import Analysis_1 from "../assets/SEO/Analysis-1.png"
