@@ -1,14 +1,7 @@
-import React from 'react'
 import Footer from '../Footer'
-import Navbar from '../Navbar'
-
 import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/x.png"
 
-
-import { motion } from 'framer-motion'
-
-import Animation from '../helpers/Animation'
 import { Divider } from '../patterns/Pattern1'
 import IMG1 from "../../assets/bg/b1.jpg"
 import IMG2 from "../../assets/bg/b2.jpg"
@@ -22,6 +15,7 @@ import X5 from "../../assets/Socialmedia/X (5).png"
 import X6 from "../../assets/Socialmedia/X (6).png"
 import X7 from "../../assets/Socialmedia/X (7).png"
 import MetaTag from '../../pages/MetaTag'
+import Social_Hero from '../helpers/Social_Hero'
 
 const TYPES = [
   {icon :"" ,title:"Promoted Tweets:" , desc:"Promoted Tweets are designed to reach users who do not follow your account. As your social media management agency, we pay to deliver these tweets to diverse audiences. These Twitter marketing initiatives can expand your business's reach and engage new potential customers. Similar to boosting posts on Facebook, promoted tweets increase visibility and engagement."},
@@ -49,61 +43,19 @@ const SERVICES1 = [
 ]
 
 
-
-
-const Divvariant = {
-  hidden:{opacity:0 },
-  visible:{
-    opacity:1,
-    transition : {duration : 1 ,staggerChildren : 0.005},
-    y:5
-  },
-}
-const Pvariant = {
-  hidden:{opacity:0, y:100 },
-  visible:{
-    opacity:1, y:10
-  },
-}
-
-
-
-
 const X = () => {
    return (
     <div className="x shared">
-      <div className="container"> <Navbar /> </div>
       <MetaTag title=" Best Twitter Marketing Agency in Dubai "  desc="Enhance your brand's online presence,grow your followers, boost engagement,and generate potential leads via MRM's Twitter marketing services. Contact Us Now" />
-
-      <Animation />
-      <div className="coverIntro "  data-aos="zoom-in-right" > <img src={FacebookIntro} alt="twitter-page" loading="lazy" /></div>
-
-      <div className="home">
-          <div className="container">
-              <div className="boxImg hidden-img"  data-aos="zoom-in-left" data-aos-delay="400" >  <img src={FacebookCover} alt="twitter-page" loading="lazy" /> </div>
-              <div className="boxs"  data-aos="zoom-in-right" data-aos-delay="600" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Transform Your Business with our Expert X Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
-            </div>
-
-        </div>
-      </div>
+      <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
+      H1="Transform Your Business with our Expert X Marketing Services"
+      Img={IMG1} 
+      Span1="Unlocking X Marketing Success With MRM "
+      Span2="X is a powerful social media platform with immense potential for business growth, boasting over 353 million active users. Recent studies reveal that 79% of X users recommend businesses and brands they follow, making it an excellent tool for advertising. To fully utilize X's advertising capabilities, taking necessary measures and reaching the right audience is vital."
+      Span3="MRM - Your Partner for Successful X Marketing in Dubai"
+      Span4="We are dedicated to creating a unique brand identity, promoting growth, and ensuring the success of your business through our advertising campaigns.Our X advertising services allow you to connect with the right audience, increase brand visibility, improve engagement rates, and expand your online presence. By partnering with us, you can unlock the full potential of X marketing."
+      />
       
-      
-      {/* <Divider classn="divider" /> */}
-      <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="twitter-page" loading="lazy" /> </div>
-        <div className="container" >
-        <div className="box-style" data-aos="fade-up">
-            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unlocking X Marketing Success With MRM ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("X is a powerful social media platform with immense potential for business growth, boasting over 353 million active users. Recent studies reveal that 79% of X users recommend businesses and brands they follow, making it an excellent tool for advertising. To fully utilize X's advertising capabilities, taking necessary measures and reaching the right audience is vital.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-        </div>
-        <div className="box-style-2" data-aos="fade-up">
-            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("MRM - Your Partner for Successful X Marketing in Dubai").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            <motion.p  className="h3 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("We are dedicated to creating a unique brand identity, promoting growth, and ensuring the success of your business through our advertising campaigns.Our X advertising services allow you to connect with the right audience, increase brand visibility, improve engagement rates, and expand your online presence. By partnering with us, you can unlock the full potential of X marketing.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-        </div>
-            </div>
-        </div>
-
         <Divider classn="divider" />
         <div className="box-style-5">
           <div className="bgCover"  >  <img  src={IMG2} alt="twitter-page" loading="lazy" /> </div>

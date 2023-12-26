@@ -19,14 +19,13 @@ import f10 from "../../assets/Socialmedia/facebook/f10.png"
 import f11 from "../../assets/Socialmedia/facebook/f11.png"
 import f12 from "../../assets/Socialmedia/facebook/f12.png"
 import f13 from "../../assets/Socialmedia/facebook/f13.png"
-import { motion } from 'framer-motion'
 
-import Animation from '../../components/helpers/Animation'
 import  { Divider} from '../../components/patterns/Pattern1'
 import IMG1 from "../../assets/bg/b1.jpg"
 import IMG2 from "../../assets/bg/b2.jpg"
 import IMG3 from "../../assets/bg/b3.jpg"
 import MetaTag from '../../pages/MetaTag'
+import Social_Hero from '../helpers/Social_Hero'
 
 
 
@@ -59,51 +58,17 @@ const SERVICES = [
 ]
 
 
-const Divvariant = {
-  hidden:{opacity:0 },
-  visible:{
-    opacity:1,
-    transition : {duration : 1 ,staggerChildren : 0.005},
-    y:5
-  },
-}
-const Pvariant = {
-  hidden:{opacity:0, y:100 },
-  visible:{
-    opacity:1, y:10
-  },
-}
-
-
 const Facebook = () => {
    return (
     <div className="Facebook shared">
-      <div className="container"> <Navbar /> </div>
       <MetaTag title=" Best Facebook Marketing Agency in Dubai , UAE  "  desc="Looking for Facebook Marketing Services in Dubai? Elevate Your Brand's Visibility and Engagement MRM Delivers High ROI with Efficient Spending on Facebook " />
-      <Animation />
-      <div className="coverIntro " data-aos="zoom-in-right" > <img src={FacebookIntro} alt="Facebook-page" loading="lazy" /></div>
-
-      <div className="home">
-          <div className="container">
-              <div className="boxImg" data-aos="fade-left" data-aos-delay="400" >  <img src={FacebookCover} alt="Facebook-page" loading="lazy" /> </div>
-              <div className="boxs"  >
-              <motion.p data-aos="zoom-in-right" data-aos-delay="600"  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unlock Your Business Potential with Our Expert Facebook Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
-            </div>
-        </div>
-      </div>
-
-      {/* <Divider classn="divider" /> */}
-      <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="Facebook-page" loading="lazy" /> </div>
-            <div className="container" >
-            <div className="box-style" data-aos="fade-up">
-            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible"  >{ Array.from("Harnessing the Power of Facebook Marketing  ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Facebook has been a leader in digital marketing for a long time. Utilizing Facebook for advertising can provide significant brand exposure, engage potential customers, increase brand recognition, and generate valuable leads. ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            </div>
-            <div className="box-style-2" data-aos="fade-up"><motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Boost Your Business Growth with MRM's Trusted Facebook Marketing Partnership in Dubai").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            <motion.p  className="h3" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("MRM is a well-known and one of the best Facebook advertising agencies based in Dubai.  We specialize in developing engaging campaigns that allow businesses to target their audience based on various criteria, such as location, age, gender, interests, and demographics.  MRM team conducts thorough research on your brand and offerings to create and implement effective digital and social media marketing campaigns tailored to your business.  This helps capture the attention of your target audience and convert them into loyal customers.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            </div></div>
-        </div>
+      <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
+      H1="Unlock Your Business Potential with Our Expert Facebook Marketing Services" 
+      Img={IMG1} 
+      Span1="Harnessing the Power of Facebook Marketing  " 
+      Span2="Facebook has been a leader in digital marketing for a long time. Utilizing Facebook for advertising can provide significant brand exposure, engage potential customers, increase brand recognition, and generate valuable leads. " 
+      Span3="Boost Your Business Growth with MRM's Trusted Facebook Marketing Partnership in Dubai"
+      Span4="MRM is a well-known and one of the best Facebook advertising agencies based in Dubai.  We specialize in developing engaging campaigns that allow businesses to target their audience based on various criteria, such as location, age, gender, interests, and demographics.  MRM team conducts thorough research on your brand and offerings to create and implement effective digital and social media marketing campaigns tailored to your business.  This helps capture the attention of your target audience and convert them into loyal customers." />
 
         <Divider classn="divider" />
         <div className="box-style-6">

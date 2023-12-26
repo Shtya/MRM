@@ -20,6 +20,7 @@ import Contact from '../components/Contact'
 import MetaTag from './MetaTag'
 import Hero from '../components/helpers/Hero'
 import Qutation from '../components/helpers/Qutation'
+import Process from '../components/helpers/Process'
 
 const process = [
   {img: Icon_1, title:" Planning" ,desc:"During planning, we consider every detail to create signage that resonates with your brand and clients.Effective planning saves time and resources."},
@@ -47,27 +48,8 @@ const M_Signages = () => {
       <SliderINDOOR />
 
       <Pattern9 />
-      <div className="process2">
-        <div className="bgCover"  >  <img  src={IMG2} alt="signages services" loading="lazy" /> </div>
-            <div className="container">
-                <div className="h1  clip" data-aos="fade-up">Signage creation process</div>
-                <div className="phead " data-aos="fade-up"> Our custom signages captures attention and gives every project  an elegant and professional finish</div>
-                <div className="timeline">
-                  {
-                    process.map((e,index)=>(
-                      <div className="check-point " data-aos="fade-left" key={index}  >
-                        <div className="number " data-aos="fade-left"> 0{index +1} </div>
-                        <div className='inner-box'>
-                          <span className='hidden-img' ><img src={e.img} alt="signages services" loading="lazy" /></span>
-                          <h2 className="h2 clip  " data-aos="fade-left">{e.title}</h2>
-                          <p className="p  " data-aos="fade-left"> {e.desc}</p>
-                      </div>
-                      </div>
-                    ))
-                  }
-                </div>
-            </div>
-      </div>
+      <Process Img={IMG2} title="Signage creation process" desc="Our custom signages captures attention and gives every project  an elegant and professional finish" data={process} />
+
 
 
         <Contact />

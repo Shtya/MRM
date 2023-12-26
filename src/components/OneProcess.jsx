@@ -2,11 +2,11 @@ import React from 'react'
 
 const OneProcess = ({title , paragraph , img , classn , num}) => {
   return (
-    <div className={`one-process ${classn} `} data-aos="fade-up"  >
-      <div className="coverImg"> <img src={img} alt="process" loading="lazy" /> </div>
-      <span></span>
-      <div className="num">{num}</div>
-      <div className="inner-box" >
+    <div className={`one-process ${classn} `} data-aos="fade-left"  >
+      <div className="coverImg" data-aos="fade-left" > <img src={img} alt="process" loading="lazy" /> </div>
+      <span data-aos="fade-left"></span>
+      <div className="num" data-aos="fade-left" >{num}</div>
+      <div data-aos="fade-left" className="inner-box" >
         <h2 className="h2 clip " data-aos="zoom-in-up">{title} </h2>
         <p className="p " data-aos="zoom-in-up">{paragraph}</p>
       </div>

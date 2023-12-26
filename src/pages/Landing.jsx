@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from 'react'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
 
@@ -32,15 +31,16 @@ import Process1 from "../assets/landing/process1.png" ;
 
 import OneProcess from '../components/OneProcess';
 import Footer from '../components/Footer';
-import OneSocial from '../components/OneSocial';
 import Animation from '../components/helpers/Animation';
 import { Divider} from '../components/patterns/Pattern1';
 
 import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/b2.jpg"
-import IMG3 from "../assets/bg/b3.jpg"
 import Contact from '../components/Contact';
 import MetaTag from './MetaTag';
+import Social_media from '../components/helpers/Social_media';
+import ProcessComponenet from "../components/helpers/Process2"
+
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_1 , title:"Social Media Strategy"    , desc:"Our social media experts will create a custom strategy that aligns with your brand's objectives and target audience."},
@@ -49,6 +49,14 @@ const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_4 , title:"Social Media Advertising" , desc:"Paid advertising can effectively increase brand reach and conversions. Our team creates targeted social media ad campaigns using platform-specific ad formats and advanced targeting options."},
   {classn :"hidden hidden-left" , img:Social_5 , title:"Community Management"     , desc:"A robust online community is crucial for brand loyalty and success. We build and maintain relationships with your audience by engaging regularly, responding promptly to inquiries, and monitoring your brand's reputation."},
   {classn :"hidden hidden-left" , img:Social_6 , title:"Analytics and Reporting"  , desc:"Data empowers informed decision-making. Our analytics and reports provide detailed insights into social media performance, including engagement, reach, conversions, and growth."},
+]
+
+const Process = [
+  {img:Process1 , classn:"h" , title :"Optimized For Results"  , desc : "We work closely with our clients to understand their business goals, target audience, industry, and competitors. With this knowledge, we create a tailored social media plan that meets their unique needs. We aim to deliver a strategy customized to each client's specific requirements." },
+  {img:Process2 , classn:"h" , title :"Planning"  , desc : "During the planning phase, we create a detailed strategy outlining tactics for achieving the client's goals such as content creation, advertising, and social media management." },
+  {img:Process3 , classn:"h" , title :"Implementation"  , desc : "We begin executing the plan. Our team of social media experts creates and publishes high-quality content, manages social media accounts, and runs advertising campaigns. We constantly monitor and analyze our campaigns to ensure we achieve our clients' goals." },
+  {img:Process4 , classn:"h" , title :"Optimization"  , desc : "As we collect data on our campaigns, we use it to optimize our strategy and tactics, making data-driven decisions that improve engagement, drive traffic, and generate leads and sales." },
+  {img:Process5 , classn:"h" , title :"Reporting"  , desc : "We regularly provide clients with detailed reports on the progress of their social media campaigns. These reports include key metrics like engagement, reach, traffic, and leads. They help clients understand the value of our services and make data-driven decisions for future campaigns." },
 ]
 const Landing = () => {
 
@@ -115,17 +123,7 @@ const Landing = () => {
 
 
       <Divider classn="divider-left" />
-      <div className="social-media  ">
-        <div className="bgCover"  >  <img  src={IMG2} alt="social media marketing services" loading="lazy" /> </div>
-        <div className="container">
-          <h3 className='h1' data-aos="fade-up">Our Social Media Marketing Services</h3>
-          <div className="boxs" data-aos="fade-up" >
-            {
-              SocialMedia.map((e,index)=> ( <OneSocial  key={index} Img={e.img} title={e.title} desc={e.desc} classn={e.classn} />))
-            }
-          </div>
-        </div>
-      </div>
+      <Social_media Img={IMG2} data={SocialMedia} title="Our Social Media Marketing Services" />
 
       <Divider classn="divider" />
       <div className="platforms">
@@ -144,8 +142,8 @@ const Landing = () => {
       </div>
 
       <Divider classn="divider-left" />
+      {/* <ProcessComponenet data={Process} Img={IMG2} title="our process"  /> */}
     <div className="process">
-        {/* <div className="bgCover"  >  <img  src={IMG3} alt="social media marketing services" loading="lazy" /> </div> */}
         <div className="container1"> <div className="h1" data-aos="fade-up">our proccess</div></div>
         <div className="container">
             <div className="box box1">

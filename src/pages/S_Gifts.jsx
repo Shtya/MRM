@@ -21,6 +21,9 @@ import IMG2 from "../assets/bg/b2.jpg"
 import IMG3 from "../assets/bg/b3.jpg"
 import Contact from '../components/Contact'
 import MetaTag from './MetaTag'
+import Hero from '../components/helpers/Hero'
+import Qutation from '../components/helpers/Qutation'
+import Impact from '../components/helpers/Impact'
 
 const Approach = [
   { img:gifts_1 , title:"Corporate Gifts" , desc:"Where Thoughtful Gestures Meet Elegance The right gift can make a big impact in corporate relationships. Our Corporate Gifts collection offers timeless and sophisticated items that show genuine appreciation. "},
@@ -42,33 +45,13 @@ const S_Gifts = () => {
       <div className="container"> <Navbar /> </div>
       <MetaTag title=" Best Corporate Gifts Designing Services in Dubai " desc="Looking for impressive corporate gifts, gift items, and trophies? Our curated selection is customized for any occasion and denotes exceptional quality." />
       <Animation />
-      <div className="coverIntro " data-aos="zoom-in-left"  > <img src={ImgIntro} alt="gifts services" loading="lazy" /></div>
-
-      <div className="home">
-          <div className="container">
-              <div className="boxImg hidden-img" data-aos="zoom-in-left" data-aos-delay="400"   >  <img src={ImgSection} alt="gifts services" loading="lazy" /> </div>
-              <div className="boxs"data-aos="zoom-in-left" data-aos-delay="600"  >
-                  <h2 className='h1 hidden-text'> Transform Professional Relationships with Timeless Elegance</h2>
-                  <h2 className='h2 hidden-text'> Unleash the potential of your business connections with our expertly curated collection of corporate gifts</h2>
-                  <p className='p hidden-text'> At MRM, we understand the impact of meaningful gestures in the corporate world. Our passion lies in transforming ordinary moments into extraordinary memories through our premium services: Corporate Gifts, Customized Items, and Trophies. </p>
-            </div>
-
-        </div>
-      </div>
-
-      <Divider classn="divider-left" />
-      <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="gifts services" loading="lazy" /> </div>
-            <div className="container" >
-                <div className="h2" data-aos="zoom-in-up" data-aos-delay="100" >Strengthen Your Professional Ties  with Our Meticulously Curated Collection of Corporate Gifts</div>
-                <div className="h3" data-aos="zoom-in-up" data-aos-delay="400" >Explore our meticulously curated collection of corporate gifts, tailor-made for every occasion, and elevate your business relationships to new heights. <br/> Our handpicked selection of gifts is designed to leave a lasting impression on your clients, employees, and partners, and convey your appreciation for their business.<br/> With a focus on quality, elegance, and functionality, our gifts are sure to impress and strengthen your professional ties</div>
-            </div>
-        </div>
+      <Hero H1="Transform Professional Relationships with Timeless Elegance" H2="Unleash the potential of your business connections with our expertly curated collection of corporate gifts" H3="At MRM, we understand the impact of meaningful gestures in the corporate world. Our passion lies in transforming ordinary moments into extraordinary memories through our premium services: Corporate Gifts, Customized Items, and Trophies." Img={ImgSection} nameServices="gifts services" Imgintro={ImgIntro} />
+      <Qutation Img={IMG1} title1="Strengthen Your Professional Ties  with Our Meticulously Curated Collection of Corporate Gifts"  desc1="Explore our meticulously curated collection of corporate gifts, tailor-made for every occasion, and elevate your business relationships to new heights.  Our handpicked selection of gifts is designed to leave a lasting impression on your clients, employees, and partners, and convey your appreciation for their business. With a focus on quality, elegance, and functionality, our gifts are sure to impress and strengthen your professional ties" />
         
-        <Divider classn="divider-left" />
-        <div className="boxs-tails">
+      <Divider classn="divider-left" />
+      <div className="boxs-tails">
           <div className="bgCover"  >  <img  src={IMG2} alt="gifts services" loading="lazy" /> </div>
-          <div className="h1" data-aos="fade-up" >We Offer</div> 
+          <div className="h1" data-aos="fade-up" >We offer</div> 
             <div className="container" data-aos="fade-up">
                   {Approach.map((e,index)=>(
                     <div className='box' key={index} data-aos="fade-up" >
@@ -84,26 +67,9 @@ const S_Gifts = () => {
       <SliderGIFTS />
 
       <Divider classn="divider-left" />
-      <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG3} alt="gifts services" loading="lazy" /> </div>
-            <div className="container">
-                <div className="h1 clip hidden-text" data-aos="fade-up">Why Choose Us for Your Corporate Gifting Needs?</div>
-                <div className="boxs">
-                  {
-                    BRANDING_SERVICES.map((e,index)=> (
-                      <div className="box" key={index} data-aos="fade-up" >
-                          <div className="coverImg"> <img src={e.img} alt="gifts services" loading="lazy" /> </div>
-                          <div className="text">
-                              <div className="h2 clip hidden-text" data-aos="fade-up">{e.title} </div>
-                              <div className="p hidden-text" data-aos="fade-up">{e.desc} </div>
-                          </div>
-                      </div>
-                    ))
-                  }
-                </div>
-            </div>
-        </div>
-        <Contact />
+      <Impact classn="impact" Img={IMG3}  data={BRANDING_SERVICES}  title="Why Choose Us for Your Corporate Gifting Needs?"  nameServices="gifts services"  />
+
+      <Contact />
       <Footer />
       </div>
   )

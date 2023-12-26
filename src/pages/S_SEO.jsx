@@ -1,8 +1,7 @@
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
 
-import Community from "../assets/Intro&Cover/cover-seo.jpg" ;
-
+import ImgSection from "../assets/Intro&Cover/cover-seo.jpg" ;
 
 import Analysis_1 from "../assets/SEO/Analysis-1.png"
 import Analysis_2 from "../assets/SEO/Analysis-2.png"
@@ -39,6 +38,10 @@ import IMG1 from "../assets/bg/b1.jpg"
 import IMG2 from "../assets/bg/b2.jpg"
 import IMG3 from "../assets/bg/b3.jpg"
 import MetaTag from './MetaTag';
+import Hero from '../components/helpers/Hero';
+import Qutation from '../components/helpers/Qutation';
+import Plateforms from '../components/helpers/Plateforms';
+import Process2 from '../components/helpers/Process2';
 
 const OUR_SEO = [
   {classn :" "            , img:Icon_1 , title:"Keyword Research"   , desc:" Our team conducts in-depth research to determine the most effective and high-traffic keywords to target for your website. By strategically selecting these keywords, we can boost your website's visibility and attract more visitors."},
@@ -75,66 +78,16 @@ const S_SEO = () => {
       <div className="container"> <Navbar /> </div>
       <MetaTag title=" Top SEO services in Dubai for higher website ranking." desc="Improve your website's ranking in Dubai with professional SEO solutions from MRM. Boost visibility and capture your audience effectively" />
       <Animation />
-      <div className="coverIntro"  data-aos="zoom-in-right" > <img src={ImgIntro} alt="search-engine-optomization services" loading="lazy" /></div>
+      <Hero H1="Unlock the full potential of your website with SEO services" H2="Improve your website's visibility and ranking on search engines with our professional SEO solutions" H3="Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward" Img={ImgSection} nameServices="search-engine-optomization services" Imgintro={ImgIntro} />
+      
+      <Qutation Img={IMG1} title1="Maximizing SEO Impact with MRM at Your Website "  desc1="We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it.<br/> Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs.<br/> Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search." />
 
-      <div className="home">
-          <div className="container">
-              <div className="boxImg "  data-aos="zoom-in-right" data-aos-delay="400"  >  <img src={Community} alt="search-engine-optomization services" loading="lazy" /> </div>
-              <div className="boxs "  data-aos="zoom-in-left" data-aos-delay="600"  >
-                  <h2 className="h1 hidden-text" >Unlock the full potential of your website with SEO services</h2>
-                  <p className="h2 hidden-text" >Improve your website's visibility and ranking on search engines with our professional SEO solutions </p>
-                  <p className="p hidden-text" > Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward.</p>
-            </div>
-        </div>
-      </div>
+      <Divider classn="divider-left" />
+      <Plateforms Img={IMG2} title="Our SEO Services" data={OUR_SEO} nameServices="search-engine-optomization services" />
 
       <Divider classn="divider" />
-      <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="search-engine-optomization services" loading="lazy" /> </div>
-        <div className="container">
-              <div className="h2 hidden-text" data-aos="fade-up" > Maximizing SEO Impact with MRM at Your Website </div>
-              <p className="h3 " data-aos="fade-up"   data-aos-delay="200" > We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it.<br/> Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs.<br/> Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search.</p>
-        </div>
-        </div>
-
-        <Divider classn="divider-left" />
-      <div className="platforms">
-        <div className="bgCover"  >  <img  src={IMG2} alt="search-engine-optomization services" loading="lazy" /> </div>
-          <div className="container">
-              <h3 className="h1 hidden-text clip" >Our SEO Services </h3>
-              <div className="boxs">
-                  {
-                    OUR_SEO.map((e,index)=> (
-                      <OnePlatform key={index} classn={`${e.classn} box-${index+1}`} img={e.img} title={e.title}   paragraph={e.desc} />
-                    ))
-                  }
-              </div>
-          </div>
-      </div>
-
-      <Divider classn="divider" />
-
-      <div className="process3">
-        <div className="bgCover"  >  <img  src={IMG3} alt="search-engine-optomization services" loading="lazy" /> </div>
-        <div className="h1 hidden-text clip" data-aos="fade-up">Our proccess</div>
-          <div className="container">
-              <div className="box box1">
-                  <OneProcess num="1" classn={PROCESS[0].classn} img={PROCESS[0].img} title={PROCESS[0].title} paragraph={PROCESS[0].desc} />
-                  <OneProcess num="2" classn={PROCESS[1].classn} img={PROCESS[1].img} title={PROCESS[1].title} paragraph={PROCESS[1].desc} />
-                  <OneProcess num="3" classn={PROCESS[2].classn} img={PROCESS[2].img} title={PROCESS[2].title} paragraph={PROCESS[2].desc} />
-                  <OneProcess num="4" classn={PROCESS[3].classn} img={PROCESS[3].img} title={PROCESS[3].title} paragraph={PROCESS[3].desc} />
-                  <OneProcess num="5" classn={PROCESS[4].classn} img={PROCESS[4].img} title={PROCESS[4].title} paragraph={PROCESS[4].desc} />
-              </div>
-              <div className="box box2">
-                  <OneProcess num="6" classn={PROCESS[5].classn} img={PROCESS[5].img} title={PROCESS[5].title} paragraph={PROCESS[5].desc} />
-                  <OneProcess num="7" classn={PROCESS[6].classn} img={PROCESS[6].img} title={PROCESS[6].title} paragraph={PROCESS[6].desc} />
-                  <OneProcess num="8" classn={PROCESS[7].classn} img={PROCESS[7].img} title={PROCESS[7].title} paragraph={PROCESS[7].desc} />
-                  <OneProcess num="9" classn={PROCESS[8].classn} img={PROCESS[8].img} title={PROCESS[8].title} paragraph={PROCESS[8].desc} />
-              </div>
-          </div>
-    </div>
-
-
+      <Process2 data={PROCESS} Img={IMG3} title="Our proccess" />
+      
     <Divider classn="divider-left" />
     <div className="WHY">
         <div className="bgCover"  >  <img  src={IMG2} alt="search-engine-optomization services" loading="lazy" /> </div>

@@ -1,19 +1,14 @@
-import React from 'react'
 import Footer from '../Footer'
-import Navbar from '../Navbar'
-
 import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/instagram.png"
 
-import { motion } from 'framer-motion'
-
-import Animation from '../helpers/Animation'
-import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
+import { Divider} from '../patterns/Pattern1'
 
 import IMG1 from "../../assets/bg/b1.jpg"
 import IMG2 from "../../assets/bg/b2.jpg"
 import IMG3 from "../../assets/bg/b3.jpg"
 import MetaTag from '../../pages/MetaTag'
+import Social_Hero from '../helpers/Social_Hero'
 
 
 
@@ -34,59 +29,18 @@ const SERVICES = [
   {icon:"" , title:"Attract Fans and Boost Sales" , desc:"Leveraging coupon codes and discounts, we help you attract more followers to your brand. By creating a sense of exclusivity and preferred status among specific audiences, we increase engagement and drive sales."},
 ]
 
-
-const Divvariant = {
-  hidden:{opacity:0 },
-  visible:{
-    opacity:1,
-    transition : {duration : 1 ,staggerChildren : 0.005},
-    y:5
-  },
-}
-const Pvariant = {
-  hidden:{opacity:0, y:100 },
-  visible:{
-    opacity:1, y:10
-  },
-}
-
-
-
-
 const Instagram = () => {
    return (
     <div className="Instagram shared">
-      <div className="container"> <Navbar /> </div>
       <MetaTag title=" TOP Instagram Marketing Agency in Dubai , UAE"  desc="Boost your brand with our Instagram marketing services in Dubai. Drive targeted engagement and visibility, resulting in high ROI for your business" />
-
-      <Animation />
-      <div className="coverIntro "  data-aos="zoom-in-right" > <img src={FacebookIntro} alt="instagram-page" loading="lazy" /></div>
-
-      <div className="home">
-          <div className="container">
-              <div className="boxImg hidden-img"  data-aos="zoom-in-right" data-aos-delay="400" >  <img src={FacebookCover} alt="instagram-page" loading="lazy" /> </div>
-              <div className="boxs"   data-aos="zoom-in-left" data-aos-delay="600" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Maximize Your Reach and Engagement with Our Instagram Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
-            </div>
-
-        </div>
-      </div>
-
-      {/* <Divider classn="divider-left" /> */}
-      <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="instagram-page" loading="lazy" /> </div>
-        <div className="container" >
-        <div className="box-style" data-aos="fade-up">
-            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("MRM Your Premier Choice for Instagram Marketing Services In Dubai").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("At MRM, we are proud to be known as the best in Dubai for providing top-notch Instagram marketing services. We invite business owners to partner with us and experience the unparalleled potential of Instagram marketing. Our services help you connect with your audience, promote your brand, and increase sales.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-        </div>
-
-        <div className="box-style-2" data-aos="fade-up">
-            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Instagram Marketing with MRM Your Gateway To Success").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            <motion.p  className="h3 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("In today's digital landscape, social media has become a dominant force in the marketing world. Among all the social media platforms, Instagram is a powerful tool for businesses to showcase their products and services to a wider audience. With its visual focus and engaged user base, Instagram offers a unique opportunity for businesses to connect with their customers and build their brands.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-        </div>
-            </div>
-        </div>
+      <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
+      H1="Maximize Your Reach and Engagement with Our Instagram Marketing Services"
+      Img={IMG1} 
+      Span1="MRM Your Premier Choice for Instagram Marketing Services In Dubai"
+      Span2="At MRM, we are proud to be known as the best in Dubai for providing top-notch Instagram marketing services. We invite business owners to partner with us and experience the unparalleled potential of Instagram marketing. Our services help you connect with your audience, promote your brand, and increase sales."
+      Span3="Instagram Marketing with MRM Your Gateway To Success"
+      Span4="In today's digital landscape, social media has become a dominant force in the marketing world. Among all the social media platforms, Instagram is a powerful tool for businesses to showcase their products and services to a wider audience. With its visual focus and engaged user base, Instagram offers a unique opportunity for businesses to connect with their customers and build their brands."
+      />
 
       <Divider classn="divider" />
       <div className="impact">

@@ -1,20 +1,14 @@
-import React from 'react'
 import Footer from '../Footer'
-import Navbar from '../Navbar'
-
 import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/tiktok.png"
-
-import { motion } from 'framer-motion'
-
-import Animation from '../helpers/Animation'
-import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
+import { Divider} from '../patterns/Pattern1'
 
 
 import IMG1 from "../../assets/bg/b1.jpg"
 import IMG2 from "../../assets/bg/b2.jpg"
 import IMG3 from "../../assets/bg/b3.jpg"
 import MetaTag from '../../pages/MetaTag'
+import Social_Hero from '../helpers/Social_Hero'
 const TYPES = [
   {icon :"" ,title:"In-Feed Ads" , desc:"Seamlessly integrated into users' For You Page (FYP), In-Feed Ads capture high in-app engagement. With durations spanning from 5 to 60 seconds, these ads feature compelling call-to-action buttons that lead users to external landing pages. It's the perfect way to blend into users' content feeds while driving them toward your brand's offerings."},
   {icon :"" ,title:"Top View Ads" , desc:"TopView Ads are the first in-feed videos users encounter upon opening the app, guaranteeing a precious three seconds of undivided attention. Crafting impactful content is paramount here, as these initial moments can make or break the user's interest. Our creative team excels at creating content that grabs attention from the get-go."},
@@ -34,67 +28,21 @@ const SERVICES = [
   {icon :"" ,title:"TikTok Social Media Marketing Is Cheap And Easy To Start" , desc:"TikTok offers cost-effective advertising options, making it accessible to businesses of all sizes."},
 ]
 
-
-
-
-
-const Divvariant = {
-  hidden:{opacity:0 },
-  visible:{
-    opacity:1,
-    transition : {duration : 1 ,staggerChildren : 0.005},
-    y:5
-  },
-}
-const Pvariant = {
-  hidden:{opacity:0, y:100 },
-  visible:{
-    opacity:1, y:10
-  },
-}
-
-
-
-
 const Tiktok = () => {
    return (
     <div className="Tiktok shared">
-      <div className="container"> <Navbar /> </div>
       <MetaTag title=" Top TikTok Marketing Agency in Dubai   "  desc="Boost your brand's visibility and sales on TikTok with MRM's advertising services. Maximize your reach and engage your audience effectively. Contact Us Now" />
+      <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
+      H1="Maximize Engagement and Build Your Brand with Our TikTok Marketing Strategies"
+      Img={IMG1} 
+      Span1="Get Ahead of the Competition with MRM's Effective TikTok Marketing Service"
+      Span2="At MRM Agency, we are dedicated to providing you with tangible results through innovative problem-solving and a relentless focus on your success. Our commitment sets us apart, and we invite you to join us on a journey of digital growth and triumph where your brand's story is not only heard but celebrated globally"
+      Span3="The Power of TikTok Marketing for Businesse"
+      Span4="TikTok is a social media platform designed for sharing short videos and music.  Originally created as a creative outlet for young adults and teenagers to showcase their talents in acting, singing, dancing, and comedy,  TikTok has expanded its impact beyond generational boundaries. It has become a hub for entertaining, informative, and engaging videos.  For businesses, TikTok presents a unique opportunity to connect with a younger audience and use demographics as a potent marketing tool. TikTok marketing is a dynamic force in the ever-evolving landscape of digital advertising. If you're interested, let's dive deeper"
+      />
 
-      <Animation />
-      <div className="coverIntro "  data-aos="fade-down"> <img src={FacebookIntro} alt="tiktok-page" loading="lazy" /></div>
-
-      <div className="home">
-          <div className="container">
-              <div className="boxImg hidden-img"   data-aos="fade-down" data-aos-delay="400" >  <img src={FacebookCover} alt="tiktok-page" loading="lazy" /> </div>
-              <div className="boxs"  data-aos="fade-up" data-aos-delay="400" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Maximize Engagement and Build Your Brand with Our TikTok Marketing Strategies").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
-            </div>
-        </div>
-      </div>
-      
-      
-
-      {/* <Divider classn="divider" /> */}
-      <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="tiktok-page" loading="lazy" /> </div>
-        <div className="container" >
-          <div className="box-style" data-aos="fade-down">
-            <motion.p  className="h2 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Get Ahead of the Competition with MRM's Effective TikTok Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("At MRM Agency, we are dedicated to providing you with tangible results through innovative problem-solving and a relentless focus on your success. Our commitment sets us apart, and we invite you to join us on a journey of digital growth and triumph where your brand's story is not only heard but celebrated globally.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-          </div>
-          <div className="box-style-2" data-aos="fade-down" >
-            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("The Power of TikTok Marketing for Businesses").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            <motion.p  className="h3 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("TikTok is a social media platform designed for sharing short videos and music.  Originally created as a creative outlet for young adults and teenagers to showcase their talents in acting, singing, dancing, and comedy,  TikTok has expanded its impact beyond generational boundaries. It has become a hub for entertaining, informative, and engaging videos.  For businesses, TikTok presents a unique opportunity to connect with a younger audience and use demographics as a potent marketing tool. TikTok marketing is a dynamic force in the ever-evolving landscape of digital advertising. If you're interested, let's dive deeper.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-          </div>
-          </div>
-        </div>
-
-
-        <Divider classn="divider-left" />
+      <Divider classn="divider-left" />
       <div className="impact">
-        {/* <Pattern2 /> */}
         <div className="bgCover"  >  <img  src={IMG3} alt="tiktok-page" loading="lazy" /> </div>
             <div className="container">
                 <div className="h1 "  data-aos="fade-down" > Types of TikTok Ads we offer</div>

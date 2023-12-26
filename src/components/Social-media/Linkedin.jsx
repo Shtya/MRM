@@ -1,20 +1,14 @@
 import React from 'react'
 import Footer from '../Footer'
-import Navbar from '../Navbar'
-
 import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/linkedin.png"
 
-
-import { motion } from 'framer-motion'
-
-import Animation from '../helpers/Animation'
 import  { Divider} from '../patterns/Pattern1'
-
 import IMG1 from "../../assets/bg/b1.jpg"
 import IMG2 from "../../assets/bg/b2.jpg"
 import IMG3 from "../../assets/bg/b3.jpg"
 import MetaTag from '../../pages/MetaTag'
+import Social_Hero from '../helpers/Social_Hero'
 
 const TYPES = [
   {icon :"" ,title:" Sponsored Content" , desc:" Promote existing content from your business page to a tailored target demographic. Utilize LinkedIn's robust profile data to create an ideal audience and engage with those genuinely interested in your brand."},
@@ -40,61 +34,19 @@ const SERVICES1 = [
   {icon:"" , title:"Measure and Optimize" , desc:"We closely monitor metrics, adjusting campaigns to improve performance and deliver the best possible outcomes."},
 ]
 
-
-const Divvariant = {
-  hidden:{opacity:0 },
-  visible:{
-    opacity:1,
-    transition : {duration : 1 ,staggerChildren : 0.005},
-    y:5
-  },
-}
-const Pvariant = {
-  hidden:{opacity:0, y:100 },
-  visible:{
-    opacity:1, y:10
-  },
-}
-
-
-
-
 const Linkedin = () => {
    return (
     <div className="Linkedin shared">
-      <div className="container"> <Navbar /> </div>
       <MetaTag title=" Best LinkedIn Advertising Services in Dubai, UAE "  desc="Looking for B2B  marketing agency in Dubai? With MRM you can Reach decision-makers, establish thought leadership, and generate high-quality B2B leads" />
-
-      <Animation />
-      <div className="coverIntro " data-aos="fade-down"> <img src={FacebookIntro} title='"lksd' alt="FacebookCover" /></div>
-
-      <div className="home">
-          <div className="container">
-              <div className="boxImg hidden-img"  data-aos="zoom-in-left" data-aos-delay="400" >  <img src={FacebookCover} alt="FacebookCover" /> </div>
-              <div className="boxs"  data-aos="zoom-in-right" data-aos-delay="600" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Grow Your Business with Our Comprehensive LinkedIn Marketing Solutions").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
-            </div>
-
-        </div>
-      </div>
+      <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
+      H1="Grow Your Business with Our Comprehensive LinkedIn Marketing Solutions"
+      Img={IMG1} 
+      Span1="Partner with MRM for Results-Driven LinkedIn Marketing in Dubai "
+      Span2="At MRM, we strive to captivate and engage your audience on LinkedIn by going above and beyond. Our team specializes in creating custom ads featuring compelling content, such as short videos, GIFs, and images. As the leading social media agency in Dubai, our solutions are meticulously optimized and tailored to meet your objectives and connect with your target audiences. We excel at identifying the right audience and monitoring brand conversations on social media. LinkedIn's powerful targeting capabilities enable us to reach individuals based on their occupation, job title, corporate position, location, and more, making it an ideal platform for B2B clients to generate high-quality leads."
+      Span3="The Power of LinkedIn Marketing for Businesses"
+      Span4="LinkedIn is certainly a great platform for professionals to connect with each other from all over the world. With over 1.5 billion active users, it provides a unique opportunity to enhance personal brand and professional influence. By using LinkedIn, you can enhance your professional influence and expand your social network."
+      />
       
-
-      {/* <Divider classn="divider" /> */}
-      <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="Linkedin-page" loading="lazy" /> </div>
-        <div className="container" >
-        <div className="box-style" data-aos="fade-up">
-            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Partner with MRM for Results-Driven LinkedIn Marketing in Dubai ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("At MRM, we strive to captivate and engage your audience on LinkedIn by going above and beyond. Our team specializes in creating custom ads featuring compelling content, such as short videos, GIFs, and images. As the leading social media agency in Dubai, our solutions are meticulously optimized and tailored to meet your objectives and connect with your target audiences. We excel at identifying the right audience and monitoring brand conversations on social media. LinkedIn's powerful targeting capabilities enable us to reach individuals based on their occupation, job title, corporate position, location, and more, making it an ideal platform for B2B clients to generate high-quality leads.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-</div>
-<div className="box-style-2" data-aos="fade-up">
-            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("The Power of LinkedIn Marketing for Businesses").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-            <motion.p  className="h3 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("LinkedIn is certainly a great platform for professionals to connect with each other from all over the world. With over 1.5 billion active users, it provides a unique opportunity to enhance personal brand and professional influence. By using LinkedIn, you can enhance your professional influence and expand your social network.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
-</div>
-            </div>
-        </div>
-
-
         <Divider classn="divider-left" />
       <div className="impact">
         <div className="bgCover"  >  <img  src={IMG2} alt="Linkedin-page" loading="lazy" /> </div>

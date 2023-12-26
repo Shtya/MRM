@@ -1,7 +1,6 @@
 
 import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/Intro&Cover/cover-social.jpg"
-import OneSocial from '../components/OneSocial'
 
 import   F from "../assets/Icons/facebook.png"
   import X from "../assets/Icons/x.png"
@@ -35,6 +34,11 @@ import IMG2 from "../assets/bg/b2.jpg"
 import IMG3 from "../assets/bg/b3.jpg"
 import Contact from '../components/Contact'
 import MetaTag from './MetaTag'
+import Qutation from "../components/helpers/Qutation"
+import Social_media from "../components/helpers/Social_media"
+import ImpactComponent from "../components/helpers/Impact"
+import Process from "../components/helpers/Process"
+
 
 const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising", "Tiktok Advertising"]
 const Paid = [ 
@@ -95,79 +99,21 @@ const S_Media = () => {
           </div>
       </div>
       </div>
+      
+      <Qutation Img={IMG1} title1="Experience the Power of Paid Amplification" desc1="We create paid campaigns with specific goals, such as boosting brand awareness, engaging with audiences, generating leads, and driving sales. We understand that success varies for each business, so we tailor our campaigns to align with your unique Key Performance Indicators.  Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers. Connect with your target audience on one of their most frequented platforms."  />
+      
+      <Divider classn="divider-left" />
+      <Social_media Img ={IMG2} title ="We offer standout paid campaigns for your business" desc ="" data={Paid} />
 
       <Divider classn="divider" />
-      <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG1} alt="media buying services" loading="lazy" /> </div>
-        <div className="container">
-              <div className="h2 " data-aos="zoom-in-up" > Experience the Power of Paid Amplification</div>
-              <p className="h3" data-aos="zoom-in-up" data-aos-delay="300" > We create paid campaigns with specific goals, such as boosting brand awareness, engaging with audiences, generating leads, and driving sales. We understand that success varies for each business, so we tailor our campaigns to align with your unique Key Performance Indicators.  Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers. Connect with your target audience on one of their most frequented platforms.</p>
-        </div>
-        </div>
-
-        <Divider classn="divider-left" />
-        <div className="social-media">
-        <div className="bgCover"  >  <img  src={IMG2} alt="media buying services" loading="lazy" /> </div>
-        <div className="container">
-            <h3 className='h1' data-aos="fade-up">We offer standout paid campaigns for your business</h3>
-            <div className="boxs" data-aos="fade-up">
-            {
-                Paid.map((e,index)=> ( <OneSocial key={index} Img={e.img} title={e.title} desc={e.desc} path={e.path} classn={e.classn} /> ))
-            }
-            </div>
-        </div>
-        </div>
-
-        <Divider classn="divider" />
-        <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG3} alt="media buying services" loading="lazy" /> </div>
-            <div className="container">
-                <div className="h1 clip " data-aos="fade-up"  >Impact of what you'll get</div>
-                <div className="phead " data-aos="fade-up"  >MRM is the preferred choice for social media marketing services in Dubai.  We specialize in tailoring effective strategies that fit your brand and objectives. Here's how we can help</div>
-                <div className="boxs" data-aos="fade-up">
-                  {
-                    Impact.map((e,index)=> (
-                      <div className="box" key={index}>
-                          <div className="coverImg " data-aos="fade-up"> <img src={e.img} alt="media buying services" loading="lazy" /> </div>
-                          <div className="text">
-                              <div className="h2 " data-aos="fade-up">{e.title} </div>
-                              <div className="p " data-aos="fade-up">{e.desc} </div>
-                          </div>
-                      </div>
-                    ))
-                  }
-                </div>
-            </div>
-        </div>
-
-
-        <Divider classn="divider-left" />
-        <div className="process3">
-        <div className="bgCover"  >  <img  src={IMG2} alt="media buying services" loading="lazy" /> </div>
-            <div className="container">
-                <div className="h1 clip " data-aos="fade-left">Our Process</div>
-
-                <div className="timeline">
-                  {
-                    process.map((e,index)=>(
-                      <div className="check-point" key={index} data-aos="fade-up" >
-                        <div className="number " data-aos="fade-left"> 0{index +1} </div>
-                        <div className='inner-box'>
-                          <span className='hidden-img' ><img src={e.img} alt="media buying services" loading="lazy" /></span>
-                          <h2 className="h2 clip " data-aos="fade-left">{e.title}</h2>
-                          <p className="p " data-aos="fade-left"> {e.desc}</p>
-                      </div>
-                      </div>
-                    ))
-                  }
-                </div>
-            </div>
-        </div>
-
+      <ImpactComponent classn="impact" Img={IMG3}   title="Impact of what you'll get" data={Impact} desc="MRM is the preferred choice for social media marketing services in Dubai.  We specialize in tailoring effective strategies that fit your brand and objectives. Here's how we can help" nameServices="media buying services"  />
         
-        <Contact />
-        <Footer />
-      </div>
+      <Divider classn="divider-left" />
+      <Process Img={IMG2} title="Our Process" desc="" data={process}/>
+      
+      <Contact />
+      <Footer />
+    </div>
   )
 }
 
