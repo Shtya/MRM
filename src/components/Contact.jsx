@@ -1,11 +1,11 @@
-import { useState  ,useRef} from 'react'
+import { useState  ,useRef, memo} from 'react'
 import Animation from './helpers/Animation';
 import FormImg from "../assets/Form.jpg"
 import IMG1 from "../assets/bg/b1.jpg"
 import emailjs from '@emailjs/browser';
 import { Pattern9 } from './patterns/Pattern1';
 
-const Contact = ({title , desc , onHere}) => {
+const Contact = memo(({title , desc , onHere}) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -32,7 +32,7 @@ const Contact = ({title , desc , onHere}) => {
       <div className="container">
 
       <div className="box box-img " data-aos="fade-right"  >
-          <img  src={FormImg} alt="contact" loading="lazy" />
+          <img  src={FormImg} alt="Smiling man with laptop on geometric patterned background with text 'We're Here to Help You”" loading="lazy" />
         </div>
 
         <div   className="box" data-aos="fade-left" data-aos-delay="200"  >
@@ -57,6 +57,6 @@ const Contact = ({title , desc , onHere}) => {
     </section>
     </>
   )
-}
+})
 
 export default Contact

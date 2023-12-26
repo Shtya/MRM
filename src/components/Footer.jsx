@@ -1,9 +1,12 @@
 import Logo from "../assets/Logo1.png"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Pattern9 } from './patterns/Pattern1'
 import IMG3 from "../assets/bg/b1.jpg"
+import { Social_Media } from "../App"
 
-const Footer = ({appear}) => {
+const Footer = () => {
+  const {pathname} = useLocation() ;
+
   return (
     <>
     <Pattern9  />
@@ -15,10 +18,10 @@ const Footer = ({appear}) => {
         <img src={Logo} alt="footer" loading="lazy" data-aos="fade-up" data-aos-delay="50" />
         <div className="phead" data-aos="fade-up" data-aos-delay="100">We Don't Create Ads ,We Build Successful Campaigns</div>
         <ul className='social last-social'>
-          <li data-aos="fade-up" data-aos-delay="50"> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-facebook-f"></i>    </div> </a></li>
-          <li data-aos="fade-up" data-aos-delay="150"> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-instagram"></i></div> </a></li>
-          <li data-aos="fade-up" data-aos-delay="200"> <a className="Iicon"> <div className="style"><i className="fa-brands fa-whatsapp"></i>        </div> </a></li>
-          <li data-aos="fade-up" data-aos-delay="250"> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-linkedin-in"></i></div> </a></li>
+          <li data-aos="fade-up" data-aos-delay="50">  <Link to={Social_Media[0]} target="_blank" className="Iicon"> <div className="style"> <i className="fa-brands fa-facebook-f"></i>    </div> </Link></li>
+          <li data-aos="fade-up" data-aos-delay="150"> <Link to={Social_Media[1]} target="_blank" className="Iicon"> <div className="style"> <i className="fa-brands fa-instagram"></i></div> </Link></li>
+          <li data-aos="fade-up" data-aos-delay="200"> <Link to={Social_Media[3]} target="_blank" className="Iicon"> <div className="style"><i className="fa-brands fa-whatsapp"></i>        </div> </Link></li>
+          <li data-aos="fade-up" data-aos-delay="250"> <Link to={Social_Media[2]} target="_blank" className="Iicon"> <div className="style"> <i className="fa-brands fa-linkedin-in"></i></div> </Link></li>
         </ul>
       </div>
 
@@ -34,7 +37,7 @@ const Footer = ({appear}) => {
           <h2 className='h2 clip'>Quick Links</h2>
           <li > <Link to="/contact-us"> contact us </Link></li>
           <li > <Link to="/about-us"> about us </Link></li>
-          <li > <Link to="/landing"> services </Link></li>
+          <li > <a href={pathname!= "/" ? "/#Services" : "#Services"}> services </a></li>
           <li > <Link to="/blog"> blog </Link></li>
         </ul>
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { memo, useEffect, useState } from 'react'
 import Slider_1_Img from './Slide/Slider_1_Img';
 import IMG3 from "../assets/bg/b3.jpg"
 import baseURL from '../API/API';
@@ -33,7 +33,7 @@ var settings = {
 };
 
 
-const Blog = () => {
+const Blog = memo(() => {
   const [blogs , setdata] = useState()
   const {pathname} = useLocation() ;
   useEffect(_=> { baseURL.get("").then(e => setdata(e.data.data)) } ,[pathname])
@@ -48,6 +48,6 @@ const Blog = () => {
 
     </section>
   )
-}
+})
 
 export default Blog

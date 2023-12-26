@@ -15,8 +15,11 @@ import Icon_5 from "../assets/Icon/process (6).png" ;
 import Animation from '../components/helpers/Animation'
 import{  Pattern9 } from '../components/patterns/Pattern1'
 import IMG2 from "../assets/bg/b3.jpg"
+import IMG1 from "../assets/bg/b1.jpg"
 import Contact from '../components/Contact'
 import MetaTag from './MetaTag'
+import Hero from '../components/helpers/Hero'
+import Qutation from '../components/helpers/Qutation'
 
 const process = [
   {img: Icon_1, title:" Planning" ,desc:"During planning, we consider every detail to create signage that resonates with your brand and clients.Effective planning saves time and resources."},
@@ -31,36 +34,17 @@ const M_Signages = () => {
   
   return (
     <div className="M_Signages landing">
-      <div className="container"> <Navbar /> </div>
       <MetaTag title=" Top Signage Companies in Dubai for Custom Designs" desc="From LED to indoor and outdoor options, MRM provides professional signage solutions in Dubai. Contact us to start your journey to success." />
       <Animation />
-      <div className="coverIntro" data-aos="zoom-in-left"> <img src={ImgIntro} alt="signages services" loading="lazy" /></div>
+      <div className="container"> <Navbar /> </div>
+      <Hero H1="Craft Your Vision, Achieve Your Goals " H2="MRM's End-to-End Custom Signage Solutions, from Concept to Installation in the UAE" H3="MRM produces high-quality custom signs in the UAE using premium materials and state-of-the-art equipment to ensure your signage is truly outstanding" Img={ImgSection} nameServices="signages services" Imgintro={ImgIntro} />
+      <Qutation Img={IMG1} title1="MRM promises excellence in signage installation, blending your vision with our expertise"  desc1="MRM's team of experts specializes in developing custom sign designs based on clients' requirements. we take care of every project aspect, from the concept and design phase to production and installation. MRM is committed to delivering quality service and ensuring customer satisfaction. Clients can trust MRM to handle everything related to their custom signage installation." />
 
-      <div className="home">
-          <div className="container">
-              <div className="boxImg" data-aos="zoom-in-left" data-aos-delay="400" >  <img src={ImgSection} alt="signages services" loading="lazy" /> </div>
-              <div className="boxs" data-aos="zoom-in-right" data-aos-delay="600">
-                  <h2 className='h1  '> Craft Your Vision, Achieve Your Goals </h2>
-                  <h2 className='h2  '>MRM's End-to-End Custom Signage Solutions, from Concept to Installation in the UAE</h2>
-                  <p className='p '>MRM produces high-quality custom signs in the UAE using premium materials and state-of-the-art equipment to ensure your signage is truly outstanding.</p>
-
-            </div>
-        </div>
-      </div>
-      
       <Pattern9 />
-      <div className="quotation">
-        <div className="bgCover"  >  <img  src={IMG2} alt="signages services" loading="lazy" /> </div>
-            <div className="container">
-                <div className="h2 " data-aos="fade-up">MRM promises excellence in signage installation, blending your vision with our expertise</div>
-                <div className="h3" data-aos="fade-up" data-aos-delay="200">MRM's team of experts specializes in developing custom sign designs based on clients' requirements.<br/> we take care of every project aspect, from the concept and design phase to production and installation.<br/> MRM is committed to delivering quality service and ensuring customer satisfaction.<br/> Clients can trust MRM to handle everything related to their custom signage installation.</div>
-            </div>
-        </div>
+      <SliderOUTDOOR />
 
-        <Pattern9 />
-        <SliderOUTDOOR />
-        <Pattern9 />
-        <SliderINDOOR />
+      <Pattern9 />
+      <SliderINDOOR />
 
       <Pattern9 />
       <div className="process2">
@@ -83,7 +67,9 @@ const M_Signages = () => {
                   }
                 </div>
             </div>
-        </div>
+      </div>
+
+
         <Contact />
       <Footer />
       </div>

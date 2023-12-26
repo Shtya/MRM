@@ -8,9 +8,9 @@ const Animation = () => {
   const {pathname} = useLocation() ;
   useEffect(() => {
     AOS.init({
-      delay: 50,
+      delay: 10,
       offset: -10 ,
-        duration: 800,
+        duration: 600,
         easing: 'ease-in-out-back'
     });
     AOS.refresh();

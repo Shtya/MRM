@@ -16,7 +16,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(221, 145, 145);
 }
 .BlogSwiper .carousel .inner-carousel {
   width: 100%;
@@ -200,7 +199,9 @@ html {
   }
 }
 .GALLERY .swiper .swiper-slide .coverImg img {
-  background-color: white;
+  background-color: rgba(24, 24, 24, 0.4705882353);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   width: 100%;
   height: 100%;
   -o-object-fit: fill;
@@ -219,6 +220,26 @@ html {
   background: #444;
   border-radius: 50%;
   transition: 0.3s;
+}
+
+.breadcrumb {
+  background-color: #181818;
+  padding: 10px;
+  position: absolute;
+  top: 90vh;
+}
+.breadcrumb ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb li:not(:last-child):after {
+  content: ">";
+  margin: 0 5px;
+  color: #666;
 }
 
 /*================================ Header ================================*/
@@ -997,7 +1018,7 @@ header section video {
 .Who .container .box {
   flex: 1.5;
 }
-.Who .container .box h2 {
+.Who .container .box h1 {
   text-align: left;
 }
 .Who .container .box .p {
@@ -1012,14 +1033,14 @@ header section video {
 .Who .container .box .info .box-child {
   margin-top: 20px;
 }
-.Who .container .box .info .box-child h3 {
+.Who .container .box .info .box-child h2 {
   display: flex;
   align-items: center;
   gap: 5px;
   margin-bottom: 5px;
   color: var(--alt-alt-main);
 }
-.Who .container .box .info .box-child h3 i {
+.Who .container .box .info .box-child h2 i {
   width: 18px;
   height: 18px;
   display: flex;
@@ -9138,7 +9159,6 @@ footer .container .bottom .last a {
 .Term .container .content h2 {
   font-size: 1rem;
   color: white;
-  font-family: "Noto Sans";
   margin-bottom: 5px;
   position: relative;
   padding-left: 10px;

@@ -33,8 +33,7 @@ import Dashboard from './blog/Dashboard'
 import BlogsAll from './blog/BlogsAll'
 import E_post from './blog/E_post'
 import { AnimatePresence } from 'framer-motion'
-
-
+export const Social_Media = ["https://www.facebook.com/MRMadvertisingDubai" , "https://www.instagram.com/mrmadvertising/" , "https://www.linkedin.com/company/mrm-advertising-media" , "https://api.whatsapp.com/send?phone=+971561384496&text=Hello%2C%20world!"]
 
 const App = () => {
 

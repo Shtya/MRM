@@ -46,13 +46,13 @@ const Blogs = () => {
       }
     ]
   };
+
   return (
     <div className='blog-page'>
       <MetaTag title="Digital Marketing Updates and Tips for Business Growth " desc="Stay ahead with the latest digital marketing updates, Insights and expert tips for your Digital business growth with MRM`s informative blogs " />
-
       <Animation />
       <div className="container"> <Navbar /></div>
-        <div className="coverIntro"> <img src={IntroImg} alt="blogs" loading="lazy" /></div>
+        <div className="coverIntro"> <img src={IntroImg} alt="Chic 'OUR BLOG' text over a laptop on a desk" loading="lazy" /></div>
         <Divider classn="divider divider-top" />
         <div className="quotation">
         <div className="bgCover"  >  <img  src={IMG1} alt="blogs" loading="lazy" /> </div>

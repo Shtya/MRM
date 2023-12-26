@@ -10,16 +10,18 @@ import { Divider } from '../components/patterns/Pattern1'
 import IMG2 from "../assets/bg/b2.jpg"
 import IMG1 from "../assets/bg/b2.jpg"
 import MetaTag from './MetaTag'
+import { Helmet } from "react-helmet"
 
 const AboutUs = () => {
 
   const vission_mission = [ 
-    {title:"Our Vision" , img:ImgBox2 , desc :"Our goal is to become one of the leading figures in the industry, known for our excellence. We are dedicated to being the preferred choice for individuals and businesses aiming to elevate their work to the highest standards. Ultimately, we aim to be a primary source of original and creative ideas, providing a pathway to unlock creativity and achieve remarkable results."} ,
-    {title:"Our Mission" , img:ImgBox1 , desc :"Our mission is to empower businesses and brands to succeed in the constantly evolving realms of marketing and digital solutions. We are committed to delivering outstanding outcomes by leveraging our knowledge in advertising, branding, and innovative strategies."} ,
+    {title:"Our Vision",   alt:"Golden 'VISION' text on a dark reflective grid    " , img:ImgBox2 , desc :"Our goal is to become one of the leading figures in the industry, known for our excellence. We are dedicated to being the preferred choice for individuals and businesses aiming to elevate their work to the highest standards. Ultimately, we aim to be a primary source of original and creative ideas, providing a pathway to unlock creativity and achieve remarkable results."} ,
+    {title:"Our Mission" , alt:"Shiny 'MISSION' text on a stark grid backdrop." , img:ImgBox1 , desc :"Our mission is to empower businesses and brands to succeed in the constantly evolving realms of marketing and digital solutions. We are committed to delivering outstanding outcomes by leveraging our knowledge in advertising, branding, and innovative strategies."} ,
   ]
   return (
     <div className='about-us'>
-      <MetaTag title="Best Advertising & Digital Marketing Company in Dubai " desc="Best Advertising and Digital Marketing company in Dubai, helping Businesses achieve success and growth by offering Full Marketing services" />
+      <MetaTag  title="Best Advertising & Digital Marketing Company in Dubai " desc="Best Advertising and Digital Marketing company in Dubai, helping Businesses achieve success and growth by offering Full Marketing services" />
+      <Helmet > <script type="application/ld+json">{`  "@context": "https://schema.org",  "@type": "ContactPage",  "name": "mrm advertising",  "url": "https://mrmadvertisingdubai.com/about-us",  "description": "Best Advertising and Digital Marketing company in Dubai, helping Businesses achieve success and growth by offering Full Marketing services",  "address": {    "@type": "PostalAddress",    "streetAddress": "123 Street Name",    "addressLocality": "dubai",    "addressRegion": "State",    "postalCode": "0000",    "addressCountry": "dubai"  },  "contactPoint": {    "@type": "ContactPoint",    "telephone": "+971561384496",    "contactType": "customer service",    "areaServed": "US" }`}</script> </Helmet>
       <Animation />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro hidden-img"> <img src={ImgIntro}  /></div>

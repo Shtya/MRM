@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Social_Media } from '../App'
 
 const SlideNav = ({share , whats}) => {
 
@@ -12,7 +13,7 @@ const SlideNav = ({share , whats}) => {
 
   return (
     <div className='slidenav' style={{display : `${top ? "flex" : "none"}`}}>
-      <a style={{display:whats ? "none" : "flex" }} target='_black' href="https://api.whatsapp.com/send?phone=+971561384496&text=Hello%2C%20world!" className='active'> <i  className={`fa-brands fa-whatsapp whatsapp ${top ? "show-btn":""}`}></i></a>
+      <a style={{display:whats ? "none" : "flex" }} target='_black' href={Social_Media[3]} className='active'> <i  className={`fa-brands fa-whatsapp whatsapp ${top ? "show-btn":""}`}></i></a>
       {share && <a   > <i  className={`fa-solid fa-share-nodes floatIcon `}></i> </a> }
       <a   > <i onClick={handleScroll} className={`fa-solid fa-chevron-up floatIcon ${top ? "show-btn":""}`}></i> </a>
     </div>

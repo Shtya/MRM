@@ -1,7 +1,7 @@
 import IMG1 from "../assets/bg/b1.jpg"
 import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/Intro&Cover/cover-webdesign.jpg"
-import OneSocial from '../components/OneSocial'
+
 
 import Social_1 from "../assets/Icon/_1.png"
 import Social_2 from "../assets/Icon/_2.png"
@@ -25,6 +25,8 @@ import Footer from '../components/Footer'
 import Contact from '../components/Contact'
 import SliderWEB from '../components/SLIDER_MRM/SliderWEB'
 
+import Qutation  from "../components/helpers/Qutation"
+import Social_media from "../components/helpers/Social_media"
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_4 , title:"E-commerce Development Services   " , desc:"In today's fast-paced digital landscape, having a user-friendly and robust online store is an advantage and a necessity for e-commerce businesses. At MRM Agency, we offer top-notch E-commerce Development Services that can transform your online business and enhance your brand's presence. Whether you're starting a new e-commerce venture or want to improve an existing one, our team is here to turn your e-commerce aspirations into reality."},
@@ -77,33 +79,18 @@ const S_WebDesign = () => {
         </div>
       </div>
 
-      {/* <Divider classn="divider" /> */}
-      <Pattern9 />
-      <div className="quotation">
-      <div className="bgCover"> <img  src={IMG1} alt="web design services" loading="lazy" /> </div>
-            <div className="container" >
-            <p className='h2 'data-aos="zoom-in" >MRM is Your Partner in Web Development and Design in Dubai, UAE</p>
-            <p className='h3 ' data-aos="zoom-in" data-aos-delay="200">MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality.</p>
-            </div>
-        </div>
+      
+        <Qutation Img={IMG1} title1="MRM is Your Partner in Web Development and Design in Dubai, UAE" desc1="MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality." />
+        
 
-        {/* <Divider classn="divider-left" /> */}
         <Pattern9 />
-        <div className="social-media">
-          <div className="bgCover"> <img  src={IMG1} alt="web design services" loading="lazy" /> </div>
-        <div className="container">
-            <h3 data-aos="fade-up" className='h1 '>Our Specializations</h3>
-            <div data-aos="fade-up" className="phead ">We specialize in the following web design and development services</div> 
-            <div className="boxs">
-            { SocialMedia.map((e,index)=> ( <OneSocial key={index} Img={e.img} title={e.title} desc={e.desc} classn={e.classn} /> ))}
-            </div>
-        </div>
-        </div>
+        
+        <Social_media data={SocialMedia} Img={IMG1} title="Our Specializations" desc="We specialize in the following web design and development services" />
 
 
         <Pattern9 classn="Abrotch" />
         <div className="our_Approach">
-        <div className="bgCover" data-aos="zoom-in"> <img  src={IMG1} alt="web design services" loading="lazy" /> </div>
+        <div className="bgCover" > <img  src={IMG1} alt="web design services" loading="lazy" /> </div>
             <div className="container">
                 <div className="circle">
                     <div className='text'>
@@ -128,11 +115,14 @@ const S_WebDesign = () => {
         </div>
       
         <Pattern9 />
+        
         <SliderWEB    />
 
       
-      <Contact />
-      <Footer />
+        <Contact />
+
+      
+        <Footer />
       </div>
   )
 }

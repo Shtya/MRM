@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import IMG3 from "../assets/bg/b1.jpg"
+import { memo } from 'react';
 
 const services = [
   {route:"/social-media-marketing",     animate:"fade-up",  title:"social media marketing"       , icon:"clip  fa-solid fa-bullhorn "        ,desc:"Enhance your online presence with our social media management." ,                                                                 },
@@ -13,13 +14,13 @@ const services = [
   {route:"/seo",        animate:"fade-up",  title:"SEO "                         , icon:"clip  fa-solid fa-magnifying-glass" ,desc:"Drive organic traffic and secure top search engine rankings with our expert SEO services.  " ,                                     },
 ];
 
-function Services() {
+const Services = memo(()=> {
 
   return (
     <>
     <section className='services search-edite' id='Services'>
     <div className="bgCover"  >  <img  src={IMG3} alt="services" loading="lazy" /> </div>
-       <h2 className='h1 clip ' data-aos="fade-up"  >OUR SERVICES</h2> 
+       <h1 className='h1 clip ' data-aos="fade-up"  >OUR SERVICES</h1> 
       
       <div className="container">
       <ul className='ul' data-aos="fade-up" >
@@ -38,7 +39,7 @@ function Services() {
     </section>
     </>
   );
-}
+})
 
 
 export default Services

@@ -12,17 +12,7 @@ const Navbar1 = () => {
     window.addEventListener("scroll" , handelScroll)
     return _=> window.removeEventListener("scroll" , handelScroll)} ,[ window])
   useEffect(_=>{
-let navbar = document.querySelector(".Navbar1 .navbar");
-let searchBox = document.querySelector(".Navbar1 .search-box .bx-search");
 
-searchBox.addEventListener("click", ()=>{
-  navbar.classList.toggle("showInput");
-  if(navbar.classList.contains("showInput")){
-    searchBox.classList.replace("bx-search" ,"bx-x");
-  }else {
-    searchBox.classList.replace("bx-x" ,"bx-search");
-  }
-});
 
 let navLinks = document.querySelector(" .Navbar1 .nav-links");
 let menuOpenBtn = document.querySelector(" .Navbar1 .navbar .bx-menu");
@@ -40,8 +30,6 @@ htmlcssArrow.onclick = function() {
  navLinks.classList.toggle("show1");
 }
   } ,[])
-
-
   return (
   <div className="Navbar1" >
     <Animation />
@@ -73,10 +61,6 @@ htmlcssArrow.onclick = function() {
             <li data-aos="fade-down" data-aos-delay="500" onClick={_=> Navigate("/about-us")}><Link to="/about-us">About Us</Link></li>
             <li data-aos="fade-down" data-aos-delay="600" onClick={_=> Navigate("/contact-us")}><Link to="/contact-us"> Contact Us</Link></li>
           </ul>
-        </div>
-        <div className="search-box" data-aos="fade-down" data-aos-delay="700">
-          <i className='bx bx-search'></i>
-          <div className="input-box"> <input type="text" placeholder="Search..."/>  </div>
         </div>
       </div>
     </nav>

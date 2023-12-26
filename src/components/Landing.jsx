@@ -1,8 +1,9 @@
+import react , {memo} from "react" ;
 import Navbar from './Navbar';
 import Dashboard from "./Dashboard.mp4"
 import IMG3 from "../assets/bg/b3.jpg"
 
-const Landing = () => {
+const Landing = memo(() => {
 
   return (
     <header  >
@@ -15,6 +16,6 @@ const Landing = () => {
         </section>
     </header>
   )
-}
+})
 
 export default Landing

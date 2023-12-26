@@ -26,13 +26,13 @@ import Exhibition7 from "../assets/gallery/exhibitionStand/Exhibition7.jpg"
 import Exhibition8 from "../assets/gallery/exhibitionStand/Exhibition8.jpg"
 import Exhibition9 from "../assets/gallery/exhibitionStand/Exhibition9.jpg"
 
-import Branding1 from  "../assets/gallery/branding/branding (1).jpg"
-import Branding2 from  "../assets/gallery/branding/branding (2).jpg"
-import Branding3  from "../assets/gallery/branding/branding (3).jpg"
-import Branding4  from "../assets/gallery/branding/branding (4).jpg"
-import Branding5  from "../assets/gallery/branding/branding (5).jpg"
-import Branding6  from "../assets/gallery/branding/branding (6).jpg"
-import Branding7  from "../assets/gallery/branding/branding (7).jpg"
+import Branding1 from  "../assets/gallery/branding/branding1.jpg"
+import Branding2 from  "../assets/gallery/branding/branding2.jpg"
+import Branding3  from "../assets/gallery/branding/branding3.jpg"
+import Branding4  from "../assets/gallery/branding/branding4.jpg"
+import Branding5  from "../assets/gallery/branding/branding5.jpg"
+import Branding6  from "../assets/gallery/branding/branding6.jpg"
+import Branding7  from "../assets/gallery/branding/branding7.jpg"
 
 
 import Photography1  from "../assets/gallery/photography/photo1.jpg"
@@ -89,8 +89,9 @@ import LED1 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-01.jpg"
 import LED2 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-02.jpg"
 import LED3 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-03.jpg"
 import LED4 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-04.jpg"
-import LED5 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-07.jpg"
+import LED5 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-05.jpg"
 import LED6 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-06.jpg"
+import LED7 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-07.jpg"
 
 import officeSign1 from "../assets/gallery/4.Office-Sign/Office Sign-01.jpg"
 import officeSign2 from "../assets/gallery/4.Office-Sign/Office Sign-02.jpg"
@@ -124,44 +125,48 @@ import Menu6 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-06
 import Building1 from "../assets/gallery/8.Building/Building Wrap 600x600-01.jpg"
 import Building2 from "../assets/gallery/8.Building/Building Wrap 600x600-02.jpg"
 import Building3 from "../assets/gallery/8.Building/Building Wrap 600x600-03.jpg"
+import Building4 from "../assets/gallery/8.Building/Building Wrap 600x600-04.jpg"
+import Building5 from "../assets/gallery/8.Building/Building Wrap 600x600-05.jpg"
+import Building6 from "../assets/gallery/8.Building/Building Wrap 600x600-06.jpg"
+import Building7 from "../assets/gallery/8.Building/Building Wrap 600x600-07.jpg"
 
 
 
 
-import Logo1 from "../assets/gallery/branding/logo/branding (2).jpg"
-import Logo2 from "../assets/gallery/branding/logo/branding (2).jpg"
-import Logo3 from "../assets/gallery/branding/logo/branding (2).jpg"
-import Logo4 from "../assets/gallery/branding/logo/branding (2).jpg"
+import Logo1 from "../assets/gallery/branding/branding2.jpg"
+import Logo2 from "../assets/gallery/branding/branding2.jpg"
+import Logo3 from "../assets/gallery/branding/branding2.jpg"
+import Logo4 from "../assets/gallery/branding/branding2.jpg"
 
-import Graphic1 from "../assets/gallery/branding/graphic/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
-import Graphic2 from "../assets/gallery/branding/graphic/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
-import Graphic3 from "../assets/gallery/branding/graphic/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
-import Graphic4 from "../assets/gallery/branding/graphic/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
+import Graphic1 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
+import Graphic2 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
+import Graphic3 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
+import Graphic4 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
 
-import Packaging1 from "../assets/gallery/branding/packaging/branding (5).jpg"
-import Packaging2 from "../assets/gallery/branding/packaging/branding (6).jpg"
-import Packaging3 from "../assets/gallery/branding/packaging/branding (7).jpg"
-import Packaging4 from "../assets/gallery/branding/packaging/branding (7).jpg"
+import Packaging1 from "../assets/gallery/branding/branding5.jpg"
+import Packaging2 from "../assets/gallery/branding/branding6.jpg"
+import Packaging3 from "../assets/gallery/branding/branding7.jpg"
+import Packaging4 from "../assets/gallery/branding/branding7.jpg"
 
-import SocialMedia1 from "../assets/gallery/branding/socialmedia/branding (1).jpg"
-import SocialMedia2 from "../assets/gallery/branding/socialmedia/branding (1).jpg"
-import SocialMedia3 from "../assets/gallery/branding/socialmedia/branding (1).jpg"
-import SocialMedia4 from "../assets/gallery/branding/socialmedia/branding (1).jpg"
+import SocialMedia1 from "../assets/gallery/branding/branding1.jpg"
+import SocialMedia2 from "../assets/gallery/branding/branding1.jpg"
+import SocialMedia3 from "../assets/gallery/branding/branding1.jpg"
+import SocialMedia4 from "../assets/gallery/branding/branding1.jpg"
 
-import stationery1 from "../assets/gallery/branding/stationery/WhatsApp Image 2023-12-17 at 09.12.41_c95c6832.jpg"
-import stationery2 from "../assets/gallery/branding/stationery/WhatsApp Image 2023-12-17 at 09.12.42_1dccd6f8.jpg"
-import stationery3 from "../assets/gallery/branding/stationery/WhatsApp Image 2023-12-17 at 09.12.42_1dccd6f8.jpg"
-import stationery4 from "../assets/gallery/branding/stationery/WhatsApp Image 2023-12-17 at 09.12.42_1dccd6f8.jpg"
+import stationery1 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.41_c95c6832.jpg"
+import stationery2 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_1dccd6f8.jpg"
+import stationery3 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_1dccd6f8.jpg"
+import stationery4 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_1dccd6f8.jpg"
 
-import uniform1 from "../assets/gallery/branding/uniform/branding (3).jpg"
-import uniform2 from "../assets/gallery/branding/uniform/branding (3).jpg"
-import uniform3 from "../assets/gallery/branding/uniform/branding (3).jpg"
-import uniform4 from "../assets/gallery/branding/uniform/branding (3).jpg"
+import uniform1 from "../assets/gallery/branding/branding3.jpg"
+import uniform2 from "../assets/gallery/branding/branding3.jpg"
+import uniform3 from "../assets/gallery/branding/branding3.jpg"
+import uniform4 from "../assets/gallery/branding/branding3.jpg"
 
-import vehicles1 from "../assets/gallery/branding/vehicles/branding (4).jpg"
-import vehicles2 from "../assets/gallery/branding/vehicles/branding (4).jpg"
-import vehicles3 from "../assets/gallery/branding/vehicles/branding (4).jpg"
-import vehicles4 from "../assets/gallery/branding/vehicles/branding (4).jpg"
+import vehicles1 from "../assets/gallery/branding/branding4.jpg"
+import vehicles2 from "../assets/gallery/branding/branding4.jpg"
+import vehicles3 from "../assets/gallery/branding/branding4.jpg"
+import vehicles4 from "../assets/gallery/branding/branding4.jpg"
 
 
 export function Photography (){ return [Photography1,Photography2,Photography3,Photography4,Photography5,Photography6,Photography7,Photography8,Photography9,]}
@@ -181,51 +186,52 @@ export const ImageGalleryHome = [
   {img:  Sign7 , type:`Signages ` }  ,
 
 
-  {img: DisplayStand1   , type:`Displaystands ` }  ,
-  {img: DisplayStand2   , type:`Displaystands ` }  ,
-  {img: DisplayStand3   , type:`Displaystands all` }  ,
-  {img: DisplayStand4   , type:`Displaystands all` }  ,
-  {img: DisplayStand6   , type:`Displaystands ` }  ,
-  {img: DisplayStand7   , type:`Displaystands ` }  ,
+  {img: DisplayStand1 , alt:"Modern pharmacy display stand with illuminated shelving  "  , type:`Displaystands ` }  ,
+  {img: DisplayStand2 , alt:"Elegant jewelry store interior with display cases  "  , type:`Displaystands ` }  ,
+  {img: DisplayStand3 , alt:"contemporary store display stand design   "  , type:`Displaystands all` }  ,
+  {img: DisplayStand4 , alt:"cosmetic display stand  with greenery accents  "  , type:`Displaystands all` }  ,
+  {img: DisplayStand6 , alt:" Display stand makeup shelves with bold imagery.  "  , type:`Displaystands ` }  ,
+  {img: DisplayStand7 , alt:"Stylish beauty product display stand in an elegant store  "  , type:`Displaystands ` }  ,
 
 
-  {img:  Exhibition1   , type:`Exhibition ` }  ,
-  {img:  Exhibition2   , type:`Exhibition ` }  ,
-  {img:  Exhibition3   , type:`Exhibition ` }  ,
-  {img:  Exhibition4   , type:`Exhibition ` }  ,
-  {img:  Exhibition5   , type:`Exhibition all` }  ,
-  {img:  Exhibition6   , type:`Exhibition all` }  ,
-  {img:  Exhibition7   , type:`Exhibition all` }  ,
-  {img:  Exhibition8   , type:`Exhibition ` }  ,
-  {img:  Exhibition9   , type:`Exhibition ` }  ,
+  {img:  Exhibition1  , alt:"Modern exhibit booth with striking black and gold design  "  , type:`Exhibition ` }  ,
+  {img:  Exhibition2  , alt:"Chic jewelry Exhibition stand with luxurious white decor.  "  , type:`Exhibition ` }  ,
+  {img:  Exhibition3  , alt:"Sophisticated boutique Exhibition stand with curved wooden details  "  , type:`Exhibition ` }  ,
+  {img:  Exhibition4  , alt:"Futuristic exhibition space with white and blue lighting.  "  , type:`Exhibition ` }  ,
+  {img:  Exhibition5  , alt:"Elegant exhibition stand with flowing golden accents  "  , type:`Exhibition all` }  ,
+  {img:  Exhibition6  , alt:"Opulent event booth with overhead golden chandelier  "  , type:`Exhibition all` }  ,
+  {img:  Exhibition7  , alt:"Contemporary lounge area within a Exhibition stand.  "  , type:`Exhibition all` }  ,
+  {img:  Exhibition8  , alt:"Innovative tech exhibition stand with circular theme  "  , type:`Exhibition ` }  ,
+  {img:  Exhibition9  , alt:"Boutique exhibition stand with curved wooden details  "  , type:`Exhibition ` }  ,
 
-  {img: Branding1  , type:`branding` }  ,
-  {img: Branding2  , type:`branding` }  ,
-  {img: Branding3  , type:`branding` }  ,
-  {img: Branding4  , type:`branding ` }  ,
-  {img: Branding5  , type:`branding all` }  ,
-  {img: Branding6  , type:`branding all` }  ,
-  {img: Branding7  , type:`branding` }  ,
+  {img: Branding1 ,alt:"Phone with social media event promotion  "         , type:`branding` }  ,
+  {img: Branding2 ,alt:"Gold 'LUXURIOUS' text on a textured background.  " , type:`branding` }  ,
+  {img: Branding3 ,alt:"Professionals from different industries  "         , type:`branding` }  ,
+  {img: Branding4 ,alt:"Fleet of branded company vehicles"                 , type:`branding ` }  ,
+  {img: Branding5 ,alt:"" , type:`branding all` }  ,
+  {img: Branding6 ,alt:"" , type:`branding all` }  ,
+  {img: Branding7 ,alt:"" , type:`branding` }  ,
 
 
-  {img:  Photography1   , type:`photography ` }  ,
-  {img:  Photography2   , type:`photography ` }  ,
-  {img:  Photography3   , type:`photography ` }  ,
-  {img:  Photography4   , type:`photography ` }  ,
-  {img:  Photography5   , type:`photography all` }  ,
-  {img:  Photography6   , type:`photography all` }  ,
-  {img:  Photography7   , type:`photography all` }  ,
-  {img:  Photography8   , type:`photography ` }  ,
-  {img:  Photography9   , type:`photography ` }  ,
+  {img:  Photography1 , alt:"Interior photography of a cozy, well-lit restaurant  "  , type:`photography ` }  ,
+  {img:  Photography2 , alt:"Event photography of a speaker engaging a large audience  "  , type:`photography ` }  ,
+  {img:  Photography3 , alt:"photography of a modern building at sunset  "  , type:`photography ` }  ,
+  {img:  Photography4 , alt:"photography of an opulent home exterior  "  , type:`photography ` }  ,
+  {img:  Photography5 , alt:"Fashion photography of a woman in chic winter attire  "  , type:`photography all` }  ,
+  {img:  Photography6 , alt:"Portrait photography of a professional man  "  , type:`photography all` }  ,
+  {img:  Photography7 , alt:"Food photography of an artistic pasta dish  "  , type:`photography all` }  ,
+  {img:  Photography8 , alt:"Product photography of an exquisite perfume bottle with splashes  "  , type:`photography ` }  ,
+  {img:  Photography9 , alt:"Automotive photography of a futuristic green concept car  "  , type:`photography ` }  ,
 
-  {img: webDesign1  , type:`Web ` }  ,
-  {img: webDesign2  , type:`Web ` }  ,
-  {img: webDesign3  , type:`Web ` }  ,
-  {img: webDesign4  , type:`Web all` }  ,
-  {img: webDesign5  , type:`Web all` }  ,
-  {img: webDesign6  , type:`Web all` }  ,
+  {img: webDesign1 , alt:"Furniture website display on laptop and phone  "  , type:`Web ` }  ,
+  {img: webDesign2 , alt:"Houseplant care Website on laptop and mobile  "  , type:`Web ` }  ,
+  {img: webDesign3 , alt:"Creative website on laptop and phone  "  , type:`Web ` }  ,
+  {img: webDesign4 , alt:"Beauty services website on multiple devices  "  , type:`Web all` }  ,
+  {img: webDesign5 , alt:"Creative portfolio website on laptop and phone  "  , type:`Web all` }  ,
+  {img: webDesign6 , alt:"Laptop and phone showcasing coffee website  "  , type:`Web all` }  ,
   
 ]
+
 export const ImageGalleryWeb = [
   {img: webDesign1  , type:`Web ` }  ,
   {img: webDesign2  , type:`Web ` }  ,
@@ -241,6 +247,10 @@ export const ImageGalleryIndoor = [
   {img:  Building1 , type:`Building-Wrap` }  ,
   {img:  Building2 , type:`Building-Wrap all` }  ,
   {img:  Building3 , type:`Building-Wrap all` }  ,
+  {img:  Building4 , type:`Building-Wrap` }  ,
+  {img:  Building5 , type:`Building-Wrap all` }  ,
+  {img:  Building6 , type:`Building-Wrap all` }  ,
+  {img:  Building7 , type:`Building-Wrap all` }  ,
   
   {img:  Lamppost1 , type:`Lamp-Post` }  ,
   {img:  Lamppost2 , type:`Lamp-Post` }  ,
@@ -255,6 +265,7 @@ export const ImageGalleryIndoor = [
     {img: LED4 , type:`Led-signage all` }  ,
     {img: LED5 , type:`Led-signage` }  ,
     {img: LED6 , type:`Led-signage` }  ,
+    {img: LED7 , type:`Led-signage` }  ,
     
     {img: Unipole1 , type:`unipole` }  ,
     {img: Unipole2 , type:`unipole` }  ,
@@ -299,10 +310,10 @@ export const ImageGalleryOutdoor = [
 
 export const  ImageGalleryBranding = [
   
-  {img:  Logo1 , type:`Logo ` }  ,
-  {img:  Logo2 , type:`Logo ` }  ,
-  {img:  Logo3 , type:`Logo all` }  ,
-  {img:  Logo4 , type:`Logo all` }  ,
+  {img:  Logo1 , alt:"Gold 'LUXURIOUS' text on a textured background." , type:`Logo ` }  ,
+  {img:  Logo2 , alt:"Gold 'LUXURIOUS' text on a textured background." , type:`Logo ` }  ,
+  {img:  Logo3 , alt:"Gold 'LUXURIOUS' text on a textured background." , type:`Logo all` }  ,
+  {img:  Logo4 , alt:"Gold 'LUXURIOUS' text on a textured background." , type:`Logo all` }  ,
 
   {img: webDesign1  , type:`Web ` }  ,
   {img: webDesign2  , type:`Web ` }  ,
@@ -311,36 +322,36 @@ export const  ImageGalleryBranding = [
   {img: webDesign5  , type:`Web all` }  ,
   {img: webDesign6  , type:`Web all` }  ,
 
-  {img:  SocialMedia1 , type:`Socialmedia ` }  ,
-  {img:  SocialMedia2 , type:`Socialmedia all` }  ,
-  {img:  SocialMedia3 , type:`Socialmedia all` }  ,
-  {img:  SocialMedia4 , type:`Socialmedia ` }  ,
+  {img:  SocialMedia1 , alt:"Phone with social media event promotion  ", type:`Socialmedia ` }  ,
+  {img:  SocialMedia2 , alt:"Phone with social media event promotion  ", type:`Socialmedia all` }  ,
+  {img:  SocialMedia3 , alt:"Phone with social media event promotion  ", type:`Socialmedia all` }  ,
+  {img:  SocialMedia4 , alt:"Phone with social media event promotion  ", type:`Socialmedia ` }  ,
 
   {img:  Packaging1 , type:`packaging ` }  ,
   {img:  Packaging2 , type:`packaging all` }  ,
   {img:  Packaging3 , type:`packaging all` }  ,
   {img:  Packaging4 , type:`packaging ` }  ,
 
-  {img:  Graphic1 , type:`Graphic ` }  ,
-  {img:  Graphic2 , type:`Graphic ` }  ,
-  {img:  Graphic3 , type:`Graphic all` }  ,
-  {img:  Graphic4 , type:`Graphic all` }  ,
+  {img:  Graphic1 ,alt:"Branded polo shirt with QR code" , type:`Graphic ` }  ,
+  {img:  Graphic2 ,alt:"Branded polo shirt with QR code" , type:`Graphic ` }  ,
+  {img:  Graphic3 ,alt:"Branded polo shirt with QR code" , type:`Graphic all` }  ,
+  {img:  Graphic4 ,alt:"Branded polo shirt with QR code" , type:`Graphic all` }  ,
 
-  {img:  vehicles1 , type:`vehicles ` }  ,
-  {img:  vehicles2 , type:`vehicles ` }  ,
-  {img:  vehicles3 , type:`vehicles all` }  ,
-  {img:  vehicles4 , type:`vehicles all` }  ,
+  {img:  vehicles1 , alt :"Fleet of branded company vehicles", type:`vehicles ` }  ,
+  {img:  vehicles2 , alt :"Fleet of branded company vehicles", type:`vehicles ` }  ,
+  {img:  vehicles3 , alt :"Fleet of branded company vehicles", type:`vehicles all` }  ,
+  {img:  vehicles4 , alt :"Fleet of branded company vehicles", type:`vehicles all` }  ,
 
 
-  {img:  stationery1 , type:`stationery ` }  ,
-  {img:  stationery2 , type:`stationery ` }  ,
-  {img:  stationery3 , type:`stationery all` }  ,
-  {img:  stationery4 , type:`stationery all` }  ,
+  {img:  stationery1 , alt:"Elegant black and gold branding set", type:`stationery ` }  ,
+  {img:  stationery2 , alt:"Sophisticated branding stationery set  ", type:`stationery ` }  ,
+  {img:  stationery3 , alt:"Elegant black and gold branding set", type:`stationery all` }  ,
+  {img:  stationery4 , alt:"Elegant black and gold branding set", type:`stationery all` }  ,
 
-  {img:  uniform1 , type:`uniform ` }  ,
-  {img:  uniform2 , type:`uniform ` }  ,
-  {img:  uniform3 , type:`uniform all` }  ,
-  {img:  uniform4 , type:`uniform all` }  ,
+  {img:  uniform1 , alt:"Professionals from different industries" , type:`uniform ` }  ,
+  {img:  uniform2 , alt:"Professionals from different industries" , type:`uniform ` }  ,
+  {img:  uniform3 , alt:"Professionals from different industries" , type:`uniform all` }  ,
+  {img:  uniform4 , alt:"Professionals from different industries" , type:`uniform all` }  ,
 
 ]
 

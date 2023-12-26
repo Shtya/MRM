@@ -1,7 +1,4 @@
 import Grid1 from "../assets/Intro&Cover/Why-photo.jpg" ;
-
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/Intro&Cover/cover-photo.jpg"
 
@@ -19,7 +16,6 @@ import Photography_7 from "../assets/gallery/photography/photo7.jpg" ;
 import Photography_8 from "../assets/gallery/photography/photo8.jpg" ;
 import Photography_9 from "../assets/gallery/photography/photo9.jpg" ;
 
-import Videography1 from "../assets/gallery/videography/(1).jpg" ;
 import Videography2 from "../assets/gallery/videography/(2).jpg" ;
 import Videography3 from "../assets/gallery/videography/(3).jpg" ;
 import Videography4 from "../assets/gallery/videography/(4).jpg" ;
@@ -31,9 +27,18 @@ import Videography9 from "../assets/gallery/videography/(9).jpg" ;
 
 import Animation from "../components/helpers/Animation";
 import  { Pattern9 } from "../components/patterns/Pattern1";
-import Contact from "../components/Contact";
 import MetaTag from "./MetaTag";
-import SliderPHOTO from "../components/SLIDER_MRM/SliderPHOTO";
+
+
+import Qutation   from "../components/helpers/Qutation"
+import Footer  from "../components/Footer"
+import SliderPHOTO from "../components/SLIDER_MRM/SliderPHOTO"
+import Hero from "../components/helpers/Hero"
+import PHOTOgraphy from "../components/helpers/PHOTOgraphy"
+import Serach2  from "../components/helpers/Serach2"
+import Contact  from "../components/Contact"
+
+
 
 const SERVICES = [
   { animate:"fade-up", img:Photography_2 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
@@ -72,101 +77,29 @@ const S_photography = () => {
     <div className="S_photography landing">
       <MetaTag title="Top Photography & Videography services in Dubai " desc="Discover our photography and videography services in Dubai, from event photography to product videography. MRM provides optimal solutions." />
       <Animation />
-      <div className="container"> <Navbar /> </div>
-      <div className="coverIntro" data-aos="zoom-in"  > <img src={ImgIntro}  /></div>
+      {/* <Hero H1="" H2="" H3="" Img={ImgSection} nameServices="" Imgintro={ImgIntro} /> */}
+      {/* <Qutation Img={IMG1}  desc1="" /> */}
 
-      <div className="home">
-          <div className="container">
-              <div className="boxImg " data-aos="zoom-in" data-aos-delay="400"  >  <img   src={ImgSection} alt="photography services" loading="lazy" /> </div>
-              <div className="boxs" data-aos="fade-left" data-aos-delay="600" >
-                  <h2 className='h1 '>Capture your brand's story with our professional visual storytelling.</h2>
-                  <h2 className='h2 '>We turn moments into memories and transform your brand's essence into a compelling narrative. </h2>
-                  <p className='p '>  We specialize in capturing moments that tell a compelling story and creating visually engaging content. At MRM, we offer a wide range of high-quality photography and videography services to enhance your brand and narrative. Whether you need product photography, event coverage, or promotional videos, we have the expertise to deliver content that captivates and communicates. </p>
-            </div>
-        </div>
-      </div>
+      <Hero H1="Capture your brand's story with our professional visual storytelling." H2="We turn moments into memories and transform your brand's essence into a compelling narrative. " H3="We specialize in capturing moments that tell a compelling story and creating visually engaging content. At MRM, we offer a wide range of high-quality photography and videography services to enhance your brand and narrative. Whether you need product photography, event coverage, or promotional videos, we have the expertise to deliver content that captivates and communicates." Img={ImgSection} nameServices="Photography&videography" Imgintro={ImgIntro} />
 
-      {/* <Divider classn="divider" /> */}
-      <Pattern9 />
-      <div className="quotation">
-        {/* <Pattern1 /> */}
-        <div className="bgCover"  >  <img  src={IMG1} alt="photography services" loading="lazy" /> </div>
-            <div className="container" data-aos="zoom-in-up" >
-            <p className='h3'>  Our core belief is that every brand, product, and event has a unique story that deserves to be told.<br/> We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p>
-            </div>
-        </div>
+      <Qutation Img={IMG1}  desc1="Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative." />
 
       <Pattern9 />
-      <div className="photography-services">
-      <div className="bgCover"  >  <img  src={IMG2} alt="photography services" loading="lazy" /> </div>
-        <div className="h1" data-aos="zoom-in-up">Our Photo gallery</div> 
-        <div className="container">
-          {
-            SERVICES.map((e,index)=> (
-              <div className="box" key={index} data-aos="zoom-in-up">
-                <div className="innerbox">
-                <div className="coverImg "> <img src={e.img} alt="photography services" loading="lazy" />  </div>
-                <div className="text">
-                  <div className="h2 "> {e.title} </div>
-                  <div className="p ">{e.desc} </div>
-                </div>
-                </div>
-              </div>
-            ))
-          }
-        </div>
-      </div>
+      <PHOTOgraphy classn="photography-services"  Img ={IMG2} nameServices ="photography&videography" title ="Our Photo gallery" data ={SERVICES} />
       
-      {/* <Divider classn="divider" /> */}
       <Pattern9 />
-      <div className="Videography-services">
-      <div className="bgCover"  >  <img  src={IMG3} alt="photography services" loading="lazy" /> </div>
-        <div className="h1 clip ">Types of Videography gallery</div> 
-        <div className="container">
-          {
-            SERVICES2.map((e,index)=> (
-              <div className="box" key={index} data-aos={e.animate} data-aos-delay={`${100 * (index + 1) }`} >
-                <div className="innerbox">
-                <div className="coverImg "> <img src={e.img} alt="photography services" loading="lazy" />  </div>
-                <div className="text">
-                  <div className="h2 clip "> {e.title} </div>
-                  <div className="p ">{e.desc} </div>
-                </div>
-                </div>
-              </div>
-            ))
-          }
-        </div>
-      </div>
+      <PHOTOgraphy classn="Videography-services"  Img ={IMG3} nameServices ="photography&videography" title ="Types of Videography gallery" data ={SERVICES2} />
 
-
-      {/* <Divider classn="divider-left" /> */}
-      <Pattern9 />
+      <Pattern9 />  
       <SliderPHOTO />
+    
 
+      <Pattern9 />
+      <Serach2 Img ={IMG1} Imgsection ={Grid1} title ="Why Choose Us?" data={WHY} />
 
-{/* <Divider classn="divider-left" /> */}
-<Pattern9 />
-        <div className="searching2">
-        <div className="bgCover" data-aos="zoom-in-left"  >  <img  src={IMG1} alt="photography services" loading="lazy" /> </div>
-            <div className="container">
-              <div className="coverImg "> <img src={Grid1} alt="photography services" loading="lazy" /> </div>
+      <Contact />
 
-              <div className="boxs">
-              <div className="h1" data-aos="zoom-in-right">Why Choose Us?</div>
-              {WHY.map((e,index)=>(
-                <div key={index} data-aos="zoom-in-right">
-                  <h3 className='h2 '>{e.title}</h3>
-                  <h2 className='p '>{e.desc}</h2>
-                </div>
-                  ))}
-              </div>
-          </div>
-      </div>
-
-
-    <Contact />
-    <Footer />
+      <Footer />
       </div>
   )
 }

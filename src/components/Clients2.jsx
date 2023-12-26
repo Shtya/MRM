@@ -1,5 +1,5 @@
 import Slider_3_Img from "./Slide/Slider_3_Img"
-import {useState } from "react";
+import {memo, useState } from "react";
 
 import clients18 from "../assets/clients/(1).png"
 import clients20 from "../assets/clients/(2).png"
@@ -93,7 +93,7 @@ var settings = {
 
 
 
-const Clients2 = () => {
+const Clients2 = memo(() => {
   const ClientsImg = [ clients18 ,clients20 ,clients22 ,clients23 ,clients24 ,clients25 ,clients26 ,clients27 ,clients28 ,clients29 ,clients30 ,clients31 ,clients32 ,clients33 ,clients34 ,clients35 ,clients36  ,clients38 ,clients39 ,clients40 ,clients41 ,clients42 ,clients43 ,clients44 ,clients45 ,clients46 ,clients47 ,clients48 ,clients49 ,clients50 ,clients51 ,clients52 ,clients53  ];
     return (
     <section className='Clients2' id='Clients'>
@@ -104,6 +104,6 @@ const Clients2 = () => {
 
     </section>
   )
-}
+})
 
 export default Clients2

@@ -1,8 +1,9 @@
 import Animation from './helpers/Animation'
 import WhyImg from "../assets/Why.jpg"
 import IMG2 from "../assets/bg/b3.jpg"
+import { memo } from 'react'
 
-const Why = () => {
+const Why = memo(() => {
 
 
 
@@ -17,9 +18,9 @@ const Why = () => {
 
     <section id='Why' className='Why'>
       <Animation />
-      <div className="bgCover"  >  <img  src={IMG2} alt="why" loading="lazy" /> </div>
+      <div className="bgCover"  >  <img  src={IMG2} alt="Man in blue suit thinking with question mark and speech bubbles graphic" loading="lazy" /> </div>
       <div className="container1">
-        <div className="h1" data-aos="fade-up" >WHY CHOOSE US</div>
+        <h1 className="h1" data-aos="fade-up" >WHY CHOOSE US</h1>
       </div>
       <div className="container">
               <div className="boxs" data-aos="fade-right"    >
@@ -27,7 +28,7 @@ const Why = () => {
                     <div className="box" data-aos="fade-right" key={idx} >
                       <div className="group" >
                           <i  className={`${e.icon} hidden-img`}></i>
-                          <h3 className='h2' > {e.title}  </h3>
+                          <h2 className='h2' > {e.title}  </h2>
                       </div>
                       <span className={` p`}>{e.desc}</span>
                     </div>
@@ -40,6 +41,6 @@ const Why = () => {
       </div>
     </section>
   )
-}
+})
 
 export default Why

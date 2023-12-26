@@ -2,20 +2,20 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { Pattern2, Pattern3 } from '../patterns/Pattern1';
-import { Link , useNavigate, useParams } from 'react-router-dom';
-import { baseImg } from '../../API/API';
+import {  useNavigate } from 'react-router-dom';
 import Moment from 'react-moment';
 
 import IMG1 from "../../assets/bg/b1.jpg"
-import IMG2 from "../../assets/bg/b2.jpg"
 import IMG3 from "../../assets/bg/b3.jpg"
+import { Helmet } from 'react-helmet';
 
 const OneBlog = ({classn ,blogs , settings , name , onHere }) => {
   const navigate = useNavigate() 
 
   return (
     <div className={`Slider_1_Img ${classn}`}>
+      <Helmet> <script type="application/ld+json">{`{ "@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {   "@type": "WebPage",   "@id": "https://mrmadvertisingdubai.com/" }, "headline": ${blogs?.title}, "description": ${blogs?.desc}, "image": ${blogs?.thumbnail}, "datePublished": ${blogs?.createdAt}, "dateModified": dateModified }`}</script> </Helmet>
+      
       {onHere ? <div className="bgCover"  >  <img  src={IMG3} alt="blog" loading="lazy" /> </div> : <div className="bgCover"  >  <img  src={IMG1} alt="blog" loading="lazy" /> </div>}
       <div className="h1 clip"> {name} </div>
           <Slider {...settings} className='container' >

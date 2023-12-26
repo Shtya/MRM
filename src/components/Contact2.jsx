@@ -2,6 +2,7 @@ import {useRef, useState} from 'react'
 import MapImg from "../assets/about-us/introContact.jpg"
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
+import { Social_Media } from '../App';
 
 
 const Contact2 = () => {
@@ -31,16 +32,16 @@ const Contact2 = () => {
                   <div className="text"> <h2 className='h1 blur' data-aos="fade-right" data-aos-delay="300">Turn your dreams into digital realities </h2> </div>
 
                   <ul className='contact-list'>
-                    <li className="list-item" data-aos="fade-right" data-aos-delay="300"> <a> <i className="fa-solid fa-phone"></i>         </a>    <span className='contact-text place p'>+971561384496</span></li>
-                    <li className="list-item" data-aos="fade-right" data-aos-delay="400"> <a>  <i className="fa-solid fa-envelope"></i>     </a>    <span className='contact-text phone p'>info@mrmadvertisingdubai.com</span> </li>
-                    <li className="list-item" data-aos="fade-right" data-aos-delay="500"> <a>  <i className="fa-solid fa-location-dot"></i> </a>    <span className='contact-text gmail p'>Business Bay - Dubai</span></li>
+                    <li className="list-item" data-aos="fade-right" data-aos-delay="300"> <Link to="" > <i className="fa-solid fa-phone"></i>         </Link>    <span className='contact-text place p'>+971561384496</span></li>
+                    <li className="list-item" data-aos="fade-right" data-aos-delay="400"> <Link to="" >  <i className="fa-solid fa-envelope"></i>     </Link>    <span className='contact-text phone p'>info@mrmadvertisingdubai.com</span> </li>
+                    <li className="list-item" data-aos="fade-right" data-aos-delay="500"> <Link to="" >  <i className="fa-solid fa-location-dot"></i> </Link>    <span className='contact-text gmail p'>Business Bay - Dubai</span></li>
                     </ul>
                         <hr />
                     <ul className='social-media-list'>
-                      <li > <Link to=""  data-aos="fade-up" data-aos-delay="300" className="Iicon">  <i className="fa-brands fa-facebook-f"></i>     </Link></li>
-                      <li > <Link to=""  data-aos="fade-up" data-aos-delay="400" className="Iicon">  <i className="fa-brands fa-instagram"></i> </Link></li>
-                      <li > <Link to=""  data-aos="fade-up" data-aos-delay="500" className="Iicon"> <i className= "fa-brands fa-whatsapp"></i>         </Link></li>
-                      <li > <Link to=""  data-aos="fade-up" data-aos-delay="600" className="Iicon">  <i className="fa-brands fa-linkedin-in"></i> </Link></li>
+                      <li > <Link to={Social_Media[0]}  data-aos="fade-up" data-aos-delay="300" className="Iicon">  <i className="fa-brands fa-facebook-f"></i>     </Link></li>
+                      <li > <Link to={Social_Media[1]}  data-aos="fade-up" data-aos-delay="400" className="Iicon">  <i className="fa-brands fa-instagram"></i> </Link></li>
+                      <li > <Link to={Social_Media[3]}  data-aos="fade-up" data-aos-delay="500" className="Iicon"> <i className= "fa-brands fa-whatsapp"></i>         </Link></li>
+                      <li > <Link to={Social_Media[2]}  data-aos="fade-up" data-aos-delay="600" className="Iicon">  <i className="fa-brands fa-linkedin-in"></i> </Link></li>
                     </ul>
               </div>
 

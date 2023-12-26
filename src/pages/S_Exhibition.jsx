@@ -1,10 +1,7 @@
-import React, {  useState } from "react";
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/Intro&Cover/cover-exhibition.jpg"
-
-
 
 import Icon_1 from "../assets/Icon/Impact (3).png" ;
 import Icon_2 from "../assets/Icon/Impact (4).png" ;
@@ -38,7 +35,10 @@ import IMG2 from "../assets/bg/b3.jpg"
 import IMG3 from "../assets/bg/b2.jpg"
 import Contact from "../components/Contact";
 import MetaTag from "./MetaTag";
-
+import Hero from "../components/helpers/Hero";
+import Qutation from "../components/helpers/Qutation";
+import ExhibitionGallery  from "../components/helpers/Exhibition";
+import Impact from "../components/helpers/Impact";
 
 const BRANDING_SERVICES = [
   { img:Icon_1 , title:"Customized Designs" , desc:"We create unique stands that reflect your brand identity and marketing goals. Our stands can have a modern or traditional design to meet your preferences."},
@@ -71,87 +71,26 @@ const S_Exhibition = () => {
     {img:Exhibition9 , animate:"fade-up" } ,
   ]
 
-
-  const [Img , setImg] = useState()
-
   return (
     <div className="S_Exhibition landing">
       <div className="container"> <Navbar /> </div>
       <MetaTag title="Best Exhibition & display stand designing services in Dubai " desc="Discover our customized exhibition stands and display stands in Dubai for a powerful and lasting impression on your audience." />
       <Animation />
-      <div className="coverIntro" data-aos="zoom-in-left"><img src={ImgIntro} alt="exhibition & display stands services" loading="lazy" /> </div>
-
-      <div className="home">
-          <div className="container">
-              <div className="boxImg" data-aos="zoom-in-left" data-aos-delay="400"> <img src={ImgSection} alt="exhibition & display stands services" loading="lazy" />  </div>
-              <div className="boxs" data-aos="zoom-in-right" data-aos-delay="600" >
-                  <h2 className='h1 '> The Best Exhibition stands & display stand designing services in Dubai</h2>
-                  <h2 className='h2 '> Our exhibition and display stands are masterpieces that create lasting impressions</h2>
-                  <p className='p '> With our exclusive exhibition stands in Dubai, we can help you stand out from the crowd at trade shows and events. We customize our exhibition stands according to our customers' specifications to ensure they excel at their intended purpose. Our team can design your order from scratch, maximizing the available space in any given environment.</p>
-            </div>
-
-        </div>
-      </div>
+      
+      <Hero H1="The Best Exhibition stands & display stand designing services in Dubai" H2="Our exhibition and display stands are masterpieces that create lasting impressions" H3=" With our exclusive exhibition stands in Dubai, we can help you stand out from the crowd at trade shows and events. We customize our exhibition stands according to our customers' specifications to ensure they excel at their intended purpose. Our team can design your order from scratch, maximizing the available space in any given environment" Img={ImgSection} nameServices="Exhibition & display stands" Imgintro={ImgIntro} />
+      
+      <Qutation Img={IMG1} desc1="We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience." />
 
       <Pattern9 />
-      <div className="quotation">
-        <div className="bgCover" data-aos="zoom-in"  >   <img  src={IMG1} alt="exhibition & display stands services" loading="lazy" />  </div>
-            <div className="container">
-                 <div className="h3" data-aos="zoom-in-up" >We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.</div>
-            </div>
-        </div>
-        
+      <ExhibitionGallery classn="exhibition-stands sec-1" title="Take a look at our designs for exhibition stands gallery" Img={IMG3}  nameServices="exhibition & display stands services"  data={Exhibition}  />
 
-        <Pattern9 />
-      <div className="exhibition-stands sec-1">
-        <div className="bgCover"  >   <img  src={IMG3} alt="exhibition & display stands services" loading="lazy" />  </div>
-        <div className="container" data-aos="zoom-in-up"> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for exhibition stands gallery</div></div>
-        <div className="container">
-          <div className="boxs">
-            {Exhibition.map((e,index)=> ( <div key={index}  className="coverImg" data-aos="fade-up"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} alt="slider" /> </div> ))}
-            {Img && <div className="show-img"> 
-              <img src={Img} alt="exhibition & display stands services" loading="lazy" data-aos="zoom-in" /> 
-              <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
-            </div>}
-          </div>
-        </div>
-      </div>
-      
-        <Pattern9 />
-      <div className="exhibition-stands ">
-        <div className="bgCover"  >   <img  src={IMG2} alt="exhibition & display stands services" loading="lazy" />  </div>
-        <div className="container"> <div className="h1" style={{marginBottom:"30px"}}>Take a look at our designs for Display stands gallery</div></div>
-        <div className="container">
-          <div className="boxs">
-            {DisplayStands.map((e,index)=> ( <div key={index} data-aos="zoom-in-up"  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} alt="slider" /> </div> ))}
-            {Img && <div className="show-img"> 
-              <img src={Img} alt="exhibition & display stands services" loading="lazy" data-aos="zoom-in-up" /> 
-              <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
-            </div>}
-          </div>
-        </div>
-      </div>
+      <Pattern9 />
+      <ExhibitionGallery classn="exhibition-stands" title="Take a look at our designs for Display stands gallery" Img={IMG1}  nameServices="exhibition & display stands services"  data={DisplayStands}  />
       
       <Pattern9 />
-      <div className="impact">
-        <div className="bgCover"  >   <img  src={IMG2} alt="exhibition & display stands services" loading="lazy" />  </div>
-            <div className="container">
-            <div className="container"><div className="h1" data-aos="fade-up">Why Choose Us for Your Exhibition & Display Stands Needs?</div></div>
-                <div className="boxs">
-                  {
-                    BRANDING_SERVICES.map((e,index)=> (
-                      <div className="box"  key={index} data-aos="zoom-in-up">
-                          <div className="coverImg hidden-img"> <img src={e.img} alt="exhibition & display stands services" loading="lazy" /> </div>
-                          <div className="text" >
-                              <div className="h2 clip ">{e.title} </div>
-                              <div className="p ">{e.desc} </div>
-                          </div>
-                      </div>
-                    ))
-                  }
-                </div>
-            </div>
-        </div>
+      <Impact classn="impact" Img={IMG2} data ={BRANDING_SERVICES} title ="Why Choose Us for Your Exhibition & Display Stands Needs?" nameServices ="exhibition & display stands services" />
+
+
         <Contact />
         <Footer />
       </div>
