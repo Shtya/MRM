@@ -35,4 +35,5 @@ app.use((err, req, res, next) => {
 })
 
 
-connect(process.env.MONGO_URI).then(res => app.listen(5000 , _=> console.log(`Server running on port ${process.env.PORT}`))).catch(err => console.log(err))
+connect(process.env.MONGO_URI).then(res => console.log("connect db") ).catch(err => console.log(err))
+app.listen(process.env.PORT , _=> console.log(`Server running on port ${process.env.PORT}`))

@@ -18,7 +18,19 @@ const Blogs = () => {
   const {pathname} = useLocation()
 
   const [blogs , setblogs] = useState([])
-  useEffect(_=>{ baseURL.get("").then(res => { setblogs(res.data.data) } )} ,[pathname])
+  // useEffect(_=>{ baseURL.get("").then(res => { setblogs(res.data.data) } )} ,[pathname])
+  useEffect(_=> { 
+    blogs.length < 1 
+    ?  baseURL.get("").then(e => setblogs(e.data.data))
+    :  baseURL.get("").then(e => setblogs(e.data.data))
+   } ,[pathname])
+
+  useEffect(_=> { 
+    blogs.length < 1 
+    ?  baseURL.get("").then(e => setblogs(e.data.data))
+    :  baseURL.get("").then(e => setblogs(e.data.data))
+   } ,[])
+
   var settings = {
     dots: true,
     infinite: true,
@@ -49,7 +61,7 @@ const Blogs = () => {
 
   return (
     <div className='blog-page'>
-      <MetaTag title="Digital Marketing Updates and Tips for Business Growth " desc="Stay ahead with the latest digital marketing updates, Insights and expert tips for your Digital business growth with MRM`s informative blogs " />
+      <MetaTag canonical="blogs" title="Digital Marketing Updates and Tips for Business Growth " desc="Stay ahead with the latest digital marketing updates, Insights and expert tips for your Digital business growth with MRM`s informative blogs " />
       <Animation />
       <div className="container"> <Navbar /></div>
         <div className="coverIntro"> <img src={IntroImg} alt="Chic 'OUR BLOG' text over a laptop on a desk" loading="lazy" /></div>
@@ -58,7 +70,7 @@ const Blogs = () => {
         <div className="bgCover"  >  <img  src={IMG1} alt="blogs" loading="lazy" /> </div>
         
           <div className="container">
-                <p className="h3 " data-aos="fade-up">Stay updated with our latest news, strategies, and tactics to succeed in your business.</p>
+            <p className="h3 " data-aos="fade-up">Stay updated with our latest news, strategies, and tactics to succeed in your business.</p>
           </div>
           </div>
         <Divider classn="divider " />

@@ -14,7 +14,7 @@ const Impact = ({ classn ,Img , data , title , desc , nameServices ,}) => {
                           <div className="coverImg hidden-img"> <img src={e.img} alt={nameServices} loading="lazy" /> </div>
                           <div className="text" >
                               <h2 className="h2 clip ">{e.title} </h2>
-                              <div className="p ">{e.desc} </div>
+                              <h3 className="p ">{e.desc} </h3>
                           </div>
                       </div>
                     ))

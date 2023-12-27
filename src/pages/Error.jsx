@@ -1,9 +1,10 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import IntroImg from "../assets/footer.jpg"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Error = () => {
+const {pathname} = useLocation() ;
 
   return (
     <div className="error">
@@ -13,13 +14,9 @@ const Error = () => {
           <h1>404</h1>
           <h2 className='clip'> Oops! </h2>
           <h3 className='phead'> Looks like you've taken a wrong turn. Don't worry, even the best of us get lost sometimes.</h3>
-          <div className="group2">
-            <input type="text" />
-            <i className="fa-solid fa-magnifying-glass"></i>
-          </div>
           <ul className='buttons'>
-            <Link to="/home" > Home</Link>
-            <Link to="/services"  > Services</Link>
+            <Link to="/" > Home</Link>
+            <a href={pathname!= "/" ? "/#Services" : "#Services"}  > Services</a>
             <Link to="/contact-us" > Contact Us</Link>
           </ul>
         </div>

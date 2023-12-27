@@ -49,7 +49,7 @@ const E_post = () => {
             <form className="form create-post_form">
               <p className="error-message"> THis is an error message </p>
               <input type="text" placeholder='title'  value={title}    onChange={e=> settitle(e.target.value)}  />
-              <select name=""                        value={category} onChange={e=> setCategory(e.target.value)}> {Section.map((e,index)=> ( <option value={e}>{e}</option> ))} </select>
+              <select name=""                        value={category} onChange={e=> setCategory(e.target.value)}> {Section.map((e,index)=> ( <option key={index} value={e}>{e}</option> ))} </select>
               <input type="text" placeholder='Image'  value={Img}    onChange={e=> setImg(e.target.value)}  />
               {/* <input type="file"                  value={Img[0]}    onChange={handleImg} autoFocus /> */}
 

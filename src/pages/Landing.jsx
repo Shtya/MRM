@@ -39,8 +39,6 @@ import IMG2 from "../assets/bg/b2.jpg"
 import Contact from '../components/Contact';
 import MetaTag from './MetaTag';
 import Social_media from '../components/helpers/Social_media';
-import ProcessComponenet from "../components/helpers/Process2"
-
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_1 , title:"Social Media Strategy"    , desc:"Our social media experts will create a custom strategy that aligns with your brand's objectives and target audience."},
@@ -59,11 +57,23 @@ const Process = [
   {img:Process5 , classn:"h" , title :"Reporting"  , desc : "We regularly provide clients with detailed reports on the progress of their social media campaigns. These reports include key metrics like engagement, reach, traffic, and leads. They help clients understand the value of our services and make data-driven decisions for future campaigns." },
 ]
 const Landing = () => {
-
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "social-media-marketing",
+    "url": "https://mrmadvertisingdubai.com/social-media-marketing",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MRM Advertising",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mrmadvertisingdubai.com/Logo1.png"
+      }
+    }
+  };
   return (
     <div className='landing'>
       <Animation />
-      <MetaTag title=" Top Social Media Marketing Services in Dubai to Boost Your Brand" desc="Discover expert social media management services in Dubai. We collaborate to align strategies with your business goals, driving traffic and boosting sales." />
+      <MetaTag canonical="social-media-marketing" schema={schema} title=" Top Social Media Marketing Services in Dubai to Boost Your Brand" desc="Discover expert social media management services in Dubai. We collaborate to align strategies with your business goals, driving traffic and boosting sales." />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro" data-aos="zoom-in-left"> <img  src={ImgIntro} alt="social media marketing services" loading="lazy" /></div>
       
@@ -142,7 +152,6 @@ const Landing = () => {
       </div>
 
       <Divider classn="divider-left" />
-      {/* <ProcessComponenet data={Process} Img={IMG2} title="our process"  /> */}
     <div className="process">
         <div className="container1"> <div className="h1" data-aos="fade-up">our proccess</div></div>
         <div className="container">

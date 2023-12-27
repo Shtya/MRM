@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import IMG3 from "../assets/bg/b1.jpg"
-import { memo } from 'react';
 
 const services = [
   {route:"/social-media-marketing",     animate:"fade-up",  title:"social media marketing"       , icon:"clip  fa-solid fa-bullhorn "        ,desc:"Enhance your online presence with our social media management." ,                                                                 },
@@ -14,23 +13,23 @@ const services = [
   {route:"/seo",        animate:"fade-up",  title:"SEO "                         , icon:"clip  fa-solid fa-magnifying-glass" ,desc:"Drive organic traffic and secure top search engine rankings with our expert SEO services.  " ,                                     },
 ];
 
-const Services = memo(()=> {
+const Services = ()=> {
 
   return (
     <>
     <section className='services search-edite' id='Services'>
     <div className="bgCover"  >  <img  src={IMG3} alt="services" loading="lazy" /> </div>
-       <h1 className='h1 clip ' data-aos="fade-up"  >OUR SERVICES</h1> 
+       <h2 className='h1 clip ' data-aos="fade-up"  >OUR SERVICES</h2> 
       
       <div className="container">
       <ul className='ul' data-aos="fade-up" >
         {services.map((e , index) => (
-          <div key={index} className="box" data-aos="fade-up" data-aos-delay={`${index+1}00`} >
+          <div key={index} className="box" data-aos="fade-up" data-aos-delay={`${index}0`}  >
             <div className="animate" ></div>
             <Link to={e.route}   >
               <Link to={e.route}><i className={`${e.icon} `}> <span />  <span /> </i> </Link>
               <h3 className='h2 '>{e.title}</h3>
-              <h4 className='p '>{e.desc}</h4>
+              <div className='p '>{e.desc}</div>
           </Link>
           </div>
         ))}
@@ -39,7 +38,7 @@ const Services = memo(()=> {
     </section>
     </>
   );
-})
+}
 
 
 export default Services

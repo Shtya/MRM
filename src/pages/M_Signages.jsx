@@ -32,12 +32,23 @@ const process = [
 
 
 const M_Signages = () => {
-  
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "indoor-and-outdoor-signages",
+    "url": "https://mrmadvertisingdubai.com/indoor-and-outdoor-signages",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MRM Advertising",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mrmadvertisingdubai.com/Logo1.png"
+      }
+    }
+  };
   return (
     <div className="M_Signages landing">
-      <MetaTag title=" Top Signage Companies in Dubai for Custom Designs" desc="From LED to indoor and outdoor options, MRM provides professional signage solutions in Dubai. Contact us to start your journey to success." />
+      <MetaTag canonical="indoor-and-outdoor-signages" schema={schema} title=" Top Signage Companies in Dubai for Custom Designs" desc="From LED to indoor and outdoor options, MRM provides professional signage solutions in Dubai. Contact us to start your journey to success." />
       <Animation />
-      <div className="container"> <Navbar /> </div>
       <Hero H1="Craft Your Vision, Achieve Your Goals " H2="MRM's End-to-End Custom Signage Solutions, from Concept to Installation in the UAE" H3="MRM produces high-quality custom signs in the UAE using premium materials and state-of-the-art equipment to ensure your signage is truly outstanding" Img={ImgSection} nameServices="signages services" Imgintro={ImgIntro} />
       <Qutation Img={IMG1} title1="MRM promises excellence in signage installation, blending your vision with our expertise"  desc1="MRM's team of experts specializes in developing custom sign designs based on clients' requirements. we take care of every project aspect, from the concept and design phase to production and installation. MRM is committed to delivering quality service and ensuring customer satisfaction. Clients can trust MRM to handle everything related to their custom signage installation." />
 

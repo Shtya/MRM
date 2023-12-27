@@ -1,6 +1,6 @@
-import React, { memo } from 'react'
 
-const PHOTOgraphy = memo(({classn ,Img , nameServices , title , data}) => {
+
+const PHOTOgraphy = ({classn ,Img , nameServices , title , data}) => {
   return (
     <div className={classn}>
       <div className="bgCover"  >  <img  src={Img} alt={nameServices} loading="lazy" /> </div>
@@ -13,7 +13,7 @@ const PHOTOgraphy = memo(({classn ,Img , nameServices , title , data}) => {
                 <div className="coverImg "> <img src={e.img} alt={nameServices} loading="lazy" />  </div>
                 <div className="text">
                   <h2 className="h2 "> {e.title} </h2>
-                  <div className="p ">{e.desc} </div>
+                  <h3 className="p ">{e.desc} </h3>
                 </div>
                 </div>
               </div>
@@ -22,6 +22,6 @@ const PHOTOgraphy = memo(({classn ,Img , nameServices , title , data}) => {
         </div>
       </div>
   )
-})
+}
 
 export default PHOTOgraphy

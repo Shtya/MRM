@@ -1,5 +1,5 @@
 
-import React, { memo, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay , Grid, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -10,7 +10,7 @@ import IMG3 from "../../assets/bg/b3.jpg"
 import { ImageGalleryHome } from '../Images2';
 
 
- const SliderHOME =  memo(() => {
+ const SliderHOME =  () => {
   const [media , setmedia ] = useState(2)
   const settings = {
     autoplay:{ delay: 2500 , disableOnInteraction:false  } ,
@@ -45,7 +45,7 @@ import { ImageGalleryHome } from '../Images2';
   return (
     <div className="GALLERY">
         <div className="bgCover"  >  <img  src={IMG3} alt="home" loading="lazy" /> </div>
-        <h1 className="h1">OUR WORKS</h1>
+        <div className="h1">OUR WORKS</div>
         <ul className='header1 header2' > {header?.map((e,index)=> (<li className={type == e.type ? "active p" : "p"} onClick={_=>handleFilter(e.type)} key={index}>{e.name}</li>))} </ul>
 
         <AnimatePresence>
@@ -53,7 +53,7 @@ import { ImageGalleryHome } from '../Images2';
             <Swiper {...settings}   className="mySwiper"  >
               
               {data?.map((e,index)=>( <SwiperSlide key={index}> 
-              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.2}} className='coverImg' >  <img src={e.img} loading='lazy'  alt={e?.alt}  /></motion.div> </SwiperSlide> )) }
+              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.2}} className='coverImg' >  <img src={e.img} loading='lazy'  alt={e?.alt || e?.type}   /></motion.div> </SwiperSlide> )) }
 
             </Swiper>
           </div>
@@ -61,7 +61,7 @@ import { ImageGalleryHome } from '../Images2';
 
     </div>
   );
-})
+}
 
 
 export default SliderHOME

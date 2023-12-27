@@ -1,7 +1,7 @@
 import axios from 'axios';
 const Api = 'https://mrm-server-vjru.onrender.com/'
 
-export const baseWEB = "http://localhost:3000/"
+export const baseWEB = "https://mrmadvertisingdubai.com/"
 const baseURL = axios.create({baseURL : `${Api}api/posts/`})
 
 

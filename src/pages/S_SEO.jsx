@@ -72,15 +72,26 @@ const WHY_MRM = [
 ]
 const S_SEO = () => {
 
-
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "search-engin-optimization",
+    "url": "https://mrmadvertisingdubai.com/search-engin-optimization",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MRM Advertising",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mrmadvertisingdubai.com/Logo1.png"
+      }
+    }
+  };
   return (
     <div className='M_SEO landing'>
-      <div className="container"> <Navbar /> </div>
-      <MetaTag title=" Top SEO services in Dubai for higher website ranking." desc="Improve your website's ranking in Dubai with professional SEO solutions from MRM. Boost visibility and capture your audience effectively" />
+      <MetaTag canonical="seo" schema={schema} title=" Top SEO services in Dubai for higher website ranking." desc="Improve your website's ranking in Dubai with professional SEO solutions from MRM. Boost visibility and capture your audience effectively" />
       <Animation />
       <Hero H1="Unlock the full potential of your website with SEO services" H2="Improve your website's visibility and ranking on search engines with our professional SEO solutions" H3="Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward" Img={ImgSection} nameServices="search-engine-optomization services" Imgintro={ImgIntro} />
       
-      <Qutation Img={IMG1} title1="Maximizing SEO Impact with MRM at Your Website "  desc1="We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it.<br/> Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs.<br/> Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search." />
+      <Qutation Img={IMG1} title1="Maximizing SEO Impact with MRM at Your Website "  desc1="We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it. Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs. Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search." />
 
       <Divider classn="divider-left" />
       <Plateforms Img={IMG2} title="Our SEO Services" data={OUR_SEO} nameServices="search-engine-optomization services" />

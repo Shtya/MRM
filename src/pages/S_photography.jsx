@@ -72,13 +72,23 @@ const WHY = [
 ]
 
 const S_photography = () => {
-
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "photography-and-videography",
+    "url": "https://mrmadvertisingdubai.com/photography-and-videography",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MRM Advertising",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mrmadvertisingdubai.com/Logo1.png"
+      }
+    }
+  };
   return (
     <div className="S_photography landing">
-      <MetaTag title="Top Photography & Videography services in Dubai " desc="Discover our photography and videography services in Dubai, from event photography to product videography. MRM provides optimal solutions." />
+      <MetaTag canonical="photography-and-videography" schema={schema} title="Top Photography & Videography services in Dubai " desc="Discover our photography and videography services in Dubai, from event photography to product videography. MRM provides optimal solutions." />
       <Animation />
-      {/* <Hero H1="" H2="" H3="" Img={ImgSection} nameServices="" Imgintro={ImgIntro} /> */}
-      {/* <Qutation Img={IMG1}  desc1="" /> */}
 
       <Hero H1="Capture your brand's story with our professional visual storytelling." H2="We turn moments into memories and transform your brand's essence into a compelling narrative. " H3="We specialize in capturing moments that tell a compelling story and creating visually engaging content. At MRM, we offer a wide range of high-quality photography and videography services to enhance your brand and narrative. Whether you need product photography, event coverage, or promotional videos, we have the expertise to deliver content that captivates and communicates." Img={ImgSection} nameServices="Photography&videography" Imgintro={ImgIntro} />
 

@@ -55,7 +55,7 @@ const SERVICES1 = [
 const Snapchat = () => {
    return (
     <div className="Snapchat shared">
-      <MetaTag title=" Best Snapchat Marketing Agency In Dubai  "  desc="Looking for Snapchat advertising services? Discover MRM`s Snapchat marketing services that empower your brand, boost engagement, and supercharge your sales" />
+      <MetaTag canonical="snapchat" title=" Best Snapchat Marketing Agency In Dubai  "  desc="Looking for Snapchat advertising services? Discover MRM`s Snapchat marketing services that empower your brand, boost engagement, and supercharge your sales" />
       <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
       H1="Create Engaging Snapchat Campaigns with Our Expert Marketing Solutions" 
       Img={IMG1} 
@@ -73,7 +73,7 @@ const Snapchat = () => {
         <div className="boxs">
         {
           TYPES.map((e,index)=> (
-            <div className="box" key={index}  data-aos="zoom-in-right" data-aos-delay={`${index/2}00`}>
+            <div className="box" key={index}  data-aos="zoom-in-right" >
               <div className='main'>
                 <img className='tokenImage' src={e.icon} alt="NFT" />
                 <h2 className='h2'>{e.title} </h2>
@@ -93,7 +93,7 @@ const Snapchat = () => {
         <div className='clip h1'data-aos="fade-up" >8 Reasons to Choose Snapchat for Digital Marketing</div> 
         <article className="gallery">
           {
-            SERVICES.map((e,index)=>(<div className="img" key={index} data-aos="zoom-in-right" data-aos-delay={`${index}00`}> 
+            SERVICES.map((e,index)=>(<div className="img" key={index} data-aos="zoom-in-right" > 
             <div className="num hidden-text"> {index + 1} </div>
               <div className="h2 ">{e.title}</div>
               <div className="p">{e.desc}</div>
@@ -111,7 +111,7 @@ const Snapchat = () => {
                 <div className="boxs" >
                   {
                     SERVICES1.map((e,index)=> (
-                      <div className="box" key={index} data-aos="zoom-in" data-aos-delay={`${index}00`} >
+                      <div className="box" key={index} data-aos="zoom-in"  >
                           <div className="text">
                               <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>

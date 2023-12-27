@@ -39,12 +39,24 @@ const BRANDING_SERVICES = [
   ]
 
 const S_Gifts = () => {
-
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "gifts",
+    "url": "https://mrmadvertisingdubai.com/gifts",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MRM Advertising",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mrmadvertisingdubai.com/Logo1.png"
+      }
+    }
+  };
   return (
     <div className="S_Gifts landing">
-      <div className="container"> <Navbar /> </div>
-      <MetaTag title=" Best Corporate Gifts Designing Services in Dubai " desc="Looking for impressive corporate gifts, gift items, and trophies? Our curated selection is customized for any occasion and denotes exceptional quality." />
+      <MetaTag canonical="gifts" schema={schema} title=" Best Corporate Gifts Designing Services in Dubai " desc="Looking for impressive corporate gifts, gift items, and trophies? Our curated selection is customized for any occasion and denotes exceptional quality." />
       <Animation />
+
       <Hero H1="Transform Professional Relationships with Timeless Elegance" H2="Unleash the potential of your business connections with our expertly curated collection of corporate gifts" H3="At MRM, we understand the impact of meaningful gestures in the corporate world. Our passion lies in transforming ordinary moments into extraordinary memories through our premium services: Corporate Gifts, Customized Items, and Trophies." Img={ImgSection} nameServices="gifts services" Imgintro={ImgIntro} />
       <Qutation Img={IMG1} title1="Strengthen Your Professional Ties  with Our Meticulously Curated Collection of Corporate Gifts"  desc1="Explore our meticulously curated collection of corporate gifts, tailor-made for every occasion, and elevate your business relationships to new heights.  Our handpicked selection of gifts is designed to leave a lasting impression on your clients, employees, and partners, and convey your appreciation for their business. With a focus on quality, elegance, and functionality, our gifts are sure to impress and strengthen your professional ties" />
         

@@ -31,7 +31,7 @@ const SERVICES = [
 const Tiktok = () => {
    return (
     <div className="Tiktok shared">
-      <MetaTag title=" Top TikTok Marketing Agency in Dubai   "  desc="Boost your brand's visibility and sales on TikTok with MRM's advertising services. Maximize your reach and engage your audience effectively. Contact Us Now" />
+      <MetaTag canonical="tiktok" title=" Top TikTok Marketing Agency in Dubai   "  desc="Boost your brand's visibility and sales on TikTok with MRM's advertising services. Maximize your reach and engage your audience effectively. Contact Us Now" />
       <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
       H1="Maximize Engagement and Build Your Brand with Our TikTok Marketing Strategies"
       Img={IMG1} 
@@ -50,7 +50,7 @@ const Tiktok = () => {
                 <div className="boxs" >
                   {
                     TYPES.map((e,index)=> (
-                      <div className="box" key={index}  data-aos="fade-down" data-aos-delay={`${index}00`} >
+                      <div className="box" key={index}  data-aos="fade-down"  >
                           <div className="text">
                               <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
@@ -73,7 +73,7 @@ const Tiktok = () => {
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div className="box"  data-aos="fade-down" data-aos-delay={`${index}00`}>
+                <div className="box"  data-aos="fade-down" >
                     <h2 className='number'>{index+1 >= 10 ?"":"0"}{index+1}</h2>
                     <h3 className='h2'>{e.title}</h3>
                     <p className='p'>{e.desc}</p>

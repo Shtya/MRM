@@ -40,7 +40,7 @@ const App = () => {
   return ( 
     <div className='App'>
       
-      <AnimatePresence >
+      {/* <AnimatePresence > */}
       <SlideNav whats={false} />
       
       <Routes>
@@ -76,7 +76,7 @@ const App = () => {
         <Route path='/tiktok'    element={<Tiktok />} />                        
 
       </Routes>
-      </AnimatePresence>
+      {/* </AnimatePresence> */}
     </div>
 
   )

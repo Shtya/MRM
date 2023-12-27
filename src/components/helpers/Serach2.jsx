@@ -1,6 +1,5 @@
-import React, { memo } from 'react'
 
-const Serach2 = memo(({Img , Imgsection ,title , data ,}) => {
+const Serach2 = ({Img , Imgsection ,title , data ,}) => {
   return (
     <div className="searching2">
         <div className="bgCover"   >  <img  src={Img} alt="photography services" loading="lazy" /> </div>
@@ -19,6 +18,6 @@ const Serach2 = memo(({Img , Imgsection ,title , data ,}) => {
           </div>
       </div>
   )
-})
+}
 
 export default Serach2

@@ -54,12 +54,23 @@ const BRANDING_SERVICES = [
 
 
 const S_Branding = ({header =true}) => {
- 
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "branding",
+    "url": "https://mrmadvertisingdubai.com/branding",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MRM Advertising",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mrmadvertisingdubai.com/Logo1.png"
+      }
+    }
+  };
   return (
     <div className="S_Branding landing">
-      <div className="container"> <Navbar /> </div>
       <Animation />
-      <MetaTag title=" Unleash Your Brand's Power with the Top Branding Agency in Dubai" desc="Stand out with unique logos, captivating web experiences & impactful social media designs! Contact us for comprehensive branding solutions ." />
+      <MetaTag canonical="branding" schema={schema} title=" Unleash Your Brand's Power with the Top Branding Agency in Dubai" desc="Stand out with unique logos, captivating web experiences & impactful social media designs! Contact us for comprehensive branding solutions ." />
       <Hero H1="Unleash the Full Power and Potential of Your Brand! " H2="Partner with us to bring your brand identity to life, both online and offline " H3="Your brand is your voice, your story – and it's how every aspect of your business makes your customers feel. we work with you to implement and grow it digitally and in real life.  Your brand goes way beyond a simple logo, or your visual identity. We don't just create your brand identity" Img={ImgSection} nameServices="branding services" Imgintro={ImgIntro} />
       <Qutation Img={IMG1} title1="Elevate Your Brand with Our Comprehensive Branding Services  "  desc1="MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. " />
      

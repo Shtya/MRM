@@ -32,7 +32,7 @@ const SERVICES = [
 const Instagram = () => {
    return (
     <div className="Instagram shared">
-      <MetaTag title=" TOP Instagram Marketing Agency in Dubai , UAE"  desc="Boost your brand with our Instagram marketing services in Dubai. Drive targeted engagement and visibility, resulting in high ROI for your business" />
+      <MetaTag canonical="instagram" title=" TOP Instagram Marketing Agency in Dubai , UAE"  desc="Boost your brand with our Instagram marketing services in Dubai. Drive targeted engagement and visibility, resulting in high ROI for your business" />
       <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
       H1="Maximize Your Reach and Engagement with Our Instagram Marketing Services"
       Img={IMG1} 
@@ -52,7 +52,7 @@ const Instagram = () => {
               
                   {
                     TYPES.map((e,index)=> (
-                      <div className="box" key={index} data-aos="zoom-in-right" data-aos-delay={`${index}00`}  >
+                      <div className="box" key={index} data-aos="zoom-in-right"   >
                           <div className="text">
                               <div className="h2" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>

@@ -2,7 +2,7 @@ import { memo, useEffect, useState } from 'react'
 import Slider_1_Img from './Slide/Slider_1_Img';
 import IMG3 from "../assets/bg/b3.jpg"
 import baseURL from '../API/API';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 var settings = {
   dots: true,
@@ -32,22 +32,39 @@ var settings = {
   ]
 };
 
+// const navigate = useNavigate()
 
-const Blog = memo(() => {
-  const [blogs , setdata] = useState()
+const Blog = () => {
+  const navigate = useNavigate();
+
+  const [blogs , setdata] = useState([])
   const {pathname} = useLocation() ;
-  useEffect(_=> { baseURL.get("").then(e => setdata(e.data.data)) } ,[pathname])
+
+  useEffect(_=> { 
+    blogs.length < 1 
+    ?  baseURL.get("").then(e => setdata(e.data.data))
+    :  baseURL.get("").then(e => setdata(e.data.data))
+   } ,[pathname])
+
+  useEffect(_=> { 
+    blogs.length < 1 
+    ?  baseURL.get("").then(e => setdata(e.data.data))
+    :  baseURL.get("").then(e => setdata(e.data.data))
+   } ,[])
+
+
 
   return (
     <section className='blog' id='Blog'>
+      
       <div className="bgCover"  >  <img  src={IMG3} alt="blog" loading="lazy" /> </div>
-      <div className="container"> <div className="h1 clip" data-aos="fade-up" >BLOG</div> </div>
+      <div className="container"> <div className="h1"onClick={_=> navigate("/blog")} style={{cursor:'pointer'}} data-aos="fade-up" >BLOG</div> </div>
       <p className="phead" data-aos="fade-up"  >Latest Insights and News to Keep Your Strategies Alive </p>
 
       <Slider_1_Img  data={blogs} settings={settings} />
 
     </section>
   )
-})
+}
 
 export default Blog

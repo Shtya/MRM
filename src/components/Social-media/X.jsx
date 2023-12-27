@@ -46,7 +46,7 @@ const SERVICES1 = [
 const X = () => {
    return (
     <div className="x shared">
-      <MetaTag title=" Best Twitter Marketing Agency in Dubai "  desc="Enhance your brand's online presence,grow your followers, boost engagement,and generate potential leads via MRM's Twitter marketing services. Contact Us Now" />
+      <MetaTag canonical="x" title=" Best Twitter Marketing Agency in Dubai "  desc="Enhance your brand's online presence,grow your followers, boost engagement,and generate potential leads via MRM's Twitter marketing services. Contact Us Now" />
       <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
       H1="Transform Your Business with our Expert X Marketing Services"
       Img={IMG1} 
@@ -62,7 +62,7 @@ const X = () => {
           <div className="container">
             <ul className="cards">
             {SERVICES.map((e,index)=> (
-            <li className='box' key={index} data-aos="zoom-in" data-aos-delay={`${index}00`} >
+            <li className='box' key={index} data-aos="zoom-in"  >
               <a  className="card">
                 <div className="cover"> <img src={e.icon} className="card__image" alt="twitter-page" loading="lazy" /> </div>
                 <div className="card__overlay">
@@ -87,7 +87,7 @@ const X = () => {
                 <div className="boxs" >
                   {
                     TYPES.map((e,index)=> (
-                      <div className="box" key={index} data-aos="zoom-in-left" data-aos-delay={`${index}00`}  >
+                      <div className="box" key={index} data-aos="zoom-in-left"   >
                           <div className="text">
                               <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
@@ -108,7 +108,7 @@ const X = () => {
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div className="box" data-aos="fade-down" data-aos-delay={`${index}00`} >
+                <div className="box" data-aos="fade-down"  >
                      <h2 className='number'>{index+1 >= 10 ?"":"0"}{index+1}</h2>
                     <h3 className='h2'>{e.title}</h3>
                     <p className='p'>{e.desc}</p>

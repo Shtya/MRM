@@ -48,11 +48,25 @@ const Approach = [
 
 
 const S_WebDesign = () => {
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "web-design",
+    "url": "https://mrmadvertisingdubai.com/web-design",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MRM Advertising",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mrmadvertisingdubai.com/Logo1.png"
+      }
+    }
+  };
   return (
 
 <div className="WEB_DESIGN landing" >
       <Animation />
-      <MetaTage title="Expert Web Development and Design Services in Dubai, UAE" desc="Capture your audience with our web design and development services for exceptional results for startups and businesses." />
+      <MetaTage canonical="web-design" schema={schema} title="Expert Web Development and Design Services in Dubai, UAE" desc="Capture your audience with our web design and development services for exceptional results for startups and businesses." />
+      
       <div className="container"> <Navbar /> </div>
 
       <div className="coverIntro"> <img data-aos="zoom-in"  src={ImgIntro} alt="web design services" loading="lazy" /></div>
@@ -60,8 +74,8 @@ const S_WebDesign = () => {
         <div className="container">
           <div  data-aos="fade-right" data-aos-delay="400" className="boxImg " >  <img  src={ImgSection} alt="web design services" loading="lazy" /> </div>
           <div className="boxs" data-aos="fade-left" data-aos-delay="600" >
-            <h2 className='h1 ' >Boost the Effectiveness of Your Website's Online Presence. </h2>
-            <p className='h2 ' > Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development. </p>
+            <h1 className='h1 ' >Boost the Effectiveness of Your Website's Online Presence. </h1>
+            <h2 className='h2 ' > Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development. </h2>
             <div className="inner-boxs" >
 
               <ul className="box">

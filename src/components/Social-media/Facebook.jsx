@@ -61,7 +61,7 @@ const SERVICES = [
 const Facebook = () => {
    return (
     <div className="Facebook shared">
-      <MetaTag title=" Best Facebook Marketing Agency in Dubai , UAE  "  desc="Looking for Facebook Marketing Services in Dubai? Elevate Your Brand's Visibility and Engagement MRM Delivers High ROI with Efficient Spending on Facebook " />
+      <MetaTag canonical="facebook" title=" Best Facebook Marketing Agency in Dubai , UAE  "  desc="Looking for Facebook Marketing Services in Dubai? Elevate Your Brand's Visibility and Engagement MRM Delivers High ROI with Efficient Spending on Facebook " />
       <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
       H1="Unlock Your Business Potential with Our Expert Facebook Marketing Services" 
       Img={IMG1} 
@@ -98,7 +98,7 @@ const Facebook = () => {
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div className="box" key={index} data-aos="fade-up" data-aos-delay={`${index}00`}>
+                <div className="box" key={index} data-aos="fade-up" >
                   <div className="coverImg"> <img src={e.icon} alt={e.title} /> </div>
                     <h2 className='h2'>{e.title} </h2>
                     <p className='p'>{e.desc}</p>

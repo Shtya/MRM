@@ -15,14 +15,7 @@ const Alt_Navbar = () => {
     let navbar = document.querySelector(".Navbar1 .navbar");
     let searchBox = document.querySelector(".Navbar1 .search-box .bx-search");
 
-searchBox.addEventListener("click", ()=>{
-  navbar.classList.toggle("showInput");
-  if(navbar.classList.contains("showInput")){
-    searchBox.classList.replace("bx-search" ,"bx-x");
-  }else {
-    searchBox.classList.replace("bx-x" ,"bx-search");
-  }
-});
+
 
 let navLinks = document.querySelector(" .Navbar1 .nav-links");
 let menuOpenBtn = document.querySelector(" .Navbar1 .navbar .bx-menu");
@@ -51,10 +44,6 @@ navLinks.style.left = "-100%";
             <li><Link to="/MRM" >Blogs</Link></li>
             <li><Link to="/dashboard">Create</Link></li>
           </ul>
-        </div>
-        <div className="search-box">
-          <i className='bx bx-search'></i>
-          <div className="input-box"> <input type="text" placeholder="Search..."/>  </div>
         </div>
       </div>
     </nav>

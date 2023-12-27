@@ -37,7 +37,7 @@ const SERVICES1 = [
 const Linkedin = () => {
    return (
     <div className="Linkedin shared">
-      <MetaTag title=" Best LinkedIn Advertising Services in Dubai, UAE "  desc="Looking for B2B  marketing agency in Dubai? With MRM you can Reach decision-makers, establish thought leadership, and generate high-quality B2B leads" />
+      <MetaTag canonical="linkedin" title=" Best LinkedIn Advertising Services in Dubai, UAE "  desc="Looking for B2B  marketing agency in Dubai? With MRM you can Reach decision-makers, establish thought leadership, and generate high-quality B2B leads" />
       <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
       H1="Grow Your Business with Our Comprehensive LinkedIn Marketing Solutions"
       Img={IMG1} 
@@ -55,7 +55,7 @@ const Linkedin = () => {
                 <div className="boxs" >
                   {
                     TYPES.map((e,index)=> (
-                      <div className="box" key={index} data-aos="fade-down" data-aos-delay={`${index}00`}  >
+                      <div className="box" key={index} data-aos="fade-down"   >
                           <div className="text">
                               <div className="h2 clip hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
@@ -76,7 +76,7 @@ const Linkedin = () => {
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (
-                <div className="box" data-aos="zoom-in-right" data-aos-delay={`${index}00`} >
+                <div className="box" data-aos="zoom-in-right"  >
                     <h2 className='number'>{index+1 >= 10 ?"":"0"}{index+1}</h2>
                     <h3 className='h2'>{e.title}</h3>
                     <p className='p'>{e.desc}</p>
@@ -96,7 +96,7 @@ const Linkedin = () => {
                 <div className="boxs" >
                   {
                     SERVICES1.map((e,index)=> (
-                      <div className="box" key={index} data-aos="fade-down" data-aos-delay={`${index}00`} >
+                      <div className="box" key={index} data-aos="fade-down"  >
                           <div className="text">
                               <div className="h2 hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>

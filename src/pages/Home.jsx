@@ -11,49 +11,13 @@ import MetaTag from "./MetaTag";
 import Animation from "../components/helpers/Animation";
 import Clients2 from "../components/Clients2";
 import SliderHOME from "../components/SLIDER_MRM/SliderHOME"
-import { Helmet } from "react-helmet";
 
 
 function Home() {
 
   return (
     <div className="Home" >
-      <MetaTag  title="MRM | Best Digital Marketing & Advertising Agency in Dubai"  desc="Boost your brand with MRM, Dubai's premier digital marketing & advertising agency with SEO, social media marketing and PPC for top visibility and impact" />
-      <Helmet>  
-      <script type="application/ld+json">{`
-      {
-        "@context": "http://schema.org",
-        "@type": "LocalBusiness",
-        "name": "MRM | Best Digital Marketing & Advertising Agency in Dubai        ",
-        "description": "Boost your brand with MRM, Dubai's premier digital marketing & advertising agency with SEO, social media marketing and PPC for top visibility and impact",
-        "url": "https://mrmadvertisingdubai.com/",
-        "telephone": "+971123456789",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Dubai",
-          "addressCountry": "AE"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "opens": "09:00",
-          "closes": "18:00"
-        },
-        "telephone": "+971123456789",
-        "image": "https://mrmadvertisingdubai.com/,
-      },
-      {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "MRM advertising",
-        "url": "https://mrmadvertisingdubai.com/",
-        "logo": "https://mrmadvertisingdubai.com/Logo1.png",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+971123456789",
-        }
-      }
-      `}</script>
-      </Helmet>
+      <MetaTag  canonical=""  title="MRM | Best Digital Marketing & Advertising Agency in Dubai"  desc="Boost your brand with MRM, Dubai's premier digital marketing & advertising agency with SEO, social media marketing and PPC for top visibility and impact" />
         <Animation />
         
         <Landing />
@@ -70,7 +34,6 @@ function Home() {
         <Services />
 
         <Divider classn="divider-left" />
-        {/* <SliderHOME /> */}
         <SliderHOME />
 
         
@@ -82,7 +45,7 @@ function Home() {
         <Divider classn="divider" />
         <Blog />
         
-        <Footer appear={false} />
+        <Footer  />
         </div>
   );
 }

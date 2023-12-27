@@ -68,10 +68,22 @@ const process = [
 ]
 
 const S_Media = () => {
-
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "media-buying",
+    "url": "https://mrmadvertisingdubai.com/media-buying",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MRM Advertising",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mrmadvertisingdubai.com/Logo1.png"
+      }
+    }
+  };
   return (
   <div className="S_media landing">
-    <MetaTag title=" Boost Your Brand with Top Advertising Companies in Dubai" desc="Transform your social platforms, run effective Google Ads campaigns, and achieve measurable growth with MRM's advertising experts in Dubai." />
+    <MetaTag canonical="media-buying" schema={schema} title=" Boost Your Brand with Top Advertising Companies in Dubai" desc="Transform your social platforms, run effective Google Ads campaigns, and achieve measurable growth with MRM's advertising experts in Dubai." />
     <Animation />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro " data-aos="zoom-in-left" > <img src={ImgIntro} alt="media buying services" loading="lazy" /></div>

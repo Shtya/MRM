@@ -14,7 +14,7 @@ const OneBlog = ({classn ,blogs , settings , name , onHere }) => {
 
   return (
     <div className={`Slider_1_Img ${classn}`}>
-      <Helmet> <script type="application/ld+json">{`{ "@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {   "@type": "WebPage",   "@id": "https://mrmadvertisingdubai.com/" }, "headline": ${blogs?.title}, "description": ${blogs?.desc}, "image": ${blogs?.thumbnail}, "datePublished": ${blogs?.createdAt}, "dateModified": dateModified }`}</script> </Helmet>
+      <Helmet> <script type="application/ld+json">{`{ "@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {   "@type": "WebPage",   "@id": "https://mrmadvertisingdubai.com/" }, "headline": ${blogs[0]?.title}, "description": ${blogs[0]?.desc}, "image": ${blogs[0]?.thumbnail}, "datePublished": ${blogs[0]?.createdAt}, "dateModified": dateModified }`}</script> </Helmet>
       
       {onHere ? <div className="bgCover"  >  <img  src={IMG3} alt="blog" loading="lazy" /> </div> : <div className="bgCover"  >  <img  src={IMG1} alt="blog" loading="lazy" /> </div>}
       <div className="h1 clip"> {name} </div>

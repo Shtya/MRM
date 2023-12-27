@@ -39,16 +39,10 @@ const E_post = () => {
             <form className="form create-post_form">
               <p className="error-message"> THis is an error message </p>
               <input type="text" placeholder='title'  value={title}    onChange={e=> settitle(e.target.value)}  />
-              <select name=""                        value={category} onChange={e=> setCategory(e.target.value)}> {Section.map((e,index)=> ( <option value={e}>{e}</option> ))} </select>
+              <select name=""                        value={category} onChange={e=> setCategory(e.target.value)}> {Section.map((e,index)=> ( <option key={index} value={e}>{e}</option> ))} </select>
               <input type="text" placeholder='Image'  value={Image2}    onChange={e=> setImage2(e.target.value)}  />
 
-              <JoditEditor
-                  ref={editor}
-                  value={Des}
-                  config={config}
-                  tabIndex={1} // tabIndex of textarea
-                  onChange={setDes}
-                />
+              <JoditEditor   ref={editor}   value={Des}   config={config}   tabIndex={1}ea   onChange={setDes} />
 
               <button className='bt' style={{opacity: !isload ? "1":".7" }}  onClick={handleSubmit} > 
                 {

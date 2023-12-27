@@ -9,9 +9,9 @@ const Hero = ({H1 , H2 , H3 , Img , nameServices , Imgintro}) => {
           <div className="container">
               <div className="boxImg " data-aos="zoom-in-left" data-aos-delay="400"  >  <img   src={Img} alt={nameServices} loading="lazy" /> </div>
               <div className="boxs" data-aos="fade-left" data-aos-delay="600" >
-                  <h2 className='h1 '>{H1}</h2>
+                  <h1 className='h1 '>{H1}</h1>
                   <h2 className='h2 '>{H2}</h2>
-                  <p className='p '>{H3}</p>
+                  <h3 className='p '>{H3}</h3>
             </div>
         </div>
       </div>
