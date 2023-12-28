@@ -71,7 +71,7 @@ const S_Media = () => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "media-buying",
-    "url": "https://mrmadvertisingdubai.com/media-buying",
+    "url": "https://mrmadvertisingdubai.com/media-buying-agency-in-dubai",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",

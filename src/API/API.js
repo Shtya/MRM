@@ -1,5 +1,5 @@
 import axios from 'axios';
-const Api = 'https://mrm-server-vjru.onrender.com/'
+const Api = 'https://mrm-0-server.vercel.app/'
 
 export const baseWEB = "https://mrmadvertisingdubai.com/"
 const baseURL = axios.create({baseURL : `${Api}api/posts/`})

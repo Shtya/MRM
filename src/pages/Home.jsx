@@ -1,3 +1,4 @@
+import React , { Suspense } from "react";
 import Blog from "../components/Blog";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
@@ -9,9 +10,9 @@ import SlideNav from "../components/SlideNav";
 import { Divider } from "../components/patterns/Pattern1";
 import MetaTag from "./MetaTag";
 import Animation from "../components/helpers/Animation";
-import Clients2 from "../components/Clients2";
-import SliderHOME from "../components/SLIDER_MRM/SliderHOME"
-
+import LoadingMemo from "../components/helpers/LoadingLazy"
+const Clients2 = React.lazy(() => import('../components/Clients2'));
+const SliderHOME = React.lazy(() => import("../components/SLIDER_MRM/SliderHOME"));
 
 function Home() {
 
@@ -34,11 +35,11 @@ function Home() {
         <Services />
 
         <Divider classn="divider-left" />
-        <SliderHOME />
+        <Suspense fallback={<LoadingMemo />}>   <SliderHOME />  </Suspense>
 
         
         <Divider classn="divider" />
-        <Clients2 />
+        <Suspense fallback={<LoadingMemo />}>   <Clients2 />  </Suspense>
 
         <Contact />
 

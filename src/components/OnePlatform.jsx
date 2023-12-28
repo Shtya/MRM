@@ -12,7 +12,7 @@ const OnePlatform = ({title , paragraph , img , classn , path , trueBtn}) => {
         <div className="inner-box">
             <span className="one"/>
             <span className="two"/>
-            <h2 className='h2 '> {title} </h2>
+            <h3 className='h2 '> {title} </h3>
             <p className='p '>{paragraph}</p>
             {trueBtn &&<button className='bt' onClick={_=> navigate(path)}> see more</button>}
         </div>

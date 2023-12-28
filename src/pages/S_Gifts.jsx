@@ -1,8 +1,6 @@
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/Intro&Cover/cover-gifts.jpg"
-import SliderGIFTS from "../components/SLIDER_MRM/SliderGIFTS"
 
 import Icon_1 from "../assets/S_gifts/offer1.png" ;
 import Icon_2 from "../assets/S_gifts/offer2.png" ;
@@ -24,6 +22,10 @@ import MetaTag from './MetaTag'
 import Hero from '../components/helpers/Hero'
 import Qutation from '../components/helpers/Qutation'
 import Impact from '../components/helpers/Impact'
+import React , { Suspense } from "react"
+import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
+const SliderGIFTS = React.lazy(() => import("../components/SLIDER_MRM/SliderGIFTS"));
+
 
 const Approach = [
   { img:gifts_1 , title:"Corporate Gifts" , desc:"Where Thoughtful Gestures Meet Elegance The right gift can make a big impact in corporate relationships. Our Corporate Gifts collection offers timeless and sophisticated items that show genuine appreciation. "},
@@ -42,7 +44,7 @@ const S_Gifts = () => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "gifts",
-    "url": "https://mrmadvertisingdubai.com/gifts",
+    "url": "https://mrmadvertisingdubai.com/gifts-agency-in-dubai",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",
@@ -76,7 +78,7 @@ const S_Gifts = () => {
       </div>
 
       <Divider classn="divider" />
-      <SliderGIFTS />
+      <Suspense fallback={<LoadingMemo />}>   <SliderGIFTS />  </Suspense>
 
       <Divider classn="divider-left" />
       <Impact classn="impact" Img={IMG3}  data={BRANDING_SERVICES}  title="Why Choose Us for Your Corporate Gifting Needs?"  nameServices="gifts services"  />

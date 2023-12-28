@@ -1,6 +1,4 @@
-import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
-
 import ImgSection from "../assets/Intro&Cover/cover-seo.jpg" ;
 
 import Analysis_1 from "../assets/SEO/Analysis-1.png"
@@ -20,8 +18,6 @@ import Icon_3 from "../assets/SEO/SEO-3.png"
 import Icon_4 from "../assets/SEO/SEO-4.png"
 import Icon_5 from "../assets/SEO/SEO-5.png"
 import Icon_6 from "../assets/SEO/SEO-6.png"
-import OnePlatform from '../components/OnePlatform';
-import OneProcess from '../components/OneProcess';
 import OneWhy from '../components/OneWhy';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
@@ -64,18 +60,18 @@ const PROCESS = [
   {img:Analysis_9 , classn:"" , title:"Results and Growth"       , desc:"With our data-driven approach, you'll see your website's organic traffic and rankings improve over time. Your online presence will continue to grow, driving more leads and conversions for your business " },
 ]
 const WHY_MRM = [
-  {img:seo_process_1 , classn:"", title:"Profound Expertise "        , desc:"Our SEO team has extensive experience and knowledge in the field, allowing them to navigate SEO intricacies and deliver outstanding results."},
-  {img:seo_process_2 , classn:"", title:"Transparent Communication " , desc:"We maintain clear and transparent communication throughout our partnership. You will be kept updated on our strategies, progress, and their impact on your business, ensuring you are with us every step of the way.."},
-  {img:seo_process_3 , classn:"", title:"Creative Problem Solvers"   , desc:"SEO is not just a technical endeavor; it requires creative problem-solving. Our team approaches each project with innovation and a determination to overcome challenges, ensuring your SEO strategy is effective and adaptable."},
-  {img:seo_process_4 , classn:"", title:"Data-Driven Strategies "    , desc:"We rely on data-driven insights to formulate SEO strategies, allowing us to pinpoint opportunities, measure performance, and continuously refine our approach for optimal outcomes."},
-  {img:seo_process_5 , classn:"", title:"Customized Solutions "      , desc:"We understand that each business is unique, and our SEO strategies are tailored to your specific needs, business goals, target audience, and industry. This customized approach ensures that we deliver results that align with your unique requirements."},
+  {img:seo_process_1 , altCover:"Executive with holographic projection of business icons  " , classn:"", title:"Profound Expertise "        , desc:"Our SEO team has extensive experience and knowledge in the field, allowing them to navigate SEO intricacies and deliver outstanding results."},
+  {img:seo_process_2 , altCover:"Business hand presents light bulb with strategy icons  " , classn:"", title:"Transparent Communication " , desc:"We maintain clear and transparent communication throughout our partnership. You will be kept updated on our strategies, progress, and their impact on your business, ensuring you are with us every step of the way.."},
+  {img:seo_process_3 , altCover:"Hands framing a digital globe with network lines  " , classn:"", title:"Creative Problem Solvers"   , desc:"SEO is not just a technical endeavor; it requires creative problem-solving. Our team approaches each project with innovation and a determination to overcome challenges, ensuring your SEO strategy is effective and adaptable."},
+  {img:seo_process_4 , altCover:"Man interacts with digital solution  " , classn:"", title:"Data-Driven Strategies "    , desc:"We rely on data-driven insights to formulate SEO strategies, allowing us to pinpoint opportunities, measure performance, and continuously refine our approach for optimal outcomes."},
+  {img:seo_process_5 , altCover:"Finger pointing at growth graph on screen  " , classn:"", title:"Customized Solutions "      , desc:"We understand that each business is unique, and our SEO strategies are tailored to your specific needs, business goals, target audience, and industry. This customized approach ensures that we deliver results that align with your unique requirements."},
 ]
 const S_SEO = () => {
 
   const schema = {
     "@context": "http://schema.org",
-    "@type": "search-engin-optimization",
-    "url": "https://mrmadvertisingdubai.com/search-engin-optimization",
+    "@type": "seo",
+    "url": "https://mrmadvertisingdubai.com/seo",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",
@@ -84,14 +80,15 @@ const S_SEO = () => {
         "url": "https://mrmadvertisingdubai.com/Logo1.png"
       }
     }
-  };
+  }
+
   return (
     <div className='M_SEO landing'>
-      <MetaTag canonical="seo" schema={schema} title=" Top SEO services in Dubai for higher website ranking." desc="Improve your website's ranking in Dubai with professional SEO solutions from MRM. Boost visibility and capture your audience effectively" />
+      <MetaTag canonical="seo" schema={schema} title="Leading SEO Agency in Dubai | Higher Website Rankings Insured" desc="Improve your Website's Visibility, Ranking on Search Engines and Beat Your competitors with MRM One of the Best SEO Agencies in Dubai ,UAE" />
       <Animation />
-      <Hero H1="Unlock the full potential of your website with SEO services" H2="Improve your website's visibility and ranking on search engines with our professional SEO solutions" H3="Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward" Img={ImgSection} nameServices="search-engine-optomization services" Imgintro={ImgIntro} />
+      <Hero  H1="Unleash the full potential of your website with the best SEO services in Dubai " H2="Improve your Website's Visibility and Ranking on Search Engines with One of the Best SEO Agencies in Dubai" H3="Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward." Img={ImgSection} nameServices="Desktop monitor, keyboard, mouse" Imgintro={ImgIntro} />
       
-      <Qutation Img={IMG1} title1="Maximizing SEO Impact with MRM at Your Website "  desc1="We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it. Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs. Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search." />
+      <Qutation Img={IMG1} title1="Maximizing SEO Impact and Achieving Number 1# Ranking among Competitors with MRM SEO Services "  desc1="We don't just make empty promises about our commitment to SEO in Dubai, UAE. We take concrete actions to prove it. Our primary objective is to help businesses thrive in the digital world. To achieve this, we provide tailor-made local SEO services that cater to their specific requirements.Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of search." />
 
       <Divider classn="divider-left" />
       <Plateforms Img={IMG2} title="Our SEO Services" data={OUR_SEO} nameServices="search-engine-optomization services" />
@@ -102,17 +99,17 @@ const S_SEO = () => {
     <Divider classn="divider-left" />
     <div className="WHY">
         <div className="bgCover"  >  <img  src={IMG2} alt="search-engine-optomization services" loading="lazy" /> </div>
-      <div className="h1" data-aos="fade-up"> Why We Excels? </div>
+      <h2 className="h1" data-aos="fade-up"> Why We Excels? </h2>
       <div className="container" data-aos="fade-up">
         {
           WHY_MRM.map((e,index)=> (
-            <OneWhy key={index} img={e.img} title={e.title} desc={e.desc} classn={`${e.classn} one-why-${index+1}`} />
+            <OneWhy altCover={e.altCover} key={index} img={e.img} title={e.title} desc={e.desc} classn={`${e.classn} one-why-${index+1}`} />
           ))
         }
       </div>
     </div>
 
-    <Contact />
+    <Contact title="Let's Skyrocket Your Rankings and Drive Organic Traffic."  desc="Reach Out to Get a Free SEO Audit" />
     <Footer />
     </div>
   )

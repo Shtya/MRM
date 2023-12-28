@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState , memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay , Grid, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -10,7 +10,7 @@ import { ImageGalleryHome } from '../Images2';
 import Img1 from "../../assets/bg/b2.jpg"
 
 
-export default function SliderPHOTO() {
+export default memo(function SliderPHOTO() {
   const [media , setmedia ] = useState(2)
   const settings = {
     autoplay:{ delay: 2500 , disableOnInteraction:false  } ,
@@ -61,4 +61,4 @@ export default function SliderPHOTO() {
 
     </div>
   );
-}
+})

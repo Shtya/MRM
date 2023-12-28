@@ -73,7 +73,7 @@ const S_Exhibition = () => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "Exhibition-and-display-stand",
-    "url": "https://mrmadvertisingdubai.com/Exhibition-and-display-stand",
+    "url": "https://mrmadvertisingdubai.com/exhibition-and-display-stand-agency-in-dubai",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",

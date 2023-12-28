@@ -52,7 +52,7 @@ const Contact2 = () => {
                   <input data-aos="fade-left" data-aos-delay="300" name="name" type="text"  placeholder='Your Name' id="" />
                   <input data-aos="fade-left" data-aos-delay="400" name="email" type="Email"  placeholder='Email address' id="" />
                   <input data-aos="fade-left" data-aos-delay="500" name="phone" type="text"  placeholder='Phone' id="" />
-                  <select data-aos="fade-left" data-aos-delay="600" name="services" className='input form-select' aria-label=".form-select-lg examplev" value={value} onChange={e=> setvalue(e.target.value)}>
+                  <select  data-aos="fade-left" data-aos-delay="600" name="services" className='input form-select' aria-label=".form-select-lg examplev" value={value} onChange={e=> setvalue(e.target.value)}>
                     <option value="0">Select a service</option>
                     {services.map((e,index)=> <option key={index} value={e} >{e}</option> )}
                   </select>

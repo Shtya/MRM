@@ -1,3 +1,4 @@
+
 import IMG1 from "../assets/bg/b1.jpg"
 import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/Intro&Cover/cover-webdesign.jpg"
@@ -23,10 +24,12 @@ import {Pattern9 } from '../components/patterns/Pattern1'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Contact from '../components/Contact'
-import SliderWEB from '../components/SLIDER_MRM/SliderWEB'
 
 import Qutation  from "../components/helpers/Qutation"
 import Social_media from "../components/helpers/Social_media"
+import React , { Suspense } from "react"
+import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
+const SliderWEB = React.lazy(() => import('../components/SLIDER_MRM/SliderWEB'));
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_4 , title:"E-commerce Development Services   " , desc:"In today's fast-paced digital landscape, having a user-friendly and robust online store is an advantage and a necessity for e-commerce businesses. At MRM Agency, we offer top-notch E-commerce Development Services that can transform your online business and enhance your brand's presence. Whether you're starting a new e-commerce venture or want to improve an existing one, our team is here to turn your e-commerce aspirations into reality."},
@@ -51,7 +54,7 @@ const S_WebDesign = () => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "web-design",
-    "url": "https://mrmadvertisingdubai.com/web-design",
+    "url": "https://mrmadvertisingdubai.com/web-design-agency-in-dubai",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",
@@ -129,8 +132,8 @@ const S_WebDesign = () => {
         </div>
       
         <Pattern9 />
-        
-        <SliderWEB    />
+        <Suspense fallback={<LoadingMemo />}>   <SliderWEB />  </Suspense>
+
 
       
         <Contact />

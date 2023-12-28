@@ -5,7 +5,7 @@ const Process2 = ({data , Img , title ,}) => {
   return (
     <div className="process3">
         <div className="bgCover"  >  <img  src={Img} alt="search-engine-optomization services" loading="lazy" /> </div>
-        <div className="h1 " data-aos="fade-up">{title}</div>
+        <h2 className="h1 " data-aos="fade-up">{title}</h2>
           <div className="container">
               <div className="box box1">
                   <OneProcess num="1" classn={data[0]?.classn} img={data[0]?.img} title={data[0]?.title} paragraph={data[0]?.desc} />

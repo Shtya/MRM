@@ -45,15 +45,15 @@ htmlcssArrow.onclick = function() {
             <li data-aos="fade-down" data-aos-delay="300" ><Link  >Services</Link>
               <i className='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
               <ul className="htmlCss-sub-menu sub-menu">
-                <li onClick={_=> Navigate("/web-design")}><Link to="/web-design"> web design & Development </Link></li>
-                <li onClick={_=> Navigate("/photography-and-videography")}><Link to="/photography-and-videography"> photography & videography </Link></li>
-                <li onClick={_=> Navigate("/Exhibition-and-display-stand")}><Link to="/Exhibition-and-display-stand"> exhibition & display stands</Link></li>
-                <li onClick={_=> Navigate("/indoor-and-outdoor-signages")}><Link to="/indoor-and-outdoor-signages"> indoor & outdoor signages </Link></li>
-                <li onClick={_=> Navigate("/social-media-marketing")}><Link to="/social-media-marketing"> social media marketing</Link></li>
-                <li onClick={_=> Navigate("/gifts")}><Link to="/gifts">cooperated gifts </Link></li>
-                <li onClick={_=> Navigate("/media-buying")}><Link to="/media-buying">media buying </Link></li>
-                <li onClick={_=> Navigate("/branding")}><Link to="/branding">Branding </Link></li>
-                <li onClick={_=> Navigate("/seo")}><Link to="/seo">SEO </Link></li>
+                <li onClick={_=> Navigate("/web-design-agency-in-dubai")}><Link to="/web-design-agency-in-dubai"> web design & Development </Link></li>
+                <li onClick={_=> Navigate("/photography-and-videography-agency-in-dubai")}><Link to="/photography-and-videography-agency-in-dubai"> photography & videography </Link></li>
+                <li onClick={_=> Navigate("/exhibition-and-display-stand-agency-in-dubai")}><Link to="/exhibition-and-display-stand-agency-in-dubai"> exhibition & display stands</Link></li>
+                <li onClick={_=> Navigate("/indoor-and-outdoor-signages-agency-in-dubai")}><Link to="/indoor-and-outdoor-signages-agency-in-dubai"> indoor & outdoor signages </Link></li>
+                <li onClick={_=> Navigate("/social-media-marketing-agency-in-dubai")}><Link to="/social-media-marketing-agency-in-dubai"> social media marketing</Link></li>
+                <li onClick={_=> Navigate("/gifts-agency-in-dubai")}><Link to="/gifts-agency-in-dubai">cooperated gifts </Link></li>
+                <li onClick={_=> Navigate("/media-buying-agency-in-dubai")}><Link to="/media-buying-agency-in-dubai">media buying </Link></li>
+                <li onClick={_=> Navigate("/branding-agency-in-dubai")}><Link to="/branding-agency-in-dubai">Branding </Link></li>
+                <li onClick={_=> Navigate("/seo-agency-in-dubai")}><Link to="/seo-agency-in-dubai">SEO </Link></li>
               </ul>
             </li>
 

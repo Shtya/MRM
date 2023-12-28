@@ -16,7 +16,7 @@ const Plateforms = ({Img , title , data , nameServices ,}) => {
                         <div className="inner-box">
                             <span className="one"/>
                             <span className="two"/>
-                            <h2 className='h2 '> {e.title} </h2>
+                            <h3 className='h2 '> {e.title} </h3>
                             <p className='p '>{e.desc}</p>
                         </div>
                       </Link>

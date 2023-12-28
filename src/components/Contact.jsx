@@ -25,19 +25,16 @@ const Contact = ({title , desc , onHere}) => {
   return (
     <>
       <Pattern9 />
-    <section className='Contact' id='Contact'>
       <Animation />
+    <section className='Contact' id='Contact'>
       <div className="bgCover"  >  <img  src={IMG1} alt="contact" loading="lazy" /> </div>
-     <div className="container1">  <div className='h2'>{desc }</div> </div>
+      {/* <div className="container1">  <div className='h2'>{desc }</div> </div> */}
+      
       <div className="container">
-
-      <div className="box box-img " data-aos="fade-right"  >
-          <img  src={FormImg} alt="Smiling man with laptop on geometric patterned background with text 'We're Here to Help You”" loading="lazy" />
-        </div>
-
+      <div className="box box-img " data-aos="fade-right"  > <img  src={FormImg} alt="Smiling man with laptop on geometric patterned background with text 'We're Here to Help You”" loading="lazy" /> </div>
         <div   className="box" data-aos="fade-left" data-aos-delay="50"  >
           <div data-aos="fade-left" data-aos-delay="70"  className='h1 '>{title || "We're here to help you"}</div> 
-          <p data-aos="fade-left" data-aos-delay="90"  className='h2'>{desc ? "" : "Reach Out and Let's Talk"} </p>
+          <p data-aos="fade-left" data-aos-delay="90"  className='h2'>{desc ? desc : "Reach Out and Let's Talk"} </p>
 
           <form ref={form} onSubmit={sendEmail}>
               <input data-aos="fade-left" data-aos-delay="110"  required type="text" name="name" placeholder='Your Name' id="" />

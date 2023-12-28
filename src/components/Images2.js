@@ -131,7 +131,17 @@ import Building6 from "../assets/gallery/8.Building/Building Wrap 600x600-06.jpg
 import Building7 from "../assets/gallery/8.Building/Building Wrap 600x600-07.jpg"
 
 
+import OutDoor1 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-01.jpg"
+import OutDoor2 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-02.jpg"
+import OutDoor3 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-03.jpg"
+import OutDoor4 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-04.jpg"
+import OutDoor5 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-05.jpg"
+import OutDoor6 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-06.jpg"
 
+import Gifts1 from "../assets/gallery/gifts/Gift Items 600x600-01.jpg"
+import Gifts2 from "../assets/gallery/gifts/Gift Items 600x600-02.jpg"
+import Gifts3 from "../assets/gallery/gifts/Gift Items 600x600-03.jpg"
+import Gifts4 from "../assets/gallery/gifts/Gift Items 600x600-04.jpg"
 
 import Logo1 from "../assets/gallery/branding/branding2.jpg"
 import Logo2 from "../assets/gallery/branding/branding2.jpg"

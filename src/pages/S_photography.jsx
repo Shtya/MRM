@@ -32,11 +32,14 @@ import MetaTag from "./MetaTag";
 
 import Qutation   from "../components/helpers/Qutation"
 import Footer  from "../components/Footer"
-import SliderPHOTO from "../components/SLIDER_MRM/SliderPHOTO"
 import Hero from "../components/helpers/Hero"
 import PHOTOgraphy from "../components/helpers/PHOTOgraphy"
 import Serach2  from "../components/helpers/Serach2"
 import Contact  from "../components/Contact"
+
+import React , { Suspense } from "react"
+import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
+const SliderPHOTO = React.lazy(() => import("../components/SLIDER_MRM/SliderPHOTO"));
 
 
 
@@ -75,7 +78,7 @@ const S_photography = () => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "photography-and-videography",
-    "url": "https://mrmadvertisingdubai.com/photography-and-videography",
+    "url": "https://mrmadvertisingdubai.com/photography-and-videography-agency-in-dubai",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",
@@ -101,7 +104,7 @@ const S_photography = () => {
       <PHOTOgraphy classn="Videography-services"  Img ={IMG3} nameServices ="photography&videography" title ="Types of Videography gallery" data ={SERVICES2} />
 
       <Pattern9 />  
-      <SliderPHOTO />
+      <Suspense fallback={<LoadingMemo />}>   <SliderPHOTO /> </Suspense>
     
 
       <Pattern9 />

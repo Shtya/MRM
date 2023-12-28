@@ -1,11 +1,7 @@
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/bg/b9.jpg"
 import ImgSection from "../assets/Intro&Cover/cover-branding.jpg"
 import Grid1 from "../assets/S_branding/why.jpg" ;
-import  SliderBRAND from "../components/SLIDER_MRM/SliderBRAND"
-
-
 
 import Icon_1 from "../assets/S_branding/1.png" ;
 import Icon_2 from "../assets/S_branding/2.png" ;
@@ -20,7 +16,6 @@ import approach_1 from "../assets/S_branding/approach1.png" ;
 import approach_2 from "../assets/S_branding/approach2.png" ;
 import approach_3 from "../assets/S_branding/approach3.png" ;
 import approach_4 from "../assets/S_branding/approach4.png" ;
-import OnePlatform from '../components/OnePlatform'
 
 import Animation from '../components/helpers/Animation'
 import { Divider} from '../components/patterns/Pattern1'
@@ -32,6 +27,11 @@ import Hero from '../components/helpers/Hero';
 import Qutation from '../components/helpers/Qutation';
 import Plateforms from '../components/helpers/Plateforms';
 import Serach2 from '../components/helpers/Serach2';
+
+import React , { Suspense } from "react"
+import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
+const SliderBRAND = React.lazy(() => import("../components/SLIDER_MRM/SliderBRAND"));
+
 
 const Approach = [
   { img:approach_1 , title:"Comprehensive Solutions" , desc:"We offer a complete branding solution to ensure consistent messaging across all touchpoints. Trust us to elevate your brand and achieve your business goals."},
@@ -57,7 +57,7 @@ const S_Branding = ({header =true}) => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "branding",
-    "url": "https://mrmadvertisingdubai.com/branding",
+    "url": "https://mrmadvertisingdubai.com/branding-agency-in-dubai",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",
@@ -79,7 +79,7 @@ const S_Branding = ({header =true}) => {
       
 
       <Divider classn="divider" />
-      <SliderBRAND />
+      <Suspense fallback={<LoadingMemo />}>   <SliderBRAND />  </Suspense>
 
       <Divider classn="divider-left" />
       <Serach2 Img={IMG2} Imgsection={Grid1} title="Why Choose Us" data={Approach} />
