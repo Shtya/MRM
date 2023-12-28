@@ -33,7 +33,7 @@ import Dashboard from './blog/Dashboard'
 import BlogsAll from './blog/BlogsAll'
 import E_post from './blog/E_post'
 export const Social_Media = ["https://www.facebook.com/MRMadvertisingDubai" , "https://www.instagram.com/mrmadvertising/" , "https://www.linkedin.com/company/mrm-advertising-media" , "https://api.whatsapp.com/send?phone=+971561384496&text=Hello%2C%20world!"]
-
+export const Animate = "zoom-in"
 const App = () => {
 
   return ( 

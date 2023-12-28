@@ -1,6 +1,7 @@
+import { memo } from 'react'
 import { Pattern9 } from '../patterns/Pattern1'
 
-const Qutation = ({Img , title1 , title2 , desc1 , desc2}) => {
+const Qutation = memo(({Img , title1 , title2 , desc1 , desc2}) => {
   return (
     <>
     <Pattern9 />
@@ -13,6 +14,6 @@ const Qutation = ({Img , title1 , title2 , desc1 , desc2}) => {
         </div>
     </>
   )
-}
+})
 
 export default Qutation

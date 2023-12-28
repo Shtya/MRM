@@ -1,11 +1,12 @@
-import { useState  ,useRef} from 'react'
+import { useState  ,useRef, memo} from 'react'
 import Animation from './helpers/Animation';
 import FormImg from "../assets/Form.jpg"
 import IMG1 from "../assets/bg/b1.jpg"
 import emailjs from '@emailjs/browser';
 import { Pattern9 } from './patterns/Pattern1';
+import { Animate } from '../App';
 
-const Contact = ({title , desc , onHere}) => {
+const Contact = memo(({title , desc , onHere}) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -31,22 +32,22 @@ const Contact = ({title , desc , onHere}) => {
       {/* <div className="container1">  <div className='h2'>{desc }</div> </div> */}
       
       <div className="container">
-      <div className="box box-img " data-aos="fade-right"  > <img  src={FormImg} alt="Smiling man with laptop on geometric patterned background with text 'We're Here to Help You”" loading="lazy" /> </div>
-        <div   className="box" data-aos="fade-left" data-aos-delay="50"  >
-          <div data-aos="fade-left" data-aos-delay="70"  className='h1 '>{title || "We're here to help you"}</div> 
-          <p data-aos="fade-left" data-aos-delay="90"  className='h2'>{desc ? desc : "Reach Out and Let's Talk"} </p>
+      <div className="box box-img "   > <img data-aos={Animate} src={FormImg} alt="Smiling man with laptop on geometric patterned background with text 'We're Here to Help You”" loading="lazy" /> </div>
+        <div   className="box" data-aos={Animate}  >
+          <div data-aos={Animate}  className='h1 '>{title || "We're here to help you"}</div> 
+          <p data-aos={Animate}  className='h2'>{desc ? desc : "Reach Out and Let's Talk"} </p>
 
           <form ref={form} onSubmit={sendEmail}>
-              <input data-aos="fade-left" data-aos-delay="110"  required type="text" name="name" placeholder='Your Name' id="" />
-              <input data-aos="fade-left" data-aos-delay="130"  required type="Email" name="email" placeholder='Email address' id="" />
-              <input data-aos="fade-left" data-aos-delay="150"  required type="text" name="phone" placeholder='Phone' id="" />
-              <select data-aos="fade-left" data-aos-delay="180"  name='services' className='input form-select' aria-label=".form-select-lg examplev" value={value} onChange={e=> setvalue(e.target.value)}>
+              <input data-aos={Animate}   required type="text" name="name" placeholder='Your Name' id="" />
+              <input data-aos={Animate}   required type="Email" name="email" placeholder='Email address' id="" />
+              <input data-aos={Animate}   required type="text" name="phone" placeholder='Phone' id="" />
+              <select data-aos={Animate}   name='services' className='input form-select' aria-label=".form-select-lg examplev" value={value} onChange={e=> setvalue(e.target.value)}>
                 <option value="0">Select a service</option>
                 {services.map((e,index)=> <option key={index} value={e} >{e}</option> )}
               </select>
-            <textarea data-aos="fade-left" data-aos-delay="200"  name="message" placeholder="Write a message" id="" cols="30" rows="10"></textarea>
+            <textarea data-aos={Animate}   name="message" placeholder="Write a message" id="" cols="30" rows="10"></textarea>
 
-            <button data-aos="fade-left" data-aos-delay="220"  className='bt'>Send a message</button>
+            <button data-aos={Animate}   className='bt'>Send a message</button>
           </form>
         </div>
 
@@ -54,6 +55,6 @@ const Contact = ({title , desc , onHere}) => {
     </section>
     </>
   )
-}
+})
 
 export default Contact

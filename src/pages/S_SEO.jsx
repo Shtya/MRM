@@ -84,7 +84,7 @@ const S_SEO = () => {
 
   return (
     <div className='M_SEO landing'>
-      <MetaTag canonical="seo" schema={schema} title="Leading SEO Agency in Dubai | Higher Website Rankings Insured" desc="Improve your Website's Visibility, Ranking on Search Engines and Beat Your competitors with MRM One of the Best SEO Agencies in Dubai ,UAE" />
+      <MetaTag canonical="seo-agency-in-dubai" schema={schema} title="Leading SEO Agency in Dubai | Higher Website Rankings Insured" desc="Improve your Website's Visibility, Ranking on Search Engines and Beat Your competitors with MRM One of the Best SEO Agencies in Dubai ,UAE" />
       <Animation />
       <Hero  H1="Unleash the full potential of your website with the best SEO services in Dubai " H2="Improve your Website's Visibility and Ranking on Search Engines with One of the Best SEO Agencies in Dubai" H3="Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward." Img={ImgSection} nameServices="Desktop monitor, keyboard, mouse" Imgintro={ImgIntro} />
       

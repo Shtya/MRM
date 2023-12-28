@@ -1,4 +1,4 @@
-import React , { Suspense } from "react";
+import React , { Suspense, memo } from "react";
 import Blog from "../components/Blog";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
@@ -51,4 +51,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default memo(Home);

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import IMG3 from "../assets/bg/b1.jpg"
+import { memo } from 'react';
+import { Animate } from '../App';
 
 const services = [
   {route:"/social-media-marketing-agency-in-dubai",     animate:"fade-up",  title:"social media marketing"       , icon:"clip  fa-solid fa-bullhorn "        ,desc:"Enhance your online presence with our social media management." ,                                                                 },
@@ -13,18 +15,18 @@ const services = [
   {route:"/seo-agency-in-dubai",        animate:"fade-up",  title:"SEO "                         , icon:"clip  fa-solid fa-magnifying-glass" ,desc:"Drive organic traffic and secure top search engine rankings with our expert SEO services.  " ,                                     },
 ];
 
-const Services = ()=> {
+const Services = memo(()=> {
 
   return (
     <>
     <section className='services search-edite' id='Services'>
     <div className="bgCover"  >  <img  src={IMG3} alt="services" loading="lazy" /> </div>
-       <h2 className='h1 clip ' data-aos="fade-up"  >OUR SERVICES</h2> 
+       <h2 className='h1 clip ' data-aos={Animate} >OUR SERVICES</h2> 
       
       <div className="container">
-      <ul className='ul' data-aos="fade-up" >
+      <ul className='ul' data-aos={Animate}>
         {services.map((e , index) => (
-          <div key={index} className="box" data-aos="fade-up" data-aos-delay={`${index}0`}  >
+          <div key={index} className="box" data-aos={Animate}   >
             <div className="animate" ></div>
             <Link to={e.route}   >
               <Link to={e.route}><i className={`${e.icon} `}> <span />  <span /> </i> </Link>
@@ -38,7 +40,7 @@ const Services = ()=> {
     </section>
     </>
   );
-}
+})
 
 
 export default Services

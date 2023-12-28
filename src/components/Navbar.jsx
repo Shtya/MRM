@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import Logo from "../assets/Logo1.png"
 import { Link, useNavigate } from 'react-router-dom';
 import Animation from './helpers/Animation';
 
-const Navbar1 = () => {
+const Navbar1 = memo(() => {
   const Navigate = useNavigate()
 
   const [top , settop] = useState(false)
@@ -66,6 +66,6 @@ htmlcssArrow.onclick = function() {
     </nav>
   </div>
   )
-}
+})
 
 export default Navbar1

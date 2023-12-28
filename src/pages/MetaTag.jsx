@@ -1,14 +1,15 @@
 import { Helmet } from 'react-helmet';
 import {baseWEB} from '../API/API';
+import { memo } from 'react';
 
 const MetaTag = ({title , desc , canonical , schema }) => {
   return (
     <Helmet>  
       <title>{title}</title>   
-      <link rel="canonical" href={`${baseWEB+canonical}`} />
+      <link rel="canonical" href={`${baseWEB+canonical || ""}`} />
       <meta name="description" content={desc} /> 
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={desc} />
+      {/* <meta property="og:title" content={title} /> */}
+      {/* <meta property="og:description" content={desc} /> */}
       <meta property="og:url" content={baseWEB} />
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>

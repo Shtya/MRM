@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import IntroImg from "../assets/about-us/introBlog.jpg"
 import OneBlog from '../components/helpers/OneBlog';
 import Footer from '../components/Footer';
-import Pattern1, { Divider } from '../components/patterns/Pattern1';
+import { Divider } from '../components/patterns/Pattern1';
 
 import IMG1 from "../assets/bg/b1.jpg"
 
@@ -16,20 +16,16 @@ import MetaTag from './MetaTag';
 
 const Blogs = () => {
   const {pathname} = useLocation()
-
-  const [blogs , setblogs] = useState([])
-  // useEffect(_=>{ baseURL.get("").then(res => { setblogs(res.data.data) } )} ,[pathname])
-  useEffect(_=> { 
-    blogs.length < 1 
-    ?  baseURL.get("").then(e => setblogs(e.data.data))
-    :  baseURL.get("").then(e => setblogs(e.data.data))
-   } ,[pathname])
+  const [Digital , setDigital] = useState([])
+  const [Latest , setLatest] = useState([])
+  const [Tips , setTips] = useState([])
 
   useEffect(_=> { 
-    blogs.length < 1 
-    ?  baseURL.get("").then(e => setblogs(e.data.data))
-    :  baseURL.get("").then(e => setblogs(e.data.data))
-   } ,[])
+    baseURL.get("?category=Digital Marketing News").then(e => setDigital(e.data.data))
+    baseURL.get("?category=Latest Updates and Insights").then(e => setLatest(e.data.data))
+    baseURL.get("?category=Tips and Strategies").then(e => setTips(e.data.data))
+  } ,[])
+
 
   var settings = {
     dots: true,
@@ -37,7 +33,7 @@ const Blogs = () => {
     speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1 , 
-    autoplay:true ,
+    // autoplay:true ,
     responsive: [
       {
         breakpoint: 1200,
@@ -74,11 +70,11 @@ const Blogs = () => {
           </div>
           </div>
         <Divider classn="divider " />
-        <OneBlog onHere={true} classn="blog-1" name="Digital Marketing News" settings={settings}  blogs={blogs} />
+        <OneBlog onHere={true} classn="blog-1" name="Digital Marketing News" settings={settings}  blogs={Digital} />
         <Divider classn="divider-left" />
-        <OneBlog onHere={false} classn="blog-2" name="Latest Updates & Insights" settings={settings}  blogs={blogs} />
+        <OneBlog onHere={false} classn="blog-2" name="Latest Updates & Insights" settings={settings}  blogs={Latest} />
         <Divider classn="divider" />
-        <OneBlog onHere={true} classn="blog-3" name="Tips & Strategies" settings={settings}  blogs={blogs} />
+        <OneBlog onHere={true} classn="blog-3" name="Tips & Strategies" settings={settings}  blogs={Tips} />
 
       <Footer />
     </div>

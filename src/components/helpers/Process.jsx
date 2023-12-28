@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 const Process = ({Img , title , desc , data}) => {
   return (
@@ -26,4 +26,4 @@ const Process = ({Img , title , desc , data}) => {
   )
 }
 
-export default Process
+export default memo(Process)

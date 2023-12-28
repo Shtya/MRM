@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { memo } from 'react'
 
-const Impact = ({ classn ,Img , data , title , desc , nameServices ,}) => {
+const Impact = memo(({ classn ,Img , data , title , desc , nameServices ,}) => {
   return (
     <div className={classn}>
         <div className="bgCover"  >   <img  src={Img} alt={nameServices} loading="lazy" />  </div>
@@ -23,6 +23,6 @@ const Impact = ({ classn ,Img , data , title , desc , nameServices ,}) => {
             </div>
         </div>
   )
-}
+})
 
 export default Impact

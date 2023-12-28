@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 const OneWhy = ({img , title , desc , classn , alt , altCover}) => {
   return (

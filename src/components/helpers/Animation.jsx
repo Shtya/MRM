@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { memo, useEffect } from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useLocation } from 'react-router-dom';
@@ -8,7 +8,7 @@ const Animation = () => {
   const {pathname} = useLocation() ;
   useEffect(() => {
     AOS.init({
-      delay: 10,
+      delay: 50,
       offset: 10 ,
         duration: 400,
         easing: 'ease-in-out' // ease-in-out-back
@@ -25,5 +25,6 @@ const Animation = () => {
 
   return <></>
 }
+
 
 export default Animation

@@ -8,25 +8,12 @@ import 'swiper/css/pagination';
 import {AnimatePresence, motion} from "framer-motion"
 import { ImageGalleryHome } from '../Images2';
 import Img1 from "../../assets/bg/b2.jpg"
+import Configration from './Configration';
 
 
 export default memo(function SliderPHOTO() {
-  const [media , setmedia ] = useState(2)
-  const settings = {
-    autoplay:{ delay: 2500 , disableOnInteraction:false  } ,
-    slidesPerView : media , 
-    grid : { fill: "row", rows:2 } ,
-    spaceBetween : 20,
-    pagination :{   clickable: true } , 
-    modules : [Autoplay , Grid, Pagination] , 
-    breakpoints : {100: { slidesPerView: 1 ,grid:{ rows:2 , fill:"row"} } , 700: { slidesPerView: 2 ,grid:{ rows:2 , fill:"row"} }  }
-  }
+  const [media , settings ] = Configration()
 
-  useEffect(() => {
-    const handleResize = () => {  window.innerWidth > 700 ? setmedia(2) : setmedia(1) };
-    window.addEventListener('resize', handleResize);
-    return () => { window.removeEventListener('resize', handleResize); };
-  }, [window]);
 
 
   const taps = [ {name :"Videography", type:"Videograph"}, {name :"Events",      type:"Events"}, {name :"Fashion " , type:"Fashion "}, {name :"Food",    type:"Food"}, {name :"Product", type:"Product"}, {name :"Automotive", type:"Automotive"}, {name :"Real Estate", type:"Real Estate"},]

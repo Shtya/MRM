@@ -22,7 +22,7 @@ import MetaTag from './MetaTag'
 import Hero from '../components/helpers/Hero'
 import Qutation from '../components/helpers/Qutation'
 import Impact from '../components/helpers/Impact'
-import React , { Suspense } from "react"
+import React , { Suspense, memo } from "react"
 import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
 const SliderGIFTS = React.lazy(() => import("../components/SLIDER_MRM/SliderGIFTS"));
 
@@ -40,7 +40,7 @@ const BRANDING_SERVICES = [
   { img:Icon_4 , title:"Quality Craftsmanship"                , desc:"Our gifts and trophies are created with great care, using only top-quality materials and paying close attention to every detail. We take pride in meeting the highest standards to ensure that each piece is of the utmost quality."},
   ]
 
-const S_Gifts = () => {
+const S_Gifts = memo(() => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "gifts",
@@ -56,7 +56,7 @@ const S_Gifts = () => {
   };
   return (
     <div className="S_Gifts landing">
-      <MetaTag canonical="gifts" schema={schema} title=" Best Corporate Gifts Designing Services in Dubai " desc="Looking for impressive corporate gifts, gift items, and trophies? Our curated selection is customized for any occasion and denotes exceptional quality." />
+      <MetaTag canonical="gifts-agency-in-dubai" schema={schema} title=" Best Corporate Gifts Designing Services in Dubai " desc="Looking for impressive corporate gifts, gift items, and trophies? Our curated selection is customized for any occasion and denotes exceptional quality." />
       <Animation />
 
       <Hero H1="Transform Professional Relationships with Timeless Elegance" H2="Unleash the potential of your business connections with our expertly curated collection of corporate gifts" H3="At MRM, we understand the impact of meaningful gestures in the corporate world. Our passion lies in transforming ordinary moments into extraordinary memories through our premium services: Corporate Gifts, Customized Items, and Trophies." Img={ImgSection} nameServices="gifts services" Imgintro={ImgIntro} />
@@ -87,7 +87,7 @@ const S_Gifts = () => {
       <Footer />
       </div>
   )
-}
+})
 
 export default S_Gifts
 

@@ -68,7 +68,7 @@ const S_WebDesign = () => {
 
 <div className="WEB_DESIGN landing" >
       <Animation />
-      <MetaTage canonical="web-design" schema={schema} title="Expert Web Development and Design Services in Dubai, UAE" desc="Capture your audience with our web design and development services for exceptional results for startups and businesses." />
+      <MetaTage canonical="web-design-agency-in-dubai" schema={schema} title="Expert Web Development and Design Services in Dubai, UAE" desc="Capture your audience with our web design and development services for exceptional results for startups and businesses." />
       
       <div className="container"> <Navbar /> </div>
 

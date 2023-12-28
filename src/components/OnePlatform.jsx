@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 
 
-const OnePlatform = ({title , paragraph , img , classn , path , trueBtn}) => {
+const OnePlatform = memo(({title , paragraph , img , classn , path , trueBtn}) => {
   const navigate = useNavigate()
 
   return (
@@ -18,6 +18,6 @@ const OnePlatform = ({title , paragraph , img , classn , path , trueBtn}) => {
         </div>
       </Link>
   )
-}
+})
 
 export default OnePlatform

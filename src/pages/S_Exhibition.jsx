@@ -85,7 +85,7 @@ const S_Exhibition = () => {
   };
   return (
     <div className="S_Exhibition landing">
-      <MetaTag canonical="Exhibition-and-display-stand" schema={schema} title="Best Exhibition & display stand designing services in Dubai " desc="Discover our customized exhibition stands and display stands in Dubai for a powerful and lasting impression on your audience." />
+      <MetaTag canonical="exhibition-and-display-stand-agency-in-dubai" schema={schema} title="Best Exhibition & display stand designing services in Dubai " desc="Discover our customized exhibition stands and display stands in Dubai for a powerful and lasting impression on your audience." />
       <Animation />
       
       <Hero H1="The Best Exhibition stands & display stand designing services in Dubai" H2="Our exhibition and display stands are masterpieces that create lasting impressions" H3=" With our exclusive exhibition stands in Dubai, we can help you stand out from the crowd at trade shows and events. We customize our exhibition stands according to our customers' specifications to ensure they excel at their intended purpose. Our team can design your order from scratch, maximizing the available space in any given environment" Img={ImgSection} nameServices="Exhibition & display stands" Imgintro={ImgIntro} />

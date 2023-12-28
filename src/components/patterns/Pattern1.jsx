@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import "../patterns/pattern.css"
 
-export const Divider = ({classn}) => {
+export const Divider = memo(({classn}) => {
   return(
     <div className={`Pattern9 ${classn}`}>
     <span></span>
@@ -9,9 +9,9 @@ export const Divider = ({classn}) => {
     <span></span>
   </div>
     )
-}
+})
 
-export const Pattern9 = ({classn})=>{
+export const Pattern9 = memo(({classn})=>{
   return (
     <div className={`Pattern9 ${classn}`}>
       <span></span>
@@ -19,4 +19,4 @@ export const Pattern9 = ({classn})=>{
       <span></span>
     </div>
   )
-  }
+  })

@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Alt_Navbar from '../components/Navbar1';
 const config = {headers : { "Content-Type":"multipart/form-data" , "Cache-Control": "no-cache"} , theme:"dark" }
-const Section = ["Digital Marketing News" ,"Latest Updates & Insights" , "Tips & Strategies" ]
+const Section = ["Digital Marketing News" ,"Latest Updates and Insights" , "Tips and Strategies" ]
 
 
 const E_post = () => {

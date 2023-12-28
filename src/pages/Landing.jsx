@@ -73,7 +73,7 @@ const Landing = () => {
   return (
     <div className='landing'>
       <Animation />
-      <MetaTag canonical="social-media-marketing" schema={schema} title="Social Media Marketing Services in Dubai to Boost Your Brand" desc="Partner with MRM, one of the leading social media marketing agencies in Dubai, to ensure a excellent digital journey for your brand." />
+      <MetaTag canonical="social-media-marketing-agency-in-dubai" schema={schema} title="Social Media Marketing Services in Dubai to Boost Your Brand" desc="Partner with MRM, one of the leading social media marketing agencies in Dubai, to ensure a excellent digital journey for your brand." />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro" data-aos="zoom-in-left"> <img  src={ImgIntro} alt="social media marketing services" loading="lazy" /></div>
       

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
-const Plateforms = ({Img , title , data , nameServices ,}) => {
+const Plateforms = memo(({Img , title , data , nameServices ,}) => {
   const navigate = useNavigate()
   return (
     <div className="platforms">
@@ -26,6 +26,6 @@ const Plateforms = ({Img , title , data , nameServices ,}) => {
           </div>
       </div>
   )
-}
+})
 
 export default Plateforms

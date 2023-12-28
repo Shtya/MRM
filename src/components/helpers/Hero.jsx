@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import Navbar1 from '../Navbar'
 
 const Hero = ({H1 , H2 , H3 , Img , nameServices , Imgintro , altCover}) => {

@@ -2,9 +2,9 @@ import Navbar from './Navbar';
 import Dashboard from "./Dashboard.mp4"
 import IMG3 from "../assets/bg/b3.jpg"
 
-import { useEffect, useRef } from 'react';
+import { memo, useEffect, useRef } from 'react';
 
-const Landing = () => {
+const Landing = memo(() => {
   const videoRef = useRef(null);
   useEffect(() => {
     if (videoRef.current) {videoRef.current.addEventListener('loadeddata', handleVideoLoaded);}
@@ -26,6 +26,6 @@ const Landing = () => {
         </section>
     </header>
   )
-}
+})
 
 export default Landing

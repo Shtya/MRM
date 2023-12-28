@@ -3,8 +3,9 @@ import { Link, useLocation } from 'react-router-dom'
 import { Pattern9 } from './patterns/Pattern1'
 import IMG3 from "../assets/bg/b1.jpg"
 import { Social_Media } from "../App"
+import { memo } from "react"
 
-const Footer = () => {
+const Footer = memo(() => {
   const {pathname} = useLocation() ;
 
   return (
@@ -64,6 +65,6 @@ const Footer = () => {
     </footer>
     </>
   )
-}
+})
 
 export default Footer

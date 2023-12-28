@@ -83,7 +83,7 @@ const S_Media = () => {
   };
   return (
   <div className="S_media landing">
-    <MetaTag canonical="media-buying" schema={schema} title=" Boost Your Brand with Top Advertising Companies in Dubai" desc="Transform your social platforms, run effective Google Ads campaigns, and achieve measurable growth with MRM's advertising experts in Dubai." />
+    <MetaTag canonical="media-buying-agency-in-dubai" schema={schema} title=" Boost Your Brand with Top Advertising Companies in Dubai" desc="Transform your social platforms, run effective Google Ads campaigns, and achieve measurable growth with MRM's advertising experts in Dubai." />
     <Animation />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro " data-aos="zoom-in-left" > <img src={ImgIntro} alt="media buying services" loading="lazy" /></div>

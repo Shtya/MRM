@@ -2,8 +2,10 @@ import About_us from "../assets/about-us/aboutus.png"
 import Animation  from './helpers/Animation'
 import IMG1 from "../assets/bg/b1.jpg"
 import { useNavigate } from "react-router-dom";
+import { memo } from "react";
+import { Animate } from "../App";
 
-const Who =() => {
+const Who =memo(() => {
   const navigate = useNavigate();
 
   return(
@@ -13,28 +15,28 @@ const Who =() => {
       <div className="container">
 
       <div className="Img " >
-        <img data-aos="fade-right" src={About_us} alt="Professionals collaborating in office, framed by letter-shaped windows" loading="lazy"  />
+        <img data-aos={Animate} src={About_us} alt="Professionals collaborating in office, framed by letter-shaped windows" loading="lazy"  />
       </div>
 
-      <div className="box" data-aos="fade-left"  >
-        <h1 className='h2 ' data-aos="fade-left" >Your Partner for Advertising & Digital Marketing Success in Dubai</h1>
-        <span className='p ' data-aos="fade-left"  >We are a Dubai-based agency specialized in advertising, and digital marketing with years of experience. Our team delivers the highest level of service, combining creativity and strategic thinking for effective campaigns. Our values are dedication, excellence, and transparency. </span>
+      <div className="box" data-aos={Animate}  >
+        <h1 className='h2 ' data-aos={Animate} >Your Partner for Advertising & Digital Marketing Success in Dubai</h1>
+        <span className='p ' data-aos={Animate}  >We are a Dubai-based agency specialized in advertising, and digital marketing with years of experience. Our team delivers the highest level of service, combining creativity and strategic thinking for effective campaigns. Our values are dedication, excellence, and transparency. </span>
         <div className="info">
             <div className="box-child"  >
-              <h2 className='h2 clip ' data-aos="fade-left" ><i className="fa-solid fa-check"></i>Our mission</h2>
-              <span className='p ' data-aos="fade-left" >Our goal is to enable businesses and brands to succeed in marketing and digital solutions, using our expertise in advertising, branding, and innovative strategies to deliver outstanding results.</span>
+              <h2 className='h2 clip ' data-aos={Animate} ><i className="fa-solid fa-check"></i>Our mission</h2>
+              <span className='p ' data-aos={Animate} >Our goal is to enable businesses and brands to succeed in marketing and digital solutions, using our expertise in advertising, branding, and innovative strategies to deliver outstanding results.</span>
             </div>
             <div className="box-child"  >
-              <h2 className='h2 clip ' data-aos="fade-left" ><i className="fa-solid fa-check"></i>Our vision</h2>
-              <span className='p ' data-aos="fade-left" >We aim to be a leading figure in the industry, dedicated to elevating work to the highest standards. Our goal is to inspire creativity and achieve remarkable results through innovative ideas.</span>
+              <h2 className='h2 clip ' data-aos={Animate} ><i className="fa-solid fa-check"></i>Our vision</h2>
+              <span className='p ' data-aos={Animate} >We aim to be a leading figure in the industry, dedicated to elevating work to the highest standards. Our goal is to inspire creativity and achieve remarkable results through innovative ideas.</span>
             </div>
         </div>
 
-        <button onClick={_=> navigate("/about-us")} className='bt ' data-aos="fade-left" >Find out more </button>
+        <button onClick={_=> navigate("/about-us")} className='bt ' data-aos={Animate} >Find out more </button>
       </div>
       </div>
     </section>
   )
-}
+})
 
 export default Who

@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { memo } from 'react'
 
-const OneProcess = ({title , paragraph , img , classn , num}) => {
+const OneProcess = memo(({title , paragraph , img , classn , num}) => {
   return (
     <div className={`one-process ${classn} `} data-aos="fade-left"  >
       <div className="coverImg" data-aos="fade-left" > <img src={img} alt="process" loading="lazy" /> </div>
@@ -12,6 +12,6 @@ const OneProcess = ({title , paragraph , img , classn , num}) => {
       </div>
     </div>
   )
-}
+})
 
 export default OneProcess

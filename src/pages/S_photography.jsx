@@ -37,7 +37,7 @@ import PHOTOgraphy from "../components/helpers/PHOTOgraphy"
 import Serach2  from "../components/helpers/Serach2"
 import Contact  from "../components/Contact"
 
-import React , { Suspense } from "react"
+import React , { Suspense, memo } from "react"
 import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
 const SliderPHOTO = React.lazy(() => import("../components/SLIDER_MRM/SliderPHOTO"));
 
@@ -90,7 +90,7 @@ const S_photography = () => {
   };
   return (
     <div className="S_photography landing">
-      <MetaTag canonical="photography-and-videography" schema={schema} title="Top Photography & Videography services in Dubai " desc="Discover our photography and videography services in Dubai, from event photography to product videography. MRM provides optimal solutions." />
+      <MetaTag canonical="photography-and-videography-agency-in-dubai" schema={schema} title="Top Photography & Videography services in Dubai " desc="Discover our photography and videography services in Dubai, from event photography to product videography. MRM provides optimal solutions." />
       <Animation />
 
       <Hero H1="Capture your brand's story with our professional visual storytelling." H2="We turn moments into memories and transform your brand's essence into a compelling narrative. " H3="We specialize in capturing moments that tell a compelling story and creating visually engaging content. At MRM, we offer a wide range of high-quality photography and videography services to enhance your brand and narrative. Whether you need product photography, event coverage, or promotional videos, we have the expertise to deliver content that captivates and communicates." Img={ImgSection} nameServices="Photography&videography" Imgintro={ImgIntro} />
@@ -117,7 +117,7 @@ const S_photography = () => {
   )
 }
 
-export default S_photography
+export default memo(S_photography)
 
 
 

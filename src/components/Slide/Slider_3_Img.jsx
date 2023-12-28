@@ -48,69 +48,69 @@ const Slider_3_Img =  ({ settings }) => {
           <Slider {...settings} className='container' >
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[0]} alt="clients1" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[1]} alt="clients2" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[2]} alt="clients3" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[0]}   alt="clients1" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[1]}   alt="clients2" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[2]}   alt="clients3" />   </div> 
             </div>
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[3]} alt="clients4" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[4]} alt="clients5" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[5]} alt="clients6" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[3]}   alt="clients4" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[4]}   alt="clients5" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[5]}   alt="clients6" />   </div> 
             </div>
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[6]} alt="clients7" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[7]} alt="clients8" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[8]} alt="clients9" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[6]}   alt="clients7" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[7]}   alt="clients8" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[8]}   alt="clients9" />   </div> 
             </div>
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[9]} alt="clients10" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[10]} alt="clients11" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[11]} alt="clients12" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[9]}   alt="clients10" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[10]}   alt="clients11" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[11]}   alt="clients12" />   </div> 
             </div>
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[12]} alt="clients13" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[13]} alt="clients14" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[14]} alt="clients15" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[12]}   alt="clients13" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[13]}   alt="clients14" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[14]}   alt="clients15" />   </div> 
             </div>
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[15]} alt="clients16" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[16]} alt="clients17" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[17]} alt="clients18" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[15]}   alt="clients16" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[16]}   alt="clients17" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[17]}   alt="clients18" />   </div> 
             </div>
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[18]} alt="clients19" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[19]} alt="clients20" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[20]} alt="clients21" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[18]}   alt="clients19" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[19]}   alt="clients20" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[20]}   alt="clients21" />   </div> 
             </div>
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[21]} alt="clients22" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[22]} alt="clients23" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[23]} alt="clients24" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[21]}   alt="clients22" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[22]}   alt="clients23" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[23]}   alt="clients24" />   </div> 
             </div>
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[24]} alt="clients25" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[25]} alt="clients26" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[26]} alt="clients27" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[24]}   alt="clients25" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[25]}   alt="clients26" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[26]}   alt="clients27" />   </div> 
             </div>
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[27]} alt="clients28" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[28]} alt="clients29" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[29]} alt="clients30" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[27]}   alt="clients28" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[28]}   alt="clients29" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[29]}   alt="clients30" />   </div> 
             </div>
 
             <div className="box">
-               <div className="box-shape box-0"> <span/> <img src={data[30]} alt="clients31" />   </div> 
-               <div className="box-shape box-1"> <span/> <img src={data[31]} alt="clients32" />   </div> 
-               <div className="box-shape box-2"> <span/> <img src={data[32]} alt="clients33" />   </div> 
+               <div className="box-shape box-0"> <span/> <img src={data[30]}   alt="clients31" />   </div> 
+               <div className="box-shape box-1"> <span/> <img src={data[31]}   alt="clients32" />   </div> 
+               <div className="box-shape box-2"> <span/> <img src={data[32]}   alt="clients33" />   </div> 
             </div>
 
           </Slider>

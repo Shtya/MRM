@@ -34,11 +34,16 @@ const BlogsAll = () => {
         data?.map((e,index)=> (
           <div className="boxs" key={index}>
             <div className="coverImg"> <img src={e.thumbnail} alt="blog" loading="lazy" /> </div>
-            <h2 className='h2'> {e.title} </h2>
+            <div className="text">
+              <h2 className='h2'> {e.title} </h2>
+              <div className="details">
+                  <h3 className='p'> {e.category} </h3>
+                  <div className='date'> {e.createdAt.split("T")[0]} </div>
+            </div>
+            </div>
             <ul>
               <Link className='bt btn btn-view' to={`/blog/${e._id}`}> View </Link>
               <Link className='bt btn btn-edite'  to={`/edite-blog/${e._id}`}> Edite </Link>
-
               <Link className='bt btn btn-delete' to="" onClick={_=> handelModal(e._id)}> Delete </Link>
             </ul>
           </div>

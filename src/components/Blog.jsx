@@ -10,7 +10,7 @@ var settings = {
   speed: 1000,
   slidesToShow: 3,
   slidesToScroll: 1 , 
-  autoplay:true ,
+  // autoplay:true ,
   responsive: [
     {
       breakpoint: 1200,
@@ -34,7 +34,7 @@ var settings = {
 
 // const navigate = useNavigate()
 
-const Blog = () => {
+const Blog = memo(() => {
   const navigate = useNavigate();
 
   const [blogs , setdata] = useState([])
@@ -65,6 +65,6 @@ const Blog = () => {
 
     </section>
   )
-}
+})
 
 export default Blog

@@ -59,11 +59,10 @@ const BlogDetails = () => {
       <div className="container container3"> <Navbar1 /> </div>
       <Animation />
       <SlideNav share={true} whats={true} />
-      <div className="coverIntro "> </div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg hidden-img"  >  <img src={data?.thumbnail} alt="blog" /> </div>
+              {data?.thumbnail ? <div className="boxImg hidden-img"  >  <img src={data?.thumbnail} alt={data.title || "blog"} /> </div> : <div className="load"></div> }
               <div className="boxs" data-aos="fade-left" >
               <p  className="h2 hidden-text" > <span>{titleCustom}</span> </p>
             </div>

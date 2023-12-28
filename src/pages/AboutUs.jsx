@@ -11,8 +11,9 @@ import IMG2 from "../assets/bg/b2.jpg"
 import IMG1 from "../assets/bg/b2.jpg"
 import MetaTag from './MetaTag'
 import { Helmet } from "react-helmet"
+import { memo } from "react"
 
-const AboutUs = () => {
+const AboutUs = memo(() => {
 
   const vission_mission = [ 
     {title:"Our Vision",   alt:"Golden 'VISION' text on a dark reflective grid    " , img:ImgBox2 , desc :"Our goal is to become one of the leading figures in the industry, known for our excellence. We are dedicated to being the preferred choice for individuals and businesses aiming to elevate their work to the highest standards. Ultimately, we aim to be a primary source of original and creative ideas, providing a pathway to unlock creativity and achieve remarkable results."} ,
@@ -24,7 +25,7 @@ const AboutUs = () => {
       <Helmet > <script type="application/ld+json">{`  "@context": "https://schema.org",  "@type": "ContactPage",  "name": "mrm advertising",  "url": "https://mrmadvertisingdubai.com/about-us",  "description": "Best Advertising and Digital Marketing company in Dubai, helping Businesses achieve success and growth by offering Full Marketing services",  "address": {    "@type": "PostalAddress",    "streetAddress": "123 Street Name",    "addressLocality": "dubai",    "addressRegion": "State",    "postalCode": "0000",    "addressCountry": "dubai"  },  "contactPoint": {    "@type": "ContactPoint",    "telephone": "+971561384496",    "contactType": "customer service",    "areaServed": "US" }`}</script> </Helmet>
       <Animation />
       <div className="container"> <Navbar /> </div>
-      <div className="coverIntro hidden-img"> <img src={ImgIntro}  /></div>
+      <div className="coverIntro hidden-img"> <img src={ImgIntro} alt="intro page contains word 'about us '" /></div>
 
         <Divider classn=" divider-top " />
         <div className="searching ">
@@ -43,7 +44,7 @@ const AboutUs = () => {
           <div className="bgCover"> <img  src={IMG2} alt="about" loading="lazy" /> </div>
           <div className="container" data-aos="fade-up">
             {vission_mission.map((e,index)=> (
-                <OneWhy key={index} img={e.img} title={e.title} desc={e.desc} />
+                <OneWhy altCover={e.alt} key={index} img={e.img} title={e.title} desc={e.desc} />
               ))}
         </div>
         </div>
@@ -51,6 +52,6 @@ const AboutUs = () => {
       <Footer />
     </div>
   )
-}
+})
 
 export default AboutUs

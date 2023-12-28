@@ -1,7 +1,8 @@
 
+import { memo } from 'react'
 import { Link } from 'react-router-dom'
 
-const Social_media = ({Img , title , desc , data}) => {
+const Social_media = memo(({Img , title , desc , data}) => {
   return (
     <div className="social-media">
           <div className="bgCover"> <img  src={Img} alt="web design services" loading="lazy" /> </div>
@@ -21,6 +22,6 @@ const Social_media = ({Img , title , desc , data}) => {
         </div>
         </div>
   )
-}
+})
 
 export default Social_media
