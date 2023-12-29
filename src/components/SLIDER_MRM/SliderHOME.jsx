@@ -1,20 +1,48 @@
 
-import React, { useEffect, useState , memo } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useEffect, useState , memo, useRef } from 'react';
 import {AnimatePresence, motion} from "framer-motion"
 import IMG3 from "../../assets/bg/b3.jpg"
 import { ImageGalleryHome } from '../Images2';
-import Configration from './Configration';
 import { Animate } from '../../App';
+import { Swiper, SwiperSlide  } from 'swiper/react';
+import { Autoplay , Grid, Pagination  } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/grid';
+import 'swiper/css/pagination';
+
+    const SliderHOME =  memo(() => {
+    const [media , setmedia ] = useState(2)
+    const header =[
+    {name :"Signages" , type:"Signages"}, 
+    {name :"Stands" , type:"Displaystands"}, 
+    {name :"Exhibition" , type:"Exhibition"}, 
+    {name :"branding" , type:"branding"}, 
+    {name :"photography" , type:"photography"}, 
+    {name :"Web design" , type:"Web"},]
 
 
- const SliderHOME =  memo(() => {
-  const [media , settings ] = Configration()
+  const settings = {
+    autoplay:{ delay: 2500 , disableOnInteraction:false  } ,
+    slidesPerView : media , 
+    grid : { fill: "row", rows:2 } ,
+    spaceBetween : 20,
+    pagination :{   clickable: true } , 
+    modules : [Autoplay , Grid, Pagination] , 
+    breakpoints : {100: { slidesPerView: 1 ,grid:{ rows:2 , fill:"row"} } , 700: { slidesPerView: 2 ,grid:{ rows:2 , fill:"row"} }  },
+    onSlideChange:() =>{
+      document.querySelector(".swiper-slide-active img")
+      settype(document.querySelector(".swiper-slide-active img")?.dataset?.type.split(" ")[0])
+    },
+  }
 
-  const header =[ {name :"all"  , type:"all"}, {name :"Signages" , type:"Signages"}, {name :"Stands" , type:"Displaystands"}, {name :"Exhibition" , type:"Exhibition"}, {name :"branding" , type:"branding"}, {name :"photography" , type:"photography"}, {name :"Web design" , type:"Web"},]
+  useEffect(() => {
+    const handleResize = () => {  window.innerWidth > 700 ? setmedia(2) : setmedia(1) };
+    window.addEventListener('resize', handleResize);
+    return () => { window.removeEventListener('resize', handleResize); };
+  }, [window]);
 
   const [data , setdata] = useState([])
-  const [type , settype] = useState("all")
+  const [type , settype] = useState("Signages")
   useEffect(_=>{setdata(ImageGalleryHome)},[])
   
   const handleFilter = (ele) => {
@@ -31,12 +59,16 @@ import { Animate } from '../../App';
 
         <AnimatePresence>
           <div className="container">
-            <Swiper {...settings}   className="mySwiper" data-aos={Animate } >
-              
-              {data?.map((e,index)=>( <SwiperSlide key={index}> 
-              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.2}} className='coverImg' >  <img src={e.img} loading='lazy'  alt={e?.alt || e?.type}   /></motion.div> </SwiperSlide> )) }
-
-            </Swiper>
+              <Swiper  {...settings}    className="mySwiper" data-aos={Animate } >
+                {data?.map((e,index)=>( 
+                    <SwiperSlide key={index} >
+                            <motion.img 
+                            layout animate={{ opacity: 1  }} initial={{ opacity: 0 }} 
+                            exit={{ opactiy: 0 }} transition={{duration:.6}} 
+                            className="coverImg"  data-type={`${e.type}`}  
+                            src={e.img} loading='lazy'  alt={e?.alt || e?.type}   />
+                    </SwiperSlide>)) }
+              </Swiper>
           </div>
           </AnimatePresence>
 

@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { Animate } from '../../App'
 
 const Plateforms = memo(({Img , title , data , nameServices ,}) => {
   const navigate = useNavigate()
@@ -7,11 +8,11 @@ const Plateforms = memo(({Img , title , data , nameServices ,}) => {
     <div className="platforms">
          <div className="bgCover"  >  <img  src={Img} alt={nameServices} loading="lazy" /> </div>
           <div className="container">
-              <h3 className='h1'data-aos="fade-up">{title}</h3>
-              <div className="boxs" data-aos="fade-up">
+              <h3 className='h1'data-aos={Animate}>{title}</h3>
+              <div className="boxs" data-aos={Animate}>
                   {
                     data.map((e,index)=> (
-                      <Link key={index} to={e.path}  className={`box box-${index+1}`}>
+                      <Link key={index} to={e.path} data-aos={Animate}   className={`box box-${index+1}`}>
                         <div className="coverImg"> <img src={e.img} alt="platform" loading="lazy" /></div>
                         <div className="inner-box">
                             <span className="one"/>

@@ -21,7 +21,8 @@ const Landing = memo(() => {
       <div className="bgCover" style={{zIndex:"0"}}  >  <img   src={IMG3} alt="Landing" loading="lazy" /> </div>
       <div className="container"> <Navbar /> </div>
       <section id='video' >
-          <video preload="auto" ref={videoRef}  src={Dashboard} controls={false} id='myVideo'   autoPlay loop muted type="video/mp4">
+          <video poster={Dashboard} preload="auto" ref={videoRef}  src={Dashboard} id='myVideo'   autoPlay loop muted >
+            <source src={Dashboard} type="video/mp4" />
           </video>
         </section>
     </header>

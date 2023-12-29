@@ -13,7 +13,12 @@ import Configration from './Configration';
 
 export default memo(function SliderBRAND () {
   const [media , settings ] = Configration()
-
+  const settings2 = {
+    onSlideChange:() =>{
+      document.querySelector(".swiper-slide-active img")
+      settype(document?.querySelector(".swiper-slide-active img")?.dataset?.type.split(" ")[0])
+    },
+  }
   const taps = [ 
     {name:"all"  , type:"all" },
     {name:"Logo Design" , type:"Logo"},
@@ -44,11 +49,15 @@ export default memo(function SliderBRAND () {
 
         <AnimatePresence>
           <div className="container">
-            <Swiper {...settings}   className="mySwiper"  >
+            <Swiper {...settings2} {...settings}   className="mySwiper"  >
               
-              {data?.map((e,index)=>( <SwiperSlide key={index}> 
-              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.2}} className='coverImg' >  <img src={e.img} loading='lazy' alt={e?.alt || e?.type}  /></motion.div> </SwiperSlide> )) }
-
+              {data?.map((e,index)=>( <SwiperSlide key={index} >
+                <motion.img 
+                  layout animate={{ opacity: 1  }} initial={{ opacity: 0 }} 
+                  exit={{ opactiy: 0 }} transition={{duration:.6}} 
+                  className="coverImg"  data-type={`${e.type}`}  
+                  src={e.img} loading='lazy'  alt={e?.alt || e?.type}   />
+                </SwiperSlide>)) }
             </Swiper>
           </div>
           </AnimatePresence>

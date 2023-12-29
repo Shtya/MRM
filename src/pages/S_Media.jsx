@@ -40,15 +40,15 @@ import ImpactComponent from "../components/helpers/Impact"
 import Process from "../components/helpers/Process"
 
 
-const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising", "Tiktok Advertising"]
+const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising"]
 const Paid = [ 
-  {classn: "hidden hidden-left"  ,img: X , path:"/x" ,title:"X (Twitter) Advertising" , desc:"Boost your brand on Twitter with our expert campaigns. Tailored to your needs, we'll help you engage, generate leads and drive sales."},
-  {classn: "hidden hidden-left"  ,img: F , path:"/facebook" ,title:"Facebook Advertising" , desc:"Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers."},
-  {classn: "hidden hidden-left"  ,img: I , path:"/instagram" ,title:"Instagram Advertising" , desc:"Showcase your brand with visually captivating Instagram ads. Stay top-of-mind with powerful advertising features that drive brand recognition and engagement."},
-  {classn: "hidden hidden-left"  ,img: L , path:"/linkedin" ,title:"LinkedIn Advertising" , desc:"Contact business owners and potential clients through LinkedIn's specialized advertising platform. Our strategies ensure you connect with the right audience for your business goals."},
-  {classn: "hidden hidden-left"  ,img: T , path:"/tiktok" ,title:"TikTok Advertising" , desc:"Ignite excitement around your brand with fun and engaging ads on the latest Social Media sensation, TikTok. Harness the creativity of this popular new platform to connect with your target audience."},
-  {classn: "hidden hidden-left"  ,img: S , path:"/snapchat" ,title:"Snapchat Advertising" , desc:"Captivate the Snapchat audience with creative and impactful advertising. Share your brand's story and products in a format that resonates with this unique demographic."},
-  {classn: "hidden hidden-left"  ,img: G  ,title:"Google Ads Campaigns" , desc:"Effective PPC management requires specialized expertise in advertising strategies, budget planning, and execution. Our experienced team leverages data-driven insights, cutting-edge technology, and creative solutions to create high-performing campaigns that can significantly impact your bottom line."},
+  {img: G  ,title:"Google Ads Campaigns" , desc:"Effective PPC management requires specialized expertise in advertising strategies, budget planning, and execution. Our experienced team leverages data-driven insights, cutting-edge technology, and creative solutions to create high-performing campaigns that can significantly impact your bottom line."},
+  {img: F , path:"/facebook" ,title:"Facebook Advertising" , desc:"Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers."},
+  {img: I , path:"/instagram" ,title:"Instagram Advertising" , desc:"Showcase your brand with visually captivating Instagram ads. Stay top-of-mind with powerful advertising features that drive brand recognition and engagement."},
+  {img: L , path:"/linkedin" ,title:"LinkedIn Advertising" , desc:"Contact business owners and potential clients through LinkedIn's specialized advertising platform. Our strategies ensure you connect with the right audience for your business goals."},
+  {img: X , path:"/x" ,title:"X (Twitter) Advertising" , desc:"Boost your brand on Twitter with our expert campaigns. Tailored to your needs, we'll help you engage, generate leads and drive sales."},
+  {img: T , path:"/tiktok" ,title:"TikTok Advertising" , desc:"Ignite excitement around your brand with fun and engaging ads on the latest Social Media sensation, TikTok. Harness the creativity of this popular new platform to connect with your target audience."},
+  {img: S , path:"/snapchat" ,title:"Snapchat Advertising" , desc:"Captivate the Snapchat audience with creative and impactful advertising. Share your brand's story and products in a format that resonates with this unique demographic."},
 ]
 const Impact = [
   {img:ImpactImg1 , title:"Higher Conversion Rate" , desc:"By utilizing the latest tools and techniques, we guarantee highly effective social media ad campaigns that drive conversions and significantly boost your business's conversion rate."  } ,
@@ -71,7 +71,7 @@ const S_Media = () => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "media-buying",
-    "url": "https://mrmadvertisingdubai.com/media-buying-agency-in-dubai",
+    "url": "https://mrmadvertisingdubai.com/advertising-ppc-agency-in-dubai",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",
@@ -83,47 +83,46 @@ const S_Media = () => {
   };
   return (
   <div className="S_media landing">
-    <MetaTag canonical="media-buying-agency-in-dubai" schema={schema} title=" Boost Your Brand with Top Advertising Companies in Dubai" desc="Transform your social platforms, run effective Google Ads campaigns, and achieve measurable growth with MRM's advertising experts in Dubai." />
+    <MetaTag canonical="advertising-ppc-agency-in-dubai" schema={schema} title="Leading Social Media Advertising & PPC Agency in Dubai , UAE" desc="Transform your brand's online visibility with MRM the Best Advertising Agency in Dubai. Our Expert Strategies Maximize your Return on Investment" />
     <Animation />
       <div className="container"> <Navbar /> </div>
       <div className="coverIntro " data-aos="zoom-in-left" > <img src={ImgIntro} alt="media buying services" loading="lazy" /></div>
 
       <div className="home">
         <div className="container">
-            <div className="boxImg hidden-img " data-aos="zoom-in-left" data-aos-delay="400"  >  <img src={ImgSection} alt="media buying services" loading="lazy" /> </div>
+            <div className="boxImg hidden-img " data-aos="zoom-in-left" data-aos-delay="400"  >  <img src={ImgSection} alt="A woman shops in-store with a digital shopping app" loading="lazy" /> </div>
             <div className="boxs" >
-                <h2 className='h1 ' data-aos="zoom-in-right" data-aos-delay="600" > Boost your brand's presence and supercharge your online growth with MRM's paid advertising expertise</h2>
-                <h2 className='h2 ' data-aos="zoom-in-right" data-aos-delay="600" >Transform your social platforms into full revenue drivers and maximize your return on investment </h2>
+                <h1 className='h1 ' data-aos="zoom-in-right" data-aos-delay="600" > Boost your brand's presence and supercharge your online growth with MRM's paid advertising expertise</h1>
+                <h2 className='h2 ' data-aos="zoom-in-right" data-aos-delay="600" >Transform your Social Media Platforms into Full Revenue Drivers and Maximize your Return on Investment with the Best Advertising Agency in Dubai </h2>
                 <div className="inner-boxs"  data-aos="zoom-in-left" data-aos-delay="600">
               <ul className="box" >
                 <li className='li ' > {li[0]} </li>
                 <li className='li ' > {li[1]} </li>
                 <li className='li ' > {li[2]} </li>
-                <li className='li ' > {li[3]} </li>
               </ul>
 
               <ul className="box box-2">
+                <li className='li ' > {li[3]} </li>
                 <li className='li ' > {li[4]} </li>
                 <li className='li ' > {li[5]} </li>
-                <li className='li ' > {li[6]} </li>
               </ul>
             </div>
           </div>
       </div>
       </div>
       
-      <Qutation Img={IMG1} title1="Experience the Power of Paid Amplification" desc1="We create paid campaigns with specific goals, such as boosting brand awareness, engaging with audiences, generating leads, and driving sales. We understand that success varies for each business, so we tailor our campaigns to align with your unique Key Performance Indicators.  Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers. Connect with your target audience on one of their most frequented platforms."  />
+      <Qutation Img={IMG1} title1="Maximize Your Reach and Boost Your Sales with Best Paid Advertising Services in Dubai " desc1="We specialize in creating paid campaigns that are designed to meet specific goals such as boosting brand awareness, engaging with audiences, generating leads, and driving sales. We understand that every business has unique key performance indicators, so we tailor our campaigns to align with those indicators. Our team of experts has in-depth knowledge and experience in leveraging campaigns' detailed targeting capabilities to engage the most receptive consumers. Our campaigns are designed to help you connect with your target audience on one of their most frequented platforms."  />
       
       <Divider classn="divider-left" />
-      <Social_media Img ={IMG2} title ="We offer standout paid campaigns for your business" desc ="" data={Paid} />
+      <Social_media Img ={IMG2} title ="We Offer Standout Paid Campaigns for your Business " desc ="" data={Paid} />
 
       <Divider classn="divider" />
-      <ImpactComponent classn="impact" Img={IMG3}   title="Impact of what you'll get" data={Impact} desc="MRM is the preferred choice for social media marketing services in Dubai.  We specialize in tailoring effective strategies that fit your brand and objectives. Here's how we can help" nameServices="media buying services"  />
+      <ImpactComponent classn="impact" Img={IMG3}   title="Impact of Our Social Media Advertising Services " data={Impact} desc="MRM is the preferred choice for social media marketing services in Dubai. We specialize in tailoring effective strategies that fit your brand and objectives" nameServices="media buying services"  />
         
       <Divider classn="divider-left" />
-      <Process Img={IMG2} title="Our Process" desc="" data={process}/>
+      <Process Img={IMG2} title="Our Social Media Advertising Process " desc="" data={process}/>
       
-      <Contact />
+      <Contact title="Transform Clicks into Conversions" desc="Reach Out for High-Performing Campaigns that Guarantee Results" />
       <Footer />
     </div>
   )

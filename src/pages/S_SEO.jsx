@@ -38,6 +38,7 @@ import Hero from '../components/helpers/Hero';
 import Qutation from '../components/helpers/Qutation';
 import Plateforms from '../components/helpers/Plateforms';
 import Process2 from '../components/helpers/Process2';
+import { Animate } from "../App";
 
 const OUR_SEO = [
   {classn :" "            , img:Icon_1 , title:"Keyword Research"   , desc:" Our team conducts in-depth research to determine the most effective and high-traffic keywords to target for your website. By strategically selecting these keywords, we can boost your website's visibility and attract more visitors."},
@@ -99,8 +100,8 @@ const S_SEO = () => {
     <Divider classn="divider-left" />
     <div className="WHY">
         <div className="bgCover"  >  <img  src={IMG2} alt="search-engine-optomization services" loading="lazy" /> </div>
-      <h2 className="h1" data-aos="fade-up"> Why We Excels? </h2>
-      <div className="container" data-aos="fade-up">
+      <h2 className="h1" data-aos={Animate}> Why We Excels? </h2>
+      <div className="container" data-aos={Animate}>
         {
           WHY_MRM.map((e,index)=> (
             <OneWhy altCover={e.altCover} key={index} img={e.img} title={e.title} desc={e.desc} classn={`${e.classn} one-why-${index+1}`} />

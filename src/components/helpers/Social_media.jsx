@@ -1,14 +1,15 @@
 
 import { memo } from 'react'
 import { Link } from 'react-router-dom'
+import { Animate } from '../../App'
 
 const Social_media = memo(({Img , title , desc , data}) => {
   return (
     <div className="social-media">
           <div className="bgCover"> <img  src={Img} alt="web design services" loading="lazy" /> </div>
         <div className="container">
-            <h2 data-aos="fade-up" className='h1 '>{title}</h2>
-            <div data-aos="fade-up" className="phead ">{desc}</div> 
+            <h3 data-aos={Animate} className='h1 '>{title}</h3>
+            <div data-aos={Animate} className="phead ">{desc}</div> 
             <div className="boxs">
             { data.map((e,index)=> ( 
             <Link to={e?.path} key={index} className={`cover1 `} >

@@ -1,5 +1,6 @@
 import { memo } from 'react'
 import { Pattern9 } from '../patterns/Pattern1'
+import { Animate } from '../../App'
 
 const Qutation = memo(({Img , title1 , title2 , desc1 , desc2}) => {
   return (
@@ -8,8 +9,8 @@ const Qutation = memo(({Img , title1 , title2 , desc1 , desc2}) => {
     <div className="quotation">
       <div className="bgCover"> <img  src={Img} alt="web design services" loading="lazy" /> </div>
             <div className="container" >
-            <h2 className='h2 'data-aos="fade-up" >{title1}</h2>
-            <div className='h3 ' data-aos="fade-up" data-aos-delay="200">{desc1}</div>
+            <h2 className='h2 'data-aos={Animate} >{title1}</h2>
+            <div className='h3 ' data-aos={Animate} data-aos-delay="200">{desc1}</div>
             </div>
         </div>
     </>

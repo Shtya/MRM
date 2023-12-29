@@ -50,13 +50,13 @@ const App = () => {
         <Route path='/privacy'     element={<Privacy />} />                          
         <Route path='/terms'       element={<Terms />} />                          
         
-        <Route path='/web-design-agency-in-dubai'  element={<S_WebDesign/>} />                        
-        <Route path='/photography-and-videography-agency-in-dubai' element={<S_photography />} />                        
+        <Route path='/web-development-company-in-dubai'  element={<S_WebDesign/>} />                        
+        <Route path='/Photography-In-Dubai' element={<S_photography />} />                        
         <Route path='/exhibition-and-display-stand-agency-in-dubai'  element={<S_Exhibition  />} />                        
         <Route path='/indoor-and-outdoor-signages-agency-in-dubai'    element={<M_Signages />} />                        
         <Route path='/social-media-marketing-agency-in-dubai'   element={<Landing />} />                        
         <Route path='/gifts-agency-in-dubai'      element={<S_Gifts  />} />                        
-        <Route path='/media-buying-agency-in-dubai'       element={<S_Media />} />                        
+        <Route path='/advertising-ppc-agency-in-dubai'       element={<S_Media />} />                        
         <Route path='/branding-agency-in-dubai'    element={<S_Branding  />} />                        
         <Route path='/seo-agency-in-dubai'         element={<S_SEO />} />                        
 

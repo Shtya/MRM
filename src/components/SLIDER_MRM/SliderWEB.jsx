@@ -25,8 +25,8 @@ export default memo(function SliderWEB() {
             <Swiper {...settings}   className="mySwiper"  >
               
               {data?.map((e,index)=>( <SwiperSlide key={index}> 
-              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.2}} className='coverImg' >  <img src={e.img} loading='lazy' alt={e?.alt || e?.type}  /></motion.div> </SwiperSlide> )) }
-
+              <motion.img layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.2}} className='coverImg' src={e.img} loading='lazy' alt={e?.alt || e?.type}  />
+              </SwiperSlide> )) }
             </Swiper>
           </div>
           </AnimatePresence>

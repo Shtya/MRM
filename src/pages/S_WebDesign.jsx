@@ -32,10 +32,10 @@ import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
 const SliderWEB = React.lazy(() => import('../components/SLIDER_MRM/SliderWEB'));
 
 const SocialMedia = [
-  {classn :"hidden hidden-left" , img:Social_4 , title:"E-commerce Development Services   " , desc:"In today's fast-paced digital landscape, having a user-friendly and robust online store is an advantage and a necessity for e-commerce businesses. At MRM Agency, we offer top-notch E-commerce Development Services that can transform your online business and enhance your brand's presence. Whether you're starting a new e-commerce venture or want to improve an existing one, our team is here to turn your e-commerce aspirations into reality."},
-  {classn :"hidden hidden-left" , img:Social_1 , title:"UI & UX Design"                     , desc:"Our team is highly proficient in delivering exceptional User Experience (UX) and User Interface (UI) designs. We take pride in crafting captivating and user-centric digital experiences that set us apart in web design and development. Whether you need an engaging website, a user-friendly app, or a seamless digital platform, we are confident in our ability to turn your vision into a reality. Trust us to create a digital experience that exceeds your expectations."},
-  {classn :"hidden hidden-left" , img:Social_2 , title:"PHP Development"                    , desc:"Our team of skilled PHP developers harnesses the versatility of this scripting language to craft dynamic and interactive websites. Whether it involves customizing existing PHP frameworks or developing bespoke solutions, we ensure optimal performance and scalability."},
-  {classn :"hidden hidden-left" , img:Social_3 , title:"WordPress Development"              , desc:"As experts in WordPress, we leverage this popular content management system to create intuitive, user-friendly, and visually appealing websites. From theme customization to plugin development, we have the expertise to make your WordPress site stand out."},
+  {img:Social_4 , title:"E-commerce Development Services   " , desc:"In today's fast-paced digital landscape, having a user-friendly and robust online store is an advantage and a necessity for e-commerce businesses. At MRM Agency, we offer top-notch E-commerce Development Services that can transform your online business and enhance your brand's presence. Whether you're starting a new e-commerce venture or want to improve an existing one, our team is here to turn your e-commerce aspirations into reality."},
+  {img:Social_1 , title:"UI & UX Design"                     , desc:"Our team is highly proficient in delivering exceptional User Experience (UX) and User Interface (UI) designs. We take pride in crafting captivating and user-centric digital experiences that set us apart in web design and development. Whether you need an engaging website, a user-friendly app, or a seamless digital platform, we are confident in our ability to turn your vision into a reality. Trust us to create a digital experience that exceeds your expectations."},
+  {img:Social_2 , title:"PHP Development"                    , desc:"Our team of skilled PHP developers harnesses the versatility of this scripting language to craft dynamic and interactive websites. Whether it involves customizing existing PHP frameworks or developing bespoke solutions, we ensure optimal performance and scalability."},
+  {img:Social_3 , title:"WordPress Development"              , desc:"As experts in WordPress, we leverage this popular content management system to create intuitive, user-friendly, and visually appealing websites. From theme customization to plugin development, we have the expertise to make your WordPress site stand out."},
   ]
 
 const Approach = [
@@ -54,7 +54,7 @@ const S_WebDesign = () => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "web-design",
-    "url": "https://mrmadvertisingdubai.com/web-design-agency-in-dubai",
+    "url": "https://mrmadvertisingdubai.com/web-development-company-in-dubai",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",
@@ -68,17 +68,17 @@ const S_WebDesign = () => {
 
 <div className="WEB_DESIGN landing" >
       <Animation />
-      <MetaTage canonical="web-design-agency-in-dubai" schema={schema} title="Expert Web Development and Design Services in Dubai, UAE" desc="Capture your audience with our web design and development services for exceptional results for startups and businesses." />
+      <MetaTage canonical="web-development-company-in-dubai" schema={schema} title="Web Design & Development Company in Dubai, UAE " desc="Capture your Audience with our Exceptional Web Design and Development Services. Partner with MRM, the Best Web Development Company in Dubai, UAE" />
       
       <div className="container"> <Navbar /> </div>
 
       <div className="coverIntro"> <img data-aos="zoom-in"  src={ImgIntro} alt="web design services" loading="lazy" /></div>
       <div className="home">
         <div className="container">
-          <div  data-aos="fade-right" data-aos-delay="400" className="boxImg " >  <img  src={ImgSection} alt="web design services" loading="lazy" /> </div>
+          <div  data-aos="fade-right" data-aos-delay="400" className="boxImg " >  <img  src={ImgSection} alt="Responsive web design layout is displayed across multiple devices" loading="lazy" /> </div>
           <div className="boxs" data-aos="fade-left" data-aos-delay="600" >
-            <h1 className='h1 ' >Boost the Effectiveness of Your Website's Online Presence. </h1>
-            <h2 className='h2 ' > Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development. </h2>
+            <h1 className='h1 ' >Boost the Efficacy of Your Website's Online Presence with the Best Web Design and Development Company in Dubai </h1>
+            <h2 className='h2 ' >Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development Services </h2>
             <div className="inner-boxs" >
 
               <ul className="box">
@@ -102,7 +102,7 @@ const S_WebDesign = () => {
 
         <Pattern9 />
         
-        <Social_media data={SocialMedia} Img={IMG1} title="Our Specializations" desc="We specialize in the following web design and development services" />
+        <Social_media data={SocialMedia} Img={IMG1} title="Our Web Design and Development Services" desc="We specialize in the following web design and development services" />
 
 
         <Pattern9 classn="Abrotch" />
@@ -112,8 +112,8 @@ const S_WebDesign = () => {
                 <div className="circle">
                     <div className='text'>
                         <div className="container1">
-                            <div className="h1 clip">Our Approach </div>
-                            <div className="p">Our web development and design process is rooted in creativity, functionality, and strategic thinking </div>
+                            <h2 className="h1 clip">Our Approach</h2>
+                            <div className="p">We follow a meticulous web development process to ensure the success of your project</div>
                         </div>
                     </div>
                     {
@@ -136,7 +136,7 @@ const S_WebDesign = () => {
 
 
       
-        <Contact />
+        <Contact desc="Let’s Discuss Your Vision!" title="Build a Website That Wows" />
 
       
         <Footer />

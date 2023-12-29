@@ -12,7 +12,12 @@ import Configration from './Configration';
 
 export default memo(function SliderINDOOR() {
   const [media , settings ] = Configration()
-
+  const settings2 = {
+    onSlideChange:() =>{
+      document.querySelector(".swiper-slide-active img")
+      settype(document?.querySelector(".swiper-slide-active img")?.dataset?.type.split(" ")[0])
+    },
+  }
   const taps = [
     {name:"Health-Safety" , type:"health"} ,
     {name:"Menu Boards" , type:"menu"} ,
@@ -20,8 +25,8 @@ export default memo(function SliderINDOOR() {
     {name:"Office Signs" , type:"office"} ,
   ]
   const [data , setdata] = useState([])
-  const [type , settype] = useState("health")
-  useEffect(_=>{setdata(ImageGalleryOutdoor.filter(e=> e.type.includes("health")))},[])
+  const [type , settype] = useState("all")
+  useEffect(_=>{setdata(ImageGalleryOutdoor.filter(e=> e.type.includes("all")))},[])
   
   const handleFilter = (ele) => {
     const filter  = ImageGalleryOutdoor.filter((e)=> e.type.includes(ele))
@@ -37,11 +42,15 @@ export default memo(function SliderINDOOR() {
 
         <AnimatePresence>
           <div className="container">
-            <Swiper {...settings}   className="mySwiper"  >
+            <Swiper {...settings2} {...settings}   className="mySwiper"  >
               
-              {data?.map((e,index)=>( <SwiperSlide key={index}> 
-              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.2}} className='coverImg' >  <img src={e.img} loading='lazy' alt={e?.alt || e?.type}  /></motion.div> </SwiperSlide> )) }
-
+              {data?.map((e,index)=>(<SwiperSlide key={index} >
+            <motion.img 
+              layout animate={{ opacity: 1  }} initial={{ opacity: 0 }} 
+              exit={{ opactiy: 0 }} transition={{duration:.6}} 
+              className="coverImg"  data-type={`${e.type}`}  
+              src={e.img} loading='lazy'  alt={e?.alt || e?.type}   />
+            </SwiperSlide>)) }
             </Swiper>
           </div>
           </AnimatePresence>

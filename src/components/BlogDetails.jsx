@@ -64,7 +64,7 @@ const BlogDetails = () => {
           <div className="container">
               {data?.thumbnail ? <div className="boxImg hidden-img"  >  <img src={data?.thumbnail} alt={data.title || "blog"} /> </div> : <div className="load"></div> }
               <div className="boxs" data-aos="fade-left" >
-              <p  className="h2 hidden-text" > <span>{titleCustom}</span> </p>
+              <p  className="h2 hidden-text" > <span>{data.title}</span> </p>
             </div>
         </div>
       </div>

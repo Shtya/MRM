@@ -174,13 +174,9 @@ html {
         @media (max-width:850px){height:300px}
         @media (max-width:700px){height:450px}
         @media (max-width:550px){height:300px}
-        img{
-          background-color: #18181878;
-          backdrop-filter: blur(10px);
-          width: 100%;
-          height: 100%;
-          object-fit: fill;
-        }
+        background-color: #18181878;
+        backdrop-filter: blur(10px);
+        object-fit: fill;
       }
     }
 
@@ -199,8 +195,7 @@ html {
     border-radius: 50%;
     transition: .3s;
   }
-  
-  
+
 }
 
 .breadcrumb {
@@ -3951,9 +3946,8 @@ footer {
           color: var(--text-color);
           border-radius: 3px;
           overflow: hidden;
-          text-align: left;
+          text-align: center;
           padding-top: 10px;
-
           span {
             font-size: 45px;
             font-family: "Open Sans", Arial;

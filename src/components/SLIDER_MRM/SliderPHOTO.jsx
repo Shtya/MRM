@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState , memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay , Grid, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
@@ -13,7 +12,12 @@ import Configration from './Configration';
 
 export default memo(function SliderPHOTO() {
   const [media , settings ] = Configration()
-
+  const settings2 = {
+      onSlideChange:() =>{
+        document.querySelector(".swiper-slide-active img")
+        settype(document?.querySelector(".swiper-slide-active img")?.dataset?.type.split(" ")[0])
+      },
+    }
 
 
   const taps = [ {name :"Videography", type:"Videograph"}, {name :"Events",      type:"Events"}, {name :"Fashion " , type:"Fashion "}, {name :"Food",    type:"Food"}, {name :"Product", type:"Product"}, {name :"Automotive", type:"Automotive"}, {name :"Real Estate", type:"Real Estate"},]
@@ -35,17 +39,21 @@ export default memo(function SliderPHOTO() {
         <div className="h1">OUR WORKS</div>
         <ul className='header1' > {taps.map((e,index)=> (<li className={type == e.type ? "active p" : "p"} onClick={_=>handleFilter(e.type)} key={index}>{e.name}</li>))} </ul>
 
-        <AnimatePresence>
-          <div className="container">
-            <Swiper {...settings}   className="mySwiper"  >
-              
-              {data?.map((e,index)=>( <SwiperSlide key={index}> 
-              <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opactiy: 0 }} transition={{duration:.2}} className='coverImg' >  <img src={e.img} loading='lazy' alt={e?.alt || e?.type}  /></motion.div> </SwiperSlide> )) }
-
-            </Swiper>
-          </div>
-          </AnimatePresence>
-
+      <AnimatePresence>
+        <div className="container">
+          <Swiper {...settings} {...settings2}   className="mySwiper"  >
+            
+            {data?.map((e,index)=>( 
+            <SwiperSlide key={index} >
+            <motion.img 
+              layout animate={{ opacity: 1  }} initial={{ opacity: 0 }} 
+              exit={{ opactiy: 0 }} transition={{duration:.6}} 
+              className="coverImg"  data-type={`${e.type}`}  
+              src={e.img} loading='lazy'  alt={e?.alt || e?.type}   />
+            </SwiperSlide>)) }
+          </Swiper>
+        </div>
+        </AnimatePresence>
     </div>
   );
 })

@@ -36,7 +36,6 @@ function Home() {
 
         <Divider classn="divider-left" />
         <Suspense fallback={<LoadingMemo />}>   <SliderHOME />  </Suspense>
-
         
         <Divider classn="divider" />
         <Suspense fallback={<LoadingMemo />}>   <Clients2 />  </Suspense>
