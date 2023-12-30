@@ -19,13 +19,15 @@ const E_post = () => {
   const [title, settitle] = useState("");
   const [Des, setDes] = useState("");
   const [category, setCategory] = useState();
+  const [titleData, settitleData] = useState();
+  const [descData, setdescData] = useState();
   
   const handleSubmit = async (e) => {
     e.preventDefault()
     if(Image2 == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the field!")
 
     setisload(true)
-    await baseURL.post("" , {title ,description:Des , category , thumbnail:Image2 })
+    await baseURL.post("" , {title ,description:Des , category , thumbnail:Image2 , titleData , descData })
     setisload(false)
     navigate("/MRM")
   }
@@ -41,8 +43,10 @@ const E_post = () => {
               <input type="text" placeholder='title'  value={title}    onChange={e=> settitle(e.target.value)}  />
               <select name=""                        value={category} onChange={e=> setCategory(e.target.value)}> {Section.map((e,index)=> ( <option key={index} value={e}>{e}</option> ))} </select>
               <input type="text" placeholder='Image'  value={Image2}    onChange={e=> setImage2(e.target.value)}  />
-
-              <JoditEditor   ref={editor}   value={Des}   config={config}   tabIndex={1}ea   onChange={setDes} />
+              <input type="text" placeholder='meta data title'  value={titleData}    onChange={e=> settitleData(e.target.value)}  />
+              <input type="text" placeholder='meta data description'  value={descData}    onChange={e=> setdescData(e.target.value)}  />
+              
+              <JoditEditor   ref={editor}   value={Des}   config={config}   tabIndex={1}   onChange={setDes} />
 
               <button className='bt' style={{opacity: !isload ? "1":".7" }}  onClick={handleSubmit} > 
                 {

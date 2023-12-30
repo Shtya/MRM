@@ -85,24 +85,34 @@ const S_Exhibition = () => {
   };
   return (
     <div className="S_Exhibition landing">
-      <MetaTag canonical="exhibition-and-display-stand-agency-in-dubai" schema={schema} title="Best Exhibition & display stand designing services in Dubai " desc="Discover our customized exhibition stands and display stands in Dubai for a powerful and lasting impression on your audience." />
+      <MetaTag canonical="exhibition-and-display-stand-agency-in-dubai" schema={schema} title="Leading Display stand and Exhibition stands Company in Dubai" desc="Discover our Unique Exhibition and Display Stands for a Powerful and Lasting Impression on your Audience. Contact MRM, the Best Exhibition Stands Company in Dubai" />
       <Animation />
       
-      <Hero H1="The Best Exhibition stands & display stand designing services in Dubai" H2="Our exhibition and display stands are masterpieces that create lasting impressions" H3=" With our exclusive exhibition stands in Dubai, we can help you stand out from the crowd at trade shows and events. We customize our exhibition stands according to our customers' specifications to ensure they excel at their intended purpose. Our team can design your order from scratch, maximizing the available space in any given environment" Img={ImgSection} nameServices="Exhibition & display stands" Imgintro={ImgIntro} />
+      <Hero
+        H1="The Best Exhibition stands & display stand designing services in Dubai" 
+        H2="Our exhibition and display stands are masterpieces that create lasting impressions" 
+        H3="With our exclusive exhibition stands in Dubai, we can help you stand out from the crowd at trade shows and events. We customize our exhibition stands according to our customer's specifications to ensure they meet their intended purpose.  Our team can design your order from scratch, maximizing the available space in any given environment. " 
+        Img={ImgSection} 
+        nameServices="Luxurious event exhibition space" 
+        titleServices="Elegant -Exhibit -Design"
+        Imgintro={ImgIntro} />
       
-      <Qutation Img={IMG1} desc1="We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience." />
+      <Qutation 
+        Img={IMG1} 
+        title1="We provide premium Display and Exhibition Stands for businesses in Dubai to enhance their brand image and convey their message " 
+        desc1="You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives. Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience. " />
 
       <Pattern9 />
-      <ExhibitionGallery classn="exhibition-stands sec-1" title="Take a look at our designs for exhibition stands gallery" Img={IMG3}  nameServices="exhibition & display stands services"  data={Exhibition}  />
+      <ExhibitionGallery classn="exhibition-stands sec-1" title="Have a Look at Our Designs For Exhibition Stands" Img={IMG3}  nameServices="exhibition & display stands services"  data={Exhibition}  />
 
       <Pattern9 />
-      <ExhibitionGallery classn="exhibition-stands" title="Take a look at our designs for Display stands gallery" Img={IMG1}  nameServices="exhibition & display stands services"  data={DisplayStands}  />
+      <ExhibitionGallery classn="exhibition-stands" title="Have a Look at Our Designs for Display Stands" Img={IMG1}  nameServices="exhibition & display stands services"  data={DisplayStands}  />
       
-      <Pattern9 />
-      <Impact classn="impact" Img={IMG2} data ={BRANDING_SERVICES} title ="Why Choose Us for Your Exhibition & Display Stands Needs?" nameServices ="exhibition & display stands services" />
+      <Pattern9 /> 
+      <Impact classn="impact" Img={IMG2} data ={BRANDING_SERVICES} title ="Why Choose MRM for Exhibition Stands Services" nameServices ="exhibition & display stands services" />
 
 
-        <Contact />
+        <Contact number={1} title="Crafting Exhibit Perfection " desc="Connect with Us for Remarkable Stands" />
         <Footer />
       </div>
   )

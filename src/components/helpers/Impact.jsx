@@ -14,8 +14,8 @@ const Impact = memo(({ classn ,Img , data , title , desc , nameServices ,}) => {
                       <div className="box"  key={index} data-aos="zoom-in-up">
                           <div className="coverImg hidden-img"> <img src={e.img} alt={nameServices} loading="lazy" /> </div>
                           <div className="text" >
-                              <h2 className="h2 clip ">{e.title} </h2>
-                              <h3 className="p ">{e.desc} </h3>
+                              <h3 className="h2 clip ">{e.title} </h3>
+                              <div className="p ">{e.desc} </div>
                           </div>
                       </div>
                     ))

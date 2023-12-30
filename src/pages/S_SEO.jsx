@@ -41,12 +41,12 @@ import Process2 from '../components/helpers/Process2';
 import { Animate } from "../App";
 
 const OUR_SEO = [
-  {classn :" "            , img:Icon_1 , title:"Keyword Research"   , desc:" Our team conducts in-depth research to determine the most effective and high-traffic keywords to target for your website. By strategically selecting these keywords, we can boost your website's visibility and attract more visitors."},
-  {classn :" " , img:Icon_2 , title:" On-Page SEO  "     , desc:" We use on-page SEO to optimize your website for search engines and users. Our approach prioritizes user-friendly language and concise sentences to ensure clarity and flow. We avoid technical jargon and use everyday language in active voice to enhance clarity. "},
-  {classn :" different" , img:Icon_3 , title:" Off-Page SEO"      , desc:" Our Off-Page SEO service builds high-quality backlinks to increase your website's credibility. We use simple language, short sentences, and the active voice. We haven't changed the meaning or removed any important information."},
-  {classn :" " , img:Icon_4 , title:" Content Marketing" , desc:" We create engaging content that meets our audience's unique needs. Our writing is direct, concise, and uses simple words, active voice, and a logical order."},
-  {classn :" " , img:Icon_5 , title:" Local SEO"         , desc:" For businesses with a local presence, we optimize your website for local search, ensuring you're found by potential customers in your area.  "},
-  {classn :" " , img:Icon_6 , title:" Technical SEO"     , desc:" Our Technical SEO Optimization service is designed to enhance your website's performance and search engine visibility. We understand the importance of technical SEO in achieving higher rankings and improving user experience."},
+  {classn :" "            , img:Icon_1 , title:"Keyword Research"   , desc:"Our team conducts in-depth research to determine the most effective and high-traffic keywords to target for your website. By strategically selecting these keywords, we can boost your website's visibility and attract more visitors."},
+  {classn :" " ,           img:Icon_2 , title:" On-Page SEO  "     , desc:"We use on-page SEO to optimize your website for search engines and users. Our approach prioritizes user-friendly language and concise sentences to ensure clarity and flow. We avoid technical jargon and use everyday language in active voice to enhance clarity. "},
+  {classn :" different"  , img:Icon_3 , title:" Off-Page SEO"      , desc:"Our Off-Page SEO service builds high-quality backlinks to increase your website's credibility. We use simple language, short sentences, and the active voice. We haven't changed the meaning or removed any important information."},
+  {classn :" "           , img:Icon_4 , title:" Content Marketing" , desc:"We create engaging content that meets our audience's unique needs. Our writing is direct, concise, and uses simple words, active voice, and a logical order."},
+  {classn :" "           , img:Icon_5 , title:" Local SEO"         , desc:"For businesses with a local presence, we optimize your website for local search, ensuring you're found by potential customers in your area.  "},
+  {classn :" "           , img:Icon_6 , title:" Technical SEO"     , desc:"Our Technical SEO Optimization service is designed to enhance your website's performance and search engine visibility. We understand the importance of technical SEO in achieving higher rankings and improving user experience."},
 ]
 
 const PROCESS = [ 
@@ -87,7 +87,10 @@ const S_SEO = () => {
     <div className='M_SEO landing'>
       <MetaTag canonical="seo-agency-in-dubai" schema={schema} title="Leading SEO Agency in Dubai | Higher Website Rankings Insured" desc="Improve your Website's Visibility, Ranking on Search Engines and Beat Your competitors with MRM One of the Best SEO Agencies in Dubai ,UAE" />
       <Animation />
-      <Hero  H1="Unleash the full potential of your website with the best SEO services in Dubai " H2="Improve your Website's Visibility and Ranking on Search Engines with One of the Best SEO Agencies in Dubai" H3="Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward." Img={ImgSection} nameServices="Desktop monitor, keyboard, mouse" Imgintro={ImgIntro} />
+      <Hero  
+        H1="Unleash the full potential of your website with the best SEO services in Dubai " 
+        H2="Improve your Website's Visibility and Ranking on Search Engines with One of the Best SEO Agencies in Dubai" 
+        H3="Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward." Img={ImgSection} nameServices="Desktop monitor, keyboard, mouse" Imgintro={ImgIntro} />
       
       <Qutation Img={IMG1} title1="Maximizing SEO Impact and Achieving Number 1# Ranking among Competitors with MRM SEO Services "  desc1="We don't just make empty promises about our commitment to SEO in Dubai, UAE. We take concrete actions to prove it. Our primary objective is to help businesses thrive in the digital world. To achieve this, we provide tailor-made local SEO services that cater to their specific requirements.Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of search." />
 
@@ -95,12 +98,12 @@ const S_SEO = () => {
       <Plateforms Img={IMG2} title="Our SEO Services" data={OUR_SEO} nameServices="search-engine-optomization services" />
 
       <Divider classn="divider" />
-      <Process2 data={PROCESS} Img={IMG3} title="Our proccess" />
+      <Process2 data={PROCESS} Img={IMG3} title="Our SEO Process" />
       
     <Divider classn="divider-left" />
     <div className="WHY">
         <div className="bgCover"  >  <img  src={IMG2} alt="search-engine-optomization services" loading="lazy" /> </div>
-      <h2 className="h1" data-aos={Animate}> Why We Excels? </h2>
+      <h2 className="h1" data-aos={Animate}> Why MRM Excels in SEO?  </h2>
       <div className="container" data-aos={Animate}>
         {
           WHY_MRM.map((e,index)=> (
@@ -110,7 +113,7 @@ const S_SEO = () => {
       </div>
     </div>
 
-    <Contact title="Let's Skyrocket Your Rankings and Drive Organic Traffic."  desc="Reach Out to Get a Free SEO Audit" />
+    <Contact number={9} title="Let's Skyrocket Your Rankings and Drive Organic Traffic"  desc="Reach Out to Get a Free SEO Audit" />
     <Footer />
     </div>
   )

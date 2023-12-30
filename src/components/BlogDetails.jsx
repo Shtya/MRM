@@ -13,17 +13,15 @@ const BlogDetails = () => {
   const [data , setdata] = useState([])
   const [blogs , setblogs] = useState([])
   const [titleCustom , settitleCustom] = useState()
-  
-  const {pathname} = useLocation()
-  let {id} = useParams() ;
+    let {id} = useParams() ;
 
   useEffect(_=>{
     baseURL.get("").then(e=> setblogs(e.data.data))
     baseURL.get(id).then(e=>{
-    setdata(e.data.data)
-        e.data?.data?.title?.length >= 110 ? settitleCustom(e.data?.data?.title.slice(0,110) + "..."): settitleCustom(e.data?.data?.title)
-        })} ,[] )
-
+      setdata(e.data.data)
+      e.data?.data?.title?.length >= 110 ? settitleCustom(e.data?.data?.title.slice(0,110) + "..."): settitleCustom(e.data?.data?.title)
+    })} ,[] )
+    
         var settings = {
           dots: true,
           infinite: true,
@@ -54,11 +52,11 @@ const BlogDetails = () => {
 
   return (
     <div className='blog-details'>
-      <MetaTag title="Blog | Digital Marketing Updates and Tips for Business Growth " desc="Stay ahead with the latest digital marketing updates, Insights and expert tips for your Digital business growth with MRM`s informative blogs " />
+      <MetaTag title={data?.titleData} desc={data?.descData} />
 
       <div className="container container3"> <Navbar1 /> </div>
       <Animation />
-      <SlideNav share={true} whats={true} />
+      {/* <SlideNav share={true} whats={true} /> */}
 
       <div className="home">
           <div className="container">

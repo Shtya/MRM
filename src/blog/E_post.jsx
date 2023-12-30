@@ -19,23 +19,25 @@ const E_post = () => {
   const [title, settitle] = useState("");
   const [Des, setDes] = useState("");
   const [category, setCategory] = useState();
-  
+  const [titleData, settitleData] = useState();
+  const [descData, setdescData] = useState();
+
   useEffect(_=>{ id&& baseURL.get(id).then(res=>{ 
     setOnePost(res.data.data) 
     settitle(res.data.data.title)  
     setImg(res.data.data.thumbnail)  
     setDes(res.data.data.description)  
     setCategory(res.data.data.category)  
+    settitleData(res.data.data.titleData)
+    setdescData(res.data.data.descData)
    } ) },[id])
 
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log(Img , title , Des , category)
-
     if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the fields!")
       setisload(true)
-    await baseURL.put(id , {title ,description:Des , category , thumbnail:Img }  ).then(res => console.log(res.data.data))
+    await baseURL.put(id , {title ,description:Des , category , thumbnail:Img , titleData, descData }  )
     setisload(false)
     navigate("/MRM")
   }
@@ -52,8 +54,10 @@ const E_post = () => {
               <select name=""                        value={category} onChange={e=> setCategory(e.target.value)}> {Section.map((e,index)=> ( <option key={index} value={e}>{e}</option> ))} </select>
               <input type="text" placeholder='Image'  value={Img}    onChange={e=> setImg(e.target.value)}  />
               {/* <input type="file"                  value={Img[0]}    onChange={handleImg} autoFocus /> */}
+              <input type="text" placeholder='meta data title'  value={titleData}    onChange={e=> settitleData(e.target.value)}  />
+              <input type="text" placeholder='meta data description'  value={descData}    onChange={e=> setdescData(e.target.value)}  />
 
-              <JoditEditor
+                <JoditEditor
                 ref={editor}
                 value={Des}
                 config={config}

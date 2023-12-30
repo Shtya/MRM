@@ -28,9 +28,9 @@ import Qutation from '../components/helpers/Qutation';
 import Plateforms from '../components/helpers/Plateforms';
 import Serach2 from '../components/helpers/Serach2';
 
-import React , { Suspense, memo } from "react"
-import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
-const SliderBRAND = React.lazy(() => import("../components/SLIDER_MRM/SliderBRAND"));
+import React , {  memo } from "react"
+import SliderHOME from '../components/SLIDER_MRM/SliderHOME';
+import { ImageGalleryBranding } from '../components/Images2';
 
 
 const Approach = [
@@ -49,7 +49,7 @@ const BRANDING_SERVICES = [
   { img:Icon_5 , title:"Graphic Design"   , desc:"Beyond aesthetics, our graphic designs communicate your brand's message effectively. From brochures to banners, we create visuals that leave a lasting impact."},
   { img:Icon_6 , title:"Vehicle Branding"   , desc:"Take your brand on the move with eye-catching vehicle designs. Turn every commute into a promotional opportunity with our impactful vehicle branding services."},
   { img:Icon_7 , title:"Staff Uniform"   , desc:"Foster brand representation and unity with custom staff uniforms, turning your team into brand ambassadors who embody your business."},
-  { img:Icon_8 , title:"Stationery"   , desc:"From business cards to letterheads, our stationery designs convey professionalism and consistency, leaving a lasting impression on every interaction."},
+  { img:Icon_8 , title:"Digital & Offset Printing "   , desc:"From business cards to letterheads, our stationery designs convey professionalism and consistency, leaving a lasting impression on every interaction."},
   ]
 
 
@@ -70,21 +70,22 @@ const S_Branding = () => {
   return (
     <div className="S_Branding landing">
       <Animation />
-      <MetaTag canonical="branding-agency-in-dubai" schema={schema} title=" Unleash Your Brand's Power with the Top Branding Agency in Dubai" desc="Stand out with unique logos, captivating web experiences & impactful social media designs! Contact us for comprehensive branding solutions ." />
-      <Hero H1="Unleash the Full Power and Potential of Your Brand! " H2="Partner with us to bring your brand identity to life, both online and offline " H3="Your brand is your voice, your story – and it's how every aspect of your business makes your customers feel. we work with you to implement and grow it digitally and in real life.  Your brand goes way beyond a simple logo, or your visual identity. We don't just create your brand identity" Img={ImgSection} nameServices="branding services" Imgintro={ImgIntro} />
-      <Qutation Img={IMG1} title1="Elevate Your Brand with Our Comprehensive Branding Services  "  desc1="MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. " />
+      <MetaTag canonical="branding-agency-in-dubai" schema={schema} title="Unleash Your Brand's Power with the Top Branding Agency in Dubai" desc="Stand out with Unique Logo Design, Backaging & Impactful Social media Designs Contact MRM, The Top Branding Agency in Dubai for All Your Branding Needs" />
+      <Hero H1="Unleash Your Brand's Full Potential with the Top Branding Agency in Dubai " H2="Partner With Us to Bring your Brand Identity to Life, Both Online and Offline with Our Expert Branding Services in Dubai " H3="Your brand goes way beyond a simple logo or your visual identity. Your brand is your voice, your story and how every aspect of your business makes your customers feel. We don't just create your brand identity; we work with you to implement and grow it digitally and in real life. " Img={ImgSection} nameServices="Elegant branding materials set" titleServices="Brand-Identity-Suite " Imgintro={ImgIntro} />
+      <Qutation Img={IMG1} title1="Enhance Your Brand with Our Comprehensive Branding Services "  desc1="MRM is your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience." />
      
       <Divider classn="divider-left" />
       <Plateforms Img={IMG2} title="Our Branding Services" data={BRANDING_SERVICES} nameServices="branding services" />
       
-
       <Divider classn="divider" />
-      <Suspense fallback={<LoadingMemo />}>   <SliderBRAND />  </Suspense>
+       {/* <SliderBRAND /> */}
+       <SliderHOME DATA={ImageGalleryBranding} typeOf="Logo" classHeader="header4"   header1={[{name:"Logo Design" , type:"Logo"},{name:"Web Design" , type:"Web"},{name:"Social Media Design" , type:"Socialmedia"},{name:"Packaging" , type:"packaging"},{name:"Graphic Design" , type:"Graphic"},{name:"Vehicle Branding" , type:"vehicles"},{name:"Staff Uniform" , type:"uniform"},{name:"Stationery" , type:"stationery"}]} />
+
 
       <Divider classn="divider-left" />
-      <Serach2 Img={IMG2} Imgsection={Grid1} title="Why Choose Us" data={Approach} />
+      <Serach2 Img={IMG2} Imgsection={Grid1} title="Why Choose MRM for Your Branding Needs?" altImg="Luminous 'M' branding display" titleImg="Branding-Spotlight-Feature" data={Approach} />
 
-      <Contact />
+      <Contact number={8} title="Are You Ready to Add Some Magic to Your Brand?" desc="Contact Us to Start Your Journey to Success" />
       <Footer />
       </div>
   )

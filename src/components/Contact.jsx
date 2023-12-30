@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 import { Pattern9 } from './patterns/Pattern1';
 import { Animate } from '../App';
 
-const Contact = memo(({title , desc , onHere}) => {
+const Contact = memo(({title , desc , onHere , number}) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -19,18 +19,15 @@ const Contact = memo(({title , desc , onHere}) => {
       });
       e.target.reset() ;
   };
+  let services = [ , "Exhibition & Display Stand" , "Indoor & Outdoor Signages" , "Photography & Videography" , "Web Design & Development" ,"Social Media Marketing" , "Corporate Gifts" , "Media Buyin" , "Branding" , "SEO" ,]
+  const [values , setvalues] = useState(services[number])
 
-  const [value , setvalue] = useState() ;
-  let services = [ , "Exhibition & Display Stand" , "Indoor & Outdoor Signages" , "Photography & Videography" , "Web Design & Development" ,"Social Media Marketing" , "Cooperated Gifts" , "Media Buyin" , "Branding" , "SEO" ,]
-  
   return (
     <>
       <Pattern9 />
       <Animation />
     <section className='Contact' id='Contact'>
-      <div className="bgCover"  >  <img  src={IMG1} alt="contact" loading="lazy" /> </div>
-      {/* <div className="container1">  <div className='h2'>{desc }</div> </div> */}
-      
+      <div className="bgCover"  >  <img  src={IMG1} alt="contact" loading="lazy" /> </div>      
       <div className="container">
       <div className="box box-img "   > <img data-aos={Animate} src={FormImg} alt="Smiling man with laptop on geometric patterned background with text 'We're Here to Help You”" loading="lazy" /> </div>
         <div   className="box" data-aos={Animate}  >
@@ -41,7 +38,7 @@ const Contact = memo(({title , desc , onHere}) => {
               <input data-aos={Animate}   required type="text" name="name" placeholder='Your Name' id="" />
               <input data-aos={Animate}   required type="Email" name="email" placeholder='Email address' id="" />
               <input data-aos={Animate}   required type="text" name="phone" placeholder='Phone' id="" />
-              <select data-aos={Animate}   name='services' className='input form-select' aria-label=".form-select-lg examplev" value={value} onChange={e=> setvalue(e.target.value)}>
+              <select data-aos={Animate}   name='services' className='input form-select' aria-label=".form-select-lg examplev" value={values} >
                 <option value="0">Select a service</option>
                 {services.map((e,index)=> <option key={index} value={e} >{e}</option> )}
               </select>

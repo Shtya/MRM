@@ -39,7 +39,6 @@ const Blog = memo(() => {
 
   const [blogs , setdata] = useState([])
   const {pathname} = useLocation() ;
-
   useEffect(_=> { 
     blogs.length < 1 
     ?  baseURL.get("").then(e => setdata(e.data.data))

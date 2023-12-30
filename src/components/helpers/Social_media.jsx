@@ -8,7 +8,7 @@ const Social_media = memo(({Img , title , desc , data}) => {
     <div className="social-media">
           <div className="bgCover"> <img  src={Img} alt="web design services" loading="lazy" /> </div>
         <div className="container">
-            <h3 data-aos={Animate} className='h1 '>{title}</h3>
+            <h3  className='h1 '>{title}</h3>
             <div data-aos={Animate} className="phead ">{desc}</div> 
             <div className="boxs">
             { data.map((e,index)=> ( 

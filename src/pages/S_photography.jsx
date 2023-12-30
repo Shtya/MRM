@@ -37,20 +37,20 @@ import PHOTOgraphy from "../components/helpers/PHOTOgraphy"
 import Serach2  from "../components/helpers/Serach2"
 import Contact  from "../components/Contact"
 
-import React , { Suspense, memo } from "react"
-import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
-const SliderPHOTO = React.lazy(() => import("../components/SLIDER_MRM/SliderPHOTO"));
+import React , { memo } from "react"
+import SliderHOME from "../components/SLIDER_MRM/SliderHOME";
+import { ImageGalleryPotography } from "../components/Images2";
 
 const SERVICES = [
   { img:Photography_2 , title:"Events photography" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
-  { img:Photography_6 , title:"Business Portraits & Headshots photography" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
-  { img:Photography_3 , title:"Real Estate photography" , desc:"Document the progress of construction projects, showcase real estate listings, and capture the essence of the lifestyle your brand represents."},
-  { img:Photography_4 , title:"Exhibitions and Trade Shows photography" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
+  { img:Photography_5 , title:"Fashion photography" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
+  { img:Photography_6 , title:"Business Portraits & Headshots" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
   { img:Photography_7 , title:"Food photography" , desc:"Showcase your culinary creations with mouthwatering food photography that entices your audience."},
   { img:Photography_8 , title:"Product photography" , desc:"Highlight the details and features of your products with our product photography services."},
   { img:Photography_9 , title:"Automotive photography" , desc:"From sleek cars to rugged vehicles, our automotive photography captures the beauty and power of automobiles."},
   { img:Photography_1 , title:"Hospitality photography" , desc:"Create an inviting atmosphere with hospitality photography that showcases your venue's charm."},
-  { img:Photography_5 , title:"Fashion photography" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
+  { img:Photography_3 , title:"Real Estate photography" , desc:"Document the progress of construction projects, showcase real estate listings, and capture the essence of the lifestyle your brand represents."},
+  { img:Photography_4 , title:"Trade Shows photography" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
 ]
 const SERVICES2 = [
   { img:Videography5 , title:"Exhibitions, Conference & Trade Show Filming" , desc:"Showcase your participation in industry events with professionally filmed videos."},
@@ -96,19 +96,19 @@ const S_photography = () => {
       <Qutation Img={IMG1}  desc1="Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative." />
 
       <Pattern9 />
-      <PHOTOgraphy classn="photography-services"  Img ={IMG2} nameServices ="photography&videography" title ="Our Photo gallery" data ={SERVICES} />
+      <PHOTOgraphy classn="photography-services"  Img ={IMG2} nameServices ="photography&videography" title ="Our Photography Services " data ={SERVICES} />
       
       <Pattern9 />
-      <PHOTOgraphy classn="Videography-services"  Img ={IMG3} nameServices ="photography&videography" title ="Types of Videography gallery" data ={SERVICES2} />
+      <PHOTOgraphy classn="Videography-services"  Img ={IMG3} nameServices ="photography&videography" title ="Our Videography Services " data ={SERVICES2} />
 
       <Pattern9 />  
-      <Suspense fallback={<LoadingMemo />}>   <SliderPHOTO /> </Suspense>
+      <SliderHOME DATA={ImageGalleryPotography} typeOf="Videograph"   header1={[ {name :"Videography", type:"Videograph"}, {name :"Events",      type:"Events"}, {name :"Fashion " , type:"Fashion "}, {name :"Food",    type:"Food"}, {name :"Product", type:"Product"}, {name :"Automotive", type:"Automotive"}, {name :"Real Estate", type:"Real-Estate"}]} />
     
 
       <Pattern9 />
       <Serach2 Img ={IMG1} Imgsection ={Grid1} title ="Why Choose Us?" data={WHY} />
 
-      <Contact />
+      <Contact number={3} title="Let's Craft the Perfect Ending to your Brand's Story Together" desc=" " />
 
       <Footer />
       </div>

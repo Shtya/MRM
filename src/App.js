@@ -32,13 +32,13 @@ import BlogDetails from './components/BlogDetails'
 import Dashboard from './blog/Dashboard'
 import BlogsAll from './blog/BlogsAll'
 import E_post from './blog/E_post'
+
 export const Social_Media = ["https://www.facebook.com/MRMadvertisingDubai" , "https://www.instagram.com/mrmadvertising/" , "https://www.linkedin.com/company/mrm-advertising-media" , "https://api.whatsapp.com/send?phone=+971561384496&text=Hello%2C%20world!"]
 export const Animate = "zoom-in"
 const App = () => {
 
   return ( 
     <div className='App'>
-      
       <SlideNav whats={false} />
       
       <Routes>
@@ -50,15 +50,18 @@ const App = () => {
         <Route path='/privacy'     element={<Privacy />} />                          
         <Route path='/terms'       element={<Terms />} />                          
         
-        <Route path='/web-development-company-in-dubai'  element={<S_WebDesign/>} />                        
-        <Route path='/Photography-In-Dubai' element={<S_photography />} />                        
+
+
+        <Route path='/web-development-company-in-dubai'              element={<S_WebDesign/>} />                        
+        <Route path='/Photography-In-Dubai'                          element={<S_photography />} />                        
         <Route path='/exhibition-and-display-stand-agency-in-dubai'  element={<S_Exhibition  />} />                        
         <Route path='/indoor-and-outdoor-signages-agency-in-dubai'    element={<M_Signages />} />                        
-        <Route path='/social-media-marketing-agency-in-dubai'   element={<Landing />} />                        
-        <Route path='/gifts-agency-in-dubai'      element={<S_Gifts  />} />                        
-        <Route path='/advertising-ppc-agency-in-dubai'       element={<S_Media />} />                        
-        <Route path='/branding-agency-in-dubai'    element={<S_Branding  />} />                        
-        <Route path='/seo-agency-in-dubai'         element={<S_SEO />} />                        
+        <Route path='/branding-agency-in-dubai'                      element={<S_Branding  />} />                        
+        <Route path='/Corporate-gifts-in-dubai'                      element={<S_Gifts  />} />                        
+        <Route path='/advertising-ppc-agency-in-dubai'               element={<S_Media />} />   
+        <Route path='/seo-agency-in-dubai'                           element={<S_SEO />} />                        
+        <Route path='/social-media-marketing-agency-in-dubai'        element={<Landing />} />                        
+        
 
         <Route path="/dashboard"      element={<Dashboard />} /> 
         <Route path="/MRM"            element={<BlogsAll />} /> 

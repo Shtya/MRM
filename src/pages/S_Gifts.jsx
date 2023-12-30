@@ -22,15 +22,16 @@ import MetaTag from './MetaTag'
 import Hero from '../components/helpers/Hero'
 import Qutation from '../components/helpers/Qutation'
 import Impact from '../components/helpers/Impact'
-import React , { Suspense, memo } from "react"
-import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
-const SliderGIFTS = React.lazy(() => import("../components/SLIDER_MRM/SliderGIFTS"));
+import React , { memo } from "react"
+import { Animate } from '../App';
+import SliderHOME from '../components/SLIDER_MRM/SliderHOME';
+import { ImageGalleryGifts } from '../components/Images2';
 
 
 const Approach = [
-  { img:gifts_1 , title:"Corporate Gifts" , desc:"Where Thoughtful Gestures Meet Elegance The right gift can make a big impact in corporate relationships. Our Corporate Gifts collection offers timeless and sophisticated items that show genuine appreciation. "},
-  { img:gifts_2 , title:"Customized Gift Items"   , desc:"Adding a touch of personalization to a gift brings a sense of sincerity and thoughtfulness. With our Customized Gift Items service, you can add your unique touch to every present. We collaborate closely with you to design gifts that embody your brand identity and leave a memorable impression on the recipient."},
-  { img:gifts_3 , title:"Trophies"             , desc:"Acknowledge achievements with grace and distinction. Our Trophies are crafted to symbolize not just accomplishment but the dedication and hard work behind every milestone.  Whether you're recognizing outstanding employees or commemorating corporate milestones, our trophies are a testament to excellence."},
+  { img:gifts_1 , title:"Corporate Gifts" , desc:"The right gift can make a big impact in corporate relationships. Our Corporate Gifts collection offers timeless and sophisticated items that show genuine appreciation. "},
+  { img:gifts_2 , title:"Customized Gift Items"   , desc:"Adding a touch of personalization to a gift brings a sense of sincerity and thoughtfulness. With our Customized Gift Items service, you can add your unique touch to every present. We collaborate closely with you to design gifts that embody your brand identity and leave a memorable impression on the recipient. "},
+  { img:gifts_3 , title:"Trophies"             , desc:"Acknowledge achievements with grace and distinction. Our Trophies are crafted to symbolize not just accomplishment but the dedication and hard work behind every milestone.  Recognize excellence with our trophies for employees or corporate milestones"},
   ]
 
 const BRANDING_SERVICES = [
@@ -44,7 +45,7 @@ const S_Gifts = memo(() => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "gifts",
-    "url": "https://mrmadvertisingdubai.com/gifts-agency-in-dubai",
+    "url": "https://mrmadvertisingdubai.com/Corporate-gifts-in-dubai",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",
@@ -56,34 +57,43 @@ const S_Gifts = memo(() => {
   };
   return (
     <div className="S_Gifts landing">
-      <MetaTag canonical="gifts-agency-in-dubai" schema={schema} title=" Best Corporate Gifts Designing Services in Dubai " desc="Looking for impressive corporate gifts, gift items, and trophies? Our curated selection is customized for any occasion and denotes exceptional quality." />
+      <MetaTag canonical="Corporate-gifts-in-dubai" schema={schema} title="Best Corporate Gifts Designing Services in Dubai" desc="Looking for Impressive Corporate Gifts, Gift Items, and Trophies? Our Curated Selection is Customized for any Occasion and Denotes Exceptional Quality" />
       <Animation />
 
-      <Hero H1="Transform Professional Relationships with Timeless Elegance" H2="Unleash the potential of your business connections with our expertly curated collection of corporate gifts" H3="At MRM, we understand the impact of meaningful gestures in the corporate world. Our passion lies in transforming ordinary moments into extraordinary memories through our premium services: Corporate Gifts, Customized Items, and Trophies." Img={ImgSection} nameServices="gifts services" Imgintro={ImgIntro} />
+      <Hero 
+        H1="Transform Professional Relationships with Timeless Elegance with the Best Corporate Gifts in Dubai " 
+        H2="Unleash the potential of your business connections with our expertly curated collection of corporate gifts " 
+        H3="At MRM, we understand the impact of meaningful gestures in the corporate world. Our passion lies in transforming ordinary moments into extraordinary memories through our premium services: Corporate Gifts, Customized Items, and Trophies." 
+        Img={ImgSection} 
+        nameServices="gifts services" 
+        Imgintro={ImgIntro} />
+
       <Qutation Img={IMG1} title1="Strengthen Your Professional Ties  with Our Meticulously Curated Collection of Corporate Gifts"  desc1="Explore our meticulously curated collection of corporate gifts, tailor-made for every occasion, and elevate your business relationships to new heights.  Our handpicked selection of gifts is designed to leave a lasting impression on your clients, employees, and partners, and convey your appreciation for their business. With a focus on quality, elegance, and functionality, our gifts are sure to impress and strengthen your professional ties" />
         
       <Divider classn="divider-left" />
       <div className="boxs-tails">
           <div className="bgCover"  >  <img  src={IMG2} alt="gifts services" loading="lazy" /> </div>
-          <div className="h1" data-aos="fade-up" >We offer</div> 
-            <div className="container" data-aos="fade-up">
+          <h2 className="h1" data-aos={Animate} >We Offer a Variety of Corporate Gifts for Companies in Dubai </h2> 
+            <div className="container" data-aos={Animate}>
                   {Approach.map((e,index)=>(
-                    <div className='box' key={index} data-aos="fade-up" >
-                      <div className="coverImg hidden-img" > <img src={e.img} alt="gifts services" loading="lazy" /> </div>
-                      <h3 className="h2 clip hidden-text" >{e.title}</h3>
-                      <h2 className=" p hidden-text" >{e.desc}</h2>
+                    <div className='box' key={index} data-aos={Animate} >
+                      <div className="coverImg " > <img src={e.img} alt="gifts services" loading="lazy" /> </div>
+                      <h3 className="h2  " >{e.title}</h3>
+                      <div className=" p " >{e.desc}</div>
                     </div>
                   ))}
             </div>
       </div>
 
       <Divider classn="divider" />
-      <Suspense fallback={<LoadingMemo />}>   <SliderGIFTS />  </Suspense>
+      {/* <SliderGIFTS />  */}
+      <SliderHOME DATA={ImageGalleryGifts} typeOf="trophies"   header1={[ {name:"Trophies" , type:"trophies"},{name:"Customized Gift" , type:"gift-Item"},{name:"Corporate Gifts" , type:"Corporate-gifts"},]} />
+
 
       <Divider classn="divider-left" />
       <Impact classn="impact" Img={IMG3}  data={BRANDING_SERVICES}  title="Why Choose Us for Your Corporate Gifting Needs?"  nameServices="gifts services"  />
 
-      <Contact />
+      <Contact number={6} title="Crafting Memorable Corporate Gifts" desc="Reach Out for Excellence" />
       <Footer />
       </div>
   )

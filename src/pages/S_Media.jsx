@@ -40,7 +40,7 @@ import ImpactComponent from "../components/helpers/Impact"
 import Process from "../components/helpers/Process"
 
 
-const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising"]
+const li = [ "Tiktok Advertising" , "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising"]
 const Paid = [ 
   {img: G  ,title:"Google Ads Campaigns" , desc:"Effective PPC management requires specialized expertise in advertising strategies, budget planning, and execution. Our experienced team leverages data-driven insights, cutting-edge technology, and creative solutions to create high-performing campaigns that can significantly impact your bottom line."},
   {img: F , path:"/facebook" ,title:"Facebook Advertising" , desc:"Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers."},
@@ -92,19 +92,20 @@ const S_Media = () => {
         <div className="container">
             <div className="boxImg hidden-img " data-aos="zoom-in-left" data-aos-delay="400"  >  <img src={ImgSection} alt="A woman shops in-store with a digital shopping app" loading="lazy" /> </div>
             <div className="boxs" >
-                <h1 className='h1 ' data-aos="zoom-in-right" data-aos-delay="600" > Boost your brand's presence and supercharge your online growth with MRM's paid advertising expertise</h1>
-                <h2 className='h2 ' data-aos="zoom-in-right" data-aos-delay="600" >Transform your Social Media Platforms into Full Revenue Drivers and Maximize your Return on Investment with the Best Advertising Agency in Dubai </h2>
+                <h1 className='h1 ' data-aos="zoom-in-right" data-aos-delay="600" >Boost your Brand's Presence and Supercharge your Online Growth with Our Social Media Advertising Services </h1>
+                <h2 className='h2 ' data-aos="zoom-in-right" data-aos-delay="600" >Transform your Social Media Platforms into Full Revenue Drivers and Maximize your Return on Investment with the Best Advertising Agency in Dubai  </h2>
                 <div className="inner-boxs"  data-aos="zoom-in-left" data-aos-delay="600">
               <ul className="box" >
                 <li className='li ' > {li[0]} </li>
                 <li className='li ' > {li[1]} </li>
                 <li className='li ' > {li[2]} </li>
+                <li className='li ' > {li[3]} </li>
               </ul>
 
               <ul className="box box-2">
-                <li className='li ' > {li[3]} </li>
                 <li className='li ' > {li[4]} </li>
                 <li className='li ' > {li[5]} </li>
+                <li className='li ' > {li[6]} </li>
               </ul>
             </div>
           </div>
@@ -122,7 +123,7 @@ const S_Media = () => {
       <Divider classn="divider-left" />
       <Process Img={IMG2} title="Our Social Media Advertising Process " desc="" data={process}/>
       
-      <Contact title="Transform Clicks into Conversions" desc="Reach Out for High-Performing Campaigns that Guarantee Results" />
+      <Contact number={7} title="Transform Clicks into Conversions" desc="Reach Out for High-Performing Campaigns that Guarantee Results" />
       <Footer />
     </div>
   )

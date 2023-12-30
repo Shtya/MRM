@@ -5,7 +5,7 @@ const ExhibitionGallery = memo(({ classn ,Img , nameServices , data , title  }) 
   return (
     <div className={classn}>
         <div className="bgCover"  >   <img  src={Img} alt={nameServices} loading="lazy" />  </div>
-        <div className="container"> <div className="h1" style={{marginBottom:"30px"}}>{title}</div></div>
+        <div className="container"> <h2 className="h1" style={{marginBottom:"30px"}}>{title}</h2></div>
         <div className="container">
           <div className="boxs">
             {data.map((e,index)=> ( <div key={index} data-aos="zoom-in-up"  className="coverImg"> <i onClick={_=> setImgView(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} alt="slider" /> </div> ))}

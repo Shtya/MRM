@@ -21,10 +21,10 @@ import Process from '../components/helpers/Process'
 
 
 
-import React , { Suspense, memo } from "react"
-import LoadingMemo from "../components/SLIDER_MRM/LoadingMemo"
-const SliderOUTDOOR = React.lazy(() => import( "../components/SLIDER_MRM/SliderOUTDOOR"));
-const SliderINDOOR  = React.lazy(() => import("../components/SLIDER_MRM/SliderINDOOR"));
+import React , { memo } from "react"
+import { ImageGalleryIndoor, ImageGalleryOutdoor } from '../components/Images2';
+import SliderHOME from '../components/SLIDER_MRM/SliderHOME';
+import SliderGalleryIndoor from '../components/SLIDER_MRM/SliderGalleryIndoor';
 
 
 const process = [
@@ -58,17 +58,21 @@ const M_Signages = memo(() => {
       <Qutation Img={IMG1} title1="MRM promises excellence in signage installation, blending your vision with our expertise"  desc1="MRM's team of experts specializes in developing custom sign designs based on clients' requirements. we take care of every project aspect, from the concept and design phase to production and installation. MRM is committed to delivering quality service and ensuring customer satisfaction. Clients can trust MRM to handle everything related to their custom signage installation." />
 
       <Pattern9 />
-      <Suspense fallback={<LoadingMemo />}>   <SliderOUTDOOR />  </Suspense>
+      {/* <SliderOUTDOOR /> */}
+      <SliderHOME DATA={ImageGalleryOutdoor} typeOf="Led-signage"   header1={[{name:"LED Signages" , type:"Led-signage"} ,  {name:"Building Wrap" , type:"Building-Wrap"} ,  {name:"Lamp Post " , type:"Lamp-Post"} ,  {name:"Unipole Signs " , type:"unipole"} ,  ]} />
+
 
       <Pattern9 />
-      <Suspense fallback={<LoadingMemo />}>   <SliderINDOOR />  </Suspense>
+      <SliderGalleryIndoor classGallery="Gallery2" DATA={ImageGalleryIndoor} typeOf="Health-safety"   header1={[{name:"Health Safety" , type:"Health-safety"} ,{name:"Menu Boards" , type:"Menu-boards"} ,{name:"Reception " , type:"reception"} ,{name:"Office Signs" , type:"Office-signs"} ]} />
+      {/* <SliderINDOOR /> */}
+
 
       <Pattern9 />
       <Process Img={IMG2} title="Signage creation process" desc="Our custom signages captures attention and gives every project  an elegant and professional finish" data={process} />
 
 
 
-      <Contact />
+      <Contact number={2} />
       <Footer />
       </div>
   )

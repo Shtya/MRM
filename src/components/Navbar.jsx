@@ -50,7 +50,7 @@ htmlcssArrow.onclick = function() {
                 <li onClick={_=> Navigate("/exhibition-and-display-stand-agency-in-dubai")}><Link to="/exhibition-and-display-stand-agency-in-dubai"> exhibition & display stands</Link></li>
                 <li onClick={_=> Navigate("/indoor-and-outdoor-signages-agency-in-dubai")}><Link to="/indoor-and-outdoor-signages-agency-in-dubai"> indoor & outdoor signages </Link></li>
                 <li onClick={_=> Navigate("/social-media-marketing-agency-in-dubai")}><Link to="/social-media-marketing-agency-in-dubai"> social media marketing</Link></li>
-                <li onClick={_=> Navigate("/gifts-agency-in-dubai")}><Link to="/gifts-agency-in-dubai">cooperated gifts </Link></li>
+                <li onClick={_=> Navigate("/Corporate-gifts-in-dubai")}><Link to="/Corporate-gifts-in-dubai">Corporate gifts </Link></li>
                 <li onClick={_=> Navigate("/advertising-ppc-agency-in-dubai")}><Link to="/advertising-ppc-agency-in-dubai">media buying </Link></li>
                 <li onClick={_=> Navigate("/branding-agency-in-dubai")}><Link to="/branding-agency-in-dubai">Branding </Link></li>
                 <li onClick={_=> Navigate("/seo-agency-in-dubai")}><Link to="/seo-agency-in-dubai">SEO </Link></li>

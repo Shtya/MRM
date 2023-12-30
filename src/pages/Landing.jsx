@@ -123,7 +123,7 @@ const Landing = () => {
                   </div>
 
                   <div className="box">
-                      <h3 className='h3 ' data-aos="fade-left">We're A Full-Service Digital Agency</h3>
+                      <h3 className='h3 ' data-aos="fade-left">We're A Full-Service Digital Marketing Agency In Dubai </h3>
                       <div className='p ' data-aos="fade-left"> MRM is an innovative social media management agency that helps brands fully leverage their online presence. We have a dynamic team of strategists, content creators, and social media experts who collaborate to develop innovative, data-driven solutions tailored to your specific goals and objectives. Partnering with MRM unlocks the power of expert social media management to elevate your brand's digital presence.</div>
                   </div>
 
@@ -167,7 +167,7 @@ const Landing = () => {
         </div>
     </div>
 
-      <Contact />
+      <Contact number={5} />
       <Footer />
     </div>
   )
