@@ -44,8 +44,8 @@ createRoot(document.getElementById("root")).render(<BrowserRouter>
     
 </Helmet>
 
- {/* <App /> <Loading/> </BrowserRouter>) */}
- <App />  </BrowserRouter>)
+ <App /> <Loading/> </BrowserRouter>)
+ {/* <App />  </BrowserRouter>) */}
 
 
 
