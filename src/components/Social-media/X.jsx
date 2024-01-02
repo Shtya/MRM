@@ -77,7 +77,7 @@ const X = () => {
         <div className="impact1">
           <div className="bgCover"  >  <img  src={IMG3} alt="twitter-page"  /> </div>
               <div className="container">
-                  <div className="h1 clip" data-aos="zoom-in"> Types of Twitter Ads MRM Offers </div>
+                  <div className="h1 " data-aos="zoom-in"> Types of Twitter Ads MRM Offers </div>
                   <div className="boxs" >
                     {
                       TYPES.map((e,index)=> (

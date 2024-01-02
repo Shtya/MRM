@@ -9153,6 +9153,7 @@ footer {
     @media (max-width:550px) {
       padding: 20px 0 !important;
     }
+    .h1{margin-bottom: 20px;}
 
     .container {
       .boxs {
@@ -9627,13 +9628,13 @@ footer {
     .number{
       width: 80px;
     height: 80px;
-    border: 1px solid #333;
+    border: 1px solid #222222d7;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
     border-radius: 50%;
-    background: #222;
+    background: #222222b5;
     font-family: 'FontAwesome';
     letter-spacing: 4px;
     }
@@ -9652,12 +9653,13 @@ footer {
     }
 
     .box {
-      background-color: var(--bg-card);
+      background-color: #1a1814b8;
       z-index: 1;
       padding: 20px;
       outline: 2px solid #333;
       border: 4px solid #111;
       position: relative;
+      backdrop-filter: blur(2px);
       &:hover{
         &::after{height:100%}
         .coverImg{
