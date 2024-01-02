@@ -86,11 +86,11 @@ const S_Media = () => {
     <MetaTag canonical="advertising-ppc-agency-in-dubai" schema={schema} title="Leading Social Media Advertising & PPC Agency in Dubai , UAE" desc="Transform your brand's online visibility with MRM the Best Advertising Agency in Dubai. Our Expert Strategies Maximize your Return on Investment" />
     <Animation />
       <div className="container"> <Navbar /> </div>
-      <div className="coverIntro " data-aos="zoom-in-left" > <img src={ImgIntro} alt="media buying services" loading="lazy" /></div>
+      <div className="coverIntro " data-aos="zoom-in-left" > <img src={ImgIntro} alt="media buying services"  /></div>
 
       <div className="home">
         <div className="container">
-            <div className="boxImg hidden-img " data-aos="zoom-in-left" data-aos-delay="400"  >  <img src={ImgSection} alt="A woman shops in-store with a digital shopping app" loading="lazy" /> </div>
+            <div className="boxImg hidden-img " data-aos="zoom-in-left" data-aos-delay="400"  >  <img src={ImgSection} alt="A woman shops in-store with a digital shopping app"  /> </div>
             <div className="boxs" >
                 <h1 className='h1 ' data-aos="zoom-in-right" data-aos-delay="600" >Boost your Brand's Presence and Supercharge your Online Growth with Our Social Media Advertising Services </h1>
                 <h2 className='h2 ' data-aos="zoom-in-right" data-aos-delay="600" >Transform your Social Media Platforms into Full Revenue Drivers and Maximize your Return on Investment with the Best Advertising Agency in Dubai  </h2>

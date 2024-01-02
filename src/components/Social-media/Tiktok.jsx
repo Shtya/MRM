@@ -43,7 +43,7 @@ const Tiktok = () => {
 
       <Divider classn="divider-left" />
       <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG3} alt="tiktok-page" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="tiktok-page"  /> </div>
             <div className="container">
                 <div className="h1 "  data-aos="fade-down" > Types of TikTok Ads we offer</div>
                 <div className="phead"   data-aos="fade-down" data-aos-delay="200">TikTok's advertising landscape offers diverse options tailored to your unique marketing objectives. MRM agency specializes in executing these TikTok ad types to elevate your brand's visibility and engagement. </div>
@@ -66,7 +66,7 @@ const Tiktok = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4">
-          <div className="bgCover"  >  <img  src={IMG2} alt="tiktok-page" loading="lazy" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="tiktok-page"  /> </div>
           <div className="container">
             <div className="h1"  data-aos="fade-down"  style={{marginBottom:""}}>Why Choose TikTok Marketing?</div>
             <div className="phead"  data-aos="fade-down" data-aos-delay="200">Still trying to convince you about the power of TikTok for your marketing strategy? Let's explore eight key benefits</div>

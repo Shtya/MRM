@@ -29,9 +29,9 @@ const AboutUs = memo(() => {
 
         <Divider classn=" divider-top " />
         <div className="searching ">
-        <div className="bgCover"> <img  src={IMG1} alt="about" loading="lazy" /> </div>
+        <div className="bgCover"> <img  src={IMG1} alt="about"  /> </div>
           <div className="container">
-            <div className="coverImg " data-aos="fade-right"> <img src={ImgContact} alt="about" loading="lazy" /> </div>
+            <div className="coverImg " data-aos="fade-right"> <img src={ImgContact} alt="about"  /> </div>
             <div className="boxs ">
                 <h2 className='box p ' data-aos="fade-left">We are a global creative agency based in the UAE and a leading agency in advertising, marketing, and digital solutions. Our expertise is helping companies establish a strong and professional presence in physical and digital spaces using innovative and effective strategies.</h2>
                 <h2 className='box p ' data-aos="fade-left">We create exceptional visual identities and build robust online presences for brands. Our team is dedicated to delivering top-notch services, utilizing the latest technologies and top-notch solutions to achieve tangible results. We offer professional marketing services to help your brand shine, from visual identities to online experiences. </h2>
@@ -41,7 +41,7 @@ const AboutUs = memo(() => {
 
         <Divider classn="divider" />
         <div className="WHY">
-          <div className="bgCover"> <img  src={IMG2} alt="about" loading="lazy" /> </div>
+          <div className="bgCover"> <img  src={IMG2} alt="about"  /> </div>
           <div className="container" data-aos="fade-up">
             {vission_mission.map((e,index)=> (
                 <OneWhy altCover={e.alt} key={index} img={e.img} title={e.title} desc={e.desc} />

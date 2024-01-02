@@ -1,5 +1,6 @@
-import React from 'react'
-import {Routes , Route} from "react-router-dom"
+import React, { useEffect } from 'react'
+import {Routes , Route, useNavigate, useLocation} from "react-router-dom"
+
 import "./sass/main.css"
 
 import Home from './pages/Home'
@@ -36,6 +37,19 @@ import E_post from './blog/E_post'
 export const Social_Media = ["https://www.facebook.com/MRMadvertisingDubai" , "https://www.instagram.com/mrmadvertising/" , "https://www.linkedin.com/company/mrm-advertising-media" , "https://api.whatsapp.com/send?phone=+971561384496&text=Hello%2C%20world!"]
 export const Animate = "zoom-in"
 const App = () => {
+
+  const {pathname} = useLocation() ;
+  const push = useNavigate();
+
+  useEffect(_=>{
+    if(pathname == "/photography-and-videography-agency-in-dubai") return push("/Photography-In-Dubai")
+    if(pathname == "/web-design") return push("/web-development-company-in-dubai")
+    if(pathname == "/seo") return push("/seo-agency-in-dubai")
+    if(pathname == "/Exhibition-and-display-stand") return push("/exhibition-and-display-stand-agency-in-dubai")
+    if(pathname == "/gifts") return push("/Corporate-gifts-in-dubai")
+    if(pathname == "/signages") return push("/indoor-and-outdoor-signages-agency-in-dubai")
+    if(pathname == "/portfolio") return push("/social-media-marketing-agency-in-dubai")
+  } ,[pathname])
 
   return ( 
     <div className='App'>

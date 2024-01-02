@@ -75,11 +75,11 @@ const Landing = () => {
       <Animation />
       <MetaTag canonical="social-media-marketing-agency-in-dubai" schema={schema} title="Social Media Marketing Services in Dubai to Boost Your Brand" desc="Partner with MRM, one of the leading social media marketing agencies in Dubai, to ensure a excellent digital journey for your brand." />
       <div className="container"> <Navbar /> </div>
-      <div className="coverIntro" data-aos="zoom-in-left"> <img  src={ImgIntro} alt="social media marketing services" loading="lazy" /></div>
+      <div className="coverIntro" data-aos="zoom-in-left"> <img  src={ImgIntro} alt="social media marketing services"  /></div>
       
       <div className="home">
         <div className="container">
-          <div className="boxImg n-border" data-aos="zoom-in-left" data-aos-delay="400"  >  <img className='' src={Community} alt="Social media icons floating over a phon" loading="lazy" /> </div>
+          <div className="boxImg n-border" data-aos="zoom-in-left" data-aos-delay="400"  >  <img className='' src={Community} alt="Social media icons floating over a phon"  /> </div>
           <div className="boxs " data-aos="zoom-in-right" data-aos-delay="400"  >
             <h1 className='h1 '>Improve the Impact of your Social Media Presence with the Best Digital Marketing Agency In Dubai </h1>
             <h2 className='h2 '>Boost Your Brand Online with the Top Social Media Marketing Services in Dubai </h2>
@@ -153,6 +153,7 @@ const Landing = () => {
 
       <Divider classn="divider-left" />
     <div className="process">
+    <div className="bgCover"  >  <img  src={IMG2} alt="social media marketing services"  /> </div>
         <div className="container1"> <h2 className="h1" data-aos="fade-up">Our Social Media Marketing Process </h2></div>
         <div className="container">
             <div className="box box1">

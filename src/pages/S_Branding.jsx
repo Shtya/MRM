@@ -30,7 +30,7 @@ import Serach2 from '../components/helpers/Serach2';
 
 import React , {  memo } from "react"
 import SliderHOME from '../components/SLIDER_MRM/SliderHOME';
-import { ImageGalleryBranding } from '../components/Images2';
+import { ImageGalleryBranding, ImageGalleryBrandingSchema } from '../components/Images2';
 
 
 const Approach = [
@@ -79,7 +79,7 @@ const S_Branding = () => {
       
       <Divider classn="divider" />
        {/* <SliderBRAND /> */}
-       <SliderHOME DATA={ImageGalleryBranding} typeOf="Logo" classHeader="header4"   header1={[{name:"Logo Design" , type:"Logo"},{name:"Web Design" , type:"Web"},{name:"Social Media Design" , type:"Socialmedia"},{name:"Packaging" , type:"packaging"},{name:"Graphic Design" , type:"Graphic"},{name:"Vehicle Branding" , type:"vehicles"},{name:"Staff Uniform" , type:"uniform"},{name:"Stationery" , type:"stationery"}]} />
+       <SliderHOME schema={ImageGalleryBrandingSchema} DATA={ImageGalleryBranding} typeOf="Logo" classHeader="header4"   header1={[{name:"Logo Design" , type:"Logo"},{name:"Web Design" , type:"Web"},{name:"Social Media Design" , type:"Socialmedia"},{name:"Packaging" , type:"packaging"},{name:"Graphic Design" , type:"Graphic"},{name:"Vehicle Branding" , type:"vehicles"},{name:"Staff Uniform" , type:"uniform"},{name:"Stationery" , type:"stationery"}]} />
 
 
       <Divider classn="divider-left" />

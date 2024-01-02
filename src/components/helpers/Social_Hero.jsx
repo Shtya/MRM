@@ -7,11 +7,11 @@ const Social_Hero = ({Cover , Intro , H1 , Img , Span1 , Span2 , Span3 , Span4 ,
     <>
       <div className="container"> <Navbar1 /> </div>
       <Animation />
-      <div className="coverIntro " data-aos="zoom-in-right" > <img src={Intro} alt="Facebook-page" loading="lazy" /></div>
+      <div className="coverIntro " data-aos="zoom-in-right" > <img src={Intro} alt="Facebook-page"  /></div>
 
       <div className="home">
           <div className="container">
-              <div className="boxImg" data-aos="fade-left" data-aos-delay="400" >  <img src={Cover} alt="Facebook-page" loading="lazy" /> </div>
+              <div className="boxImg" data-aos="fade-left" data-aos-delay="400" >  <img src={Cover} alt="Facebook-page"  /> </div>
               <div className="boxs"  >
               <p data-aos="zoom-in-right" data-aos-delay="600"  className="h2 hidden-text" > <span>{H1}</span> </p>
             </div>
@@ -19,7 +19,7 @@ const Social_Hero = ({Cover , Intro , H1 , Img , Span1 , Span2 , Span3 , Span4 ,
       </div>
 
       <div className="quotation">
-        <div className="bgCover"  >  <img  src={Img} alt="Facebook-page" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={Img} alt="Facebook-page"  /> </div>
             <div className="container" >
             <div className="box-style" data-aos="fade-up">
                 <p  className="h2"  > <span>{Span1}</span></p>

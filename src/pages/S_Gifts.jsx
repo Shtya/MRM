@@ -23,9 +23,8 @@ import Hero from '../components/helpers/Hero'
 import Qutation from '../components/helpers/Qutation'
 import Impact from '../components/helpers/Impact'
 import React , { memo } from "react"
-import { Animate } from '../App';
 import SliderHOME from '../components/SLIDER_MRM/SliderHOME';
-import { ImageGalleryGifts } from '../components/Images2';
+import { ImageGalleryGifts, ImageGalleryGiftsSchema } from '../components/Images2';
 
 
 const Approach = [
@@ -73,10 +72,10 @@ const S_Gifts = memo(() => {
       <Divider classn="divider-left" />
       <div className="boxs-tails">
           <div className="bgCover"  >  <img  src={IMG2} alt="gifts services" loading="lazy" /> </div>
-          <h2 className="h1" data-aos={Animate} >We Offer a Variety of Corporate Gifts for Companies in Dubai </h2> 
-            <div className="container" data-aos={Animate}>
+          <h2 className="h1" data-aos="zoom-in" >We Offer a Variety of Corporate Gifts for Companies in Dubai </h2> 
+            <div className="container" data-aos="zoom-in">
                   {Approach.map((e,index)=>(
-                    <div className='box' key={index} data-aos={Animate} >
+                    <div className='box' key={index} data-aos="zoom-in" >
                       <div className="coverImg " > <img src={e.img} alt="gifts services" loading="lazy" /> </div>
                       <h3 className="h2  " >{e.title}</h3>
                       <div className=" p " >{e.desc}</div>
@@ -87,7 +86,7 @@ const S_Gifts = memo(() => {
 
       <Divider classn="divider" />
       {/* <SliderGIFTS />  */}
-      <SliderHOME DATA={ImageGalleryGifts} typeOf="trophies"   header1={[ {name:"Trophies" , type:"trophies"},{name:"Customized Gift" , type:"gift-Item"},{name:"Corporate Gifts" , type:"Corporate-gifts"},]} />
+      <SliderHOME schema={ImageGalleryGiftsSchema} DATA={ImageGalleryGifts} typeOf="trophies"   header1={[ {name:"Trophies" , type:"trophies"},{name:"Customized Gift" , type:"gift-Item"},{name:"Corporate Gifts" , type:"Corporate-gifts"},]} />
 
 
       <Divider classn="divider-left" />

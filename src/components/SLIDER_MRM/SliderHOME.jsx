@@ -4,9 +4,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { memo, useEffect, useState } from "react";
 import { Animate } from "../../App";
+import { Helmet } from "react-helmet";
 
 
-export default memo(function SliderHOME ({header1 , typeOf , DATA , classHeader}) {
+export default memo(function SliderHOME ({header1 , typeOf , DATA , classHeader , schema}) {
   const handleChange = ()=>{
     settype(document.querySelectorAll(".slick-current img")[0]?.dataset?.type?.split(" ")[0])
   }
@@ -23,10 +24,17 @@ export default memo(function SliderHOME ({header1 , typeOf , DATA , classHeader}
       responsive: [
 
         {
+          breakpoint: 1100,
+          settings: {
+            dots:false 
+          }
+        },
+        {
           breakpoint: 700,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1 ,
+            dots:false 
           }
         }
       ]
@@ -44,6 +52,8 @@ export default memo(function SliderHOME ({header1 , typeOf , DATA , classHeader}
 
   return (
     <div className="GALLERY">
+      {/* <Helmet> <script type="application/ld+json">{JSON.stringify(schema)}</script> </Helmet> */}
+      
         <div className="bgCover"  >  <img  src={IMG3} alt="home" loading="lazy" /> </div>
         <div className="h1">OUR WORKS</div>
         
@@ -57,7 +67,7 @@ export default memo(function SliderHOME ({header1 , typeOf , DATA , classHeader}
                 {data?.map((e,index)=>( 
                       <img 
                       key={index} data-type={`${e.type}`}  
-                      src={e.img} loading='lazy'  alt={e?.alt || e?.type}   />
+                      src={e.img}   alt={e?.alt || e?.type}   />
                     )) }
               </Slider>
           </div>

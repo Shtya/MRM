@@ -30,7 +30,7 @@ import Contact from '../components/Contact'
 import Qutation  from "../components/helpers/Qutation"
 import Social_media from "../components/helpers/Social_media"
 import SliderHOME from "../components/SLIDER_MRM/SliderHOME"
-import { ImageGalleryWeb } from "../components/Images2"
+import { ImageGalleryWeb, ImageGalleryWebSchema } from "../components/Images2"
 
 const SocialMedia = [
   {img:Social_4 , title:"E-commerce Development Services   " , desc:"In today's fast-paced digital landscape, having a user-friendly and robust online store is an advantage and a necessity for e-commerce businesses. At MRM Agency, we offer top-notch E-commerce Development Services that can transform your online business and enhance your brand's presence. Whether you're starting a new e-commerce venture or want to improve an existing one, our team is here to turn your e-commerce aspirations into reality."},
@@ -89,10 +89,10 @@ const S_WebDesign = () => {
       
       <div className="container"> <Navbar /> </div>
 
-      <div className="coverIntro"> <img data-aos="zoom-in"  src={ImgIntro} alt="web design services" loading="lazy" /></div>
+      <div className="coverIntro"> <img data-aos="zoom-in"  src={ImgIntro} alt="web design services"  /></div>
       <div className="home">
         <div className="container">
-          <div  data-aos="fade-right" data-aos-delay="400" className="boxImg " >  <img  src={ImgSection} alt="Responsive web design layout is displayed across multiple devices" loading="lazy" /> </div>
+          <div  data-aos="fade-right" data-aos-delay="400" className="boxImg " >  <img  src={ImgSection} alt="Responsive web design layout is displayed across multiple devices"  /> </div>
           <div className="boxs" data-aos="fade-left" data-aos-delay="600" >
             <h1 className='h1 ' >Boost the Efficacy of Your Website's Online Presence with the Best Web Design and Development Company in Dubai </h1>
             <h2 className='h2 ' >Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development Services </h2>
@@ -167,8 +167,7 @@ const S_WebDesign = () => {
         </div>
       
         <Pattern9 />
-        <SliderHOME DATA={ImageGalleryWeb} typeOf="Web"   /> 
-        {/* <Suspense fallback={<LoadingMemo />}>   <SliderWEB />  </Suspense> */}
+        <SliderHOME DATA={ImageGalleryWeb} typeOf="Web" schema={ImageGalleryWebSchema}   /> 
 
 
       

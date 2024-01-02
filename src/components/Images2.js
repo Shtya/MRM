@@ -206,6 +206,7 @@ import Photo5 from "../assets/gallery/photography/PhotoGallery/Photography 600x6
 import Photo6 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-06.jpg"
 import Photo7 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-07.jpg"
 import Photo8 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-08.jpg"
+import { baseWEB } from "../API/API"
 
 export function Photography (){ return [Photography1,Photography2,Photography3,Photography4,Photography5,Photography6,Photography7,Photography8,Photography9,]}
 export function Videography (){ return [videography1,videography2,videography3,videography4,videography5,videography6,videography7,videography8,videography9,]}
@@ -274,6 +275,17 @@ export const ImageGalleryHome = [
   {img: Tropihes4  , type:`Gifts all` , alt:"Sparkling crystal award" , titleImg:"Crystal Flame Tropjy"  }  ,
 
 ]
+export const ImageGalleryHomeSchema = {
+  "@context": baseWEB,
+  "@type": "Home Gallery",
+  "image": ImageGalleryHome.map(e => ({
+    "@type": "Image",
+    "url": `${baseWEB}media/static/${e.img}`,
+    "name": e.alt || "Image Gallery Home",
+  }))
+};
+
+
 
 export const ImageGalleryWeb = [
   {img: webDesign1  , type:`Web ` }  ,
@@ -284,6 +296,15 @@ export const ImageGalleryWeb = [
   {img: webDesign6  , type:`Web ` }  ,
   
 ]
+export const ImageGalleryWebSchema = {
+  "@context": baseWEB,
+  "@type": "Home Gallery",
+  "image": ImageGalleryWeb.map(e => ({
+    "@type": "Image",
+    "url": `${baseWEB}media/static/${e.img}`,
+    "name": e.alt || "Image Gallery Home",
+  }))
+};
 
 
 export const ImageGalleryPotography = [
@@ -295,6 +316,16 @@ export const ImageGalleryPotography = [
   {img:  Photo6 , alt:"" , type:`Automotive all` }  ,
   {img:  Photo7 , alt:"" , type:`Real-Estate all` }  ,
 ]
+export const ImageGalleryPotographySchema = {
+  "@context": baseWEB,
+  "@type": "Potography Gallery",
+  "image": ImageGalleryPotography.map(e => ({
+    "@type": "Image",
+    "url": `${baseWEB}media/static/${e.img}`,
+    "name": e.alt || "Potography Gallery",
+  }))
+};
+
 export const ImageGalleryOutdoor = [
   {img: LED1 , type:`Led-signage all` }  ,
   {img: LED2 , type:`Led-signage all` }  ,
@@ -328,6 +359,16 @@ export const ImageGalleryOutdoor = [
     {img: Unipole6 , type:`unipole all` }  ,
 
 ]
+export const ImageGalleryOutdoorSchema = {
+  "@context": baseWEB,
+  "@type": "Outdoor Gallery",
+  "image": ImageGalleryOutdoor.map(e => ({
+    "@type": "Image",
+    "url": `${baseWEB}media/static/${e.img}`,
+    "name": e.alt || "Outdoor Gallery",
+  }))
+};
+
 export const ImageGalleryIndoor = [
 
   {img:  Health1 , type:`Health-safety all` }  ,
@@ -360,6 +401,16 @@ export const ImageGalleryIndoor = [
   
     
 ]
+export const ImageGalleryIndoorSchema = {
+  "@context": baseWEB,
+  "@type": "Indoor Gallery",
+  "image": ImageGalleryIndoor.map(e => ({
+    "@type": "Image",
+    "url": `${baseWEB}media/static/${e.img}`,
+    "name": e.alt || "Indoor Gallery",
+  }))
+};
+
 
 export const ImageGalleryGifts = [
   {img: Tropihes1 , type:`trophies all `  , alt:"Golden trophy stars sparkle" , titleImg:"Classic Gold Trophy"  }  ,
@@ -386,6 +437,16 @@ export const ImageGalleryGifts = [
   {img: giftItem4  , type:`Corporate-gifts ` }  ,
 
 ]
+export const ImageGalleryGiftsSchema = {
+  "@context": baseWEB,
+  "@type": "Gifts Gallery",
+  "image": ImageGalleryGifts.map(e => ({
+    "@type": "Image",
+    "url": `${baseWEB}media/static/${e.img}`,
+    "name": e.alt || "Gifts Gallery",
+  }))
+};
+
 
 export const  ImageGalleryBranding = [
   
@@ -440,6 +501,16 @@ export const  ImageGalleryBranding = [
 
 
 ]
+export const  ImageGalleryBrandingSchema = {
+  "@context": baseWEB,
+  "@type": "yBranding Gallery",
+  "image":  ImageGalleryBranding.map(e => ({
+    "@type": "Image",
+    "url": `${baseWEB}media/static/${e.img}`,
+    "name": e.alt || "yBranding Gallery",
+  }))
+};
+
 
 
 

@@ -10,7 +10,7 @@ import SlideNav from "../components/SlideNav";
 import { Divider } from "../components/patterns/Pattern1";
 import MetaTag from "./MetaTag";
 
-import { ImageGalleryHome } from '../components/Images2';
+import { ImageGalleryHome, ImageGalleryHomeSchema } from '../components/Images2';
 import SliderHOME from "../components/SLIDER_MRM/SliderHOME";
 
 import Animation from "../components/helpers/Animation";
@@ -65,7 +65,7 @@ function Home() {
         <Services />
 
         <Divider classn="divider-left" />
-        <SliderHOME DATA={ImageGalleryHome} typeOf="Signages"   header1={[ {name :"Signages" , type:"Signages"},  {name :"Stands" , type:"Displaystands"},  {name :"Exhibition" , type:"Exhibition"},  {name :"branding" , type:"branding"},  {name :"photography" , type:"photography"},  {name :"Web design" , type:"Web"} ,  {name :"Corporate Gifts" , type:"Gifts"}]} /> 
+        <SliderHOME schema={ImageGalleryHomeSchema} DATA={ImageGalleryHome} typeOf="Signages"   header1={[ {name :"Signages" , type:"Signages"},  {name :"Stands" , type:"Displaystands"},  {name :"Exhibition" , type:"Exhibition"},  {name :"branding" , type:"branding"},  {name :"photography" , type:"photography"},  {name :"Web design" , type:"Web"} ,  {name :"Corporate Gifts" , type:"Gifts"}]} /> 
         
         <Divider classn="divider" />
         <Suspense fallback={<LoadingMemo />}>   <Clients2 />  </Suspense>

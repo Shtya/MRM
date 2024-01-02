@@ -72,7 +72,7 @@ const Facebook = () => {
 
         <Divider classn="divider" />
         <div className="box-style-6">
-          <div className="bgCover"  >  <img  src={IMG2} alt="Facebook-page" loading="lazy" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="Facebook-page"  /> </div>
           <div className="h1 "data-aos="zoom-in-right" > A Comprehensive Range of Facebook Ad Types </div>
           <div className="phead"data-aos="zoom-in-right" > MRM Agency offers a comprehensive array of Facebook ad types to suit your unique marketing objectives </div>
           <div className="container">
@@ -91,10 +91,10 @@ const Facebook = () => {
 
         <Divider classn="divider" />
         <div className="box-style-4">
-          <div className="bgCover"  >  <img  src={IMG3} alt="Facebook-page" loading="lazy" /> </div>
+          <div className="bgCover"  >  <img  src={IMG3} alt="Facebook-page"  /> </div>
           <div className="container">
             <div className="h1" data-aos="fade-up" >Our Facebook advertising services include</div>
-            <div className="bg"> <img src={ImgSection} alt="Facebook-page" loading="lazy" /> </div>
+            <div className="bg"> <img src={ImgSection} alt="Facebook-page"  /> </div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (

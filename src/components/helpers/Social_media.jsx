@@ -6,7 +6,7 @@ import { Animate } from '../../App'
 const Social_media = memo(({Img , title , desc , data}) => {
   return (
     <div className="social-media">
-          <div className="bgCover"> <img  src={Img} alt="web design services" loading="lazy" /> </div>
+          <div className="bgCover"> <img  src={Img} alt="web design services"  /> </div>
         <div className="container">
             <h3  className='h1 '>{title}</h3>
             <div data-aos={Animate} className="phead ">{desc}</div> 

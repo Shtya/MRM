@@ -39,7 +39,7 @@ import Contact  from "../components/Contact"
 
 import React , { memo } from "react"
 import SliderHOME from "../components/SLIDER_MRM/SliderHOME";
-import { ImageGalleryPotography } from "../components/Images2";
+import { ImageGalleryPotography, ImageGalleryPotographySchema } from "../components/Images2";
 
 const SERVICES = [
   { img:Photography_2 , title:"Events photography" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
@@ -102,7 +102,7 @@ const S_photography = () => {
       <PHOTOgraphy classn="Videography-services"  Img ={IMG3} nameServices ="photography&videography" title ="Our Videography Services " data ={SERVICES2} />
 
       <Pattern9 />  
-      <SliderHOME DATA={ImageGalleryPotography} typeOf="Videograph"   header1={[ {name :"Videography", type:"Videograph"}, {name :"Events",      type:"Events"}, {name :"Fashion " , type:"Fashion "}, {name :"Food",    type:"Food"}, {name :"Product", type:"Product"}, {name :"Automotive", type:"Automotive"}, {name :"Real Estate", type:"Real-Estate"}]} />
+      <SliderHOME schema={ImageGalleryPotographySchema} DATA={ImageGalleryPotography} typeOf="Videograph"   header1={[ {name :"Videography", type:"Videograph"}, {name :"Events",      type:"Events"}, {name :"Fashion " , type:"Fashion "}, {name :"Food",    type:"Food"}, {name :"Product", type:"Product"}, {name :"Automotive", type:"Automotive"}, {name :"Real Estate", type:"Real-Estate"}]} />
     
 
       <Pattern9 />

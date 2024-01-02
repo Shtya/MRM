@@ -14,12 +14,18 @@ import X6 from "../../assets/Socialmedia/x6.png"
 
 import{ Divider } from '../patterns/Pattern1'
 import IMG1 from "../../assets/bg/b1.jpg"
-import IMG2 from "../../assets/bg/b2.jpg"
+import IMG2 from "../../assets/bg/b9.jpg"
 import IMG3 from "../../assets/bg/b3.jpg"
 
 import MetaTag from '../../pages/MetaTag'
 import Social_Hero from '../helpers/Social_Hero'
 
+import IconSnap1 from "../../assets/Icon/snap1.png"
+import IconSnap2 from "../../assets/Icon/snap2.png"
+import IconSnap3 from "../../assets/Icon/snap3.png"
+import IconSnap4 from "../../assets/Icon/snap4.png"
+import BoxBlueColor from '../helpers2/BoxBlueColor'
+import BoxBorderRight from '../helpers2/BoxBorderRight'
 
 
 const TYPES = [
@@ -38,17 +44,17 @@ const SERVICES = [
   {icon:"" , title:"Brand awareness" , desc:"Build and strengthen your brand's image with Snapchat's unique creative tools."},
   {icon:"" , title:"Consumer behaviour" , desc:"Track user behavior with the Snap Pixel to gain insights into their actions and preferences."},
   {icon:"" , title:"Engagement" , desc:"Create meaningful interactions with your audience through Snapchat's interactive features."},
-  {icon:"" , title:"Influencer marketing" , desc:"Leverage influencers effectively by partnering with relevant influencers on Snapchat."},
+  {icon:"" , title:"Influencer" , desc:"Leverage influencers effectively by partnering with relevant influencers on Snapchat."},
   {icon:"" , title:"Mobile users" , desc:"Reach a mobile-centric audience who prefer using their smartphones for social media."},
 ]
 
 
 
 const SERVICES1 = [
-  {icon : " " , title:"Drive store sales" , desc : "Help potential customers find your business effortlessly."},
-  {icon : " " , title:"Boost online sales" , desc : "Showcase ads to engage shoppers likely to click and make purchases."},
-  {icon : " " , title:"Generate leads" , desc : "Transform your Snapchat campaign into a lead-generation powerhouse."},
-  {icon : " " , title:"Product/service promotion" , desc : "Generate excitement for new offerings with compelling graphics and captivating videos."},
+  {icon : IconSnap1  , title:"Drive store sales" , desc : "Help potential customers find your business effortlessly."},
+  {icon : IconSnap2  , title:"Boost online sales" , desc : "Showcase ads to engage shoppers likely to click and make purchases."},
+  {icon : IconSnap3  , title:"Generate leads" , desc : "Transform your Snapchat campaign into a lead-generation powerhouse."},
+  {icon : IconSnap4  , title:"Product/service promotion" , desc : "Generate excitement for new offerings with compelling graphics and captivating videos."},
 ]
 
 
@@ -66,30 +72,12 @@ const Snapchat = () => {
       />
 
       <Divider classn="divider" />
-      <div className="box-style-3">
-        <div className="bg"> <img src={CoverSectionImg} alt="Snapchat-page" loading="lazy" /></div>
-        <div className="container">
-        <div className="h1 clip" data-aos="fade-up" > Types of Snapchat Ads MRM Can Run For You </div>
-        <div className="boxs">
-        {
-          TYPES.map((e,index)=> (
-            <div className="box" key={index}  data-aos="zoom-in-right" >
-              <div className='main'>
-                <img className='tokenImage' src={e.icon} alt="NFT" />
-                <h2 className='h2'>{e.title} </h2>
-                <p  className='p'>{e.desc}</p>
-                <hr />
-              </div>
-            </div>
-           ))
-        }
-        </div>
-      </div>
-    </div>
+      <BoxBlueColor title="Types of Snapchat Ads MRM Can Run For You " data={TYPES} Img={CoverSectionImg} />
+
 
         <Divider classn="divider" />
         <div className="reason2">
-          <div className="bgCover"  >  <img  src={IMG2} alt="Snapchat-page" loading="lazy" /> </div>
+          <div className="bgCover"  >  <img  src={IMG2} alt="Snapchat-page"  /> </div>
         <div className='clip h1'data-aos="fade-up" >8 Reasons to Choose Snapchat for Digital Marketing</div> 
         <article className="gallery">
           {
@@ -103,26 +91,8 @@ const Snapchat = () => {
         </div>
 
         <Divider classn="divider-left" />
-      <div className="box-style-1">
-        <div className="bgCover"  >  <img  src={IMG3} alt="Snapchat-page" loading="lazy" /> </div>
-            <div className="container">
-                <div className="h1 clip" data-aos="fade-up"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You? </div>
-
-                <div className="boxs" >
-                  {
-                    SERVICES1.map((e,index)=> (
-                      <div className="box" key={index} data-aos="zoom-in"  >
-                          <div className="text">
-                              <div className="h2 clip hidden-text" >{e.title} </div>
-                              <div className="p hidden-text" >{e.desc} </div>
-                          </div>
-                      </div>
-                    ))
-                  }
-                </div>
-            </div>
-        </div>
-
+        {/* box-style-1 */}
+        <BoxBorderRight title=" What MRM, a Premier Snapchat Marketing Agency, Can Do for You? " data={SERVICES1} Img={IMG3} />
 
       <Footer />
       </div>

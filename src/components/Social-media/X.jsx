@@ -16,11 +16,24 @@ import X6 from "../../assets/Socialmedia/X (6).png"
 import X7 from "../../assets/Socialmedia/X (7).png"
 import MetaTag from '../../pages/MetaTag'
 import Social_Hero from '../helpers/Social_Hero'
+import Box_4 from '../helpers2/Box_4'
 
+import x1 from "../../assets/Icon/x1.avif"
+import x2 from "../../assets/Icon/x2.avif"
+import x3 from "../../assets/Icon/x3.avif"
+
+import x_2_1 from "../../assets/Icon/x-2-1.png"
+import x_2_2 from "../../assets/Icon/x-2-2.png"
+import x_2_3 from "../../assets/Icon/x-2-3.png"
+import x_2_4 from "../../assets/Icon/x-2-4.png"
+import x_2_5 from "../../assets/Icon/x-2-5.png"
+
+import Box5 from '../helpers2/Box-5'
+import BoxBorderRight from '../helpers2/BoxBorderRight'
 const TYPES = [
-  {icon :"" ,title:"Promoted Tweets:" , desc:"Promoted Tweets are designed to reach users who do not follow your account. As your social media management agency, we pay to deliver these tweets to diverse audiences. These Twitter marketing initiatives can expand your business's reach and engage new potential customers. Similar to boosting posts on Facebook, promoted tweets increase visibility and engagement."},
-  {icon :"" ,title:"Promoted Accounts:" , desc:"With Promoted Accounts, advertisers pay to have your complete Twitter account displayed to a carefully targeted audience. These ads are shown to individuals interested in your business or services. This is ideal for those seeking to attract specific users based on their business objectives, encouraging them to follow your account and become acquainted with your brand or service."},
-  {icon :"" ,title:"Promoted Trends:" , desc:"Hashtags are the key to tracking online trends. Promoted Trends allow you to promote your unique hashtag to the top of the trending list. Create a distinctive hashtag, promote it, and watch it gain momentum as people use it in their tweets. While highly effective, it's important to note that running this form of advertisement can be costly and complex. Entrust it to social media marketing experts to effectively manage your budget, targeting, and content relevance."},
+  {icon :x1 ,title:"Promoted Tweets" , desc:"Promoted Tweets are designed to reach users who do not follow your account. As your social media management agency, we pay to deliver these tweets to diverse audiences. These Twitter marketing initiatives can expand your business's reach and engage new potential customers. Similar to boosting posts on Facebook, promoted tweets increase visibility and engagement."},
+  {icon :x2 ,title:"Promoted Accounts" , desc:"With Promoted Accounts, advertisers pay to have your complete Twitter account displayed to a carefully targeted audience. These ads are shown to individuals interested in your business or services. This is ideal for those seeking to attract specific users based on their business objectives, encouraging them to follow your account and become acquainted with your brand or service."},
+  {icon :x3 ,title:"Promoted Trends" , desc:"Hashtags are the key to tracking online trends. Promoted Trends allow you to promote your unique hashtag to the top of the trending list. Create a distinctive hashtag, promote it, and watch it gain momentum as people use it in their tweets. While highly effective, it's important to note that running this form of advertisement can be costly and complex. Entrust it to social media marketing experts to effectively manage your budget, targeting, and content relevance."},
  ]
 
 const SERVICES = [
@@ -35,11 +48,11 @@ const SERVICES = [
 
 
 const SERVICES1 = [
-  {icon:"" , title:"Real-time Engagement" , desc:"Twitter's real-time nature enables businesses to engage with their audience instantly. Timely responses, updates, and interactions strengthen customer relationships, increasing loyalty and trust."},
-  {icon:"" , title:"Audience Insights" , desc:"Twitter provides valuable data on your audience's preferences, opinions, and behaviours. These insights inform marketing strategies, allowing you to tailor content for maximum impact and relevance."},
-  {icon:"" , title:"Brand Visibility" , desc:"Active presence on Twitter ensures your brand remains visible to your target audience. Consistent tweeting, sharing relevant content, and meaningful engagement enhance your brand's recognition and credibility."},
-  {icon:"" , title:"Instant Feedback" , desc:"Twitter facilitates instant feedback from your audience. Users often express their opinions openly, whether it's about a product, service, or marketing campaign. This feedback helps you make real-time adjustments and improvements."},
-  {icon:"" , title:"Amplified Reach" , desc:"Twitter's vast user base and viral potential mean your message can quickly reach a broad audience. Effective Twitter marketing can lead to wider recognition and a stronger position within your industry."},
+  {icon:x_2_1 , title:"Real-time Engagement" , desc:"Twitter's real-time nature enables businesses to engage with their audience instantly. Timely responses, updates, and interactions strengthen customer relationships, increasing loyalty and trust."},
+  {icon:x_2_2 , title:"Audience Insights" , desc:"Twitter provides valuable data on your audience's preferences, opinions, and behaviours. These insights inform marketing strategies, allowing you to tailor content for maximum impact and relevance."},
+  {icon:x_2_3 , title:"Brand Visibility" , desc:"Active presence on Twitter ensures your brand remains visible to your target audience. Consistent tweeting, sharing relevant content, and meaningful engagement enhance your brand's recognition and credibility."},
+  {icon:x_2_4 , title:"Instant Feedback" , desc:"Twitter facilitates instant feedback from your audience. Users often express their opinions openly, whether it's about a product, service, or marketing campaign. This feedback helps you make real-time adjustments and improvements."},
+  {icon:x_2_5 , title:"Amplified Reach" , desc:"Twitter's vast user base and viral potential mean your message can quickly reach a broad audience. Effective Twitter marketing can lead to wider recognition and a stronger position within your industry."},
 ]
 
 
@@ -57,89 +70,36 @@ const X = () => {
       />
       
         <Divider classn="divider" />
-        <div className="box-style-5">
-          <div className="bgCover"  >  <img  src={IMG2} alt="twitter-page" loading="lazy" /> </div>
-          <div className="container">
-            <ul className="cards">
-            {SERVICES.map((e,index)=> (
-            <li className='box' key={index} data-aos="zoom-in"  >
-              <a  className="card">
-                <div className="cover"> <img src={e.icon} className="card__image" alt="twitter-page" loading="lazy" /> </div>
-                <div className="card__overlay">
-                  <div className="card_h2">
-                    <div className="card__header-text"> <h3 className="card__title h2" style={{color:"var(--text-color)"}}>{e.title}</h3>  </div>
-                  </div>
-                  <p className="card__description p" >{e.desc}</p>
-                </div>
-              </a>      
-            </li>
-            ))}
-            </ul>
-          </div>
-        </div>
+        <Box_4 Img={IMG1} data={SERVICES} />
 
 
         <Divider classn="divider-left" />
-      <div className="impact">
-        <div className="bgCover"  >  <img  src={IMG3} alt="twitter-page" loading="lazy" /> </div>
-            <div className="container">
-                <div className="h1 clip" data-aos="fade-up"> Types of Twitter Ads MRM Offers </div>
-                <div className="boxs" >
-                  {
-                    TYPES.map((e,index)=> (
-                      <div className="box" key={index} data-aos="zoom-in-left"   >
-                          <div className="text">
-                              <div className="h2 clip hidden-text" >{e.title} </div>
-                              <div className="p hidden-text" >{e.desc} </div>
-                          </div>
-                      </div>
-                    ))
-                  }
-                </div>
-            </div>
-        </div>
+        <div className="impact1">
+          <div className="bgCover"  >  <img  src={IMG3} alt="twitter-page"  /> </div>
+              <div className="container">
+                  <div className="h1 clip" data-aos="zoom-in"> Types of Twitter Ads MRM Offers </div>
+                  <div className="boxs" >
+                    {
+                      TYPES.map((e,index)=> (
+                        <div className="box" key={index} data-aos="zoom-in-left"   >
+                          <div className="coverImg"><img src={e.icon} alt="" /></div>
+                            <div className="text">
+                                <div className="h2 clip hidden-text" >{e.title} </div>
+                                <div className="p hidden-text" >{e.desc} </div>
+                            </div>
+                        </div>
+                      ))
+                    }
+                  </div>
+              </div>
+          </div>
 
         <Divider classn="divider" />
-        <div className="box-style-4 ">
-          <div className="bgCover"  >  <img  src={IMG2} alt="twitter-page" loading="lazy" /> </div>
-          <div className="container">
-            <div className="h1" style={{marginBottom:""}}  data-aos="fade-up" > Our Twitter Marketing Businesses</div>
-            <div className="phead"  data-aos="fade-up" data-aos-delay="200" > At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
-            <div className="boxs">
-            {
-              SERVICES.map((e,index)=> (
-                <div className="box" data-aos="fade-down"  >
-                     <h2 className='number'>{index+1 >= 10 ?"":"0"}{index+1}</h2>
-                    <h3 className='h2'>{e.title}</h3>
-                    <p className='p'>{e.desc}</p>
-                </div>
-              ))
-            }
-            </div>
-          </div>
-        </div>
-
+        <Box5  data={SERVICES} Img={IMG2} title=" Our Twitter Marketing Businesses" desc="At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach"/>
 
         <Divider classn="divider-left" />
-      <div className="box-style-1">
-        <div className="bgCover"  >  <img  src={IMG3} alt="twitter-page" loading="lazy" /> </div>
-            <div className="container">
-                <div className="h1 ">How Twitter Marketing Helps Businesses</div>
-                <div className="phead">Twitter marketing plays a pivotal role in driving business success. Here's how it can benefit your brand</div>
-                <div className="boxs" >
-                  {
-                    SERVICES1.map((e,index)=> (
-                      <div className="box" key={index} data-aos="fade-up" >
-                          <div className="text">
-                              <div className="h2 clip hidden-text" >{e.title} </div>
-                              <div className="p hidden-text" >{e.desc} </div>
-                          </div>
-                      </div>
-                    ))
-                  }
-                </div>
-            </div>
-        </div>
+        <BoxBorderRight Img={IMG3} data={SERVICES1} title="How Twitter Marketing Helps Businesses" phead="Twitter marketing plays a pivotal role in driving business success. Here's how it can benefit your brand" />
+
       <Footer />
       </div>
   )

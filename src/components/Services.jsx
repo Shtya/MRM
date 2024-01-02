@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import IMG3 from "../assets/bg/b1.jpg"
 import { memo } from 'react';
-import { Animate } from '../App';
 
 const services = [
   {route:"/social-media-marketing-agency-in-dubai",   title:"social media marketing"       , icon:"clip  fa-solid fa-bullhorn "        ,desc:"Enhance your online presence with our social media management." ,                                                                 },
@@ -21,12 +20,12 @@ const Services = memo(()=> {
     <>
     <section className='services search-edite' id='Services'>
     <div className="bgCover"  >  <img  src={IMG3} alt="services" loading="lazy" /> </div>
-       <h2 className='h1 clip ' data-aos={Animate} >OUR SERVICES</h2> 
+       <h2 className='h1 clip ' data-aos="zoom-in" >OUR SERVICES</h2> 
       
       <div className="container">
-      <ul className='ul' data-aos={Animate}>
+      <ul className='ul' data-aos="zoom-in">
         {services.map((e , index) => (
-          <div key={index} className="box" data-aos={Animate}   >
+          <div key={index} className="box" data-aos="zoom-in"   >
             <div className="animate" ></div>
             <Link to={e.route}   >
               <Link to={e.route}><i className={`${e.icon} `}> <span />  <span /> </i> </Link>
