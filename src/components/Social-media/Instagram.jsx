@@ -5,7 +5,7 @@ import FacebookCover from "../../assets/Socialmedia/instagram.png"
 import { Divider} from '../patterns/Pattern1'
 
 import IMG1 from "../../assets/bg/b1.jpg"
-import IMG2 from "../../assets/bg/bg11.avif"
+import IMG2 from "../../assets/bg/bg11.jpg"
 import IMG3 from "../../assets/bg/b3.jpg"
 import MetaTag from '../../pages/MetaTag'
 import Social_Hero from '../helpers/Social_Hero'

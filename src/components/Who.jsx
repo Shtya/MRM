@@ -4,8 +4,10 @@ import IMG1 from "../assets/bg/b1.jpg"
 import { useNavigate } from "react-router-dom";
 import { memo } from "react";
 import { Animate } from "../App";
+import { useTranslation } from "react-i18next";
 
 const Who =memo(() => {
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
 
   return(
@@ -19,6 +21,7 @@ const Who =memo(() => {
       </div>
 
       <div className="box" data-aos={Animate}  >
+        {/* <h1 className='h2 ' data-aos={Animate} >{t("Home_section1")}</h1> */}
         <h1 className='h2 ' data-aos={Animate} >Your Partner for Advertising & Digital Marketing Success in Dubai</h1>
         <span className='p ' data-aos={Animate}  >We are a Dubai-based agency specialized in advertising, and digital marketing with years of experience. Our team delivers the highest level of service, combining creativity and strategic thinking for effective campaigns. Our values are dedication, excellence, and transparency. </span>
         <div className="info">
@@ -32,7 +35,7 @@ const Who =memo(() => {
             </div>
         </div>
 
-        <button onClick={_=> navigate("/about-us")} className='bt ' data-aos={Animate} >Find out more </button>
+        <button onClick={_=> navigate("/about-us")} className='bt ' data-aos={Animate} data-aos-delay="100" >Find out more </button>
       </div>
       </div>
     </section>

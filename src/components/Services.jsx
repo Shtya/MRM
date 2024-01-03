@@ -27,8 +27,8 @@ const Services = memo(()=> {
         {services.map((e , index) => (
           <div key={index} className="box" data-aos="zoom-in"   >
             <div className="animate" ></div>
-            <Link to={e.route}   >
-              <Link to={e.route}><i className={`${e.icon} `}> <span />  <span /> </i> </Link>
+            <Link to={`${e.route}`}   >
+              <Link to={`${e.route}`}><i className={`${e.icon} `}> <span />  <span /> </i> </Link>
               <h3 className='h2 '>{e.title}</h3>
               <div className='p '>{e.desc}</div>
           </Link>

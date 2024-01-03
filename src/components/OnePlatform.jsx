@@ -7,7 +7,7 @@ const OnePlatform = memo(({title , paragraph , img , classn , path , trueBtn}) =
   const navigate = useNavigate()
 
   return (
-    <Link to={path}  className={`box ${classn}`}>
+    <Link to={`${path}`}  className={`box ${classn}`}>
         <div className="coverImg"> <img src={img} alt="platform"  /></div>
         <div className="inner-box">
             <span className="one"/>

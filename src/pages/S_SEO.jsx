@@ -72,7 +72,7 @@ const S_SEO = () => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "seo",
-    "url": "https://mrmadvertisingdubai.com/seo",
+    "url": "https://mrmadvertisingdubai.com/seo-agency-in-dubai",
     "publisher": {
       "@type": "Organization",
       "name": "MRM Advertising",

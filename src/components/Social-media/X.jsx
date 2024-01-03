@@ -18,9 +18,9 @@ import MetaTag from '../../pages/MetaTag'
 import Social_Hero from '../helpers/Social_Hero'
 import Box_4 from '../helpers2/Box_4'
 
-import x1 from "../../assets/Icon/x1.avif"
-import x2 from "../../assets/Icon/x2.avif"
-import x3 from "../../assets/Icon/x3.avif"
+import x1 from "../../assets/Icon/x1.png"
+import x2 from "../../assets/Icon/x2.png"
+import x3 from "../../assets/Icon/x3.png"
 
 import x_2_1 from "../../assets/Icon/x-2-1.png"
 import x_2_2 from "../../assets/Icon/x-2-2.png"
@@ -84,6 +84,7 @@ const X = () => {
                         <div className="box" key={index} data-aos="zoom-in-left"   >
                           <div className="coverImg"><img src={e.icon} alt="" /></div>
                             <div className="text">
+                              <span/> 
                                 <div className="h2 clip hidden-text" >{e.title} </div>
                                 <div className="p hidden-text" >{e.desc} </div>
                             </div>

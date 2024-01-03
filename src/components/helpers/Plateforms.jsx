@@ -12,7 +12,7 @@ const Plateforms = memo(({Img , title , data , nameServices ,}) => {
               <div className="boxs" data-aos={Animate}>
                   {
                     data.map((e,index)=> (
-                      <Link key={index} to={e.path} data-aos={Animate}   className={`box box-${index+1}`}>
+                      <Link key={index} to={`${e.path}`} data-aos={Animate}   className={`box box-${index+1}`}>
                         <div className="coverImg"> <img src={e.img} alt="platform" loading="lazy" /></div>
                         <div className="inner-box">
                             <span className="one"/>

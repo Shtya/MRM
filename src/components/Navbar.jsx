@@ -2,34 +2,41 @@ import React, { memo, useEffect, useState } from 'react'
 import Logo from "../assets/Logo1.png"
 import { Link, useNavigate } from 'react-router-dom';
 import Animation from './helpers/Animation';
+import { useTranslation } from 'react-i18next';
 
 const Navbar1 = memo(() => {
-  const Navigate = useNavigate()
+  const { t, i18n } = useTranslation();
+  useEffect(_=> {
+    i18n.changeLanguage(localStorage?.getItem("lang"))
+  } ,[])
+  const handleLang = (e)=>{
+    localStorage.setItem("lang" , e.target.value)
+    i18n.changeLanguage(localStorage.getItem("lang") || e.target.value)
+  }
 
+  const Navigate = useNavigate()
   const [top , settop] = useState(false)
   useEffect(_=>{
     const handelScroll =  _=> window.scrollY > 50 ? settop("up-anything") : settop("")
     window.addEventListener("scroll" , handelScroll)
     return _=> window.removeEventListener("scroll" , handelScroll)} ,[ window])
-  useEffect(_=>{
+    useEffect(_=>{
 
 
-let navLinks = document.querySelector(" .Navbar1 .nav-links");
-let menuOpenBtn = document.querySelector(" .Navbar1 .navbar .bx-menu");
-let menuCloseBtn = document.querySelector(" .Navbar1 .nav-links .bx-x");
-menuOpenBtn.onclick = function() {
-navLinks.style.left = "0";
-}
-menuCloseBtn.onclick = function() {
-navLinks.style.left = "-100%";
-}
-
-
-let htmlcssArrow = document.querySelector(".Navbar1 .htmlcss-arrow");
-htmlcssArrow.onclick = function() {
- navLinks.classList.toggle("show1");
-}
-  } ,[])
+  let navLinks = document.querySelector(" .Navbar1 .nav-links");
+  let menuOpenBtn = document.querySelector(" .Navbar1 .navbar .bx-menu");
+  let menuCloseBtn = document.querySelector(" .Navbar1 .nav-links .bx-x");
+  menuOpenBtn.onclick = function() {
+  navLinks.style.left = "0";
+  }
+  menuCloseBtn.onclick = function() {
+  navLinks.style.left = "-100%";
+  }
+  let htmlcssArrow = document.querySelector(".Navbar1 .htmlcss-arrow");
+  htmlcssArrow.onclick = function() {
+  navLinks.classList.toggle("show1");
+  }
+    } ,[])
   return (
   <div className="Navbar1" >
     <Animation />
@@ -56,10 +63,13 @@ htmlcssArrow.onclick = function() {
                 <li onClick={_=> Navigate("/seo-agency-in-dubai")}><Link to="/seo-agency-in-dubai">SEO </Link></li>
               </ul>
             </li>
-
             <li data-aos="fade-down" data-aos-delay="400" onClick={_=> Navigate("/blog")}><Link to="/blog">Blog</Link></li>
             <li data-aos="fade-down" data-aos-delay="500" onClick={_=> Navigate("/about-us")}><Link to="/about-us">About Us</Link></li>
             <li data-aos="fade-down" data-aos-delay="600" onClick={_=> Navigate("/contact-us")}><Link to="/contact-us"> Contact Us</Link></li>
+            <select className='tran' name="" value={localStorage.getItem("lang")|| "ar"} id="" onChange={e => handleLang(e)}>
+              <option value="ar">ar</option>
+              <option value="en">en</option>
+            </select>
           </ul>
         </div>
       </div>

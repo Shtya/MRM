@@ -6,7 +6,7 @@ const BoxBorderRight = ({Img , title , data , phead}) => {
     <div className="box-style-1">
     <div className="bgCover"  >  <img  src={Img} alt="Snapchat-page"  /> </div>
         <div className="container">
-            <div className="h1 clip" style={phead ? {marginBottom:"5px"} : ""} data-aos="zoom-in">{title}</div>
+            <div className="h1 clip" style={phead ? {marginBottom:"5px"} : {marginBottom:"20px"}} data-aos="zoom-in">{title}</div>
             {phead && <div className="phead">{phead}</div>}
             <div className="boxs" >
               {

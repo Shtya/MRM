@@ -6,18 +6,17 @@ import Landing from "../components/Landing";
 import Services from "../components/Services";
 import Why from "../components/Why";
 import Who from "../components/Who";
-import SlideNav from "../components/SlideNav";
 import { Divider } from "../components/patterns/Pattern1";
 import MetaTag from "./MetaTag";
-
 import { ImageGalleryHome, ImageGalleryHomeSchema } from '../components/Images2';
 import SliderHOME from "../components/SLIDER_MRM/SliderHOME";
+import { useTranslation } from 'react-i18next';
 
 import Animation from "../components/helpers/Animation";
 import LoadingMemo from "../components/helpers/LoadingLazy"
 const Clients2 = React.lazy(() => import('../components/Clients2'));
 function Home() {
-
+  const { t, i18n } = useTranslation();
 
   const sitelinksData = {
     "@context": "http://schema.org",
@@ -51,8 +50,6 @@ function Home() {
     <div className="Home" >
       <MetaTag schema={sitelinksData}  canonical=""  title="MRM | Best Digital Marketing & Advertising Agency in Dubai"  desc="Boost your brand with MRM, Dubai's premier digital marketing & advertising agency with SEO, social media marketing and PPC for top visibility and impact" />
         <Animation />
-
-        
         <Landing />
 
         <Divider classn="divider" />

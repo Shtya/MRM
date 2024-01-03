@@ -8,7 +8,6 @@ import Related from './Slide/Related';
 import baseURL, { baseImg } from '../API/API';
 import MetaTag from '../pages/MetaTag';
 
-
 const BlogDetails = () => {
   const [data , setdata] = useState([])
   const [blogs , setblogs] = useState([])
@@ -52,7 +51,7 @@ const BlogDetails = () => {
 
   return (
     <div className='blog-details'>
-      <MetaTag title={data?.titleData} desc={data?.descData} />
+      <MetaTag title={data?.titleData} desc={data?.descData}  />
 
       <div className="container container3"> <Navbar1 /> </div>
       <Animation />

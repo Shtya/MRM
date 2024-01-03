@@ -45,10 +45,10 @@ const ContactUs = () => {
                     </ul>
                         <hr />
                     <ul className='social-media-list'>
-                      <li > <Link to={Social_Media[0]}  data-aos="fade-up" data-aos-delay="300" className="Iicon">  <i className="fa-brands fa-facebook-f"></i>     </Link></li>
-                      <li > <Link to={Social_Media[1]}  data-aos="fade-up" data-aos-delay="400" className="Iicon">  <i className="fa-brands fa-instagram"></i> </Link></li>
-                      <li > <Link to={Social_Media[3]}  data-aos="fade-up" data-aos-delay="500" className="Iicon"> <i className= "fa-brands fa-whatsapp"></i>         </Link></li>
-                      <li > <Link to={Social_Media[2]}  data-aos="fade-up" data-aos-delay="600" className="Iicon">  <i className="fa-brands fa-linkedin-in"></i> </Link></li>
+                      <li > <Link to={`${Social_Media[0]}`}  data-aos="fade-up" data-aos-delay="300" className="Iicon">  <i className="fa-brands fa-facebook-f"></i>     </Link></li>
+                      <li > <Link to={`${Social_Media[1]}`}  data-aos="fade-up" data-aos-delay="400" className="Iicon">  <i className="fa-brands fa-instagram"></i> </Link></li>
+                      <li > <Link to={`${Social_Media[3]}`}  data-aos="fade-up" data-aos-delay="500" className="Iicon"> <i className= "fa-brands fa-whatsapp"></i>         </Link></li>
+                      <li > <Link to={`${Social_Media[2]}`}  data-aos="fade-up" data-aos-delay="600" className="Iicon">  <i className="fa-brands fa-linkedin-in"></i> </Link></li>
                     </ul>
               </div>
 

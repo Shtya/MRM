@@ -12,7 +12,7 @@ const Social_media = memo(({Img , title , desc , data}) => {
             <div data-aos={Animate} className="phead ">{desc}</div> 
             <div className="boxs">
             { data.map((e,index)=> ( 
-            <Link to={e?.path} key={index} className={`cover1 `} >
+            <Link to={`${e?.path}`} key={index} className={`cover1 `} >
               <div className="box">
                 <div className="IcomCover">  <img src={e.img} alt="social" loading="lazy" /> </div>
                 <h3 className='h2 '>{e.title}</h3>

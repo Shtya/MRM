@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import {Routes , Route, useNavigate, useLocation} from "react-router-dom"
+import { useTranslation } from 'react-i18next';
 
 import "./sass/main.css"
 
@@ -36,11 +37,13 @@ import E_post from './blog/E_post'
 
 export const Social_Media = ["https://www.facebook.com/MRMadvertisingDubai" , "https://www.instagram.com/mrmadvertising/" , "https://www.linkedin.com/company/mrm-advertising-media" , "https://api.whatsapp.com/send?phone=+971561384496&text=Hello%2C%20world!"]
 export const Animate = "zoom-in"
-const App = () => {
 
+
+const App = () => {
+  const { t, i18n } = useTranslation();
+  
   const {pathname} = useLocation() ;
   const push = useNavigate();
-
   useEffect(_=>{
     if(pathname == "/photography-and-videography-agency-in-dubai") return push("/Photography-In-Dubai")
     if(pathname == "/web-design") return push("/web-development-company-in-dubai")
@@ -57,7 +60,7 @@ const App = () => {
       
       <Routes>
 
-        <Route index               element={<Home />} />                           
+        <Route index   path='/'    element={<Home />} />                           
         <Route path='/contact-us'  element={<ContactUs />} />                           
         <Route path='/about-us'    element={<AboutUs />} />                          
         <Route path='*'            element={<Error />} />                        
@@ -69,7 +72,7 @@ const App = () => {
         <Route path='/web-development-company-in-dubai'              element={<S_WebDesign/>} />                        
         <Route path='/Photography-In-Dubai'                          element={<S_photography />} />                        
         <Route path='/exhibition-and-display-stand-agency-in-dubai'  element={<S_Exhibition  />} />                        
-        <Route path='/indoor-and-outdoor-signages-agency-in-dubai'    element={<M_Signages />} />                        
+        <Route path='/indoor-and-outdoor-signages-agency-in-dubai'   element={<M_Signages />} />                        
         <Route path='/branding-agency-in-dubai'                      element={<S_Branding  />} />                        
         <Route path='/Corporate-gifts-in-dubai'                      element={<S_Gifts  />} />                        
         <Route path='/advertising-ppc-agency-in-dubai'               element={<S_Media />} />   
@@ -86,7 +89,7 @@ const App = () => {
         <Route path='/facebook'  element={<Facebook />} />                        
         <Route path='/snapchat'  element={<Snapchat />} />                        
         <Route path='/instagram' element={<Instagram />} />                        
-        <Route path='/x'         element={<X />} />                        
+        <Route path='/x'        element={<X />} />                        
         <Route path='/linkedin'  element={<Linkedin />} />                        
         <Route path='/tiktok'    element={<Tiktok />} />                        
 
