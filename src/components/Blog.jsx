@@ -1,8 +1,9 @@
 import { memo, useEffect, useState } from 'react'
 import Slider_1_Img from './Slide/Slider_1_Img';
-import IMG3 from "../assets/bg/b3.jpg"
+import IMG3 from "../assets/bg/b3.webp"
 import baseURL from '../API/API';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 var settings = {
   dots: true,
@@ -32,11 +33,10 @@ var settings = {
   ]
 };
 
-// const navigate = useNavigate()
-
 const Blog = memo(() => {
-  const navigate = useNavigate();
+  const {t} = useTranslation() ;
 
+  const navigate = useNavigate();
   const [blogs , setdata] = useState([])
   const {pathname} = useLocation() ;
   useEffect(_=> { 
@@ -56,10 +56,11 @@ const Blog = memo(() => {
   return (
     <section className='blog' id='Blog'>
       
-      <div className="bgCover"  >  <img  src={IMG3} alt="blog" loading="lazy" /> </div>
-      <div className="container"> <div className="h1"onClick={_=> navigate("/blog")} style={{cursor:'pointer'}} data-aos="fade-up" >BLOG</div> </div>
-      <p className="phead" data-aos="fade-up"  >Latest Insights and News to Keep Your Strategies Alive </p>
-
+      <div className="bgCover"  >  <img  width={30} height={30}   src={IMG3} alt="blog"  /> </div>
+      <div className="container"> 
+        <div className="h1"onClick={_=> navigate("/blog")} style={{cursor:'pointer'}} data-aos="zoom-in" >{t("home.blog.h1")}</div> 
+        <p className="phead" data-aos="zoom-in">{t("home.blog.phead")}</p>
+      </div>
       <Slider_1_Img  data={blogs} settings={settings} />
 
     </section>

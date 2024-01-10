@@ -10,12 +10,12 @@ const Box_6 = ({title , desc , data , Img}) => {
       </div>
         {
           data.map((e,index)=>(
-            <div class="row">
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="card">
-                  <div class="cover item-a">
+            <div className="row">
+              <div className="col-md-4 col-sm-6 col-xs-12">
+                <div className="card">
+                  <div className="cover item-a">
                     <h1>{e.title}</h1>
-                    <div class="card-back">
+                    <div className="card-back">
                       <div className='p'>{e.desc}</div>
                     </div>
                   </div>

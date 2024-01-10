@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Logo from "../assets/Logo1.png"
+import Logo from "../assets/Logo1.webp"
 import { Link, useNavigate } from 'react-router-dom';
 
 const Alt_Navbar = () => {
@@ -35,9 +35,9 @@ navLinks.style.left = "-100%";
     <nav>
       <div className="navbar" style={{background:top}}>
         <i className='bx bx-menu'></i>
-        <div className="logo"><Link to="/"> <img src={Logo} alt="Navbar" loading="lazy" /></Link></div>
+        <div className="logo"><Link to="/"> <img src={Logo} alt="Navbar"  /></Link></div>
         <div className="nav-links">
-          <div className="sidebar-logo">   <span className="logo-name"><img src={Logo} alt="Navbar" loading="lazy" /></span>   <i className='bx bx-x' ></i> </div>
+          <div className="sidebar-logo">   <span className="logo-name"><img src={Logo} alt="Navbar"  /></span>   <i className='bx bx-x' ></i> </div>
           
           <ul className="links">
             <li><Link to="/">Home</Link></li>

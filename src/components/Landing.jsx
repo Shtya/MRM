@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Dashboard from "./Dashboard.mp4"
-import IMG3 from "../assets/bg/b3.jpg"
+import IMG3 from "../assets/bg/b3.webp"
 
 import { memo, useEffect, useRef } from 'react';
 
@@ -18,7 +18,7 @@ const Landing = memo(() => {
 
   return (
     <header id='header'  >
-      <div className="bgCover" style={{zIndex:"0"}}  >  <img   src={IMG3} alt="Landing" loading="lazy" /> </div>
+      <div className="bgCover" style={{zIndex:"0"}}  >  <img   src={IMG3} alt="Landing"  /> </div>
       <div className="container"> <Navbar /> </div>
       <section id='video' >
           <video webkit-playsinline playsInline  preload="auto" ref={videoRef}  id='myVideo'   autoPlay loop muted >

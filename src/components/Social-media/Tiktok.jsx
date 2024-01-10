@@ -1,70 +1,41 @@
 import Footer from '../Footer'
-import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
-import FacebookCover from "../../assets/Socialmedia/tiktok.png"
+import FacebookIntro from "../../assets/Socialmedia/bg-social.webp"
+import FacebookCover from "../../assets/Socialmedia/tiktok.webp"
 import { Divider} from '../patterns/Pattern1'
 
 
-import IMG1 from "../../assets/bg/b1.jpg"
-import IMG2 from "../../assets/bg/b2.jpg"
-import IMG3 from "../../assets/bg/bg11.jpg"
+import IMG1 from "../../assets/bg/b1.webp"
+import IMG2 from "../../assets/bg/b2.webp"
+import IMG3 from "../../assets/bg/bg11.webp"
 import MetaTag from '../../pages/MetaTag'
 import Social_Hero from '../helpers/Social_Hero'
+import { useTranslation } from 'react-i18next'
 
-import TiktokImg1 from "../../assets/Icon/tiktok1.png"
-import TiktokImg2 from "../../assets/Icon/tiktok2.png"
-import TiktokImg3 from "../../assets/Icon/tiktok3.png"
-import TiktokImg4 from "../../assets/Icon/tiktok4.png"
-import TiktokImg5 from "../../assets/Icon/tiktok5.png"
 
-import TiktokImg_2_1 from "../../assets/Icon/tiktok_2_1.png"
-import TiktokImg_2_2 from "../../assets/Icon/tiktok_2_2.png"
-import TiktokImg_2_3 from "../../assets/Icon/tiktok_2_3.png"
-import TiktokImg_2_4 from "../../assets/Icon/tiktok_2_4.png"
-import TiktokImg_2_5 from "../../assets/Icon/tiktok_2_5.png"
-import TiktokImg_2_6 from "../../assets/Icon/tiktok_2_6.png"
-import TiktokImg_2_7 from "../../assets/Icon/tiktok_2_7.png"
-import TiktokImg_2_8 from "../../assets/Icon/tiktok_2_8.png"
-
-const TYPES = [
-  {icon : TiktokImg1 ,title:"In-Feed Ads" , desc:"Seamlessly integrated into users' For You Page (FYP), In-Feed Ads capture high in-app engagement. With durations spanning from 5 to 60 seconds, these ads feature compelling call-to-action buttons that lead users to external landing pages. It's the perfect way to blend into users' content feeds while driving them toward your brand's offerings."},
-  {icon : TiktokImg2 ,title:"Top View Ads" , desc:"TopView Ads are the first in-feed videos users encounter upon opening the app, guaranteeing a precious three seconds of undivided attention. Crafting impactful content is paramount here, as these initial moments can make or break the user's interest. Our creative team excels at creating content that grabs attention from the get-go."},
-  {icon : TiktokImg3 ,title:"Brand Takeover Ads" , desc:"Imagine users opening the app to an eye-catching, full-screen ad. That's precisely what Brand Takeover Ads offer. These ads allow for creative presentations through videos, GIFs, or screenshots. They provide a powerful platform for making a memorable first impression and creating lasting brand recall."},
-  {icon : TiktokImg4 ,title:"Branded Effects" , desc:"Filters are integral to any social media platform, and TikTok is no exception. With Branded Effects, brands can craft their shareable stickers, AR filters, and lenses.  This presents an ideal opportunity to encourage user-generated content and raise awareness for campaigns, especially those with a meaningful cause."},
-  {icon : TiktokImg5 ,title:"Branded Hashtag Challenge" , desc:"The Branded Hashtag Challenge ad format thrives when presented alongside other challenges. It encourages users to showcase their creativity and engage with your brand by introducing a custom hashtag challenge. This user-generated content can spread like wildfire, amplifying your brand's reach."},
- ]
-
-const SERVICES = [
-  {icon : TiktokImg_2_1 ,title:"You Can Significantly Increase Your Brand Awareness" , desc:"TikTok's massive user base offers an unparalleled opportunity to increase your brand's visibility and recognition among a diverse audience."},
-  {icon : TiktokImg_2_2 ,title:"TikTok Is An All-In-One Platform For Making The Best Video Marketing Campaigns" , desc:"Short-form videos are the reigning champions of content consumption, and TikTok provides the ideal platform to create captivating video campaigns."},
-  {icon : TiktokImg_2_3 ,title:"Short-Form Videos Are Still The Most Trending Form Of Content" , desc:"In an era of short attention spans, TikTok's short-form videos are ideally suited.to capture and retain audience interest. "},
-  {icon : TiktokImg_2_4 ,title:"TikTok Makes It Easy To Hook Your Audience" , desc:"The platform's user-friendly features and interactive elements make engaging and connecting with your target audience easy."},
-  {icon : TiktokImg_2_5 ,title:"TikTok Allows You To Find Your Niche" , desc:"With advanced targeting options, TikTok enables you to reach a specific audience that aligns with your brand's values and goals."},
-  {icon : TiktokImg_2_6 ,title:"TikTok Has The Largest Engagement Rate On Social Media Trends Early" , desc:"Being an early adopter of TikTok can give your brand a significant advantage in riding the wave of emerging trends."},
-  {icon : TiktokImg_2_7 ,title:"TikTok Has Less Competition Amongst Businesses" , desc:"TikTok's advertising space is less crowded than other social media platforms, giving your brand more visibility."},
-  {icon : TiktokImg_2_8 ,title:"TikTok Social Media Marketing Is Cheap And Easy To Start" , desc:"TikTok offers cost-effective advertising options, making it accessible to businesses of all sizes."},
-]
 
 const Tiktok = () => {
+  const {t} = useTranslation() ;
+  const TYPES = t("tiktok.box1.data" , {returnObjects:true} )
+  const SERVICES = t("tiktok.box2.data" , {returnObjects:true} )
+
    return (
     <div className="Tiktok shared">
       <MetaTag canonical="tiktok" title=" Top TikTok Marketing Agency in Dubai   "  desc="Boost your brand's visibility and sales on TikTok with MRM's advertising services. Maximize your reach and engage your audience effectively. Contact Us Now" />
       <Social_Hero Cover={FacebookCover} Intro={FacebookIntro} 
-      H1="Maximize Engagement and Build Your Brand with Our TikTok Marketing Strategies"
+      H1={t("tiktok.Hero.title")}
       Img={IMG1} 
-      Span1="Get Ahead of the Competition with MRM's Effective TikTok Marketing Service"
-      Span2="At MRM Agency, we are dedicated to providing you with tangible results through innovative problem-solving and a relentless focus on your success. Our commitment sets us apart, and we invite you to join us on a journey of digital growth and triumph where your brand's story is not only heard but celebrated globally"
-      Span3="The Power of TikTok Marketing for Businesse"
-      Span4="TikTok is a social media platform designed for sharing short videos and music.  Originally created as a creative outlet for young adults and teenagers to showcase their talents in acting, singing, dancing, and comedy,  TikTok has expanded its impact beyond generational boundaries. It has become a hub for entertaining, informative, and engaging videos.  For businesses, TikTok presents a unique opportunity to connect with a younger audience and use demographics as a potent marketing tool. TikTok marketing is a dynamic force in the ever-evolving landscape of digital advertising. If you're interested, let's dive deeper"
+      Span1={t("tiktok.qoute.title1")}
+      Span2={t("tiktok.qoute.desc1")}
+      Span3={t("tiktok.qoute.title2")}
+      Span4={t("tiktok.qoute.desc2")}
       />
 
       <Divider classn="divider-left" />
-      {/* <Box_6 data={TYPES} title="" desc="" Img={IMG3} /> */}
-
       <div className="impact4">
         <div className="bgCover"  >  <img  src={IMG3} alt="tiktok-page"  /> </div>
             <div className="container">
-                <div className="h1 "  data-aos="zoom-in" > Types of TikTok Ads we offer</div>
-                <div className="phead"   data-aos="zoom-in" data-aos-delay="200">TikTok's advertising landscape offers diverse options tailored to your unique marketing objectives. MRM agency specializes in executing these TikTok ad types to elevate your brand's visibility and engagement. </div>
+                <div className="h1 "  data-aos="zoom-in" >   {t("tiktok.box1.title")} </div>
+                <div className="phead"   data-aos="zoom-in" data-aos-delay="200"> {t("tiktok.box1.phead")} </div>
                 <div className="boxs" >
                   {
                     TYPES.map((e,index)=> (
@@ -87,8 +58,8 @@ const Tiktok = () => {
         <div className="box-style-8">
           <div className="bgCover"  >  <img  src={IMG2} alt="tiktok-page"  /> </div>
           <div className="container">
-            <div className="h1"  data-aos="zoom-in"  style={{marginBottom:""}}>Why Choose TikTok Marketing?</div>
-            <div className="phead"  data-aos="zoom-in" data-aos-delay="200">Still trying to convince you about the power of TikTok for your marketing strategy? Let's explore eight key benefits</div>
+            <div className="h1"  data-aos="zoom-in"  style={{marginBottom:""}}> {t("tiktok.box2.title")}</div>
+            <div className="phead"  data-aos="zoom-in" data-aos-delay="200"> {t("tiktok.box2.phead")}</div>
             <div className="boxs">
             {
               SERVICES.map((e,index)=> (

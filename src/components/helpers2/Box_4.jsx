@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Box_4 = ({Img , data}) => {
+const Box_4 = ({Img , data , title , desc}) => {
   return (
     <div className="box-style-5">
     <div className="bgCover"  >  <img  src={Img} alt="twitter-page"  /> </div>
+    <div className="h1"  data-aos="zoom-in" >{title}</div>
+      <div className="phead"  data-aos="zoom-in" data-aos-delay="200" >{desc}</div>
     <div className="container">
       {data.map((e,index)=> (
       <div className='box' key={index} data-aos="zoom-in"  >

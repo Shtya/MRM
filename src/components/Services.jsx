@@ -1,26 +1,18 @@
 import { Link } from 'react-router-dom';
-import IMG3 from "../assets/bg/b1.jpg"
+import IMG3 from "../assets/bg/b1.webp"
 import { memo } from 'react';
+import { useTranslation } from 'react-i18next';
 
-const services = [
-  {route:"/social-media-marketing-agency-in-dubai",   title:"social media marketing"       , icon:"clip  fa-solid fa-bullhorn "        ,desc:"Enhance your online presence with our social media management." ,                                                                 },
-  {route:"/web-development-company-in-dubai", title:"web design & Development "    , icon:"clip  fa-solid fa-pen-nib"          ,desc:"We transform your online presence with responsive web design, e-commerce solutions, and ongoing maintenance" ,                   },
-  {route:"/indoor-and-outdoor-signages-agency-in-dubai",   title:"indoor & outdoor signages " , icon:"clip  fa-solid fa-signs-post"       ,desc:"Maximize brand visibility with our eye-catching indoor and outdoor advertising solutions." ,                                            },
-  {route:"/Photography-In-Dubai",  title:"photography & videography "   , icon:"clip  fa-regular fa-circle-play"    ,desc:"We offer captivating visuals for your marketing. our high-quality images and videos tell a story that engages your audience." ,       },
-  {route:"/exhibition-and-display-stand-agency-in-dubai", title:"exhibition display stands"    , icon:"clip  fa-solid fa-layer-group"      ,desc:"Enhance your physical presence at events with custom-designed exhibition stands creatively showcasing your products or services.  " , },
-  {route:"/Corporate-gifts-in-dubai",    title:"Corporate gifts "            , icon:"clip  fa-solid fa-gift"             ,desc:"Discover our premium gifting options, including customized items and trophies, to make any occasion special." ,                       },
-  {route:"/advertising-ppc-agency-in-dubai",    title:"media buying"                 , icon:"clip  fa-solid fa-shop"             ,desc:"Maximize online reach with effective advertising. Optimize campaigns with social media and Google Ads."    ,                              },
-  {route:"/branding-agency-in-dubai",   title:"Branding "                    , icon:"clip  fa-brands fa-connectdevelop"  ,desc:"A strong brand identity connects with your audience. Let our branding services help you create a resonant brand." ,                   },
-  {route:"/seo-agency-in-dubai",      title:"SEO "                         , icon:"clip  fa-solid fa-magnifying-glass" ,desc:"Drive organic traffic and secure top search engine rankings with our expert SEO services.  " ,                                     },
-];
 
 const Services = memo(()=> {
+  const {t} = useTranslation() ;
+  const services = t("home.Home_Services3.box" , {returnObjects:true})
 
   return (
     <>
     <section className='services search-edite' id='Services'>
-    <div className="bgCover"  >  <img  src={IMG3} alt="services" loading="lazy" /> </div>
-       <h2 className='h1 clip ' data-aos="zoom-in" >OUR SERVICES</h2> 
+    <div className="bgCover"  >  <img  src={IMG3} alt="services"  /> </div>
+      <h2 className='h1 clip ' data-aos="zoom-in" >{t("home.Home_Services3.h1")}</h2> 
       
       <div className="container">
       <ul className='ul' data-aos="zoom-in">

@@ -1,4 +1,4 @@
-import IMG3 from "../../assets/bg/b3.jpg"
+import IMG3 from "../../assets/bg/b3.webp"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -7,7 +7,7 @@ import { Animate } from "../../App";
 import { Helmet } from "react-helmet";
 
 
-export default memo(function SliderHOME ({header1 , typeOf , DATA , classHeader , schema}) {
+export default memo(function SliderHOME ({header1 , typeOf , DATA , classHeader , schema , title}) {
   const handleChange = ()=>{
     settype(document.querySelectorAll(".slick-current img")[0]?.dataset?.type?.split(" ")[0])
   }
@@ -20,6 +20,10 @@ export default memo(function SliderHOME ({header1 , typeOf , DATA , classHeader 
       slidesToScroll: 1,
       rows:2 ,
       autoplay:true,
+      cssEase: "linear",
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      focusOnSelect: false,
       afterChange: handleChange ,
       responsive: [
 
@@ -53,9 +57,8 @@ export default memo(function SliderHOME ({header1 , typeOf , DATA , classHeader 
   return (
     <div className="GALLERY">
       {/* <Helmet> <script type="application/ld+json">{JSON.stringify(schema)}</script> </Helmet> */}
-      
-        <div className="bgCover"  >  <img  src={IMG3} alt="home" loading="lazy" /> </div>
-        <div className="h1">OUR WORKS</div>
+        <div className="bgCover"  >  <img    src={IMG3} alt="home"  /> </div>
+        <div className="h1">{title || "OUR WORKS"}</div>
         
         <ul className={`header1 header2 ${classHeader}`} data-aos={Animate} > 
           {header?.map((e,index)=> (<li className={type == e.type ? "active p" : "p"}  onClick={_=>handleFilter(e.type)} key={index}>{e.name}</li>))} 
@@ -65,7 +68,7 @@ export default memo(function SliderHOME ({header1 , typeOf , DATA , classHeader 
               <Slider  {...settings}    className="mySwiper" data-aos={Animate } >
 
                 {data?.map((e,index)=>( 
-                      <img 
+                      <img  
                       key={index} data-type={`${e.type}`}  
                       src={e.img}   alt={e?.alt || e?.type}   />
                     )) }

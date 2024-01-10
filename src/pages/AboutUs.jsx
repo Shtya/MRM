@@ -1,23 +1,25 @@
-import ImgIntro from "../assets/about-us/intro.jpg"
-import ImgBox1 from "../assets/about-us/mission.jpg"
-import ImgBox2 from "../assets/about-us/vision.jpg"
-import ImgContact from "../assets/about-us/contact.jpg"
+import ImgIntro from "../assets/about-us/about us 12-01.webp"
+import ImgBox1 from "../assets/about-us/Our mission 500x500 3.webp"
+import ImgBox2 from "../assets/about-us/Our vission 500x500 3.webp"
+import ImgContact from "../assets/about-us/contact.webp"
 import Navbar from '../components/Navbar'
 import OneWhy from '../components/OneWhy'
 import Footer from '../components/Footer'
 import Animation from '../components/helpers/Animation'
 import { Divider } from '../components/patterns/Pattern1'
-import IMG2 from "../assets/bg/b2.jpg"
-import IMG1 from "../assets/bg/b2.jpg"
+import IMG2 from "../assets/bg/b2.webp"
+import IMG1 from "../assets/bg/b2.webp"
 import MetaTag from './MetaTag'
 import { Helmet } from "react-helmet"
 import { memo } from "react"
+import { useTranslation } from "react-i18next"
 
 const AboutUs = memo(() => {
+  const {t} = useTranslation() ;
 
   const vission_mission = [ 
-    {title:"Our Vision",   alt:"Golden 'VISION' text on a dark reflective grid    " , img:ImgBox2 , desc :"Our goal is to become one of the leading figures in the industry, known for our excellence. We are dedicated to being the preferred choice for individuals and businesses aiming to elevate their work to the highest standards. Ultimately, we aim to be a primary source of original and creative ideas, providing a pathway to unlock creativity and achieve remarkable results."} ,
-    {title:"Our Mission" , alt:"Shiny 'MISSION' text on a stark grid backdrop." , img:ImgBox1 , desc :"Our mission is to empower businesses and brands to succeed in the constantly evolving realms of marketing and digital solutions. We are committed to delivering outstanding outcomes by leveraging our knowledge in advertising, branding, and innovative strategies."} ,
+    {title:"Our Vision",   alt:"Golden 'VISION' text on a dark reflective grid    " , img:ImgBox2 , desc :t("about_us.box3")} ,
+    {title:"Our Mission" , alt:"Shiny 'MISSION' text on a stark grid backdrop." , img:ImgBox1 , desc : t("about_us.box4") } ,
   ]
   return (
     <div className='about-us'>
@@ -33,8 +35,8 @@ const AboutUs = memo(() => {
           <div className="container">
             <div className="coverImg " data-aos="fade-right"> <img src={ImgContact} alt="about"  /> </div>
             <div className="boxs ">
-                <h2 className='box p ' data-aos="fade-left">We are a global creative agency based in the UAE and a leading agency in advertising, marketing, and digital solutions. Our expertise is helping companies establish a strong and professional presence in physical and digital spaces using innovative and effective strategies.</h2>
-                <h2 className='box p ' data-aos="fade-left">We create exceptional visual identities and build robust online presences for brands. Our team is dedicated to delivering top-notch services, utilizing the latest technologies and top-notch solutions to achieve tangible results. We offer professional marketing services to help your brand shine, from visual identities to online experiences. </h2>
+                <h2 className='box p ' data-aos="fade-left">{t("about_us.box1")}</h2>
+                <h2 className='box p ' data-aos="fade-left">{t("about_us.box2")}</h2>
             </div>
           </div>
         </div>

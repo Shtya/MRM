@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
-import IntroImg from "../assets/about-us/introBlog.jpg"
+import IntroImg from "../assets/about-us/OUR BLOG 1400x700-01.webp"
 import OneBlog from '../components/helpers/OneBlog';
 import Footer from '../components/Footer';
 import { Divider } from '../components/patterns/Pattern1';
 
-import IMG1 from "../assets/bg/b1.jpg"
+import IMG1 from "../assets/bg/b1.webp"
 
 
 

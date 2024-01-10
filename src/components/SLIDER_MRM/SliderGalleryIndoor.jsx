@@ -1,4 +1,4 @@
-import IMG3 from "../../assets/bg/b3.jpg"
+import IMG3 from "../../assets/bg/b3.webp"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -7,7 +7,7 @@ import { Animate } from "../../App";
 import { Helmet } from "react-helmet";
 
 
-export default memo(function SliderGalleryIndoor ({header1 , typeOf , DATA , classHeader , classGallery , schema}) {
+export default memo(function SliderGalleryIndoor ({header1 , typeOf , DATA , classHeader , classGallery , schema , title}) {
   const handleChange = ()=>{
     settype(document.querySelectorAll(".Gallery2 .slick-current img")[0]?.dataset?.type?.split(" ")[0])
   }
@@ -20,6 +20,10 @@ export default memo(function SliderGalleryIndoor ({header1 , typeOf , DATA , cla
       slidesToScroll: 1,
       rows:2 ,
       autoplay:true,
+      cssEase: "linear",
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      focusOnSelect: false,
       afterChange: handleChange ,
       responsive: [
           {
@@ -51,8 +55,8 @@ export default memo(function SliderGalleryIndoor ({header1 , typeOf , DATA , cla
 
   return (
     <div className={`GALLERY ${classGallery}`}>
-        <div className="bgCover"  >  <img  src={IMG3} alt="home" loading="lazy" /> </div>
-        <div className="h1">OUR WORKS</div>
+        <div className="bgCover"  >  <img  src={IMG3} alt="home"  /> </div>
+        <div className="h1"> {title} </div>
         {/* <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script> </Helmet> */}
         <ul className={`header1 header2 ${classHeader}`} data-aos={Animate} > 
           {header?.map((e,index)=> (<li className={type == e.type ? "active p" : "p"}  onClick={_=>handleFilter(e.type)} key={index}>{e.name}</li>))} 

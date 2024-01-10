@@ -4,7 +4,7 @@ import OneProcess from '../OneProcess'
 const Process2 = ({data , Img , title ,}) => {
   return (
     <div className="process3">
-        <div className="bgCover"  >  <img  src={Img} alt="search-engine-optomization services" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={Img} alt="search-engine-optomization services"  /> </div>
         <h2 className="h1 " data-aos="fade-up">{title}</h2>
           <div className="container">
               <div className="box box1">

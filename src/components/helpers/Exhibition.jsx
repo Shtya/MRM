@@ -5,7 +5,7 @@ const ExhibitionGallery = memo(({ classn ,Img , nameServices , data , title  }) 
   return (
     <>
     <div className={classn}>
-      <div className="bgCover"  >   <img  src={Img} alt={nameServices} loading="lazy" />  </div>
+      <div className="bgCover"  >   <img  src={Img} alt={nameServices}  />  </div>
       <div className="container"> <h2 className="h1" style={{marginBottom:"30px"}}>{title}</h2></div>
       <div className="container">
         <div className="boxs">
@@ -14,7 +14,7 @@ const ExhibitionGallery = memo(({ classn ,Img , nameServices , data , title  }) 
       </div>
     </div>
       {ImgView && <div className="show-img"> 
-        <img src={ImgView} alt={nameServices} loading="lazy" data-aos="zoom-in-up" /> 
+        <img src={ImgView} alt={nameServices}  data-aos="zoom-in-up" /> 
         <i onClick={_=>setImgView("")} className="fa-regular fa-circle-xmark"></i>
       </div>}
     </>

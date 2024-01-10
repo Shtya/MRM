@@ -3,7 +3,7 @@ import React, { memo } from 'react'
 const Process = ({Img , title , desc , data}) => {
   return (
     <div className="process2">
-        <div className="bgCover"  >  <img  src={Img} alt="signages services" loading="lazy" /> </div>
+        <div className="bgCover"  >  <img  src={Img} alt="signages services"  /> </div>
             <div className="container">
                 <div className="h1  clip" data-aos="fade-up">{title}</div>
                 <div className="phead " data-aos="fade-up">{desc}</div>
@@ -13,7 +13,7 @@ const Process = ({Img , title , desc , data}) => {
                       <div className="check-point " data-aos="fade-left" key={index}  >
                         <div className="number " data-aos="fade-left"> 0{index +1} </div>
                         <div className='inner-box'>
-                          <span className='hidden-img' ><img src={e.img} alt="signages services" loading="lazy" /></span>
+                          <span className='hidden-img' ><img src={e.img} alt="signages services"  /></span>
                           <h2 className="h2 clip  " data-aos="fade-left">{e.title}</h2>
                           <p className="p  " data-aos="fade-left"> {e.desc}</p>
                       </div>

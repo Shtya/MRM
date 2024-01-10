@@ -3,7 +3,7 @@ import React, { memo } from 'react'
 const OneProcess = memo(({title , paragraph , img , classn , num}) => {
   return (
     <div className={`one-process ${classn} `} data-aos="fade-left"  >
-      <div className="coverImg" data-aos="fade-left" > <img src={img} alt="process" loading="lazy" /> </div>
+      <div className="coverImg" data-aos="fade-left" > <img src={img} alt="process"  /> </div>
       <span data-aos="fade-left"></span>
       <div className="num" data-aos="fade-left" >{num}</div>
       <div data-aos="fade-left" className="inner-box" >

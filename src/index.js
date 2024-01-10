@@ -3,13 +3,38 @@ import {createRoot} from 'react-dom/client';
 import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 import './i18n';
 import App from './App';
-import IMG3 from "./assets/bg/b3.jpg"
-import logo from "./assets/Logo1.png"
+import IMG3 from "./assets/bg/b3.webp"
+import logo from "./assets/Logo1.webp"
 import {BrowserRouter, useLocation} from "react-router-dom"
-import { Helmet } from 'react-helmet';
+import MetaTag from './pages/MetaTag';
 
 
-
+const sitelinksData = {
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://mrmadvertisingdubai.com/",
+  "name": "MRM",
+  "mainEntity": [
+    {
+      "@type": "Services",
+      "@id": "https://mrmadvertisingdubai.com/#services",
+      "url": "https://mrmadvertisingdubai.com/#services",
+      "name": "Services"
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://mrmadvertisingdubai.com/blog",
+      "url": "https://mrmadvertisingdubai.com/blog",
+      "name": "Blog"
+    },
+    {
+      "@type": "Contact Us",
+      "@id": "https://mrmadvertisingdubai.com/contact-us",
+      "url": "https://mrmadvertisingdubai.com/contact-us",
+      "name": "Contact Us"
+    }
+  ]
+};
 const Loading = () => {
   const {pathname} = useLocation() ;
   const [time , settime] = useState(true)
@@ -27,19 +52,18 @@ const Loading = () => {
    time == true && <div className="animation_text" >
         <div className="bgCover"  >  <img  src={IMG3}  alt="home"  /> </div>
           <div className="coverImg"> <img src={logo}  alt="" /> </div>
-          <div class="container2">  <span></span>  <span></span>  <span></span>  <span></span></div>
+          <div className="container2">  <span></span>  <span></span>  <span></span>  <span></span></div>
       </div>
   )
 }
 
 
 createRoot(document.getElementById("root")).render(<BrowserRouter> 
-<Helmet >
-    <link rel="canonical" href="https://mrmadvertisingdubai.com/" />   
-    <title>MRM | Best Digital Marketing & Advertising Agency in Dubai</title>   
-    <meta name="description" content="Boost your brand with MRM, Dubai's premier digital marketing & advertising agency with SEO, social media marketing and PPC for top visibility and impact" /> 
-    
-</Helmet>
+<MetaTag 
+schema={sitelinksData}
+  canonical="https://mrmadvertisingdubai.com/" 
+  title="MRM | Best Digital Marketing & Advertising Agency in Dubai" 
+  desc="we are a Dubai-based agency specialized in advertising, and digital marketing with years of experience. Our team delivers the highest level of service,..." /> 
 <App /> <Loading/> </BrowserRouter>)
 
 {/* <App />  </BrowserRouter>) */}

@@ -4,12 +4,12 @@ const Skeleton = () => {
   return (
     <div className="skeleton">
       <div className="container">
-        <div class="card">
-          <div class="cover-image-skeleton"></div>
-          <div class="avatar-skeleton"></div>
-          <div class="skeleton-loader"></div>
-          <div class="skeleton-loader"></div> 
-          <div class="skeleton-loader"></div> 
+        <div className="card">
+          <div className="cover-image-skeleton"></div>
+          <div className="avatar-skeleton"></div>
+          <div className="skeleton-loader"></div>
+          <div className="skeleton-loader"></div> 
+          <div className="skeleton-loader"></div> 
         </div>
       </div>
     </div>

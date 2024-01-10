@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import {Routes , Route, useNavigate, useLocation} from "react-router-dom"
 import { useTranslation } from 'react-i18next';
 
@@ -41,10 +41,15 @@ export const Animate = "zoom-in"
 
 const App = () => {
   const { t, i18n } = useTranslation();
-  
+  const [lang , setlang] =useState()
+
+  useEffect(_=> { i18n.changeLanguage(localStorage?.getItem("lang"))   } ,[])
+  useEffect(_=> { setlang(localStorage.getItem("lang"))   } ,[localStorage.getItem("lang")])
+
   const {pathname} = useLocation() ;
   const push = useNavigate();
   useEffect(_=>{
+    if(pathname == "/home") return push("/")
     if(pathname == "/photography-and-videography-agency-in-dubai") return push("/Photography-In-Dubai")
     if(pathname == "/web-design") return push("/web-development-company-in-dubai")
     if(pathname == "/seo") return push("/seo-agency-in-dubai")
@@ -55,14 +60,14 @@ const App = () => {
   } ,[pathname])
 
   return ( 
-    <div className='App'>
+    <div className={` App lang-${lang}`}>
       <SlideNav whats={false} />
       
       <Routes>
 
         <Route index   path='/'    element={<Home />} />                           
-        <Route path='/contact-us'  element={<ContactUs />} />                           
         <Route path='/about-us'    element={<AboutUs />} />                          
+        <Route path='/contact-us'  element={<ContactUs />} />                           
         <Route path='*'            element={<Error />} />                        
         <Route path='/privacy'     element={<Privacy />} />                          
         <Route path='/terms'       element={<Terms />} />                          
@@ -86,11 +91,11 @@ const App = () => {
         <Route path="/blog/:id"       element={<BlogDetails />} />
         <Route path='/blog'           element={<Blogs />} /> 
 
-        <Route path='/facebook'  element={<Facebook />} />                        
         <Route path='/snapchat'  element={<Snapchat />} />                        
+        <Route path='/facebook'  element={<Facebook />} />                        
         <Route path='/instagram' element={<Instagram />} />                        
-        <Route path='/x'        element={<X />} />                        
         <Route path='/linkedin'  element={<Linkedin />} />                        
+        <Route path='/x'        element={<X />} />                        
         <Route path='/tiktok'    element={<Tiktok />} />                        
 
       </Routes>

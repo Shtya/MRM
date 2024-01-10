@@ -33,7 +33,7 @@ const BlogsAll = () => {
       {data?.length >= 1 ? (
         data?.map((e,index)=> (
           <div className="boxs" key={index}>
-            <div className="coverImg"> <img src={e.thumbnail} alt="blog" loading="lazy" /> </div>
+            <div className="coverImg"> <img src={e.thumbnail} alt="blog"  /> </div>
             <div className="text">
               <h2 className='h2'> {e.title} </h2>
               <div className="details">

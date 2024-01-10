@@ -2,7 +2,7 @@ import React from 'react'
 
 const LoadingLazy = () => {
   return (
-    <div>Loadign ..</div>
+    <div style={{background:"#181818" , height:"100vh" , width:"100%"}}> </div>
   )
 }
 

@@ -1,27 +1,22 @@
 import Animation from './helpers/Animation'
-import WhyImg from "../assets/Why.jpg"
-import IMG2 from "../assets/bg/b3.jpg"
+import WhyImg from "../assets/Why Choose Us 400x500-07-01.webp"
+import IMG2 from "../assets/bg/b3.webp"
 import { memo } from 'react'
 import { Animate } from '../App'
+import { useTranslation } from 'react-i18next'
 
 const Why = memo(() => {
+  const { t } = useTranslation();
 
+  const choose = t("home.Home_section2.box" , {returnObjects:true})
 
-
-  const choose = [
-    {idx:"0" , icon : 'fas fa-pencil-ruler font-icon' , title : "We're problem solvers"  , desc:"We conquer all challenges with creativity, determination, and a 'can-do' attitude. We have solutions to your problems. "} ,
-    {idx:"1" , icon : 'fas fa-drafting-compass font-icon' , title : "We deliver results, not just talk"  , desc:"Our commitment is to implement effective strategies, never overpromise, work hard, and measure success by our achievements. "} ,
-    {idx:"2" , icon : 'fas fa-layer-group font-icon' , title : "We prioritize you"  , desc:"Your success drives us. We're always available to meet your needs, offer guidance, and listen closely to your input.  "} ,
-    {idx:"3" , icon : 'fas fa-rocket font-icon' , title : "We focus on your growth"  , desc:" Our solutions are always advanced, results-driven, and up-to-date with the latest technologies and trends. "} ,
-  ]
-  
   return (
 
     <section id='Why' className='Why'>
       <Animation />
-      <div className="bgCover"  >  <img  src={IMG2} alt="Man in blue suit thinking with question mark and speech bubbles graphic" loading="lazy" /> </div>
+      <div className="bgCover"  >  <img  width={30} height={30}  src={IMG2} alt="Man in blue suit thinking with question mark and speech bubbles graphic"  /> </div>
       <div className="container1">
-        <h2 className="h1" data-aos={Animate} >WHY CHOOSE US</h2>
+        <h2 className="h1" data-aos={Animate} >{t("home.Home_section2.h1")}</h2>
       </div>
       <div className="container">
               <div className="boxs"  >
@@ -29,7 +24,7 @@ const Why = memo(() => {
                     <div className="box" data-aos={Animate} key={idx} >
                       <div className="group" >
                           <i  className={`${e.icon} `}></i>
-                          <h2 className='h2' > {e.title}  </h2>
+                          <div className='h2' > {e.title}  </div>
                       </div>
                       <span className={`p`}>{e.desc}</span>
                     </div>
@@ -37,7 +32,7 @@ const Why = memo(() => {
               </div>
 
             <div className="Img hidden-img"  >
-              <img data-aos="fade-left" data-aos-delay="200"  src={WhyImg} alt="Why-chooseus" />
+              <img data-aos="zoom-in"  width={30} height={30}   src={WhyImg} alt="Why-chooseus" />
             </div>
       </div>
     </section>

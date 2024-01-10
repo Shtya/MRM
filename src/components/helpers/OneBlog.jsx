@@ -5,8 +5,8 @@ import Slider from "react-slick";
 import {  useNavigate } from 'react-router-dom';
 import Moment from 'react-moment';
 
-import IMG1 from "../../assets/bg/b1.jpg"
-import IMG3 from "../../assets/bg/b3.jpg"
+import IMG1 from "../../assets/bg/b1.webp"
+import IMG3 from "../../assets/bg/b3.webp"
 import { Helmet } from 'react-helmet';
 import Skeleton from '../Skeleton';
 
@@ -16,7 +16,7 @@ const OneBlog = ({classn ,blogs , settings , name , onHere }) => {
   return (
     <div className={`Slider_1_Img ${classn}`}>
       {/* <Skeleton /> */}
-      {onHere ? <div className="bgCover"  >  <img  src={IMG3} alt="blog" loading="lazy" /> </div> : <div className="bgCover"  >  <img  src={IMG1} alt="blog" loading="lazy" /> </div>}
+      {onHere ? <div className="bgCover"  >  <img  src={IMG3} alt="blog"  /> </div> : <div className="bgCover"  >  <img  src={IMG1} alt="blog"  /> </div>}
       <div className="h1 clip"> {name} </div>
           <Slider {...settings} className='container' >
 

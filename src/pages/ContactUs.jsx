@@ -2,17 +2,19 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Animation from '../components/helpers/Animation'
 import MetaTag from './MetaTag'
-import IMG1 from "../assets/bg/b1.jpg"
+import IMG1 from "../assets/bg/b1.webp"
 import { Helmet } from 'react-helmet'
 import {useRef, useState} from 'react'
-import MapImg from "../assets/about-us/introContact.jpg"
+import MapImg from "../assets/about-us/introContact.webp"
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
 import { Social_Media } from '../App';
+import { useTranslation } from 'react-i18next'
 
 const ContactUs = () => {
   const [value , setvalue] = useState() ;
   const form = useRef();
+  const {t} = useTranslation() ;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,22 +23,22 @@ const ContactUs = () => {
       e.target.reset() ;
   };
 
-  let services = [ , "Exhibition & Display Stand" , "Indoor & Outdoor Signages" , "Photography & Videography" , "Web Design & Development" ,"Social Media Marketing" , "Cooperated Gifts" , "Media Buyin" , "Branding" , "SEO" ,]
+  let services = t("servicesAction",{returnObjects:true})
     
   return (
     <div className='contact-us'>
       <MetaTag canonical="contact-us" title=" Get in Touch with MRM Advertising  Your Marketing Partner in Dubai" desc="Connect with MRM Advertising Agency in Dubai for best digital marketing and advertising services. Specializing in SEO, media buying and creative solutions. " />
       <Helmet > <script type="application/ld+json">{`  "@context": "https://schema.org",  "@type": "AboutPage",  "name": "mrm advertising",  "url": "https://mrmadvertisingdubai.com/contact-us",  "description": "Connect with MRM Advertising Agency in Dubai for best digital marketing and advertising services. Specializing in SEO, media buying and creative solutions.",  "address": {    "@type": "PostalAddress",    "addressRegion": "State",    "postalCode": "0000",    "addressCountry": "dubai"  },  "contactPoint": {    "@type": "ContactPoint",    "telephone": "+971561384496",    "contactType": "customer service",    "areaServed": "US" }`}</script> </Helmet>
       <Animation />
-      <div className="bgCover"  >  <img  src={IMG1} alt="contact-us" loading="lazy" /> </div>
+      <div className="bgCover"  >  <img  src={IMG1} alt="contact-us"  /> </div>
       <div className="container"> <Navbar /> </div>
       {/* <Contact2  /> */}
       <section className='Contact2' id='Contact2'>
       <div className="container">
           
               <div className="box" data-aos="fade-right" data-aos-delay="200" >
-                  <div className="coverMap"> <img className='mapImg' src={MapImg} alt="contact-map" loading="lazy" /> </div>
-                  <div className="text"> <h2 className='h1 blur' data-aos="fade-right" data-aos-delay="300">Turn your dreams into digital realities </h2> </div>
+                  <div className="coverMap"> <img className='mapImg' src={MapImg} alt="contact-map"  /> </div>
+                  <div className="text"> <h2 className='h1 blur' data-aos="fade-right" data-aos-delay="300"> {t("contact_us.h1")} </h2> </div>
 
                   <ul className='contact-list'>
                     <li className="list-item" data-aos="fade-right" data-aos-delay="300"> <Link to="" > <i className="fa-solid fa-phone"></i>         </Link>    <span className='contact-text place p'>+971561384496</span></li>
@@ -53,18 +55,18 @@ const ContactUs = () => {
               </div>
 
               <div className="box1" data-aos="fade-left" data-aos-delay="300">
-              <h1 className='h1' data-aos="fade-right" data-aos-delay="300">WE'RE HERE TO HELP YOU</h1>
-              <h2 className='h2' data-aos="fade-right" data-aos-delay="300">Reach Out And Let's Talk</h2>
+              <h1 className='h1' data-aos="fade-right" data-aos-delay="300"> {t("contact_us.contact.h1")} </h1>
+              <h2 className='h2' data-aos="fade-right" data-aos-delay="300"> {t("contact_us.contact.phead")} </h2>
               <form ref={form} onSubmit={sendEmail}>
-                  <input data-aos="fade-left" data-aos-delay="300" name="name" type="text"  placeholder='Your Name' id="" />
-                  <input data-aos="fade-left" data-aos-delay="400" name="email" type="Email"  placeholder='Email address' id="" />
-                  <input data-aos="fade-left" data-aos-delay="500" name="phone" type="text"  placeholder='Phone' id="" />
+                  <input data-aos="fade-left" data-aos-delay="300" name="name" type="text"  placeholder={t("contact_us.contact.name")}  id="" />
+                  <input data-aos="fade-left" data-aos-delay="400" name="email" type="Email"  placeholder={t("contact_us.contact.email")}  />
+                  <input data-aos="fade-left" data-aos-delay="500" name="phone" type="text"  placeholder={t("contact_us.contact.phone")}  />
                   <select  data-aos="fade-left" data-aos-delay="600" name="services" className='input form-select' aria-label=".form-select-lg examplev" value={value} onChange={e=> setvalue(e.target.value)}>
-                    <option value="0">Select a service</option>
+                    <option value="0">{t("contact_us.contact.select")} </option>
                     {services.map((e,index)=> <option key={index} value={e} >{e}</option> )}
                   </select>
-                  <input data-aos="fade-left" data-aos-delay="700" name="message" placeholder="Write a message" id="" type='text'></input>
-                   <button data-aos="fade-left" data-aos-delay="800" className='bt'>Send a message</button>
+                  <input data-aos="fade-left" data-aos-delay="700" name="message" placeholder={t("contact_us.contact.message")}  id="" type='text'></input>
+                   <button data-aos="fade-left" data-aos-delay="800" className='bt'>{t("contact_us.contact.bt")} </button>
               </form>
               </div>
           </div>

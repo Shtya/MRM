@@ -7,9 +7,11 @@
   overflow: hidden;
   left: 0;
 }
+
 .pattern1 .next-arrow, .pattern1 .back-arrow {
   display: none;
 }
+
 .pattern1::after {
   content: "";
   position: absolute;
@@ -22,6 +24,7 @@
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(10px);
 }
+
 .pattern1 .screen0 .pattern1::after {
   content: "";
   position: fixed;
@@ -32,10 +35,12 @@
   left: 0;
   opacity: 0.75;
 }
+
 .pattern1 .screens {
   margin: 0;
   padding: 0;
 }
+
 .pattern1 .screens > .screen {
   position: relative;
   border-bottom: 1px solid black;
@@ -44,6 +49,7 @@
   list-style-type: none;
   display: block;
 }
+
 @keyframes gradient-animation-1 {
   0% {
     left: 0%;
@@ -70,6 +76,7 @@
   background-image: radial-gradient(circle at center center, var(--alt-alt-main), var(--second)), repeating-radial-gradient(circle at center center, var(--alt-alt-main), black, 1rem, transparent 2rem, transparent 1rem);
   background-blend-mode: multiply;
 }
+
 .pattern1 .screen0:before {
   content: "";
   left: 0;
@@ -79,6 +86,7 @@
   height: 100%;
   background: repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.1) 1px, rgba(255, 255, 255, 0.05) 5px);
 }
+
 .pattern1 .screen0:after {
   content: "";
   position: absolute;
@@ -88,15 +96,19 @@
   top: 0;
   background: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.1) 1px, rgba(255, 255, 255, 0.05) 5px);
 }
+
 .pattern1 .screens {
   height: 100% !important;
 }
+
 .pattern1 .screens .screen {
   height: 100% !important;
 }
+
 .pattern1 .screen1 {
   background-image: radial-gradient(ellipse at center, rgb(0, 50, 50) 0%, rgb(0, 0, 0) 100%);
 }
+
 .pattern1 .screen1:after {
   content: "";
   position: absolute;
@@ -106,9 +118,11 @@
   top: 0;
   background: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.3) 1px, rgba(255, 255, 255, 0.1) 10px);
 }
+
 .pattern1 .screen2 {
   background-image: radial-gradient(ellipse at center, var(--alt-alt-main) 20%, var(--second) 80%);
 }
+
 .pattern1 .screen2:after {
   content: "";
   position: absolute;
@@ -118,12 +132,14 @@
   top: 0;
   background: repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.8) 10px, rgb(255, 255, 255) 10px);
 }
+
 .pattern1 .screen3 {
   position: absolute;
   height: 100%;
   width: 100%;
   background-image: radial-gradient(ellipse at center, var(--alt-alt-main) 20%, var(--alt-alt-main) 100%, --third-bg 80%);
 }
+
 .pattern1 .screen3:before {
   content: "";
   left: 0;
@@ -132,6 +148,7 @@
   height: 100%;
   background: repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.2) 1px, rgba(255, 255, 255, 0.1) 10px);
 }
+
 .pattern1 .screen3:after {
   content: "";
   position: absolute;
@@ -140,21 +157,27 @@
   right: 0;
   background: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.2) 1px, rgba(220, 188, 67, 0.2392156863) 10px);
 }
+
 .pattern1 .screen4 {
   background-color: DarkSlateGray;
 }
+
 .pattern1 .screen5 {
   background-color: Silver;
 }
+
 .pattern1 .screen6 {
   background-color: LightSlateGray;
 }
+
 .pattern1 .screen7 {
   background-color: BurlyWood;
 }
+
 .pattern1 .screen8 {
   background-color: Bisque;
 }
+
 .pattern1 .screen9 {
   background-color: Wheat;
 }
@@ -170,85 +193,96 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .Pattern9 span {
   --color:#9c8a50 ;
   width: 100%;
   height: 2px;
-  background-color: var(--color);
+  background: var(--gradient);
 }
+
 .Pattern9 span:nth-child(3) {
   width: 80%;
   margin-left: 10 !important;
 }
+
 .Pattern9 span:nth-child(2) {
   width: 80%;
   margin: 0 10%;
-  background-color: transparent;
+  background: transparent;
   position: relative;
   display: flex;
   align-items: center;
   gap: 5px;
   justify-content: center;
 }
+
 .Pattern9 span:nth-child(2) li {
   width: 10px;
   height: 10px;
-  background-color: var(--color);
+  background: var(--gradient);
   border-radius: 50%;
 }
+
 .Pattern9 span:nth-child(2) li.one {
   width: 8px;
   height: 8px;
   position: relative;
 }
+
 .Pattern9 span:nth-child(2) li.one::after {
   content: "";
   position: absolute;
   width: 6px;
   height: 6px;
-  background: var(--color);
+  background: var(--gradient);
   top: 0;
   left: -10px;
   border-radius: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .Pattern9 span:nth-child(2) li.three {
   width: 8px;
   height: 8px;
   position: relative;
 }
+
 .Pattern9 span:nth-child(2) li.three::after {
   content: "";
   position: absolute;
   width: 6px;
   height: 6px;
-  background: var(--color);
+  background: var(--gradient);
   top: 0;
   right: -10px;
   border-radius: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .Pattern9 span:nth-child(2)::after {
   content: "";
   width: 40%;
   height: 100%;
   position: absolute;
-  background: var(--color);
+  background: var(--gradient);
   left: 0;
   top: 0;
 }
+
 .Pattern9 span:nth-child(2)::before {
   content: "";
   width: 40%;
   height: 100%;
   position: absolute;
-  background: var(--color);
+  background: var(--gradient);
   right: 0;
   top: 0;
 }
+
 .Pattern9 span:nth-child(1) {
   width: 80%;
   margin-left: 20%;
-}/*# sourceMappingURL=pattern.css.map */
+} /*# sourceMappingURL=pattern.css.map */

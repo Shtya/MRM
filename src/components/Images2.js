@@ -1,211 +1,244 @@
-import DisplayStand1  from "../assets/gallery/displayStand/display-stands1.jpg"
-import DisplayStand2  from "../assets/gallery/displayStand/display-stands2.jpg"
-import DisplayStand3  from "../assets/gallery/displayStand/display-stands3.jpg"
-import DisplayStand4  from "../assets/gallery/displayStand/display-stands4.jpg"
-import DisplayStand6  from "../assets/gallery/displayStand/display-stands6.jpg"
-import DisplayStand7  from "../assets/gallery/displayStand/display-stands7.jpg"
+import DisplayStand1  from "../assets/gallery/displayStand/NEW Display Stand-03.webp"
+import DisplayStand2  from "../assets/gallery/displayStand/NEW Display Stand-04.webp"
+import DisplayStand3  from "../assets/gallery/displayStand/NEW Display Stand-05.webp"
+import DisplayStand4  from "../assets/gallery/displayStand/NEW Display Stand-07.webp"
+import DisplayStand5  from "../assets/gallery/displayStand/NEW Display Stand-08.webp"
+import DisplayStand6  from "../assets/gallery/displayStand/NEW Display Stand-09.webp"
 
-import Sign1 from  "../assets/gallery/sinages/Signages1.jpg"
-import Sign2 from  "../assets/gallery/sinages/Signages2.jpg"
-import Sign3  from "../assets/gallery/sinages/Signages3.jpg"
-import Sign4  from "../assets/gallery/sinages/Signages4.jpg"
-import Sign5  from "../assets/gallery/sinages/Signages5.jpg"
-import Sign6  from "../assets/gallery/sinages/Signages6.jpg"
-import Sign7  from "../assets/gallery/sinages/Signages7.jpg"
+import Sign1 from  "../assets/gallery/sinages/1.webp"
+import Sign2 from  "../assets/gallery/sinages/2.webp"
+import Sign3  from "../assets/gallery/sinages/3.webp"
+import Sign4  from "../assets/gallery/sinages/4.webp"
+import Sign5  from "../assets/gallery/sinages/5.webp"
+import Sign6  from "../assets/gallery/sinages/6.webp"
 
+import Exhibition1 from "../assets/gallery/exhibitionStand/Exhibition Stands-01.webp"
+import Exhibition2 from "../assets/gallery/exhibitionStand/Exhibition Stands-02.webp"
+import Exhibition3 from "../assets/gallery/exhibitionStand/Exhibition Stands-03.webp"
+import Exhibition4 from "../assets/gallery/exhibitionStand/Exhibition Stands-04.webp"
+import Exhibition5 from "../assets/gallery/exhibitionStand/Exhibition Stands-05.webp"
+import Exhibition6 from "../assets/gallery/exhibitionStand/Exhibition Stands-06.webp"
+import Exhibition7 from "../assets/gallery/exhibitionStand/Exhibition Stands-07.webp"
+import Exhibition8 from "../assets/gallery/exhibitionStand/Exhibition Stands-08.webp"
+import Exhibition9 from "../assets/gallery/exhibitionStand/Exhibition Stands-09.webp"
 
-
-
-import Exhibition1 from "../assets/gallery/exhibitionStand/Exhibition1.jpg"
-import Exhibition2 from "../assets/gallery/exhibitionStand/Exhibition2.jpg"
-import Exhibition3 from "../assets/gallery/exhibitionStand/Exhibition3.jpg"
-import Exhibition4 from "../assets/gallery/exhibitionStand/Exhibition4.jpg"
-import Exhibition5 from "../assets/gallery/exhibitionStand/Exhibition5.jpg"
-import Exhibition6 from "../assets/gallery/exhibitionStand/Exhibition6.jpg"
-import Exhibition7 from "../assets/gallery/exhibitionStand/Exhibition7.jpg"
-import Exhibition8 from "../assets/gallery/exhibitionStand/Exhibition8.jpg"
-import Exhibition9 from "../assets/gallery/exhibitionStand/Exhibition9.jpg"
-
-import Branding1 from  "../assets/gallery/branding/branding1.jpg"
-import Branding2 from  "../assets/gallery/branding/branding2.jpg"
-import Branding3  from "../assets/gallery/branding/branding3.jpg"
-import Branding4  from "../assets/gallery/branding/branding4.jpg"
-import Branding5  from "../assets/gallery/branding/branding5.jpg"
-import Branding6  from "../assets/gallery/branding/branding6.jpg"
-import Branding7  from "../assets/gallery/branding/branding7.jpg"
+import Branding1 from  "../assets/gallery/branding/Branding 600x600-01.webp"
+import Branding2 from  "../assets/gallery/branding/Branding 600x600-02.webp"
+import Branding3  from "../assets/gallery/branding/Branding 600x600-03.webp"
+import Branding4  from "../assets/gallery/branding/Branding 600x600-04.webp"
+import Branding5  from "../assets/gallery/branding/Branding 600x600-06.webp"
+import Branding6  from "../assets/gallery/branding/Branding 600x600-2-05.webp"
+import Branding7  from "../assets/gallery/branding/Branding 600x600-3-05.webp"
 
 
-import Photography1  from "../assets/gallery/photography/photo1.jpg"
-import Photography2  from "../assets/gallery/photography/photo2.jpg"
-import Photography3  from "../assets/gallery/photography/photo3.jpg"
-import Photography4  from "../assets/gallery/photography/photo4.jpg"
-import Photography5  from "../assets/gallery/photography/photo5.jpg"
-import Photography6  from "../assets/gallery/photography/photo6.jpg"
-import Photography7  from "../assets/gallery/photography/photo7.jpg"
-import Photography8  from "../assets/gallery/photography/photo8.jpg"
-import Photography9  from "../assets/gallery/photography/photo9.jpg"
+import Photography1  from "../assets/gallery/photography/photo1.webp"
+import Photography2  from "../assets/gallery/photography/photo2.webp"
+import Photography3  from "../assets/gallery/photography/photo3.webp"
+import Photography4  from "../assets/gallery/photography/photo4.webp"
+import Photography5  from "../assets/gallery/photography/photo5.webp"
+import Photography6  from "../assets/gallery/photography/photo6.webp"
+import Photography7  from "../assets/gallery/photography/photo7.webp"
+import Photography8  from "../assets/gallery/photography/photo8.webp"
+import Photography9  from "../assets/gallery/photography/photo9.webp"
 
-import videography1  from "../assets/gallery/videography/(1).jpg"
-import videography2  from "../assets/gallery/videography/(2).jpg"
-import videography3  from "../assets/gallery/videography/(3).jpg"
-import videography4  from "../assets/gallery/videography/(4).jpg"
-import videography5  from "../assets/gallery/videography/(5).jpg"
-import videography6  from "../assets/gallery/videography/(6).jpg"
-import videography7  from "../assets/gallery/videography/(7).jpg"
-import videography8  from "../assets/gallery/videography/(8).jpg"
-import videography9  from "../assets/gallery/videography/(9).jpg"
+import videography1  from "../assets/gallery/videography/(1).webp"
+import videography2  from "../assets/gallery/videography/(2).webp"
+import videography3  from "../assets/gallery/videography/(3).webp"
+import videography4  from "../assets/gallery/videography/(4).webp"
+import videography5  from "../assets/gallery/videography/(5).webp"
+import videography6  from "../assets/gallery/videography/(6).webp"
+import videography7  from "../assets/gallery/videography/(7).webp"
+import videography8  from "../assets/gallery/videography/(8).webp"
+import videography9  from "../assets/gallery/videography/(9).webp"
 
-import photographyGallery1  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-01.jpg"
-import photographyGallery2  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-02.jpg"
-import photographyGallery3  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-03.jpg"
-import photographyGallery4  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-04.jpg"
-import photographyGallery5  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-05.jpg"
-import photographyGallery6  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-06.jpg"
-import photographyGallery7  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-07.jpg"
-import photographyGallery8  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-08.jpg"
+import photographyGallery1  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-01.webp"
+import photographyGallery2  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-02.webp"
+import photographyGallery3  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-03.webp"
+import photographyGallery4  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-04.webp"
+import photographyGallery5  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-05.webp"
+import photographyGallery6  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-06.webp"
+import photographyGallery7  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-07.webp"
+import photographyGallery8  from "../assets/gallery/photography/PhotoGallery/Photography 600x600-08.webp"
 
-import webDesign1 from "../assets/gallery/web design/web (1).jpg"
-import webDesign2 from "../assets/gallery/web design/web (2).jpg"
-import webDesign3 from "../assets/gallery/web design/web (3).jpg"
-import webDesign4 from "../assets/gallery/web design/web (4).jpg"
-import webDesign5 from "../assets/gallery/web design/web (5).jpg"
-import webDesign6 from "../assets/gallery/web design/web (6).jpg"
+import webDesign1 from "../assets/gallery/web design/WEBSITE 600x600-01.webp"
+import webDesign2 from "../assets/gallery/web design/WEBSITE 600x600-02.webp"
+import webDesign3 from "../assets/gallery/web design/WEBSITE 600x600-03.webp"
+import webDesign4 from "../assets/gallery/web design/WEBSITE 600x600-04.webp"
+import webDesign5 from "../assets/gallery/web design/WEBSITE 600x600-05.webp"
+import webDesign6 from "../assets/gallery/web design/WEBSITE 600x600-06.webp"
 
-import Reception1 from "../assets/gallery/1.RECEPTION/Reception1.jpg"
-import Reception2 from "../assets/gallery/1.RECEPTION/Reception6.jpg"
-import Reception3 from "../assets/gallery/1.RECEPTION/Reception3.jpg"
-import Reception4 from "../assets/gallery/1.RECEPTION/Reception4.jpg"
-import Reception5 from "../assets/gallery/1.RECEPTION/Reception5.jpg"
-import Reception6 from "../assets/gallery/1.RECEPTION/Reception2.jpg"
+import Reception1 from "../assets/gallery/1.RECEPTION/Reception Signage 600x600-01.webp"
+import Reception2 from "../assets/gallery/1.RECEPTION/Reception Signage 600x600-02.webp"
+import Reception3 from "../assets/gallery/1.RECEPTION/Reception Signage 600x600-03.webp"
+import Reception4 from "../assets/gallery/1.RECEPTION/Reception Signage 600x600-04.webp"
+import Reception5 from "../assets/gallery/1.RECEPTION/Reception Signage 600x600-05.webp"
+import Reception6 from "../assets/gallery/1.RECEPTION/Reception Signage 600x600-06.webp"
 
-import Unipole1 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-01.jpg"
-import Unipole2 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-02.jpg"
-import Unipole3 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-03.jpg"
-import Unipole4 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-04.jpg"
-import Unipole5 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-05.jpg"
-import Unipole6 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-06.jpg"
+import Unipole1 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-01.webp"
+import Unipole2 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-02.webp"
+import Unipole3 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-03.webp"
+import Unipole4 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-04.webp"
+import Unipole5 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-05.webp"
+import Unipole6 from "../assets/gallery/2.UNIPOLE/Unipole 600x600-06.webp"
 
-import LED1 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-01.jpg"
-import LED2 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-02.jpg"
-import LED3 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-03.jpg"
-import LED4 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-04.jpg"
-import LED5 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-05.jpg"
-import LED6 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-06.jpg"
-import LED7 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-07.jpg"
+import LED1 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-01.webp"
+import LED2 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-02.webp"
+import LED3 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-03.webp"
+import LED4 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-04.webp"
+import LED5 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-05.webp"
+import LED6 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-06.webp"
+import LED7 from "../assets/gallery/3.LED-inddor/LED Signage 600x600-07.webp"
 
-import officeSign1 from "../assets/gallery/4.Office-Sign/Office Sign-01.jpg"
-import officeSign2 from "../assets/gallery/4.Office-Sign/Office Sign-02.jpg"
-import officeSign3 from "../assets/gallery/4.Office-Sign/Office Sign-03.jpg"
-import officeSign4 from "../assets/gallery/4.Office-Sign/Office Sign-04.jpg"
-import officeSign5 from "../assets/gallery/4.Office-Sign/Office Sign-05.jpg"
-import officeSign6 from "../assets/gallery/4.Office-Sign/Office Sign-06.jpg"
+import officeSign1 from "../assets/gallery/4.Office-Sign/Office Sign-01.webp"
+import officeSign2 from "../assets/gallery/4.Office-Sign/Office Sign-02.webp"
+import officeSign3 from "../assets/gallery/4.Office-Sign/Office Sign-03.webp"
+import officeSign4 from "../assets/gallery/4.Office-Sign/Office Sign-04.webp"
+import officeSign5 from "../assets/gallery/4.Office-Sign/Office Sign-05.webp"
+import officeSign6 from "../assets/gallery/4.Office-Sign/Office Sign-06.webp"
 
-import Health1 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-01.jpg"
-import Health2 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-02.jpg"
-import Health3 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-03.jpg"
-import Health4 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-04.jpg"
-import Health5 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-05.jpg"
-import Health6 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-06.jpg"
+import Health1 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-01.webp"
+import Health2 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-02.webp"
+import Health3 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-03.webp"
+import Health4 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-04.webp"
+import Health5 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-05.webp"
+import Health6 from "../assets/gallery/5.HEALTH/Health-Safety 600x600-06.webp"
 
-import Lamppost1 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-01.jpg"
-import Lamppost2 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-02.jpg"
-import Lamppost3 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-03.jpg"
-import Lamppost4 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-04.jpg"
-import Lamppost5 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-05.jpg"
-import Lamppost6 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-06.jpg"
+import Lamppost1 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-01.webp"
+import Lamppost2 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-02.webp"
+import Lamppost3 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-03.webp"
+import Lamppost4 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-04.webp"
+import Lamppost5 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-05.webp"
+import Lamppost6 from "../assets/gallery/6.LAMPPOST/Lamppost 600x600-06.webp"
 
-import Menu1 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-01.jpg"
-import Menu2 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-02.jpg"
-import Menu3 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-03.jpg"
-import Menu4 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-04.jpg"
-import Menu5 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-05.jpg"
-import Menu6 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-06.jpg"
-
-
-import Building1 from "../assets/gallery/8.Building/Building Wrap 600x600-01.jpg"
-import Building2 from "../assets/gallery/8.Building/Building Wrap 600x600-02.jpg"
-import Building3 from "../assets/gallery/8.Building/Building Wrap 600x600-03.jpg"
-import Building4 from "../assets/gallery/8.Building/Building Wrap 600x600-04.jpg"
-import Building5 from "../assets/gallery/8.Building/Building Wrap 600x600-05.jpg"
-import Building6 from "../assets/gallery/8.Building/Building Wrap 600x600-06.jpg"
-import Building7 from "../assets/gallery/8.Building/Building Wrap 600x600-07.jpg"
+import Menu1 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-01.webp"
+import Menu2 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-02.webp"
+import Menu3 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-03.webp"
+import Menu4 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-04.webp"
+import Menu5 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-05.webp"
+import Menu6 from "../assets/gallery/7.Menu-Boards/Menu Board Signage 600x600-06.webp"
 
 
-import OutDoor1 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-01.jpg"
-import OutDoor2 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-02.jpg"
-import OutDoor3 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-03.jpg"
-import OutDoor4 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-04.jpg"
-import OutDoor5 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-05.jpg"
-import OutDoor6 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-06.jpg"
+import Building1 from "../assets/gallery/8.Building/Building Wrap 600x600-01.webp"
+import Building2 from "../assets/gallery/8.Building/Building Wrap 600x600-02.webp"
+import Building3 from "../assets/gallery/8.Building/Building Wrap 600x600-03.webp"
+import Building4 from "../assets/gallery/8.Building/Building Wrap 600x600-04.webp"
+import Building5 from "../assets/gallery/8.Building/Building Wrap 600x600-05.webp"
+import Building6 from "../assets/gallery/8.Building/Building Wrap 600x600-06.webp"
+import Building7 from "../assets/gallery/8.Building/Building Wrap 600x600-07.webp"
 
 
-import Logo1 from "../assets/gallery/branding/Logo-Design/Branding Gallery-01.jpg"
-import Logo2 from "../assets/gallery/branding/Logo-Design/Branding Gallery-02.jpg"
-import Logo3 from "../assets/gallery/branding/Logo-Design/Branding Gallery-03.jpg"
-import Logo4 from "../assets/gallery/branding/Logo-Design/Branding Gallery-04.jpg"
-import Logo5 from "../assets/gallery/branding/Logo-Design/Branding Gallery-05.jpg"
-
-import Graphic1 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
-import Graphic2 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
-import Graphic3 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
-import Graphic4 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_a04d66c4.jpg"
-
-import Packaging1 from "../assets/gallery/branding/Packaging/Packaging 600x600-01.jpg"
-import Packaging2 from "../assets/gallery/branding/Packaging/Packaging 600x600-02.jpg"
-import Packaging3 from "../assets/gallery/branding/Packaging/Packaging 600x600-03.jpg"
-import Packaging4 from "../assets/gallery/branding/Packaging/Packaging 600x600-04.jpg"
-import Packaging5 from "../assets/gallery/branding/Packaging/Packaging 600x600-05.jpg"
-import Packaging6 from "../assets/gallery/branding/Packaging/Packaging 600x600-06.jpg"
-
-import SocialMedia1 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-01.jpg"
-import SocialMedia2 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-02.jpg"
-import SocialMedia3 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-03.jpg"
-import SocialMedia4 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-04.jpg"
-import SocialMedia5 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-05.jpg"
-import SocialMedia6 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-06.jpg"
-import SocialMedia7 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-07.jpg"
-import SocialMedia8 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-08.jpg"
-
-import stationery1 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.41_c95c6832.jpg"
-import stationery2 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_1dccd6f8.jpg"
-import stationery3 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_1dccd6f8.jpg"
-import stationery4 from "../assets/gallery/branding/WhatsApp Image 2023-12-17 at 09.12.42_1dccd6f8.jpg"
-
-import uniform1 from "../assets/gallery/branding/branding3.jpg"
-import uniform2 from "../assets/gallery/branding/branding3.jpg"
-import uniform3 from "../assets/gallery/branding/branding3.jpg"
-import uniform4 from "../assets/gallery/branding/branding3.jpg"
-
-import vehicles1 from "../assets/gallery/branding/branding4.jpg"
-import vehicles2 from "../assets/gallery/branding/branding4.jpg"
-import vehicles3 from "../assets/gallery/branding/branding4.jpg"
-import vehicles4 from "../assets/gallery/branding/branding4.jpg"
+import OutDoor1 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-01.webp"
+import OutDoor2 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-02.webp"
+import OutDoor3 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-03.webp"
+import OutDoor4 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-04.webp"
+import OutDoor5 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-05.webp"
+import OutDoor6 from "../assets/gallery/9.OutdoorLed/Outdoor LED 600x600-06.webp"
 
 
-import giftItem1 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-01.jpg"
-import giftItem2 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-02.jpg"
-import giftItem3 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-03.jpg"
-import giftItem4 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-04.jpg"
-import giftItem5 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-05.jpg"
-import giftItem6 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-06.jpg"
-import giftItem7 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-07.jpg"
+import Logo1 from "../assets/gallery/branding/Logo-Design/Branding Gallery-01.webp"
+import Logo2 from "../assets/gallery/branding/Logo-Design/Branding Gallery-02.webp"
+import Logo3 from "../assets/gallery/branding/Logo-Design/Branding Gallery-03.webp"
+import Logo4 from "../assets/gallery/branding/Logo-Design/Branding Gallery-04.webp"
+import Logo5 from "../assets/gallery/branding/Logo-Design/Branding Gallery-05.webp"
+import Logo6 from "../assets/gallery/branding/Logo-Design/Branding Gallery-06.webp"
 
-import Tropihes1 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-01.jpg"
-import Tropihes2 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-02.jpg"
-import Tropihes3 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-03.jpg"
-import Tropihes4 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-04.jpg"
-import Tropihes5 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-05.jpg"
-import Tropihes6 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-06.jpg"
+import Packaging1 from "../assets/gallery/branding/Packaging/Packaging 600x600-01.webp"
+import Packaging2 from "../assets/gallery/branding/Packaging/Packaging 600x600-02.webp"
+import Packaging3 from "../assets/gallery/branding/Packaging/Packaging 600x600-03.webp"
+import Packaging4 from "../assets/gallery/branding/Packaging/Packaging 600x600-04.webp"
+import Packaging5 from "../assets/gallery/branding/Packaging/Packaging 600x600-05.webp"
+import Packaging6 from "../assets/gallery/branding/Packaging/Packaging 600x600-06.webp"
+import Packaging7 from "../assets/gallery/branding/Packaging/Packaging 600x600-07.webp"
+import Packaging8 from "../assets/gallery/branding/Packaging/Packaging 600x600-08.webp"
+
+import SocialMedia1 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-01.webp"
+import SocialMedia2 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-02.webp"
+import SocialMedia3 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-03.webp"
+import SocialMedia4 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-04.webp"
+import SocialMedia5 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-05.webp"
+import SocialMedia6 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-06.webp"
+import SocialMedia7 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-07.webp"
+import SocialMedia8 from "../assets/gallery/branding/Social-media/Social Media Design 600x600-08.webp"
+
+import stationery1 from "../assets/gallery/branding/Branding 600x600-02.webp"
+import stationery2 from "../assets/gallery/branding/Branding 600x600-02.webp"
+import stationery3 from "../assets/gallery/branding/Branding 600x600-02.webp"
+import stationery4 from "../assets/gallery/branding/Branding 600x600-02.webp"
+
+import uniform1 from "../assets/gallery/branding/staff/Staff Uniform Gallery 600x600-01.webp"
+import uniform2 from "../assets/gallery/branding/staff/Staff Uniform Gallery 600x600-02.webp"
+import uniform3 from "../assets/gallery/branding/staff/Staff Uniform Gallery 600x600-03.webp"
+import uniform4 from "../assets/gallery/branding/staff/Staff Uniform Gallery 600x600-04.webp"
+import uniform5 from "../assets/gallery/branding/staff/Staff Uniform Gallery 600x600-05.webp"
+import uniform6 from "../assets/gallery/branding/staff/Staff Uniform Gallery 600x600-06.webp"
+import uniform7 from "../assets/gallery/branding/staff/Staff Uniform Gallery 600x600-07.webp"
+import uniform8 from "../assets/gallery/branding/staff/Staff Uniform Gallery 600x600-08.webp"
+
+import vehicles1 from "../assets/gallery/branding/vehicle/Vehicle Branding 600x600-01.webp"
+import vehicles2 from "../assets/gallery/branding/vehicle/Vehicle Branding 600x600-02.webp"
+import vehicles3 from "../assets/gallery/branding/vehicle/Vehicle Branding 600x600-03.webp"
+import vehicles4 from "../assets/gallery/branding/vehicle/Vehicle Branding 600x600-04.webp"
+import vehicles5 from "../assets/gallery/branding/vehicle/Vehicle Branding 600x600-05.webp"
+import vehicles6 from "../assets/gallery/branding/vehicle/Vehicle Branding 600x600-06.webp"
+import vehicles7 from "../assets/gallery/branding/vehicle/Vehicle Branding 600x600-07.webp"
+import vehicles8 from "../assets/gallery/branding/vehicle/Vehicle Branding 600x600-08.webp"
 
 
-import Photo1 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-01.jpg"
-import Photo2 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-02.jpg"
-import Photo3 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-03.jpg"
-import Photo4 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-04.jpg"
-import Photo5 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-05.jpg"
-import Photo6 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-06.jpg"
-import Photo7 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-07.jpg"
-import Photo8 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-08.jpg"
+import giftItem1 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-01.webp"
+import giftItem2 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-02.webp"
+import giftItem3 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-03.webp"
+import giftItem4 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-04.webp"
+import giftItem5 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-05.webp"
+import giftItem6 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-06.webp"
+import giftItem7 from "../assets/gallery/gifts/Gift-Item/Gift Items 600x600-07.webp"
+
+import Tropihes1 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-01.webp"
+import Tropihes2 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-02.webp"
+import Tropihes3 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-03.webp"
+import Tropihes4 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-04.webp"
+import Tropihes5 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-05.webp"
+import Tropihes6 from "../assets/gallery/gifts/Tropiehs/Trophies 600x600-06.webp"
+
+
+import Photo1 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-01.webp"
+import Photo2 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-02.webp"
+import Photo3 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-03.webp"
+import Photo4 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-04.webp"
+import Photo5 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-05.webp"
+import Photo6 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-06.webp"
+import Photo7 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-07.webp"
+import Photo8 from "../assets/gallery/photography/PhotoGallery/Photography 600x600-08.webp"
+
+// Gallery of Photography 
+import Food1 from "../assets/gallery/photography/food/Food-01.webp"
+import Food2 from "../assets/gallery/photography/food/Food-02.webp"
+import Food3 from "../assets/gallery/photography/food/Food-03.webp"
+import Food4 from "../assets/gallery/photography/food/Food-04.webp"
+import Food5 from "../assets/gallery/photography/food/Food-05.webp"
+import Food6 from "../assets/gallery/photography/food/Food-06.webp"
+import Food7 from "../assets/gallery/photography/food/Food-07.webp"
+import Food8 from "../assets/gallery/photography/food/Food-08.webp"
+
+
+import Automotive1 from "../assets/gallery/photography/Automotive/Automotive-01.webp"
+import Automotive2 from "../assets/gallery/photography/Automotive/Automotive-02.webp"
+import Automotive3 from "../assets/gallery/photography/Automotive/Automotive-03.webp"
+import Automotive4 from "../assets/gallery/photography/Automotive/Automotive-04.webp"
+import Automotive5 from "../assets/gallery/photography/Automotive/Automotive-05.webp"
+import Automotive6 from "../assets/gallery/photography/Automotive/Automotive-06.webp"
+import Automotive7 from "../assets/gallery/photography/Automotive/Automotive-07.webp"
+import Automotive8 from "../assets/gallery/photography/Automotive/Automotive-08.webp"
+
+
+import product1 from "../assets/gallery/photography/product/Product-01.webp"
+import product2 from "../assets/gallery/photography/product/Product-02.webp"
+import product3 from "../assets/gallery/photography/product/Product-03.webp"
+import product4 from "../assets/gallery/photography/product/Product-04.webp"
+import product5 from "../assets/gallery/photography/product/Product-05.webp"
+import product6 from "../assets/gallery/photography/product/Product-06.webp"
+import product7 from "../assets/gallery/photography/product/Product-07.webp"
+import product8 from "../assets/gallery/photography/product/Product-08.webp"
+
 import { baseWEB } from "../API/API"
 
 export function Photography (){ return [Photography1,Photography2,Photography3,Photography4,Photography5,Photography6,Photography7,Photography8,Photography9,]}
@@ -222,14 +255,13 @@ export const ImageGalleryHome = [
   {img:  Sign4  , type:`Signages all ` }  ,
   {img:  Sign5  , type:`Signages all ` }  ,
   {img:  Sign6  , type:`Signages all ` }  ,
-  {img:  Sign7  , type:`Signages all ` }  ,
 
   {img: DisplayStand1 , type:`Displaystands all`  , alt:"Modern pharmacy display stand with illuminated shelving  "  }  ,
   {img: DisplayStand2 , type:`Displaystands all`  , alt:"Elegant jewelry store interior with display cases  "  }  ,
   {img: DisplayStand3 , type:`Displaystands all`  , alt:"contemporary store display stand design   "  }  ,
   {img: DisplayStand4 , type:`Displaystands all`  , alt:"cosmetic display stand  with greenery accents  "  }  ,
-  {img: DisplayStand6 , type:`Displaystands all`  , alt:" Display stand makeup shelves with bold imagery.  "  }  ,
-  {img: DisplayStand7 , type:`Displaystands all`  , alt:"Stylish beauty product display stand in an elegant store  "  }  ,
+  {img: DisplayStand5 , type:`Displaystands all`  , alt:" Display stand makeup shelves with bold imagery.  "  }  ,
+  {img: DisplayStand6 , type:`Displaystands all`  , alt:"Stylish beauty product display stand in an elegant store  "  }  ,
 
   {img:  Exhibition1 , type:`Exhibition all` , alt:"Modern exhibit booth with striking black and gold design  "  }  ,
   {img:  Exhibition2 , type:`Exhibition all` , alt:"Chic jewelry Exhibition stand with luxurious white decor.  "  }  ,
@@ -239,15 +271,14 @@ export const ImageGalleryHome = [
   {img:  Exhibition6 , type:`Exhibition all` , alt:"Opulent event booth with overhead golden chandelier  "  }  ,
   {img:  Exhibition7 , type:`Exhibition all` , alt:"Contemporary lounge area within a Exhibition stand.  "  }  ,
   {img:  Exhibition8 , type:`Exhibition all` , alt:"Innovative tech exhibition stand with circular theme  "  }  ,
-  {img:  Exhibition9 , type:`Exhibition all` , alt:"Boutique exhibition stand with curved wooden details  "  }  ,
+  // {img:  Exhibition9 , type:`Exhibition all` , alt:"Boutique exhibition stand with curved wooden details  "  }  ,
 
   {img: Logo1  , type:`branding all`  ,alt:"Phone with social media event promotion  "  , titleImg:"Engaging-Online-Branding"  }  ,
-  {img: Graphic1  , type:`branding all`  ,alt:"Gold 'LUXURIOUS' text on a textured background.  " }  ,
   {img: Packaging1  , type:`branding all`  ,alt:"Professionals from different industries  "         }  ,
   {img: SocialMedia1  , type:`branding all`  ,alt:"Branded-vehicle-showcase" , titleImg:"Vehicle-Branding-Fleet"}  ,
   {img: stationery1  , type:`branding all`  ,alt:"" }  ,
   {img: uniform1  , type:`branding all`  ,alt:"" }  ,
-  // {img: Branding7 , type:`branding all`  ,alt:"" }  ,
+  {img: Branding7 , type:`branding all`  ,alt:"" }  ,
 
   {img:  Photography1 , type:`photography all`  , alt:"Interior photography of a cozy, well-lit restaurant  "  }  ,
   {img:  Photography2 , type:`photography all`  , alt:"Event photography of a speaker engaging a large audience  "  }  ,
@@ -257,7 +288,7 @@ export const ImageGalleryHome = [
   {img:  Photography6 , type:`photography all`  , alt:"Portrait photography of a professional man  "  }  ,
   {img:  Photography7 , type:`photography all`  , alt:"Food photography of an artistic pasta dish  "  }  ,
   {img:  Photography8 , type:`photography all`  , alt:"Product photography of an exquisite perfume bottle with splashes  "  }  ,
-  {img:  Photography9 , type:`photography all`  , alt:"Automotive photography of a futuristic green concept car  "  }  ,
+  // {img:  Photography9 , type:`photography all`  , alt:"Automotive photography of a futuristic green concept car  "  }  ,
 
   {img: webDesign1 , type:`Web all` , alt:"Furniture website display on laptop and phone  "  }  ,
   {img: webDesign2 , type:`Web all` , alt:"Houseplant care Website on laptop and mobile  "  }  ,
@@ -272,7 +303,7 @@ export const ImageGalleryHome = [
   {img: Tropihes1  , type:`Gifts all`    , alt:"Golden trophy stars sparkle" , titleImg:"Classic Gold Trophy"  }  ,
   {img: Tropihes2  , type:`Gifts all`    , alt:"Sparkling crystall award" , titleImg:"crystal flame trophy"  }  ,
   {img: Tropihes3  , type:`Gifts all` , alt:"Contemporary glass trophy" , titleImg:"Modern Achievement trophy"  }  ,
-  {img: Tropihes4  , type:`Gifts all` , alt:"Sparkling crystal award" , titleImg:"Crystal Flame Tropjy"  }  ,
+  // {img: Tropihes4  , type:`Gifts all` , alt:"Sparkling crystal award" , titleImg:"Crystal Flame Tropjy"  }  ,
 
 ]
 export const ImageGalleryHomeSchema = {
@@ -311,9 +342,34 @@ export const ImageGalleryPotography = [
   {img:  Photo2 , alt:"" , type:`Videograph all` }  ,
   {img:  Photo1 , alt:"" , type:`Events all` }  ,
   {img:  Photo3 , alt:"" , type:`Fashion all` }  ,
-  {img:  Photo4 , alt:"" , type:`Food all` }  ,
-  {img:  Photo5 , alt:"" , type:`Product all` }  ,
-  {img:  Photo6 , alt:"" , type:`Automotive all` }  ,
+
+  {img:  Food1 , alt:"" , type:`Food all` }  ,
+  {img:  Food2 , alt:"" , type:`Food all` }  ,
+  {img:  Food3 , alt:"" , type:`Food all` }  ,
+  {img:  Food4 , alt:"" , type:`Food all` }  ,
+  {img:  Food5 , alt:"" , type:`Food all` }  ,
+  {img:  Food6 , alt:"" , type:`Food all` }  ,
+  {img:  Food7 , alt:"" , type:`Food all` }  ,
+  {img:  Food8 , alt:"" , type:`Food all` }  ,
+
+  {img:  product1 , alt:"" , type:`Product all` }  ,
+  {img:  product2 , alt:"" , type:`Product all` }  ,
+  {img:  product3 , alt:"" , type:`Product all` }  ,
+  {img:  product4 , alt:"" , type:`Product all` }  ,
+  {img:  product5 , alt:"" , type:`Product all` }  ,
+  {img:  product6 , alt:"" , type:`Product all` }  ,
+  {img:  product7 , alt:"" , type:`Product all` }  ,
+  {img:  product8 , alt:"" , type:`Product all` }  ,
+
+  {img:  Automotive1 , alt:"" , type:`Automotive all` }  ,
+  {img:  Automotive2 , alt:"" , type:`Automotive all` }  ,
+  {img:  Automotive3 , alt:"" , type:`Automotive all` }  ,
+  {img:  Automotive4 , alt:"" , type:`Automotive all` }  ,
+  {img:  Automotive5 , alt:"" , type:`Automotive all` }  ,
+  {img:  Automotive6 , alt:"" , type:`Automotive all` }  ,
+  {img:  Automotive7 , alt:"" , type:`Automotive all` }  ,
+  {img:  Automotive8 , alt:"" , type:`Automotive all` }  ,
+
   {img:  Photo7 , alt:"" , type:`Real-Estate all` }  ,
 ]
 export const ImageGalleryPotographySchema = {
@@ -327,13 +383,13 @@ export const ImageGalleryPotographySchema = {
 };
 
 export const ImageGalleryOutdoor = [
-  {img: LED1 , type:`Led-signage all` }  ,
-  {img: LED2 , type:`Led-signage all` }  ,
-  {img: LED3 , type:`Led-signage all` }  ,
-  {img: LED4 , type:`Led-signage all` }  ,
-  {img: LED5 , type:`Led-signage all` }  ,
-  {img: LED6 , type:`Led-signage all` }  ,
-  {img: LED7 , type:`Led-signage all` }  ,
+  {img: OutDoor1 , type:`Led-signage all` }  ,
+  {img: OutDoor2 , type:`Led-signage all` }  ,
+  {img: OutDoor3 , type:`Led-signage all` }  ,
+  {img: OutDoor4 , type:`Led-signage all` }  ,
+  {img: OutDoor5 , type:`Led-signage all` }  ,
+  {img: OutDoor6 , type:`Led-signage all` }  ,
+  // {img: LED7 , type:`Led-signage all` }  ,
 
   {img:  Building1 , type:`Building-Wrap all` }  ,
   {img:  Building2 , type:`Building-Wrap all` }  ,
@@ -341,7 +397,7 @@ export const ImageGalleryOutdoor = [
   {img:  Building4 , type:`Building-Wrap all` }  ,
   {img:  Building5 , type:`Building-Wrap all` }  ,
   {img:  Building6 , type:`Building-Wrap all` }  ,
-  {img:  Building7 , type:`Building-Wrap all` }  ,
+  // {img:  Building7 , type:`Building-Wrap all` }  ,
   
   {img:  Lamppost1 , type:`Lamp-Post all` }  ,
   {img:  Lamppost2 , type:`Lamp-Post all` }  ,
@@ -371,6 +427,13 @@ export const ImageGalleryOutdoorSchema = {
 
 export const ImageGalleryIndoor = [
 
+  {img: LED1 , type:`Led-signage all` }  ,
+  {img: LED2 , type:`Led-signage all` }  ,
+  {img: LED3 , type:`Led-signage all` }  ,
+  {img: LED4 , type:`Led-signage all` }  ,
+  {img: LED5 , type:`Led-signage all` }  ,
+  {img: LED6 , type:`Led-signage all` }  ,
+
   {img:  Health1 , type:`Health-safety all` }  ,
   {img:  Health2 , type:`Health-safety all` }  ,
   {img:  Health3 , type:`Health-safety all` }  ,
@@ -398,9 +461,8 @@ export const ImageGalleryIndoor = [
   {img: officeSign4 , type:`Office-signs all` }  ,
   {img: officeSign5 , type:`Office-signs all` }  ,
   {img: officeSign6 , type:`Office-signs all` }  ,
-  
-    
 ]
+
 export const ImageGalleryIndoorSchema = {
   "@context": baseWEB,
   "@type": "Indoor Gallery",
@@ -425,16 +487,16 @@ export const ImageGalleryGifts = [
   {img: giftItem3  , type:`gift-Item all` }  ,
   {img: giftItem4  , type:`gift-Item all` }  ,
   {img: giftItem5  , type:`gift-Item all` }  ,
-  {img: giftItem6  , type:`gift-Item ` }  ,
-  {img: giftItem7  , type:`gift-Item ` }  ,
+  {img: giftItem6  , type:`gift-Item all` }  ,
+  // {img: giftItem7  , type:`gift-Item ` }  ,
 
-  {img: giftItem5  , type:`Corporate-gifts ` }  ,
+  {img: giftItem5  , type:`Corporate-gifts all` }  ,
   {img: giftItem6  , type:`Corporate-gifts all` }  ,
   {img: giftItem7  , type:`Corporate-gifts all` }  ,
   {img: giftItem1  , type:`Corporate-gifts all` }  ,
   {img: giftItem2  , type:`Corporate-gifts all` }  ,
-  {img: giftItem3  , type:`Corporate-gifts ` }  ,
-  {img: giftItem4  , type:`Corporate-gifts ` }  ,
+  {img: giftItem3  , type:`Corporate-gifts all` }  ,
+  // {img: giftItem4  , type:`Corporate-gifts all` }  ,
 
 ]
 export const ImageGalleryGiftsSchema = {
@@ -455,6 +517,7 @@ export const  ImageGalleryBranding = [
   {img:  Logo3 , alt:"" , type:`Logo all` }  ,
   {img:  Logo4 , alt:"" , type:`Logo all` }  ,
   {img:  Logo5 , alt:"" , type:`Logo all` }  ,
+  {img:  Logo6 , alt:"" , type:`Logo all` }  ,
 
   {img: webDesign1  , type:`Web all` }  ,
   {img: webDesign2  , type:`Web all` }  ,
@@ -478,21 +541,26 @@ export const  ImageGalleryBranding = [
   {img: Packaging4 , type:`packaging all` }  ,
   {img: Packaging5 , type:`packaging all` }  ,
   {img: Packaging6 , type:`packaging all` }  ,
-
-  {img: Graphic1 , type:`Graphic all` ,alt:"Branded polo shirt with QR code" }  ,
-  {img: Graphic2 , type:`Graphic all` ,alt:"Branded polo shirt with QR code" }  ,
-  {img: Graphic3 , type:`Graphic all` ,alt:"Branded polo shirt with QR code" }  ,
-  {img: Graphic4 , type:`Graphic all` ,alt:"Branded polo shirt with QR code" }  ,
+  {img: Packaging7 , type:`packaging all` }  ,
+  {img: Packaging8 , type:`packaging all` }  ,
 
   {img: vehicles1 , type:`vehicles all`  , alt :"Vehicle-Branding-Fleet", titleImg:"Branded-vehicle-showcase"}  ,
   {img: vehicles2 , type:`vehicles all`  , alt :"Vehicle-Branding-Fleet", titleImg:"Branded-vehicle-showcase"}  ,
   {img: vehicles3 , type:`vehicles all`  , alt :"Vehicle-Branding-Fleet", titleImg:"Branded-vehicle-showcase"}  ,
   {img: vehicles4 , type:`vehicles all`  , alt :"Vehicle-Branding-Fleet", titleImg:"Branded-vehicle-showcase"}  ,
+  {img: vehicles5 , type:`vehicles all`  , alt :"Vehicle-Branding-Fleet", titleImg:"Branded-vehicle-showcase"}  ,
+  {img: vehicles6 , type:`vehicles all`  , alt :"Vehicle-Branding-Fleet", titleImg:"Branded-vehicle-showcase"}  ,
+  {img: vehicles7 , type:`vehicles all`  , alt :"Vehicle-Branding-Fleet", titleImg:"Branded-vehicle-showcase"}  ,
+  {img: vehicles8 , type:`vehicles all`  , alt :"Vehicle-Branding-Fleet", titleImg:"Branded-vehicle-showcase"}  ,
 
   {img: uniform1  , type:`uniform all` , alt:"Professionals from different industries" }  ,
   {img: uniform2  , type:`uniform all` , alt:"Professionals from different industries" }  ,
   {img: uniform3  , type:`uniform all` , alt:"Professionals from different industries" }  ,
   {img: uniform4  , type:`uniform all` , alt:"Professionals from different industries" }  ,
+  {img: uniform5  , type:`uniform all` , alt:"Professionals from different industries" }  ,
+  {img: uniform6  , type:`uniform all` , alt:"Professionals from different industries" }  ,
+  {img: uniform7  , type:`uniform all` , alt:"Professionals from different industries" }  ,
+  {img: uniform8  , type:`uniform all` , alt:"Professionals from different industries" }  ,
 
   {img: stationery1 , type:`stationery all`  , alt:"Elegant black and gold branding set"}  ,
   {img: stationery2 , type:`stationery all`  , alt:"Sophisticated branding stationery set  "}  ,

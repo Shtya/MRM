@@ -1,24 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Animation from './helpers/Animation';
 import Footer from './Footer';
 import Navbar1 from './Navbar';
-import SlideNav from './SlideNav';
 import Related from './Slide/Related';
 import baseURL, { baseImg } from '../API/API';
 import MetaTag from '../pages/MetaTag';
+import { Divider } from './patterns/Pattern1';
+import AddComment from './AddComment';
 
 const BlogDetails = () => {
   const [data , setdata] = useState([])
   const [blogs , setblogs] = useState([])
-  const [titleCustom , settitleCustom] = useState()
     let {id} = useParams() ;
 
   useEffect(_=>{
     baseURL.get("").then(e=> setblogs(e.data.data))
     baseURL.get(id).then(e=>{
       setdata(e.data.data)
-      e.data?.data?.title?.length >= 110 ? settitleCustom(e.data?.data?.title.slice(0,110) + "..."): settitleCustom(e.data?.data?.title)
     })} ,[] )
     
         var settings = {
@@ -71,22 +70,12 @@ const BlogDetails = () => {
           <div dangerouslySetInnerHTML={{ __html: data?.description }} />
         </div>
       </div>
-      
-      <div className="interactive">
-        <div className="container">
-        <div className="reacted">
-            <span className='icons'><i className="fa-solid fa-thumbs-up"></i></span>
-            <span> 
-              <input type="text" placeholder='Leave a reply' />  
-              <i className="bt2 fa-solid fa-paper-plane"></i>
-            </span>
-            <span className='icons'><i className="fa-brands fa-linkedin"></i> </span>
-            <span className='icons'><i className="fa-brands fa-x-twitter"></i> </span>
-            <span className='icons'><i className="fa-brands fa-facebook-f"></i> </span>
-          </div>
-        </div>
-      </div>
+      <Divider />
 
+    <AddComment />
+
+
+      <Divider />
       <div className="related">
         <div className="h1">Dive Into More Articles on This Topic</div>
         <Related  data={blogs} settings={settings} />

@@ -4,9 +4,9 @@ import { Animate } from "../../App"
 const Serach2 = memo(({Img , Imgsection ,title , data , titleImg , altImg}) => {
   return (
     <div className="searching2">
-        <div className="bgCover"   >  <img  src={Img} alt="photography services" loading="lazy" /> </div>
+        <div className="bgCover"   >  <img  src={Img} alt="photography services"  /> </div>
             <div className="container">
-              <div className="coverImg " data-aos={Animate}> <img src={Imgsection} alt={altImg} title={titleImg} loading="lazy" /> </div>
+              <div className="coverImg " data-aos={Animate}> <img src={Imgsection} alt={altImg} title={titleImg}  /> </div>
 
               <div className="boxs">
               <div className="h1" data-aos={Animate}>{title}</div>
